@@ -997,5 +997,384 @@
    "ms": "Cahaya dipantulkan ke semua arah oleh molekul atau zarah; molekul udara paling banyak menyerakkan biru."
   },
   "chapter": 8
+ },
+ {
+  "id": "beaufort-scale",
+  "name": {
+   "zh": "蒲福风级",
+   "en": "Beaufort scale",
+   "ms": "Skala Beaufort"
+  },
+  "short": {
+   "zh": "按风对周围事物的影响把风速分成 0–12 级。",
+   "en": "Wind speed graded 0–12 by its effects on things around you.",
+   "ms": "Kelajuan angin dikelaskan 0–12 mengikut kesannya pada benda di sekeliling."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "coriolis-effect",
+  "name": {
+   "zh": "科里奥利力",
+   "en": "Coriolis effect",
+   "ms": "Kesan Coriolis"
+  },
+  "short": {
+   "zh": "地球自转使移动的空气看起来被偏转：北半球向右；赤道上为零。",
+   "en": "The apparent deflection of moving air by the Earth's spin: to the right in the north; zero at the equator.",
+   "ms": "Pesongan ketara udara bergerak akibat putaran Bumi: ke kanan di utara; sifar di khatulistiwa."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "gust",
+  "name": {
+   "zh": "阵风",
+   "en": "Gust",
+   "ms": "Tiupan kencang"
+  },
+  "short": {
+   "zh": "比 10 分钟平均风速突然高出、又很快减弱的一阵风。",
+   "en": "A sudden, short burst above the 10-minute average wind speed.",
+   "ms": "Lonjakan singkat dan tiba-tiba melebihi kelajuan angin purata 10 minit."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "high-pressure",
+  "name": {
+   "zh": "高压",
+   "en": "High pressure",
+   "ms": "Tekanan tinggi"
+  },
+  "short": {
+   "zh": "气压比周围高的区域；空气下沉，天气多晴好。",
+   "en": "An area of higher pressure than its surroundings; air sinks and the weather is usually fair.",
+   "ms": "Kawasan bertekanan lebih tinggi daripada sekeliling; udara turun dan cuaca biasanya baik."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "isobar",
+  "name": {
+   "zh": "等压线",
+   "en": "Isobar",
+   "ms": "Isobar"
+  },
+  "short": {
+   "zh": "地图上连接海平面气压相同地点的线。",
+   "en": "A line on a map joining places of equal sea-level pressure.",
+   "ms": "Garisan pada peta yang menghubungkan tempat bertekanan paras laut sama."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "land-breeze",
+  "name": {
+   "zh": "陆风",
+   "en": "Land breeze",
+   "ms": "Bayu darat"
+  },
+  "short": {
+   "zh": "晚上陆地比海冷，空气从陆地吹向海面。",
+   "en": "At night the land is cooler than the sea, and air blows from land to sea.",
+   "ms": "Pada waktu malam darat lebih sejuk daripada laut, dan udara bertiup dari darat ke laut."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "low-pressure",
+  "name": {
+   "zh": "低压",
+   "en": "Low pressure",
+   "ms": "Tekanan rendah"
+  },
+  "short": {
+   "zh": "气压比周围低的区域；空气辐合上升，多云多雨。",
+   "en": "An area of lower pressure than its surroundings; air converges and rises, bringing cloud and rain.",
+   "ms": "Kawasan bertekanan lebih rendah daripada sekeliling; udara menumpu dan naik, membawa awan dan hujan."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "pressure-gradient-force",
+  "name": {
+   "zh": "气压梯度力",
+   "en": "Pressure-gradient force",
+   "ms": "Daya kecerunan tekanan"
+  },
+  "short": {
+   "zh": "由气压差产生、从高压推向低压的力；等压线越密越强。",
+   "en": "The push from high to low pressure caused by a pressure difference; stronger where isobars are close.",
+   "ms": "Tolakan dari tekanan tinggi ke rendah akibat perbezaan tekanan; lebih kuat apabila isobar rapat."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "sea-breeze",
+  "name": {
+   "zh": "海风",
+   "en": "Sea breeze",
+   "ms": "Bayu laut"
+  },
+  "short": {
+   "zh": "白天陆地比海热，空气从海面吹向陆地。",
+   "en": "By day the land is warmer than the sea, and air blows from sea to land.",
+   "ms": "Pada siang hari darat lebih panas daripada laut, dan udara bertiup dari laut ke darat."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "clear-air-turbulence",
+  "name": {
+   "zh": "晴空湍流",
+   "en": "Clear-air turbulence",
+   "ms": "Gelora udara jernih"
+  },
+  "short": {
+   "zh": "没有云的高空中突然的颠簸，常在急流附近。",
+   "en": "Sudden bumpiness in cloudless air aloft, often near a jet stream.",
+   "ms": "Gegaran tiba-tiba dalam udara tanpa awan di tempat tinggi, sering berhampiran aliran jet."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "geopotential-height",
+  "name": {
+   "zh": "位势高度",
+   "en": "Geopotential height",
+   "ms": "Ketinggian geoupaya"
+  },
+  "short": {
+   "zh": "某个气压层离海平面的高度；热带比较高。",
+   "en": "The height of a pressure level above sea level; higher over the tropics.",
+   "ms": "Ketinggian sesuatu aras tekanan dari paras laut; lebih tinggi di atas tropika."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "jet-stream",
+  "name": {
+   "zh": "急流",
+   "en": "Jet stream",
+   "ms": "Aliran jet"
+  },
+  "short": {
+   "zh": "高空又窄又快、大致由西向东吹的风带。",
+   "en": "A narrow, fast band of wind high up, blowing broadly west to east.",
+   "ms": "Jalur angin sempit dan laju di udara tinggi, bertiup secara umum dari barat ke timur."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "pressure-level",
+  "name": {
+   "zh": "气压层",
+   "en": "Pressure level",
+   "ms": "Aras tekanan"
+  },
+  "short": {
+   "zh": "气压处处相同的一个面，例如 500 hPa；高空天气图就画在这样的面上。",
+   "en": "A surface of equal pressure, such as 500 hPa; upper-air charts are drawn on these.",
+   "ms": "Permukaan bertekanan sama, seperti 500 hPa; carta udara atas dilukis padanya."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "ferrel-cell",
+  "name": {
+   "zh": "费雷尔环流圈",
+   "en": "Ferrel cell",
+   "ms": "Sel Ferrel"
+  },
+  "short": {
+   "zh": "中纬度（约 30°–60°）的环流圈。",
+   "en": "The middle-latitude cell, between about 30° and 60°.",
+   "ms": "Sel latitud sederhana, antara kira-kira 30° dan 60°."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "hadley-cell",
+  "name": {
+   "zh": "哈德来环流圈",
+   "en": "Hadley cell",
+   "ms": "Sel Hadley"
+  },
+  "short": {
+   "zh": "赤道空气上升、在约 30° 下沉、再沿地面流回赤道的环流。",
+   "en": "The loop in which equatorial air rises, sinks near 30° and flows back along the surface.",
+   "ms": "Gelung udara khatulistiwa yang naik, turun berhampiran 30° dan mengalir kembali sepanjang permukaan."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "itcz",
+  "name": {
+   "zh": "热带辐合带",
+   "en": "Intertropical convergence zone",
+   "ms": "Zon penumpuan antara tropika"
+  },
+  "short": {
+   "zh": "两边信风在赤道附近相遇、空气上升、多雷雨的地带；随季节南北移动。",
+   "en": "Where the trade winds meet near the equator; rising air and thunderstorms; moves north and south with the seasons.",
+   "ms": "Tempat angin pasat bertemu berhampiran khatulistiwa; udara naik dan ribut petir; bergerak ke utara dan selatan mengikut musim."
+  },
+  "chapter": 11,
+  "abbr": "ITCZ"
+ },
+ {
+  "id": "polar-cell",
+  "name": {
+   "zh": "极地环流圈",
+   "en": "Polar cell",
+   "ms": "Sel kutub"
+  },
+  "short": {
+   "zh": "60° 以外的环流圈；冷空气从极地吹出成为极地东风。",
+   "en": "The cell beyond 60°; cold air flowing out of the poles as the polar easterlies.",
+   "ms": "Sel melepasi 60°; udara sejuk mengalir keluar dari kutub sebagai angin timur kutub."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "subtropical-high",
+  "name": {
+   "zh": "副热带高压",
+   "en": "Subtropical high",
+   "ms": "Tekanan tinggi subtropika"
+  },
+  "short": {
+   "zh": "约南北纬 30° 空气下沉形成的高压带，晴朗干燥。",
+   "en": "The belt of high pressure near 30° where air sinks; clear and dry.",
+   "ms": "Jalur tekanan tinggi berhampiran 30° tempat udara turun; cerah dan kering."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "trade-winds",
+  "name": {
+   "zh": "信风",
+   "en": "Trade winds",
+   "ms": "Angin pasat"
+  },
+  "short": {
+   "zh": "从副热带高压吹向赤道的地面风：北半球东北风，南半球东南风。",
+   "en": "Surface winds from the subtropical highs to the equator: north-easterly in the north, south-easterly in the south.",
+   "ms": "Angin permukaan dari tekanan tinggi subtropika ke khatulistiwa: timur laut di utara, tenggara di selatan."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "walker-circulation",
+  "name": {
+   "zh": "沃克环流",
+   "en": "Walker circulation",
+   "ms": "Peredaran Walker"
+  },
+  "short": {
+   "zh": "沿赤道太平洋的东西向环流：西边上升多雨，东边下沉干燥。",
+   "en": "The east–west loop along the equatorial Pacific: rising and wet in the west, sinking and dry in the east.",
+   "ms": "Gelung timur–barat di sepanjang Pasifik khatulistiwa: naik dan basah di barat, turun dan kering di timur."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "westerlies",
+  "name": {
+   "zh": "西风带",
+   "en": "Westerlies",
+   "ms": "Angin barat"
+  },
+  "short": {
+   "zh": "约 30°–60° 之间由西向东吹的地面风。",
+   "en": "Surface winds blowing west to east between about 30° and 60°.",
+   "ms": "Angin permukaan bertiup dari barat ke timur antara kira-kira 30° dan 60°."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "air-mass",
+  "name": {
+   "zh": "气团",
+   "en": "Air mass",
+   "ms": "Jisim udara"
+  },
+  "short": {
+   "zh": "温度、湿度都很均匀的一大块空气，可达上千公里。",
+   "en": "A huge body of air with nearly uniform temperature and humidity, a thousand kilometres or more across.",
+   "ms": "Kumpulan udara yang sangat besar dengan suhu dan kelembapan hampir seragam, seribu kilometer atau lebih."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "front",
+  "name": {
+   "zh": "锋面",
+   "en": "Front",
+   "ms": "Front"
+  },
+  "short": {
+   "zh": "两个性质不同的气团之间的交界。",
+   "en": "The boundary between two different air masses.",
+   "ms": "Sempadan antara dua jisim udara yang berbeza."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "lightning",
+  "name": {
+   "zh": "闪电",
+   "en": "Lightning",
+   "ms": "Kilat"
+  },
+  "short": {
+   "zh": "雷雨云里或云和地面之间的巨大放电。",
+   "en": "A giant electrical discharge within a storm cloud or between cloud and ground.",
+   "ms": "Nyahcas elektrik yang besar dalam awan ribut atau antara awan dan tanah."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "thunderstorm",
+  "name": {
+   "zh": "雷暴",
+   "en": "Thunderstorm",
+   "ms": "Ribut petir"
+  },
+  "short": {
+   "zh": "有雷有电的积雨云；普通雷暴一小时内走完一生。",
+   "en": "A cumulonimbus with thunder and lightning; an ordinary one lives less than an hour.",
+   "ms": "Kumulonimbus dengan guruh dan kilat; yang biasa hidup kurang sejam."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "tropical-cyclone",
+  "name": {
+   "zh": "热带气旋",
+   "en": "Tropical cyclone",
+   "ms": "Siklon tropika"
+  },
+  "short": {
+   "zh": "在暖海上形成、绕低压中心旋转的大风暴；台风、飓风、气旋都是它。",
+   "en": "A great spinning storm over warm sea around a low-pressure centre; typhoons, hurricanes and cyclones are all tropical cyclones.",
+   "ms": "Ribut besar berputar di atas laut panas di sekeliling pusat tekanan rendah; taufan, hurikan dan siklon semuanya siklon tropika."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "tropical-depression",
+  "name": {
+   "zh": "热带低压",
+   "en": "Tropical depression",
+   "ms": "Lekukan tropika"
+  },
+  "short": {
+   "zh": "刚开始旋转、风速约 20–34 节的热带气旋初期阶段。",
+   "en": "The early stage of a tropical cyclone, circulating with winds of about 20–34 knots.",
+   "ms": "Peringkat awal siklon tropika, berpusar dengan angin kira-kira 20–34 knot."
+  },
+  "chapter": 12
  }
 ]

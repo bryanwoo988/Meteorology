@@ -19,3 +19,6 @@ against its source before it is written. One row per claim.
 | 4 | ERA5 网格 0.25°（约 25 km），1940 年至今，逐时 | https://open-meteo.com/en/docs/historical-weather-api | 2026-10-02 |
 | 7 | 吉隆坡上空 0 °C 层（冻结高度）：2026 年 8–10 月逐时预报平均约 5,030 m（4,760–5,350 m） | https://api.open-meteo.com/v1/forecast?latitude=3.139&longitude=101.6869&hourly=freezing_level_height,temperature_500hPa,geopotential_height_500hPa&past_days=60&forecast_days=1&timezone=Asia%2FKuala_Lumpur | 2026-10-02 |
 | 7 | CAPE：上升气块正浮力的垂直积分；CIN：比气块暖的气层的累积抑制 | https://www.noaa.gov/jetstream/appendix/weather-glossary-c | 2026-10-02 |
+| 16/17 | MetMalaysia《Review of the Southwest Monsoon 2024 in Malaysia》（Research Publication No. 2/2025）：西南季风约 5 月中至 10 月中；西海岸 5–8 月雨量略高，与夜间及清晨苏门答腊飑线和局地对流有关；西南季风比东北季风和季风转换期干 | https://www.met.gov.my/data/research/researchpapers/2025/RP04_2025.pdf | 2026-10-02 |
+| 10 | 吉隆坡上空气压层平均高度与气温（2026-08-03 至 10-02 逐时预报平均）：见 data/series/kl-levels-2026.json | https://api.open-meteo.com/v1/forecast（参数见 series 文件） | 2026-10-02 |
+| 12 | 台风 Vamei：2001-12-27 在新加坡附近 1.5°N 形成，有记录以来最接近赤道 | https://doi.org/10.1029/2002GL016365 （Crossref 元数据核对作者） | 2026-10-02 |

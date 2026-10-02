@@ -272,8 +272,7 @@
     "zh": "气压与风",
     "en": "Pressure and wind",
     "ms": "Tekanan dan angin"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch10",
@@ -283,8 +282,7 @@
     "zh": "高空大气",
     "en": "The upper air",
     "ms": "Atmosfera atas"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch11",
@@ -294,8 +292,7 @@
     "zh": "全球环流",
     "en": "The global circulation",
     "ms": "Peredaran global"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch12",
@@ -305,8 +302,7 @@
     "zh": "气团、锋面与风暴",
     "en": "Air masses, fronts and storms",
     "ms": "Jisim udara, front dan ribut"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch13",

@@ -466,3 +466,13 @@ rect.cl-ice, circle.cl-ice { fill: var(--cloud); stroke: var(--sky); stroke-widt
 .cl-label { font-size: 11px; font-weight: 700; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; }
 .cloud.is-on .cl-label { fill: var(--accent); }
 .cloud.is-on > :not(text) { filter: drop-shadow(0 0 3px var(--accent)); }
+.isobar { stroke: var(--ink-2); stroke-width: 1.5; }
+.isobar-label, .force-label { font-size: 11.5px; fill: var(--ink-2); font-weight: 600; }
+.force { stroke-width: 2; }
+.wind-arrow { stroke-width: 4; }
+.level { cursor: pointer; }
+.level line { stroke: var(--sky); stroke-width: 2; }
+.level.is-on line { stroke-width: 4; }
+.level-label { font-size: 12px; font-weight: 700; fill: var(--sky); }
+.level-sub { font-size: 11px; fill: var(--muted); }
+.map-regions path.is-on { fill-opacity: .6 !important; stroke-width: 2; }

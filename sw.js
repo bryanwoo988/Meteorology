@@ -9,7 +9,7 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-e06b7e9abd';
+const CACHE = 'meteo-07a32138f4';
 const ASSETS = [
   './',
   'css/app.css',
@@ -21,6 +21,10 @@ const ASSETS = [
   'data/ch06.json',
   'data/ch07.json',
   'data/ch08.json',
+  'data/ch09.json',
+  'data/ch10.json',
+  'data/ch11.json',
+  'data/ch12.json',
   'data/datasets.json',
   'data/index.json',
   'data/maps/seasia.json',
@@ -28,6 +32,7 @@ const ASSETS = [
   'data/quiz.json',
   'data/releases.json',
   'data/series/kl-humidity-2025.json',
+  'data/series/kl-levels-2026.json',
   'data/series/kl-monthly-2025.json',
   'data/series/kl-sunny-cloudy-2025.json',
   'data/sources.json',
@@ -86,12 +91,17 @@ const ASSETS = [
   'js/updatelogic.js',
   'js/widgets/index.js',
   'js/widgets/kit.js',
+  'js/widgets/m1.js',
+  'js/widgets/m2.js',
+  'js/widgets/m3.js',
   'js/widgets/w1.js',
   'js/widgets/w2.js',
   'js/widgets/w3.js',
   'js/widgets/w5.js',
   'js/widgets/w6.js',
   'js/widgets/w7.js',
+  'js/widgets/w8.js',
+  'js/widgets/w9.js',
   'manifest.webmanifest',
 ];
 /* --- generated:end --- */

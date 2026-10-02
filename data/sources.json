@@ -16,6 +16,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "CHANG2003",
+  "short": "Chang et al. 2003",
+  "title": "Typhoon Vamei: An equatorial tropical cyclone formation",
+  "publisher": "C.-P. Chang, C.-H. Liu & H.-C. Kuo, Geophysical Research Letters 30(3), 2003",
+  "url": "https://doi.org/10.1029/2002GL016365",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "ECMWF-WHO",
   "short": "ECMWF",
   "title": "Who we are",
@@ -56,6 +64,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "METMY-SWM2024",
+  "short": "MetMalaysia 2025",
+  "title": "Review of the Southwest Monsoon 2024 in Malaysia (Research Publication No. 2/2025)",
+  "publisher": "N. Mohd Rashid, W. F. Mustafah, Z. A. Mokhtar & M. F. A. Abdullah, Malaysian Meteorological Department, December 2025",
+  "url": "https://www.met.gov.my/data/research/researchpapers/2025/RP04_2025.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "NOAA-EMC-GEFS",
   "short": "NOAA EMC",
   "title": "Global Ensemble Forecast System (GEFS)",
@@ -92,6 +108,14 @@
   "short": "Open-Meteo forecasts",
   "title": "Open-Meteo Forecast API — freezing level height over Kuala Lumpur, 3 Aug – 2 Oct 2026",
   "publisher": "Open-Meteo (CC BY 4.0)",
+  "url": "https://open-meteo.com/en/docs",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "OM-LEVELS-KL",
+  "short": "Open-Meteo forecasts",
+  "title": "Pressure-level heights and temperatures over Kuala Lumpur, 3 Aug – 2 Oct 2026 (hourly forecasts, averaged)",
+  "publisher": "Open-Meteo Forecast API (CC BY 4.0)",
   "url": "https://open-meteo.com/en/docs",
   "accessed": "2026-10-02"
  },

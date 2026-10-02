@@ -1071,5 +1071,412 @@
    "en": "Dust, smoke and salt are larger than molecules and scatter every colour, which mixes to white.",
    "ms": "Debu, asap dan garam lebih besar daripada molekul dan menyerakkan setiap warna, yang bercampur menjadi putih."
   }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch10",
+  "q": {
+   "zh": "为什么吉隆坡上空的 500 hPa 比标准大气高？",
+   "en": "Why is 500 hPa higher over Kuala Lumpur than in the standard atmosphere?",
+   "ms": "Mengapa 500 hPa lebih tinggi di atas Kuala Lumpur berbanding atmosfera piawai?"
+  },
+  "options": [
+   {
+    "zh": "热带的空气比较暖，占的空间比较大",
+    "en": "Tropical air is warmer and takes up more room",
+    "ms": "Udara tropika lebih panas dan mengambil lebih banyak ruang"
+   },
+   {
+    "zh": "吉隆坡海拔很高",
+    "en": "Kuala Lumpur is very high above sea level",
+    "ms": "Kuala Lumpur sangat tinggi dari paras laut"
+   },
+   {
+    "zh": "那里的风比较大",
+    "en": "The wind is stronger there",
+    "ms": "Angin lebih kuat di sana"
+   },
+   {
+    "zh": "测量错误",
+    "en": "A measuring error",
+    "ms": "Kesilapan pengukuran"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "暖空气密度小，同样的空气量要更厚的一层，气压层就被抬高。",
+   "en": "Warm air is less dense, so the same mass of air needs a thicker layer and the pressure levels sit higher.",
+   "ms": "Udara panas kurang tumpat, jadi jisim udara yang sama memerlukan lapisan lebih tebal dan aras tekanan berada lebih tinggi."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch10",
+  "q": {
+   "zh": "想看季风低空的风往哪里吹，Windy 上选哪一层最适合？",
+   "en": "Which Windy level best shows where the low-level monsoon wind is going?",
+   "ms": "Aras Windy manakah paling baik menunjukkan arah angin monsun aras rendah?"
+  },
+  "options": [
+   {
+    "zh": "850 hPa",
+    "en": "850 hPa",
+    "ms": "850 hPa"
+   },
+   {
+    "zh": "250 hPa",
+    "en": "250 hPa",
+    "ms": "250 hPa"
+   },
+   {
+    "zh": "150 hPa",
+    "en": "150 hPa",
+    "ms": "150 hPa"
+   },
+   {
+    "zh": "哪一层都一样",
+    "en": "Any level is the same",
+    "ms": "Semua aras sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "850 hPa 约 1.5 公里高，避开了地面摩擦，又在季风气流里面。",
+   "en": "850 hPa is about 1.5 km up: above most surface friction but inside the monsoon flow.",
+   "ms": "850 hPa kira-kira 1.5 km: di atas kebanyakan geseran permukaan tetapi dalam aliran monsun."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "ITCZ 是什么地方？",
+   "en": "What is the ITCZ?",
+   "ms": "Apakah ITCZ?"
+  },
+  "options": [
+   {
+    "zh": "两边信风相遇、空气上升、多雷雨的地带",
+    "en": "Where the trade winds meet, air rises and thunderstorms are frequent",
+    "ms": "Tempat angin pasat bertemu, udara naik dan ribut petir kerap"
+   },
+   {
+    "zh": "副热带的沙漠",
+    "en": "The subtropical deserts",
+    "ms": "Gurun subtropika"
+   },
+   {
+    "zh": "急流的另一个名字",
+    "en": "Another name for the jet stream",
+    "ms": "Nama lain bagi aliran jet"
+   },
+   {
+    "zh": "北极的高压",
+    "en": "The polar high",
+    "ms": "Tekanan tinggi kutub"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "东北信风和东南信风在赤道附近辐合，空气被迫上升。",
+   "en": "The north-east and south-east trades converge near the equator and the air is forced up.",
+   "ms": "Angin pasat timur laut dan tenggara menumpu berhampiran khatulistiwa dan udara dipaksa naik."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "北半球的信风大致从哪个方向吹来？",
+   "en": "From which direction do the Northern Hemisphere trade winds blow?",
+   "ms": "Dari arah manakah angin pasat Hemisfera Utara bertiup?"
+  },
+  "options": [
+   {
+    "zh": "东北",
+    "en": "North-east",
+    "ms": "Timur laut"
+   },
+   {
+    "zh": "西南",
+    "en": "South-west",
+    "ms": "Barat daya"
+   },
+   {
+    "zh": "正北",
+    "en": "Due north",
+    "ms": "Utara"
+   },
+   {
+    "zh": "西",
+    "en": "West",
+    "ms": "Barat"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "流向赤道的空气在北半球被偏向右方，成为东北风。",
+   "en": "Air flowing towards the equator is deflected to the right in the north, becoming a north-easterly.",
+   "ms": "Udara yang mengalir ke khatulistiwa dipesongkan ke kanan di utara, menjadi angin timur laut."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "Walker 环流里，西太平洋（东南亚这边）通常是怎样？",
+   "en": "In the Walker circulation, what is the western Pacific (South-East Asia's side) usually like?",
+   "ms": "Dalam peredaran Walker, bagaimanakah biasanya Pasifik barat (sebelah Asia Tenggara)?"
+  },
+  "options": [
+   {
+    "zh": "海水暖、空气上升、多雨",
+    "en": "Warm water, rising air, plenty of rain",
+    "ms": "Air panas, udara naik, banyak hujan"
+   },
+   {
+    "zh": "海水冷、空气下沉、干燥",
+    "en": "Cool water, sinking air, dry",
+    "ms": "Air sejuk, udara turun, kering"
+   },
+   {
+    "zh": "一直刮台风",
+    "en": "Constant typhoons",
+    "ms": "Taufan berterusan"
+   },
+   {
+    "zh": "没有风",
+    "en": "No wind at all",
+    "ms": "Tiada angin langsung"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "信风把暖水吹到西边，暖水上方空气上升、成云下雨。",
+   "en": "The trades pile warm water in the west; above it the air rises and rains out.",
+   "ms": "Angin pasat mengumpul air panas di barat; di atasnya udara naik dan menurunkan hujan."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "普通雷暴从出生到消散大约多久？",
+   "en": "How long does an ordinary thunderstorm usually last from birth to decay?",
+   "ms": "Berapa lama biasanya ribut petir biasa dari lahir hingga lerai?"
+  },
+  "options": [
+   {
+    "zh": "不到一小时",
+    "en": "Less than an hour",
+    "ms": "Kurang sejam"
+   },
+   {
+    "zh": "一整天",
+    "en": "A whole day",
+    "ms": "Sehari suntuk"
+   },
+   {
+    "zh": "一个星期",
+    "en": "A week",
+    "ms": "Seminggu"
+   },
+   {
+    "zh": "几分钟",
+    "en": "A few minutes",
+    "ms": "Beberapa minit"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "下沉气流很快占满整朵云，切断了暖湿空气的来源。",
+   "en": "Downdraughts soon fill the cloud and cut off its supply of warm, moist air.",
+   "ms": "Arus turun segera memenuhi awan dan memutuskan bekalan udara panas lembap."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "在空旷的园里遇到雷暴，哪个做法最危险？",
+   "en": "Caught in an open field in a thunderstorm, which is most dangerous?",
+   "ms": "Ditimpa ribut petir di ladang terbuka, yang manakah paling berbahaya?"
+  },
+  "options": [
+   {
+    "zh": "躲到一棵孤立的大树下",
+    "en": "Sheltering under a lone tall tree",
+    "ms": "Berteduh di bawah pokok tinggi yang terpencil"
+   },
+   {
+    "zh": "坐进金属车身的卡车",
+    "en": "Getting into a metal-bodied truck",
+    "ms": "Masuk ke dalam lori berbadan logam"
+   },
+   {
+    "zh": "进入建筑物",
+    "en": "Going into a building",
+    "ms": "Masuk ke dalam bangunan"
+   },
+   {
+    "zh": "离开高处",
+    "en": "Leaving high ground",
+    "ms": "Meninggalkan tempat tinggi"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "突出的物体最容易被闪电打中，许多闪电伤亡都发生在孤立的树附近。",
+   "en": "Tall, prominent objects are struck most; many lightning casualties happen near isolated trees.",
+   "ms": "Objek tinggi dan menonjol paling kerap disambar; banyak mangsa kilat berlaku berhampiran pokok terpencil."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "热带气旋为什么几乎不在赤道上形成？",
+   "en": "Why do tropical cyclones almost never form on the equator?",
+   "ms": "Mengapa siklon tropika hampir tidak pernah terbentuk di khatulistiwa?"
+  },
+  "options": [
+   {
+    "zh": "那里海水不够暖",
+    "en": "The sea is not warm enough",
+    "ms": "Laut tidak cukup panas"
+   },
+   {
+    "zh": "科里奥利力几乎为零，辐合的空气转不起来",
+    "en": "The Coriolis effect is almost zero, so converging air does not spin",
+    "ms": "Kesan Coriolis hampir sifar, jadi udara yang menumpu tidak berputar"
+   },
+   {
+    "zh": "那里没有雷雨",
+    "en": "There are no thunderstorms there",
+    "ms": "Tiada ribut petir di sana"
+   },
+   {
+    "zh": "那里风太强",
+    "en": "The wind is too strong",
+    "ms": "Angin terlalu kuat"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "热带气旋要靠科里奥利力开始旋转，所以多在 5° 到 20° 之间形成。",
+   "en": "They need the Coriolis effect to start spinning, so most form between 5° and 20°.",
+   "ms": "Ia memerlukan kesan Coriolis untuk mula berputar, jadi kebanyakannya terbentuk antara 5° dan 20°."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "地图上等压线很密，表示什么？",
+   "en": "What do closely spaced isobars mean?",
+   "ms": "Apakah maksud isobar yang rapat?"
+  },
+  "options": [
+   {
+    "zh": "风很弱",
+    "en": "Light winds",
+    "ms": "Angin lemah"
+   },
+   {
+    "zh": "风很强",
+    "en": "Strong winds",
+    "ms": "Angin kuat"
+   },
+   {
+    "zh": "一定下雨",
+    "en": "It must rain",
+    "ms": "Pasti hujan"
+   },
+   {
+    "zh": "气温很高",
+    "en": "High temperature",
+    "ms": "Suhu tinggi"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "气压变化快，气压梯度力大，风就强。",
+   "en": "Pressure changes quickly, the pressure-gradient force is large, so the wind is strong.",
+   "ms": "Tekanan berubah cepat, daya kecerunan tekanan besar, jadi angin kuat."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "为什么赤道附近很少有大型旋转风暴？",
+   "en": "Why are large spinning storms rare right at the equator?",
+   "ms": "Mengapa ribut berputar besar jarang berlaku tepat di khatulistiwa?"
+  },
+  "options": [
+   {
+    "zh": "那里太热",
+    "en": "It is too hot",
+    "ms": "Terlalu panas"
+   },
+   {
+    "zh": "科里奥利力在赤道接近零",
+    "en": "The Coriolis effect is close to zero there",
+    "ms": "Kesan Coriolis hampir sifar di situ"
+   },
+   {
+    "zh": "那里没有海",
+    "en": "There is no sea there",
+    "ms": "Tiada laut di situ"
+   },
+   {
+    "zh": "那里气压太高",
+    "en": "Pressure is too high",
+    "ms": "Tekanan terlalu tinggi"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "没有科里奥利力，辐合的空气不会开始旋转。",
+   "en": "Without the Coriolis effect, converging air does not start to spin.",
+   "ms": "Tanpa kesan Coriolis, udara yang menumpu tidak mula berputar."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "海风在什么时候吹？",
+   "en": "When does the sea breeze blow?",
+   "ms": "Bilakah bayu laut bertiup?"
+  },
+  "options": [
+   {
+    "zh": "白天，从海吹向陆地",
+    "en": "By day, from sea to land",
+    "ms": "Pada siang, dari laut ke darat"
+   },
+   {
+    "zh": "晚上，从海吹向陆地",
+    "en": "At night, from sea to land",
+    "ms": "Pada malam, dari laut ke darat"
+   },
+   {
+    "zh": "白天，从陆地吹向海",
+    "en": "By day, from land to sea",
+    "ms": "Pada siang, dari darat ke laut"
+   },
+   {
+    "zh": "只在下雨时",
+    "en": "Only when it rains",
+    "ms": "Hanya ketika hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "白天陆地比海热，陆地气压较低，凉的海风吹进来。",
+   "en": "By day the land is hotter and its pressure lower, so cool sea air flows in.",
+   "ms": "Pada siang hari darat lebih panas dan tekanannya lebih rendah, jadi udara laut yang sejuk mengalir masuk."
+  }
  }
 ]

@@ -1,0 +1,164 @@
+{
+ "id": "ch10",
+ "num": 10,
+ "stage": 4,
+ "title": {
+  "zh": "高空大气",
+  "en": "The upper air",
+  "ms": "Atmosfera atas"
+ },
+ "sources": [
+  "ESS",
+  "PAM",
+  "OM-LEVELS-KL"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "为什么用气压代表高度",
+    "en": "Why height is given as pressure",
+    "ms": "Mengapa ketinggian diberi sebagai tekanan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "高空天气图不是画“10 公里高”的地方，而是画某个气压的地方。例如 500 hPa 图，就是把各地气压正好是 500 hPa 的那个面画出来，看它离海平面有多高。这样的一层叫{{t:pressure-level}}。",
+      "en": "Upper-air charts are not drawn for ‘10 km up’ but for a given pressure. A 500 hPa chart shows the surface where the pressure is exactly 500 hPa everywhere, and how high above sea level that surface lies. Such a surface is a {{t:pressure-level}}.",
+      "ms": "Carta udara atas tidak dilukis untuk ‘10 km ke atas’ tetapi untuk tekanan tertentu. Carta 500 hPa menunjukkan permukaan yang tekanannya tepat 500 hPa di semua tempat, dan berapa tinggi permukaan itu dari paras laut. Permukaan sebegini ialah {{t:pressure-level}}."
+     },
+     "defines": [
+      "pressure-level"
+     ],
+     "src": [
+      "ESS:156"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "这个面离海平面的高度叫{{t:geopotential-height}}。暖空气比较“胖”，所以热带上空同一个气压层比较高：标准大气的 500 hPa 约在 5,600 米，而吉隆坡上空平均约 5,890 米。图上高度高的地方相当于高压，低的地方相当于低压。",
+      "en": "The height of that surface above sea level is its {{t:geopotential-height}}. Warm air takes up more room, so over the tropics a given pressure level sits higher: in the standard atmosphere 500 hPa is about 5,600 m up, while over Kuala Lumpur it averages about 5,890 m. On such a chart, high heights act like high pressure and low heights like low pressure.",
+      "ms": "Ketinggian permukaan itu dari paras laut ialah {{t:geopotential-height}}nya. Udara panas mengambil lebih banyak ruang, jadi di atas kawasan tropika sesuatu aras tekanan berada lebih tinggi: dalam atmosfera piawai 500 hPa kira-kira 5,600 m, manakala di atas Kuala Lumpur puratanya kira-kira 5,890 m. Pada carta sebegini, ketinggian tinggi bertindak seperti tekanan tinggi dan yang rendah seperti tekanan rendah."
+     },
+     "defines": [
+      "geopotential-height"
+     ],
+     "src": [
+      "ESS:156",
+      "OM-LEVELS-KL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "几个常用的气压层",
+    "en": "The levels forecasters use",
+    "ms": "Aras yang digunakan peramal"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "widget",
+     "id": "W9"
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "850 hPa（吉隆坡上空约 1.5 公里）：低空的风和水汽，看季风强弱、湿空气从哪里来",
+       "en": "850 hPa (about 1.5 km over Kuala Lumpur): low-level wind and moisture — how strong the monsoon is and where moist air comes from",
+       "ms": "850 hPa (kira-kira 1.5 km di atas Kuala Lumpur): angin dan lembapan aras rendah — kekuatan monsun dan dari mana udara lembap datang"
+      },
+      {
+       "zh": "700 hPa（约 3.2 公里）：中低层的水汽；这一层干燥时，雷雨云比较难长高",
+       "en": "700 hPa (about 3.2 km): moisture in the lower-middle air; when it is dry, storm clouds struggle to grow",
+       "ms": "700 hPa (kira-kira 3.2 km): lembapan udara tengah bawah; apabila kering, awan ribut sukar tumbuh"
+      },
+      {
+       "zh": "500 hPa（约 5.9 公里）：大约一半的空气在下面；天气系统主要跟着这一层的风移动",
+       "en": "500 hPa (about 5.9 km): about half the air is below; weather systems mostly move with the wind at this level",
+       "ms": "500 hPa (kira-kira 5.9 km): kira-kira separuh udara di bawah; sistem cuaca kebanyakannya bergerak dengan angin pada aras ini"
+      },
+      {
+       "zh": "250 hPa（约 11 公里）：急流和飞机巡航的高度，也是雷雨云顶摊开的地方",
+       "en": "250 hPa (about 11 km): where the jet streams and cruising airliners are, and where storm tops spread",
+       "ms": "250 hPa (kira-kira 11 km): tempat aliran jet dan pesawat terbang, dan tempat puncak ribut merebak"
+      }
+     ],
+     "src": [
+      "OM-LEVELS-KL",
+      "ESS:156",
+      "ESS:200"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "Windy 可以选高度：“地面”“850 hPa”“500 hPa”“250 hPa”等。选 850 hPa 看风的流向，往往比看地面风更清楚季风的样子。",
+      "en": "Windy lets you pick the height — ‘surface’, ‘850 hPa’, ‘500 hPa’, ‘250 hPa’ and so on. Picking 850 hPa often shows the monsoon flow more clearly than the surface wind.",
+      "ms": "Windy membolehkan anda memilih ketinggian — ‘permukaan’, ‘850 hPa’, ‘500 hPa’, ‘250 hPa’ dan sebagainya. Memilih 850 hPa sering menunjukkan aliran monsun lebih jelas daripada angin permukaan."
+     },
+     "src": [
+      "OM-LEVELS-KL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "急流",
+    "en": "Jet streams",
+    "ms": "Aliran jet"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:jet-stream}}是高空一条又窄又快的风带，像空中的河流，大致由西向东吹，常常弯弯曲曲。主要有两条：副热带急流在约北纬或南纬 30°、约 13 公里高；极地锋急流在冷暖空气交界的极锋附近、约 10 公里高。冬天的急流比较强，位置也比较靠近赤道。",
+      "en": "A {{t:jet-stream}} is a narrow, fast river of wind high in the atmosphere, blowing broadly from west to east and often meandering. There are two main ones: the subtropical jet near 30° latitude at about 13 km, and the polar-front jet near the boundary between cold and warm air, at about 10 km. In winter the jets are stronger and lie closer to the equator.",
+      "ms": "{{t:jet-stream}} ialah sungai angin yang sempit dan laju tinggi di atmosfera, bertiup secara umum dari barat ke timur dan sering berliku. Terdapat dua utama: jet subtropika berhampiran latitud 30° pada kira-kira 13 km, dan jet front kutub berhampiran sempadan udara sejuk dan panas, kira-kira 10 km. Pada musim sejuk jet lebih kuat dan lebih dekat ke khatulistiwa."
+     },
+     "defines": [
+      "jet-stream"
+     ],
+     "src": [
+      "ESS:199-200"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M1"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "急流附近风速变化很大，就算天空晴朗、没有云，飞机也会突然颠簸，这叫{{t:clear-air-turbulence}}。",
+      "en": "Around a jet stream the wind changes sharply with height and distance, and aircraft can be jolted suddenly even in a clear, cloudless sky: {{t:clear-air-turbulence}}.",
+      "ms": "Di sekitar aliran jet, angin berubah dengan ketara mengikut ketinggian dan jarak, dan pesawat boleh tersentak tiba-tiba walaupun langit cerah tanpa awan: {{t:clear-air-turbulence}}."
+     },
+     "defines": [
+      "clear-air-turbulence"
+     ],
+     "src": [
+      "ESS:178",
+      "ESS:200"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "pressure-level",
+  "geopotential-height",
+  "jet-stream",
+  "clear-air-turbulence"
+ ]
+}
