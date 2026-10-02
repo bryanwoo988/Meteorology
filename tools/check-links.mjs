@@ -11,7 +11,14 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const URL_RE = /https:\/\/[^\s"'<>)\]]+/g;
+const URL_RE = /https:\/\/[^\s"'<>\]]+/g;
+
+// Trailing punctuation from prose is not part of the link; a ')' is, only if it closes a '(' inside the URL.
+function trim(url) {
+  let u = url.replace(/[.,;]+$/, '');
+  while (u.endsWith(')') && (u.match(/\(/g) ?? []).length < (u.match(/\)/g) ?? []).length) u = u.slice(0, -1);
+  return u;
+}
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -28,7 +35,7 @@ export function collectUrls(root) {
   for (const file of walk(join(root, 'data'))) {
     const rel = relative(root, file).split('\\').join('/');
     for (const url of readFileSync(file, 'utf8').match(URL_RE) ?? []) {
-      const clean = url.replace(/[.,;]+$/, '');
+      const clean = trim(url);
       const where = found.get(clean) ?? [];
       if (!where.includes(rel)) where.push(rel);
       found.set(clean, where);
