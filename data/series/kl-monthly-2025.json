@@ -1,0 +1,65 @@
+{
+ "id": "kl-monthly-2025",
+ "columns": [
+  "month",
+  "temperature_2m"
+ ],
+ "units": [
+  "month",
+  "\u00b0C"
+ ],
+ "rows": [
+  [
+   1,
+   26.1
+  ],
+  [
+   2,
+   27.4
+  ],
+  [
+   3,
+   27.4
+  ],
+  [
+   4,
+   26.9
+  ],
+  [
+   5,
+   27.7
+  ],
+  [
+   6,
+   28.4
+  ],
+  [
+   7,
+   29.7
+  ],
+  [
+   8,
+   28.0
+  ],
+  [
+   9,
+   27.8
+  ],
+  [
+   10,
+   27.7
+  ],
+  [
+   11,
+   27.3
+  ],
+  [
+   12,
+   26.6
+  ]
+ ],
+ "source": "ERA5 reanalysis (ECMWF / Copernicus) via the Open-Meteo Historical Weather API, grid point nearest 3.14\u00b0N 101.69\u00b0E, monthly means of hourly values, 2025",
+ "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m,dew_point_2m,relative_humidity_2m&timezone=Asia%2FKuala_Lumpur",
+ "licence": "CC BY 4.0 (Open-Meteo); contains modified Copernicus Climate Change Service information",
+ "fetched": "2026-10-02"
+}

@@ -212,6 +212,188 @@
   "abbr": "UV"
  },
  {
+  "id": "albedo",
+  "name": {
+   "zh": "反照率",
+   "en": "Albedo",
+   "ms": "Albedo"
+  },
+  "short": {
+   "zh": "表面反射掉的阳光比例；雪很高，森林很低。",
+   "en": "The share of sunlight a surface reflects; high for snow, low for forest.",
+   "ms": "Bahagian cahaya matahari yang dipantulkan permukaan; tinggi bagi salji, rendah bagi hutan."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "diffuse-radiation",
+  "name": {
+   "zh": "散射辐射",
+   "en": "Diffuse radiation",
+   "ms": "Sinaran terserak"
+  },
+  "short": {
+   "zh": "被空气、尘埃和云散射后，从四面八方来的阳光。",
+   "en": "Sunlight scattered by air, dust and cloud, arriving from all directions.",
+   "ms": "Cahaya matahari yang diserakkan oleh udara, debu dan awan, tiba dari semua arah."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "direct-radiation",
+  "name": {
+   "zh": "直接辐射",
+   "en": "Direct radiation",
+   "ms": "Sinaran terus"
+  },
+  "short": {
+   "zh": "笔直从太阳照到地面的阳光。",
+   "en": "Sunlight reaching the ground in a straight line from the Sun.",
+   "ms": "Cahaya matahari yang sampai ke tanah dalam garis lurus dari Matahari."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "energy-balance",
+  "name": {
+   "zh": "能量平衡",
+   "en": "Energy balance",
+   "ms": "Imbangan tenaga"
+  },
+  "short": {
+   "zh": "一年平均下来，地球收到和送走的能量相等。",
+   "en": "Over a year, the Earth sends away as much energy as it receives.",
+   "ms": "Sepanjang tahun, Bumi menghantar keluar tenaga sebanyak yang diterimanya."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "greenhouse-effect",
+  "name": {
+   "zh": "温室效应",
+   "en": "Greenhouse effect",
+   "ms": "Kesan rumah hijau"
+  },
+  "short": {
+   "zh": "水汽、二氧化碳等吸收地面红外线再送回地面，使地球保持温暖。",
+   "en": "Water vapour, CO₂ and other gases absorb the ground's infrared and send part back, keeping the Earth warm.",
+   "ms": "Wap air, CO₂ dan gas lain menyerap inframerah tanah dan menghantar sebahagiannya kembali, memastikan Bumi kekal panas."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "latent-heat",
+  "name": {
+   "zh": "潜热",
+   "en": "Latent heat",
+   "ms": "Haba pendam"
+  },
+  "short": {
+   "zh": "蒸发水时“藏”进水汽的热，水汽凝结时再放出。",
+   "en": "Heat stored in water vapour by evaporation and released when it condenses.",
+   "ms": "Haba yang tersimpan dalam wap air melalui penyejatan dan dilepaskan apabila ia terkondensasi."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "longwave",
+  "name": {
+   "zh": "长波辐射",
+   "en": "Longwave radiation",
+   "ms": "Sinaran gelombang panjang"
+  },
+  "short": {
+   "zh": "地面、空气和云发出的红外线。",
+   "en": "Infrared given off by the ground, the air and clouds.",
+   "ms": "Inframerah yang dipancarkan oleh tanah, udara dan awan."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "radiation",
+  "name": {
+   "zh": "辐射",
+   "en": "Radiation",
+   "ms": "Sinaran"
+  },
+  "short": {
+   "zh": "以电磁波传递能量，不需要任何物质，例如阳光。",
+   "en": "Energy carried by electromagnetic waves, needing no material — sunlight, for example.",
+   "ms": "Tenaga yang dibawa gelombang elektromagnet tanpa memerlukan bahan — contohnya cahaya matahari."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "sensible-heat",
+  "name": {
+   "zh": "感热",
+   "en": "Sensible heat",
+   "ms": "Haba deria"
+  },
+  "short": {
+   "zh": "直接使空气升温、温度计量得到的热。",
+   "en": "Heat that directly warms the air and shows on a thermometer.",
+   "ms": "Haba yang memanaskan udara secara terus dan kelihatan pada termometer."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "shortwave",
+  "name": {
+   "zh": "短波辐射",
+   "en": "Shortwave radiation",
+   "ms": "Sinaran gelombang pendek"
+  },
+  "short": {
+   "zh": "太阳发出的辐射，集中在可见光附近。",
+   "en": "Radiation from the Sun, concentrated around visible light.",
+   "ms": "Sinaran dari Matahari, tertumpu sekitar cahaya nampak."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "annual-range",
+  "name": {
+   "zh": "气温年较差",
+   "en": "Annual temperature range",
+   "ms": "Julat suhu tahunan"
+  },
+  "short": {
+   "zh": "最热月与最冷月平均气温之差；赤道附近很小。",
+   "en": "The warmest month's average minus the coolest month's; very small near the equator.",
+   "ms": "Purata bulan paling panas tolak bulan paling sejuk; sangat kecil berhampiran khatulistiwa."
+  },
+  "chapter": 4
+ },
+ {
+  "id": "diurnal-range",
+  "name": {
+   "zh": "气温日较差",
+   "en": "Daily temperature range",
+   "ms": "Julat suhu harian"
+  },
+  "short": {
+   "zh": "一天中最高温与最低温之差；晴天大，阴天小。",
+   "en": "A day's highest minus lowest temperature; large on clear days, small on cloudy ones.",
+   "ms": "Suhu tertinggi tolak terendah dalam sehari; besar pada hari cerah, kecil pada hari berawan."
+  },
+  "chapter": 4
+ },
+ {
+  "id": "two-metre-temperature",
+  "name": {
+   "zh": "2 米气温",
+   "en": "2-metre temperature",
+   "ms": "Suhu 2 meter"
+  },
+  "short": {
+   "zh": "离地约 2 米、在阴凉通风处量的气温；预报说的“气温”就是它。",
+   "en": "Air temperature about 2 m above the ground, in shade and moving air; what forecasts mean by ‘temperature’.",
+   "ms": "Suhu udara kira-kira 2 m dari tanah, di tempat teduh dan berangin; maksud ‘suhu’ dalam ramalan."
+  },
+  "chapter": 4
+ },
+ {
   "id": "dew-point",
   "name": {
    "zh": "露点",

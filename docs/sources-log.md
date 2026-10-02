@@ -14,3 +14,6 @@ against its source before it is written. One row per claim.
 | 1 | ASMC：1993 年 1 月成立，设于新加坡气象局，监测火灾与跨境烟霾 | https://asmc.asean.org/asmc-about/ | 2026-10-02 |
 | 1 | GEFS 由 NOAA EMC 运行（GFS 集合，31 成员） | https://emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php | 2026-10-02 |
 | 1 | JMA 运行 Himawari-8/9 | https://www.data.jma.go.jp/mscweb/en/himawari89/himawari_cast/himawari_cast.php | 2026-10-02 |
+| 4 | 吉隆坡 2025-03-18（晴，日较差约 11 °C，最高温在午后）与 2025-01-28（阴雨，日较差约 2 °C）逐时气温、短波辐射 | https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m,cloud_cover,shortwave_radiation,precipitation&timezone=Asia%2FKuala_Lumpur | 2026-10-02 |
+| 4 | 吉隆坡 2025 年各月平均气温 26.1–29.7 °C（相差约 3.6 °C） | （同 ch05 的 ERA5 逐时资料） | 2026-10-02 |
+| 4 | ERA5 网格 0.25°（约 25 km），1940 年至今，逐时 | https://open-meteo.com/en/docs/historical-weather-api | 2026-10-02 |

@@ -64,6 +64,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "NOAA-EOT",
+  "short": "NOAA",
+  "title": "General Solar Position Calculations (equation of time)",
+  "publisher": "NOAA Global Monitoring Division",
+  "url": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "NOAA-GML-CO2",
   "short": "NOAA GML",
   "title": "Trends in Atmospheric Carbon Dioxide — Global",

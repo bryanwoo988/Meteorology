@@ -72,3 +72,14 @@ test('the layer is named from the temperature profile', () => {
 test('outside 0–90 km returns null', () => {
   assert.equal(atmosphereAt(-1), null); assert.equal(atmosphereAt(95000), null);
 });
+
+import { solarNoon, equationOfTime } from '../js/physics.js';
+
+test('equation of time: about −9 min in mid-March, +16 min in early November', () => {
+  eq(equationOfTime(77), -8.8, 0.6);
+  eq(equationOfTime(307), 16.4, 0.6);
+});
+test('solar noon in Kuala Lumpur (UTC+8) is well after 12:00 by the clock', () => {
+  eq(solarNoon(101.69, 77, 8), 13.37, 0.03);      // 18 March ≈ 13:22
+  eq(solarNoon(120, 172, 8), 12 + 1.6 / 60, 0.03); // on the zone meridian only the equation of time remains
+});

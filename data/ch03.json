@@ -1,0 +1,514 @@
+{
+ "id": "ch03",
+ "num": 3,
+ "stage": 2,
+ "title": {
+  "zh": "太阳辐射与能量平衡",
+  "en": "Solar radiation and the energy balance",
+  "ms": "Sinaran suria dan imbangan tenaga"
+ },
+ "sources": [
+  "PAM",
+  "ESS",
+  "NOAA-EOT"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "能量从太阳来",
+    "en": "Energy from the Sun",
+    "ms": "Tenaga dari Matahari"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "几乎所有推动天气的能量都来自太阳。太阳以电磁波的形式向外送出能量，叫做{{t:radiation}}；它以每秒约 30 万公里的光速穿过真空，大约 8 分钟到达地球。辐射是唯一不需要任何物质就能传递能量的方式。",
+      "en": "Almost all the energy that drives the weather comes from the Sun. The Sun sends it out as electromagnetic waves — {{t:radiation}} — travelling through empty space at the speed of light, about 300,000 km per second, and reaching the Earth in about eight minutes. Radiation is the only way of carrying energy that needs no material at all.",
+      "ms": "Hampir semua tenaga yang menggerakkan cuaca datang dari Matahari. Matahari menghantarnya sebagai gelombang elektromagnet — {{t:radiation}} — yang bergerak melalui ruang kosong pada kelajuan cahaya, kira-kira 300,000 km sesaat, dan sampai ke Bumi dalam kira-kira lapan minit. Sinaran ialah satu-satunya cara memindahkan tenaga yang tidak memerlukan bahan langsung."
+     },
+     "defines": [
+      "radiation"
+     ],
+     "src": [
+      "PAM:42-43"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "热量还有另外两种传递方式：传导（热沿着物体本身从热的一端传到冷的一端，例如烫手的铁棒）和对流（受热的流体自己移动，把热带走，例如烧开水时水在锅里翻滚）。天气里最重要的是对流，第 7 章会详细讲。",
+      "en": "Heat moves in two other ways too: conduction, through a material from hot to cold (an iron rod heating along its length), and convection, where heated fluid moves and carries the heat with it (water churning in a boiling pot). In the weather, convection matters most; Chapter 7 is about it.",
+      "ms": "Haba juga bergerak dengan dua cara lain: konduksi, melalui bahan dari panas ke sejuk (batang besi yang memanas sepanjangnya), dan perolakan, apabila bendalir yang dipanaskan bergerak dan membawa haba bersamanya (air bergolak dalam periuk mendidih). Dalam cuaca, perolakan paling penting; Bab 7 membincangkannya."
+     },
+     "src": [
+      "PAM:43"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "短波与长波",
+    "en": "Short waves and long waves",
+    "ms": "Gelombang pendek dan gelombang panjang"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "所有温度在绝对零度以上的东西都会发出辐射。东西越热，发出的辐射越强，波长也越短。太阳表面非常热，它发出的能量集中在约 0.5 微米的可见光附近，叫{{t:shortwave}}。",
+      "en": "Everything warmer than absolute zero gives off radiation. The hotter it is, the more it emits and the shorter its wavelengths. The Sun's surface is extremely hot, so its energy peaks near 0.5 micrometres, in visible light: {{t:shortwave}}.",
+      "ms": "Semua benda yang lebih panas daripada sifar mutlak memancarkan sinaran. Semakin panas, semakin banyak dipancarkan dan semakin pendek panjang gelombangnya. Permukaan Matahari sangat panas, jadi tenaganya memuncak berhampiran 0.5 mikrometer, dalam cahaya nampak: {{t:shortwave}}."
+     },
+     "defines": [
+      "shortwave"
+     ],
+     "src": [
+      "PAM:50-51",
+      "ESS:35"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "地球、云、空气和你自己都比太阳冷得多，发出的是看不见的红外线，波长约 10 微米，叫{{t:longwave}}。天气的能量故事，就是“短波进来、长波出去”。",
+      "en": "The Earth, clouds, air — and you — are far cooler than the Sun and give off invisible infrared around 10 micrometres: {{t:longwave}}. The energy story of the weather is short waves in, long waves out.",
+      "ms": "Bumi, awan, udara — dan anda — jauh lebih sejuk daripada Matahari dan memancarkan inframerah yang tidak kelihatan sekitar 10 mikrometer: {{t:longwave}}. Kisah tenaga cuaca ialah gelombang pendek masuk, gelombang panjang keluar."
+     },
+     "defines": [
+      "longwave"
+     ],
+     "src": [
+      "ESS:35"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2a",
+   "heading": {
+    "zh": "辐射定律",
+    "en": "The radiation laws",
+    "ms": "Hukum sinaran"
+   },
+   "level": "advanced",
+   "blocks": [
+    {
+     "type": "keyval",
+     "src": [
+      "PAM:50-51",
+      "ESS:35"
+     ],
+     "rows": [
+      {
+       "k": {
+        "zh": "维恩定律",
+        "en": "Wien's law",
+        "ms": "Hukum Wien"
+       },
+       "v": {
+        "zh": "发射最强的波长 λmax ≈ 2897 ÷ T 微米（T 用开尔文）。太阳约 5800 K → 约 0.5 微米；地面约 288 K → 约 10 微米。",
+        "en": "Wavelength of strongest emission λmax ≈ 2897 ÷ T micrometres (T in kelvin). The Sun at about 5800 K → about 0.5 µm; the ground at about 288 K → about 10 µm.",
+        "ms": "Panjang gelombang pancaran terkuat λmax ≈ 2897 ÷ T mikrometer (T dalam kelvin). Matahari kira-kira 5800 K → kira-kira 0.5 µm; tanah kira-kira 288 K → kira-kira 10 µm."
+       }
+      },
+      {
+       "k": {
+        "zh": "斯特藩–玻尔兹曼定律",
+        "en": "Stefan–Boltzmann law",
+        "ms": "Hukum Stefan–Boltzmann"
+       },
+       "v": {
+        "zh": "每平方米发出的能量 E = σT⁴，σ = 5.67 × 10⁻⁸ W/m²/K⁴。温度加倍，发出的能量变成 16 倍。",
+        "en": "Energy emitted per square metre E = σT⁴, with σ = 5.67 × 10⁻⁸ W/m²/K⁴. Double the temperature and the emission rises sixteenfold.",
+        "ms": "Tenaga dipancarkan bagi setiap meter persegi E = σT⁴, dengan σ = 5.67 × 10⁻⁸ W/m²/K⁴. Gandakan suhu dan pancaran meningkat enam belas kali."
+       }
+      },
+      {
+       "k": {
+        "zh": "基尔霍夫定律",
+        "en": "Kirchhoff's law",
+        "ms": "Hukum Kirchhoff"
+       },
+       "v": {
+        "zh": "一样东西对某个波长吸收得好，对那个波长也发射得好。",
+        "en": "Something that absorbs a wavelength well also emits it well.",
+        "ms": "Sesuatu yang menyerap sesuatu panjang gelombang dengan baik juga memancarkannya dengan baik."
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "阳光到了以后",
+    "en": "What happens to sunlight",
+    "ms": "Apa yang berlaku kepada cahaya matahari"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "阳光穿过大气时，一部分笔直照到地面，叫{{t:direct-radiation}}；另一部分被空气分子、尘埃和云撞来撞去，从四面八方散射下来，叫{{t:diffuse-radiation}}。阴天也晒得黑、太阳能板也能发电，靠的就是散射辐射。",
+      "en": "As sunlight crosses the atmosphere, some of it reaches the ground in a straight line — {{t:direct-radiation}}; the rest is bounced about by air molecules, dust and cloud and arrives from every direction — {{t:diffuse-radiation}}. Diffuse light is why you can get sunburnt on a cloudy day and why solar panels still produce power.",
+      "ms": "Apabila cahaya matahari melalui atmosfera, sebahagiannya sampai ke tanah dalam garis lurus — {{t:direct-radiation}}; selebihnya dipantul-pantulkan oleh molekul udara, debu dan awan lalu tiba dari semua arah — {{t:diffuse-radiation}}. Cahaya terserak menyebabkan kulit boleh terbakar walaupun mendung dan panel suria masih menjana kuasa."
+     },
+     "defines": [
+      "direct-radiation",
+      "diffuse-radiation"
+     ],
+     "src": [
+      "PAM:45",
+      "ESS:44"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "一个表面把照到它的阳光反射掉的比例，叫{{t:albedo}}。新雪可以反射 75–95 %，厚云 60–90 %；森林只有 3–10 %，水面约 10 %。颜色越深、越粗糙，反照率越低，吸收的热越多。",
+      "en": "The share of incoming sunlight a surface reflects is its {{t:albedo}}. Fresh snow reflects 75–95 %, thick cloud 60–90 %; forest only 3–10 % and water about 10 %. The darker and rougher a surface, the lower its albedo and the more heat it absorbs.",
+      "ms": "Bahagian cahaya matahari yang dipantulkan oleh sesuatu permukaan ialah {{t:albedo}}nya. Salji baharu memantulkan 75–95 %, awan tebal 60–90 %; hutan hanya 3–10 % dan air kira-kira 10 %. Semakin gelap dan kasar permukaan, semakin rendah albedonya dan semakin banyak haba diserap."
+     },
+     "defines": [
+      "albedo"
+     ],
+     "src": [
+      "ESS:44"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "ESS:44",
+      "PAM:50"
+     ],
+     "caption": {
+      "zh": "几种表面的反照率",
+      "en": "Albedo of some surfaces",
+      "ms": "Albedo beberapa permukaan"
+     },
+     "headers": [
+      {
+       "zh": "表面",
+       "en": "Surface",
+       "ms": "Permukaan"
+      },
+      {
+       "zh": "反照率",
+       "en": "Albedo",
+       "ms": "Albedo"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "新雪",
+        "en": "Fresh snow",
+        "ms": "Salji baharu"
+       },
+       {
+        "zh": "75–95 %",
+        "en": "75–95 %",
+        "ms": "75–95 %"
+       }
+      ],
+      [
+       {
+        "zh": "厚云",
+        "en": "Thick cloud",
+        "ms": "Awan tebal"
+       },
+       {
+        "zh": "60–90 %",
+        "en": "60–90 %",
+        "ms": "60–90 %"
+       }
+      ],
+      [
+       {
+        "zh": "沙地",
+        "en": "Sand",
+        "ms": "Pasir"
+       },
+       {
+        "zh": "15–45 %",
+        "en": "15–45 %",
+        "ms": "15–45 %"
+       }
+      ],
+      [
+       {
+        "zh": "一般作物",
+        "en": "Crops in general",
+        "ms": "Tanaman umum"
+       },
+       {
+        "zh": "23–25 %",
+        "en": "23–25 %",
+        "ms": "23–25 %"
+       }
+      ],
+      [
+       {
+        "zh": "草地",
+        "en": "Grassland",
+        "ms": "Padang rumput"
+       },
+       {
+        "zh": "10–30 %",
+        "en": "10–30 %",
+        "ms": "10–30 %"
+       }
+      ],
+      [
+       {
+        "zh": "淹水的稻田",
+        "en": "Flooded rice field",
+        "ms": "Sawah bertakung"
+       },
+       {
+        "zh": "12 %",
+        "en": "12 %",
+        "ms": "12 %"
+       }
+      ],
+      [
+       {
+        "zh": "水面（日平均）",
+        "en": "Water (daily average)",
+        "ms": "Air (purata harian)"
+       },
+       {
+        "zh": "10 %",
+        "en": "10 %",
+        "ms": "10 %"
+       }
+      ],
+      [
+       {
+        "zh": "森林",
+        "en": "Forest",
+        "ms": "Hutan"
+       },
+       {
+        "zh": "3–10 %",
+        "en": "3–10 %",
+        "ms": "3–10 %"
+       }
+      ],
+      [
+       {
+        "zh": "地球和大气整体",
+        "en": "Earth and atmosphere together",
+        "ms": "Bumi dan atmosfera keseluruhan"
+       },
+       {
+        "zh": "30 %",
+        "en": "30 %",
+        "ms": "30 %"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "一年平均下来，地球和大气接收的能量和送走的能量刚好相等，这叫{{t:energy-balance}}。把到达大气顶端的阳光算成 100：30 被反射回太空，19 被大气和云吸收，51 被地面吸收。下图可以一条一条点开看。",
+      "en": "Averaged over a year, the energy the Earth and its atmosphere receive equals the energy they send away: the {{t:energy-balance}}. Call the sunlight reaching the top of the atmosphere 100: 30 is reflected back to space, 19 is absorbed by the air and clouds, and 51 by the surface. Tap through the arrows below.",
+      "ms": "Dipuratakan sepanjang tahun, tenaga yang diterima Bumi dan atmosferanya sama dengan tenaga yang dihantar keluar: {{t:energy-balance}}. Anggap cahaya matahari di bahagian atas atmosfera 100: 30 dipantulkan kembali ke angkasa, 19 diserap udara dan awan, dan 51 oleh permukaan. Ketik setiap anak panah di bawah."
+     },
+     "defines": [
+      "energy-balance"
+     ],
+     "src": [
+      "ESS:44-45"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W3"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "地面拿到的 51 怎样用掉？23 用来把水蒸发成水汽，这部分热暂时“藏”起来，叫{{t:latent-heat}}，等水汽在高空凝结成云时才放出来；7 直接加热贴地的空气，叫{{t:sensible-heat}}；其余以红外线形式送出。",
+      "en": "How are the surface's 51 units spent? 23 evaporate water, and that heat is stored out of sight — {{t:latent-heat}} — until the vapour condenses into cloud high up; 7 heat the air touching the ground directly — {{t:sensible-heat}}; the rest leaves as infrared.",
+      "ms": "Bagaimana 51 unit permukaan digunakan? 23 menyejatkan air, dan haba itu tersimpan tanpa kelihatan — {{t:latent-heat}} — sehingga wap terkondensasi menjadi awan di atas; 7 memanaskan udara yang menyentuh tanah secara terus — {{t:sensible-heat}}; selebihnya keluar sebagai inframerah."
+     },
+     "defines": [
+      "latent-heat",
+      "sensible-heat"
+     ],
+     "src": [
+      "ESS:44",
+      "PAM:47-48"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "温室效应",
+    "en": "The greenhouse effect",
+    "ms": "Kesan rumah hijau"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "阳光（短波）大多能穿过大气，但地面发出的红外线（长波）大部分被水汽、二氧化碳、甲烷、一氧化二氮、臭氧和云吸收，它们再把一部分热送回地面。这就是{{t:greenhouse-effect}}。没有它，地球平均温度会是约 −15 °C，而不是 +15 °C。",
+      "en": "Sunlight (short waves) passes through the atmosphere fairly freely, but most of the infrared (long waves) from the ground is absorbed by water vapour, carbon dioxide, methane, nitrous oxide, ozone and clouds, which send part of it back down. This is the {{t:greenhouse-effect}}. Without it the Earth would average about −15 °C instead of +15 °C.",
+      "ms": "Cahaya matahari (gelombang pendek) melalui atmosfera dengan agak bebas, tetapi kebanyakan inframerah (gelombang panjang) dari tanah diserap oleh wap air, karbon dioksida, metana, nitrus oksida, ozon dan awan, yang menghantar sebahagiannya kembali ke bawah. Inilah {{t:greenhouse-effect}}. Tanpanya Bumi akan berpurata kira-kira −15 °C, bukan +15 °C."
+     },
+     "defines": [
+      "greenhouse-effect"
+     ],
+     "src": [
+      "PAM:53-54",
+      "ESS:39"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "myth",
+     "text": {
+      "zh": "温室效应本身不是坏事，没有它地球会冻结。问题是人类排放的二氧化碳让它变强，地球因此变暖。第 15 章会讲。",
+      "en": "The greenhouse effect itself is not a bad thing: without it the Earth would freeze. The problem is that human carbon dioxide is making it stronger, and the planet is warming. Chapter 15 covers this.",
+      "ms": "Kesan rumah hijau itu sendiri bukan perkara buruk: tanpanya Bumi akan membeku. Masalahnya, karbon dioksida daripada manusia menjadikannya lebih kuat dan planet ini semakin panas. Bab 15 membincangkannya."
+     },
+     "src": [
+      "PAM:55"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "云在晚上像一张被子：它吸收地面的红外线，又发回地面，所以有云的晚上比晴朗的晚上暖。白天云又挡住阳光，所以阴天白天比较凉。",
+      "en": "At night clouds act like a blanket, absorbing the ground's infrared and sending it back, so cloudy nights are warmer than clear ones. By day they block sunlight, so cloudy days are cooler.",
+      "ms": "Pada waktu malam awan bertindak seperti selimut, menyerap inframerah dari tanah dan menghantarnya kembali, jadi malam berawan lebih panas daripada malam cerah. Pada siang hari awan menghalang cahaya matahari, jadi hari berawan lebih sejuk."
+     },
+     "src": [
+      "ESS:39"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "四季，以及赤道附近为什么没有四季",
+    "en": "Seasons — and why the equator hardly has them",
+    "ms": "Musim — dan mengapa khatulistiwa hampir tiada musim"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "note",
+     "kind": "myth",
+     "text": {
+      "zh": "四季不是因为地球离太阳时近时远。地球其实在 1 月初最靠近太阳（约 1.47 亿公里），7 月初最远（约 1.52 亿公里），但北半球 1 月是冬天。",
+      "en": "Seasons are not caused by the Earth's changing distance from the Sun. The Earth is actually closest in early January (about 147 million km) and farthest in early July (about 152 million km), yet January is winter in the Northern Hemisphere.",
+      "ms": "Musim bukan disebabkan oleh perubahan jarak Bumi dari Matahari. Bumi sebenarnya paling dekat pada awal Januari (kira-kira 147 juta km) dan paling jauh pada awal Julai (kira-kira 152 juta km), namun Januari ialah musim sejuk di Hemisfera Utara."
+     },
+     "src": [
+      "ESS:46"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "真正的原因是地球的自转轴倾斜了约 23½°。一年中太阳轮流直射北半球和南半球：太阳越高，阳光越集中；白天越长，收到的能量越多。6 月 21 日前后太阳直射北纬 23½°，12 月 21 日前后直射南纬 23½°，3 月和 9 月直射赤道。",
+      "en": "The real reason is that the Earth's axis is tilted by about 23½°. Through the year the Sun shines most directly on the Northern and then the Southern Hemisphere: a higher Sun concentrates its light, and a longer day delivers more of it. Around 21 June the noon Sun is overhead at 23½°N, around 21 December at 23½°S, and in March and September over the equator.",
+      "ms": "Sebab sebenar ialah paksi Bumi condong kira-kira 23½°. Sepanjang tahun Matahari menyinari Hemisfera Utara dan kemudian Selatan secara paling terus: Matahari yang lebih tinggi menumpukan cahayanya, dan siang yang lebih panjang membawa lebih banyak tenaga. Sekitar 21 Jun Matahari tengah hari tegak di atas 23½°U, sekitar 21 Disember di atas 23½°S, dan pada Mac serta September di atas khatulistiwa."
+     },
+     "src": [
+      "ESS:49-50",
+      "PAM:44"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "马来西亚就在赤道以北不远。这里一年到头白天都约 12 小时，正午太阳都很高，一年还有两次太阳会正好在头顶。所以赤道附近没有明显的冷热四季；我们的“季节”主要是雨季和旱季，由风决定（第 16 章）。",
+      "en": "Malaysia lies just north of the equator. Here the day is close to 12 hours long all year, the noon Sun is always high, and twice a year it passes straight overhead. That is why there is no real hot-and-cold cycle of seasons near the equator; our ‘seasons’ are wetter and drier spells, set by the winds (Chapter 16).",
+      "ms": "Malaysia terletak tidak jauh di utara khatulistiwa. Di sini siang hampir 12 jam sepanjang tahun, Matahari tengah hari sentiasa tinggi, dan dua kali setahun ia melintas tegak di atas kepala. Itulah sebabnya tiada kitaran musim panas dan sejuk yang ketara berhampiran khatulistiwa; ‘musim’ kita ialah tempoh lebih basah dan lebih kering, ditentukan oleh angin (Bab 16)."
+     },
+     "src": [
+      "ESS:49-50"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W2"
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "在吉隆坡，太阳最高的时刻不是 12 点，而是下午 1 点多。马来西亚用的是东经 120° 的时区（UTC+8），但吉隆坡在东经约 101.7°，太阳要晚一个多小时才走到正南（或正北）方。",
+      "en": "In Kuala Lumpur the Sun is highest not at 12 noon but after 1 pm. Malaysia keeps the time zone of longitude 120°E (UTC+8), while Kuala Lumpur lies near 101.7°E, so the Sun reaches its highest point more than an hour later by the clock.",
+      "ms": "Di Kuala Lumpur, Matahari paling tinggi bukan pada jam 12 tengah hari tetapi selepas jam 1 petang. Malaysia menggunakan zon waktu longitud 120°T (UTC+8), sedangkan Kuala Lumpur terletak kira-kira 101.7°T, jadi Matahari mencapai titik tertingginya lebih sejam kemudian mengikut jam."
+     },
+     "src": [
+      "NOAA-EOT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "heading": {
+    "zh": "地面的能量账：净辐射",
+    "en": "The surface energy account: net radiation",
+    "ms": "Akaun tenaga permukaan: sinaran bersih"
+   },
+   "level": "advanced",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "地面收到的短波减去反射掉的，再减去净送出的长波，叫净辐射 Rn = Rs(1 − r) − RL。白天 Rn 是正的，晚上没有阳光，Rn 是负的，地面一直在失热。",
+      "en": "Incoming shortwave minus what is reflected, minus the net longwave lost, is the net radiation Rn = Rs(1 − r) − RL. By day Rn is positive; at night there is no sunlight, Rn is negative and the ground keeps losing heat.",
+      "ms": "Gelombang pendek masuk tolak yang dipantulkan, tolak gelombang panjang bersih yang hilang, ialah sinaran bersih Rn = Rs(1 − r) − RL. Pada siang hari Rn positif; pada waktu malam tiada cahaya matahari, Rn negatif dan tanah terus kehilangan haba."
+     },
+     "src": [
+      "PAM:46-48"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "净辐射被分成三份：加热空气的感热 H、蒸发水的潜热 LE、传进土里的地热 G，即 Rn = H + LE + G。在理想的裸地上大约是感热 57 %、潜热 30 %、地热 13 %。土越湿，潜热占得越多；水面上潜热大于感热；沙漠几乎没有潜热。",
+      "en": "Net radiation is shared three ways — sensible heat H warming the air, latent heat LE evaporating water and ground heat G conducted into the soil — so Rn = H + LE + G. On ideal bare ground the split is roughly 57 % sensible, 30 % latent, 13 % ground. Wetter soil shifts more into latent heat; over water latent exceeds sensible; in a desert there is almost none.",
+      "ms": "Sinaran bersih dibahagi tiga — haba deria H memanaskan udara, haba pendam LE menyejatkan air dan haba tanah G dikonduksi ke dalam tanah — jadi Rn = H + LE + G. Di atas tanah terdedah yang ideal, pembahagiannya kira-kira 57 % deria, 30 % pendam, 13 % tanah. Tanah lebih basah mengalihkan lebih banyak ke haba pendam; di atas air haba pendam melebihi haba deria; di gurun hampir tiada."
+     },
+     "src": [
+      "PAM:47-49"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "radiation",
+  "shortwave",
+  "longwave",
+  "direct-radiation",
+  "diffuse-radiation",
+  "albedo",
+  "energy-balance",
+  "latent-heat",
+  "sensible-heat",
+  "greenhouse-effect"
+ ]
+}

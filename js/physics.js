@@ -132,7 +132,7 @@ export function cape(env, parcel) {
 
 /* --- Sun --- */
 
-const declination = doy => 23.44 * Math.sin(2 * Math.PI * (284 + doy) / 365);  // Cooper (1969), degrees
+export const declination = doy => 23.44 * Math.sin(2 * Math.PI * (284 + doy) / 365);  // Cooper (1969), degrees
 
 // Sunrise to sunset with the Sun's centre at −0.833° (refraction + radius),
 // the convention almanacs use.
@@ -247,4 +247,19 @@ export function atmosphereAt(zM) {
   const tK = tb + l * (H - hb);
   p = l === 0 ? p * Math.exp(-G * (H - hb) / (RD * tb)) : p * (tK / tb) ** (-G / (RD * l));
   return { tC: tK - K0, pHpa: p / 100, layer: LAYER_TOPS.find(([top]) => zM < top)[1] };
+}
+
+/* --- Clock time of the Sun ---
+   Equation of time (minutes), NOAA's Spencer-series form: how far the
+   real Sun runs ahead of (+) or behind (−) an even clock. */
+export function equationOfTime(doy) {
+  const g = 2 * Math.PI / 365 * (doy - 1);
+  return 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+}
+
+// Clock time (hours) when the Sun is highest, at a longitude, in a time zone
+// UTC+tz. Malaysia keeps UTC+8 although Kuala Lumpur sits near 101.7°E, so
+// the Sun peaks there after 1 pm.
+export function solarNoon(lonDeg, doy, tz) {
+  return (720 - 4 * lonDeg - equationOfTime(doy) + 60 * tz) / 60;
 }

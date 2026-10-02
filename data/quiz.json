@@ -368,5 +368,301 @@
    "en": "8 and above is the top band: avoid being outside around midday.",
    "ms": "8 ke atas ialah jalur tertinggi: elakkan berada di luar sekitar tengah hari."
   }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "为什么北半球 1 月是冬天，虽然那时地球离太阳最近？",
+   "en": "Why is January winter in the Northern Hemisphere, though the Earth is then closest to the Sun?",
+   "ms": "Mengapa Januari musim sejuk di Hemisfera Utara walaupun Bumi paling dekat dengan Matahari ketika itu?"
+  },
+  "options": [
+   {
+    "zh": "那时北半球偏离太阳，太阳低、白天短",
+    "en": "The north is tilted away: low Sun, short days",
+    "ms": "Utara condong menjauhi Matahari: Matahari rendah, siang pendek"
+   },
+   {
+    "zh": "太阳那时比较暗",
+    "en": "The Sun is dimmer then",
+    "ms": "Matahari lebih malap ketika itu"
+   },
+   {
+    "zh": "云特别多",
+    "en": "There is more cloud",
+    "ms": "Lebih banyak awan"
+   },
+   {
+    "zh": "海洋变冷",
+    "en": "The oceans cool",
+    "ms": "Lautan menjadi sejuk"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季节来自地轴倾斜：太阳高度和白天长度的变化，比距离的变化重要得多。",
+   "en": "Seasons come from the tilted axis: changes in Sun height and day length matter far more than distance.",
+   "ms": "Musim berpunca daripada paksi condong: perubahan ketinggian Matahari dan panjang siang jauh lebih penting daripada jarak."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "下面哪种表面的反照率最低？",
+   "en": "Which surface has the lowest albedo?",
+   "ms": "Permukaan manakah mempunyai albedo paling rendah?"
+  },
+  "options": [
+   {
+    "zh": "新雪",
+    "en": "Fresh snow",
+    "ms": "Salji baharu"
+   },
+   {
+    "zh": "厚云",
+    "en": "Thick cloud",
+    "ms": "Awan tebal"
+   },
+   {
+    "zh": "森林",
+    "en": "Forest",
+    "ms": "Hutan"
+   },
+   {
+    "zh": "沙地",
+    "en": "Sand",
+    "ms": "Pasir"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "森林颜色深、表面粗糙，只反射 3–10 % 的阳光。",
+   "en": "Forest is dark and rough and reflects only 3–10 % of sunlight.",
+   "ms": "Hutan gelap dan kasar serta hanya memantulkan 3–10 % cahaya matahari."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "为什么有云的晚上比晴朗的晚上暖？",
+   "en": "Why are cloudy nights warmer than clear ones?",
+   "ms": "Mengapa malam berawan lebih panas daripada malam cerah?"
+  },
+  "options": [
+   {
+    "zh": "云会发光",
+    "en": "Clouds give off light",
+    "ms": "Awan memancarkan cahaya"
+   },
+   {
+    "zh": "云吸收地面的红外线，又发回地面",
+    "en": "Clouds absorb the ground's infrared and send it back",
+    "ms": "Awan menyerap inframerah tanah dan menghantarnya kembali"
+   },
+   {
+    "zh": "云里有热空气",
+    "en": "Clouds contain hot air",
+    "ms": "Awan mengandungi udara panas"
+   },
+   {
+    "zh": "云挡住了风",
+    "en": "Clouds stop the wind",
+    "ms": "Awan menghalang angin"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "云是很好的长波吸收体和发射体，像被子一样减少地面失热。",
+   "en": "Clouds absorb and emit longwave well, acting like a blanket on the ground's heat loss.",
+   "ms": "Awan menyerap dan memancarkan gelombang panjang dengan baik, bertindak seperti selimut terhadap kehilangan haba tanah."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "地面吸收的阳光，最大的一份拿去做什么？",
+   "en": "What takes the biggest share of the sunlight the surface absorbs?",
+   "ms": "Apakah yang mengambil bahagian terbesar cahaya matahari yang diserap permukaan?"
+  },
+  "options": [
+   {
+    "zh": "蒸发水（潜热）",
+    "en": "Evaporating water (latent heat)",
+    "ms": "Menyejatkan air (haba pendam)"
+   },
+   {
+    "zh": "加热空气（感热）",
+    "en": "Heating the air (sensible heat)",
+    "ms": "Memanaskan udara (haba deria)"
+   },
+   {
+    "zh": "融化冰",
+    "en": "Melting ice",
+    "ms": "Mencairkan ais"
+   },
+   {
+    "zh": "被土壤储存",
+    "en": "Stored in the soil",
+    "ms": "Disimpan dalam tanah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "51 份里有 23 份用来蒸发水。",
+   "en": "23 of the 51 units go into evaporating water.",
+   "ms": "23 daripada 51 unit digunakan untuk menyejatkan air."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "晴天里，吉隆坡的最高气温通常出现在什么时候？",
+   "en": "On a sunny day in Kuala Lumpur, when is it usually warmest?",
+   "ms": "Pada hari cerah di Kuala Lumpur, bilakah biasanya paling panas?"
+  },
+  "options": [
+   {
+    "zh": "日出时",
+    "en": "At sunrise",
+    "ms": "Ketika matahari terbit"
+   },
+   {
+    "zh": "正午 12 点",
+    "en": "At 12 noon",
+    "ms": "Pada jam 12 tengah hari"
+   },
+   {
+    "zh": "下午约 2 点",
+    "en": "Around 2 pm",
+    "ms": "Sekitar jam 2 petang"
+   },
+   {
+    "zh": "半夜",
+    "en": "At midnight",
+    "ms": "Pada tengah malam"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "只要收到的能量多过失去的，气温就继续升，所以最高温落后于太阳最高的时刻。",
+   "en": "Temperature keeps rising while energy gained exceeds energy lost, so the warmest hour lags the highest Sun.",
+   "ms": "Suhu terus naik selagi tenaga diterima melebihi yang hilang, jadi jam paling panas lewat daripada Matahari tertinggi."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "哪一种天气的日较差最小？",
+   "en": "Which weather gives the smallest daily range?",
+   "ms": "Cuaca manakah memberikan julat harian paling kecil?"
+  },
+  "options": [
+   {
+    "zh": "晴朗无风",
+    "en": "Clear and calm",
+    "ms": "Cerah dan tenang"
+   },
+   {
+    "zh": "整天阴雨",
+    "en": "Overcast and rainy all day",
+    "ms": "Mendung dan hujan sepanjang hari"
+   },
+   {
+    "zh": "晴天有风",
+    "en": "Sunny and windy",
+    "ms": "Cerah dan berangin"
+   },
+   {
+    "zh": "沙漠的晴天",
+    "en": "A clear desert day",
+    "ms": "Hari cerah di gurun"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "云白天挡阳光、晚上保暖，例子里的阴雨天日较差只有约 2 °C。",
+   "en": "Cloud blocks sun by day and keeps heat in by night; the overcast example had a range of only about 2 °C.",
+   "ms": "Awan menghalang matahari pada siang dan menyimpan haba pada malam; contoh hari mendung mempunyai julat hanya kira-kira 2 °C."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "为什么气温要在阴凉通风的百叶箱里量？",
+   "en": "Why is air temperature measured in a shaded, ventilated shelter?",
+   "ms": "Mengapa suhu udara diukur dalam pelindung teduh dan berongga?"
+  },
+  "options": [
+   {
+    "zh": "保护温度计不被偷",
+    "en": "To stop theft",
+    "ms": "Untuk mengelakkan kecurian"
+   },
+   {
+    "zh": "太阳会把温度计本身晒热，量到的不是空气的温度",
+    "en": "Sunshine heats the thermometer itself, so it would not read the air",
+    "ms": "Cahaya matahari memanaskan termometer itu sendiri, jadi ia tidak membaca suhu udara"
+   },
+   {
+    "zh": "让读数比较高",
+    "en": "To make readings higher",
+    "ms": "Supaya bacaan lebih tinggi"
+   },
+   {
+    "zh": "为了挡雨",
+    "en": "Only to keep rain off",
+    "ms": "Hanya untuk menghalang hujan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "温度计要和空气同温，所以要遮阳又要通风。",
+   "en": "The thermometer must match the air, so it needs shade and air flow.",
+   "ms": "Termometer mesti sama suhu dengan udara, jadi ia perlukan teduh dan aliran udara."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "吉隆坡 2025 年的年较差大约是多少？",
+   "en": "Roughly what was Kuala Lumpur's annual range in 2025?",
+   "ms": "Kira-kira berapakah julat tahunan Kuala Lumpur pada 2025?"
+  },
+  "options": [
+   {
+    "zh": "不到 4 °C",
+    "en": "Under 4 °C",
+    "ms": "Kurang daripada 4 °C"
+   },
+   {
+    "zh": "约 10 °C",
+    "en": "About 10 °C",
+    "ms": "Kira-kira 10 °C"
+   },
+   {
+    "zh": "约 20 °C",
+    "en": "About 20 °C",
+    "ms": "Kira-kira 20 °C"
+   },
+   {
+    "zh": "约 30 °C",
+    "en": "About 30 °C",
+    "ms": "Kira-kira 30 °C"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "各月平均只在 26.1 到 29.7 °C 之间——赤道气候的特点。",
+   "en": "The monthly means spanned only 26.1 to 29.7 °C — typical of the equatorial climate.",
+   "ms": "Purata bulanan hanya antara 26.1 hingga 29.7 °C — ciri iklim khatulistiwa."
+  }
  }
 ]

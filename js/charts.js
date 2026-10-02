@@ -26,7 +26,13 @@ const sizeFor = host => {
   return { W, H: Math.round(W < 480 ? W * 0.68 : W * 0.46) };
 };
 
-const xLabel = (v, format) => (format === 'hour' ? `${String(v).padStart(2, '0')}:00` : String(v));
+const MONTHS = {
+  zh: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+  en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  ms: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Ogo', 'Sep', 'Okt', 'Nov', 'Dis'],
+};
+let LANG = 'en';
+const xLabel = (v, format) => (format === 'hour' ? `${String(v).padStart(2, '0')}:00` : format === 'month' ? MONTHS[LANG][v - 1] : String(v));
 
 function domain(values) {
   const lo = Math.min(...values), hi = Math.max(...values);
@@ -45,6 +51,7 @@ export function render(spec, { lang }) {
 }
 
 function draw(host, spec, data, lang) {
+  LANG = lang;
   const { W, H } = sizeFor(host);
   const col = name => data.columns.indexOf(name);
   const xs = data.rows.map(r => r[col(spec.x.col)]);

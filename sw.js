@@ -9,12 +9,14 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-5a66f0eaa9';
+const CACHE = 'meteo-1f376ebb3c';
 const ASSETS = [
   './',
   'css/app.css',
   'data/ch01.json',
   'data/ch02.json',
+  'data/ch03.json',
+  'data/ch04.json',
   'data/ch05.json',
   'data/datasets.json',
   'data/index.json',
@@ -23,6 +25,8 @@ const ASSETS = [
   'data/quiz.json',
   'data/releases.json',
   'data/series/kl-humidity-2025.json',
+  'data/series/kl-monthly-2025.json',
+  'data/series/kl-sunny-cloudy-2025.json',
   'data/sources.json',
   'data/terms.json',
   'favicon.ico',
@@ -80,6 +84,8 @@ const ASSETS = [
   'js/widgets/index.js',
   'js/widgets/kit.js',
   'js/widgets/w1.js',
+  'js/widgets/w2.js',
+  'js/widgets/w3.js',
   'js/widgets/w5.js',
   'manifest.webmanifest',
 ];

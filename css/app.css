@@ -436,3 +436,21 @@ a.chip { color: var(--ink-2); text-decoration: none; }
 .band-1 { fill: var(--surface); }
 .band-label { fill: var(--muted); font-size: 11.5px; font-weight: 650; }
 .w-level { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 3; }
+.w-row { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 12px; align-items: center; }
+@media (max-width: 420px) { .w-row { grid-template-columns: minmax(0, 1fr); } .w-gauge { max-width: 160px; justify-self: center; } }
+.w-gauge { width: 100%; height: auto; }
+.gauge-arc { fill: none; stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.gauge-ground { stroke: var(--ink-2); stroke-width: 1.5; }
+.gauge-ray { stroke: var(--sun); stroke-width: 2; }
+.gauge-sun { fill: var(--sun); }
+.zone-space { fill: var(--surface-2); }
+.zone-atm { fill: var(--key-bg); }
+.zone-ground { fill: var(--map-land); }
+.zone-label { fill: var(--muted); font-size: 11.5px; font-weight: 650; }
+.budget-arrow { cursor: pointer; opacity: .85; }
+.budget-arrow:hover, .budget-arrow.is-on, .budget-arrow:focus-visible { opacity: 1; outline: none; }
+.budget-arrow.is-on line { filter: drop-shadow(0 0 3px var(--accent)); }
+.budget-n { font-size: 13px; font-weight: 700; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; }
+.w-explain { font-size: .92rem; min-height: 3em; margin: 8px 0 0; }
+:root { --cloud-ink: #8aa0c2; } :root[data-theme="dark"] { --cloud-ink: #9fb3d6; }
+.gauge-side { fill: var(--muted); font-size: 10px; font-weight: 650; }
