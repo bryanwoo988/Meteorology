@@ -8,6 +8,22 @@
   "accessed": ""
  },
  {
+  "id": "AMS-MP",
+  "short": "AMS Glossary",
+  "title": "Marshall–Palmer relation",
+  "publisher": "American Meteorological Society, Glossary of Meteorology",
+  "url": "https://glossary.ametsoc.org/wiki/marshall-palmer-relation/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "ARGO",
+  "short": "Argo",
+  "title": "About Argo",
+  "publisher": "Argo Program (UC San Diego)",
+  "url": "https://argo.ucsd.edu/about/",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "ASMC",
   "short": "ASMC",
   "title": "About ASMC",
@@ -29,6 +45,22 @@
   "title": "Daily hotspot count and FAQ (fire detection algorithm)",
   "publisher": "ASEAN Specialised Meteorological Centre",
   "url": "https://asmc.asean.org/asmc-haze-hotspot-daily-new/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "AWS-HIMAWARI",
+  "short": "AWS Open Data",
+  "title": "JMA Himawari-8/9 on the Registry of Open Data on AWS",
+  "publisher": "NOAA Open Data Dissemination / Amazon Web Services",
+  "url": "https://registry.opendata.aws/noaa-himawari/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "BLITZORTUNG",
+  "short": "Blitzortung.org",
+  "title": "Cover your area — project description",
+  "publisher": "Blitzortung.org",
+  "url": "https://www.blitzortung.org/en/cover_your_area.php",
   "accessed": "2026-10-02"
  },
  {
@@ -80,6 +112,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "ESA-S1",
+  "short": "Copernicus",
+  "title": "Sentinel-1: all-weather, day-and-night radar imagery",
+  "publisher": "ESA / Copernicus",
+  "url": "https://sentinels.copernicus.eu/copernicus/sentinel-1",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "ESS",
   "short": "Ahrens 2010",
   "title": "Essentials of Meteorology: An Invitation to the Atmosphere, 6th ed.",
@@ -109,6 +149,14 @@
   "title": "Glossary (Rainy day: rainfall in a day of 2.5 mm or more)",
   "publisher": "India Meteorological Department, Pune",
   "url": "https://www.imdpune.gov.in/Reports/glossary.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "JMA-AHI",
+  "short": "JMA",
+  "title": "Himawari-8/9 Advanced Himawari Imager (AHI): bands and observation schedule",
+  "publisher": "Japan Meteorological Agency, Meteorological Satellite Center",
+  "url": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html",
   "accessed": "2026-10-02"
  },
  {
@@ -168,6 +216,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "MET-RADAR",
+  "short": "MetMalaysia",
+  "title": "Radar Malaysia (radar echo images)",
+  "publisher": "Malaysian Meteorological Department",
+  "url": "https://www.met.gov.my/en/pencerapan/radar-malaysia/",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "MET-WARN-RAIN",
   "short": "MetMalaysia",
   "title": "Kriteria amaran hujan berterusan",
@@ -208,11 +264,43 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "NASA-GPM-DPR",
+  "short": "NASA GPM",
+  "title": "GPM Dual-frequency Precipitation Radar (DPR)",
+  "publisher": "NASA Global Precipitation Measurement",
+  "url": "https://gpm.nasa.gov/missions/GPM/DPR",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NASA-WORLDVIEW",
+  "short": "NASA Worldview",
+  "title": "NASA Worldview — interactive satellite imagery",
+  "publisher": "NASA Earth Science Data Systems",
+  "url": "https://worldview.earthdata.nasa.gov/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NDBC-STATIONS",
+  "short": "NOAA NDBC",
+  "title": "Active stations and station table (TAO, RAMA, PIRATA positions)",
+  "publisher": "NOAA National Data Buoy Center",
+  "url": "https://www.ndbc.noaa.gov/",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "NEWS-FMT-2026",
   "short": "FMT",
   "title": "Haze clears further, no unhealthy API readings, 2 October 2026",
   "publisher": "Free Malaysia Today",
   "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/02/haze-clears-further-no-unhealthy-api-readings",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NEWS-MM-2025",
+  "short": "Malay Mail / Bernama",
+  "title": "Wet spell warning: heavy rain to lash Kelantan, Terengganu, Pahang first… (MetMalaysia station counts), 8 October 2025",
+  "publisher": "Malay Mail (Bernama)",
+  "url": "https://www.malaymail.com/news/malaysia/2025/10/08/wet-spell-warning-heavy-rain-to-lash-kelantan-terengganu-pahang-first-then-johor-sabah-sarawak-in-novmarch-monsoon/193953",
   "accessed": "2026-10-02"
  },
  {
@@ -264,6 +352,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "NOAA-SKEWT",
+  "short": "NOAA JetStream",
+  "title": "Skew-T Log-P diagrams",
+  "publisher": "NOAA National Weather Service, JetStream",
+  "url": "https://www.noaa.gov/jetstream/upperair/skew-t-log-p-diagrams",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "NOAA-SURGE",
   "short": "NOAA",
   "title": "What is the difference between storm surge and storm tide?",
@@ -285,6 +381,14 @@
   "title": "Weather Glossary: C's (CAPE, CIN)",
   "publisher": "NOAA National Weather Service JetStream",
   "url": "https://www.noaa.gov/jetstream/appendix/weather-glossary-c",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NWS-ZR",
+  "short": "NWS Tallahassee",
+  "title": "Reflectivity–rainfall rate relationships in operational meteorology (J. D. Fournier, 1999)",
+  "publisher": "US National Weather Service, Tallahassee",
+  "url": "https://www.weather.gov/tae/research-zrpaper",
   "accessed": "2026-10-02"
  },
  {
@@ -312,6 +416,14 @@
   "accessed": ""
  },
  {
+  "id": "PMEL-TAO",
+  "short": "NOAA PMEL",
+  "title": "Pacific Ocean — TAO (Global Tropical Moored Buoy Array)",
+  "publisher": "NOAA Pacific Marine Environmental Laboratory",
+  "url": "https://www.pmel.noaa.gov/gtmba/pmel-theme/pacific-ocean-tao",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "STULL2011",
   "short": "Stull 2011",
   "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature",
@@ -334,6 +446,14 @@
   "publisher": "NOAA, NASA and US Air Force, 1976",
   "url": "",
   "accessed": ""
+ },
+ {
+  "id": "UWYO-SND",
+  "short": "Univ. of Wyoming",
+  "title": "Upper air soundings archive — KLIA Sepang (48650), 00 UTC 30 Sep 2026",
+  "publisher": "University of Wyoming, Department of Atmospheric Science",
+  "url": "https://weather.uwyo.edu/upperair/sounding.shtml",
+  "accessed": "2026-10-02"
  },
  {
   "id": "WHO-UV",
@@ -368,6 +488,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "WMO-ABO",
+  "short": "WMO",
+  "title": "Aircraft-Based Observations Programme",
+  "publisher": "World Meteorological Organization",
+  "url": "https://community.wmo.int/en/activity-areas/aircraft-based-observations",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "WMO-CAP",
   "short": "WMO",
   "title": "Leveraging the Common Alerting Protocol and Cell Broadcast technology for advancing Early Warnings for All",
@@ -389,6 +517,14 @@
   "title": "WMO Normals 1991–2020: Format and Descriptors (Table 1, principal climatological surface parameters)",
   "publisher": "NOAA NCEI archive of WMO Climatological Standard Normals",
   "url": "https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/6.6/data/0-data/documents/WMO_Normals_9120_Format_and_Parameters.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-OSCAR",
+  "short": "WMO OSCAR",
+  "title": "OSCAR/Space — satellite pages (orbit, longitude, status), checked 2 Oct 2026",
+  "publisher": "World Meteorological Organization",
+  "url": "https://space.oscar.wmo.int/satellites",
   "accessed": "2026-10-02"
  }
 ]

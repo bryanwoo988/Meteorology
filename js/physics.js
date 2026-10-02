@@ -162,6 +162,12 @@ export function geostrophicWind(dpHpaPer100km, latDeg) {
 
 /* --- Radar --- */
 
+// Any Z = a R^b relation; defaults are Marshall–Palmer. The tropical
+// relation used by the US NWS for tropical rain is a = 250, b = 1.2.
+export function rainRateZR(dbz, a = 200, b = 1.6) {
+  return Math.pow(Math.pow(10, dbz / 10) / a, 1 / b);
+}
+
 // Marshall & Palmer (1948): Z = 200 R^1.6, Z in mm6 m-3, R in mm/h.
 export function dbzToRain(dbz) {
   if (!finite(dbz)) return null;
@@ -287,4 +293,18 @@ export function tropicalEnv(levels) {
     const z = Math.min(pressureToHeight(p) - z0, 16000);
     return { p, t: 28 - 6.5 * z / 1000 };
   });
+}
+
+/* --- Satellites --- */
+
+// How a geostationary satellite over the equator at satLon sees a place:
+// the Earth-centre angle between the place and the sub-satellite point,
+// and the satellite's elevation above the place's horizon (0° = on the horizon).
+const R_EARTH = 6371, R_GEO = 42164;
+export function geoView(latDeg, lonDeg, satLonDeg) {
+  const r = Math.PI / 180;
+  const c = Math.cos(latDeg * r) * Math.cos((lonDeg - satLonDeg) * r);
+  const gamma = Math.acos(Math.max(-1, Math.min(1, c)));
+  const elevation = gamma < 1e-9 ? 90 : Math.atan((Math.cos(gamma) - R_EARTH / R_GEO) / Math.sin(gamma)) / r;
+  return { centralAngle: gamma / r, elevation, visible: elevation > 0 };
 }

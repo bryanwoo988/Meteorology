@@ -808,5 +808,377 @@
     "url": "https://www.doe.gov.my/wp-content/uploads/2021/09/API_Calculation.pdf"
    }
   ]
+ },
+ {
+  "id": "uwyo-soundings",
+  "name": "Upper-air soundings (University of Wyoming archive)",
+  "provider": "University of Wyoming",
+  "what": {
+   "zh": "全世界探空站每天两次的探空资料，可以选文字表、CSV 或 Skew-T 图。第 25 章的 Skew-T 用的就是这里的吉隆坡国际机场资料。",
+   "en": "Twice-daily radiosonde data from stations worldwide, as a text list, CSV or Skew-T plot. Chapter 25's Skew-T uses the KLIA data from here.",
+   "ms": "Data radiosonde dua kali sehari dari stesen seluruh dunia, sebagai senarai teks, CSV atau plot Skew-T. Skew-T Bab 25 menggunakan data KLIA dari sini."
+  },
+  "resolution": {
+   "zh": "每个探空站",
+   "en": "Per station",
+   "ms": "Setiap stesen"
+  },
+  "update": {
+   "zh": "每天两次（00、12 UTC）",
+   "en": "Twice a day (00 and 12 UTC)",
+   "ms": "Dua kali sehari (00 dan 12 UTC)"
+  },
+  "format": "Text / CSV",
+  "licence": {
+   "text": "No licence stated by the archive; the soundings are radiosonde reports exchanged through WMO",
+   "url": "https://weather.uwyo.edu/upperair/sounding.shtml"
+  },
+  "params": [
+   {
+    "raw": "PRES",
+    "meaning": {
+     "zh": "气压",
+     "en": "Pressure",
+     "ms": "Tekanan"
+    },
+    "unit": "hPa",
+    "chapter": 22
+   },
+   {
+    "raw": "HGHT",
+    "meaning": {
+     "zh": "位势高度",
+     "en": "Geopotential height",
+     "ms": "Ketinggian geoupaya"
+    },
+    "unit": "m",
+    "chapter": 10
+   },
+   {
+    "raw": "TEMP / DWPT",
+    "meaning": {
+     "zh": "气温 / 露点",
+     "en": "Temperature / dew point",
+     "ms": "Suhu / takat embun"
+    },
+    "unit": "°C",
+    "chapter": 5
+   },
+   {
+    "raw": "DRCT / SPED",
+    "meaning": {
+     "zh": "风向 / 风速",
+     "en": "Wind direction / speed",
+     "ms": "Arah / kelajuan angin"
+    },
+    "unit": "° / m/s",
+    "chapter": 9
+   }
+  ],
+  "sample": {
+   "columns": [
+    "PRES",
+    "HGHT",
+    "TEMP",
+    "DWPT"
+   ],
+   "rows": [
+    [
+     "1000.2",
+     "102",
+     "25.5",
+     "20.6"
+    ],
+    [
+     "850.1",
+     "1522",
+     "18.4",
+     "11.6"
+    ],
+    [
+     "500.0",
+     "5886",
+     "-5.2",
+     "-12.6"
+    ]
+   ],
+   "source": "KLIA Sepang (48650), 00 UTC 30 Sep 2026",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "探空资料首页",
+     "en": "Sounding archive home",
+     "ms": "Laman arkib sonde"
+    },
+    "url": "https://weather.uwyo.edu/upperair/sounding.shtml"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "打开这次 KLIA 探空（文字表）",
+     "en": "Open this KLIA sounding (text list)",
+     "ms": "Buka sonde KLIA ini (senarai teks)"
+    },
+    "url": "https://weather.uwyo.edu/wsgi/sounding?datetime=2026-09-30%2000:00:00&id=48650&type=TEXT:LIST&src=BUFR"
+   }
+  ]
+ },
+ {
+  "id": "himawari-aws",
+  "name": "Himawari-9 AHI full disk (AWS)",
+  "provider": "JMA, distributed by NOAA on AWS",
+  "what": {
+   "zh": "Himawari-9 每 10 分钟一次的全圆盘原始资料，16 个波段，每个波段切成 10 段。",
+   "en": "Himawari-9's raw full-disc data every 10 minutes: 16 bands, each cut into 10 segments.",
+   "ms": "Data mentah cakera penuh Himawari-9 setiap 10 minit: 16 jalur, setiap satu dipotong kepada 10 segmen."
+  },
+  "resolution": "0.5–2 km",
+  "update": {
+   "zh": "每 10 分钟",
+   "en": "Every 10 minutes",
+   "ms": "Setiap 10 minit"
+  },
+  "format": "Himawari Standard Data (.DAT.bz2)",
+  "licence": {
+   "text": "Open data; JMA and NOAA request attribution",
+   "url": "https://registry.opendata.aws/noaa-himawari/"
+  },
+  "params": [
+   {
+    "raw": "B03",
+    "meaning": {
+     "zh": "第 3 波段，0.64 微米可见光，0.5 公里",
+     "en": "Band 3, 0.64 µm visible, 0.5 km",
+     "ms": "Jalur 3, 0.64 µm nampak, 0.5 km"
+    },
+    "unit": "—",
+    "chapter": 23
+   },
+   {
+    "raw": "B08",
+    "meaning": {
+     "zh": "第 8 波段，6.2 微米水汽",
+     "en": "Band 8, 6.2 µm water vapour",
+     "ms": "Jalur 8, 6.2 µm wap air"
+    },
+    "unit": "—",
+    "chapter": 23
+   },
+   {
+    "raw": "B13",
+    "meaning": {
+     "zh": "第 13 波段，10.4 微米红外线",
+     "en": "Band 13, 10.4 µm infrared",
+     "ms": "Jalur 13, 10.4 µm inframerah"
+    },
+    "unit": "—",
+    "chapter": 23
+   }
+  ],
+  "sample": {
+   "columns": [
+    "Key",
+    "Size (bytes)"
+   ],
+   "rows": [
+    [
+     "AHI-L1b-FLDK/2026/10/01/0300/HS_H09_20261001_0300_B01_FLDK_R10_S0110.DAT.bz2",
+     "4245260"
+    ],
+    [
+     "AHI-L1b-FLDK/2026/10/01/0300/HS_H09_20261001_0300_B01_FLDK_R10_S0210.DAT.bz2",
+     "7642134"
+    ]
+   ],
+   "source": "Bucket listing of noaa-himawari9 (03:00 UTC = 11 am in Malaysia)",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "JMA 卫星图像（网页）",
+     "en": "JMA satellite imagery (web)",
+     "ms": "Imej satelit JMA (web)"
+    },
+    "url": "https://www.data.jma.go.jp/mscweb/data/himawari/index.html"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "在浏览器里列出档案",
+     "en": "List the files in a browser",
+     "ms": "Senaraikan fail dalam pelayar"
+    },
+    "url": "https://noaa-himawari9.s3.amazonaws.com/?list-type=2&prefix=AHI-L1b-FLDK/2026/10/01/0300/&max-keys=20"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "AWS 开放数据说明",
+     "en": "AWS open-data page",
+     "ms": "Halaman data terbuka AWS"
+    },
+    "url": "https://registry.opendata.aws/noaa-himawari/",
+    "note": {
+     "zh": "用 Python 的 satpy 读 .DAT 档案。",
+     "en": "Read the .DAT files with Python's satpy.",
+     "ms": "Baca fail .DAT dengan satpy Python."
+    }
+   }
+  ]
+ },
+ {
+  "id": "nasa-worldview",
+  "name": "NASA Worldview",
+  "provider": "NASA",
+  "what": {
+   "zh": "在浏览器里看全球卫星图层：真彩色、火点、云、气溶胶等，可以选日期，不用下载。",
+   "en": "Browse global satellite layers in a web page — true colour, fires, clouds, aerosols and more — for any date, with no download.",
+   "ms": "Layari lapisan satelit global dalam laman web — warna sebenar, kebakaran, awan, aerosol dan banyak lagi — bagi sebarang tarikh, tanpa muat turun."
+  },
+  "resolution": "250 m – 2 km",
+  "update": {
+   "zh": "每天",
+   "en": "Daily",
+   "ms": "Harian"
+  },
+  "format": {
+   "zh": "网页地图（可导出图片）",
+   "en": "Web map (export as image)",
+   "ms": "Peta web (eksport imej)"
+  },
+  "licence": {
+   "text": "NASA open data",
+   "url": "https://worldview.earthdata.nasa.gov/"
+  },
+  "params": [
+   {
+    "raw": "MODIS / VIIRS Corrected Reflectance",
+    "meaning": {
+     "zh": "真彩色图像",
+     "en": "True-colour imagery",
+     "ms": "Imej warna sebenar"
+    },
+    "unit": "—",
+    "chapter": 23
+   }
+  ],
+  "sample": {
+   "columns": [
+    "Layer",
+    "Satellite"
+   ],
+   "rows": [
+    [
+     "Corrected Reflectance (True Color)",
+     "Terra / Aqua (MODIS)"
+    ],
+    [
+     "Thermal Anomalies and Fires (375m, VIIRS)",
+     "NOAA-20 / NOAA-21"
+    ]
+   ],
+   "source": "NASA GIBS layer list behind Worldview",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "打开 Worldview",
+     "en": "Open Worldview",
+     "ms": "Buka Worldview"
+    },
+    "url": "https://worldview.earthdata.nasa.gov/"
+   }
+  ]
+ },
+ {
+  "id": "metmy-radar",
+  "name": "MetMalaysia radar composite",
+  "provider": "Malaysian Meteorological Department",
+  "what": {
+   "zh": "全国雷达回波合成图（GIF 图片），也有半岛和沙巴砂拉越的版本。",
+   "en": "A national radar-echo composite (GIF image), with separate Peninsula and Sabah–Sarawak versions.",
+   "ms": "Komposit gema radar nasional (imej GIF), dengan versi berasingan Semenanjung dan Sabah–Sarawak."
+  },
+  "resolution": {
+   "zh": "全国合成",
+   "en": "National composite",
+   "ms": "Komposit nasional"
+  },
+  "update": {
+   "zh": "经常更新（看档案的 Last-Modified 时间）",
+   "en": "Frequently (see the file's Last-Modified time)",
+   "ms": "Kerap (lihat masa Last-Modified fail)"
+  },
+  "format": "GIF",
+  "licence": {
+   "text": "© Jabatan Meteorologi Malaysia",
+   "url": "https://www.met.gov.my/"
+  },
+  "params": [
+   {
+    "raw": "colour",
+    "meaning": {
+     "zh": "回波强度（dBZ），颜色越暖雨越大",
+     "en": "Echo strength (dBZ): warmer colours, heavier rain",
+     "ms": "Kekuatan gema (dBZ): warna lebih panas, hujan lebih lebat"
+    },
+    "unit": "dBZ",
+    "chapter": 24
+   }
+  ],
+  "sample": {
+   "columns": [
+    "File",
+    "Type",
+    "Size",
+    "Last-Modified"
+   ],
+   "rows": [
+    [
+     "radar_malaysia.gif",
+     "image/gif",
+     "196,611 bytes",
+     "Fri, 02 Oct 2026 21:49:05 GMT"
+    ]
+   ],
+   "source": "HTTP headers of https://www.met.gov.my/data/radar_malaysia.gif",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "大马气象局雷达页",
+     "en": "MetMalaysia radar page",
+     "ms": "Halaman radar MetMalaysia"
+    },
+    "url": "https://www.met.gov.my/en/pencerapan/radar-malaysia/"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "直接打开最新合成图",
+     "en": "Open the latest composite",
+     "ms": "Buka komposit terkini"
+    },
+    "url": "https://www.met.gov.my/data/radar_malaysia.gif"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "Blitzortung 即时闪电地图",
+     "en": "Blitzortung live lightning map",
+     "ms": "Peta kilat langsung Blitzortung"
+    },
+    "url": "https://www.blitzortung.org/en/live_lightning_maps.php"
+   }
+  ]
  }
 ]

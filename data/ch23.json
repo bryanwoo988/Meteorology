@@ -1,0 +1,337 @@
+{
+ "id": "ch23",
+ "num": 23,
+ "stage": 7,
+ "title": {
+  "zh": "气象卫星",
+  "en": "Weather satellites",
+  "ms": "Satelit cuaca"
+ },
+ "sources": [
+  "ESS",
+  "TERM",
+  "WMO-OSCAR",
+  "NASA-GPM-DPR",
+  "ESA-S1",
+  "JMA-AHI",
+  "AWS-HIMAWARI",
+  "NASA-WORLDVIEW"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "两种轨道",
+    "en": "Two kinds of orbit",
+    "ms": "Dua jenis orbit"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:geostationary-satellite}}在赤道上空约 36,000 公里，绕地球的速度和地球自转一样，所以一直停在同一个地点上方，可以不停地看同一片地区，几分钟拍一张，接成动画就能看云怎样移动、长大或消散。",
+      "en": "A {{t:geostationary-satellite}} sits about 36,000 km above the equator, circling at the same rate as the Earth spins, so it stays over one spot and watches the same region non-stop; images every few minutes, run as an animation, show clouds moving, growing and dying.",
+      "ms": "{{t:geostationary-satellite}} berada kira-kira 36,000 km di atas khatulistiwa, mengorbit pada kadar yang sama dengan putaran bumi, jadi ia kekal di atas satu tempat dan memerhati kawasan yang sama tanpa henti; imej setiap beberapa minit, dimainkan sebagai animasi, menunjukkan awan bergerak, tumbuh dan hilang."
+     },
+     "defines": [
+      "geostationary-satellite"
+     ],
+     "src": [
+      "ESS:250",
+      "TERM:133"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:polar-satellite}}低得多（约 700–850 公里），每一圈都经过南北极附近；地球在下面自转，每一圈扫到的地方都比上一圈偏西，最后扫遍全球。它看得比较清楚，也能看清同步卫星斜着看、变形很厉害的高纬度地区。",
+      "en": "A {{t:polar-satellite}} flies much lower, about 700–850 km, passing near both poles on every orbit; as the Earth turns beneath it each pass lies further west than the last, until it has covered the whole globe. It sees in sharper detail, including the high latitudes that a geostationary satellite views at a distorting low angle.",
+      "ms": "{{t:polar-satellite}} terbang jauh lebih rendah, kira-kira 700–850 km, melalui berhampiran kedua-dua kutub pada setiap orbit; apabila bumi berputar di bawahnya setiap laluan terletak lebih ke barat, sehingga meliputi seluruh dunia. Ia melihat dengan lebih terperinci, termasuk latitud tinggi yang dilihat satelit geopegun pada sudut rendah yang mengherotkan."
+     },
+     "defines": [
+      "polar-satellite"
+     ],
+     "src": [
+      "ESS:250-251",
+      "WMO-OSCAR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "卫星全家福",
+    "en": "The family of satellites",
+    "ms": "Keluarga satelit"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "widget",
+     "id": "W15"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "看马来西亚最常用的是日本的 Himawari-9，停在东经 140.7°，从吉隆坡看它在天空约 45° 高。韩国的 GEO-KOMPSAT-2A（128.2°E）、中国的风云四号和印度的 INSAT 也看得到马来西亚。WMO 的资料显示，停在东经 105° 的 FY-4B，主成像仪在 2026 年 7 月 30 日故障。",
+      "en": "For Malaysia the workhorse is Japan's Himawari-9, parked at 140.7°E and about 45° up in the sky from Kuala Lumpur. Korea's GEO-KOMPSAT-2A (128.2°E), China's Fengyun-4 satellites and India's INSATs can also see Malaysia. WMO records show that FY-4B, at 105°E, lost its main imager on 30 July 2026.",
+      "ms": "Bagi Malaysia, satelit utama ialah Himawari-9 Jepun, ditempatkan pada 140.7°T dan kira-kira 45° tinggi di langit dari Kuala Lumpur. GEO-KOMPSAT-2A Korea (128.2°T), satelit Fengyun-4 China dan INSAT India juga dapat melihat Malaysia. Rekod WMO menunjukkan FY-4B, pada 105°T, kehilangan pengimej utamanya pada 30 Julai 2026."
+     },
+     "src": [
+      "WMO-OSCAR"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "WMO-OSCAR",
+      "ESS:251",
+      "NASA-GPM-DPR",
+      "ESA-S1",
+      "NASA-WORLDVIEW"
+     ],
+     "caption": {
+      "zh": "几颗常用的极轨卫星（WMO OSCAR）",
+      "en": "Some polar orbiters in daily use (WMO OSCAR)",
+      "ms": "Beberapa satelit orbit kutub yang biasa digunakan (WMO OSCAR)"
+     },
+     "headers": [
+      {
+       "zh": "卫星",
+       "en": "Satellite",
+       "ms": "Satelit"
+      },
+      {
+       "zh": "机构",
+       "en": "Agency",
+       "ms": "Agensi"
+      },
+      {
+       "zh": "高度",
+       "en": "Height",
+       "ms": "Ketinggian"
+      },
+      {
+       "zh": "看什么",
+       "en": "Best known for",
+       "ms": "Terkenal kerana"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "NOAA-20、NOAA-21",
+        "en": "NOAA-20, NOAA-21",
+        "ms": "NOAA-20, NOAA-21"
+       },
+       {
+        "zh": "NOAA、NASA",
+        "en": "NOAA, NASA",
+        "ms": "NOAA, NASA"
+       },
+       {
+        "zh": "824 公里",
+        "en": "824 km",
+        "ms": "824 km"
+       },
+       {
+        "zh": "温度和湿度探测，喂进预报模型",
+        "en": "Temperature and moisture soundings for forecast models",
+        "ms": "Profil suhu dan lembapan untuk model ramalan"
+       }
+      ],
+      [
+       {
+        "zh": "MetOp-B、MetOp-C",
+        "en": "MetOp-B, MetOp-C",
+        "ms": "MetOp-B, MetOp-C"
+       },
+       {
+        "zh": "EUMETSAT",
+        "en": "EUMETSAT",
+        "ms": "EUMETSAT"
+       },
+       {
+        "zh": "约 830 公里",
+        "en": "about 830 km",
+        "ms": "kira-kira 830 km"
+       },
+       {
+        "zh": "上午轨道的探测",
+        "en": "Morning-orbit soundings",
+        "ms": "Profil orbit pagi"
+       }
+      ],
+      [
+       {
+        "zh": "Terra、Aqua",
+        "en": "Terra, Aqua",
+        "ms": "Terra, Aqua"
+       },
+       {
+        "zh": "NASA",
+        "en": "NASA",
+        "ms": "NASA"
+       },
+       {
+        "zh": "705 公里",
+        "en": "705 km",
+        "ms": "705 km"
+       },
+       {
+        "zh": "MODIS 真彩色图、火点",
+        "en": "MODIS true-colour images, fires",
+        "ms": "Imej warna sebenar MODIS, kebakaran"
+       }
+      ],
+      [
+       {
+        "zh": "GPM 核心卫星",
+        "en": "GPM Core Observatory",
+        "ms": "Balai Cerap Teras GPM"
+       },
+       {
+        "zh": "NASA、JAXA",
+        "en": "NASA, JAXA",
+        "ms": "NASA, JAXA"
+       },
+       {
+        "zh": "442 公里",
+        "en": "442 km",
+        "ms": "442 km"
+       },
+       {
+        "zh": "太空中的降雨雷达",
+        "en": "A rain radar in space",
+        "ms": "Radar hujan di angkasa"
+       }
+      ],
+      [
+       {
+        "zh": "Sentinel-1C、Sentinel-2B/2C",
+        "en": "Sentinel-1C, Sentinel-2B/2C",
+        "ms": "Sentinel-1C, Sentinel-2B/2C"
+       },
+       {
+        "zh": "ESA",
+        "en": "ESA",
+        "ms": "ESA"
+       },
+       {
+        "zh": "693 / 786 公里",
+        "en": "693 / 786 km",
+        "ms": "693 / 786 km"
+       },
+       {
+        "zh": "雷达成像（穿云）、地面细节",
+        "en": "Radar imaging through cloud; fine ground detail",
+        "ms": "Pengimejan radar menembusi awan; perincian darat"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "三种卫星图像",
+    "en": "Three kinds of satellite image",
+    "ms": "Tiga jenis imej satelit"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "卫星的仪器分很多{{t:spectral-band}}，每个波段看一种光。Himawari-9 的成像仪有 16 个波段，每 10 分钟拍一次全圆盘。最常用的是三种：",
+      "en": "Satellite instruments look in many {{t:spectral-band}}s, each seeing one kind of light. Himawari-9's imager has 16 bands and scans the full disc every 10 minutes. Three kinds of image are used most:",
+      "ms": "Peralatan satelit melihat dalam banyak {{t:spectral-band}}, setiap satu melihat satu jenis cahaya. Pengimej Himawari-9 mempunyai 16 jalur dan mengimbas cakera penuh setiap 10 minit. Tiga jenis imej paling banyak digunakan:"
+     },
+     "defines": [
+      "spectral-band"
+     ],
+     "src": [
+      "JMA-AHI"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "{{t:visible-image}}（例如 Himawari 第 3 波段，0.64 微米）：看反射的阳光。厚云亮、薄云暗，但高云低云分不出来；晚上不能用",
+       "en": "{{t:visible-image}} (e.g. Himawari band 3, 0.64 µm): reflected sunlight. Thick cloud bright, thin cloud dim, but high and low cloud look alike; useless at night",
+       "ms": "{{t:visible-image}} (cth. jalur Himawari 3, 0.64 µm): cahaya matahari dipantul. Awan tebal terang, awan nipis malap, tetapi awan tinggi dan rendah kelihatan sama; tidak berguna pada waktu malam"
+      },
+      {
+       "zh": "{{t:infrared-image}}（例如第 13 波段，10.4 微米）：看温度。云顶越高越冷越白，低云灰色；白天晚上都能用",
+       "en": "{{t:infrared-image}} (e.g. band 13, 10.4 µm): temperature. The higher and colder the top, the whiter; low cloud grey; works day and night",
+       "ms": "{{t:infrared-image}} (cth. jalur 13, 10.4 µm): suhu. Semakin tinggi dan sejuk puncak, semakin putih; awan rendah kelabu; berfungsi siang dan malam"
+      },
+      {
+       "zh": "{{t:water-vapour-image}}（例如第 8 波段，6.2 微米）：看中高层的水汽。湿的地方亮、干的地方暗，能看到没有云的气流和急流",
+       "en": "{{t:water-vapour-image}} (e.g. band 8, 6.2 µm): moisture in the middle and upper air. Moist areas bright, dry areas dark, showing flow and jet streams even where there is no cloud",
+       "ms": "{{t:water-vapour-image}} (cth. jalur 8, 6.2 µm): lembapan di udara tengah dan atas. Kawasan lembap terang, kering gelap, menunjukkan aliran dan aliran jet walaupun tiada awan"
+      }
+     ],
+     "defines": [
+      "visible-image",
+      "infrared-image",
+      "water-vapour-image"
+     ],
+     "src": [
+      "ESS:251-253",
+      "JMA-AHI"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W16"
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "午后阵雨在卫星上：在 Himawari 的红外线动画里，中午以后马来西亚上空会冒出一团团越来越白（越来越高、越冷）的云顶，傍晚后又慢慢散掉。",
+      "en": "Afternoon showers from space: on a Himawari infrared animation, after noon you can watch cloud tops pop up over Malaysia and turn whiter — higher and colder — then fade away after dusk.",
+      "ms": "Hujan petang dari angkasa: pada animasi inframerah Himawari, selepas tengah hari anda boleh melihat puncak awan muncul di atas Malaysia dan menjadi lebih putih — lebih tinggi dan sejuk — kemudian pudar selepas senja."
+     },
+     "src": [
+      "ESS:251",
+      "ESS:352"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "卫星不只是拍照片。新一代的探测仪能量出各高度的温度和湿度，这些资料会喂进电脑预报模型——第 27 章会讲。",
+      "en": "Satellites do more than take pictures. Modern sounders measure temperature and moisture at different heights, and those data are fed into computer forecast models — the subject of Chapter 27.",
+      "ms": "Satelit bukan sekadar mengambil gambar. Penduga moden mengukur suhu dan lembapan pada pelbagai ketinggian, dan data itu dimasukkan ke dalam model ramalan komputer — topik Bab 27."
+     },
+     "src": [
+      "ESS:251",
+      "ESS:256"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "himawari-aws"
+    },
+    {
+     "type": "dataset",
+     "id": "nasa-worldview"
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "geostationary-satellite",
+  "polar-satellite",
+  "spectral-band",
+  "visible-image",
+  "infrared-image",
+  "water-vapour-image"
+ ]
+}

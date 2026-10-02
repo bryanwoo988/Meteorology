@@ -496,3 +496,20 @@ rect.cl-ice, circle.cl-ice { fill: var(--cloud); stroke: var(--sky); stroke-widt
 .api-band { display: grid; gap: 2px; padding: 8px 10px; border: 1px solid var(--line); border-left: 6px solid var(--band); border-radius: var(--radius); background: var(--surface); color: var(--ink); font: inherit; font-size: .88rem; text-align: left; cursor: pointer; }
 .api-band[aria-pressed="true"] { background: var(--surface-2); outline: 2px solid var(--band); outline-offset: -1px; }
 .api-range { font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* W15 satellite list */
+.sat-list { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 4px; font-size: .88rem; }
+.sat-list li { padding: 6px 10px; border-radius: var(--radius); background: var(--surface-2); }
+.sat-list li.is-off { color: var(--muted); background: transparent; }
+
+/* W18 Skew-T background lines */
+.skewt-iso { stroke: var(--line); stroke-width: 1; fill: none; }
+.skewt-iso.is-zero { stroke: var(--sky); stroke-dasharray: 3 3; }
+.skewt-dry { stroke: var(--sun); stroke-opacity: .45; stroke-width: 1; fill: none; }
+.skewt-moist { stroke: var(--leaf); stroke-opacity: .4; stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+
+/* W16 / W17 */
+.sat-label { font-size: 11.5px; font-weight: 650; }
+.dbz-row { display: grid; grid-template-columns: repeat(11, 1fr); gap: 2px; margin: 8px 0 12px; }
+.dbz-step { min-height: 40px; border: 0; border-radius: 4px; font: inherit; font-size: .78rem; font-weight: 700; color: #111; cursor: pointer; padding: 0; }
+.dbz-step[aria-pressed="true"] { outline: 3px solid var(--ink); outline-offset: 1px; }

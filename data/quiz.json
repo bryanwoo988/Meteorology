@@ -2366,5 +2366,486 @@
    "en": "Cloud, canopy and small fires can all be missed.",
    "ms": "Awan, kanopi dan kebakaran kecil semuanya boleh terlepas."
   }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "干湿球温度计相差越大，表示什么？",
+   "en": "The bigger the gap between dry and wet bulb, the…",
+   "ms": "Semakin besar beza bebuli kering dan basah, semakin…"
+  },
+  "options": [
+   {
+    "zh": "空气越干",
+    "en": "drier the air",
+    "ms": "kering udara"
+   },
+   {
+    "zh": "空气越湿",
+    "en": "more humid the air",
+    "ms": "lembap udara"
+   },
+   {
+    "zh": "风越弱",
+    "en": "lighter the wind",
+    "ms": "lemah angin"
+   },
+   {
+    "zh": "气压越高",
+    "en": "higher the pressure",
+    "ms": "tinggi tekanan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "空气干，湿球蒸发快、冷得多。",
+   "en": "Dry air evaporates more from the wet bulb, cooling it more.",
+   "ms": "Udara kering menyejat lebih banyak dari bebuli basah, menyejukkannya lebih."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "用普通量杯量雨，多少毫升等于 10 毫米雨？",
+   "en": "With an ordinary jug, how many ml equal 10 mm of rain?",
+   "ms": "Dengan bikar biasa, berapa ml bersamaan 10 mm hujan?"
+  },
+  "options": [
+   {
+    "zh": "126.7 毫升",
+    "en": "126.7 ml",
+    "ms": "126.7 ml"
+   },
+   {
+    "zh": "10 毫升",
+    "en": "10 ml",
+    "ms": "10 ml"
+   },
+   {
+    "zh": "1,000 毫升",
+    "en": "1,000 ml",
+    "ms": "1,000 ml"
+   },
+   {
+    "zh": "50 毫升",
+    "en": "50 ml",
+    "ms": "50 ml"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "127 毫米的漏斗面积约 126.7 平方厘米，乘 1 厘米就是 126.7 毫升。",
+   "en": "A 127 mm funnel has about 126.7 cm² of area; times 1 cm is 126.7 ml.",
+   "ms": "Corong 127 mm mempunyai luas kira-kira 126.7 cm²; darab 1 cm ialah 126.7 ml."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "风向标的箭头指向哪里？",
+   "en": "Where does a wind vane's arrow point?",
+   "ms": "Ke manakah anak panah bilah angin menunjuk?"
+  },
+  "options": [
+   {
+    "zh": "风吹来的方向",
+    "en": "Where the wind comes from",
+    "ms": "Arah angin datang"
+   },
+   {
+    "zh": "风吹去的方向",
+    "en": "Where the wind goes",
+    "ms": "Arah angin pergi"
+   },
+   {
+    "zh": "永远指北",
+    "en": "Always north",
+    "ms": "Sentiasa utara"
+   },
+   {
+    "zh": "太阳的方向",
+    "en": "At the sun",
+    "ms": "Ke arah matahari"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以“西南风”是从西南吹来的风。",
+   "en": "So a ‘south-west wind’ comes from the south-west.",
+   "ms": "Jadi ‘angin barat daya’ datang dari barat daya."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch22",
+  "q": {
+   "zh": "马来西亚的探空气球通常什么时候放？",
+   "en": "When are Malaysia's weather balloons usually launched?",
+   "ms": "Bilakah belon cuaca Malaysia biasanya dilepaskan?"
+  },
+  "options": [
+   {
+    "zh": "早上 8 点和晚上 8 点",
+    "en": "8 am and 8 pm",
+    "ms": "8 pagi dan 8 malam"
+   },
+   {
+    "zh": "中午 12 点和半夜",
+    "en": "Noon and midnight",
+    "ms": "Tengah hari dan tengah malam"
+   },
+   {
+    "zh": "每小时",
+    "en": "Every hour",
+    "ms": "Setiap jam"
+   },
+   {
+    "zh": "只在下雨时",
+    "en": "Only when it rains",
+    "ms": "Hanya ketika hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "00 和 12 UTC，加 8 小时。",
+   "en": "00 and 12 UTC, plus 8 hours.",
+   "ms": "00 dan 12 UTC, tambah 8 jam."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch22",
+  "q": {
+   "zh": "TAO 浮标阵列主要是为了什么而建？",
+   "en": "What was the TAO buoy array built for?",
+   "ms": "Untuk apakah tatasusunan boya TAO dibina?"
+  },
+  "options": [
+   {
+    "zh": "了解和预报 ENSO",
+    "en": "To understand and predict ENSO",
+    "ms": "Memahami dan meramal ENSO"
+   },
+   {
+    "zh": "量地震",
+    "en": "Earthquakes",
+    "ms": "Gempa bumi"
+   },
+   {
+    "zh": "导航",
+    "en": "Navigation",
+    "ms": "Navigasi"
+   },
+   {
+    "zh": "捕鱼",
+    "en": "Fishing",
+    "ms": "Menangkap ikan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它沿着赤道太平洋，正好是厄尔尼诺发生的地方。",
+   "en": "It lines the equatorial Pacific, where El Niño happens.",
+   "ms": "Ia di sepanjang Pasifik khatulistiwa, tempat El Niño berlaku."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "晚上要看云，应该用哪一种图像？",
+   "en": "To see cloud at night, which image?",
+   "ms": "Untuk melihat awan pada waktu malam, imej mana?"
+  },
+  "options": [
+   {
+    "zh": "红外线",
+    "en": "Infrared",
+    "ms": "Inframerah"
+   },
+   {
+    "zh": "可见光",
+    "en": "Visible",
+    "ms": "Cahaya nampak"
+   },
+   {
+    "zh": "真彩色",
+    "en": "True colour",
+    "ms": "Warna sebenar"
+   },
+   {
+    "zh": "都不行",
+    "en": "None",
+    "ms": "Tiada"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "红外线看温度，不需要阳光。",
+   "en": "Infrared sees temperature and needs no sunlight.",
+   "ms": "Inframerah melihat suhu dan tidak memerlukan cahaya matahari."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "在红外线图上，哪一种云最白？",
+   "en": "Which cloud is whitest on an infrared image?",
+   "ms": "Awan manakah paling putih pada imej inframerah?"
+  },
+  "options": [
+   {
+    "zh": "又高又冷的雷雨云顶",
+    "en": "A high, cold thunderstorm top",
+    "ms": "Puncak ribut petir yang tinggi dan sejuk"
+   },
+   {
+    "zh": "低积云",
+    "en": "Low cumulus",
+    "ms": "Kumulus rendah"
+   },
+   {
+    "zh": "雾",
+    "en": "Fog",
+    "ms": "Kabus"
+   },
+   {
+    "zh": "没有云的海面",
+    "en": "Clear sea",
+    "ms": "Laut tanpa awan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "越冷显示越白。",
+   "en": "The colder, the whiter.",
+   "ms": "Semakin sejuk, semakin putih."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "Himawari-9 多久拍一次全圆盘？",
+   "en": "How often does Himawari-9 scan the full disc?",
+   "ms": "Berapa kerap Himawari-9 mengimbas cakera penuh?"
+  },
+  "options": [
+   {
+    "zh": "每 10 分钟",
+    "en": "Every 10 minutes",
+    "ms": "Setiap 10 minit"
+   },
+   {
+    "zh": "每天一次",
+    "en": "Once a day",
+    "ms": "Sekali sehari"
+   },
+   {
+    "zh": "每小时",
+    "en": "Every hour",
+    "ms": "Setiap jam"
+   },
+   {
+    "zh": "每星期",
+    "en": "Every week",
+    "ms": "Setiap minggu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以可以做成动画看云的变化。",
+   "en": "Which is why it can be animated.",
+   "ms": "Itulah sebabnya ia boleh dianimasikan."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch24",
+  "q": {
+   "zh": "从 30 dBZ 到 40 dBZ，雷达回波强了多少？",
+   "en": "From 30 to 40 dBZ, how much stronger is the echo?",
+   "ms": "Dari 30 ke 40 dBZ, berapa kali lebih kuat gema?"
+  },
+  "options": [
+   {
+    "zh": "10 倍",
+    "en": "10 times",
+    "ms": "10 kali"
+   },
+   {
+    "zh": "10 %",
+    "en": "10 %",
+    "ms": "10 %"
+   },
+   {
+    "zh": "2 倍",
+    "en": "2 times",
+    "ms": "2 kali"
+   },
+   {
+    "zh": "一样",
+    "en": "The same",
+    "ms": "Sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "dBZ 是对数刻度。",
+   "en": "dBZ is logarithmic.",
+   "ms": "dBZ ialah logaritma."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch24",
+  "q": {
+   "zh": "多普勒雷达比普通雷达多了什么本领？",
+   "en": "What extra can a Doppler radar do?",
+   "ms": "Apakah kebolehan tambahan radar Doppler?"
+  },
+  "options": [
+   {
+    "zh": "量雨滴朝向或离开雷达的速度，看到风",
+    "en": "Measure drops' speed towards or away from it, seeing the wind",
+    "ms": "Mengukur kelajuan titisan ke arah atau menjauhinya, melihat angin"
+   },
+   {
+    "zh": "看穿地面",
+    "en": "See underground",
+    "ms": "Melihat bawah tanah"
+   },
+   {
+    "zh": "量气温",
+    "en": "Measure temperature",
+    "ms": "Mengukur suhu"
+   },
+   {
+    "zh": "拍彩色照片",
+    "en": "Take colour photos",
+    "ms": "Mengambil gambar berwarna"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "靠多普勒效应。",
+   "en": "By the Doppler shift.",
+   "ms": "Melalui anjakan Doppler."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "Skew-T 上，气温线和露点线很靠近表示什么？",
+   "en": "On a Skew-T, temperature and dew-point lines close together mean…",
+   "ms": "Pada Skew-T, garisan suhu dan takat embun yang rapat bermaksud…"
+  },
+  "options": [
+   {
+    "zh": "那一层很湿，接近饱和",
+    "en": "That layer is moist, near saturation",
+    "ms": "Lapisan itu lembap, hampir tepu"
+   },
+   {
+    "zh": "那一层很干",
+    "en": "That layer is dry",
+    "ms": "Lapisan itu kering"
+   },
+   {
+    "zh": "风很大",
+    "en": "Strong wind",
+    "ms": "Angin kuat"
+   },
+   {
+    "zh": "有逆温",
+    "en": "An inversion",
+    "ms": "Songsangan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "气温接近露点，就接近饱和。",
+   "en": "Temperature near dew point means near saturation.",
+   "ms": "Suhu hampir takat embun bermaksud hampir tepu."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "逆温层对午后雷雨有什么影响？",
+   "en": "What does an inversion do to afternoon storms?",
+   "ms": "Apakah kesan songsangan terhadap ribut petang?"
+  },
+  "options": [
+   {
+    "zh": "像盖子一样压住上升空气，要先被冲破",
+    "en": "It caps rising air and must be broken first",
+    "ms": "Ia menutup udara yang naik dan mesti dipecahkan dahulu"
+   },
+   {
+    "zh": "让雷雨更容易形成",
+    "en": "Makes storms easier",
+    "ms": "Memudahkan ribut"
+   },
+   {
+    "zh": "没有影响",
+    "en": "No effect",
+    "ms": "Tiada kesan"
+   },
+   {
+    "zh": "让气温下降",
+    "en": "Cools the ground",
+    "ms": "Menyejukkan tanah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "逆温非常稳定。",
+   "en": "An inversion is very stable.",
+   "ms": "Songsangan sangat stabil."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "同一张早上的探空，下午哪种情况 CAPE 最大？",
+   "en": "Same morning sounding: which afternoon gives the most CAPE?",
+   "ms": "Sonde pagi yang sama: petang mana memberi CAPE paling banyak?"
+  },
+  "options": [
+   {
+    "zh": "地面 31 °C、露点 23 °C",
+    "en": "Surface 31 °C, dew point 23 °C",
+    "ms": "Permukaan 31 °C, takat embun 23 °C"
+   },
+   {
+    "zh": "地面 31 °C、露点 20.8 °C",
+    "en": "Surface 31 °C, dew point 20.8 °C",
+    "ms": "Permukaan 31 °C, takat embun 20.8 °C"
+   },
+   {
+    "zh": "地面 24.8 °C、露点 20.8 °C",
+    "en": "Surface 24.8 °C, dew point 20.8 °C",
+    "ms": "Permukaan 24.8 °C, takat embun 20.8 °C"
+   },
+   {
+    "zh": "都一样",
+    "en": "All the same",
+    "ms": "Semua sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "又热又湿的地面空气，上升后比周围暖得最多。",
+   "en": "Hot, moist surface air ends up warmest relative to its surroundings.",
+   "ms": "Udara permukaan panas dan lembap menjadi paling panas berbanding sekeliling."
+  }
  }
 ]

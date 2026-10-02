@@ -99,3 +99,23 @@ test('CIN: a morning parcel needs a push, a hot afternoon parcel does not', () =
   assert.equal(cin(env, afternoon), 0);
   assert.ok(cape(env, afternoon) > cape(env, morning));
 });
+
+import { rainRateZR, geoView } from '../js/physics.js';
+const close = eq;
+
+test('Z–R rain rate: Marshall–Palmer and the tropical relation', () => {
+  close(rainRateZR(40, 200, 1.6), 11.53, 0.05);   // (10^4 / 200)^(1/1.6)
+  close(rainRateZR(40, 250, 1.2), 21.6, 0.1);     // tropical convection gives more rain for the same echo
+  close(rainRateZR(40), dbzToRain(40), 1e-9);     // defaults are Marshall–Palmer
+  assert.ok(rainRateZR(0) < 0.1);
+});
+
+test('geostationary view: straight below, Kuala Lumpur from Himawari, beyond the horizon', () => {
+  const nadir = geoView(0, 140.7, 140.7);
+  close(nadir.centralAngle, 0, 1e-9); close(nadir.elevation, 90, 1e-6);
+  const kl = geoView(3.14, 101.69, 140.7);
+  close(kl.centralAngle, 39.1, 0.2); close(kl.elevation, 44.7, 0.3);
+  assert.ok(kl.visible);
+  close(geoView(0, 140.7 + 81.3, 140.7).elevation, 0, 0.1);   // the horizon of a geostationary satellite
+  assert.equal(geoView(0, 140.7 - 100, 140.7).visible, false);
+});

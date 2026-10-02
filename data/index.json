@@ -392,8 +392,7 @@
     "zh": "地面观测站与仪器",
     "en": "Weather stations and instruments",
     "ms": "Stesen cuaca dan peralatan"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch22",
@@ -403,19 +402,17 @@
     "zh": "高空与海洋观测",
     "en": "Observing the upper air and the ocean",
     "ms": "Mencerap udara atas dan lautan"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch23",
    "num": 23,
    "stage": 7,
    "title": {
-    "zh": "卫星",
+    "zh": "气象卫星",
     "en": "Weather satellites",
     "ms": "Satelit cuaca"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch24",
@@ -425,8 +422,7 @@
     "zh": "雷达与闪电定位",
     "en": "Radar and lightning detection",
     "ms": "Radar dan pengesanan kilat"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch25",
@@ -434,10 +430,9 @@
    "stage": 7,
    "title": {
     "zh": "Skew-T 探空图",
-    "en": "The Skew-T diagram",
-    "ms": "Gambar rajah Skew-T"
-   },
-   "ready": false
+    "en": "Reading a Skew-T",
+    "ms": "Membaca Skew-T"
+   }
   },
   {
    "id": "ch26",

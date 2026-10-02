@@ -2035,5 +2035,397 @@
    "ms": "Asap kebakaran hutan dan tanah gambut dibawa angin dari satu negara ke negara lain."
   },
   "chapter": 20
+ },
+ {
+  "id": "anemometer",
+  "name": {
+   "zh": "风杯风速计",
+   "en": "Cup anemometer",
+   "ms": "Anemometer cawan"
+  },
+  "short": {
+   "zh": "风吹杯子转动，用转数量风速。",
+   "en": "Measures wind speed from how fast the wind spins a set of cups.",
+   "ms": "Mengukur kelajuan angin daripada kelajuan angin memutar set cawan."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "aws",
+  "name": {
+   "zh": "自动气象站",
+   "en": "Automatic weather station",
+   "ms": "Stesen cuaca automatik"
+  },
+  "short": {
+   "zh": "按设定时间自动记录天气的气象站。",
+   "en": "A station that records the weather by itself at set intervals.",
+   "ms": "Stesen yang merekod cuaca sendiri pada selang yang ditetapkan."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "barometer",
+  "name": {
+   "zh": "气压计",
+   "en": "Barometer",
+   "ms": "Barometer"
+  },
+  "short": {
+   "zh": "量气压的仪器，有水银式和空盒式。",
+   "en": "An instrument for air pressure, mercury or aneroid.",
+   "ms": "Alat untuk tekanan udara, merkuri atau aneroid."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "pan-evaporimeter",
+  "name": {
+   "zh": "蒸发皿",
+   "en": "Pan evaporimeter",
+   "ms": "Panci penyejatan"
+  },
+  "short": {
+   "zh": "装水的大圆盘，量每天蒸发掉多少毫米水。",
+   "en": "A large water pan that measures how many millimetres evaporate each day.",
+   "ms": "Dulang air besar yang mengukur berapa milimeter tersejat setiap hari."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "psychrometer",
+  "name": {
+   "zh": "干湿球温度计",
+   "en": "Psychrometer",
+   "ms": "Psikrometer"
+  },
+  "short": {
+   "zh": "一对干球和湿球温度计，用来求相对湿度和露点。",
+   "en": "A dry-bulb and wet-bulb pair used to find humidity and dew point.",
+   "ms": "Pasangan bebuli kering dan basah untuk mencari kelembapan dan takat embun."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "rain-gauge",
+  "name": {
+   "zh": "雨量筒",
+   "en": "Rain gauge",
+   "ms": "Tolok hujan"
+  },
+  "short": {
+   "zh": "收集雨水来量雨量的仪器；口径 127 毫米。",
+   "en": "An instrument that collects rain to measure it; the funnel is 127 mm across.",
+   "ms": "Alat yang mengumpul hujan untuk mengukurnya; corongnya 127 mm lebar."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "stevenson-screen",
+  "name": {
+   "zh": "百叶箱",
+   "en": "Stevenson screen",
+   "ms": "Skrin Stevenson"
+  },
+  "short": {
+   "zh": "放温度计的双层百叶木箱，通风又挡太阳和雨。",
+   "en": "A louvred wooden box that shelters thermometers from sun and rain while letting air through.",
+   "ms": "Kotak kayu berlouver yang melindungi termometer daripada matahari dan hujan sambil membiarkan udara masuk."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "sunshine-recorder",
+  "name": {
+   "zh": "日照计",
+   "en": "Sunshine recorder",
+   "ms": "Perakam cahaya matahari"
+  },
+  "short": {
+   "zh": "玻璃球聚光在卡片上烧出痕迹，量日照时数。",
+   "en": "A glass sphere that burns a trace on a card to measure hours of sunshine.",
+   "ms": "Sfera kaca yang membakar kesan pada kad untuk mengukur jam cahaya matahari."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "wind-vane",
+  "name": {
+   "zh": "风向标",
+   "en": "Wind vane",
+   "ms": "Bilah angin"
+  },
+  "short": {
+   "zh": "指向风吹来方向的仪器。",
+   "en": "Points to the direction the wind comes from.",
+   "ms": "Menunjuk ke arah angin datang."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "amdar",
+  "name": {
+   "zh": "AMDAR（飞机气象资料）",
+   "en": "AMDAR",
+   "ms": "AMDAR"
+  },
+  "short": {
+   "zh": "民航飞机自动量、自动传回的气温和风资料。",
+   "en": "Temperature and wind measured and sent automatically by airliners.",
+   "ms": "Suhu dan angin yang diukur dan dihantar secara automatik oleh pesawat."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "argo",
+  "name": {
+   "zh": "Argo 浮标",
+   "en": "Argo float",
+   "ms": "Pelampung Argo"
+  },
+  "short": {
+   "zh": "每 10 天沉到 2 公里再浮上来、量温度和盐度的海洋浮标。",
+   "en": "An ocean float that sinks to 2 km and rises every 10 days, measuring temperature and salinity.",
+   "ms": "Pelampung lautan yang tenggelam ke 2 km dan naik setiap 10 hari, mengukur suhu dan kemasinan."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "buoy",
+  "name": {
+   "zh": "浮标",
+   "en": "Buoy",
+   "ms": "Boya"
+  },
+  "short": {
+   "zh": "漂在海上或锚定的观测站，量海面天气和海温。",
+   "en": "A floating or moored station measuring weather and sea temperature at sea.",
+   "ms": "Stesen terapung atau tertambat yang mengukur cuaca dan suhu laut."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "radiosonde",
+  "name": {
+   "zh": "探空仪（探空气球）",
+   "en": "Radiosonde",
+   "ms": "Radiosonde"
+  },
+  "short": {
+   "zh": "挂在气球下、边升边传回气温、湿度和气压的仪器。",
+   "en": "A balloon-borne instrument that radios back temperature, humidity and pressure as it rises.",
+   "ms": "Alat dibawa belon yang menghantar suhu, kelembapan dan tekanan semasa naik."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "sounding",
+  "name": {
+   "zh": "探空曲线",
+   "en": "Sounding",
+   "ms": "Profil sonde"
+  },
+  "short": {
+   "zh": "从地面到高空的一条垂直资料，例如一次探空的结果。",
+   "en": "A vertical profile of the air, such as one radiosonde flight.",
+   "ms": "Profil menegak udara, seperti satu penerbangan radiosonde."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "geostationary-satellite",
+  "name": {
+   "zh": "同步卫星",
+   "en": "Geostationary satellite",
+   "ms": "Satelit geopegun"
+  },
+  "short": {
+   "zh": "在赤道上空约 36,000 公里、一直停在同一点上方的卫星。",
+   "en": "A satellite about 36,000 km above the equator that stays over one spot.",
+   "ms": "Satelit kira-kira 36,000 km di atas khatulistiwa yang kekal di atas satu tempat."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "infrared-image",
+  "name": {
+   "zh": "红外线图像",
+   "en": "Infrared image",
+   "ms": "Imej inframerah"
+  },
+  "short": {
+   "zh": "按温度显示的卫星图；高而冷的云顶最白。",
+   "en": "A satellite image of temperature; high, cold tops whitest.",
+   "ms": "Imej satelit suhu; puncak tinggi dan sejuk paling putih."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "polar-satellite",
+  "name": {
+   "zh": "极轨卫星",
+   "en": "Polar-orbiting satellite",
+   "ms": "Satelit orbit kutub"
+  },
+  "short": {
+   "zh": "低轨道、每圈经过两极附近、逐渐扫遍全球的卫星。",
+   "en": "A low satellite passing near both poles each orbit, covering the globe in strips.",
+   "ms": "Satelit rendah yang melalui berhampiran kedua-dua kutub setiap orbit, meliputi dunia secara berjalur."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "spectral-band",
+  "name": {
+   "zh": "波段",
+   "en": "Spectral band",
+   "ms": "Jalur spektrum"
+  },
+  "short": {
+   "zh": "卫星仪器看的一段特定波长的光。",
+   "en": "The particular range of wavelengths an instrument channel sees.",
+   "ms": "Julat panjang gelombang tertentu yang dilihat oleh satu saluran alat."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "visible-image",
+  "name": {
+   "zh": "可见光图像",
+   "en": "Visible image",
+   "ms": "Imej cahaya nampak"
+  },
+  "short": {
+   "zh": "拍反射阳光的卫星图；厚云亮，晚上不能用。",
+   "en": "A satellite image of reflected sunlight; thick cloud bright; no use at night.",
+   "ms": "Imej satelit cahaya matahari dipantul; awan tebal terang; tidak berguna pada waktu malam."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "water-vapour-image",
+  "name": {
+   "zh": "水汽图像",
+   "en": "Water-vapour image",
+   "ms": "Imej wap air"
+  },
+  "short": {
+   "zh": "显示中高层水汽的卫星图；湿亮干暗。",
+   "en": "A satellite image of middle- and upper-level moisture; moist bright, dry dark.",
+   "ms": "Imej satelit lembapan aras tengah dan atas; lembap terang, kering gelap."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "dbz",
+  "name": {
+   "zh": "dBZ",
+   "en": "dBZ",
+   "ms": "dBZ"
+  },
+  "short": {
+   "zh": "雷达回波强度的对数单位；每多 10 dBZ 强 10 倍。",
+   "en": "The logarithmic unit of radar echo strength; +10 dBZ is ten times stronger.",
+   "ms": "Unit logaritma kekuatan gema radar; +10 dBZ sepuluh kali lebih kuat."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "doppler-radar",
+  "name": {
+   "zh": "多普勒雷达",
+   "en": "Doppler radar",
+   "ms": "Radar Doppler"
+  },
+  "short": {
+   "zh": "能量出雨滴朝向或离开雷达速度的雷达，可看到风。",
+   "en": "A radar that measures how fast drops move towards or away from it, revealing the wind.",
+   "ms": "Radar yang mengukur kelajuan titisan ke arah atau menjauhinya, mendedahkan angin."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "dual-pol-radar",
+  "name": {
+   "zh": "双偏振雷达",
+   "en": "Dual-polarisation radar",
+   "ms": "Radar dwi-pengutuban"
+  },
+  "short": {
+   "zh": "同时发水平和垂直脉冲，更容易分辨雨和雪。",
+   "en": "Sends horizontal and vertical pulses, making rain and snow easier to tell apart.",
+   "ms": "Menghantar denyut mendatar dan menegak, memudahkan membezakan hujan dan salji."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "lightning-network",
+  "name": {
+   "zh": "闪电定位网",
+   "en": "Lightning detection network",
+   "ms": "Rangkaian pengesanan kilat"
+  },
+  "short": {
+   "zh": "多个接收站按电波到达时间差算出闪电位置的网络。",
+   "en": "Receivers that locate flashes from differences in radio-wave arrival times.",
+   "ms": "Penerima yang mengesan kilat daripada beza masa ketibaan gelombang radio."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "radar",
+  "name": {
+   "zh": "雷达",
+   "en": "Radar",
+   "ms": "Radar"
+  },
+  "short": {
+   "zh": "发出微波、接收雨滴散射回来的回波，看雨在哪里、有多大。",
+   "en": "Sends out microwaves and receives the echo from raindrops, showing where and how hard it rains.",
+   "ms": "Menghantar gelombang mikro dan menerima gema dari titisan hujan, menunjukkan di mana dan betapa lebat hujan."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "sar",
+  "name": {
+   "zh": "合成孔径雷达（SAR）",
+   "en": "Synthetic-aperture radar (SAR)",
+   "ms": "Radar apertur sintetik (SAR)"
+  },
+  "short": {
+   "zh": "卫星上给地面拍雷达照片的仪器，不怕云也不怕黑夜。",
+   "en": "A satellite radar that images the ground through cloud and darkness.",
+   "ms": "Radar satelit yang mengimej permukaan menembusi awan dan kegelapan."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "inversion",
+  "name": {
+   "zh": "逆温层",
+   "en": "Inversion",
+   "ms": "Songsangan suhu"
+  },
+  "short": {
+   "zh": "气温随高度上升的一层，像盖子一样压住对流。",
+   "en": "A layer where temperature rises with height, acting as a lid on convection.",
+   "ms": "Lapisan di mana suhu meningkat dengan ketinggian, bertindak sebagai penutup perolakan."
+  },
+  "chapter": 25
+ },
+ {
+  "id": "skew-t",
+  "name": {
+   "zh": "Skew-T 图",
+   "en": "Skew-T diagram",
+   "ms": "Gambar rajah Skew-T"
+  },
+  "short": {
+   "zh": "等温线斜 45° 的探空图，用来看大气稳定度、云底和 CAPE。",
+   "en": "A sounding chart with temperature lines tilted 45°, used to read stability, cloud base and CAPE.",
+   "ms": "Carta sonde dengan garisan suhu condong 45°, untuk membaca kestabilan, dasar awan dan CAPE."
+  },
+  "chapter": 25
  }
 ]

@@ -69,3 +69,18 @@ against its source before it is written. One row per claim.
 | 20 | ASMC 2026-10-02 区域烟霾情况：苏门答腊南部、加里曼丹东南部成群火点；砂拉越部分地区跨境中到浓烟霾 | https://asmc.asean.org/home/ | 2026-10-02 |
 | 20 | MetMalaysia 总监（The Vibes 2026-09-30 引述 Utusan Malaysia）：长期干旱增加森林与泥炭地火灾和烟霾风险 | https://www.thevibes.com/index.php/articles/news/127819/el-nino-to-bring-drier-weather-higher-temperatures-and-greater-haze-risk-in-malaysia | 2026-10-02 |
 | 20 | 2026-10-02 15:20 API：无不健康读数；哥打京那巴鲁 34、林梦 38 良好；蕉赖 96、Seri Manjung 96 | https://www.freemalaysiatoday.com/category/nation/2026/10/02/haze-clears-further-no-unhealthy-api-readings | 2026-10-02 |
+| 21 | MetMalaysia：32 主要站、382 自动与传统站、8 高空站、18 雷达站、6 风切变站、3 卫星接收站（Bernama 2025-10-08 引述） | https://www.malaymail.com/news/malaysia/2025/10/08/wet-spell-warning-heavy-rain-to-lash-kelantan-terengganu-pahang-first-then-johor-sabah-sarawak-in-novmarch-monsoon/193953 | 2026-10-02 |
+| 22 | WMO 飞机观测计划：AMDAR、AIREP 等，供全球数值预报 | https://community.wmo.int/en/activity-areas/aircraft-based-observations | 2026-10-02 |
+| 22 | Argo：停在约 1 km，每 10 天沉到 2 km 再上浮量温盐；2000 年开始 | https://argo.ucsd.edu/about/ | 2026-10-02 |
+| 22 | TAO 阵列 1985–94 建成，为了解和预报 ENSO | https://www.pmel.noaa.gov/gtmba/pmel-theme/pacific-ocean-tao | 2026-10-02 |
+| 22 | 浮标位置：TAO 48 个（activestations.xml，pgm=TAO）；RAMA、PIRATA（station_table.txt 的 Atlas 浮标，owner RM/PR） | https://www.ndbc.noaa.gov/activestations.xml ；https://www.ndbc.noaa.gov/data/stations/station_table.txt | 2026-10-02 |
+| 22/25 | KLIA Sepang（48650）00 UTC 2026-09-30 探空；975 hPa 浅逆温（25.5→26.2 °C）；500 hPa 5,886 m | https://weather.uwyo.edu/wsgi/sounding?datetime=2026-09-30%2000:00:00&id=48650&type=TEXT:CSV&src=BUFR | 2026-10-02 |
+| 23 | WMO OSCAR：Himawari-9 140.7°E；GK-2A 128.2°E；FY-4A 123.5°E；FY-4B 105°E（AGRI 2026-07-30 故障）；FY-4C 133°E 调试中；INSAT-3DS 82°E；INSAT-3DR 74°E；Meteosat-12 0.3°W；GOES-19 75.2°W；GOES-18 137°W；NOAA-20/21 824 km ECT 13:25；MetOp-B/C 830/827 km；Terra/Aqua 705 km；GPM 442 km 65°；Sentinel-1C 693 km；Sentinel-2B/2C 786 km | https://space.oscar.wmo.int/satellites | 2026-10-02 |
+| 23 | JMA AHI：16 波段，B03 0.64 µm 0.5 km，B08 6.2 µm，B13 10.4 µm；全圆盘每 10 分钟 | https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html | 2026-10-02 |
+| 23 | AWS noaa-himawari9 档案名例：HS_H09_20261001_0300_B01_FLDK_R10_S0110.DAT.bz2；JMA/NOAA 要求注明出处 | https://registry.opendata.aws/noaa-himawari/ | 2026-10-02 |
+| 23 | GIBS 图层：MODIS_Terra/Aqua_CorrectedReflectance_TrueColor；VIIRS_NOAA20/21_Thermal_Anomalies_375m | https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?SERVICE=WMTS&REQUEST=GetCapabilities | 2026-10-02 |
+| 24 | Marshall–Palmer Z = 200 R^1.6（AMS 词汇表）；NWS 热带 Z = 250 R^1.2，热带对流时默认式低估雨量 | https://glossary.ametsoc.org/wiki/marshall-palmer-relation/ ；https://www.weather.gov/tae/research-zrpaper | 2026-10-02 |
+| 24 | GPM DPR：Ku（13.6 GHz）+ Ka 双频，三维降雨 | https://gpm.nasa.gov/missions/GPM/DPR | 2026-10-02 |
+| 24 | Sentinel-1：全天候、昼夜雷达成像 | https://sentinels.copernicus.eu/copernicus/sentinel-1 | 2026-10-02 |
+| 24 | Blitzortung：义工网络，500 多个 VLF 接收器，TOA/TOGA 定位 | https://www.blitzortung.org/en/cover_your_area.php | 2026-10-02 |
+| 25 | NOAA JetStream：1947 年等温线改斜 45°；气压线 1050–100 hPa；干绝热 9.8 °C/km；混合比 g/kg | https://www.noaa.gov/jetstream/upperair/skew-t-log-p-diagrams | 2026-10-02 |
