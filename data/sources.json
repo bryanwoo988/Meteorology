@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "id": "AE1996",
+  "short": "Alduchov & Eskridge 1996",
+  "title": "Improved Magnus form approximation of saturation vapor pressure",
+  "publisher": "O. A. Alduchov & R. E. Eskridge, J. Appl. Meteor. 35, 601–609 (1996)",
+  "url": "https://doi.org/10.1175/1520-0450(1996)035<0601:IMFAOS>2.0.CO;2",
+  "accessed": ""
+ },
+ {
+  "id": "ERA5-OM",
+  "short": "ERA5 / Open-Meteo",
+  "title": "ERA5 hourly reanalysis via the Open-Meteo Historical Weather API",
+  "publisher": "ECMWF / Copernicus Climate Change Service; Open-Meteo (CC BY 4.0)",
+  "url": "https://open-meteo.com/en/docs/historical-weather-api",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "ESS",
+  "short": "Ahrens 2010",
+  "title": "Essentials of Meteorology: An Invitation to the Atmosphere, 6th ed.",
+  "publisher": "C. D. Ahrens, Cengage Learning, 2010",
+  "url": "",
+  "accessed": ""
+ },
+ {
+  "id": "PAM",
+  "short": "Mote & Sahu",
+  "title": "Principles of Agricultural Meteorology",
+  "publisher": "B. M. Mote & D. D. Sahu, Scientific Publishers (India)",
+  "url": "",
+  "accessed": ""
+ },
+ {
+  "id": "STULL2011",
+  "short": "Stull 2011",
+  "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature",
+  "publisher": "R. Stull, J. Appl. Meteor. Climatol. 50, 2267–2269 (2011)",
+  "url": "https://doi.org/10.1175/JAMC-D-11-0143.1",
+  "accessed": ""
+ }
+]

@@ -1,0 +1,149 @@
+"""Chapter 5 — Humidity. Generates data/ch05.json and this chapter's terms,
+sources and quiz entries. Run: python3 tools/content/ch05.py"""
+import json, sys
+sys.path.insert(0, 'tools/content')
+from build import T, P, L, N, write_chapter
+
+kl = json.load(open('data/series/kl-humidity-2025.json'))['rows']
+rows = [[f"{r[0]:02d}:00", f"{r[1]}", f"{r[2]}", f"{r[3]}"] for r in kl if r[0] % 3 == 0]
+
+chapter = {"id": "ch05", "num": 5, "stage": 3,
+ "title": T("湿度", "Humidity", "Kelembapan"),
+ "sources": ["PAM", "ESS", "AE1996", "STULL2011", "ERA5-OM"],
+ "sections": [
+ {"id": "s1", "heading": T("看不见的水", "The invisible water", "Air yang tidak kelihatan"), "level": "basic", "blocks": [
+  P("空气里一直都有水，只是你看不到。以气体形式存在的水叫做{{t:water-vapour}}。它和氮气、氧气混在一起，无色、无味，平常只占空气的百分之一左右。",
+    "There is always water in the air — you just cannot see it. Water in the form of a gas is called {{t:water-vapour}}. It mixes with the nitrogen and oxygen around it, has no colour or smell, and usually makes up only about one per cent of the air.",
+    "Udara sentiasa mengandungi air — cuma kita tidak dapat melihatnya. Air dalam bentuk gas dipanggil {{t:water-vapour}}. Ia bercampur dengan nitrogen dan oksigen, tidak berwarna dan tidak berbau, dan biasanya hanya kira-kira satu peratus daripada udara.",
+    defines=["water-vapour"], src=["ESS:86-87"]),
+  P("水面上的水分子一直在跳动，跑得快的会脱离水面飞进空气，这个过程就是{{t:evaporation}}。同时，空气里也有水分子掉回水面，重新变成液体。水越热、风越大，蒸发就越快。",
+    "Molecules at a water surface are always jostling, and the fastest ones break free into the air: that is {{t:evaporation}}. At the same time, some molecules in the air fall back into the water and become liquid again. Warmer water and a stronger wind both make evaporation faster.",
+    "Molekul di permukaan air sentiasa bergerak, dan yang paling laju terlepas ke udara: itulah {{t:evaporation}}. Pada masa yang sama, sebahagian molekul di udara jatuh semula ke dalam air dan menjadi cecair. Air yang lebih panas dan angin yang lebih kuat mempercepat penyejatan.",
+    defines=["evaporation"], src=["ESS:85-86"]),
+  P("如果把水盖起来，过一阵子，离开水面的分子和回来的分子数目一样多。这时空气里的水汽已经“满”了，叫做{{t:saturation}}。饱和的空气再也没有净蒸发。",
+    "Put a lid on the water and, after a while, as many molecules return as leave. The air above is then ‘full’ of water vapour: it has reached {{t:saturation}}. Saturated air allows no further net evaporation.",
+    "Tutup air itu dan, selepas seketika, bilangan molekul yang kembali sama dengan yang keluar. Udara di atasnya kini ‘penuh’ dengan wap air: ia telah mencapai {{t:saturation}}. Udara tepu tidak membenarkan penyejatan bersih lagi.",
+    defines=["saturation"], src=["ESS:85"]),
+ ]},
+ {"id": "s2", "heading": T("温度决定上限", "Temperature sets the limit", "Suhu menentukan had"), "level": "basic", "blocks": [
+  P("水汽分子撞来撞去，会产生一点压力，叫做{{t:vapour-pressure}}，单位是 hPa（百帕）。空气饱和时的水汽压叫“饱和水汽压”，它几乎只取决于温度：10 °C 时约 12 hPa，30 °C 时约 42 hPa。温度高 20 度，饱和所需的水汽多了三倍多。",
+    "Water-vapour molecules bumping about exert a small pressure, the {{t:vapour-pressure}}, measured in hPa (hectopascals). The vapour pressure of saturated air is the ‘saturation vapour pressure’, and it depends almost only on temperature: about 12 hPa at 10 °C and about 42 hPa at 30 °C. Twenty degrees warmer, and saturation takes more than three times as much vapour.",
+    "Molekul wap air yang berlanggar menghasilkan sedikit tekanan, iaitu {{t:vapour-pressure}}, diukur dalam hPa (hektopascal). Tekanan wap bagi udara tepu dipanggil ‘tekanan wap tepu’, dan ia hampir bergantung pada suhu sahaja: kira-kira 12 hPa pada 10 °C dan kira-kira 42 hPa pada 30 °C. Dua puluh darjah lebih panas, ketepuan memerlukan lebih tiga kali ganda wap.",
+    defines=["vapour-pressure"], src=["ESS:87-88", "PAM:81"]),
+  N("myth", "常听人说“热空气能装更多水”。说法方便，但空气并不是一个有容量的杯子：真正的原因是温度越高，水分子跑得越快，越不容易黏在一起变回液体，所以要更多的水汽才会饱和。",
+    "People often say warm air can ‘hold’ more water. It is a handy phrase, but air is not a cup with a capacity: in warmer air the molecules move faster and are less likely to stick together and condense, so more vapour is needed before saturation.",
+    "Orang selalu berkata udara panas boleh ‘menampung’ lebih banyak air. Ungkapan itu mudah, tetapi udara bukan cawan yang ada kapasiti: dalam udara lebih panas, molekul bergerak lebih laju dan kurang cenderung melekat lalu terkondensasi, jadi lebih banyak wap diperlukan sebelum tepu.",
+    src=["ESS:86"]),
+ ]},
+ {"id": "s3", "heading": T("相对湿度", "Relative humidity", "Kelembapan relatif"), "level": "basic", "blocks": [
+  P("天气预报最常用的是{{t:relative-humidity}}：空气里实际的水汽压，除以当时温度下的饱和水汽压，用百分比表示。50 % 的意思是空气里的水汽只有饱和所需的一半；100 % 就是饱和。",
+    "The figure forecasts quote most is {{t:relative-humidity}}: the actual vapour pressure divided by the saturation vapour pressure at the current temperature, as a percentage. 50 % means the air holds half the vapour needed for saturation; 100 % means it is saturated.",
+    "Angka yang paling kerap disebut dalam ramalan ialah {{t:relative-humidity}}: tekanan wap sebenar dibahagi dengan tekanan wap tepu pada suhu semasa, dalam peratus. 50 % bermaksud udara mengandungi separuh daripada wap yang diperlukan untuk tepu; 100 % bermaksud udara tepu.",
+    defines=["relative-humidity"], src=["ESS:87-88", "PAM:81"]),
+  P("要注意：相对湿度告诉你的是“离饱和还有多远”，不是“空气里有多少水”。它会因为两件事而改变：",
+    "Note what it tells you: how close the air is to saturation — not how much water is in it. It changes for two reasons:",
+    "Perhatikan maksudnya: sejauh mana udara hampir tepu — bukan berapa banyak air di dalamnya. Ia berubah kerana dua sebab:",
+    src=["ESS:88"]),
+  L(("加入或减少水汽：温度不变时，水汽越多，相对湿度越高。", "Adding or removing vapour: at the same temperature, more vapour means higher relative humidity.", "Menambah atau mengurangkan wap: pada suhu yang sama, lebih banyak wap bermaksud kelembapan relatif lebih tinggi."),
+    ("温度改变：水汽不变时，气温升高，相对湿度就下降；气温下降，相对湿度就上升。", "Changing the temperature: with the same vapour, warming lowers the relative humidity and cooling raises it.", "Mengubah suhu: dengan wap yang sama, pemanasan merendahkan kelembapan relatif dan penyejukan menaikkannya."),
+    src=["ESS:88-89"]),
+  P("所以一天之内，相对湿度通常在清晨最冷的时候最高，在下午最热的时候最低，即使空气里的水汽几乎没有变。",
+    "So over a day, relative humidity is usually highest at dawn, the coolest time, and lowest in the warmest part of the afternoon — even when the amount of vapour hardly changes.",
+    "Jadi dalam sehari, kelembapan relatif biasanya paling tinggi pada waktu subuh, iaitu waktu paling sejuk, dan paling rendah pada waktu petang yang paling panas — walaupun jumlah wap hampir tidak berubah.",
+    src=["ESS:89"]),
+ ]},
+ {"id": "s4", "heading": T("露点：空气到底有多湿", "Dew point: how moist the air really is", "Takat embun: sebenarnya berapa lembap udara"), "level": "basic", "blocks": [
+  P("把空气慢慢冷却，水汽量和气压都不变，冷到某个温度时空气就会饱和，这个温度叫{{t:dew-point}}。露点只跟空气里有多少水汽有关：露点高，水汽多；露点低，水汽少。所以要知道空气到底有多湿，看露点比看相对湿度可靠。",
+    "Cool air steadily, keeping its vapour and pressure unchanged, and at some temperature it becomes saturated. That temperature is the {{t:dew-point}}. It depends only on how much vapour the air contains: a high dew point means a lot of vapour, a low one means little. To know how moist the air really is, the dew point is a better guide than relative humidity.",
+    "Sejukkan udara perlahan-lahan tanpa mengubah kandungan wap dan tekanannya, dan pada suhu tertentu ia akan menjadi tepu. Suhu itu ialah {{t:dew-point}}. Ia hanya bergantung pada jumlah wap dalam udara: takat embun tinggi bermaksud banyak wap, yang rendah bermaksud sedikit. Untuk mengetahui sebenarnya berapa lembap udara, takat embun lebih boleh dipercayai daripada kelembapan relatif.",
+    defines=["dew-point"], src=["ESS:90", "PAM:81"]),
+  P("气温和露点相差越远，相对湿度越低；两者相等，空气就饱和。例如早上 10 °C、空气饱和；中午升到 30 °C 而水汽不变，露点仍是 10 °C，相对湿度却只剩约 29 %。",
+    "The further apart temperature and dew point are, the lower the relative humidity; when they are equal, the air is saturated. Say the air is saturated at 10 °C in the morning. If it warms to 30 °C by midday with the same vapour, the dew point stays at 10 °C, but the relative humidity falls to about 29 %.",
+    "Semakin jauh beza suhu dan takat embun, semakin rendah kelembapan relatif; apabila kedua-duanya sama, udara tepu. Katakan udara tepu pada 10 °C pada waktu pagi. Jika ia memanas ke 30 °C menjelang tengah hari dengan wap yang sama, takat embun kekal 10 °C, tetapi kelembapan relatif jatuh ke kira-kira 29 %.",
+    src=["ESS:89-90"]),
+  {"type": "table", "src": ["ERA5-OM"],
+   "caption": T("吉隆坡 2025 年：每个时段的全年平均（ERA5 再分析资料）", "Kuala Lumpur, 2025: whole-year averages by time of day (ERA5 reanalysis)", "Kuala Lumpur, 2025: purata setahun mengikut waktu (analisis semula ERA5)"),
+   "headers": [T("时间", "Time", "Masa"), T("气温 °C", "Temperature °C", "Suhu °C"), T("露点 °C", "Dew point °C", "Takat embun °C"), T("相对湿度 %", "Relative humidity %", "Kelembapan relatif %")],
+   "rows": rows},
+  P("看看吉隆坡的真实数据：一整天的露点都在 22 到 24 °C 之间，几乎不动；相对湿度却从清晨约 93 % 跌到下午约 59 %。下午空气并没有变干，只是变热了。",
+    "Look at real data for Kuala Lumpur: the dew point stays between 22 and 24 °C all day, barely moving, while relative humidity drops from about 93 % at dawn to about 59 % in mid-afternoon. The afternoon air has not dried out — it has only warmed up.",
+    "Lihat data sebenar bagi Kuala Lumpur: takat embun kekal antara 22 dan 24 °C sepanjang hari, hampir tidak bergerak, manakala kelembapan relatif jatuh daripada kira-kira 93 % pada waktu subuh kepada kira-kira 59 % pada tengah petang. Udara petang tidak menjadi kering — ia cuma menjadi lebih panas.",
+    src=["ERA5-OM"]),
+  N("key", "🌦️ 午后阵雨的第二块拼图：吉隆坡的露点全年平均约 23 °C，空气里的水汽非常充足。这些水汽就是下午雷雨的“燃料”。在第 7 章，你会看到它们怎样被送上高空变成云。",
+    "🌦️ Afternoon storms, piece two: Kuala Lumpur's dew point averages about 23 °C over the year — the air is full of vapour. That vapour is the fuel for afternoon thunderstorms. In Chapter 7 you will see how it is lifted and turned into cloud.",
+    "🌦️ Ribut petang, kepingan kedua: takat embun Kuala Lumpur purata kira-kira 23 °C sepanjang tahun — udara penuh dengan wap. Wap itulah bahan api ribut petir petang. Dalam Bab 7 anda akan melihat bagaimana ia diangkat dan menjadi awan.",
+    src=["ERA5-OM"]),
+  # W5 added in Task 9
+ ]},
+ {"id": "s5", "heading": T("湿球温度与人体", "Wet-bulb temperature and the body", "Suhu bebuli basah dan tubuh"), "level": "basic", "blocks": [
+  P("用一块湿布包住温度计，让水分蒸发，温度计会降到某个最低值，这就是{{t:wet-bulb}}：靠蒸发冷却所能达到的最低温度。空气越干，蒸发越快，湿球温度比气温低得越多；空气饱和时，两者相等。",
+    "Wrap a thermometer in wet cloth and let the water evaporate: the reading falls to a lowest value, the {{t:wet-bulb}} — the lowest temperature evaporation can cool something to. The drier the air, the faster the evaporation and the further the wet-bulb sits below the air temperature; in saturated air the two are equal.",
+    "Balut termometer dengan kain basah dan biarkan airnya menyejat: bacaannya turun ke nilai terendah, iaitu {{t:wet-bulb}} — suhu terendah yang boleh dicapai melalui penyejukan penyejatan. Semakin kering udara, semakin cepat penyejatan dan semakin rendah suhu bebuli basah berbanding suhu udara; dalam udara tepu kedua-duanya sama.",
+    defines=["wet-bulb"], src=["ESS:92", "PAM:81"]),
+  N("myth", "湿球温度不是露点。露点是把空气“冷却”到饱和；湿球温度是把水“蒸发”进空气直到饱和，所以湿球温度一般介于露点和气温之间。",
+    "The wet-bulb temperature is not the dew point. The dew point is reached by cooling the air; the wet-bulb temperature by evaporating water into it. The wet-bulb usually lies between the dew point and the air temperature.",
+    "Suhu bebuli basah bukan takat embun. Takat embun dicapai dengan menyejukkan udara; suhu bebuli basah dengan menyejatkan air ke dalamnya. Suhu bebuli basah biasanya terletak di antara takat embun dan suhu udara.",
+    src=["ESS:92"]),
+  P("人体在热天主要靠流汗、让汗水蒸发来散热。空气又热又湿时，汗水蒸发得慢，身体就难以降温，这叫{{t:heat-stress}}。湿球温度越接近皮肤温度，散热越难；一旦湿球温度高过皮肤温度，汗水就再也不能帮身体降温。",
+    "In hot weather the body sheds heat mainly by sweating and letting the sweat evaporate. When the air is both hot and humid, sweat evaporates slowly and the body struggles to cool down: this is {{t:heat-stress}}. The closer the wet-bulb temperature gets to skin temperature, the harder it is to lose heat; once the wet-bulb exceeds skin temperature, sweating can no longer cool the body at all.",
+    "Dalam cuaca panas, tubuh membuang haba terutamanya dengan berpeluh dan membiarkan peluh menyejat. Apabila udara panas dan lembap, peluh menyejat perlahan dan tubuh sukar menyejuk: inilah {{t:heat-stress}}. Semakin hampir suhu bebuli basah dengan suhu kulit, semakin sukar membuang haba; apabila suhu bebuli basah melebihi suhu kulit, peluh tidak lagi dapat menyejukkan tubuh.",
+    defines=["heat-stress"], src=["ESS:92-93"]),
+  N("warn", "在园里或户外工作时，热天要多喝水、找阴凉处休息。头痛、恶心、头晕都是热衰竭的征兆，要立刻停下来降温。",
+    "When working outdoors or in the field on hot days, drink often and rest in the shade. Headache, nausea and dizziness are signs of heat exhaustion: stop and cool down at once.",
+    "Apabila bekerja di luar atau di ladang pada hari panas, kerap minum dan berehat di tempat teduh. Sakit kepala, loya dan pening ialah tanda keletihan haba: berhenti dan sejukkan badan dengan segera.",
+    src=["ESS:93"]),
+ ]},
+ {"id": "s6", "heading": T("其他表示湿度的方法", "Other ways to measure humidity", "Cara lain mengukur kelembapan"), "level": "advanced", "blocks": [
+  {"type": "keyval", "src": ["ESS:86", "PAM:81"], "rows": [
+   {"k": T("绝对湿度", "Absolute humidity", "Kelembapan mutlak"), "v": T("每立方米空气里水汽的质量（g/m³）", "Mass of water vapour per cubic metre of air (g/m³)", "Jisim wap air bagi setiap meter padu udara (g/m³)")},
+   {"k": T("比湿", "Specific humidity", "Kelembapan tentu"), "v": T("水汽质量 ÷ 全部空气（含水汽）的质量（g/kg）", "Mass of vapour ÷ mass of all the air, vapour included (g/kg)", "Jisim wap ÷ jisim semua udara termasuk wap (g/kg)")},
+   {"k": T("混合比", "Mixing ratio", "Nisbah campuran"), "v": T("水汽质量 ÷ 干空气质量（g/kg）", "Mass of vapour ÷ mass of dry air (g/kg)", "Jisim wap ÷ jisim udara kering (g/kg)")},
+   {"k": T("饱和差", "Saturation deficit", "Defisit ketepuan"), "v": T("饱和水汽压 − 实际水汽压（hPa）", "Saturation vapour pressure − actual vapour pressure (hPa)", "Tekanan wap tepu − tekanan wap sebenar (hPa)")}]},
+  P("其中最常用在计算里的是{{t:mixing-ratio}}：空气上升、下降、膨胀、压缩时，只要没有凝结或蒸发，混合比都保持不变。第 7 章计算气块上升时就靠它。",
+    "The one used most in calculations is the {{t:mixing-ratio}}: as air rises, sinks, expands or is compressed, it stays the same as long as nothing condenses or evaporates. Chapter 7 relies on it to follow a rising parcel of air.",
+    "Yang paling banyak digunakan dalam pengiraan ialah {{t:mixing-ratio}}: apabila udara naik, turun, mengembang atau dimampatkan, ia kekal sama selagi tiada kondensasi atau penyejatan. Bab 7 bergantung padanya untuk mengikuti bungkusan udara yang naik.",
+    defines=["mixing-ratio"], src=["ESS:86"]),
+  P("App 里的湿度计算用的是 Magnus 公式：饱和水汽压 e(T) = 6.1094 × exp(17.625 T ÷ (T + 243.04)) hPa，T 用 °C。湿球温度用 Stull（2011）的经验公式，适用于相对湿度 5–99 %、气温 −20 至 50 °C；超出范围时显示“—”。",
+    "The humidity calculations in this app use the Magnus formula: saturation vapour pressure e(T) = 6.1094 × exp(17.625 T ÷ (T + 243.04)) hPa, with T in °C. The wet-bulb temperature uses Stull's (2011) empirical formula, valid for relative humidity 5–99 % and temperatures from −20 to 50 °C; outside that range the app shows ‘—’.",
+    "Pengiraan kelembapan dalam aplikasi ini menggunakan formula Magnus: tekanan wap tepu e(T) = 6.1094 × exp(17.625 T ÷ (T + 243.04)) hPa, dengan T dalam °C. Suhu bebuli basah menggunakan formula empirik Stull (2011), sah untuk kelembapan relatif 5–99 % dan suhu −20 hingga 50 °C; di luar julat itu aplikasi memaparkan ‘—’.",
+    src=["AE1996", "STULL2011"]),
+ ]},
+ ]}
+
+terms = [
+ ("water-vapour", T("水汽", "Water vapour", "Wap air"), T("以气体形式存在于空气中的水，看不见。", "Water in the form of a gas, mixed invisibly into the air.", "Air dalam bentuk gas yang bercampur dalam udara tanpa kelihatan.")),
+ ("evaporation", T("蒸发", "Evaporation", "Penyejatan"), T("液态水变成水汽、进入空气的过程。", "Liquid water turning into vapour and entering the air.", "Air cecair bertukar menjadi wap dan memasuki udara.")),
+ ("saturation", T("饱和", "Saturation", "Ketepuan"), T("蒸发和凝结互相抵消，空气不再有净蒸发的状态。", "The state where evaporation and condensation balance, so there is no further net evaporation.", "Keadaan apabila penyejatan dan kondensasi seimbang, jadi tiada lagi penyejatan bersih.")),
+ ("vapour-pressure", T("水汽压", "Vapour pressure", "Tekanan wap"), T("水汽在空气总气压中所占的部分，单位 hPa；饱和时的值只取决于温度。", "The share of air pressure exerted by water vapour, in hPa; its saturation value depends on temperature.", "Bahagian tekanan udara yang dikenakan oleh wap air, dalam hPa; nilai tepunya bergantung pada suhu.")),
+ ("relative-humidity", T("相对湿度", "Relative humidity", "Kelembapan relatif"), T("实际水汽压占饱和水汽压的百分比，表示离饱和还有多远。", "Actual vapour pressure as a percentage of the saturation value: how close the air is to saturation.", "Tekanan wap sebenar sebagai peratus nilai tepu: sejauh mana udara hampir tepu.")),
+ ("dew-point", T("露点", "Dew point", "Takat embun"), T("空气在水汽和气压不变下冷却到饱和时的温度；最能代表空气里有多少水汽。", "The temperature at which air becomes saturated if cooled without changing its vapour or pressure; the best guide to how much vapour it holds.", "Suhu apabila udara menjadi tepu jika disejukkan tanpa mengubah wap atau tekanannya; panduan terbaik bagi jumlah wap.")),
+ ("wet-bulb", T("湿球温度", "Wet-bulb temperature", "Suhu bebuli basah"), T("靠蒸发冷却所能达到的最低温度。", "The lowest temperature that evaporation can cool something to.", "Suhu terendah yang boleh dicapai melalui penyejukan penyejatan.")),
+ ("heat-stress", T("热压力", "Heat stress", "Tekanan haba"), T("又热又湿时汗水难以蒸发，身体难以散热的状态。", "When heat and humidity stop sweat evaporating, so the body struggles to shed heat.", "Apabila panas dan lembap menghalang peluh menyejat, lalu tubuh sukar membuang haba.")),
+ ("mixing-ratio", T("混合比", "Mixing ratio", "Nisbah campuran"), T("水汽质量与干空气质量之比（g/kg）；空气升降时只要不凝结就不变。", "Mass of vapour per mass of dry air (g/kg); unchanged as air rises or sinks unless it condenses.", "Jisim wap bagi setiap jisim udara kering (g/kg); tidak berubah apabila udara naik atau turun kecuali berlaku kondensasi.")),
+]
+
+sources = [
+ {"id": "PAM", "short": "Mote & Sahu", "title": "Principles of Agricultural Meteorology", "publisher": "B. M. Mote & D. D. Sahu, Scientific Publishers (India)", "url": "", "accessed": ""},
+ {"id": "ESS", "short": "Ahrens 2010", "title": "Essentials of Meteorology: An Invitation to the Atmosphere, 6th ed.", "publisher": "C. D. Ahrens, Cengage Learning, 2010", "url": "", "accessed": ""},
+ {"id": "AE1996", "short": "Alduchov & Eskridge 1996", "title": "Improved Magnus form approximation of saturation vapor pressure", "publisher": "O. A. Alduchov & R. E. Eskridge, J. Appl. Meteor. 35, 601–609 (1996)", "url": "https://doi.org/10.1175/1520-0450(1996)035<0601:IMFAOS>2.0.CO;2", "accessed": ""},
+ {"id": "STULL2011", "short": "Stull 2011", "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature", "publisher": "R. Stull, J. Appl. Meteor. Climatol. 50, 2267–2269 (2011)", "url": "https://doi.org/10.1175/JAMC-D-11-0143.1", "accessed": ""},
+ {"id": "ERA5-OM", "short": "ERA5 / Open-Meteo", "title": "ERA5 hourly reanalysis via the Open-Meteo Historical Weather API", "publisher": "ECMWF / Copernicus Climate Change Service; Open-Meteo (CC BY 4.0)", "url": "https://open-meteo.com/en/docs/historical-weather-api", "accessed": "2026-10-02"},
+]
+
+quiz = [
+ {"stage": 3, "chapter": "ch05",
+  "q": T("吉隆坡下午的相对湿度比清晨低很多，主要原因是什么？", "Why is Kuala Lumpur's relative humidity much lower in the afternoon than at dawn?", "Mengapa kelembapan relatif Kuala Lumpur jauh lebih rendah pada waktu petang berbanding subuh?"),
+  "options": [T("下午气温高了，水汽量却差不多", "The air is warmer, while the amount of vapour is about the same", "Udara lebih panas, sedangkan jumlah wap lebih kurang sama"),
+              T("下午空气里的水汽少了一半", "Half the vapour has left the air", "Separuh wap telah meninggalkan udara"),
+              T("下午气压比较高", "The air pressure is higher", "Tekanan udara lebih tinggi"),
+              T("下午露点升高了", "The dew point has risen", "Takat embun telah naik")],
+  "answer": 0,
+  "why": T("露点全天几乎不变，代表水汽量没变；气温升高使饱和水汽压变大，相对湿度就下降。", "The dew point hardly changes all day, so the vapour is the same; warming raises the saturation vapour pressure, so relative humidity falls.", "Takat embun hampir tidak berubah sepanjang hari, jadi wapnya sama; pemanasan menaikkan tekanan wap tepu, jadi kelembapan relatif jatuh.")},
+ {"stage": 3, "chapter": "ch05",
+  "q": T("想比较两个地方的空气到底有多湿，看哪一个最好？", "To compare how much moisture the air in two places really holds, which is best?", "Untuk membandingkan berapa banyak kelembapan sebenarnya dalam udara di dua tempat, yang mana terbaik?"),
+  "options": [T("相对湿度", "Relative humidity", "Kelembapan relatif"), T("露点", "Dew point", "Takat embun"), T("气温", "Air temperature", "Suhu udara"), T("云量", "Cloud cover", "Litupan awan")],
+  "answer": 1,
+  "why": T("露点只取决于水汽量；相对湿度还会随温度改变。", "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.", "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu.")},
+]
+
+write_chapter(chapter, terms, sources, quiz)

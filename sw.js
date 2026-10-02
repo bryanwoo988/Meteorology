@@ -9,11 +9,18 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-475eddd593';
+const CACHE = 'meteo-d4257b29be';
 const ASSETS = [
   './',
   'css/app.css',
+  'data/ch05.json',
+  'data/datasets.json',
+  'data/index.json',
+  'data/quiz.json',
   'data/releases.json',
+  'data/series/kl-humidity-2025.json',
+  'data/sources.json',
+  'data/terms.json',
   'favicon.ico',
   'icons/apple-touch-icon-180.png',
   'icons/favicon-32.png',
@@ -46,13 +53,18 @@ const ASSETS = [
   'icons/splash/828x1792-dark.png',
   'icons/splash/828x1792-light.png',
   'index.html',
+  'js/app.js',
   'js/config.js',
+  'js/content.js',
   'js/i18n.js',
+  'js/markup.js',
   'js/physics.js',
   'js/prefs.js',
   'js/releases.js',
   'js/swpolicy.js',
+  'js/terms.js',
   'js/updatelogic.js',
+  'manifest.webmanifest',
 ];
 /* --- generated:end --- */
 

@@ -1,1 +1,128 @@
-[]
+[
+ {
+  "id": "dew-point",
+  "name": {
+   "zh": "露点",
+   "en": "Dew point",
+   "ms": "Takat embun"
+  },
+  "short": {
+   "zh": "空气在水汽和气压不变下冷却到饱和时的温度；最能代表空气里有多少水汽。",
+   "en": "The temperature at which air becomes saturated if cooled without changing its vapour or pressure; the best guide to how much vapour it holds.",
+   "ms": "Suhu apabila udara menjadi tepu jika disejukkan tanpa mengubah wap atau tekanannya; panduan terbaik bagi jumlah wap."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "evaporation",
+  "name": {
+   "zh": "蒸发",
+   "en": "Evaporation",
+   "ms": "Penyejatan"
+  },
+  "short": {
+   "zh": "液态水变成水汽、进入空气的过程。",
+   "en": "Liquid water turning into vapour and entering the air.",
+   "ms": "Air cecair bertukar menjadi wap dan memasuki udara."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "heat-stress",
+  "name": {
+   "zh": "热压力",
+   "en": "Heat stress",
+   "ms": "Tekanan haba"
+  },
+  "short": {
+   "zh": "又热又湿时汗水难以蒸发，身体难以散热的状态。",
+   "en": "When heat and humidity stop sweat evaporating, so the body struggles to shed heat.",
+   "ms": "Apabila panas dan lembap menghalang peluh menyejat, lalu tubuh sukar membuang haba."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "mixing-ratio",
+  "name": {
+   "zh": "混合比",
+   "en": "Mixing ratio",
+   "ms": "Nisbah campuran"
+  },
+  "short": {
+   "zh": "水汽质量与干空气质量之比（g/kg）；空气升降时只要不凝结就不变。",
+   "en": "Mass of vapour per mass of dry air (g/kg); unchanged as air rises or sinks unless it condenses.",
+   "ms": "Jisim wap bagi setiap jisim udara kering (g/kg); tidak berubah apabila udara naik atau turun kecuali berlaku kondensasi."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "relative-humidity",
+  "name": {
+   "zh": "相对湿度",
+   "en": "Relative humidity",
+   "ms": "Kelembapan relatif"
+  },
+  "short": {
+   "zh": "实际水汽压占饱和水汽压的百分比，表示离饱和还有多远。",
+   "en": "Actual vapour pressure as a percentage of the saturation value: how close the air is to saturation.",
+   "ms": "Tekanan wap sebenar sebagai peratus nilai tepu: sejauh mana udara hampir tepu."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "saturation",
+  "name": {
+   "zh": "饱和",
+   "en": "Saturation",
+   "ms": "Ketepuan"
+  },
+  "short": {
+   "zh": "蒸发和凝结互相抵消，空气不再有净蒸发的状态。",
+   "en": "The state where evaporation and condensation balance, so there is no further net evaporation.",
+   "ms": "Keadaan apabila penyejatan dan kondensasi seimbang, jadi tiada lagi penyejatan bersih."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "vapour-pressure",
+  "name": {
+   "zh": "水汽压",
+   "en": "Vapour pressure",
+   "ms": "Tekanan wap"
+  },
+  "short": {
+   "zh": "水汽在空气总气压中所占的部分，单位 hPa；饱和时的值只取决于温度。",
+   "en": "The share of air pressure exerted by water vapour, in hPa; its saturation value depends on temperature.",
+   "ms": "Bahagian tekanan udara yang dikenakan oleh wap air, dalam hPa; nilai tepunya bergantung pada suhu."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "water-vapour",
+  "name": {
+   "zh": "水汽",
+   "en": "Water vapour",
+   "ms": "Wap air"
+  },
+  "short": {
+   "zh": "以气体形式存在于空气中的水，看不见。",
+   "en": "Water in the form of a gas, mixed invisibly into the air.",
+   "ms": "Air dalam bentuk gas yang bercampur dalam udara tanpa kelihatan."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "wet-bulb",
+  "name": {
+   "zh": "湿球温度",
+   "en": "Wet-bulb temperature",
+   "ms": "Suhu bebuli basah"
+  },
+  "short": {
+   "zh": "靠蒸发冷却所能达到的最低温度。",
+   "en": "The lowest temperature that evaporation can cool something to.",
+   "ms": "Suhu terendah yang boleh dicapai melalui penyejukan penyejatan."
+  },
+  "chapter": 5
+ }
+]

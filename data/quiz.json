@@ -1,1 +1,76 @@
-[]
+[
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "吉隆坡下午的相对湿度比清晨低很多，主要原因是什么？",
+   "en": "Why is Kuala Lumpur's relative humidity much lower in the afternoon than at dawn?",
+   "ms": "Mengapa kelembapan relatif Kuala Lumpur jauh lebih rendah pada waktu petang berbanding subuh?"
+  },
+  "options": [
+   {
+    "zh": "下午气温高了，水汽量却差不多",
+    "en": "The air is warmer, while the amount of vapour is about the same",
+    "ms": "Udara lebih panas, sedangkan jumlah wap lebih kurang sama"
+   },
+   {
+    "zh": "下午空气里的水汽少了一半",
+    "en": "Half the vapour has left the air",
+    "ms": "Separuh wap telah meninggalkan udara"
+   },
+   {
+    "zh": "下午气压比较高",
+    "en": "The air pressure is higher",
+    "ms": "Tekanan udara lebih tinggi"
+   },
+   {
+    "zh": "下午露点升高了",
+    "en": "The dew point has risen",
+    "ms": "Takat embun telah naik"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "露点全天几乎不变，代表水汽量没变；气温升高使饱和水汽压变大，相对湿度就下降。",
+   "en": "The dew point hardly changes all day, so the vapour is the same; warming raises the saturation vapour pressure, so relative humidity falls.",
+   "ms": "Takat embun hampir tidak berubah sepanjang hari, jadi wapnya sama; pemanasan menaikkan tekanan wap tepu, jadi kelembapan relatif jatuh."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "想比较两个地方的空气到底有多湿，看哪一个最好？",
+   "en": "To compare how much moisture the air in two places really holds, which is best?",
+   "ms": "Untuk membandingkan berapa banyak kelembapan sebenarnya dalam udara di dua tempat, yang mana terbaik?"
+  },
+  "options": [
+   {
+    "zh": "相对湿度",
+    "en": "Relative humidity",
+    "ms": "Kelembapan relatif"
+   },
+   {
+    "zh": "露点",
+    "en": "Dew point",
+    "ms": "Takat embun"
+   },
+   {
+    "zh": "气温",
+    "en": "Air temperature",
+    "ms": "Suhu udara"
+   },
+   {
+    "zh": "云量",
+    "en": "Cloud cover",
+    "ms": "Litupan awan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "露点只取决于水汽量；相对湿度还会随温度改变。",
+   "en": "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.",
+   "ms": "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu."
+  }
+ }
+]
