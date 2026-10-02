@@ -339,3 +339,21 @@ body.sheet-open { overflow: hidden; }
 .w-readout dt { font-size: .74rem; color: var(--muted); }
 .w-readout dd { margin: 0; font-weight: 650; font-variant-numeric: tabular-nums; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ===== Maps ===== */
+.map-wrap { margin: 0; }
+.map { display: block; width: 100%; height: auto; user-select: none; -webkit-user-select: none; }
+.map-sea { fill: var(--map-sea); }
+.map-land path { fill: var(--map-land); stroke: var(--map-coast); stroke-width: .6; stroke-linejoin: round; }
+.map-borders path { fill: none; stroke: var(--map-border); stroke-width: .5; }
+.map-grat path { fill: none; stroke: var(--map-grat); stroke-width: .5; }
+.map-grat path.equator { stroke: var(--muted); stroke-dasharray: 3 3; stroke-width: .8; }
+.map-limb { fill: none; stroke: var(--line); stroke-width: 1; }
+.map-globe { cursor: grab; touch-action: none; }
+.map-layer path { stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.map-regions path { stroke-width: 1.2; }
+.map-layer text { font-size: 11.5px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.map-layer .is-pickable { cursor: pointer; }
+.map-layer .is-pickable:focus-visible { outline: none; stroke: var(--accent); stroke-width: 3; }
+:root { --map-sea: #e8f0fb; --map-land: #f7f4ee; --map-coast: #b9c4d3; --map-border: #cdd5e0; --map-grat: #d6e2f3; }
+:root[data-theme="dark"] { --map-sea: #0f1928; --map-land: #283447; --map-coast: #46576f; --map-border: #34445a; --map-grat: #1a2840; }

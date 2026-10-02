@@ -8,8 +8,11 @@ import { pick, t } from './i18n.js';
 import { parseInline } from './markup.js';
 
 const cache = new Map();
+// Resolved against this module, not the page, so it works from any route or test page.
+const DATA = new URL('../data/', import.meta.url);
 
-async function json(path) {
+async function json(name) {
+  const path = new URL(name, DATA).href;
   if (!cache.has(path)) {
     cache.set(path, fetch(path).then(r => {
       if (!r.ok) throw new Error(`${path}: ${r.status}`);
@@ -19,9 +22,9 @@ async function json(path) {
   return cache.get(path);
 }
 
-export const loadIndex = () => json('data/index.json');
-export const loadChapter = id => json(`data/${id}.json`);
-export const loadData = name => json(`data/${name}.json`);
+export const loadIndex = () => json('index.json');
+export const loadChapter = id => json(`${id}.json`);
+export const loadData = name => json(`${name}.json`);
 
 export function el(tag, attrs = {}, ...kids) {
   const n = document.createElement(tag);

@@ -9,13 +9,15 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-34385db9b3';
+const CACHE = 'meteo-8969be6c3a';
 const ASSETS = [
   './',
   'css/app.css',
   'data/ch05.json',
   'data/datasets.json',
   'data/index.json',
+  'data/maps/seasia.json',
+  'data/maps/world.json',
   'data/quiz.json',
   'data/releases.json',
   'data/series/kl-humidity-2025.json',
@@ -58,9 +60,11 @@ const ASSETS = [
   'js/config.js',
   'js/content.js',
   'js/i18n.js',
+  'js/maps.js',
   'js/markup.js',
   'js/physics.js',
   'js/prefs.js',
+  'js/projections.js',
   'js/qrcode.js',
   'js/releases.js',
   'js/share.js',

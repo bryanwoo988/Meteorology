@@ -160,5 +160,26 @@ await test('line chart scrubs with the keyboard and updates its readout', async 
   a.close();
 });
 
+await test('base maps render: world, South-East Asia and a globe that turns', async () => {
+  const { baseMap } = await import('../js/maps.js');
+  const host = document.createElement('div'); host.style.width = '360px';
+  document.getElementById('frames').append(host);
+  for (const kind of ['world', 'seasia', 'globe']) {
+    const m = await baseMap(kind, { lang: 'en', width: 340 });
+    host.append(m.el);
+    const land = m.el.querySelectorAll('.map-land path, path.map-land');
+    assert(land.length > 0, `${kind}: no land drawn`);
+    const kl = m.project([101.69, 3.14]);
+    assert(kl && kl.every(Number.isFinite), `${kind}: Kuala Lumpur not projected`);
+    if (kind === 'globe') {
+      const before = m.centre().join(',');
+      m.rotateTo([20, 10]);
+      assert(m.centre().join(',') !== before, 'globe did not rotate');
+      assert(m.project([101.69, 3.14]) === null || m.project([101.69, 3.14]).every(Number.isFinite), 'bad projection after rotate');
+    }
+  }
+  host.remove();
+});
+
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';
