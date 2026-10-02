@@ -2,7 +2,7 @@
 
 **日期：** 2026-10-02
 **作者：** Bryan Woo
-**状态：** 待审阅
+**状态：** 已确认（2026-10-02）。界面要求：专业、干净。
 
 ---
 
@@ -129,6 +129,7 @@
 22. **互动图表**：27 个（§7）。
 23. **基础 / 进阶**：每章默认只显示基础内容；公式和细节放进可展开的"进阶"框。
 24. **缩写表**：ECMWF、IFS、ENS、CAPE、LCL、MJO……三语，可搜索。
+26. **数据卡片与数据目录**：模型和数据章节附真实数据样本、参数表、直接链接（见大纲"数据卡片"）。外部链接标 ↗，离线时提示需要网络。
 25. **名词地图**：互动图显示名词之间的先后关系，点一个名词看要先懂哪些。
 
 ---
@@ -194,6 +195,7 @@ Meteorology/
 
 沿用 OilPalmWiki 的 block 格式（`p`、`list`、`keyval`、`table`、`chart`、`figure`、`note`），加上：
 
+- `dataset`：`{ "type": "dataset", "id": "ecmwf-ens" }`，卡片内容存在 `data/datasets.json`
 - `widget`：`{ "type": "widget", "id": "W7", "opts": {…} }`
 - `note.kind` 增加 `myth`（常见误解）
 - 段落里的名词标记：`{{t:dew-point}}`，渲染成可点的名词；`{{t:dew-point|露点温度}}` 可换显示文字
@@ -288,6 +290,7 @@ Meteorology/
 | `node --test tests/*.test.js` | `physics.js`、`updatelogic.js`、`swpolicy.js`、`i18n.js` 单元测试，以及 sw 行为测试 |
 | `venv/bin/python tools/build-maps.py` | 从 Natural Earth 生成简化底图；把海温等数据缩成小网格写进 `data/maps/` |
 | `node tools/fetch-series.mjs` | 从 Open-Meteo Archive、NOAA CPC 抓图表用的真实数据，写进 `data/series/`，含来源与抓取日期 |
+| `node tools/check-links.mjs` | 检查所有外部链接是否仍然有效（每周由 CI 排程执行，失效只提醒、不阻挡发布） |
 | `venv/bin/python tools/verify-qr.py` | 用 zxing-cpp 解码 App 生成的二维码，确认等于 `APP_URL` |
 | `tests/index.html` | 浏览器测试页：语言选择、路由、名词弹窗、图表挂载、搜索、自测 |
 
@@ -328,4 +331,4 @@ Meteorology/
 
 ## 14. 待确认
 
-1. GitHub repo 名用 `Meteorology` 可以吗？（决定网址和二维码）
+（无。repo 名默认 `Meteorology`，要改只需改 `js/config.js` 的 `APP_URL` 并重新生成 `qr.svg`。）
