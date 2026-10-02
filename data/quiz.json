@@ -1,79 +1,5 @@
 [
  {
-  "stage": 3,
-  "chapter": "ch05",
-  "q": {
-   "zh": "吉隆坡下午的相对湿度比清晨低很多，主要原因是什么？",
-   "en": "Why is Kuala Lumpur's relative humidity much lower in the afternoon than at dawn?",
-   "ms": "Mengapa kelembapan relatif Kuala Lumpur jauh lebih rendah pada waktu petang berbanding subuh?"
-  },
-  "options": [
-   {
-    "zh": "下午气温高了，水汽量却差不多",
-    "en": "The air is warmer, while the amount of vapour is about the same",
-    "ms": "Udara lebih panas, sedangkan jumlah wap lebih kurang sama"
-   },
-   {
-    "zh": "下午空气里的水汽少了一半",
-    "en": "Half the vapour has left the air",
-    "ms": "Separuh wap telah meninggalkan udara"
-   },
-   {
-    "zh": "下午气压比较高",
-    "en": "The air pressure is higher",
-    "ms": "Tekanan udara lebih tinggi"
-   },
-   {
-    "zh": "下午露点升高了",
-    "en": "The dew point has risen",
-    "ms": "Takat embun telah naik"
-   }
-  ],
-  "answer": 0,
-  "why": {
-   "zh": "露点全天几乎不变，代表水汽量没变；气温升高使饱和水汽压变大，相对湿度就下降。",
-   "en": "The dew point hardly changes all day, so the vapour is the same; warming raises the saturation vapour pressure, so relative humidity falls.",
-   "ms": "Takat embun hampir tidak berubah sepanjang hari, jadi wapnya sama; pemanasan menaikkan tekanan wap tepu, jadi kelembapan relatif jatuh."
-  }
- },
- {
-  "stage": 3,
-  "chapter": "ch05",
-  "q": {
-   "zh": "想比较两个地方的空气到底有多湿，看哪一个最好？",
-   "en": "To compare how much moisture the air in two places really holds, which is best?",
-   "ms": "Untuk membandingkan berapa banyak kelembapan sebenarnya dalam udara di dua tempat, yang mana terbaik?"
-  },
-  "options": [
-   {
-    "zh": "相对湿度",
-    "en": "Relative humidity",
-    "ms": "Kelembapan relatif"
-   },
-   {
-    "zh": "露点",
-    "en": "Dew point",
-    "ms": "Takat embun"
-   },
-   {
-    "zh": "气温",
-    "en": "Air temperature",
-    "ms": "Suhu udara"
-   },
-   {
-    "zh": "云量",
-    "en": "Cloud cover",
-    "ms": "Litupan awan"
-   }
-  ],
-  "answer": 1,
-  "why": {
-   "zh": "露点只取决于水汽量；相对湿度还会随温度改变。",
-   "en": "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.",
-   "ms": "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu."
-  }
- },
- {
   "stage": 1,
   "chapter": "ch01",
   "q": {
@@ -663,6 +589,487 @@
    "zh": "各月平均只在 26.1 到 29.7 °C 之间——赤道气候的特点。",
    "en": "The monthly means spanned only 26.1 to 29.7 °C — typical of the equatorial climate.",
    "ms": "Purata bulanan hanya antara 26.1 hingga 29.7 °C — ciri iklim khatulistiwa."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "为什么看得见云，却看不见水汽？",
+   "en": "Why can you see a cloud but not water vapour?",
+   "ms": "Mengapa anda boleh melihat awan tetapi tidak wap air?"
+  },
+  "options": [
+   {
+    "zh": "云是水汽加了颜色",
+    "en": "A cloud is coloured vapour",
+    "ms": "Awan ialah wap berwarna"
+   },
+   {
+    "zh": "云里的水汽已经凝结成小水滴或冰晶",
+    "en": "In a cloud the vapour has condensed into droplets or ice",
+    "ms": "Dalam awan, wap sudah terkondensasi menjadi titisan atau ais"
+   },
+   {
+    "zh": "云离我们比较近",
+    "en": "Clouds are closer to us",
+    "ms": "Awan lebih dekat dengan kita"
+   },
+   {
+    "zh": "云是烟",
+    "en": "Clouds are smoke",
+    "ms": "Awan ialah asap"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "水汽是透明的气体；云是凝结出来的水滴和冰晶。",
+   "en": "Vapour is a transparent gas; clouds are the droplets and ice it condenses into.",
+   "ms": "Wap ialah gas lutsinar; awan ialah titisan dan ais hasil kondensasinya."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "哪一种云最可能带来雷电和暴雨？",
+   "en": "Which cloud is most likely to bring lightning and a downpour?",
+   "ms": "Awan manakah paling mungkin membawa kilat dan hujan lebat?"
+  },
+  "options": [
+   {
+    "zh": "卷云",
+    "en": "Cirrus",
+    "ms": "Sirus"
+   },
+   {
+    "zh": "层云",
+    "en": "Stratus",
+    "ms": "Stratus"
+   },
+   {
+    "zh": "积雨云",
+    "en": "Cumulonimbus",
+    "ms": "Kumulonimbus"
+   },
+   {
+    "zh": "高积云",
+    "en": "Altocumulus",
+    "ms": "Altokumulus"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "积雨云可以长到对流层顶，有强烈的上下气流，带来雷电、暴雨和强风。",
+   "en": "Cumulonimbus grows to the tropopause with violent up- and downdraughts: lightning, downpours and gusts.",
+   "ms": "Kumulonimbus tumbuh hingga tropopaus dengan arus naik dan turun yang kuat: kilat, hujan lebat dan angin kencang."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "云量报“8 okta”是什么意思？",
+   "en": "What does a cloud cover of ‘8 oktas’ mean?",
+   "ms": "Apakah maksud litupan awan ‘8 okta’?"
+  },
+  "options": [
+   {
+    "zh": "万里无云",
+    "en": "Cloudless",
+    "ms": "Tiada awan"
+   },
+   {
+    "zh": "一半天空有云",
+    "en": "Half the sky covered",
+    "ms": "Separuh langit berawan"
+   },
+   {
+    "zh": "满天都是云",
+    "en": "Completely overcast",
+    "ms": "Mendung sepenuhnya"
+   },
+   {
+    "zh": "云底 8 公里",
+    "en": "Cloud base at 8 km",
+    "ms": "Dasar awan pada 8 km"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "天空分成 8 份，8 份都有云就是满天云。",
+   "en": "The sky is split into eighths; all eight covered means overcast.",
+   "ms": "Langit dibahagi lapan; kesemua lapan dilitupi bermaksud mendung."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "地面气温 32 °C、露点 24 °C，云底大约多高？",
+   "en": "Surface temperature 32 °C, dew point 24 °C: roughly how high is the cloud base?",
+   "ms": "Suhu permukaan 32 °C, takat embun 24 °C: kira-kira berapa tinggi dasar awan?"
+  },
+  "options": [
+   {
+    "zh": "约 100 米",
+    "en": "About 100 m",
+    "ms": "Kira-kira 100 m"
+   },
+   {
+    "zh": "约 1,000 米",
+    "en": "About 1,000 m",
+    "ms": "Kira-kira 1,000 m"
+   },
+   {
+    "zh": "约 5,000 米",
+    "en": "About 5,000 m",
+    "ms": "Kira-kira 5,000 m"
+   },
+   {
+    "zh": "约 10,000 米",
+    "en": "About 10,000 m",
+    "ms": "Kira-kira 10,000 m"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "差 8 °C × 125 米 = 1,000 米。",
+   "en": "8 °C difference × 125 m = 1,000 m.",
+   "ms": "Perbezaan 8 °C × 125 m = 1,000 m."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "为什么饱和空气上升时冷却得比较慢？",
+   "en": "Why does saturated air cool more slowly as it rises?",
+   "ms": "Mengapa udara tepu menyejuk lebih perlahan apabila naik?"
+  },
+  "options": [
+   {
+    "zh": "凝结放出的潜热抵销了一部分冷却",
+    "en": "Latent heat released by condensation offsets some of the cooling",
+    "ms": "Haba pendam daripada kondensasi mengimbangi sebahagian penyejukan"
+   },
+   {
+    "zh": "饱和空气比较重",
+    "en": "Saturated air is heavier",
+    "ms": "Udara tepu lebih berat"
+   },
+   {
+    "zh": "云挡住了阳光",
+    "en": "The cloud blocks sunlight",
+    "ms": "Awan menghalang cahaya matahari"
+   },
+   {
+    "zh": "高空的风比较大",
+    "en": "Winds are stronger aloft",
+    "ms": "Angin lebih kuat di atas"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "每凝结一克水就放出一份潜热，使冷却率降到约 4–6 °C/km。",
+   "en": "Each gram condensed releases latent heat, lowering the cooling to about 4–6 °C/km.",
+   "ms": "Setiap gram yang terkondensasi membebaskan haba pendam, menurunkan penyejukan kepada kira-kira 4–6 °C/km."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "大气通常什么时候最不稳定？",
+   "en": "When is the atmosphere usually most unstable?",
+   "ms": "Bilakah atmosfera biasanya paling tidak stabil?"
+  },
+  "options": [
+   {
+    "zh": "日出前后",
+    "en": "Around sunrise",
+    "ms": "Sekitar matahari terbit"
+   },
+   {
+    "zh": "下午",
+    "en": "In the afternoon",
+    "ms": "Pada waktu petang"
+   },
+   {
+    "zh": "半夜",
+    "en": "At midnight",
+    "ms": "Pada tengah malam"
+   },
+   {
+    "zh": "没有规律",
+    "en": "There is no pattern",
+    "ms": "Tiada corak"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "下午地面最热，近地空气最暖，最容易形成上升的热泡。",
+   "en": "In the afternoon the ground and low-level air are warmest, so thermals form most easily.",
+   "ms": "Pada waktu petang tanah dan udara rendah paling panas, jadi termal paling mudah terbentuk."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "“雨幡”指的是什么？",
+   "en": "What is virga?",
+   "ms": "Apakah virga?"
+  },
+  "options": [
+   {
+    "zh": "彩虹的一部分",
+    "en": "Part of a rainbow",
+    "ms": "Sebahagian pelangi"
+   },
+   {
+    "zh": "在半空蒸发、没落到地面的雨",
+    "en": "Rain that evaporates before reaching the ground",
+    "ms": "Hujan yang menyejat sebelum sampai ke tanah"
+   },
+   {
+    "zh": "冰雹的另一个名字",
+    "en": "Another name for hail",
+    "ms": "Nama lain bagi hujan batu"
+   },
+   {
+    "zh": "云顶的冰晶",
+    "en": "Ice crystals at a cloud top",
+    "ms": "Hablur ais di puncak awan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "雨从云底落下，但在干空气里蒸发掉了。",
+   "en": "The rain leaves the cloud but evaporates in drier air below.",
+   "ms": "Hujan meninggalkan awan tetapi menyejat dalam udara lebih kering di bawah."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "吉隆坡下午的相对湿度比清晨低很多，主要原因是什么？",
+   "en": "Why is Kuala Lumpur's relative humidity much lower in the afternoon than at dawn?",
+   "ms": "Mengapa kelembapan relatif Kuala Lumpur jauh lebih rendah pada waktu petang berbanding subuh?"
+  },
+  "options": [
+   {
+    "zh": "下午气温高了，水汽量却差不多",
+    "en": "The air is warmer, while the amount of vapour is about the same",
+    "ms": "Udara lebih panas, sedangkan jumlah wap lebih kurang sama"
+   },
+   {
+    "zh": "下午空气里的水汽少了一半",
+    "en": "Half the vapour has left the air",
+    "ms": "Separuh wap telah meninggalkan udara"
+   },
+   {
+    "zh": "下午气压比较高",
+    "en": "The air pressure is higher",
+    "ms": "Tekanan udara lebih tinggi"
+   },
+   {
+    "zh": "下午露点升高了",
+    "en": "The dew point has risen",
+    "ms": "Takat embun telah naik"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "露点全天几乎不变，代表水汽量没变；气温升高使饱和水汽压变大，相对湿度就下降。",
+   "en": "The dew point hardly changes all day, so the vapour is the same; warming raises the saturation vapour pressure, so relative humidity falls.",
+   "ms": "Takat embun hampir tidak berubah sepanjang hari, jadi wapnya sama; pemanasan menaikkan tekanan wap tepu, jadi kelembapan relatif jatuh."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "想比较两个地方的空气到底有多湿，看哪一个最好？",
+   "en": "To compare how much moisture the air in two places really holds, which is best?",
+   "ms": "Untuk membandingkan berapa banyak kelembapan sebenarnya dalam udara di dua tempat, yang mana terbaik?"
+  },
+  "options": [
+   {
+    "zh": "相对湿度",
+    "en": "Relative humidity",
+    "ms": "Kelembapan relatif"
+   },
+   {
+    "zh": "露点",
+    "en": "Dew point",
+    "ms": "Takat embun"
+   },
+   {
+    "zh": "气温",
+    "en": "Air temperature",
+    "ms": "Suhu udara"
+   },
+   {
+    "zh": "云量",
+    "en": "Cloud cover",
+    "ms": "Litupan awan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "露点只取决于水汽量；相对湿度还会随温度改变。",
+   "en": "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.",
+   "ms": "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "湿球温度和露点有什么不同？",
+   "en": "How does the wet-bulb temperature differ from the dew point?",
+   "ms": "Apakah beza suhu bebuli basah dengan takat embun?"
+  },
+  "options": [
+   {
+    "zh": "两者完全一样",
+    "en": "They are the same thing",
+    "ms": "Kedua-duanya sama"
+   },
+   {
+    "zh": "湿球温度靠蒸发冷却，露点靠把空气冷却到饱和",
+    "en": "Wet-bulb comes from evaporative cooling; dew point from cooling the air to saturation",
+    "ms": "Bebuli basah daripada penyejukan penyejatan; takat embun daripada menyejukkan udara hingga tepu"
+   },
+   {
+    "zh": "露点总是比气温高",
+    "en": "The dew point is always above the air temperature",
+    "ms": "Takat embun sentiasa melebihi suhu udara"
+   },
+   {
+    "zh": "湿球温度只在晚上有",
+    "en": "Wet-bulb only exists at night",
+    "ms": "Bebuli basah hanya wujud pada waktu malam"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "湿球温度一般介于露点和气温之间。",
+   "en": "The wet-bulb usually lies between the dew point and the air temperature.",
+   "ms": "Suhu bebuli basah biasanya terletak antara takat embun dan suhu udara."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "气温 10 °C 和 30 °C 时，饱和水汽压大约差多少倍？",
+   "en": "Roughly how many times larger is the saturation vapour pressure at 30 °C than at 10 °C?",
+   "ms": "Kira-kira berapa kali ganda tekanan wap tepu pada 30 °C berbanding 10 °C?"
+  },
+  "options": [
+   {
+    "zh": "差不多一样",
+    "en": "About the same",
+    "ms": "Lebih kurang sama"
+   },
+   {
+    "zh": "约 1.5 倍",
+    "en": "About 1.5 times",
+    "ms": "Kira-kira 1.5 kali"
+   },
+   {
+    "zh": "约 3.5 倍",
+    "en": "About 3.5 times",
+    "ms": "Kira-kira 3.5 kali"
+   },
+   {
+    "zh": "约 20 倍",
+    "en": "About 20 times",
+    "ms": "Kira-kira 20 kali"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "约 42 hPa 对约 12 hPa：温度越高，饱和所需的水汽增加得越快。",
+   "en": "About 42 hPa against about 12 hPa: saturation needs vapour ever faster as temperature rises.",
+   "ms": "Kira-kira 42 hPa berbanding kira-kira 12 hPa: ketepuan memerlukan wap semakin cepat apabila suhu naik."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch08",
+  "q": {
+   "zh": "想看到彩虹，太阳应该在哪里？",
+   "en": "Where must the Sun be for you to see a rainbow?",
+   "ms": "Di manakah Matahari mesti berada untuk anda melihat pelangi?"
+  },
+  "options": [
+   {
+    "zh": "在你前面、和雨同一边",
+    "en": "In front of you, beside the rain",
+    "ms": "Di hadapan anda, sebelah hujan"
+   },
+   {
+    "zh": "在你背后，而且不要太高",
+    "en": "Behind you, and not too high",
+    "ms": "Di belakang anda, dan tidak terlalu tinggi"
+   },
+   {
+    "zh": "正在头顶",
+    "en": "Directly overhead",
+    "ms": "Tegak di atas kepala"
+   },
+   {
+    "zh": "已经下山",
+    "en": "Already set",
+    "ms": "Sudah terbenam"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "彩虹在对日点周围约 42°，太阳要在背后而且低于 42°。",
+   "en": "The bow lies about 42° around the point opposite the Sun, so the Sun must be behind you and below 42°.",
+   "ms": "Pelangi terletak kira-kira 42° di sekeliling titik bertentangan Matahari, jadi Matahari mesti di belakang dan di bawah 42°."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch08",
+  "q": {
+   "zh": "霾天的天空为什么偏白？",
+   "en": "Why does a hazy sky look whitish?",
+   "ms": "Mengapa langit berjerebu kelihatan keputihan?"
+  },
+  "options": [
+   {
+    "zh": "颗粒把各种颜色都散射出来",
+    "en": "Particles scatter all colours",
+    "ms": "Zarah menyerakkan semua warna"
+   },
+   {
+    "zh": "太阳变弱了",
+    "en": "The Sun is weaker",
+    "ms": "Matahari lebih lemah"
+   },
+   {
+    "zh": "空气变冷了",
+    "en": "The air is colder",
+    "ms": "Udara lebih sejuk"
+   },
+   {
+    "zh": "臭氧变多了",
+    "en": "There is more ozone",
+    "ms": "Ozon lebih banyak"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "尘、烟、盐粒比空气分子大，各种颜色都散射，混在一起就是白色。",
+   "en": "Dust, smoke and salt are larger than molecules and scatter every colour, which mixes to white.",
+   "ms": "Debu, asap dan garam lebih besar daripada molekul dan menyerakkan setiap warna, yang bercampur menjadi putih."
   }
  }
 ]

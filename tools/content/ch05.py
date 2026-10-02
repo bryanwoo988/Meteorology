@@ -147,6 +147,16 @@ quiz = [
   "options": [T("相对湿度", "Relative humidity", "Kelembapan relatif"), T("露点", "Dew point", "Takat embun"), T("气温", "Air temperature", "Suhu udara"), T("云量", "Cloud cover", "Litupan awan")],
   "answer": 1,
   "why": T("露点只取决于水汽量；相对湿度还会随温度改变。", "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.", "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu.")},
+
+ {"stage": 3, "chapter": "ch05",
+  "q": T("湿球温度和露点有什么不同？", "How does the wet-bulb temperature differ from the dew point?", "Apakah beza suhu bebuli basah dengan takat embun?"),
+  "options": [T("两者完全一样", "They are the same thing", "Kedua-duanya sama"), T("湿球温度靠蒸发冷却，露点靠把空气冷却到饱和", "Wet-bulb comes from evaporative cooling; dew point from cooling the air to saturation", "Bebuli basah daripada penyejukan penyejatan; takat embun daripada menyejukkan udara hingga tepu"),
+              T("露点总是比气温高", "The dew point is always above the air temperature", "Takat embun sentiasa melebihi suhu udara"), T("湿球温度只在晚上有", "Wet-bulb only exists at night", "Bebuli basah hanya wujud pada waktu malam")],
+  "answer": 1, "why": T("湿球温度一般介于露点和气温之间。", "The wet-bulb usually lies between the dew point and the air temperature.", "Suhu bebuli basah biasanya terletak antara takat embun dan suhu udara.")},
+ {"stage": 3, "chapter": "ch05",
+  "q": T("气温 10 °C 和 30 °C 时，饱和水汽压大约差多少倍？", "Roughly how many times larger is the saturation vapour pressure at 30 °C than at 10 °C?", "Kira-kira berapa kali ganda tekanan wap tepu pada 30 °C berbanding 10 °C?"),
+  "options": [T("差不多一样", "About the same", "Lebih kurang sama"), T("约 1.5 倍", "About 1.5 times", "Kira-kira 1.5 kali"), T("约 3.5 倍", "About 3.5 times", "Kira-kira 3.5 kali"), T("约 20 倍", "About 20 times", "Kira-kira 20 kali")],
+  "answer": 2, "why": T("约 42 hPa 对约 12 hPa：温度越高，饱和所需的水汽增加得越快。", "About 42 hPa against about 12 hPa: saturation needs vapour ever faster as temperature rises.", "Kira-kira 42 hPa berbanding kira-kira 12 hPa: ketepuan memerlukan wap semakin cepat apabila suhu naik.")},
 ]
 
 write_chapter(chapter, terms, sources, quiz)

@@ -518,5 +518,484 @@
    "ms": "Suhu terendah yang boleh dicapai melalui penyejukan penyejatan."
   },
   "chapter": 5
+ },
+ {
+  "id": "cloud",
+  "name": {
+   "zh": "云",
+   "en": "Cloud",
+   "ms": "Awan"
+  },
+  "short": {
+   "zh": "悬浮在空中的大群小水滴或冰晶。",
+   "en": "A visible mass of tiny droplets or ice crystals floating in the air.",
+   "ms": "Kumpulan titisan halus atau hablur ais yang terapung di udara."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cloud-base",
+  "name": {
+   "zh": "云底",
+   "en": "Cloud base",
+   "ms": "Dasar awan"
+  },
+  "short": {
+   "zh": "云的底部离地面的高度。",
+   "en": "The height of a cloud's bottom above the ground.",
+   "ms": "Ketinggian bahagian bawah awan dari tanah."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cloud-top",
+  "name": {
+   "zh": "云顶",
+   "en": "Cloud top",
+   "ms": "Puncak awan"
+  },
+  "short": {
+   "zh": "云的顶部所在的高度。",
+   "en": "The height of a cloud's top.",
+   "ms": "Ketinggian bahagian atas awan."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "condensation",
+  "name": {
+   "zh": "凝结",
+   "en": "Condensation",
+   "ms": "Kondensasi"
+  },
+  "short": {
+   "zh": "水汽变回液态水，同时放出潜热。",
+   "en": "Water vapour turning back into liquid water, releasing latent heat.",
+   "ms": "Wap air bertukar kembali menjadi air cecair, membebaskan haba pendam."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "condensation-nuclei",
+  "name": {
+   "zh": "凝结核",
+   "en": "Condensation nuclei",
+   "ms": "Nukleus kondensasi"
+  },
+  "short": {
+   "zh": "海盐、尘埃、烟等微粒，水汽先凝结在它们上面。",
+   "en": "Specks of salt, dust or smoke on which vapour condenses first.",
+   "ms": "Zarah garam, debu atau asap tempat wap terkondensasi dahulu."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "dew",
+  "name": {
+   "zh": "露",
+   "en": "Dew",
+   "ms": "Embun"
+  },
+  "short": {
+   "zh": "晴朗无风的晚上，水汽在冷却的表面上凝结成的水珠。",
+   "en": "Water condensed on surfaces that have cooled on clear, calm nights.",
+   "ms": "Air yang terkondensasi pada permukaan yang menyejuk pada malam cerah dan tenang."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "fog",
+  "name": {
+   "zh": "雾",
+   "en": "Fog",
+   "ms": "Kabus"
+  },
+  "short": {
+   "zh": "贴地的云，能见度低于 1 公里。",
+   "en": "A cloud at ground level, with visibility under 1 km.",
+   "ms": "Awan di paras tanah, dengan keterlihatan kurang daripada 1 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "haze",
+  "name": {
+   "zh": "霾",
+   "en": "Haze",
+   "ms": "Jerebu"
+  },
+  "short": {
+   "zh": "微小颗粒（尘、烟、盐，或带水的凝结核）使空气发白、能见度降低。",
+   "en": "Tiny particles (dust, smoke, salt or damp nuclei) making the air milky and cutting visibility.",
+   "ms": "Zarah halus (debu, asap, garam atau nukleus lembap) yang menjadikan udara seperti susu dan mengurangkan keterlihatan."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "high-cloud",
+  "name": {
+   "zh": "高云",
+   "en": "High cloud",
+   "ms": "Awan tinggi"
+  },
+  "short": {
+   "zh": "卷云、卷层云、卷积云；热带云底约 6–18 公里，几乎全是冰晶。",
+   "en": "Cirrus, cirrostratus, cirrocumulus; in the tropics based about 6–18 km up, nearly all ice.",
+   "ms": "Sirus, sirostratus, sirokumulus; di kawasan tropika berdasar kira-kira 6–18 km, hampir semuanya ais."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "low-cloud",
+  "name": {
+   "zh": "低云",
+   "en": "Low cloud",
+   "ms": "Awan rendah"
+  },
+  "short": {
+   "zh": "层云、层积云、雨层云；云底在约 2 公里以下。",
+   "en": "Stratus, stratocumulus, nimbostratus; based below about 2 km.",
+   "ms": "Stratus, stratokumulus, nimbostratus; berdasar di bawah kira-kira 2 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "middle-cloud",
+  "name": {
+   "zh": "中云",
+   "en": "Middle cloud",
+   "ms": "Awan sederhana"
+  },
+  "short": {
+   "zh": "高层云、高积云；热带云底约 2–8 公里。",
+   "en": "Altostratus and altocumulus; in the tropics based about 2–8 km up.",
+   "ms": "Altostratus dan altokumulus; di kawasan tropika berdasar kira-kira 2–8 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "okta",
+  "name": {
+   "zh": "八分量（okta）",
+   "en": "Okta",
+   "ms": "Okta"
+  },
+  "short": {
+   "zh": "云量单位：天空分 8 份，0 无云，8 满天云。",
+   "en": "Unit of cloud cover: the sky in eighths, 0 clear to 8 overcast.",
+   "ms": "Unit litupan awan: langit dalam perlapanan, 0 cerah hingga 8 mendung."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "visibility",
+  "name": {
+   "zh": "能见度",
+   "en": "Visibility",
+   "ms": "Keterlihatan"
+  },
+  "short": {
+   "zh": "在地面上能看多远。",
+   "en": "How far you can see at ground level.",
+   "ms": "Sejauh mana anda boleh melihat di paras tanah."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cape",
+  "name": {
+   "zh": "对流有效位能",
+   "en": "Convective available potential energy",
+   "ms": "Tenaga keupayaan perolakan tersedia"
+  },
+  "short": {
+   "zh": "气块比周围暖的那段所累积的浮力能量（J/kg）；越大雷雨越强。",
+   "en": "The buoyant energy a parcel gains where it is warmer than its surroundings (J/kg); bigger means stronger storms.",
+   "ms": "Tenaga keapungan yang diperoleh bungkusan apabila lebih panas daripada sekeliling (J/kg); lebih besar bermaksud ribut lebih kuat."
+  },
+  "chapter": 7,
+  "abbr": "CAPE"
+ },
+ {
+  "id": "cin",
+  "name": {
+   "zh": "对流抑制能量",
+   "en": "Convective inhibition",
+   "ms": "Perencatan perolakan"
+  },
+  "short": {
+   "zh": "气块自己上升前需要被推过冷层的能量（J/kg）。",
+   "en": "The energy needed to push a parcel through a cooler layer before it rises by itself (J/kg).",
+   "ms": "Tenaga yang diperlukan untuk menolak bungkusan melalui lapisan lebih sejuk sebelum ia naik sendiri (J/kg)."
+  },
+  "chapter": 7,
+  "abbr": "CIN"
+ },
+ {
+  "id": "collision-coalescence",
+  "name": {
+   "zh": "碰并过程",
+   "en": "Collision–coalescence",
+   "ms": "Perlanggaran–percantuman"
+  },
+  "short": {
+   "zh": "大云滴下落时撞上并吞并小云滴而长成雨滴。",
+   "en": "Larger droplets falling and merging with smaller ones until they become raindrops.",
+   "ms": "Titisan lebih besar jatuh dan bercantum dengan yang kecil sehingga menjadi titisan hujan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "conditional-instability",
+  "name": {
+   "zh": "条件性不稳定",
+   "en": "Conditional instability",
+   "ms": "Ketidakstabilan bersyarat"
+  },
+  "short": {
+   "zh": "未饱和时稳定，一旦被推到云底以上就变得不稳定。",
+   "en": "Stable while unsaturated, unstable once pushed above the cloud base.",
+   "ms": "Stabil semasa tidak tepu, tidak stabil sebaik ditolak melepasi dasar awan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "convection",
+  "name": {
+   "zh": "对流",
+   "en": "Convection",
+   "ms": "Perolakan"
+  },
+  "short": {
+   "zh": "受热的空气上升、较冷空气下沉的翻腾运动。",
+   "en": "Overturning in which heated air rises and cooler air sinks.",
+   "ms": "Pembalikan apabila udara yang dipanaskan naik dan udara lebih sejuk turun."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "dry-adiabatic-rate",
+  "name": {
+   "zh": "干绝热直减率",
+   "en": "Dry adiabatic rate",
+   "ms": "Kadar adiabatik kering"
+  },
+  "short": {
+   "zh": "未饱和气块上升时的冷却率，约 9.8 °C/km。",
+   "en": "The cooling rate of a rising unsaturated parcel, about 9.8 °C/km.",
+   "ms": "Kadar penyejukan bungkusan tidak tepu yang naik, kira-kira 9.8 °C/km."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "freezing-level",
+  "name": {
+   "zh": "冻结高度",
+   "en": "Freezing level",
+   "ms": "Aras beku"
+  },
+  "short": {
+   "zh": "气温为 0 °C 的高度；吉隆坡上空约 5 公里。",
+   "en": "The height where the temperature is 0 °C; about 5 km over Kuala Lumpur.",
+   "ms": "Ketinggian suhu 0 °C; kira-kira 5 km di atas Kuala Lumpur."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "lapse-rate",
+  "name": {
+   "zh": "直减率",
+   "en": "Lapse rate",
+   "ms": "Kadar susut"
+  },
+  "short": {
+   "zh": "温度随高度下降的快慢；对流层平均约 6.5 °C/km。",
+   "en": "How fast temperature falls with height; about 6.5 °C/km on average in the troposphere.",
+   "ms": "Kadar suhu jatuh dengan ketinggian; purata kira-kira 6.5 °C/km dalam troposfera."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "lcl",
+  "name": {
+   "zh": "抬升凝结高度",
+   "en": "Lifting condensation level",
+   "ms": "Aras kondensasi angkatan"
+  },
+  "short": {
+   "zh": "上升气块开始饱和、成云的高度；约等于 125 米 ×（气温 − 露点）。",
+   "en": "The height where a rising parcel saturates and cloud forms; about 125 m × (temperature − dew point).",
+   "ms": "Ketinggian bungkusan yang naik menjadi tepu dan awan terbentuk; kira-kira 125 m × (suhu − takat embun)."
+  },
+  "chapter": 7,
+  "abbr": "LCL"
+ },
+ {
+  "id": "moist-adiabatic-rate",
+  "name": {
+   "zh": "湿绝热直减率",
+   "en": "Moist adiabatic rate",
+   "ms": "Kadar adiabatik lembap"
+  },
+  "short": {
+   "zh": "饱和气块上升时的冷却率，约 4–6 °C/km，因凝结放热而较慢。",
+   "en": "The cooling rate of a rising saturated parcel, about 4–6 °C/km, slower because condensation releases heat.",
+   "ms": "Kadar penyejukan bungkusan tepu yang naik, kira-kira 4–6 °C/km, lebih perlahan kerana kondensasi membebaskan haba."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "parcel",
+  "name": {
+   "zh": "气块",
+   "en": "Air parcel",
+   "ms": "Bungkusan udara"
+  },
+  "short": {
+   "zh": "想象中被包起来、一起移动的一团空气。",
+   "en": "An imagined blob of air that moves as a unit.",
+   "ms": "Seketul udara khayalan yang bergerak sebagai satu unit."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "precipitation",
+  "name": {
+   "zh": "降水",
+   "en": "Precipitation",
+   "ms": "Kerpasan"
+  },
+  "short": {
+   "zh": "从云落到地面的水或冰：雨、毛毛雨、冰雹等。",
+   "en": "Water or ice falling from cloud to the ground: rain, drizzle, hail and so on.",
+   "ms": "Air atau ais yang jatuh dari awan ke tanah: hujan, gerimis, hujan batu dan sebagainya."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "stable-air",
+  "name": {
+   "zh": "稳定大气",
+   "en": "Stable air",
+   "ms": "Udara stabil"
+  },
+  "short": {
+   "zh": "被抬起的气块比周围冷，会沉回原处。",
+   "en": "A lifted parcel is colder than its surroundings and sinks back.",
+   "ms": "Bungkusan yang diangkat lebih sejuk daripada sekeliling dan tenggelam semula."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "thermal",
+  "name": {
+   "zh": "热泡",
+   "en": "Thermal",
+   "ms": "Termal"
+  },
+  "short": {
+   "zh": "被地面加热后上升的一团暖空气。",
+   "en": "A rising bubble of air warmed by the ground.",
+   "ms": "Gelembung udara yang dipanaskan tanah dan naik."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "trace",
+  "name": {
+   "zh": "微量降水",
+   "en": "Trace",
+   "ms": "Surih"
+  },
+  "short": {
+   "zh": "少到雨量筒量不出来的降水。",
+   "en": "Precipitation too small for the rain gauge to measure.",
+   "ms": "Kerpasan yang terlalu sedikit untuk diukur oleh tolok hujan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "unstable-air",
+  "name": {
+   "zh": "不稳定大气",
+   "en": "Unstable air",
+   "ms": "Udara tidak stabil"
+  },
+  "short": {
+   "zh": "被抬起的气块比周围暖，会自己继续上升。",
+   "en": "A lifted parcel is warmer than its surroundings and keeps rising.",
+   "ms": "Bungkusan yang diangkat lebih panas daripada sekeliling dan terus naik."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "virga",
+  "name": {
+   "zh": "雨幡",
+   "en": "Virga",
+   "ms": "Virga"
+  },
+  "short": {
+   "zh": "从云底落下、却在半空蒸发掉的雨。",
+   "en": "Rain that falls from a cloud but evaporates before reaching the ground.",
+   "ms": "Hujan yang jatuh dari awan tetapi menyejat sebelum sampai ke tanah."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "water-cycle",
+  "name": {
+   "zh": "水循环",
+   "en": "Water cycle",
+   "ms": "Kitaran air"
+  },
+  "short": {
+   "zh": "水在海洋、空气、陆地之间不停蒸发、凝结、降水、流动的循环。",
+   "en": "The endless loop of evaporation, condensation, precipitation and flow between sea, air and land.",
+   "ms": "Kitaran tanpa henti penyejatan, kondensasi, kerpasan dan aliran antara laut, udara dan darat."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "halo",
+  "name": {
+   "zh": "晕",
+   "en": "Halo",
+   "ms": "Halo"
+  },
+  "short": {
+   "zh": "光穿过冰晶折射形成、绕着太阳或月亮的光圈，常见 22°。",
+   "en": "A ring round the Sun or Moon from light refracted by ice crystals, usually at 22°.",
+   "ms": "Cincin di sekeliling Matahari atau Bulan daripada cahaya yang dibiaskan hablur ais, biasanya pada 22°."
+  },
+  "chapter": 8
+ },
+ {
+  "id": "rainbow",
+  "name": {
+   "zh": "彩虹",
+   "en": "Rainbow",
+   "ms": "Pelangi"
+  },
+  "short": {
+   "zh": "背对太阳看雨时，阳光在雨滴里折射、反射形成的彩色弧，约离对日点 42°。",
+   "en": "A coloured arc from sunlight refracted and reflected in raindrops, seen with the Sun behind you, about 42° from the antisolar point.",
+   "ms": "Lengkung berwarna daripada cahaya matahari yang dibiaskan dan dipantulkan dalam titisan hujan, dilihat dengan Matahari di belakang, kira-kira 42° dari titik antisuria."
+  },
+  "chapter": 8
+ },
+ {
+  "id": "scattering",
+  "name": {
+   "zh": "散射",
+   "en": "Scattering",
+   "ms": "Penyerakan"
+  },
+  "short": {
+   "zh": "光被空气分子或颗粒弹向四面八方；蓝光被空气分子散射得最多。",
+   "en": "Light bounced in all directions by molecules or particles; air molecules scatter blue most.",
+   "ms": "Cahaya dipantulkan ke semua arah oleh molekul atau zarah; molekul udara paling banyak menyerakkan biru."
+  },
+  "chapter": 8
  }
 ]

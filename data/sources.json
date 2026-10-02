@@ -80,6 +80,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "NWS-JS-GLOSS-C",
+  "short": "NOAA JetStream",
+  "title": "Weather Glossary: C's (CAPE, CIN)",
+  "publisher": "NOAA National Weather Service JetStream",
+  "url": "https://www.noaa.gov/jetstream/appendix/weather-glossary-c",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "OM-FCST-KL",
+  "short": "Open-Meteo forecasts",
+  "title": "Open-Meteo Forecast API — freezing level height over Kuala Lumpur, 3 Aug – 2 Oct 2026",
+  "publisher": "Open-Meteo (CC BY 4.0)",
+  "url": "https://open-meteo.com/en/docs",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "PAM",
   "short": "Mote & Sahu",
   "title": "Principles of Agricultural Meteorology",
@@ -93,6 +109,14 @@
   "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature",
   "publisher": "R. Stull, J. Appl. Meteor. Climatol. 50, 2267–2269 (2011)",
   "url": "https://doi.org/10.1175/JAMC-D-11-0143.1",
+  "accessed": ""
+ },
+ {
+  "id": "TERM",
+  "short": "Terminology",
+  "title": "Terminology on Agricultural Meteorology and Agronomy",
+  "publisher": "Reference glossary (dokumen.pub edition)",
+  "url": "",
   "accessed": ""
  },
  {

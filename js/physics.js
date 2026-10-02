@@ -263,3 +263,28 @@ export function equationOfTime(doy) {
 export function solarNoon(lonDeg, doy, tz) {
   return (720 - 4 * lonDeg - equationOfTime(doy) + 60 * tz) / 60;
 }
+
+// Convective inhibition, J/kg (as a positive number): the cold, negatively
+// buoyant layer a parcel must be pushed through before it rises on its own
+// (up to the level of free convection). Zero if it is buoyant from the start.
+export function cin(env, parcel) {
+  let sum = 0;
+  for (let i = 1; i < Math.min(env.length, parcel.length); i++) {
+    const b = (parcel[i].t - env[i].t) / (env[i].t + K0);
+    if (b > 0) break;
+    const dz = (RD * (env[i].t + K0) / G) * Math.log(env[i - 1].p / env[i].p);
+    sum -= G * b * dz;
+  }
+  return sum;
+}
+
+// An illustrative tropical environment for teaching figures: 28 °C at
+// 1000 hPa, cooling 6.5 °C per km (the average tropospheric lapse rate),
+// isothermal above 16 km (the tropical tropopause). Not a real sounding.
+export function tropicalEnv(levels) {
+  const z0 = pressureToHeight(1000);
+  return levels.map(p => {
+    const z = Math.min(pressureToHeight(p) - z0, 16000);
+    return { p, t: 28 - 6.5 * z / 1000 };
+  });
+}

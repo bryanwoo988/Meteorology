@@ -83,3 +83,19 @@ test('solar noon in Kuala Lumpur (UTC+8) is well after 12:00 by the clock', () =
   eq(solarNoon(101.69, 77, 8), 13.37, 0.03);      // 18 March ≈ 13:22
   eq(solarNoon(120, 172, 8), 12 + 1.6 / 60, 0.03); // on the zone meridian only the equation of time remains
 });
+
+import { cin, tropicalEnv } from '../js/physics.js';
+
+test('illustrative tropical environment: 28 °C at the surface, 6.5 °C/km', () => {
+  const env = tropicalEnv([1000, 900, 500]);
+  eq(env[0].t, 28, 1e-9);
+  eq(env[2].t, 28 - 6.5 * (pressureToHeight(500) - pressureToHeight(1000)) / 1000, 1e-9);
+});
+test('CIN: a morning parcel needs a push, a hot afternoon parcel does not', () => {
+  const levels = parcelProfile(26, 23, 1000, 150).map(x => x.p);
+  const env = tropicalEnv(levels);
+  const morning = parcelProfile(26, 23, 1000, 150), afternoon = parcelProfile(33, 24, 1000, 150);
+  assert.ok(cin(env, morning) > 10, `morning CIN ${cin(env, morning)}`);
+  assert.equal(cin(env, afternoon), 0);
+  assert.ok(cape(env, afternoon) > cape(env, morning));
+});

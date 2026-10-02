@@ -454,3 +454,15 @@ a.chip { color: var(--ink-2); text-decoration: none; }
 .w-explain { font-size: .92rem; min-height: 3em; margin: 8px 0 0; }
 :root { --cloud-ink: #8aa0c2; } :root[data-theme="dark"] { --cloud-ink: #9fb3d6; }
 .gauge-side { fill: var(--muted); font-size: 10px; font-weight: 650; }
+.shade-warm { fill: var(--mercury); fill-opacity: .28; stroke: none; }
+.shade-cold { fill: var(--rain); fill-opacity: .22; stroke: none; }
+.w-clouds .cloud { cursor: pointer; }
+.cl-ice { fill: none; stroke: var(--sky); stroke-width: 2; stroke-linecap: round; opacity: .7; }
+rect.cl-ice, circle.cl-ice { fill: var(--cloud); stroke: var(--sky); stroke-width: 1; opacity: .9; }
+.cl-white { fill: var(--surface); stroke: var(--sky); stroke-width: 1.4; }
+.cl-grey { fill: var(--cloud); stroke: var(--cloud-ink); stroke-width: 1.2; }
+.cl-dark { fill: var(--cloud-ink); stroke: var(--ink-2); stroke-width: 1; opacity: .85; }
+.cl-rain { stroke: var(--rain); stroke-width: 1.5; stroke-dasharray: 4 5; }
+.cl-label { font-size: 11px; font-weight: 700; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; }
+.cloud.is-on .cl-label { fill: var(--accent); }
+.cloud.is-on > :not(text) { filter: drop-shadow(0 0 3px var(--accent)); }
