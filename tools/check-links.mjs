@@ -42,6 +42,8 @@ async function check(url) {
     try {
       const r = await fetch(url, { method, redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'Meteorology-PWA link check' } });
       if (r.ok) return { ok: true, status: r.status };
+      // The server answered but refuses robots (journal publishers do this): the link itself is fine.
+      if ([401, 403, 429].includes(r.status)) return { ok: true, status: r.status, blocked: true };
       if (method === 'GET') return { ok: false, status: r.status };
     } catch (e) {
       if (method === 'GET') return { ok: false, status: e.name };
@@ -56,6 +58,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   for (const [url, where] of urls) {
     const r = await check(url);
     if (!r.ok) { bad++; console.log(`✗ ${r.status}  ${url}\n    in ${where.join(', ')}`); }
+    else if (r.blocked) console.log(`· ${r.status}  ${url} (refuses automated checks; not counted)`);
   }
   console.log(`${urls.size} links checked, ${bad} failed`);
   if (bad && process.argv.includes('--strict')) process.exit(1);
