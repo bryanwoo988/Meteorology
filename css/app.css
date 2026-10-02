@@ -298,3 +298,11 @@ body.sheet-open { overflow: hidden; }
 .update-banner .button { min-height: 36px; }
 
 .error { color: var(--mercury); }
+
+/* ===== Share ===== */
+#share-host { display: grid; justify-items: center; gap: 16px; margin: 24px 0 8px; }
+.qr { width: min(260px, 70vw); padding: 12px; background: #fff; border-radius: var(--radius); border: 1px solid var(--line); }
+.qr svg { display: block; width: 100%; height: auto; }
+.share-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; }
+.share-status { color: var(--leaf); font-size: .9rem; min-width: 4em; }
+.page-share { text-align: center; }

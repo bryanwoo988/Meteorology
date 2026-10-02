@@ -107,5 +107,15 @@ for (const lang of ['ms', 'zh', 'en']) {
   });
 }
 
+await test('share page shows a QR code, a share button and copy link', async () => {
+  const a = await openApp({ hash: '#/share', prefs: { lang: 'zh' } });
+  const svg = await until(() => a.d.querySelector('#share-host svg'));
+  assert(svg.querySelectorAll('rect, path').length > 0, 'QR svg is empty');
+  assert(a.d.querySelector('[data-share="copy"]'), 'no copy button');
+  assert(a.d.querySelector('[data-share="native"]'), 'no share button');
+  assert(a.d.querySelector('.share-url').textContent.includes('bryanwoo988.github.io/Meteorology/'), 'URL not shown');
+  a.close();
+});
+
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';

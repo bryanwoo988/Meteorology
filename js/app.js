@@ -13,6 +13,7 @@ import { loadTerms, openTermSheet, renderNewTerms } from './terms.js';
 import { newerRevision, updateAction, mayAutoReload } from './updatelogic.js';
 import { notesSince } from './releases.js';
 import { APP_URL, AUTHOR } from './config.js';
+import { renderShare } from './share.js';
 
 const $ = sel => document.querySelector(sel);
 const main = $('#main');
@@ -235,11 +236,14 @@ const VIEWS = {
   },
 
   async share() {
+    const host = el('div', { id: 'share-host' });
+    renderShare(host, { url: APP_URL, lang: lang() });
     return el('div', { class: 'page page-share' },
       el('h1', {}, tr('share')),
       el('p', { class: 'lede' }, tr('shareHint')),
-      el('div', { id: 'share-host' }),
-      el('p', { class: 'share-url' }, APP_URL));
+      host,
+      el('p', { class: 'share-url' }, APP_URL),
+      el('p', { class: 'credit' }, tr('createdBy')));
   },
 
   async search() {
