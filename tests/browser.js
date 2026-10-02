@@ -181,5 +181,23 @@ await test('base maps render: world, South-East Asia and a globe that turns', as
   host.remove();
 });
 
+await test('dataset card shows parameters, a data sample and graded outside links', async () => {
+  const { renderDataset } = await import('../js/datasets.js');
+  const T = en => ({ zh: `中${en}`, en, ms: `M${en}` });
+  const card = renderDataset({
+    id: 'sample', name: 'Sample', provider: 'Provider', what: T('what'), resolution: '9 km', update: T('daily'), format: 'GRIB2',
+    licence: { text: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' },
+    params: [{ raw: '2t', meaning: T('2 m temperature'), unit: 'K', chapter: 4 }],
+    sample: { columns: ['time', '2t'], rows: [['00:00', '300.1']], source: 'src', fetched: '2026-10-02' },
+    links: [{ level: 'view', label: T('Charts'), url: 'https://charts.ecmwf.int/' }, { level: 'try', label: T('Try it'), url: 'https://api.open-meteo.com/' }, { level: 'pro', label: T('Raw'), url: 'https://data.ecmwf.int/' }],
+  }, { lang: 'en' });
+  assert(card.querySelector('code').textContent === '2t', 'raw parameter name not shown');
+  assert(card.querySelector('a[href="#/ch/ch04"]'), 'no link to the chapter that teaches it');
+  assert(card.querySelectorAll('.ds-sample td').length === 2, 'sample table missing');
+  const links = card.querySelectorAll('.ds-links a');
+  assert(links.length === 3 && [...links].every(a => a.target === '_blank' && a.rel.includes('noopener')), 'outside links not safe');
+  assert([...links].map(a => a.dataset.level).join() === 'view,try,pro', 'links not in order of difficulty');
+});
+
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';

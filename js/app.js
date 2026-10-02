@@ -16,6 +16,7 @@ import { APP_URL, AUTHOR } from './config.js';
 import { renderShare } from './share.js';
 import { render as renderChart } from './charts.js';
 import { mountWidget } from './widgets/index.js';
+import { renderDatasetById } from './datasets.js';
 
 const $ = sel => document.querySelector(sel);
 const main = $('#main');
@@ -91,6 +92,7 @@ const ctxFor = () => ({
   onTerm: id => openTermSheet(id, { lang: lang(), openSheet, currentChapter: current.chapterNum }),
   renderChart: (spec, c) => renderChart(spec, c),
   mountWidget: (host, id, c) => mountWidget(host, id, c),
+  renderDataset: (host, id, c) => renderDatasetById(host, id, c, loadData),
   sourceLabel: s => {
     const [id, pages] = s.split(':');
     const src = sources.find(x => x.id === id);
