@@ -1,0 +1,84 @@
+"""Chapter 17 — The daily rhythm of weather."""
+import sys
+sys.path.insert(0, 'tools/content')
+from build import T, P, L, N, write_chapter
+
+chapter = {"id": "ch17", "num": 17, "stage": 6,
+ "title": T("每天的天气规律", "The daily rhythm of weather", "Irama cuaca harian"),
+ "sources": ["ESS", "MET-PHEN", "MET-PHEN-MS", "TERM"],
+ "sections": [
+ {"id": "s1", "heading": T("午后阵雨：把前面学的拼起来", "Afternoon showers: putting it all together", "Hujan petang: menggabungkan semuanya"), "level": "basic", "blocks": [
+  P("马来西亚很多地方常常是早上晴、下午下大雨、晚上又转晴。这种每天跟着太阳走的对流，叫{{t:diurnal-convection}}。它用到的每一样东西，前面几章都学过了。",
+    "Across much of Malaysia the day often runs clear morning, heavy afternoon rain, clear evening. Convection that follows the sun like this is {{t:diurnal-convection}}. Every piece of it was covered in earlier chapters.",
+    "Di kebanyakan Malaysia hari sering berjalan begini: pagi cerah, hujan lebat petang, malam cerah. Perolakan yang mengikut matahari seperti ini ialah {{t:diurnal-convection}}. Setiap bahagiannya telah dipelajari dalam bab-bab sebelum ini.",
+    defines=["diurnal-convection"], src=["ESS:352", "MET-PHEN-MS"]),
+  L(("第 4 章：太阳把地面晒热，最高温在午后", "Chapter 4: the sun heats the ground and the warmest hour comes after noon", "Bab 4: matahari memanaskan tanah dan jam paling panas tiba selepas tengah hari"),
+    ("第 5 章：空气里水汽很多，露点约 22–24 °C", "Chapter 5: the air holds a lot of water vapour, with dew points around 22–24 °C", "Bab 5: udara mengandungi banyak wap air, dengan takat embun sekitar 22–24 °C"),
+    ("第 7 章：热泡上升冷却，到抬升凝结高度成云；大气不稳定时可以一直往上长", "Chapter 7: thermals rise and cool, forming cloud at the lifting condensation level; in unstable air they keep growing", "Bab 7: terma naik dan menyejuk, membentuk awan pada aras pemeluwapan angkatan; dalam udara tidak stabil ia terus tumbuh"),
+    ("第 9 章：陆地比海热，海风把潮湿空气吹进内陆", "Chapter 9: the land is warmer than the sea, and the sea breeze carries moist air inland", "Bab 9: darat lebih panas daripada laut, dan bayu laut membawa udara lembap ke pedalaman"),
+    ("第 12 章：积雨云长成雷雨，带来大雨、闪电和下沉的冷风", "Chapter 12: the cumulonimbus becomes a thunderstorm, with heavy rain, lightning and a cold downdraught", "Bab 12: kumulonimbus menjadi ribut petir, dengan hujan lebat, kilat dan aliran turun yang sejuk"),
+    src=["ESS:32", "ESS:182", "ESS:352"]),
+  {"type": "widget", "id": "W24", "src": ["ESS:352", "MET-PHEN-MS"]},
+  P("热带雨林气候的书上是这样描写的：几乎每天都有积云长高，到下午就下局部的大阵雨；傍晚前后阵雨通常停下，天空转晴。",
+    "The textbook description of the tropical rain-forest climate is just this: towering cumulus forms almost every day and gives heavy, local showers by early afternoon; as evening approaches the showers usually end and the sky clears.",
+    "Huraian buku teks bagi iklim hutan hujan tropika tepat begini: kumulus menjulang terbentuk hampir setiap hari dan memberi hujan lebat setempat menjelang awal petang; apabila senja menghampiri hujan biasanya berhenti dan langit cerah.",
+    src=["ESS:352"]),
+ ]},
+ {"id": "s2", "heading": T("雷雨什么时候最多", "When thunderstorms are most frequent", "Bila ribut petir paling kerap"), "level": "basic", "blocks": [
+  P("马来西亚一年到头都会有雷雨，但在季风转换期（4–5 月和 10–11 月）最频繁。在陆地上，雷雨多在下午和傍晚；在海上，则常在夜间。全国雷雨次数最多的是梳邦（Subang），其次是峇六拜（Bayan Lepas）和居銮（Kluang）。",
+    "Malaysia has thunderstorms all year, but they are most frequent in the inter-monsoon periods, April–May and October–November. Over land they usually come in the afternoon and at dusk; over the sea, often at night. Subang records the most thunderstorms in the country, followed by Bayan Lepas and Kluang.",
+    "Malaysia mengalami ribut petir sepanjang tahun, tetapi paling kerap dalam tempoh peralihan monsun, April–Mei dan Oktober–November. Di daratan ia lazimnya berlaku pada waktu petang dan senja; di lautan, kerap pada waktu malam. Subang merekodkan paling banyak ribut petir di negara ini, diikuti Bayan Lepas dan Kluang.",
+    src=["MET-PHEN-MS", "MET-PHEN"]),
+  N("tip", "MetMalaysia 的英文页面把这句话写成“evening and early evening”，但马来文原文是“petang dan senja”——petang 指下午到傍晚。本书按马来文原文。",
+    "MetMalaysia's English page renders this as ‘evening and early evening’, but the Malay original says ‘petang dan senja’ — afternoon and dusk. This book follows the Malay original.",
+    "Halaman bahasa Inggeris MetMalaysia menterjemahkan ini sebagai ‘evening and early evening’, tetapi teks asal bahasa Melayu ialah ‘petang dan senja’. Buku ini mengikut teks asal bahasa Melayu.",
+    src=["MET-PHEN-MS", "MET-PHEN"]),
+ ]},
+ {"id": "s3", "heading": T("苏门答腊飑线", "The Sumatras", "Sumatras"), "level": "basic", "blocks": [
+  P("{{t:squall-line}}是一整排雷雨连成的线，可以长几百公里、维持好几个小时，比单个雷雨更强、范围更大。半岛西海岸特有的一种飑线叫{{t:sumatras}}：西南季风越过苏门答腊的山脉，在背风面造成山岳波和不稳定；马六甲海峡温暖的海水提供水汽，雷雨云在海峡上空形成、连成一线，再被西南风推向东北，打到西海岸。",
+    "A {{t:squall-line}} is a line of thunderstorms that can be hundreds of kilometres long and last several hours, stronger and wider-reaching than a single storm. A kind found on the Peninsula's west coast is the {{t:sumatras}}: the south-west monsoon crosses Sumatra's mountains, making mountain waves and instability on the lee side; the warm Strait of Malacca supplies moisture, storm clouds form over the strait and merge into a line, and the south-west wind drives it north-east onto the west coast.",
+    "{{t:squall-line}} ialah barisan ribut petir yang boleh mencapai ratusan kilometer panjang dan bertahan beberapa jam, lebih kuat dan lebih luas daripada ribut tunggal. Satu jenis yang terdapat di pantai barat Semenanjung ialah {{t:sumatras}}: monsun barat daya merentasi banjaran Sumatera, menghasilkan gelombang gunung dan ketidakstabilan di sebelah lindung; Selat Melaka yang panas membekalkan lembapan, awan ribut terbentuk di atas selat dan bergabung menjadi barisan, dan angin barat daya menolaknya ke timur laut ke pantai barat.",
+    defines=["squall-line", "sumatras"], src=["MET-PHEN", "TERM:326"]),
+  {"type": "map", "id": "M10", "src": ["MET-PHEN", "ESS:182"]},
+  L(("时间：多在凌晨到清晨，4 月到 11 月最常见；有时也在傍晚形成", "When: mostly before dawn and in the early morning, commonest April to November; sometimes it forms in the evening", "Bila: kebanyakannya menjelang subuh dan awal pagi, paling kerap April hingga November; kadangkala terbentuk pada waktu petang"),
+    ("来时：海上出现一大排厚厚的积雨云，风突然变成阵风，气温突然下降，接着打雷、闪电、下大雨", "On arrival: a thick bank of cumulonimbus rises from the sea, the wind jumps into gusts, the temperature drops suddenly, then thunder, lightning and heavy rain", "Apabila tiba: barisan tebal kumulonimbus naik dari laut, angin tiba-tiba menjadi tiupan kencang, suhu turun mendadak, kemudian guruh, kilat dan hujan lebat"),
+    ("之后：上岸后很快减弱，大约一小时后天气恢复正常", "After: it weakens quickly over land, and the weather is back to normal about an hour later", "Selepas: ia cepat lemah di darat, dan cuaca kembali normal kira-kira sejam kemudian"),
+    src=["MET-PHEN", "MET-PHEN-MS"]),
+  N("warn", "飑线的大雨可以在低洼和排水不好的地方造成闪电水灾。1996 年底，一条在马六甲海峡北部形成的飑线早上快速上岸，槟城和威省发生闪电水灾，雨量是有记录以来最高的。",
+    "A squall line's heavy rain can flash-flood low-lying and poorly drained places. At the end of 1996 a squall line that formed in the northern Strait of Malacca swept inland in the morning, flooding Penang and Seberang Prai with the highest rainfall ever recorded there.",
+    "Hujan lebat garis badai boleh menyebabkan banjir kilat di kawasan rendah dan bersaliran lemah. Pada akhir 1996 satu garis badai yang terbentuk di utara Selat Melaka bergerak pantas ke darat pada waktu pagi, membanjiri Pulau Pinang dan Seberang Prai dengan hujan tertinggi pernah direkodkan.",
+    src=["MET-PHEN"]),
+ ]},
+ {"id": "s4", "heading": T("晚上和清晨的海上雷雨", "Storms over the sea at night and dawn", "Ribut di laut pada malam dan subuh"), "level": "basic", "blocks": [
+  P("到了晚上，陆地冷得比海快，风反过来从陆地吹向海，这是第 9 章的陆风。所以白天雷雨在陆地上空，晚上的雷雨常常在海上。",
+    "At night the land cools faster than the sea and the wind reverses, blowing from land to sea — Chapter 9's land breeze. So the afternoon storms sit over land, while night-time storms are often out at sea.",
+    "Pada waktu malam darat menyejuk lebih cepat daripada laut dan angin berbalik, bertiup dari darat ke laut — bayu darat Bab 9. Jadi ribut petang berada di atas darat, manakala ribut malam sering berada di laut.",
+    src=["ESS:182", "MET-PHEN-MS"]),
+  N("key", "所以“午后阵雨”的规律主要是陆地上的规律。到海边、岛上或船上，下雨的时间可能完全不一样。",
+    "So the afternoon-shower rhythm is mainly a rhythm of the land. At the coast, on an island or on a boat, the rain may keep quite different hours.",
+    "Jadi irama hujan petang terutamanya irama daratan. Di pantai, di pulau atau di atas bot, hujan mungkin turun pada waktu yang sangat berbeza.",
+    src=["MET-PHEN-MS"]),
+ ]},
+ ]}
+
+terms = [
+ ("diurnal-convection", T("对流日变化", "Diurnal convection", "Perolakan harian"), T("跟着太阳每天重复的对流：早上晴，下午雷雨，晚上转晴。", "Convection that repeats with the sun each day: clear morning, afternoon storm, clear evening.", "Perolakan yang berulang mengikut matahari setiap hari: pagi cerah, ribut petang, malam cerah.")),
+ ("squall-line", T("飑线", "Squall line", "Garis badai"), T("一整排雷雨连成的线，可长几百公里、维持几小时。", "A line of thunderstorms, possibly hundreds of kilometres long, lasting hours.", "Barisan ribut petir, mungkin ratusan kilometer panjang, bertahan berjam-jam.")),
+ ("sumatras", T("苏门答腊飑线（Sumatras）", "Sumatras", "Sumatras"), T("西南季风期间在马六甲海峡形成、凌晨到清晨打到半岛西海岸的飑线。", "A squall line that forms over the Strait of Malacca in the south-west monsoon and hits the west coast before dawn or early morning.", "Garis badai yang terbentuk di Selat Melaka semasa monsun barat daya dan melanda pantai barat menjelang subuh atau awal pagi.")),
+]
+
+sources = []
+
+quiz = [
+ {"stage": 6, "chapter": "ch17", "q": T("在陆地上，马来西亚的雷雨通常在什么时候？", "Over land, when do Malaysia's thunderstorms usually happen?", "Di daratan, bilakah ribut petir di Malaysia lazimnya berlaku?"),
+  "options": [T("下午和傍晚", "Afternoon and dusk", "Petang dan senja"), T("清晨", "Early morning", "Awal pagi"), T("中午 12 点整", "Exactly at noon", "Tepat tengah hari"), T("半夜", "Midnight", "Tengah malam")],
+  "answer": 0, "why": T("海上的雷雨则常在夜间。", "Over the sea they are often at night.", "Di laut ia sering pada waktu malam.")},
+ {"stage": 6, "chapter": "ch17", "q": T("苏门答腊飑线通常什么时候打到西海岸？", "When does a Sumatras usually hit the west coast?", "Bilakah Sumatras biasanya melanda pantai barat?"),
+  "options": [T("凌晨到清晨", "Before dawn to early morning", "Menjelang subuh hingga awal pagi"), T("下午三点", "3 pm", "3 petang"), T("中午", "Noon", "Tengah hari"), T("只在东北季风", "Only in the north-east monsoon", "Hanya dalam monsun timur laut")],
+  "answer": 0, "why": T("它在夜里于马六甲海峡形成，再被西南风推上岸。", "It forms over the strait at night and the south-west wind pushes it ashore.", "Ia terbentuk di atas selat pada waktu malam dan angin barat daya menolaknya ke darat.")},
+ {"stage": 6, "chapter": "ch17", "q": T("午后雷雨为什么在傍晚后通常停下？", "Why do afternoon storms usually end after dusk?", "Mengapa ribut petang biasanya berhenti selepas senja?"),
+  "options": [T("太阳下山，没有新的热泡补充", "After sunset no new thermals feed them", "Selepas matahari terbenam tiada terma baharu"), T("风变强了", "The wind gets stronger", "Angin menjadi kuat"), T("海水变冷", "The sea turns cold", "Laut menjadi sejuk"), T("气压升高到 1,100 hPa", "Pressure rises to 1,100 hPa", "Tekanan naik ke 1,100 hPa")],
+  "answer": 0, "why": T("地面不再被晒热，上升气流就没了。", "With no more heating of the ground, the updraughts stop.", "Tanpa pemanasan tanah lagi, arus naik berhenti.")},
+]
+
+write_chapter(chapter, terms, sources, quiz)

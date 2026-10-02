@@ -9,7 +9,7 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-a790946f87';
+const CACHE = 'meteo-6c1995b71c';
 const ASSETS = [
   './',
   'css/app.css',
@@ -28,15 +28,22 @@ const ASSETS = [
   'data/ch13.json',
   'data/ch14.json',
   'data/ch15.json',
+  'data/ch16.json',
+  'data/ch17.json',
+  'data/ch18.json',
+  'data/ch19.json',
+  'data/ch20.json',
   'data/datasets.json',
   'data/index.json',
   'data/maps/koppen.json',
+  'data/maps/monsoon-normals.json',
   'data/maps/seasia.json',
   'data/maps/sst-clim.json',
   'data/maps/sst-events.json',
   'data/maps/world.json',
   'data/quiz.json',
   'data/releases.json',
+  'data/series/asmc-hotspots-2026.json',
   'data/series/kl-humidity-2025.json',
   'data/series/kl-levels-2026.json',
   'data/series/kl-monthly-2025.json',
@@ -99,6 +106,9 @@ const ASSETS = [
   'js/widgets/index.js',
   'js/widgets/kit.js',
   'js/widgets/m1.js',
+  'js/widgets/m10.js',
+  'js/widgets/m11.js',
+  'js/widgets/m12.js',
   'js/widgets/m2.js',
   'js/widgets/m3.js',
   'js/widgets/m4.js',
@@ -111,7 +121,10 @@ const ASSETS = [
   'js/widgets/w1.js',
   'js/widgets/w11.js',
   'js/widgets/w12.js',
+  'js/widgets/w13.js',
+  'js/widgets/w14.js',
   'js/widgets/w2.js',
+  'js/widgets/w24.js',
   'js/widgets/w3.js',
   'js/widgets/w5.js',
   'js/widgets/w6.js',

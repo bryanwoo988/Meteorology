@@ -16,6 +16,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "ASMC-HOME",
+  "short": "ASMC",
+  "title": "Regional haze situation; seasonal forecast for September–November 2026",
+  "publisher": "ASEAN Specialised Meteorological Centre",
+  "url": "https://asmc.asean.org/home/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "ASMC-HOTSPOT",
+  "short": "ASMC",
+  "title": "Daily hotspot count and FAQ (fire detection algorithm)",
+  "publisher": "ASEAN Specialised Meteorological Centre",
+  "url": "https://asmc.asean.org/asmc-haze-hotspot-daily-new/",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "CHANG2003",
   "short": "Chang et al. 2003",
   "title": "Typhoon Vamei: An equatorial tropical cyclone formation",
@@ -37,6 +53,14 @@
   "title": "What is the MJO, and why do we care?",
   "publisher": "NOAA Climate.gov",
   "url": "https://www.climate.gov/news-features/blogs/enso/what-mjo-and-why-do-we-care",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "DOE-API",
+  "short": "DOE",
+  "title": "Pengiraan Indeks Pencemar Udara (IPU) / Air Pollutant Index (API) calculation",
+  "publisher": "Jabatan Alam Sekitar Malaysia",
+  "url": "https://www.doe.gov.my/wp-content/uploads/2021/09/API_Calculation.pdf",
   "accessed": "2026-10-02"
  },
  {
@@ -104,6 +128,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "MET-DROUGHT",
+  "short": "MetMalaysia",
+  "title": "Laporan pemantauan kemarau, Julai 2026 (Indeks Kerpasan Piawai)",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/data/climate/kemarau.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-ENSO-STATUS",
+  "short": "MetMalaysia",
+  "title": "Status El Niño Southern Oscillation (ENSO), kemas kini 15 September 2026",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/data/climate/status_elnino.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "MET-HOME",
   "short": "MetMalaysia",
   "title": "Official website of the Malaysian Meteorological Department",
@@ -120,11 +160,67 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "MET-PHEN-MS",
+  "short": "MetMalaysia",
+  "title": "Fenomena cuaca (monsun, ribut petir, garis badai, gelombang haba)",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/pendidikan/fenomena-cuaca/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-WARN-RAIN",
+  "short": "MetMalaysia",
+  "title": "Kriteria amaran hujan berterusan",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/ramalan/hujan-lebat/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-WARN-TC",
+  "short": "MetMalaysia",
+  "title": "Kriteria amaran ribut taufan",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/ramalan/ribut-taufan",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-WARN-TS",
+  "short": "MetMalaysia",
+  "title": "Kriteria amaran ribut petir",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/ramalan/ribut-petir",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-WARN-WIND",
+  "short": "MetMalaysia",
+  "title": "Kriteria amaran angin kencang dan laut bergelora",
+  "publisher": "Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/ramalan/angin-kencang-and-laut-bergelora",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "METMY-SWM2024",
   "short": "MetMalaysia 2025",
   "title": "Review of the Southwest Monsoon 2024 in Malaysia (Research Publication No. 2/2025)",
   "publisher": "N. Mohd Rashid, W. F. Mustafah, Z. A. Mokhtar & M. F. A. Abdullah, Malaysian Meteorological Department, December 2025",
   "url": "https://www.met.gov.my/data/research/researchpapers/2025/RP04_2025.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NEWS-FMT-2026",
+  "short": "FMT",
+  "title": "Haze clears further, no unhealthy API readings, 2 October 2026",
+  "publisher": "Free Malaysia Today",
+  "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/02/haze-clears-further-no-unhealthy-api-readings",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NEWS-VIBES-2026",
+  "short": "The Vibes",
+  "title": "El Nino to bring drier weather, higher temperatures and greater haze risk in Malaysia (quoting MetMalaysia's director-general), 30 September 2026",
+  "publisher": "The Vibes",
+  "url": "https://www.thevibes.com/index.php/articles/news/127819/el-nino-to-bring-drier-weather-higher-temperatures-and-greater-haze-risk-in-malaysia",
   "accessed": "2026-10-02"
  },
  {
@@ -269,6 +365,14 @@
   "title": "2025 – Celebrating 75 Years of WMO Science for Action",
   "publisher": "World Meteorological Organization",
   "url": "https://wmo.int/resources/wmo-bulletin/wmo-bulletin-vol-73-2-2024/2025-celebrating-75-years-of-wmo-science-action",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-CAP",
+  "short": "WMO",
+  "title": "Leveraging the Common Alerting Protocol and Cell Broadcast technology for advancing Early Warnings for All",
+  "publisher": "World Meteorological Organization",
+  "url": "https://wmo.int/media/magazine-article/leveraging-common-alerting-protocol-and-cell-broadcast-technology-advancing-early-warnings-all",
   "accessed": "2026-10-02"
  },
  {

@@ -32,7 +32,16 @@ const MONTHS = {
   ms: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Ogo', 'Sep', 'Okt', 'Nov', 'Dis'],
 };
 let LANG = 'en';
-const xLabel = (v, format) => (format === 'hour' ? `${String(v).padStart(2, '0')}:00` : format === 'month' ? MONTHS[LANG][v - 1] : format === 'year' ? String(v).slice(0, 4) : String(v));
+export function xLabel(v, format, lang = LANG) {
+  if (format === 'hour') return `${String(v).padStart(2, '0')}:00`;
+  if (format === 'month') return MONTHS[lang][v - 1];
+  if (format === 'year') return String(v).slice(0, 4);
+  if (format === 'date') {                      // 'YYYY-MM-DD' → '18 Sep' / '9月18日'
+    const [, m, d] = String(v).split('-').map(Number);
+    return lang === 'zh' ? `${m}月${d}日` : `${d} ${MONTHS[lang][m - 1]}`;
+  }
+  return String(v);
+}
 
 function domain(values) {
   const lo = Math.min(...values), hi = Math.max(...values);

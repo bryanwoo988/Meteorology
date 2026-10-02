@@ -1699,5 +1699,341 @@
    "ms": "Hari yang hujannya mencapai ambang — 0.2, 1 atau 2.5 mm bergantung pada siapa yang mengira."
   },
   "chapter": 15
+ },
+ {
+  "id": "inter-monsoon",
+  "name": {
+   "zh": "季风转换期",
+   "en": "Inter-monsoon",
+   "ms": "Peralihan monsun"
+  },
+  "short": {
+   "zh": "两个季风之间，约 4–5 月和 10 月；风弱，下午多雷雨。",
+   "en": "Between the two monsoons, about April–May and October; light winds and afternoon thunderstorms.",
+   "ms": "Antara dua monsun, kira-kira April–Mei dan Oktober; angin lemah dan ribut petir petang."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "monsoon",
+  "name": {
+   "zh": "季风",
+   "en": "Monsoon",
+   "ms": "Monsun"
+  },
+  "short": {
+   "zh": "随季节换方向、而且持续吹一整季的大范围风。",
+   "en": "A large-scale wind that blows from one direction for a season and then reverses.",
+   "ms": "Angin berskala besar yang bertiup dari satu arah sepanjang musim dan kemudian berbalik."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "monsoon-surge",
+  "name": {
+   "zh": "季风潮（寒潮）",
+   "en": "Monsoon surge",
+   "ms": "Luruan monsun"
+  },
+  "short": {
+   "zh": "东北季风期间从西伯利亚冲出的一阵强冷空气，带来强风、大浪和大雨。",
+   "en": "A strong blast of cold air from Siberia during the north-east monsoon, bringing strong winds, rough seas and heavy rain.",
+   "ms": "Ledakan udara sejuk yang kuat dari Siberia semasa monsun timur laut, membawa angin kencang, laut bergelora dan hujan lebat."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "ne-monsoon",
+  "name": {
+   "zh": "东北季风",
+   "en": "North-east monsoon",
+   "ms": "Monsun timur laut"
+  },
+  "short": {
+   "zh": "11 月到 3 月；主要雨季，东海岸、砂拉越西部和沙巴东部雨最多。",
+   "en": "November to March; the main rainy season, wettest on the east coast, western Sarawak and eastern Sabah.",
+   "ms": "November hingga Mac; musim hujan utama, paling basah di pantai timur, barat Sarawak dan timur Sabah."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "sw-monsoon",
+  "name": {
+   "zh": "西南季风",
+   "en": "South-west monsoon",
+   "ms": "Monsun barat daya"
+  },
+  "short": {
+   "zh": "5 月底到 9 月；马来西亚大部分地方比较干，沙巴例外。",
+   "en": "Late May to September; relatively dry over most of Malaysia except Sabah.",
+   "ms": "Akhir Mei hingga September; agak kering di kebanyakan Malaysia kecuali Sabah."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "diurnal-convection",
+  "name": {
+   "zh": "对流日变化",
+   "en": "Diurnal convection",
+   "ms": "Perolakan harian"
+  },
+  "short": {
+   "zh": "跟着太阳每天重复的对流：早上晴，下午雷雨，晚上转晴。",
+   "en": "Convection that repeats with the sun each day: clear morning, afternoon storm, clear evening.",
+   "ms": "Perolakan yang berulang mengikut matahari setiap hari: pagi cerah, ribut petang, malam cerah."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "squall-line",
+  "name": {
+   "zh": "飑线",
+   "en": "Squall line",
+   "ms": "Garis badai"
+  },
+  "short": {
+   "zh": "一整排雷雨连成的线，可长几百公里、维持几小时。",
+   "en": "A line of thunderstorms, possibly hundreds of kilometres long, lasting hours.",
+   "ms": "Barisan ribut petir, mungkin ratusan kilometer panjang, bertahan berjam-jam."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "sumatras",
+  "name": {
+   "zh": "苏门答腊飑线（Sumatras）",
+   "en": "Sumatras",
+   "ms": "Sumatras"
+  },
+  "short": {
+   "zh": "西南季风期间在马六甲海峡形成、凌晨到清晨打到半岛西海岸的飑线。",
+   "en": "A squall line that forms over the Strait of Malacca in the south-west monsoon and hits the west coast before dawn or early morning.",
+   "ms": "Garis badai yang terbentuk di Selat Melaka semasa monsun barat daya dan melanda pantai barat menjelang subuh atau awal pagi."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "bahaya",
+  "name": {
+   "zh": "Bahaya（危险）",
+   "en": "Bahaya (danger)",
+   "ms": "Bahaya"
+  },
+  "short": {
+   "zh": "连续降雨预警的最高级：24 小时雨量预计超过 250 毫米。",
+   "en": "Highest level: over 250 mm expected in 24 hours.",
+   "ms": "Peringkat tertinggi: melebihi 250 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "buruk",
+  "name": {
+   "zh": "Buruk（恶劣）",
+   "en": "Buruk (bad)",
+   "ms": "Buruk"
+  },
+  "short": {
+   "zh": "连续降雨预警的第二级：24 小时雨量预计超过 150 毫米。",
+   "en": "Second level: over 150 mm expected in 24 hours.",
+   "ms": "Peringkat kedua: melebihi 150 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "cap",
+  "name": {
+   "zh": "CAP（通用预警协议）",
+   "en": "CAP (Common Alerting Protocol)",
+   "ms": "CAP (Protokol Amaran Bersama)"
+  },
+  "short": {
+   "zh": "国际统一的预警格式（XML），一条预警可以同时送到所有管道。",
+   "en": "The international standard format (XML) for warnings, so one alert can feed every channel.",
+   "ms": "Format piawai antarabangsa (XML) untuk amaran, supaya satu amaran sampai ke semua saluran."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "heat-wave",
+  "name": {
+   "zh": "热浪",
+   "en": "Heat wave",
+   "ms": "Gelombang haba"
+  },
+  "short": {
+   "zh": "在马来西亚：连续三天最高气温超过 37 °C。",
+   "en": "In Malaysia: a daily maximum above 37 °C for three days in a row.",
+   "ms": "Di Malaysia: suhu maksimum harian melebihi 37 °C selama tiga hari berturut-turut."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "waspada",
+  "name": {
+   "zh": "Waspada（警惕）",
+   "en": "Waspada (alert)",
+   "ms": "Waspada"
+  },
+  "short": {
+   "zh": "连续降雨预警的第一级：24 小时雨量预计少于 150 毫米。",
+   "en": "First level of continuous-rain warning: under 150 mm expected in 24 hours.",
+   "ms": "Peringkat pertama amaran hujan berterusan: kurang daripada 150 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "agricultural-drought",
+  "name": {
+   "zh": "农业干旱",
+   "en": "Agricultural drought",
+   "ms": "Kemarau pertanian"
+  },
+  "short": {
+   "zh": "作物在生长季里土壤水分不足。",
+   "en": "Too little soil moisture for a crop during its season.",
+   "ms": "Lembapan tanah tidak mencukupi untuk tanaman sepanjang musimnya."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "flash-flood",
+  "name": {
+   "zh": "闪电水灾",
+   "en": "Flash flood",
+   "ms": "Banjir kilat"
+  },
+  "short": {
+   "zh": "突然的大雨造成、涨得快退得快、几乎没有预警的水灾。",
+   "en": "A flood that rises and falls fast with little warning, after a sudden downpour.",
+   "ms": "Banjir yang naik dan surut cepat dengan sedikit amaran, selepas hujan lebat mendadak."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "hydrological-drought",
+  "name": {
+   "zh": "水文干旱",
+   "en": "Hydrological drought",
+   "ms": "Kemarau hidrologi"
+  },
+  "short": {
+   "zh": "气象干旱拖久了，河流、水库和湖泊缺水。",
+   "en": "A long meteorological drought that drains rivers, reservoirs and lakes.",
+   "ms": "Kemarau meteorologi yang lama sehingga sungai, takungan dan tasik kekurangan air."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "meteorological-drought",
+  "name": {
+   "zh": "气象干旱",
+   "en": "Meteorological drought",
+   "ms": "Kemarau meteorologi"
+  },
+  "short": {
+   "zh": "大范围的雨量明显低于平常。",
+   "en": "Rainfall well below normal over a wide area.",
+   "ms": "Hujan jauh di bawah normal di kawasan luas."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "monsoon-flood",
+  "name": {
+   "zh": "季风水灾",
+   "en": "Monsoon flood",
+   "ms": "Banjir monsun"
+  },
+  "short": {
+   "zh": "东北季风的大雨造成的大范围水灾。",
+   "en": "Widespread flooding from the heavy rain of the north-east monsoon.",
+   "ms": "Banjir meluas akibat hujan lebat monsun timur laut."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "spi",
+  "name": {
+   "zh": "标准化降水指数（SPI）",
+   "en": "Standardized Precipitation Index (SPI)",
+   "ms": "Indeks Kerpasan Piawai (SPI)"
+  },
+  "short": {
+   "zh": "干旱监测用的指数；负数表示雨量比正常少，−1.5 以下“很干”。",
+   "en": "A drought-monitoring index; negative means less rain than normal, below −1.5 ‘very dry’.",
+   "ms": "Indeks pemantauan kemarau; negatif bermaksud hujan kurang daripada normal, di bawah −1.5 ‘sangat kering’."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "api",
+  "name": {
+   "zh": "空气污染指数（API）",
+   "en": "Air Pollutant Index (API)",
+   "ms": "Indeks Pencemar Udara (IPU)"
+  },
+  "short": {
+   "zh": "六种污染物分指数里最高的一个；0–50 良好，101–200 不健康，300 以上危险。",
+   "en": "The highest of six pollutant sub-indices; 0–50 good, 101–200 unhealthy, above 300 hazardous.",
+   "ms": "Sub-indeks tertinggi daripada enam pencemar; 0–50 baik, 101–200 tidak sihat, melebihi 300 berbahaya."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "hotspot",
+  "name": {
+   "zh": "火点",
+   "en": "Hotspot",
+   "ms": "Titik panas"
+  },
+  "short": {
+   "zh": "卫星判定可能在着火的像元。",
+   "en": "A satellite pixel flagged as a possible fire.",
+   "ms": "Piksel satelit yang ditandakan sebagai kemungkinan kebakaran."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "peat",
+  "name": {
+   "zh": "泥炭（泥炭地）",
+   "en": "Peat",
+   "ms": "Gambut"
+  },
+  "short": {
+   "zh": "大部分没分解的植物残体在积水处堆成的土壤；干了很容易着火、冒烟。",
+   "en": "Soil of barely decomposed plant remains built up in waterlogged ground.",
+   "ms": "Tanah daripada sisa tumbuhan yang hampir tidak reput, terkumpul di tanah bertakung air."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "pm25",
+  "name": {
+   "zh": "PM2.5",
+   "en": "PM2.5",
+   "ms": "PM2.5"
+  },
+  "short": {
+   "zh": "直径小于 2.5 微米的细微粒，霾的主要成分之一。",
+   "en": "Fine particles smaller than 2.5 micrometres across.",
+   "ms": "Zarah halus bersaiz kurang daripada 2.5 mikrometer."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "transboundary-haze",
+  "name": {
+   "zh": "跨境烟霾",
+   "en": "Transboundary haze",
+   "ms": "Jerebu rentas sempadan"
+  },
+  "short": {
+   "zh": "森林和泥炭地火灾的烟被风从一个国家吹到另一个国家。",
+   "en": "Smoke from forest and peatland fires carried by the wind from one country into another.",
+   "ms": "Asap kebakaran hutan dan tanah gambut dibawa angin dari satu negara ke negara lain."
+  },
+  "chapter": 20
  }
 ]

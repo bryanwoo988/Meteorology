@@ -1,0 +1,305 @@
+{
+ "id": "ch20",
+ "num": 20,
+ "stage": 6,
+ "title": {
+  "zh": "烟霾与空气质量",
+  "en": "Haze and air quality",
+  "ms": "Jerebu dan kualiti udara"
+ },
+ "sources": [
+  "ESS",
+  "TERM",
+  "ASMC",
+  "ASMC-HOME",
+  "ASMC-HOTSPOT",
+  "DOE-API",
+  "MET-ENSO-STATUS",
+  "NEWS-VIBES-2026",
+  "NEWS-FMT-2026"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "跨境烟霾",
+    "en": "Transboundary haze",
+    "ms": "Jerebu rentas sempadan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "第 6 章讲过：空气里有很多微粒时，远处的东西会变得模糊，这就是霾。在东南亚，最严重的霾常常来自森林和泥炭地着火冒出的烟。烟被风从一个国家吹到另一个国家，叫{{t:transboundary-haze}}。",
+      "en": "Chapter 6 described haze: when the air is full of tiny particles, distant things blur. In South-East Asia the worst haze usually comes from the smoke of forest and peatland fires. When the wind carries that smoke from one country into another, it is {{t:transboundary-haze}}.",
+      "ms": "Bab 6 menerangkan jerebu: apabila udara penuh dengan zarah halus, benda yang jauh menjadi kabur. Di Asia Tenggara jerebu paling teruk biasanya datang daripada asap kebakaran hutan dan tanah gambut. Apabila angin membawa asap itu dari satu negara ke negara lain, ia ialah {{t:transboundary-haze}}."
+     },
+     "defines": [
+      "transboundary-haze"
+     ],
+     "src": [
+      "ESS:97",
+      "ASMC",
+      "NEWS-VIBES-2026"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:peat}}是大部分没有分解、或只分解了一点的植物残体，在长期积水的地方堆积而成的土壤。大马气象局提醒：长期干旱会增加森林和泥炭地火灾，引起烟霾。",
+      "en": "{{t:peat}} is soil made mostly of plant remains that have not decomposed, or only slightly, built up where the ground stays waterlogged. MetMalaysia warns that long dry spells raise the risk of forest and peatland fires and of the haze they bring.",
+      "ms": "{{t:peat}} ialah tanah yang kebanyakannya terdiri daripada sisa tumbuhan yang tidak reput, atau hanya sedikit reput, terkumpul di tempat yang sentiasa bertakung air. MetMalaysia mengingatkan bahawa tempoh kering yang panjang meningkatkan risiko kebakaran hutan dan tanah gambut serta jerebu yang dibawanya."
+     },
+     "defines": [
+      "peat"
+     ],
+     "src": [
+      "TERM:255",
+      "NEWS-VIBES-2026"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M12",
+     "src": [
+      "ASMC-HOME"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "西南季风期间，低空的风主要从东南或西南吹来，这正是东盟南部的旱季。2026 年 10 月 2 日查阅的 ASMC 区域烟霾情况说：苏门答腊南部和加里曼丹东南部有成群的火点，砂拉越部分地区出现跨境的中到浓烟霾。",
+      "en": "During the south-west monsoon the low-level winds blow mainly from the south-east or south-west, and it is the dry season of the southern ASEAN region. ASMC's regional haze situation, as read on 2 October 2026, noted clusters of hotspots in southern Sumatra and south-eastern Kalimantan, and moderate to dense transboundary smoke haze over parts of Sarawak.",
+      "ms": "Semasa monsun barat daya angin aras rendah bertiup terutamanya dari tenggara atau barat daya, dan ia musim kering rantau ASEAN selatan. Situasi jerebu serantau ASMC, seperti dibaca pada 2 Oktober 2026, mencatat kelompok titik panas di selatan Sumatera dan tenggara Kalimantan, serta jerebu asap rentas sempadan sederhana hingga tebal di sebahagian Sarawak."
+     },
+     "src": [
+      "ASMC-HOME"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "为什么厄尔尼诺年霾特别严重",
+    "en": "Why El Niño years bring worse haze",
+    "ms": "Mengapa tahun El Niño membawa jerebu lebih teruk"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "第 14 章讲过，厄尔尼诺让东南亚偏干。大马气象局 2026 年 9 月的 ENSO 状态说：非常强的厄尔尼诺常常和严重的烟霾一起出现，“就像我们现在正在经历的”；这次烟霾预计会持续到 2026 年 10 月。",
+      "en": "Chapter 14 showed that El Niño tends to dry South-East Asia. MetMalaysia's ENSO status of September 2026 says a very strong El Niño is often linked with serious haze, ‘as we are experiencing now’, and expected the haze to last until October 2026.",
+      "ms": "Bab 14 menunjukkan El Niño cenderung mengeringkan Asia Tenggara. Status ENSO MetMalaysia pada September 2026 menyatakan El Niño yang sangat kuat sering dikaitkan dengan cuaca berjerebu yang serius ‘sebagaimana yang sedang kita alami ketika ini’, dan menjangkakan jerebu berterusan sehingga Oktober 2026."
+     },
+     "src": [
+      "MET-ENSO-STATUS"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "厄尔尼诺 + 西南季风的旱季 = 泥炭地更干、更容易着火，而风又正好把烟吹向马来西亚。",
+      "en": "El Niño plus the south-west monsoon's dry season means drier peat that burns more easily — and winds that carry the smoke towards Malaysia.",
+      "ms": "El Niño ditambah musim kering monsun barat daya bermakna gambut lebih kering dan mudah terbakar — serta angin yang membawa asap ke arah Malaysia."
+     },
+     "src": [
+      "MET-ENSO-STATUS",
+      "ASMC-HOME",
+      "NEWS-VIBES-2026"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "卫星怎样找火点",
+    "en": "How satellites find fires",
+    "ms": "Bagaimana satelit mencari kebakaran"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "着火的地面会放出特别强的中红外辐射。卫星的火点算法把每个像元和一组门槛、以及周围的像元比较，判断是不是着火；被判定为着火的像元，就是一个{{t:hotspot}}。ASMC 2019 年起用 NOAA-20 卫星的资料数火点。",
+      "en": "Burning ground gives off unusually strong mid-infrared radiation. A satellite fire algorithm compares each pixel with a set of thresholds and with the pixels around it to decide whether it is on fire; a pixel flagged as fire is a {{t:hotspot}}. Since 2019 ASMC has counted hotspots from the NOAA-20 satellite.",
+      "ms": "Tanah yang terbakar memancarkan sinaran inframerah tengah yang luar biasa kuat. Algoritma kebakaran satelit membandingkan setiap piksel dengan set ambang dan dengan piksel di sekelilingnya untuk menentukan sama ada ia terbakar; piksel yang ditandakan sebagai kebakaran ialah {{t:hotspot}}. Sejak 2019 ASMC mengira titik panas daripada satelit NOAA-20."
+     },
+     "defines": [
+      "hotspot"
+     ],
+     "src": [
+      "ASMC-HOTSPOT"
+     ]
+    },
+    {
+     "type": "chart",
+     "src": [
+      "ASMC-HOTSPOT"
+     ],
+     "chart": {
+      "kind": "line",
+      "series_file": "asmc-hotspots-2026",
+      "title": {
+       "zh": "每天的火点数，2026 年 7–9 月",
+       "en": "Hotspots a day, July–September 2026",
+       "ms": "Titik panas sehari, Julai–September 2026"
+      },
+      "x": {
+       "col": "date",
+       "label": {
+        "zh": "日期",
+        "en": "Date",
+        "ms": "Tarikh"
+       },
+       "format": "date"
+      },
+      "y": {
+       "label": {
+        "zh": "火点",
+        "en": "Hotspots",
+        "ms": "Titik panas"
+       },
+       "unit": ""
+      },
+      "series": [
+       {
+        "col": "kalimantan",
+        "name": {
+         "zh": "加里曼丹",
+         "en": "Kalimantan",
+         "ms": "Kalimantan"
+        },
+        "color": "mercury"
+       },
+       {
+        "col": "sumatra",
+        "name": {
+         "zh": "苏门答腊",
+         "en": "Sumatra",
+         "ms": "Sumatera"
+        },
+        "color": "sun"
+       },
+       {
+        "col": "malaysia",
+        "name": {
+         "zh": "马来西亚",
+         "en": "Malaysia",
+         "ms": "Malaysia"
+        },
+        "color": "sky"
+       }
+      ]
+     }
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "这三个月里，加里曼丹每天的火点最多在 8 月 28 日达到 1,734 个，苏门答腊在 9 月 16 日达到 387 个；马来西亚（半岛加沙巴、砂拉越）三个月加起来只有 419 个。马来西亚的霾，大部分是从外面吹进来的。",
+      "en": "Over these three months Kalimantan's daily count peaked at 1,734 on 28 August and Sumatra's at 387 on 16 September; Malaysia — the Peninsula plus Sabah and Sarawak — had only 419 in all three months together. Most of Malaysia's haze is blown in from outside.",
+      "ms": "Dalam tiga bulan ini kiraan harian Kalimantan memuncak pada 1,734 pada 28 Ogos dan Sumatera pada 387 pada 16 September; Malaysia — Semenanjung serta Sabah dan Sarawak — hanya mempunyai 419 bagi ketiga-tiga bulan bersama. Kebanyakan jerebu Malaysia ditiup masuk dari luar."
+     },
+     "src": [
+      "ASMC-HOTSPOT"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "火点不一定是真的火：天然气燃烧塔、发电厂也会被当成火点。反过来，云太多、火在树冠下面、火太小或太短，卫星都可能看不到。所以多云的日子，火点少不代表火少。",
+      "en": "A hotspot is not always a fire: gas flares and power plants can show up too. And the satellite can miss fires under cloud, under the forest canopy, or ones that are too small or too brief. On a cloudy day, few hotspots do not mean few fires.",
+      "ms": "Titik panas tidak semestinya kebakaran: suar gas dan loji janakuasa juga boleh muncul. Dan satelit boleh terlepas kebakaran di bawah awan, di bawah kanopi hutan, atau yang terlalu kecil atau singkat. Pada hari berawan, sedikit titik panas tidak bermakna sedikit kebakaran."
+     },
+     "src": [
+      "ASMC-HOTSPOT"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "asmc-hotspots",
+     "src": [
+      "ASMC-HOTSPOT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "空气污染指数（API）",
+    "en": "The Air Pollutant Index (API)",
+    "ms": "Indeks Pencemar Udara (IPU)"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "马来西亚环境局（DOE）用{{t:api}}报告空气质量。它由六种污染物算出：二氧化硫、二氧化氮、一氧化碳、地面臭氧、PM10 和 {{t:pm25}}。每种污染物先按自己的时间平均（例如 PM2.5 和 PM10 用 24 小时平均），换算成一个分指数；六个分指数里最高的那个，就是 API。",
+      "en": "Malaysia's Department of Environment (DOE) reports air quality as the {{t:api}}. It is worked out from six pollutants: sulphur dioxide, nitrogen dioxide, carbon monoxide, ground-level ozone, PM10 and {{t:pm25}}. Each pollutant is averaged over its own period (24 hours for PM2.5 and PM10, for example) and turned into a sub-index; the highest of the six sub-indices is the API.",
+      "ms": "Jabatan Alam Sekitar (JAS) melaporkan kualiti udara sebagai {{t:api}}. Ia dikira daripada enam bahan pencemar: sulfur dioksida, nitrogen dioksida, karbon monoksida, ozon aras tanah, PM10 dan {{t:pm25}}. Setiap pencemar dipuratakan mengikut tempohnya sendiri (24 jam bagi PM2.5 dan PM10, contohnya) dan ditukar kepada sub-indeks; sub-indeks tertinggi daripada enam itu ialah IPU."
+     },
+     "defines": [
+      "api",
+      "pm25"
+     ],
+     "src": [
+      "DOE-API"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "平常和有霾的时候，决定 API 读数的通常是微粒（PM2.5、PM10），因为它们是最主要的污染物。PM2.5 从 2017 年起算进 API。",
+      "en": "Most of the time, and especially in haze, the API reading is set by particulate matter (PM2.5 and PM10), the dominant pollutant. PM2.5 has been part of the API since 2017.",
+      "ms": "Kebanyakan masa, terutamanya semasa jerebu, bacaan IPU ditentukan oleh habuk halus (PM2.5 dan PM10), pencemar yang dominan. PM2.5 menjadi sebahagian daripada IPU sejak 2017."
+     },
+     "src": [
+      "DOE-API"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W14",
+     "src": [
+      "DOE-API"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "2026 年 10 月 2 日下午 3 点 20 分，全国已经没有“不健康”的读数：哥打京那巴鲁 34、林梦 38 属于“良好”，其他地方都是“中等”，例如蕉赖（Cheras）96。",
+      "en": "At 3.20 pm on 2 October 2026 no area in the country was ‘unhealthy’: Kota Kinabalu (34) and Limbang (38) were ‘good’ and the rest ‘moderate’, such as Cheras at 96.",
+      "ms": "Pada jam 3.20 petang 2 Oktober 2026 tiada kawasan di negara ini yang ‘tidak sihat’: Kota Kinabalu (34) dan Limbang (38) ‘baik’ dan selebihnya ‘sederhana’, seperti Cheras pada 96."
+     },
+     "src": [
+      "NEWS-FMT-2026"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "doe-apims",
+     "src": [
+      "DOE-API"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "transboundary-haze",
+  "peat",
+  "hotspot",
+  "api",
+  "pm25"
+ ]
+}

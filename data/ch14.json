@@ -11,6 +11,7 @@
   "ESS",
   "FUN",
   "NOAA-CPC-RONI",
+  "MET-ENSO-STATUS",
   "MET-PHEN",
   "METMY-SWM2024",
   "CLIMGOV-MJO",
@@ -207,6 +208,18 @@
      },
      "src": [
       "NOAA-CPC-RONI"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "大马气象局 2026 年 9 月 15 日的 ENSO 状态：厄尔尼诺目前是中等强度，6–8 月的 RONI 是 1.4 °C；预计持续到 2027 年 5 月，年底几乎肯定会变得非常强。",
+      "en": "MetMalaysia's ENSO status of 15 September 2026: El Niño is now moderate, with a June–August RONI of 1.4 °C; it is expected to last until May 2027 and is almost certain to become very strong by the end of the year.",
+      "ms": "Status ENSO MetMalaysia pada 15 September 2026: El Niño kini pada tahap sederhana, dengan RONI Jun–Ogos 1.4 °C; ia dijangka berterusan sehingga Mei 2027 dan hampir pasti mencapai tahap sangat kuat menjelang akhir tahun."
+     },
+     "src": [
+      "MET-ENSO-STATUS"
      ]
     },
     {

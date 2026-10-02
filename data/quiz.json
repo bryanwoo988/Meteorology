@@ -1702,6 +1702,450 @@
   }
  },
  {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "马来西亚主要的雨季是哪一个？",
+   "en": "Which is Malaysia's main rainy season?",
+   "ms": "Yang manakah musim hujan utama Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "东北季风（11 月到 3 月）",
+    "en": "The north-east monsoon (November to March)",
+    "ms": "Monsun timur laut (November hingga Mac)"
+   },
+   {
+    "zh": "西南季风（5 月底到 9 月）",
+    "en": "The south-west monsoon (late May to September)",
+    "ms": "Monsun barat daya (akhir Mei hingga September)"
+   },
+   {
+    "zh": "没有雨季",
+    "en": "There is none",
+    "ms": "Tiada"
+   },
+   {
+    "zh": "只有 7 月",
+    "en": "July only",
+    "ms": "Julai sahaja"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "东北季风为东海岸、砂拉越西部和沙巴东部带来最多的雨。",
+   "en": "It brings the most rain to the east coast, western Sarawak and eastern Sabah.",
+   "ms": "Ia membawa paling banyak hujan ke pantai timur, barat Sarawak dan timur Sabah."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "西南季风期间半岛比较干，主要原因是什么？",
+   "en": "Why is the Peninsula relatively dry in the south-west monsoon?",
+   "ms": "Mengapa Semenanjung agak kering semasa monsun barat daya?"
+  },
+  "options": [
+   {
+    "zh": "苏门答腊的山脉挡住了雨",
+    "en": "Sumatra's mountains shelter it from the rain",
+    "ms": "Banjaran Sumatera melindunginya daripada hujan"
+   },
+   {
+    "zh": "海水太冷",
+    "en": "The sea is too cold",
+    "ms": "Laut terlalu sejuk"
+   },
+   {
+    "zh": "太阳太弱",
+    "en": "The sun is too weak",
+    "ms": "Matahari terlalu lemah"
+   },
+   {
+    "zh": "西伯利亚高压",
+    "en": "The Siberian high",
+    "ms": "Tekanan tinggi Siberia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "这叫雨影效应。",
+   "en": "This is a rain shadow.",
+   "ms": "Ini ialah bayang hujan."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "吉隆坡一年的雨量高峰在什么时候？",
+   "en": "When are Kuala Lumpur's rainfall peaks?",
+   "ms": "Bilakah puncak hujan Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "4 月和 11 月左右的季风转换期",
+    "en": "Around April and November, the inter-monsoons",
+    "ms": "Sekitar April dan November, peralihan monsun"
+   },
+   {
+    "zh": "只有 1 月",
+    "en": "January only",
+    "ms": "Januari sahaja"
+   },
+   {
+    "zh": "7 月",
+    "en": "July",
+    "ms": "Julai"
+   },
+   {
+    "zh": "全年都一样",
+    "en": "Same all year",
+    "ms": "Sama sepanjang tahun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "转换期风弱、早上晴，下午雷雨多。",
+   "en": "Light winds and clear mornings give many afternoon thunderstorms.",
+   "ms": "Angin lemah dan pagi cerah memberi banyak ribut petir petang."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "在陆地上，马来西亚的雷雨通常在什么时候？",
+   "en": "Over land, when do Malaysia's thunderstorms usually happen?",
+   "ms": "Di daratan, bilakah ribut petir di Malaysia lazimnya berlaku?"
+  },
+  "options": [
+   {
+    "zh": "下午和傍晚",
+    "en": "Afternoon and dusk",
+    "ms": "Petang dan senja"
+   },
+   {
+    "zh": "清晨",
+    "en": "Early morning",
+    "ms": "Awal pagi"
+   },
+   {
+    "zh": "中午 12 点整",
+    "en": "Exactly at noon",
+    "ms": "Tepat tengah hari"
+   },
+   {
+    "zh": "半夜",
+    "en": "Midnight",
+    "ms": "Tengah malam"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "海上的雷雨则常在夜间。",
+   "en": "Over the sea they are often at night.",
+   "ms": "Di laut ia sering pada waktu malam."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "苏门答腊飑线通常什么时候打到西海岸？",
+   "en": "When does a Sumatras usually hit the west coast?",
+   "ms": "Bilakah Sumatras biasanya melanda pantai barat?"
+  },
+  "options": [
+   {
+    "zh": "凌晨到清晨",
+    "en": "Before dawn to early morning",
+    "ms": "Menjelang subuh hingga awal pagi"
+   },
+   {
+    "zh": "下午三点",
+    "en": "3 pm",
+    "ms": "3 petang"
+   },
+   {
+    "zh": "中午",
+    "en": "Noon",
+    "ms": "Tengah hari"
+   },
+   {
+    "zh": "只在东北季风",
+    "en": "Only in the north-east monsoon",
+    "ms": "Hanya dalam monsun timur laut"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它在夜里于马六甲海峡形成，再被西南风推上岸。",
+   "en": "It forms over the strait at night and the south-west wind pushes it ashore.",
+   "ms": "Ia terbentuk di atas selat pada waktu malam dan angin barat daya menolaknya ke darat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "午后雷雨为什么在傍晚后通常停下？",
+   "en": "Why do afternoon storms usually end after dusk?",
+   "ms": "Mengapa ribut petang biasanya berhenti selepas senja?"
+  },
+  "options": [
+   {
+    "zh": "太阳下山，没有新的热泡补充",
+    "en": "After sunset no new thermals feed them",
+    "ms": "Selepas matahari terbenam tiada terma baharu"
+   },
+   {
+    "zh": "风变强了",
+    "en": "The wind gets stronger",
+    "ms": "Angin menjadi kuat"
+   },
+   {
+    "zh": "海水变冷",
+    "en": "The sea turns cold",
+    "ms": "Laut menjadi sejuk"
+   },
+   {
+    "zh": "气压升高到 1,100 hPa",
+    "en": "Pressure rises to 1,100 hPa",
+    "ms": "Tekanan naik ke 1,100 hPa"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "地面不再被晒热，上升气流就没了。",
+   "en": "With no more heating of the ground, the updraughts stop.",
+   "ms": "Tanpa pemanasan tanah lagi, arus naik berhenti."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "预计 24 小时会下 200 毫米雨，是哪一级预警？",
+   "en": "200 mm expected in 24 hours: which warning level?",
+   "ms": "200 mm dijangka dalam 24 jam: peringkat amaran mana?"
+  },
+  "options": [
+   {
+    "zh": "Buruk",
+    "en": "Buruk",
+    "ms": "Buruk"
+   },
+   {
+    "zh": "Waspada",
+    "en": "Waspada",
+    "ms": "Waspada"
+   },
+   {
+    "zh": "Bahaya",
+    "en": "Bahaya",
+    "ms": "Bahaya"
+   },
+   {
+    "zh": "不用预警",
+    "en": "No warning",
+    "ms": "Tiada amaran"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "超过 150 毫米但不超过 250 毫米。",
+   "en": "Over 150 mm but not over 250 mm.",
+   "ms": "Melebihi 150 mm tetapi tidak melebihi 250 mm."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "雷暴预警每次最长有效多久？",
+   "en": "How long is one thunderstorm warning valid at most?",
+   "ms": "Berapa lama satu amaran ribut petir sah paling lama?"
+  },
+  "options": [
+   {
+    "zh": "6 小时",
+    "en": "6 hours",
+    "ms": "6 jam"
+   },
+   {
+    "zh": "24 小时",
+    "en": "24 hours",
+    "ms": "24 jam"
+   },
+   {
+    "zh": "3 天",
+    "en": "3 days",
+    "ms": "3 hari"
+   },
+   {
+    "zh": "1 星期",
+    "en": "1 week",
+    "ms": "1 minggu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "更久的话就升级为连续降雨预警。",
+   "en": "Longer than that, it becomes a continuous-rain warning.",
+   "ms": "Lebih lama daripada itu, ia menjadi amaran hujan berterusan."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "雷雨时在野外，哪里最不应该躲？",
+   "en": "Caught outdoors in a thunderstorm, where should you not shelter?",
+   "ms": "Terperangkap di luar semasa ribut petir, di mana anda tidak patut berlindung?"
+  },
+  "options": [
+   {
+    "zh": "孤立的大树下",
+    "en": "Under an isolated tree",
+    "ms": "Di bawah pokok yang terpencil"
+   },
+   {
+    "zh": "坚固的建筑物里",
+    "en": "In a solid building",
+    "ms": "Di dalam bangunan kukuh"
+   },
+   {
+    "zh": "车里",
+    "en": "In a car",
+    "ms": "Di dalam kereta"
+   },
+   {
+    "zh": "远离电线杆的低处",
+    "en": "Low ground away from poles",
+    "ms": "Tempat rendah jauh dari tiang"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "孤立的树容易被雷打中。",
+   "en": "An isolated tree is easily struck by lightning.",
+   "ms": "Pokok terpencil mudah dipanah petir."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "闪电水灾和季风水灾最大的不同是什么？",
+   "en": "What most separates a flash flood from a monsoon flood?",
+   "ms": "Apakah perbezaan utama banjir kilat dan banjir monsun?"
+  },
+  "options": [
+   {
+    "zh": "闪电水灾来得快、退得快，一场大雨就够",
+    "en": "A flash flood comes and goes fast; one downpour is enough",
+    "ms": "Banjir kilat datang dan surut cepat; satu hujan lebat sudah cukup"
+   },
+   {
+    "zh": "闪电水灾只在东海岸",
+    "en": "Flash floods happen only on the east coast",
+    "ms": "Banjir kilat hanya di pantai timur"
+   },
+   {
+    "zh": "季风水灾没有雨",
+    "en": "Monsoon floods need no rain",
+    "ms": "Banjir monsun tidak memerlukan hujan"
+   },
+   {
+    "zh": "两者完全一样",
+    "en": "They are the same",
+    "ms": "Kedua-duanya sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季风水灾来自东北季风连续的大雨。",
+   "en": "Monsoon floods come from the north-east monsoon's continuous heavy rain.",
+   "ms": "Banjir monsun datang daripada hujan lebat berterusan monsun timur laut."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "河流和水库干涸，是哪一种干旱？",
+   "en": "Rivers and reservoirs running dry: which drought?",
+   "ms": "Sungai dan takungan kering: kemarau jenis apa?"
+  },
+  "options": [
+   {
+    "zh": "水文干旱",
+    "en": "Hydrological",
+    "ms": "Hidrologi"
+   },
+   {
+    "zh": "气象干旱",
+    "en": "Meteorological",
+    "ms": "Meteorologi"
+   },
+   {
+    "zh": "农业干旱",
+    "en": "Agricultural",
+    "ms": "Pertanian"
+   },
+   {
+    "zh": "都不是",
+    "en": "None",
+    "ms": "Tiada"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "气象干旱拖久了，就变成水文干旱。",
+   "en": "A long meteorological drought becomes a hydrological one.",
+   "ms": "Kemarau meteorologi yang lama menjadi kemarau hidrologi."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "某站 SPI 是 −1.65，属于哪个等级？",
+   "en": "A station's SPI is −1.65. Which category?",
+   "ms": "SPI sebuah stesen ialah −1.65. Kategori mana?"
+  },
+  "options": [
+   {
+    "zh": "很干",
+    "en": "Very dry",
+    "ms": "Sangat kering"
+   },
+   {
+    "zh": "正常",
+    "en": "Normal",
+    "ms": "Normal"
+   },
+   {
+    "zh": "极湿",
+    "en": "Extremely wet",
+    "ms": "Terlalu lembap"
+   },
+   {
+    "zh": "中等湿",
+    "en": "Moderately wet",
+    "ms": "Sederhana lembap"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "−1.5 到 −1.99 是“很干”。",
+   "en": "−1.5 to −1.99 is ‘very dry’.",
+   "ms": "−1.5 hingga −1.99 ialah ‘sangat kering’."
+  }
+ },
+ {
   "stage": 5,
   "chapter": "ch14",
   "q": {
@@ -1810,6 +2254,117 @@
    "zh": "第 2、3 在印度洋，4、5 在海洋性大陆，6、7 在西太平洋。",
    "en": "2–3 are over the Indian Ocean, 4–5 the Maritime Continent, 6–7 the western Pacific.",
    "ms": "2–3 di atas Lautan Hindi, 4–5 Benua Maritim, 6–7 Pasifik barat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "API 是怎样决定的？",
+   "en": "How is the API value decided?",
+   "ms": "Bagaimana nilai IPU ditentukan?"
+  },
+  "options": [
+   {
+    "zh": "取六个污染物分指数中最高的一个",
+    "en": "The highest of six pollutant sub-indices",
+    "ms": "Sub-indeks tertinggi daripada enam pencemar"
+   },
+   {
+    "zh": "六个分指数的平均",
+    "en": "The average of the six",
+    "ms": "Purata enam"
+   },
+   {
+    "zh": "只看 PM10",
+    "en": "PM10 only",
+    "ms": "PM10 sahaja"
+   },
+   {
+    "zh": "看能见度",
+    "en": "Visibility",
+    "ms": "Ketampakan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "有霾时通常是微粒的分指数最高。",
+   "en": "In haze it is usually the particulate sub-index.",
+   "ms": "Semasa jerebu biasanya sub-indeks habuk halus."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "API 150 属于哪一级？",
+   "en": "API 150 is in which band?",
+   "ms": "IPU 150 dalam tahap mana?"
+  },
+  "options": [
+   {
+    "zh": "不健康",
+    "en": "Unhealthy",
+    "ms": "Tidak sihat"
+   },
+   {
+    "zh": "良好",
+    "en": "Good",
+    "ms": "Baik"
+   },
+   {
+    "zh": "中等",
+    "en": "Moderate",
+    "ms": "Sederhana"
+   },
+   {
+    "zh": "危险",
+    "en": "Hazardous",
+    "ms": "Merbahaya"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "101–200 是不健康。",
+   "en": "101–200 is unhealthy.",
+   "ms": "101–200 ialah tidak sihat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "多云的日子火点很少，可以说明火很少吗？",
+   "en": "Few hotspots on a cloudy day: does that mean few fires?",
+   "ms": "Sedikit titik panas pada hari berawan: adakah itu bermakna sedikit kebakaran?"
+  },
+  "options": [
+   {
+    "zh": "不一定，云会挡住卫星",
+    "en": "Not necessarily: cloud hides fires from the satellite",
+    "ms": "Tidak semestinya: awan melindungi kebakaran daripada satelit"
+   },
+   {
+    "zh": "一定是",
+    "en": "Yes, always",
+    "ms": "Ya, sentiasa"
+   },
+   {
+    "zh": "火点和火无关",
+    "en": "Hotspots have nothing to do with fire",
+    "ms": "Titik panas tiada kaitan dengan kebakaran"
+   },
+   {
+    "zh": "卫星晚上看不到",
+    "en": "Satellites cannot see at night",
+    "ms": "Satelit tidak dapat melihat pada waktu malam"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "云、树冠和小火都可能让卫星漏掉火点。",
+   "en": "Cloud, canopy and small fires can all be missed.",
+   "ms": "Awan, kanopi dan kebakaran kecil semuanya boleh terlepas."
   }
  }
 ]

@@ -490,3 +490,9 @@ rect.cl-ice, circle.cl-ice { fill: var(--cloud); stroke: var(--sky); stroke-widt
 .map-legend-bar { flex: 1; height: 8px; border-radius: 4px; }
 .map-lines path.current { stroke-width: 3.5; }
 .map-lines path.current.is-on { stroke-width: 6; }
+
+/* W14 API bands */
+.api-bands { display: grid; grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); gap: 6px; margin: 8px 0 12px; }
+.api-band { display: grid; gap: 2px; padding: 8px 10px; border: 1px solid var(--line); border-left: 6px solid var(--band); border-radius: var(--radius); background: var(--surface); color: var(--ink); font: inherit; font-size: .88rem; text-align: left; cursor: pointer; }
+.api-band[aria-pressed="true"] { background: var(--surface-2); outline: 2px solid var(--band); outline-offset: -1px; }
+.api-range { font-weight: 700; font-variant-numeric: tabular-nums; }

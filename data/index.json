@@ -342,8 +342,7 @@
     "zh": "马来西亚的季风",
     "en": "Malaysia's monsoons",
     "ms": "Monsun di Malaysia"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch17",
@@ -352,9 +351,8 @@
    "title": {
     "zh": "每天的天气规律",
     "en": "The daily rhythm of weather",
-    "ms": "Corak cuaca harian"
-   },
-   "ready": false
+    "ms": "Irama cuaca harian"
+   }
   },
   {
    "id": "ch18",
@@ -364,8 +362,7 @@
     "zh": "天气预警",
     "en": "Weather warnings",
     "ms": "Amaran cuaca"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch19",
@@ -375,19 +372,17 @@
     "zh": "洪水与干旱",
     "en": "Floods and drought",
     "ms": "Banjir dan kemarau"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch20",
    "num": 20,
    "stage": 6,
    "title": {
-    "zh": "霾与空气质量",
+    "zh": "烟霾与空气质量",
     "en": "Haze and air quality",
     "ms": "Jerebu dan kualiti udara"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch21",

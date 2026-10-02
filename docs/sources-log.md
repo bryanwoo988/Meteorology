@@ -48,3 +48,24 @@ against its source before it is written. One row per claim.
 | 15 | Open-Meteo ERA5：0.25°、1940 至今、每天更新、延迟 5 天 | https://open-meteo.com/en/docs/historical-weather-api | 2026-10-02 |
 | 15 | WMO：2025 年全球平均地面气温比 1850–1900 高 1.44 ± 0.13 °C（八套数据）；2015–2025 为最热 11 年；2025 年首尾有拉尼娜 | https://wmo.int/news/media-centre/wmo-confirms-2025-was-one-of-warmest-years-record | 2026-10-02 |
 | 15 | Beck et al. 2023, Scientific Data 10, 724（Crossref 核对） | https://doi.org/10.1038/s41597-023-02549-6 | 2026-10-02 |
+| 16 | MetMalaysia：monsun 源自阿拉伯文 musim；西伯利亚高压冷空气→东北风；夏季亚洲低压，东南风越赤道转西南风；luruan monsun 造成南中国海强风大浪、东海岸/砂拉越西部/沙巴东部大雨；西南季风大部分州每月 100–150 mm，半岛因苏门答腊雨影，沙巴 >200 mm（台风尾）；转换期风弱、早上晴、下午雷雨，西海岸月雨量最高在两个转换期 | https://www.met.gov.my/en/pendidikan/fenomena-cuaca/ ；https://www.met.gov.my/pendidikan/fenomena-cuaca/ | 2026-10-02 |
+| 16 | ERA5 1991–2020 月平均（Open-Meteo 日资料计算）：哥打巴鲁 12 月 412 mm、2 月 81 mm；吉隆坡 4 月 293 mm、11 月 374 mm；南中国海 12–1 月东北风约 25–30 km/h | https://archive-api.open-meteo.com/v1/archive（见 data/maps/monsoon-normals.json） | 2026-10-02 |
+| 16 | ASMC 2026 年 9–11 月展望：西南季风持续到 10 月初，之后转入季风转换期 | https://asmc.asean.org/home/ | 2026-10-02 |
+| 17 | MetMalaysia（马来文原文）：陆地雷雨 lazimnya pada waktu petang dan senja，海上常在夜间；4–5 月、10–11 月最频繁；Subang 雷雨最多，其次 Bayan Lepas、Kluang（英文页译作 evening and early evening） | https://www.met.gov.my/pendidikan/fenomena-cuaca/ | 2026-10-02 |
+| 17 | MetMalaysia：飑线长数百公里、维持数小时；Sumatras 成因、凌晨至早上、4–11 月；上岸后约一小时恢复；1996 年底槟城、威省闪电水灾 | https://www.met.gov.my/en/pendidikan/fenomena-cuaca/ | 2026-10-02 |
+| 18 | 连续降雨预警：Waspada <150 mm/24h、Buruk >150 mm、Bahaya >250 mm；24 小时由下雨开始计算；影响含季节性作物受损 | https://www.met.gov.my/ramalan/hujan-lebat/ | 2026-10-02 |
+| 18 | 强风大浪预警：第一类 40–50 km/h 或浪 ≤3.5 m；第二类 50–60 km/h 或 ≤4.5 m；第三类 >60 km/h 或 >4.5 m | https://www.met.gov.my/ramalan/angin-kencang-and-laut-bergelora | 2026-10-02 |
+| 18 | 雷暴预警：雨势 >20 mm/h；每次有效 ≤6 小时；可升级为连续降雨预警 | https://www.met.gov.my/ramalan/ribut-petir | 2026-10-02 |
+| 18 | 热带气旋：MetMalaysia 负责 0–20°N、95–130°E | https://www.met.gov.my/ramalan/ribut-taufan | 2026-10-02 |
+| 18 | 热浪：连续三天 >37 °C；四阶段 0/1/2/3（35、37、40 °C）；马来文 Berjaga-jaga、Gelombang Haba Ekstrem | https://www.met.gov.my/pendidikan/fenomena-cuaca/ | 2026-10-02 |
+| 18 | CAP：ITU X.1303，XML，一条预警送所有管道；2023 年第十九届世界气象大会纳入 WMO-No. 49 技术规则 | https://wmo.int/media/magazine-article/leveraging-common-alerting-protocol-and-cell-broadcast-technology-advancing-early-warnings-all | 2026-10-02 |
+| 19 | MetMalaysia 干旱监测（2026 年 7 月报告）：40 站 SPI、等级表；Waspada/Amaran/Bahaya 标准（3/6 个月累积雨量少 35 % 以上 + SPI）；Temerloh、Labuan 很干；无站达气象干旱 | https://www.met.gov.my/data/climate/kemarau.pdf | 2026-10-02 |
+| 14/19/20 | MetMalaysia ENSO 状态（2026-09-15）：厄尔尼诺中等、持续到 2027 年 5 月、年底几乎肯定非常强；RONI JJA 1.4 °C；非常强的厄尔尼诺常伴随严重烟霾“如现在”；烟霾预计持续到 2026 年 10 月；2027 年 1–5 月极端干热 | https://www.met.gov.my/data/climate/status_elnino.pdf | 2026-10-02 |
+| 19 | TERM p.129：Flash flood 定义（书中原文） | Terminology p.129 | — |
+| 20 | TERM p.255：Peat 定义（书中原文） | Terminology p.255 | — |
+| 20 | DOE：API 由 SO₂、NO₂、CO、O₃、PM10、PM2.5 六种计算（PM2.5 自 2017 年）；取最高分指数；有霾时通常由微粒决定；0–50 良好、51–100 中等、101–200 不健康、201–300 非常不健康、>300 危险、>500 紧急，及各级健康建议 | https://www.doe.gov.my/wp-content/uploads/2021/09/API_Calculation.pdf | 2026-10-02 |
+| 20 | ASMC 火点：中红外、上下文算法；NOAA-20（2019 起）、Suomi-NPP（2013–2018）；燃气火炬、发电厂误判；云、树冠、小火漏检 | https://asmc.asean.org/asmc-haze-hotspot-daily-new/ | 2026-10-02 |
+| 20 | ASMC 每日火点数（白天、高可信度）2026-07-03 至 09-30：加里曼丹最高 1,734（8-28），苏门答腊最高 387（9-16），马来西亚合计 419 | https://asmc.asean.org/wp-content/themes/asmctheme/page-functions/functions-ajax-haze-daily-hotspot-count-new.php（POST） | 2026-10-02 |
+| 20 | ASMC 2026-10-02 区域烟霾情况：苏门答腊南部、加里曼丹东南部成群火点；砂拉越部分地区跨境中到浓烟霾 | https://asmc.asean.org/home/ | 2026-10-02 |
+| 20 | MetMalaysia 总监（The Vibes 2026-09-30 引述 Utusan Malaysia）：长期干旱增加森林与泥炭地火灾和烟霾风险 | https://www.thevibes.com/index.php/articles/news/127819/el-nino-to-bring-drier-weather-higher-temperatures-and-greater-haze-risk-in-malaysia | 2026-10-02 |
+| 20 | 2026-10-02 15:20 API：无不健康读数；哥打京那巴鲁 34、林梦 38 良好；蕉赖 96、Seri Manjung 96 | https://www.freemalaysiatoday.com/category/nation/2026/10/02/haze-clears-further-no-unhealthy-api-readings | 2026-10-02 |

@@ -5,7 +5,7 @@ from build import T, P, L, N, write_chapter
 
 chapter = {"id": "ch14", "num": 14, "stage": 5,
  "title": T("厄尔尼诺、MJO 与印度洋偶极子", "El Niño, the MJO and the Indian Ocean Dipole", "El Niño, MJO dan Dipol Lautan Hindi"),
- "sources": ["ESS", "FUN", "NOAA-CPC-RONI", "MET-PHEN", "METMY-SWM2024", "CLIMGOV-MJO", "CLIMGOV-IOD"],
+ "sources": ["ESS", "FUN", "NOAA-CPC-RONI", "MET-ENSO-STATUS", "MET-PHEN", "METMY-SWM2024", "CLIMGOV-MJO", "CLIMGOV-IOD"],
  "sections": [
  {"id": "s1", "heading": T("厄尔尼诺和拉尼娜", "El Niño and La Niña", "El Niño dan La Niña"), "level": "basic", "blocks": [
   P("第 11 章讲过 Walker 环流：平常信风把暖水推到西太平洋，东南亚这边空气上升、多雨。每隔几年，信风会变弱，甚至改吹西风，暖水就往东流到南美洲那边，东太平洋赤道一带的海水比平常暖很多。这叫{{t:el-nino}}。",
@@ -47,6 +47,10 @@ chapter = {"id": "ch14", "num": 14, "stage": 5,
     "The two highest peaks are the strong El Niños of 1997–98 and 2015–16 (RONI above +2 °C); one of the deepest troughs is the La Niña of 2010–11 (about −1.6 °C). Drag across the chart to read each season. The latest season, June–August 2026, is +1.36 °C, the second season in a row above +0.5 °C.",
     "Dua puncak tertinggi ialah El Niño kuat 1997–98 dan 2015–16 (RONI melebihi +2 °C); salah satu lembah terdalam ialah La Niña 2010–11 (kira-kira −1.6 °C). Seret merentasi carta untuk membaca setiap musim. Musim terkini, Jun–Ogos 2026, ialah +1.36 °C, musim kedua berturut-turut melebihi +0.5 °C.",
     src=["NOAA-CPC-RONI"]),
+  N("key", "大马气象局 2026 年 9 月 15 日的 ENSO 状态：厄尔尼诺目前是中等强度，6–8 月的 RONI 是 1.4 °C；预计持续到 2027 年 5 月，年底几乎肯定会变得非常强。",
+    "MetMalaysia's ENSO status of 15 September 2026: El Niño is now moderate, with a June–August RONI of 1.4 °C; it is expected to last until May 2027 and is almost certain to become very strong by the end of the year.",
+    "Status ENSO MetMalaysia pada 15 September 2026: El Niño kini pada tahap sederhana, dengan RONI Jun–Ogos 1.4 °C; ia dijangka berterusan sehingga Mei 2027 dan hampir pasti mencapai tahap sangat kuat menjelang akhir tahun.",
+    src=["MET-ENSO-STATUS"]),
   {"type": "dataset", "id": "noaa-roni"},
   N("tip", "很多旧文章和网站还在用 ONI，就是不减热带平均的旧版本。两个数字可以差不少：2026 年 6–8 月，ONI 是 +1.80 °C，RONI 是 +1.36 °C。看到两个数字不同，先看它用的是哪一个指数。",
     "Many older articles and websites still quote the ONI, the older version that does not subtract the tropical average. The two can differ a good deal: for June–August 2026 the ONI was +1.80 °C and the RONI +1.36 °C. When two numbers disagree, check which index each one uses.",

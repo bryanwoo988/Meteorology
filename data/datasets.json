@@ -498,5 +498,315 @@
     }
    }
   ]
+ },
+ {
+  "id": "metmy-spi",
+  "name": "MetMalaysia SPI drought monitoring",
+  "provider": "Malaysian Meteorological Department",
+  "what": {
+   "zh": "每月一份报告：40 个主要气象站 1 到 6 个月的 SPI，以及干旱等级。",
+   "en": "A monthly report: 1- to 6-month SPI for 40 principal stations, and the drought level.",
+   "ms": "Laporan bulanan: SPI 1 hingga 6 bulan bagi 40 stesen utama, dan tahap kemarau."
+  },
+  "resolution": {
+   "zh": "40 个气象站",
+   "en": "40 stations",
+   "ms": "40 stesen"
+  },
+  "update": {
+   "zh": "每月",
+   "en": "Monthly",
+   "ms": "Bulanan"
+  },
+  "format": "PDF",
+  "licence": {
+   "text": "© Jabatan Meteorologi Malaysia",
+   "url": "https://www.met.gov.my/"
+  },
+  "params": [
+   {
+    "raw": "SPI 1bulan … 6bulan",
+    "meaning": {
+     "zh": "最近 1 到 6 个月的标准化降水指数",
+     "en": "SPI over the last 1 to 6 months",
+     "ms": "SPI bagi 1 hingga 6 bulan terkini"
+    },
+    "unit": "—",
+    "chapter": 19
+   },
+   {
+    "raw": "No Stn",
+    "meaning": {
+     "zh": "气象站编号",
+     "en": "Station number",
+     "ms": "Nombor stesen"
+    },
+    "unit": "—",
+    "chapter": 19
+   }
+  ],
+  "sample": {
+   "columns": [
+    "No Stn",
+    "Nama Stesen",
+    "Lat",
+    "Lon",
+    "SPI 1bulan",
+    "SPI 3bulan",
+    "SPI 6bulan"
+   ],
+   "rows": [
+    [
+     "48653",
+     "TEMERLOH",
+     "3.47",
+     "102.38",
+     "-1.65",
+     "0.17",
+     "-0.58"
+    ],
+    [
+     "96465",
+     "LABUAN",
+     "5.30",
+     "115.25",
+     "-1.54",
+     "-0.17",
+     "-0.89"
+    ],
+    [
+     "48665",
+     "MELAKA",
+     "2.27",
+     "102.25",
+     "2.53",
+     "2.03",
+     "1.61"
+    ]
+   ],
+   "source": "Laporan Pemantauan Kemarau Julai 2026, Jadual 1",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "最新干旱监测报告（PDF）",
+     "en": "Latest drought report (PDF)",
+     "ms": "Laporan kemarau terkini (PDF)"
+    },
+    "url": "https://www.met.gov.my/data/climate/kemarau.pdf"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "最新 ENSO 状态（PDF）",
+     "en": "Latest ENSO status (PDF)",
+     "ms": "Status ENSO terkini (PDF)"
+    },
+    "url": "https://www.met.gov.my/data/climate/status_elnino.pdf"
+   }
+  ]
+ },
+ {
+  "id": "asmc-hotspots",
+  "name": "ASMC daily hotspot count",
+  "provider": "ASEAN Specialised Meteorological Centre",
+  "what": {
+   "zh": "每天每个地区的火点数，可选白天或夜间、高中低可信度；本章的火点图就是用它画的。",
+   "en": "Daily hotspot counts by region, by day or night and by confidence level. This chapter's hotspot chart is drawn from it.",
+   "ms": "Kiraan titik panas harian mengikut rantau, siang atau malam dan tahap keyakinan. Carta titik panas bab ini dilukis daripadanya."
+  },
+  "resolution": {
+   "zh": "按地区计数",
+   "en": "Counts by region",
+   "ms": "Kiraan mengikut rantau"
+  },
+  "update": {
+   "zh": "每天",
+   "en": "Daily",
+   "ms": "Harian"
+  },
+  "format": "JSON (web page)",
+  "licence": {
+   "text": "© ASMC",
+   "url": "https://asmc.asean.org/"
+  },
+  "params": [
+   {
+    "raw": "Sumatra, Kalimantan, P_Malaysia, SabahSarawak …",
+    "meaning": {
+     "zh": "该地区当天的火点数",
+     "en": "Hotspots in that region that day",
+     "ms": "Titik panas di rantau itu pada hari tersebut"
+    },
+    "unit": {
+     "zh": "个",
+     "en": "count",
+     "ms": "bilangan"
+    },
+    "chapter": 20
+   },
+   {
+    "raw": "daynight, conf",
+    "meaning": {
+     "zh": "白天/夜间；可信度（High、Medium、Low）",
+     "en": "Day or night; confidence (High, Medium, Low)",
+     "ms": "Siang atau malam; keyakinan (High, Medium, Low)"
+    },
+    "unit": "—",
+    "chapter": 20
+   }
+  ],
+  "sample": {
+   "columns": [
+    "date",
+    "Sumatra",
+    "Kalimantan",
+    "P_Malaysia",
+    "SabahSarawak"
+   ],
+   "rows": [
+    [
+     "2026-09-28",
+     "84",
+     "161",
+     "1",
+     "0"
+    ],
+    [
+     "2026-09-29",
+     "191",
+     "327",
+     "0",
+     "1"
+    ],
+    [
+     "2026-09-30",
+     "47",
+     "227",
+     "0",
+     "10"
+    ]
+   ],
+   "source": "ASMC daily hotspot count, NOAA-20, daytime, high confidence",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "ASMC 每日火点页面",
+     "en": "ASMC daily hotspot page",
+     "ms": "Halaman titik panas harian ASMC"
+    },
+    "url": "https://asmc.asean.org/asmc-haze-hotspot-daily-new/"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "区域烟霾情况地图",
+     "en": "Regional haze situation map",
+     "ms": "Peta situasi jerebu serantau"
+    },
+    "url": "https://asmc.asean.org/home/"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "NASA FIRMS 全球火点数据",
+     "en": "NASA FIRMS global fire data",
+     "ms": "Data kebakaran global NASA FIRMS"
+    },
+    "url": "https://firms.modaps.eosdis.nasa.gov/"
+   }
+  ]
+ },
+ {
+  "id": "doe-apims",
+  "name": "APIMS (Air Pollutant Index Management System)",
+  "provider": "Department of Environment Malaysia",
+  "what": {
+   "zh": "全国空气质量监测站每小时的 API 读数。",
+   "en": "Hourly API readings from the national air-quality stations.",
+   "ms": "Bacaan IPU setiap jam dari stesen kualiti udara seluruh negara."
+  },
+  "resolution": {
+   "zh": "按监测站",
+   "en": "By station",
+   "ms": "Mengikut stesen"
+  },
+  "update": {
+   "zh": "每小时",
+   "en": "Hourly",
+   "ms": "Setiap jam"
+  },
+  "format": {
+   "zh": "网页、手机应用",
+   "en": "Web page, app",
+   "ms": "Laman web, aplikasi"
+  },
+  "licence": {
+   "text": "© Jabatan Alam Sekitar",
+   "url": "https://eqms.doe.gov.my/APIMS/main"
+  },
+  "params": [
+   {
+    "raw": "API / IPU",
+    "meaning": {
+     "zh": "六种污染物分指数中最高的一个",
+     "en": "Highest of the six pollutant sub-indices",
+     "ms": "Sub-indeks tertinggi daripada enam pencemar"
+    },
+    "unit": "—",
+    "chapter": 20
+   }
+  ],
+  "sample": {
+   "columns": [
+    "Station",
+    "API",
+    "Status"
+   ],
+   "rows": [
+    [
+     "Kota Kinabalu",
+     "34",
+     "Good"
+    ],
+    [
+     "Cheras",
+     "96",
+     "Moderate"
+    ],
+    [
+     "Seri Manjung",
+     "96",
+     "Moderate"
+    ]
+   ],
+   "source": "APIMS readings at 3.20 pm, 2 Oct 2026, as reported by Free Malaysia Today",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "APIMS 官方网站",
+     "en": "APIMS official site",
+     "ms": "Laman rasmi APIMS"
+    },
+    "url": "https://eqms.doe.gov.my/APIMS/main"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "API 计算方法（PDF）",
+     "en": "How the API is calculated (PDF)",
+     "ms": "Cara IPU dikira (PDF)"
+    },
+    "url": "https://www.doe.gov.my/wp-content/uploads/2021/09/API_Calculation.pdf"
+   }
+  ]
  }
 ]
