@@ -1,0 +1,23 @@
+[
+  {
+    "v": "1.0.0",
+    "date": "2026-10-03",
+    "notes": [
+      {
+        "zh": "第一版：9 个阶段、42 章的三语气象课，从大气原理到 ECMWF 集合预报，以马来西亚为例，可以离线使用",
+        "en": "First release: a 42-chapter, 9-stage meteorology course in three languages, from how the air works to ECMWF ensembles, with Malaysia as the example — usable offline",
+        "ms": "Keluaran pertama: kursus meteorologi 42 bab dalam 9 peringkat, tiga bahasa, dari cara udara berfungsi hingga ensemble ECMWF, dengan Malaysia sebagai contoh — boleh digunakan luar talian"
+      },
+      {
+        "zh": "可以拖动的图表和地图：真实的探空 Skew-T、季风月历、吉隆坡 51 个成员的 EPSgram、卫星、雷达、ET₀ 等",
+        "en": "Figures and maps you can drag: a real-sounding Skew-T, the monsoon calendar, a 51-member EPSgram for Kuala Lumpur, satellites, radar, ET₀ and more",
+        "ms": "Rajah dan peta yang boleh diseret: Skew-T sonde sebenar, kalendar monsun, EPSgram 51 ahli untuk Kuala Lumpur, satelit, radar, ET₀ dan lain-lain"
+      },
+      {
+        "zh": "资料卡、词汇表、闪卡、测验、°C ⇄ °F 换算，每段内容都标出来源",
+        "en": "Data cards, glossary, flashcards, quizzes and a °C ⇄ °F converter; every paragraph shows its sources",
+        "ms": "Kad data, glosari, kad imbas, kuiz dan penukar °C ⇄ °F; setiap perenggan menunjukkan sumbernya"
+      }
+    ]
+  }
+]

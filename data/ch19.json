@@ -1,0 +1,374 @@
+{
+ "id": "ch19",
+ "num": 19,
+ "stage": 6,
+ "title": {
+  "zh": "洪水与干旱",
+  "en": "Floods and drought",
+  "ms": "Banjir dan kemarau"
+ },
+ "sources": [
+  "MET-PHEN",
+  "TERM",
+  "PAM",
+  "MET-DROUGHT",
+  "MET-ENSO-STATUS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "季风水灾",
+    "en": "Monsoon floods",
+    "ms": "Banjir monsun"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "东北季风带来的大雨，常常在半岛东海岸的吉兰丹、登嘉楼、彭亨和柔佛东部，以及砂拉越和沙巴造成大范围的水灾。这种跟着季风来的水灾，叫{{t:monsoon-flood}}。",
+      "en": "The heavy rain of the north-east monsoon often causes widespread floods in Kelantan, Terengganu, Pahang and East Johor on the Peninsula's east coast, and in Sarawak and Sabah. Floods that come with the monsoon are {{t:monsoon-flood}}s.",
+      "ms": "Hujan lebat monsun timur laut sering menyebabkan banjir meluas di Kelantan, Terengganu, Pahang dan Johor Timur di pantai timur Semenanjung, serta di Sarawak dan Sabah. Banjir yang datang bersama monsun ialah {{t:monsoon-flood}}."
+     },
+     "defines": [
+      "monsoon-flood"
+     ],
+     "src": [
+      "MET-PHEN"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M11",
+     "src": [
+      "MET-PHEN"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "季风水灾来自连续的大雨，这正是第 18 章连续降雨预警要提醒的情况。",
+      "en": "Monsoon floods come from continuous heavy rain — exactly what the continuous-rain warnings of Chapter 18 are for.",
+      "ms": "Banjir monsun datang daripada hujan lebat berterusan — tepat seperti yang diberi amaran oleh amaran hujan berterusan Bab 18."
+     },
+     "src": [
+      "MET-PHEN",
+      "MET-WARN-RAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "闪电水灾",
+    "en": "Flash floods",
+    "ms": "Banjir kilat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:flash-flood}}是水涨得快、退得也快、几乎没有预先警告的水灾，通常由突然的大雨造成。马来西亚的雷雨和飑线带来的大雨，常在低洼和排水差的地方造成闪电水灾，在山区还可能引起土崩。",
+      "en": "A {{t:flash-flood}} rises and falls quickly with little or no warning, usually after a sudden downpour. The heavy rain of Malaysia's thunderstorms and squall lines often flash-floods low-lying and poorly drained places, and can set off landslides in the hills.",
+      "ms": "{{t:flash-flood}} naik dan surut dengan cepat dengan sedikit atau tiada amaran, biasanya selepas hujan lebat mendadak. Hujan lebat ribut petir dan garis badai di Malaysia sering menyebabkan banjir kilat di kawasan rendah dan bersaliran lemah, dan boleh mencetuskan tanah runtuh di kawasan bukit."
+     },
+     "defines": [
+      "flash-flood"
+     ],
+     "src": [
+      "TERM:129",
+      "MET-PHEN"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "闪电水灾不需要下几天的雨，一场雷雨就够了。看到雷暴预警（每小时超过 20 毫米）就要留意。",
+      "en": "A flash flood needs no days of rain; one thunderstorm is enough. Take note whenever a thunderstorm warning (over 20 mm an hour) is issued.",
+      "ms": "Banjir kilat tidak memerlukan hujan berhari-hari; satu ribut petir sudah cukup. Beri perhatian setiap kali amaran ribut petir (melebihi 20 mm sejam) dikeluarkan."
+     },
+     "src": [
+      "MET-PHEN",
+      "MET-WARN-TS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "干旱的种类",
+    "en": "Kinds of drought",
+    "ms": "Jenis kemarau"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "干旱是缺水的一种气候异常：可用的水不够满足需要。它来得慢，很难说哪一天开始，但影响又久又广。按影响的对象，可以分成三种：",
+      "en": "Drought is a climatic anomaly of moisture shortage: the water available falls short of the water needed. It creeps in — it is hard to say on which day it begins — but its effects last long and spread wide. By what it affects, there are three kinds:",
+      "ms": "Kemarau ialah anomali iklim kekurangan lembapan: air yang ada tidak mencukupi untuk keperluan. Ia datang perlahan — sukar untuk menentukan hari ia bermula — tetapi kesannya lama dan meluas. Mengikut apa yang terjejas, terdapat tiga jenis:"
+     },
+     "src": [
+      "PAM:95-97"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "{{t:meteorological-drought}}：大范围的雨量明显低于平常",
+       "en": "{{t:meteorological-drought}}: rainfall well below normal over a wide area",
+       "ms": "{{t:meteorological-drought}}: hujan jauh di bawah normal di kawasan yang luas"
+      },
+      {
+       "zh": "{{t:hydrological-drought}}：气象干旱拖得太久，河流、水库和湖泊的水变少甚至干涸",
+       "en": "{{t:hydrological-drought}}: a meteorological drought lasts so long that rivers, reservoirs and lakes run low or dry",
+       "ms": "{{t:hydrological-drought}}: kemarau meteorologi berlarutan sehingga sungai, takungan dan tasik menyusut atau kering"
+      },
+      {
+       "zh": "{{t:agricultural-drought}}：作物在一季里得不到足够的土壤水分",
+       "en": "{{t:agricultural-drought}}: a crop does not get enough soil moisture during its season",
+       "ms": "{{t:agricultural-drought}}: tanaman tidak mendapat lembapan tanah yang mencukupi sepanjang musimnya"
+      }
+     ],
+     "defines": [
+      "meteorological-drought",
+      "hydrological-drought",
+      "agricultural-drought"
+     ],
+     "src": [
+      "PAM:97"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "马来西亚怎样监测干旱",
+    "en": "How Malaysia monitors drought",
+    "ms": "Bagaimana Malaysia memantau kemarau"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "大马气象局每月用{{t:spi}}监测 40 个主要气象站。SPI 在 −0.99 到 0.99 之间是正常；负数表示雨量比正常少，越负越干。",
+      "en": "Each month MetMalaysia checks its 40 principal stations with the {{t:spi}}. Between −0.99 and 0.99 the SPI is normal; a negative value means less rain than normal, and the more negative, the drier.",
+      "ms": "Setiap bulan MetMalaysia memantau 40 stesen utamanya dengan {{t:spi}}. SPI antara −0.99 dan 0.99 adalah normal; nilai negatif bermaksud hujan kurang daripada normal, dan semakin negatif, semakin kering."
+     },
+     "defines": [
+      "spi"
+     ],
+     "src": [
+      "MET-DROUGHT"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "MET-DROUGHT"
+     ],
+     "caption": {
+      "zh": "SPI 的等级",
+      "en": "SPI scale",
+      "ms": "Skala SPI"
+     },
+     "headers": [
+      {
+       "zh": "SPI",
+       "en": "SPI",
+       "ms": "SPI"
+      },
+      {
+       "zh": "等级",
+       "en": "Category",
+       "ms": "Kategori"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "2.0 或以上",
+        "en": "2.0 or more",
+        "ms": "2.0 dan ke atas"
+       },
+       {
+        "zh": "极湿",
+        "en": "Extremely wet",
+        "ms": "Terlalu lembap"
+       }
+      ],
+      [
+       {
+        "zh": "1.5 到 1.99",
+        "en": "1.5 to 1.99",
+        "ms": "1.5 ke 1.99"
+       },
+       {
+        "zh": "很湿",
+        "en": "Very wet",
+        "ms": "Sangat lembap"
+       }
+      ],
+      [
+       {
+        "zh": "1.0 到 1.49",
+        "en": "1.0 to 1.49",
+        "ms": "1.0 ke 1.49"
+       },
+       {
+        "zh": "中等湿",
+        "en": "Moderately wet",
+        "ms": "Sederhana lembap"
+       }
+      ],
+      [
+       {
+        "zh": "−0.99 到 0.99",
+        "en": "−0.99 to 0.99",
+        "ms": "−0.99 ke 0.99"
+       },
+       {
+        "zh": "正常",
+        "en": "Normal",
+        "ms": "Normal"
+       }
+      ],
+      [
+       {
+        "zh": "−1.0 到 −1.49",
+        "en": "−1.0 to −1.49",
+        "ms": "−1.0 ke −1.49"
+       },
+       {
+        "zh": "中等干",
+        "en": "Moderately dry",
+        "ms": "Sederhana kering"
+       }
+      ],
+      [
+       {
+        "zh": "−1.5 到 −1.99",
+        "en": "−1.5 to −1.99",
+        "ms": "−1.5 ke −1.99"
+       },
+       {
+        "zh": "很干",
+        "en": "Very dry",
+        "ms": "Sangat kering"
+       }
+      ],
+      [
+       {
+        "zh": "−2.0 或以下",
+        "en": "−2.0 or less",
+        "ms": "−2.0 atau kurang"
+       },
+       {
+        "zh": "极干",
+        "en": "Extremely dry",
+        "ms": "Terlalu kering"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "只看 SPI 还不够：要宣布气象干旱，还要看最近 3 个月和/或 6 个月的累积雨量比正常少了多少。例如第一级 Waspada：最近 3 个月（或 6 个月）的雨量比正常少 35 % 以上，而且最新一个月的 SPI 低于 −1.5。2026 年 7 月的报告里，淡马鲁（Temerloh）和纳闽（Labuan）属于“很干”，但没有一个站达到气象干旱的状态。",
+      "en": "The SPI alone is not enough: declaring a meteorological drought also looks at how far the total rain of the last 3 and/or 6 months has fallen below normal. The first level, Waspada, for example, needs the last 3 (or 6) months' rain more than 35 % below normal and the latest month's SPI below −1.5. In the July 2026 report Temerloh and Labuan were ‘very dry’, but no station had reached meteorological-drought status.",
+      "ms": "SPI sahaja tidak mencukupi: pengisytiharan kemarau meteorologi juga melihat sejauh mana jumlah hujan 3 dan/atau 6 bulan terkini jatuh di bawah normal. Peringkat pertama, Waspada, contohnya, memerlukan hujan 3 (atau 6) bulan terkini lebih daripada 35 % di bawah normal dan SPI bulan terkini di bawah −1.5. Dalam laporan Julai 2026 Temerloh dan Labuan berada pada skala ‘sangat kering’, tetapi tiada stesen yang mencapai status kemarau meteorologi."
+     },
+     "src": [
+      "MET-DROUGHT"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "metmy-spi",
+     "src": [
+      "MET-DROUGHT"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "大马气象局 2026 年 9 月 15 日的 ENSO 状态说：厄尔尼诺目前是中等强度，预计持续到 2027 年 5 月，年底几乎肯定会变得非常强；东北季风结束后，2027 年 1 月到 5 月预计会有极端干热的天气。",
+      "en": "MetMalaysia's ENSO status of 15 September 2026 says El Niño is now moderate, is expected to last until May 2027 and is almost certain to become very strong by the end of the year; extreme hot, dry weather is expected from the end of the north-east monsoon, January to May 2027.",
+      "ms": "Status ENSO MetMalaysia pada 15 September 2026 menyatakan El Niño kini pada tahap sederhana, dijangka berterusan sehingga Mei 2027 dan hampir pasti mencapai tahap sangat kuat menjelang akhir tahun; cuaca kering dan panas ekstrem dijangka bermula penghujung monsun timur laut, Januari hingga Mei 2027."
+     },
+     "src": [
+      "MET-ENSO-STATUS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "干旱时农业可以做什么",
+    "en": "What farming can do in a drought",
+    "ms": "Apa yang boleh dilakukan pertanian semasa kemarau"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "选用耐旱的作物和种子",
+       "en": "Choose drought-resistant crops and seeds",
+       "ms": "Pilih tanaman dan benih tahan kemarau"
+      },
+      {
+       "zh": "在雨多的时候集雨、蓄水",
+       "en": "Harvest and store water when the rains are heavy",
+       "ms": "Tuai dan simpan air ketika hujan lebat"
+      },
+      {
+       "zh": "做好保水和水土保持",
+       "en": "Conserve soil moisture and protect the soil",
+       "ms": "Pelihara lembapan tanah dan lindungi tanah"
+      },
+      {
+       "zh": "除草，减少和作物抢水",
+       "en": "Remove weeds that compete for water",
+       "ms": "Buang rumpai yang bersaing untuk air"
+      },
+      {
+       "zh": "种防风林、设挡风屏障",
+       "en": "Plant shelterbelts and windbreaks",
+       "ms": "Tanam tali pelindung dan penghadang angin"
+      },
+      {
+       "zh": "覆盖地面（mulching），减少蒸发",
+       "en": "Mulch the ground to cut evaporation",
+       "ms": "Sungkup tanah untuk mengurangkan penyejatan"
+      }
+     ],
+     "src": [
+      "PAM:98"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "monsoon-flood",
+  "flash-flood",
+  "meteorological-drought",
+  "hydrological-drought",
+  "agricultural-drought",
+  "spi"
+ ]
+}

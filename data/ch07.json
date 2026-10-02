@@ -1,0 +1,509 @@
+{
+ "id": "ch07",
+ "num": 7,
+ "stage": 3,
+ "title": {
+  "zh": "大气稳定度与降水",
+  "en": "Stability and precipitation",
+  "ms": "Kestabilan dan kerpasan"
+ },
+ "sources": [
+  "PAM",
+  "ESS",
+  "TERM",
+  "NWS-JS-GLOSS-C",
+  "OM-FCST-KL",
+  "ERA5-OM"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "上升的空气会变冷",
+    "en": "Rising air cools",
+    "ms": "Udara yang naik menjadi sejuk"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "想象一团空气，像包在一个看不见、有弹性的气球里，这叫{{t:parcel}}。气块往上升，周围的气压变低，它就膨胀；膨胀要用掉能量，所以它会变冷。下降时被压缩，就会变暖。",
+      "en": "Picture a blob of air wrapped in an invisible, stretchy balloon: an air {{t:parcel}}. As it rises, the pressure around it falls and it expands; expanding uses energy, so it cools. As it sinks it is squeezed and warms.",
+      "ms": "Bayangkan seketul udara yang dibalut belon halimunan yang anjal: {{t:parcel}} udara. Apabila ia naik, tekanan sekelilingnya jatuh dan ia mengembang; pengembangan menggunakan tenaga, jadi ia menyejuk. Apabila ia turun, ia dimampatkan dan memanas."
+     },
+     "defines": [
+      "parcel"
+     ],
+     "src": [
+      "ESS:118-119",
+      "PAM:59"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "温度随高度下降的快慢叫{{t:lapse-rate}}。对流层平均每升高 1 公里降约 6.5 °C，但每天、每个地方都不一样。",
+      "en": "How fast temperature falls with height is the {{t:lapse-rate}}. Averaged over the troposphere it is about 6.5 °C per kilometre, but it differs from day to day and place to place.",
+      "ms": "Kadar suhu jatuh dengan ketinggian ialah {{t:lapse-rate}}. Purata dalam troposfera ialah kira-kira 6.5 °C sekilometer, tetapi ia berbeza dari hari ke hari dan tempat ke tempat."
+     },
+     "defines": [
+      "lapse-rate"
+     ],
+     "src": [
+      "PAM:59-60"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "没有饱和的气块上升时，每升高 1 公里冷却约 9.8 °C，叫{{t:dry-adiabatic-rate}}。一旦冷到露点、开始凝结成云，凝结放出的潜热抵销了一部分冷却，气块改为每公里冷却约 4 到 6 °C，叫{{t:moist-adiabatic-rate}}；空气越暖越湿，这个数字越小。",
+      "en": "An unsaturated parcel cools by about 9.8 °C for every kilometre it rises: the {{t:dry-adiabatic-rate}}. Once it cools to its dew point and cloud forms, the latent heat released by condensation offsets part of the cooling, and it cools by only about 4 to 6 °C per kilometre: the {{t:moist-adiabatic-rate}}. The warmer and moister the air, the smaller this number.",
+      "ms": "Bungkusan tidak tepu menyejuk kira-kira 9.8 °C bagi setiap kilometer ia naik: {{t:dry-adiabatic-rate}}. Sebaik ia menyejuk ke takat embunnya dan awan terbentuk, haba pendam yang dibebaskan oleh kondensasi mengimbangi sebahagian penyejukan, dan ia hanya menyejuk kira-kira 4 hingga 6 °C sekilometer: {{t:moist-adiabatic-rate}}. Semakin panas dan lembap udara, semakin kecil nombor ini."
+     },
+     "defines": [
+      "dry-adiabatic-rate",
+      "moist-adiabatic-rate"
+     ],
+     "src": [
+      "PAM:59",
+      "ESS:119"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "所以气块开始成云的高度，可以从地面的气温和露点估计出来：两者每差 1 °C，云底大约高 125 米。这个高度叫{{t:lcl}}。",
+      "en": "So the height at which a rising parcel starts to form cloud can be estimated from the surface temperature and dew point: every 1 °C of difference puts the cloud base about 125 m higher. This height is the {{t:lcl}}.",
+      "ms": "Jadi ketinggian bungkusan yang naik mula membentuk awan boleh dianggar daripada suhu dan takat embun permukaan: setiap 1 °C perbezaan meletakkan dasar awan kira-kira 125 m lebih tinggi. Ketinggian ini ialah {{t:lcl}}."
+     },
+     "defines": [
+      "lcl"
+     ],
+     "src": [
+      "TERM:202"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "稳定与不稳定",
+    "en": "Stable and unstable air",
+    "ms": "Udara stabil dan tidak stabil"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "判断大气稳不稳定，就是比较上升的气块和周围的空气：",
+      "en": "Whether the air is stable comes down to comparing a rising parcel with the air around it:",
+      "ms": "Sama ada udara stabil bergantung pada perbandingan bungkusan yang naik dengan udara di sekelilingnya:"
+     },
+     "src": [
+      "ESS:120"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "如果气块比周围冷，它比较重，一放手就沉回原处：这是{{t:stable-air}}，云会摊成一层层，雾和霾也会留在地面不散。",
+      "en": "If the parcel is colder than its surroundings it is heavier, and when released it sinks back: {{t:stable-air}}. Clouds spread out in layers, and fog and haze linger near the ground.",
+      "ms": "Jika bungkusan lebih sejuk daripada sekelilingnya, ia lebih berat, dan apabila dilepaskan ia tenggelam semula: {{t:stable-air}}. Awan merebak berlapis-lapis, dan kabus serta jerebu kekal berhampiran tanah."
+     },
+     "defines": [
+      "stable-air"
+     ],
+     "src": [
+      "ESS:118",
+      "ESS:121"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "如果气块比周围暖，它比较轻，会自己一直往上冲：这是{{t:unstable-air}}，会长出高高的积云和积雨云。",
+      "en": "If the parcel is warmer than its surroundings it is lighter and keeps rising by itself: {{t:unstable-air}}, which grows tall cumulus and cumulonimbus.",
+      "ms": "Jika bungkusan lebih panas daripada sekelilingnya, ia lebih ringan dan terus naik dengan sendirinya: {{t:unstable-air}}, yang menumbuhkan kumulus tinggi dan kumulonimbus."
+     },
+     "defines": [
+      "unstable-air"
+     ],
+     "src": [
+      "ESS:121"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "最常见的是{{t:conditional-instability}}：没饱和时空气是稳定的，但只要气块被推到云底以上、开始凝结，它就会比周围暖，然后自己往上冲。周围空气的直减率介于 9.8 和约 6 °C/km 之间时就是这样，而平均的 6.5 °C/km 正落在这个范围里。",
+      "en": "The most common case is {{t:conditional-instability}}: the air is stable while unsaturated, but once a parcel is pushed above its cloud base and starts condensing it becomes warmer than its surroundings and rises on its own. This happens whenever the surrounding lapse rate lies between 9.8 and about 6 °C/km — and the average 6.5 °C/km falls right in that range.",
+      "ms": "Kes yang paling biasa ialah {{t:conditional-instability}}: udara stabil semasa tidak tepu, tetapi sebaik bungkusan ditolak melepasi dasar awannya dan mula terkondensasi, ia menjadi lebih panas daripada sekeliling dan naik sendiri. Ini berlaku apabila kadar susut sekeliling antara 9.8 dan kira-kira 6 °C/km — dan purata 6.5 °C/km terletak dalam julat itu."
+     },
+     "defines": [
+      "conditional-instability"
+     ],
+     "src": [
+      "ESS:123"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "大气通常在清晨日出前后最稳定，在下午最不稳定。",
+      "en": "The atmosphere is usually most stable early in the morning around sunrise, and most unstable in the afternoon.",
+      "ms": "Atmosfera biasanya paling stabil pada awal pagi sekitar matahari terbit, dan paling tidak stabil pada waktu petang."
+     },
+     "src": [
+      "ESS:120",
+      "ESS:123"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "热泡、对流与 CAPE",
+    "en": "Thermals, convection and CAPE",
+    "ms": "Termal, perolakan dan CAPE"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "太阳把地面晒热，贴地的空气被加热，形成一团团上升的热空气，叫{{t:thermal}}。热泡上升、冷空气在旁边下沉，这种由加热引起的上下翻腾就是{{t:convection}}。热泡冷到露点，就变成看得见的积云。",
+      "en": "The Sun heats the ground and the air touching it, and bubbles of warm air break away and rise: {{t:thermal}}s. Warm air rising while cooler air sinks around it — overturning driven by heating — is {{t:convection}}. When a thermal cools to its dew point it becomes a visible cumulus cloud.",
+      "ms": "Matahari memanaskan tanah dan udara yang menyentuhnya, dan gelembung udara panas terlepas lalu naik: {{t:thermal}}. Udara panas naik sementara udara lebih sejuk turun di sekelilingnya — pembalikan yang didorong pemanasan — ialah {{t:convection}}. Apabila termal menyejuk ke takat embunnya, ia menjadi awan kumulus yang kelihatan."
+     },
+     "defines": [
+      "thermal",
+      "convection"
+     ],
+     "src": [
+      "ESS:124",
+      "PAM:43"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "气块比周围暖的那一段，浮力会一直把它往上推；把这段浮力加起来，就是{{t:cape}}，单位是 J/kg。CAPE 越大，上升气流越猛，云长得越高，雷雨越强。",
+      "en": "Over the stretch where a parcel is warmer than its surroundings, buoyancy keeps pushing it up; add that buoyancy up and you get {{t:cape}}, in J/kg. The bigger the CAPE, the fiercer the updraught, the taller the cloud and the stronger the storm.",
+      "ms": "Sepanjang bahagian bungkusan lebih panas daripada sekelilingnya, keapungan terus menolaknya ke atas; jumlahkan keapungan itu dan anda dapat {{t:cape}}, dalam J/kg. Semakin besar CAPE, semakin kuat arus naik, semakin tinggi awan dan semakin kuat ribut."
+     },
+     "defines": [
+      "cape"
+     ],
+     "src": [
+      "NWS-JS-GLOSS-C"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "反过来，气块在开始自己上升之前，如果先要穿过一段比周围冷的空气，就需要外力推一把。这段要克服的能量叫{{t:cin}}。CIN 大时，即使 CAPE 很大，雷雨也起不来，直到有东西把空气推上去。",
+      "en": "Conversely, if a parcel must first pass through a layer where it is colder than its surroundings before it can rise by itself, it needs a push. The energy to overcome is {{t:cin}}. With a large CIN, storms will not start even if CAPE is large — until something lifts the air.",
+      "ms": "Sebaliknya, jika bungkusan perlu melalui lapisan yang lebih sejuk daripada sekelilingnya sebelum boleh naik sendiri, ia perlukan tolakan. Tenaga yang perlu diatasi ialah {{t:cin}}. Dengan CIN yang besar, ribut tidak akan bermula walaupun CAPE besar — sehingga sesuatu mengangkat udara."
+     },
+     "defines": [
+      "cin"
+     ],
+     "src": [
+      "NWS-JS-GLOSS-C"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W7"
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "🌦️ 午后阵雨的第三块拼图：用上面的图比一比。清晨的地面空气比较冷（吉隆坡 2025 年清晨 6 点平均 24.2 °C），气块要先被推一把（CIN）；到了下午 3 点，地面晒到平均 31.6 °C，CIN 消失，热泡可以一路冲到十几公里高，长成积雨云。",
+      "en": "🌦️ Afternoon storms, piece three: compare the two presets above. In the early morning the surface air is cool (Kuala Lumpur's 6 am average in 2025: 24.2 °C) and a parcel needs a push (CIN). By 3 pm the surface has heated to an average of 31.6 °C, the CIN is gone, and thermals can race up more than ten kilometres into cumulonimbus.",
+      "ms": "🌦️ Ribut petang, kepingan ketiga: bandingkan dua pratetap di atas. Pada awal pagi udara permukaan sejuk (purata jam 6 pagi Kuala Lumpur pada 2025: 24.2 °C) dan bungkusan perlu ditolak (CIN). Menjelang jam 3 petang permukaan sudah dipanaskan ke purata 31.6 °C, CIN hilang, dan termal boleh meluru lebih sepuluh kilometer ke atas menjadi kumulonimbus."
+     },
+     "src": [
+      "ERA5-OM",
+      "ESS:123"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "空气怎样被抬升",
+    "en": "How air gets lifted",
+    "ms": "Bagaimana udara diangkat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "地面加热：热泡和对流（马来西亚最常见）",
+       "en": "Surface heating: thermals and convection (the most common in Malaysia)",
+       "ms": "Pemanasan permukaan: termal dan perolakan (paling biasa di Malaysia)"
+      },
+      {
+       "zh": "地形：风撞上山脉被迫爬升，迎风坡多雨；越过山顶后下沉变暖，背风坡比较干，叫雨影区",
+       "en": "Mountains: wind is forced up a range, so the windward slope is wet; it sinks and warms beyond, leaving a dry ‘rain shadow’ on the lee side",
+       "ms": "Gunung: angin dipaksa naik banjaran, jadi cerun menghadap angin basah; ia turun dan memanas di sebaliknya, meninggalkan ‘bayang hujan’ yang kering di cerun lindung"
+      },
+      {
+       "zh": "辐合：几股风从不同方向吹到一起，空气只能往上走",
+       "en": "Convergence: winds meeting from different directions have nowhere to go but up",
+       "ms": "Penumpuan: angin yang bertemu dari arah berlainan tiada tempat lain selain ke atas"
+      },
+      {
+       "zh": "锋面：暖空气沿着冷空气爬升（中纬度为主，第 12 章）",
+       "en": "Fronts: warm air sliding up over cold air (mainly in middle latitudes; Chapter 12)",
+       "ms": "Front: udara panas menggelongsor naik di atas udara sejuk (terutamanya di latitud sederhana; Bab 12)"
+      }
+     ],
+     "src": [
+      "PAM:85-87",
+      "ESS:125"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "云滴怎样变成雨",
+    "en": "How cloud droplets become rain",
+    "ms": "Bagaimana titisan awan menjadi hujan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "云不一定下雨。一颗典型的雨滴直径约 2 毫米，是云滴的 100 倍；按体积算，一颗雨滴等于大约一百万颗云滴。云滴要长这么大，主要靠两种方法：",
+      "en": "Not every cloud rains. A typical raindrop is about 2 mm across, 100 times a cloud droplet's diameter; by volume, one raindrop holds about a million cloud droplets. Droplets grow that much in two main ways:",
+      "ms": "Bukan semua awan menurunkan hujan. Titisan hujan biasa berukuran kira-kira 2 mm, 100 kali diameter titisan awan; mengikut isi padu, satu titisan hujan menyamai kira-kira sejuta titisan awan. Titisan membesar sebanyak itu dengan dua cara utama:"
+     },
+     "src": [
+      "ESS:128"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:collision-coalescence}}：大一点的云滴下落得比较快，一路撞上、吞并小云滴，越滚越大。云顶比 −15 °C 暖的云（热带很多雨都是这样来的）主要靠这个过程。另一种是冰晶过程：在 0 °C 以下的云层里，冰晶靠吸收周围过冷水滴的水汽长大，掉下来时融化成雨。",
+      "en": "{{t:collision-coalescence}}: larger droplets fall faster, colliding with and swallowing smaller ones as they go. In clouds with tops warmer than −15 °C — the source of much tropical rain — this is the main process. The other is the ice-crystal process: in the part of a cloud below 0 °C, ice crystals grow by taking vapour from the supercooled droplets around them, then melt into rain as they fall.",
+      "ms": "{{t:collision-coalescence}}: titisan lebih besar jatuh lebih laju, berlanggar dan menelan titisan kecil sepanjang perjalanan. Dalam awan yang puncaknya lebih panas daripada −15 °C — sumber banyak hujan tropika — inilah proses utama. Yang lain ialah proses hablur ais: dalam bahagian awan di bawah 0 °C, hablur ais membesar dengan mengambil wap daripada titisan lampau sejuk di sekelilingnya, kemudian cair menjadi hujan semasa jatuh."
+     },
+     "defines": [
+      "collision-coalescence"
+     ],
+     "src": [
+      "ESS:128-130",
+      "PAM:84-85"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "气温降到 0 °C 的那个高度叫{{t:freezing-level}}。吉隆坡上空的冻结高度大约在 5 公里（2026 年 8 到 10 月的逐时预报平均约 5,030 米）。积雨云会远远冲过这个高度，所以雷雨云的上半部是冰，有时会掉冰雹。",
+      "en": "The height where the temperature falls to 0 °C is the {{t:freezing-level}}. Over Kuala Lumpur it is about 5 km up (hourly forecasts for August–October 2026 average about 5,030 m). Cumulonimbus clouds tower far above it, so the upper half of a thundercloud is ice and can produce hail.",
+      "ms": "Ketinggian suhu jatuh ke 0 °C ialah {{t:freezing-level}}. Di atas Kuala Lumpur ia kira-kira 5 km (ramalan setiap jam bagi Ogos–Oktober 2026 berpurata kira-kira 5,030 m). Awan kumulonimbus menjulang jauh melepasinya, jadi separuh atas awan ribut petir ialah ais dan boleh menghasilkan hujan batu."
+     },
+     "defines": [
+      "freezing-level"
+     ],
+     "src": [
+      "TERM:137",
+      "OM-FCST-KL",
+      "ESS:130"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "heading": {
+    "zh": "降水的种类",
+    "en": "Kinds of precipitation",
+    "ms": "Jenis kerpasan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "从云里落到地面的水或冰，统称{{t:precipitation}}。在马来西亚，常见的是：",
+      "en": "Water or ice falling from a cloud to the ground is {{t:precipitation}}. In Malaysia the common kinds are:",
+      "ms": "Air atau ais yang jatuh dari awan ke tanah ialah {{t:precipitation}}. Di Malaysia jenis yang biasa ialah:"
+     },
+     "defines": [
+      "precipitation"
+     ],
+     "src": [
+      "PAM:83-84"
+     ]
+    },
+    {
+     "type": "keyval",
+     "src": [
+      "PAM:84"
+     ],
+     "rows": [
+      {
+       "k": {
+        "zh": "雨",
+        "en": "Rain",
+        "ms": "Hujan"
+       },
+       "v": {
+        "zh": "水滴直径约 0.5 到 4 毫米",
+        "en": "Drops about 0.5–4 mm across",
+        "ms": "Titisan kira-kira 0.5–4 mm"
+       }
+      },
+      {
+       "k": {
+        "zh": "毛毛雨",
+        "en": "Drizzle",
+        "ms": "Gerimis"
+       },
+       "v": {
+        "zh": "又细又密，直径小于 0.5 毫米，常从层云落下",
+        "en": "Fine, dense drops under 0.5 mm, often from stratus",
+        "ms": "Titisan halus dan padat kurang daripada 0.5 mm, sering dari stratus"
+       }
+      },
+      {
+       "k": {
+        "zh": "阵雨",
+        "en": "Showers",
+        "ms": "Hujan lebat sekejap"
+       },
+       "v": {
+        "zh": "来得快去得快，中间有晴的时候，从积云和积雨云落下",
+        "en": "Short bursts with clear spells between, from cumulus and cumulonimbus",
+        "ms": "Hujan sekejap dengan selang cerah, dari kumulus dan kumulonimbus"
+       }
+      },
+      {
+       "k": {
+        "zh": "冰雹",
+        "en": "Hail",
+        "ms": "Hujan batu"
+       },
+       "v": {
+        "zh": "直径 5 到 50 毫米的冰球，从强烈的积雨云落下",
+        "en": "Balls of ice 5–50 mm across, from strong cumulonimbus",
+        "ms": "Bebola ais 5–50 mm, dari kumulonimbus yang kuat"
+       }
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "有时雨从云底落下，却在半空蒸发掉，远看像云下面挂着一条条灰色的须，地面却是干的，这叫{{t:virga}}。",
+      "en": "Sometimes rain leaves the cloud base but evaporates on the way down; from afar it looks like grey streamers hanging under the cloud, yet the ground stays dry. This is {{t:virga}}.",
+      "ms": "Kadangkala hujan meninggalkan dasar awan tetapi menyejat dalam perjalanan turun; dari jauh ia kelihatan seperti jalur kelabu tergantung di bawah awan, namun tanah kekal kering. Inilah {{t:virga}}."
+     },
+     "defines": [
+      "virga"
+     ],
+     "src": [
+      "ESS:135"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "雨量筒能量到的最小量有一个下限；比这还少的雨，只记作{{t:trace}}，不算可以量的降水。第 15 章和第 35 章会讲“下多少才算下雨”。",
+      "en": "A rain gauge has a smallest amount it can measure; anything less is recorded only as a {{t:trace}}, not as measurable precipitation. Chapters 15 and 35 come back to how much rain counts as ‘rain’.",
+      "ms": "Tolok hujan mempunyai jumlah terkecil yang boleh diukur; apa-apa yang kurang hanya dicatat sebagai {{t:trace}}, bukan kerpasan yang boleh diukur. Bab 15 dan 35 kembali kepada berapa banyak hujan dikira sebagai ‘hujan’."
+     },
+     "defines": [
+      "trace"
+     ],
+     "src": [
+      "ESS:143"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "heading": {
+    "zh": "水循环",
+    "en": "The water cycle",
+    "ms": "Kitaran air"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "海洋的水被太阳蒸发成水汽，水汽被风带走、上升、凝结成云，云下雨；雨水一部分流进河流回到海里，一部分渗进土壤和地下，一部分又被蒸发或经由植物送回空气。这个没有起点也没有终点的循环叫{{t:water-cycle}}。地球上的水约 97.2 % 是海里的咸水，只有约 2.8 % 是淡水，其中大部分冻在冰川里。",
+      "en": "The Sun evaporates water from the oceans; the vapour is carried by the wind, rises, condenses into cloud and falls as rain. Some rain runs off into rivers and back to the sea, some soaks into the soil and ground, and some returns to the air by evaporation or through plants. This loop with no beginning or end is the {{t:water-cycle}}. About 97.2 % of the Earth's water is salt water in the oceans; only about 2.8 % is fresh, and most of that is frozen in glaciers.",
+      "ms": "Matahari menyejatkan air dari lautan; wap dibawa angin, naik, terkondensasi menjadi awan dan turun sebagai hujan. Sebahagian hujan mengalir ke sungai dan kembali ke laut, sebahagian meresap ke dalam tanah, dan sebahagian kembali ke udara melalui penyejatan atau tumbuhan. Kitaran tanpa permulaan atau penghujung ini ialah {{t:water-cycle}}. Kira-kira 97.2 % air Bumi ialah air masin di lautan; hanya kira-kira 2.8 % air tawar, dan kebanyakannya beku dalam glasier."
+     },
+     "defines": [
+      "water-cycle"
+     ],
+     "src": [
+      "PAM:87-88"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "heading": {
+    "zh": "这些都会画在一张图上",
+    "en": "All of this fits on one diagram",
+    "ms": "Semua ini muat pada satu rajah"
+   },
+   "level": "advanced",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "气象员把这一章的东西——气温、露点、干绝热线、湿绝热线、LCL、CAPE、CIN——全部画在同一张图上，叫 Skew-T 探空图。早上看一眼，就能判断下午会不会有雷雨。第 25 章会教你怎么读。",
+      "en": "Forecasters draw everything in this chapter — temperature, dew point, dry and moist adiabats, the LCL, CAPE and CIN — on a single chart called a Skew-T diagram. One look in the morning tells them whether afternoon storms are likely. Chapter 25 shows how to read it.",
+      "ms": "Peramal melukis semua dalam bab ini — suhu, takat embun, adiabat kering dan lembap, LCL, CAPE dan CIN — pada satu carta yang dipanggil rajah Skew-T. Sekali pandang pada waktu pagi sudah memberitahu sama ada ribut petang mungkin berlaku. Bab 25 menunjukkan cara membacanya."
+     },
+     "src": [
+      "TERM:313"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "parcel",
+  "lapse-rate",
+  "dry-adiabatic-rate",
+  "moist-adiabatic-rate",
+  "lcl",
+  "stable-air",
+  "unstable-air",
+  "conditional-instability",
+  "thermal",
+  "convection",
+  "cape",
+  "cin",
+  "collision-coalescence",
+  "freezing-level",
+  "precipitation",
+  "virga",
+  "trace",
+  "water-cycle"
+ ]
+}

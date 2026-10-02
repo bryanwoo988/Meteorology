@@ -1,0 +1,482 @@
+{
+ "id": "ch18",
+ "num": 18,
+ "stage": 6,
+ "title": {
+  "zh": "天气预警",
+  "en": "Weather warnings",
+  "ms": "Amaran cuaca"
+ },
+ "sources": [
+  "MET-WARN-RAIN",
+  "MET-WARN-WIND",
+  "MET-WARN-TS",
+  "MET-WARN-TC",
+  "MET-PHEN",
+  "WMO-CAP"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "连续降雨预警：三个等级",
+    "en": "Continuous-rain warnings: three levels",
+    "ms": "Amaran hujan berterusan: tiga peringkat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "预计会下很久的雨时，大马气象局发出连续降雨预警，分三级：{{t:waspada}}、{{t:buruk}}、{{t:bahaya}}。门槛看的是 24 小时的雨量，24 小时从开始下雨的时候算起。",
+      "en": "When long-lasting rain is expected, MetMalaysia issues a continuous-rain warning at one of three levels: {{t:waspada}}, {{t:buruk}} and {{t:bahaya}}. The thresholds are rainfall over 24 hours, counted from when the rain begins.",
+      "ms": "Apabila hujan yang berpanjangan dijangka, MetMalaysia mengeluarkan amaran hujan berterusan pada salah satu daripada tiga peringkat: {{t:waspada}}, {{t:buruk}} dan {{t:bahaya}}. Ambangnya ialah jumlah hujan dalam 24 jam, dikira dari masa hujan bermula."
+     },
+     "defines": [
+      "waspada",
+      "buruk",
+      "bahaya"
+     ],
+     "src": [
+      "MET-WARN-RAIN"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "MET-WARN-RAIN"
+     ],
+     "caption": {
+      "zh": "连续降雨预警的标准",
+      "en": "Continuous-rain warning criteria",
+      "ms": "Kriteria amaran hujan berterusan"
+     },
+     "headers": [
+      {
+       "zh": "等级",
+       "en": "Level",
+       "ms": "Peringkat"
+      },
+      {
+       "zh": "标准（24 小时）",
+       "en": "Criterion (24 hours)",
+       "ms": "Kriteria (24 jam)"
+      },
+      {
+       "zh": "可能的影响",
+       "en": "Possible effects",
+       "ms": "Kesan yang boleh berlaku"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "Waspada（警惕）",
+        "en": "Waspada (alert)",
+        "ms": "Waspada"
+       },
+       {
+        "zh": "预计连续下雨，雨量少于 150 毫米",
+        "en": "Continuous rain expected, under 150 mm",
+        "ms": "Hujan berterusan dijangka, kurang daripada 150 mm"
+       },
+       {
+        "zh": "低洼地区可能淹水",
+        "en": "Possible flooding in low-lying areas",
+        "ms": "Berkemungkinan banjir di kawasan rendah"
+       }
+      ],
+      [
+       {
+        "zh": "Buruk（恶劣）",
+        "en": "Buruk (bad)",
+        "ms": "Buruk"
+       },
+       {
+        "zh": "预计连续大雨，雨量超过 150 毫米",
+        "en": "Heavy continuous rain expected, over 150 mm",
+        "ms": "Hujan lebat berterusan dijangka, melebihi 150 mm"
+       },
+       {
+        "zh": "低洼地区和河岸附近可能淹水；季节性作物可能受损",
+        "en": "Possible flooding in low-lying areas and near riverbanks; seasonal crops may be damaged",
+        "ms": "Berkemungkinan banjir di kawasan rendah dan berdekatan tebing sungai; tanaman bermusim mungkin rosak"
+       }
+      ],
+      [
+       {
+        "zh": "Bahaya（危险）",
+        "en": "Bahaya (danger)",
+        "ms": "Bahaya"
+       },
+       {
+        "zh": "预计连续非常大的雨，雨量超过 250 毫米",
+        "en": "Very heavy continuous rain expected, over 250 mm",
+        "ms": "Hujan sangat lebat berterusan dijangka, melebihi 250 mm"
+       },
+       {
+        "zh": "更大范围的水灾、山坡土崩；不牢固的建筑、道路和桥梁可能受损；季节性作物可能大面积被毁",
+        "en": "Wider flooding and landslides on hill slopes; weak structures, roads and bridges may be damaged; seasonal crops may be badly destroyed",
+        "ms": "Banjir lebih besar dan tanah runtuh di cerun bukit; struktur tidak kukuh, jalan raya dan jambatan mungkin rosak; tanaman bermusim mungkin musnah teruk"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "连续降雨预警看的是预计的 24 小时总雨量。等级越高，可能的影响越大、范围越广，连作物、道路和桥梁都可能受损。",
+      "en": "A continuous-rain warning is set by the expected total over 24 hours. The higher the level, the bigger and wider the possible effects — up to damage to crops, roads and bridges.",
+      "ms": "Amaran hujan berterusan ditentukan oleh jumlah hujan yang dijangka dalam 24 jam. Lebih tinggi peringkat, lebih besar dan luas kesan yang mungkin — sehingga kerosakan tanaman, jalan raya dan jambatan."
+     },
+     "src": [
+      "MET-WARN-RAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "雷暴预警",
+    "en": "Thunderstorm warnings",
+    "ms": "Amaran ribut petir"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "当气象站、雷达、卫星、数值预报和高空图都显示有雷暴，而且雨势会超过每小时 20 毫米时，就发出雷暴预警。这是短时预警，每一次有效时间不超过 6 小时；如果坏天气预计会持续超过 6 小时，可以升级为连续降雨预警。",
+      "en": "A thunderstorm warning is issued when station observations, radar, satellite images, computer forecasts and upper-air charts clearly show a thunderstorm with rain heavier than 20 mm an hour happening or on its way. It is a short-term warning, valid for no more than 6 hours each time; if bad weather is expected to last longer than 6 hours, it can be upgraded to a continuous-rain warning.",
+      "ms": "Amaran ribut petir dikeluarkan apabila pencerapan stesen, gema radar, imej satelit, produk NWP dan carta udara atas jelas menunjukkan ribut petir dengan intensiti hujan melebihi 20 mm sejam sedang atau dijangka berlaku. Ia amaran jangka pendek, sah tidak lebih daripada 6 jam setiap keluaran; jika cuaca buruk dijangka melebihi 6 jam, ia boleh dinaik taraf kepada amaran hujan berterusan."
+     },
+     "src": [
+      "MET-WARN-TS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "强风和大浪预警",
+    "en": "Strong-wind and rough-sea warnings",
+    "ms": "Amaran angin kencang dan laut bergelora"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "table",
+     "src": [
+      "MET-WARN-WIND"
+     ],
+     "caption": {
+      "zh": "强风和大浪预警的三个类别",
+      "en": "The three categories of strong-wind and rough-sea warning",
+      "ms": "Tiga kategori amaran angin kencang dan laut bergelora"
+     },
+     "headers": [
+      {
+       "zh": "类别",
+       "en": "Category",
+       "ms": "Kategori"
+      },
+      {
+       "zh": "风和浪",
+       "en": "Wind and waves",
+       "ms": "Angin dan ombak"
+      },
+      {
+       "zh": "危险对象",
+       "en": "Dangerous to",
+       "ms": "Berbahaya kepada"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "第一类",
+        "en": "First",
+        "ms": "Pertama"
+       },
+       {
+        "zh": "风速 40–50 km/h，和/或浪高可达 3.5 米",
+        "en": "Wind 40–50 km/h and/or waves up to 3.5 m",
+        "ms": "Angin 40–50 km/j dan/atau ombak sehingga 3.5 m"
+       },
+       {
+        "zh": "小船；所有海上休闲和运动",
+        "en": "Small boats; all sea recreation and sports",
+        "ms": "Bot kecil; semua aktiviti rekreasi dan sukan laut"
+       }
+      ],
+      [
+       {
+        "zh": "第二类",
+        "en": "Second",
+        "ms": "Kedua"
+       },
+       {
+        "zh": "风速 50–60 km/h，和/或浪高可达 4.5 米",
+        "en": "Wind 50–60 km/h and/or waves up to 4.5 m",
+        "ms": "Angin 50–60 km/j dan/atau ombak sehingga 4.5 m"
+       },
+       {
+        "zh": "所有船运，包括渔船和渡轮；所有海边活动",
+        "en": "All shipping, including fishing and ferries; all beach activities",
+        "ms": "Semua perkapalan termasuk perikanan dan feri; semua aktiviti pantai"
+       }
+      ],
+      [
+       {
+        "zh": "第三类",
+        "en": "Third",
+        "ms": "Ketiga"
+       },
+       {
+        "zh": "风速超过 60 km/h，和/或浪高超过 4.5 米",
+        "en": "Wind over 60 km/h and/or waves over 4.5 m",
+        "ms": "Angin melebihi 60 km/j dan/atau ombak melebihi 4.5 m"
+       },
+       {
+        "zh": "所有船运；石油平台工人；所有海边活动",
+        "en": "All shipping; oil-rig workers; all beach activities",
+        "ms": "Semua perkapalan; pekerja pelantar minyak; semua aktiviti pantai"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "东北季风期间，南中国海的强风大浪预警特别常见；第 16 章讲的季风潮，就是常见的原因。",
+      "en": "These warnings are especially common over the South China Sea in the north-east monsoon; the monsoon surges of Chapter 16 are a usual cause.",
+      "ms": "Amaran ini sangat biasa di Laut China Selatan semasa monsun timur laut; luruan monsun Bab 16 ialah punca yang biasa."
+     },
+     "src": [
+      "MET-PHEN",
+      "MET-WARN-WIND"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "热带气旋和热浪",
+    "en": "Tropical cyclones and heat waves",
+    "ms": "Siklon tropika dan gelombang haba"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "大马气象局负责监测北纬 0–20°、东经 95–130° 范围内的热带气旋，并发出忠告和预警。",
+      "en": "MetMalaysia monitors tropical cyclones, and issues advisories and warnings, for the area 0–20°N, 95–130°E.",
+      "ms": "MetMalaysia memantau dan mengeluarkan nasihat serta amaran siklon tropika bagi kawasan 0–20°U, 95–130°T."
+     },
+     "src": [
+      "MET-WARN-TC"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "在马来西亚，连续三天最高气温超过 37 °C 就是{{t:heat-wave}}。气象局用四个阶段监测：",
+      "en": "In Malaysia a {{t:heat-wave}} means a daily maximum above 37 °C for three days in a row. MetMalaysia monitors it in four stages:",
+      "ms": "Di Malaysia {{t:heat-wave}} bermaksud suhu maksimum harian melebihi 37 °C selama tiga hari berturut-turut. MetMalaysia memantaunya dalam empat peringkat:"
+     },
+     "defines": [
+      "heat-wave"
+     ],
+     "src": [
+      "MET-PHEN"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "MET-PHEN"
+     ],
+     "caption": {
+      "zh": "热浪监测的四个阶段",
+      "en": "The four heat-wave monitoring stages",
+      "ms": "Empat peringkat pemantauan gelombang haba"
+     },
+     "headers": [
+      {
+       "zh": "阶段",
+       "en": "Stage",
+       "ms": "Peringkat"
+      },
+      {
+       "zh": "状态",
+       "en": "Status",
+       "ms": "Status"
+      },
+      {
+       "zh": "标准",
+       "en": "Criterion",
+       "ms": "Kriteria"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "0",
+        "en": "0",
+        "ms": "0"
+       },
+       {
+        "zh": "正常",
+        "en": "Normal",
+        "ms": "Normal"
+       },
+       {
+        "zh": "每日最高气温低于 35.0 °C",
+        "en": "Daily maximum below 35.0 °C",
+        "ms": "Suhu maksimum harian di bawah 35.0 °C"
+       }
+      ],
+      [
+       {
+        "zh": "1",
+        "en": "1",
+        "ms": "1"
+       },
+       {
+        "zh": "注意",
+        "en": "Caution",
+        "ms": "Berjaga-jaga"
+       },
+       {
+        "zh": "连续至少三天 35.0–37.0 °C",
+        "en": "35.0–37.0 °C for at least three days in a row",
+        "ms": "35.0–37.0 °C sekurang-kurangnya tiga hari berturut-turut"
+       }
+      ],
+      [
+       {
+        "zh": "2",
+        "en": "2",
+        "ms": "2"
+       },
+       {
+        "zh": "热浪",
+        "en": "Heat wave",
+        "ms": "Gelombang haba"
+       },
+       {
+        "zh": "连续至少三天高于 37.0 °C 到 40.0 °C",
+        "en": "Above 37.0 °C up to 40.0 °C for at least three days in a row",
+        "ms": "Melebihi 37.0 °C hingga 40.0 °C sekurang-kurangnya tiga hari berturut-turut"
+       }
+      ],
+      [
+       {
+        "zh": "3",
+        "en": "3",
+        "ms": "3"
+       },
+       {
+        "zh": "极端热浪",
+        "en": "Extreme heat wave",
+        "ms": "Gelombang haba ekstrem"
+       },
+       {
+        "zh": "连续至少三天高于 40.0 °C",
+        "en": "Above 40.0 °C for at least three days in a row",
+        "ms": "Melebihi 40.0 °C sekurang-kurangnya tiga hari berturut-turut"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "预警怎样传出去",
+    "en": "How warnings reach you",
+    "ms": "Bagaimana amaran sampai kepada anda"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "预警会发给相关机构、媒体和公众，管道包括 myCuaca 手机应用、eMET、短信、气象局网站、大众媒体、社交媒体、传真和电邮。",
+      "en": "Warnings go to the relevant agencies, the media and the public through the myCuaca app, eMET, SMS, the MetMalaysia website, the mass media, social media, fax and e-mail.",
+      "ms": "Amaran disebarkan kepada agensi berkaitan, media dan orang awam melalui aplikasi myCuaca, eMET, SMS, laman web MET Malaysia, media massa, media sosial, faks dan e-mel."
+     },
+     "src": [
+      "MET-WARN-RAIN"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "在国际上，预警越来越多用{{t:cap}}发送。它是一种统一、电脑读得懂的格式（XML），一条预警就可以同时送到电视、手机、网站等所有管道。2023 年，世界气象大会把 CAP 写进 WMO 的《技术规则》，成为发送预警的推荐标准。",
+      "en": "Internationally, more and more warnings are sent in the {{t:cap}}: a single machine-readable format (XML) that lets one warning feed television, phones, websites and every other channel at once. In 2023 the World Meteorological Congress wrote CAP into WMO's Technical Regulations as the recommended standard for sending warnings.",
+      "ms": "Di peringkat antarabangsa, semakin banyak amaran dihantar dalam {{t:cap}}: satu format yang boleh dibaca mesin (XML) yang membolehkan satu amaran sampai ke televisyen, telefon, laman web dan semua saluran lain serentak. Pada 2023 Kongres Meteorologi Sedunia memasukkan CAP ke dalam Peraturan Teknikal WMO sebagai piawaian yang disyorkan untuk menghantar amaran."
+     },
+     "defines": [
+      "cap"
+     ],
+     "src": [
+      "WMO-CAP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "heading": {
+    "zh": "收到预警时要做什么",
+    "en": "What to do when a warning comes",
+    "ms": "Apa yang perlu dilakukan apabila amaran dikeluarkan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "季风季节前：清理沟渠和排水道，准备足够的水和不易坏的食物",
+       "en": "Before the monsoon season: clear drains and gutters; keep enough water and non-perishable food",
+       "ms": "Sebelum musim monsun: bersihkan longkang dan saluran; simpan air dan makanan tahan lama yang mencukupi"
+      },
+      {
+       "zh": "季风期间：远离水流急的沟渠、河流和淹水地区；不要开车进入淹水地区；把车停在高处；不要乘小船出海",
+       "en": "During the monsoon: keep away from fast-flowing drains, rivers and flooded areas; do not drive into floodwater; park on high ground; do not go to sea in small boats",
+       "ms": "Semasa monsun: jauhi longkang dan sungai yang deras serta kawasan banjir; jangan memandu ke dalam air banjir; letak kenderaan di tempat tinggi; jangan ke laut dengan bot kecil"
+      },
+      {
+       "zh": "雷雨时：躲进坚固的建筑物或车里，不要躲在小棚或孤立的树下；离开船和水边",
+       "en": "In a thunderstorm: get into a solid building or a car; do not shelter in a small hut or under an isolated tree; get out of boats and away from water",
+       "ms": "Semasa ribut petir: masuk ke bangunan kukuh atau kereta; jangan berlindung di pondok kecil atau di bawah pokok yang terpencil; keluar dari bot dan jauhi air"
+      },
+      {
+       "zh": "在野外无处可躲：到低处、远离树木、围栏和电线杆；如果皮肤刺痛或头发竖起，马上蹲下，身体尽量缩小",
+       "en": "Caught outdoors with no shelter: go to low ground away from trees, fences and poles; if your skin tingles or your hair stands up, squat down at once and make yourself as small as possible",
+       "ms": "Terperangkap di luar tanpa tempat berlindung: pergi ke tempat rendah jauh dari pokok, pagar dan tiang; jika kulit terasa menggeletar atau rambut tegak, segera mencangkung dan jadikan badan sekecil mungkin"
+      }
+     ],
+     "src": [
+      "MET-PHEN"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "waspada",
+  "buruk",
+  "bahaya",
+  "heat-wave",
+  "cap"
+ ]
+}

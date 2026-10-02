@@ -1,0 +1,379 @@
+{
+ "id": "ch06",
+ "num": 6,
+ "stage": 3,
+ "title": {
+  "zh": "凝结、雾与云",
+  "en": "Condensation, fog and clouds",
+  "ms": "Kondensasi, kabus dan awan"
+ },
+ "sources": [
+  "PAM",
+  "ESS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "水汽变回水",
+    "en": "Vapour turns back into water",
+    "ms": "Wap kembali menjadi air"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:condensation}}是蒸发的反过程：水汽变回液态的水。每一克水汽凝结，都会放出蒸发时“藏”起来的那份潜热，所以凝结会让周围的空气变暖。",
+      "en": "{{t:condensation}} is evaporation in reverse: water vapour turning back into liquid water. Every gram that condenses releases the latent heat that evaporation stored, so condensation warms the air around it.",
+      "ms": "{{t:condensation}} ialah penyejatan secara terbalik: wap air bertukar kembali menjadi air cecair. Setiap gram yang terkondensasi membebaskan haba pendam yang disimpan semasa penyejatan, jadi kondensasi memanaskan udara di sekelilingnya."
+     },
+     "defines": [
+      "condensation"
+     ],
+     "src": [
+      "PAM:75"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "大气里要发生凝结，需要三样东西：",
+      "en": "For condensation to happen in the atmosphere, three things are needed:",
+      "ms": "Untuk kondensasi berlaku di atmosfera, tiga perkara diperlukan:"
+     },
+     "src": [
+      "PAM:75-76"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "足够的水汽",
+       "en": "Enough water vapour",
+       "ms": "Wap air yang mencukupi"
+      },
+      {
+       "zh": "空气被冷却到露点或以下",
+       "en": "Air cooled to its dew point or below",
+       "ms": "Udara disejukkan ke takat embun atau lebih rendah"
+      },
+      {
+       "zh": "可以让水附着的微小颗粒",
+       "en": "Tiny particles for the water to collect on",
+       "ms": "Zarah halus untuk air berkumpul"
+      }
+     ],
+     "src": [
+      "PAM:75-76"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "第三样就是{{t:condensation-nuclei}}：海盐、尘埃、烟和工业排放的微粒，直径只有约 0.1 到 1 微米。它们“喜欢水”，水汽会先凝结在它们上面。没有这些颗粒，空气就算过饱和也很难形成水滴。",
+      "en": "The third is {{t:condensation-nuclei}}: specks of sea salt, dust, smoke and industrial pollution about 0.1 to 1 micrometre across. They attract water, and vapour condenses on them first. Without them, droplets hardly form even in supersaturated air.",
+      "ms": "Yang ketiga ialah {{t:condensation-nuclei}}: zarah garam laut, debu, asap dan pencemaran industri berukuran kira-kira 0.1 hingga 1 mikrometer. Ia menarik air, dan wap terkondensasi padanya dahulu. Tanpanya, titisan sukar terbentuk walaupun dalam udara lampau tepu."
+     },
+     "defines": [
+      "condensation-nuclei"
+     ],
+     "src": [
+      "PAM:76",
+      "ESS:97"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "露、霾和雾",
+    "en": "Dew, haze and fog",
+    "ms": "Embun, jerebu dan kabus"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "晴朗、无风的晚上，叶子、车顶这些东西以红外线失热，冷到露点以下，空气中的水汽就凝结在它们表面，这就是{{t:dew}}。露对作物是小小的额外水分，也会让叶面湿很久，利于病菌。",
+      "en": "On clear, calm nights, leaves, car roofs and the like lose heat as infrared and cool below the dew point; vapour then condenses on their surfaces as {{t:dew}}. For crops it is a little extra moisture — and it also keeps leaves wet for longer, which helps fungal disease.",
+      "ms": "Pada malam cerah dan tenang, daun, bumbung kereta dan seumpamanya kehilangan haba sebagai inframerah dan menyejuk di bawah takat embun; wap kemudian terkondensasi di permukaannya sebagai {{t:dew}}. Bagi tanaman ia sedikit lembapan tambahan — dan ia juga memastikan daun basah lebih lama, yang membantu penyakit kulat."
+     },
+     "defines": [
+      "dew"
+     ],
+     "src": [
+      "PAM:76-77",
+      "ESS:97"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "当相对湿度升到约 75 % 时，水汽就开始凝结在凝结核上，颗粒变大但还很小，空气看起来朦朦胧胧、偏白，这叫{{t:haze}}。霾也可以只是尘埃、烟和盐粒，它们把各种颜色的光都散射掉，让天空从蓝变成乳白色。",
+      "en": "When relative humidity reaches about 75 %, vapour starts to collect on condensation nuclei; the particles grow but stay tiny, and the air looks milky and dim. This is {{t:haze}}. Haze can also be just dust, smoke and salt, which scatter all colours of light and turn the sky from blue to milky white.",
+      "ms": "Apabila kelembapan relatif mencapai kira-kira 75 %, wap mula berkumpul pada nukleus kondensasi; zarah membesar tetapi kekal halus, dan udara kelihatan seperti susu dan malap. Inilah {{t:haze}}. Jerebu juga boleh terdiri daripada debu, asap dan garam sahaja, yang menyerakkan semua warna cahaya dan mengubah langit daripada biru kepada putih susu."
+     },
+     "defines": [
+      "haze"
+     ],
+     "src": [
+      "ESS:97",
+      "ESS:437",
+      "PAM:78"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "如果水滴继续长大、变多，贴着地面的空气就成了一朵“躺在地上的云”，能见度降到 1 公里以下，这就是{{t:fog}}。晴朗无风的晚上地面冷却形成的雾叫辐射雾，日出后通常就散；暖湿空气流过冷的地面或海面形成的叫平流雾。",
+      "en": "If the droplets keep growing and multiplying, the air near the ground becomes a cloud lying on the surface and visibility falls below 1 km: {{t:fog}}. Fog formed by the ground cooling on clear, calm nights is radiation fog and usually clears after sunrise; fog formed when warm, moist air flows over cold land or sea is advection fog.",
+      "ms": "Jika titisan terus membesar dan bertambah, udara berhampiran permukaan menjadi awan yang terletak di atas tanah dan keterlihatan jatuh di bawah 1 km: {{t:fog}}. Kabus yang terbentuk apabila tanah menyejuk pada malam cerah dan tenang ialah kabus sinaran dan biasanya hilang selepas matahari terbit; kabus yang terbentuk apabila udara panas lembap mengalir di atas tanah atau laut sejuk ialah kabus adveksi."
+     },
+     "defines": [
+      "fog"
+     ],
+     "src": [
+      "ESS:97-98",
+      "PAM:77"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:visibility}}就是能看多远。雾、霾、大雨都会降低能见度，影响开车、航空和航海。第 20 章会讲马来西亚的跨境烟霾。",
+      "en": "{{t:visibility}} is how far you can see. Fog, haze and heavy rain all reduce it, affecting roads, flights and shipping. Chapter 20 covers the transboundary haze that reaches Malaysia.",
+      "ms": "{{t:visibility}} ialah sejauh mana anda boleh melihat. Kabus, jerebu dan hujan lebat semuanya mengurangkannya, menjejaskan jalan raya, penerbangan dan perkapalan. Bab 20 membincangkan jerebu rentas sempadan yang sampai ke Malaysia."
+     },
+     "defines": [
+      "visibility"
+     ],
+     "src": [
+      "PAM:77-78"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "云是什么",
+    "en": "What a cloud is",
+    "ms": "Apa itu awan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:cloud}}是悬浮在空中、看得见的一大群小水滴或冰晶，或者两者都有。一颗普通的云滴直径约 0.02 毫米，比头发还细得多，一点点上升气流就能托住它。",
+      "en": "A {{t:cloud}} is a visible mass of tiny water droplets or ice crystals — or both — floating in the air. An ordinary cloud droplet is about 0.02 mm across, far thinner than a hair, and the slightest rising air keeps it aloft.",
+      "ms": "{{t:cloud}} ialah kumpulan titisan air atau hablur ais halus — atau kedua-duanya — yang kelihatan dan terapung di udara. Titisan awan biasa berukuran kira-kira 0.02 mm, jauh lebih halus daripada rambut, dan udara yang naik sedikit sahaja sudah cukup menampungnya."
+     },
+     "defines": [
+      "cloud"
+     ],
+     "src": [
+      "PAM:78",
+      "ESS:128"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "myth",
+     "text": {
+      "zh": "“乌云是一团水汽”——不对。水汽是看不见的气体。你看得见云，正是因为水汽已经凝结成了小水滴或冰晶。乌云看起来黑，是因为它又厚又密，阳光透不过来。",
+      "en": "‘A dark cloud is a mass of water vapour’ — no. Water vapour is an invisible gas. You can see a cloud precisely because the vapour has already condensed into droplets or ice. A dark cloud looks dark because it is thick and dense enough to block the sunlight.",
+      "ms": "‘Awan gelap ialah gumpalan wap air’ — tidak. Wap air ialah gas yang tidak kelihatan. Anda boleh melihat awan kerana wap itu sudah terkondensasi menjadi titisan atau ais. Awan gelap kelihatan gelap kerana ia cukup tebal dan padat untuk menghalang cahaya matahari."
+     },
+     "src": [
+      "ESS:435",
+      "ESS:128"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "云为什么是白的？云滴虽小，但比空气分子大得多，它们把各种颜色的阳光都同样地往四面八方散射，加起来就是白色。云越厚越高，透过的光越少，底部就越灰暗。",
+      "en": "Why are clouds white? Droplets are tiny, but much bigger than air molecules, and they scatter all colours of sunlight equally in every direction — which adds up to white. The thicker and taller a cloud, the less light gets through and the greyer its base.",
+      "ms": "Mengapa awan putih? Titisan itu halus, tetapi jauh lebih besar daripada molekul udara, dan ia menyerakkan semua warna cahaya matahari sama rata ke semua arah — yang bergabung menjadi putih. Semakin tebal dan tinggi awan, semakin kurang cahaya menembusinya dan semakin kelabu dasarnya."
+     },
+     "src": [
+      "ESS:435"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "十种云",
+    "en": "The ten cloud types",
+    "ms": "Sepuluh jenis awan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "世界气象组织按高度和样子把云分成十种，分属四组：{{t:high-cloud}}、{{t:middle-cloud}}、{{t:low-cloud}}，以及往上长的直展云。在热带，高云的云底约 6 到 18 公里，中云约 2 到 8 公里，低云从地面到约 2 公里。高云几乎全是冰晶。",
+      "en": "The World Meteorological Organization sorts clouds into ten types in four groups by height and appearance: {{t:high-cloud}}, {{t:middle-cloud}}, {{t:low-cloud}} and clouds that grow upward. In the tropics high-cloud bases are about 6–18 km up, middle clouds about 2–8 km, and low clouds from the surface to about 2 km. High clouds are almost entirely ice.",
+      "ms": "Pertubuhan Meteorologi Sedunia mengelaskan awan kepada sepuluh jenis dalam empat kumpulan mengikut ketinggian dan rupa: {{t:high-cloud}}, {{t:middle-cloud}}, {{t:low-cloud}} dan awan yang tumbuh ke atas. Di kawasan tropika, dasar awan tinggi kira-kira 6–18 km, awan sederhana kira-kira 2–8 km, dan awan rendah dari permukaan hingga kira-kira 2 km. Awan tinggi hampir sepenuhnya ais."
+     },
+     "defines": [
+      "high-cloud",
+      "middle-cloud",
+      "low-cloud"
+     ],
+     "src": [
+      "PAM:79-80",
+      "ESS:103"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W6"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "云的底部离地面的高度叫{{t:cloud-base}}，云顶所在的高度叫{{t:cloud-top}}。积雨云的云底可能只有几百米，云顶却能冲到对流层顶。Windy 等天气 App 里都有“云底”和“云顶”图层。",
+      "en": "The height of a cloud's bottom above the ground is its {{t:cloud-base}}; the height of its top is its {{t:cloud-top}}. A cumulonimbus may have its base a few hundred metres up and its top at the tropopause. Apps such as Windy have ‘cloud base’ and ‘cloud tops’ layers.",
+      "ms": "Ketinggian bahagian bawah awan dari tanah ialah {{t:cloud-base}}; ketinggian bahagian atasnya ialah {{t:cloud-top}}. Kumulonimbus mungkin mempunyai dasar beberapa ratus meter dan puncak di tropopaus. Aplikasi seperti Windy mempunyai lapisan ‘dasar awan’ dan ‘puncak awan’."
+     },
+     "defines": [
+      "cloud-base",
+      "cloud-top"
+     ],
+     "src": [
+      "ESS:108",
+      "PAM:80"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "观测员用{{t:okta}}来报云量：把天空分成 8 份，0 是万里无云，8 是满天都是云。天气 App 里的“云量 %”是同一个意思。",
+      "en": "Observers report cloud cover in {{t:okta}}: the sky is divided into eighths, 0 meaning cloudless and 8 completely overcast. The ‘cloud cover %’ in a weather app means the same thing.",
+      "ms": "Pencerap melaporkan litupan awan dalam {{t:okta}}: langit dibahagikan kepada lapan bahagian, 0 bermaksud tiada awan dan 8 mendung sepenuhnya. ‘Litupan awan %’ dalam aplikasi cuaca bermaksud perkara yang sama."
+     },
+     "defines": [
+      "okta"
+     ],
+     "src": [
+      "PAM:80"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "云还有哪些名字",
+    "en": "More cloud names",
+    "ms": "Lebih banyak nama awan"
+   },
+   "level": "advanced",
+   "blocks": [
+    {
+     "type": "keyval",
+     "src": [
+      "ESS:107-110"
+     ],
+     "rows": [
+      {
+       "k": {
+        "zh": "fractus 碎",
+        "en": "fractus",
+        "ms": "fractus"
+       },
+       "v": {
+        "zh": "破碎、边缘参差的层云或积云",
+        "en": "Ragged, torn stratus or cumulus",
+        "ms": "Stratus atau kumulus yang koyak dan tidak rata"
+       }
+      },
+      {
+       "k": {
+        "zh": "humilis 淡",
+        "en": "humilis",
+        "ms": "humilis"
+       },
+       "v": {
+        "zh": "只长一点点的扁平积云：晴天积云",
+        "en": "Flat cumulus with little growth: fair-weather cumulus",
+        "ms": "Kumulus rata yang tumbuh sedikit: kumulus cuaca baik"
+       }
+      },
+      {
+       "k": {
+        "zh": "congestus 浓",
+        "en": "congestus",
+        "ms": "congestus"
+       },
+       "v": {
+        "zh": "长得很高、像花椰菜的积云，下阵雨",
+        "en": "Tall, cauliflower-like cumulus that gives showers",
+        "ms": "Kumulus tinggi seperti kubis bunga yang membawa hujan lebat sekejap"
+       }
+      },
+      {
+       "k": {
+        "zh": "mammatus 乳状",
+        "en": "mammatus",
+        "ms": "mammatus"
+       },
+       "v": {
+        "zh": "挂在云底的一个个袋状突起，常在雷雨云下面",
+        "en": "Pouch-like bulges hanging from a cloud base, often under a thunderstorm",
+        "ms": "Bonjolan seperti kantung yang tergantung di dasar awan, sering di bawah ribut petir"
+       }
+      },
+      {
+       "k": {
+        "zh": "pileus 幞状",
+        "en": "pileus",
+        "ms": "pileus"
+       },
+       "v": {
+        "zh": "盖在正在长高的积云顶上的一顶“帽子”",
+        "en": "A ‘cap’ on top of a growing cumulus",
+        "ms": "‘Topi’ di atas kumulus yang sedang tumbuh"
+       }
+      },
+      {
+       "k": {
+        "zh": "lenticularis 荚状",
+        "en": "lenticularis",
+        "ms": "lenticularis"
+       },
+       "v": {
+        "zh": "山后气流形成的透镜状云",
+        "en": "Lens-shaped cloud formed in waves of air downwind of mountains",
+        "ms": "Awan berbentuk kanta yang terbentuk dalam gelombang udara di belakang gunung"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "condensation",
+  "condensation-nuclei",
+  "dew",
+  "haze",
+  "fog",
+  "visibility",
+  "cloud",
+  "high-cloud",
+  "middle-cloud",
+  "low-cloud",
+  "cloud-base",
+  "cloud-top",
+  "okta"
+ ]
+}

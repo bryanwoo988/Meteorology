@@ -1,0 +1,169 @@
+{
+ "id": "ch29",
+ "num": 29,
+ "stage": 8,
+ "title": {
+  "zh": "认识 ECMWF",
+  "en": "Getting to know ECMWF",
+  "ms": "Mengenali ECMWF"
+ },
+ "sources": [
+  "ECMWF-WHO",
+  "CAMS-ABOUT",
+  "ECMWF-MEDIUM",
+  "ECMWF-SUBSEAS",
+  "ECMWF-SEASONAL",
+  "ECMWF-AIFS",
+  "ECMWF-OPEN",
+  "CDS-ERA5",
+  "GLOFAS",
+  "FUN"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "ECMWF 是什么",
+    "en": "What ECMWF is",
+    "ms": "Apakah ECMWF"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:ecmwf}}（欧洲中期天气预报中心）在 1975 年成立，是一个独立的政府间组织，由 35 个国家支持，在英国 Reading、意大利 Bologna 和德国 Bonn 都有据点。它既是研究机构，也是全天候运作的预报中心，把数值预报交给成员国的气象局使用。ECMWF 和美国 NCEP 从 1992 年起率先把集合预报用在日常预报上。",
+      "en": "{{t:ecmwf}}, the European Centre for Medium-Range Weather Forecasts, was founded in 1975: an independent intergovernmental organisation supported by 35 states, with sites in Reading (UK), Bologna (Italy) and Bonn (Germany). It is both a research institute and a 24/7 operational service, producing numerical forecasts for its member states' weather services. With the US NCEP, ECMWF pioneered operational ensemble forecasts from 1992.",
+      "ms": "{{t:ecmwf}}, Pusat Ramalan Cuaca Jarak Sederhana Eropah, ditubuhkan pada 1975: organisasi antara kerajaan bebas yang disokong oleh 35 negara, dengan tapak di Reading (UK), Bologna (Itali) dan Bonn (Jerman). Ia institut penyelidikan dan juga perkhidmatan operasi 24/7, menghasilkan ramalan berangka untuk perkhidmatan cuaca negara anggotanya. Bersama NCEP AS, ECMWF mempelopori ramalan ensemble operasi dari 1992."
+     },
+     "defines": [
+      "ecmwf"
+     ],
+     "src": [
+      "ECMWF-WHO",
+      "CAMS-ABOUT",
+      "FUN:128"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "它的预报模型叫{{t:ifs}}（综合预报系统）。中期预报每天从 00 和 12 UTC 的初始场各跑一次，另有从 06 和 18 UTC 出发的较短补充预报。换成马来西亚时间：00 UTC 是早上 8 点、06 UTC 是下午 2 点、12 UTC 是晚上 8 点、18 UTC 是凌晨 2 点；预报要过几个小时才发布。",
+      "en": "Its forecasting model is the {{t:ifs}}, the Integrated Forecasting System. Medium-range forecasts start from 00 and 12 UTC each day, with shorter supplementary runs from 06 and 18 UTC. In Malaysian time, 00 UTC is 8 am, 06 UTC 2 pm, 12 UTC 8 pm and 18 UTC 2 am; the forecasts become available a few hours later.",
+      "ms": "Model ramalannya ialah {{t:ifs}}, Sistem Ramalan Bersepadu. Ramalan jarak sederhana bermula dari 00 dan 12 UTC setiap hari, dengan larian tambahan lebih pendek dari 06 dan 18 UTC. Dalam waktu Malaysia, 00 UTC ialah 8 pagi, 06 UTC 2 petang, 12 UTC 8 malam dan 18 UTC 2 pagi; ramalan tersedia beberapa jam kemudian."
+     },
+     "defines": [
+      "ifs"
+     ],
+     "src": [
+      "ECMWF-MEDIUM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "产品家族：从几天到几个月",
+    "en": "The product family: days to months",
+    "ms": "Keluarga produk: hari hingga bulan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "widget",
+     "id": "W25"
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "{{t:ens}}：51 个成员、约 9 公里，预报到 15 天",
+       "en": "{{t:ens}}: 51 members at about 9 km, out to 15 days",
+       "ms": "{{t:ens}}: 51 ahli pada kira-kira 9 km, hingga 15 hari"
+      },
+      {
+       "zh": "次季节预报：每天一次、约 36 公里，预报到 46 天，看每星期比平常偏暖偏湿还是偏冷偏干",
+       "en": "Sub-seasonal: daily at about 36 km to 46 days, showing whether each week is warmer, wetter, cooler or drier than normal",
+       "ms": "Sub-musim: harian pada kira-kira 36 km hingga 46 hari, menunjukkan sama ada setiap minggu lebih panas, basah, sejuk atau kering daripada biasa"
+      },
+      {
+       "zh": "{{t:seas5}} 季节预报：每月一次、51 个成员、约 36 公里，预报到 7 个月；每三个月再延长到 13 个月",
+       "en": "{{t:seas5}} seasonal: monthly, 51 members at about 36 km, out to 7 months; every three months extended to 13 months",
+       "ms": "Bermusim {{t:seas5}}: bulanan, 51 ahli pada kira-kira 36 km, hingga 7 bulan; setiap tiga bulan dilanjutkan ke 13 bulan"
+      },
+      {
+       "zh": "ERA5 再分析：1940 年到现在，逐时（第 31 章）",
+       "en": "ERA5 reanalysis: 1940 to the present, hourly (Chapter 31)",
+       "ms": "Analisis semula ERA5: 1940 hingga kini, setiap jam (Bab 31)"
+      },
+      {
+       "zh": "{{t:cams}}：空气污染、气溶胶和温室气体的资料与预报",
+       "en": "{{t:cams}}: information and forecasts of air pollution, aerosols and greenhouse gases",
+       "ms": "{{t:cams}}: maklumat dan ramalan pencemaran udara, aerosol dan gas rumah hijau"
+      },
+      {
+       "zh": "{{t:glofas}}：把 ECMWF 的集合预报喂进水文模型，预报河流流量到 30 天",
+       "en": "{{t:glofas}}: ECMWF ensemble forecasts fed into a hydrological model to forecast river flow out to 30 days",
+       "ms": "{{t:glofas}}: ramalan ensemble ECMWF dimasukkan ke model hidrologi untuk meramal aliran sungai hingga 30 hari"
+      },
+      {
+       "zh": "AIFS：ECMWF 的人工智能模型，2025 年起正式运作（第 32 章）",
+       "en": "AIFS: ECMWF's artificial-intelligence model, operational since 2025 (Chapter 32)",
+       "ms": "AIFS: model kecerdasan buatan ECMWF, beroperasi sejak 2025 (Bab 32)"
+      }
+     ],
+     "defines": [
+      "ens",
+      "seas5",
+      "cams",
+      "glofas"
+     ],
+     "src": [
+      "ECMWF-MEDIUM",
+      "ECMWF-SUBSEAS",
+      "ECMWF-SEASONAL",
+      "CDS-ERA5",
+      "CAMS-ABOUT",
+      "GLOFAS",
+      "ECMWF-AIFS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "开放数据",
+    "en": "Open data",
+    "ms": "Data terbuka"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "ECMWF 把一部分即时预报资料（IFS 和 AIFS）免费公开，使用 CC BY 4.0 授权：可以转载，也可以商业使用，只要注明出处。这就是 Open-Meteo、Windy 之类的网站能免费显示 ECMWF 预报的原因；本书第 30 章的吉隆坡 EPSgram 用的也是这批开放资料。",
+      "en": "ECMWF makes a subset of its real-time forecast data, from both IFS and AIFS, free and open under the CC BY 4.0 licence: it may be redistributed and used commercially as long as it is credited. That is why sites such as Open-Meteo and Windy can show ECMWF forecasts free of charge — and the Kuala Lumpur EPSgram in Chapter 30 uses these open data too.",
+      "ms": "ECMWF menjadikan sebahagian data ramalan masa nyatanya, dari IFS dan AIFS, percuma dan terbuka di bawah lesen CC BY 4.0: ia boleh diedarkan semula dan digunakan secara komersial asalkan dikreditkan. Itulah sebabnya laman seperti Open-Meteo dan Windy boleh memaparkan ramalan ECMWF secara percuma — dan EPSgram Kuala Lumpur dalam Bab 30 juga menggunakan data terbuka ini."
+     },
+     "src": [
+      "ECMWF-OPEN"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "ecmwf-open"
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "ecmwf",
+  "ifs",
+  "ens",
+  "seas5",
+  "cams",
+  "glofas"
+ ]
+}

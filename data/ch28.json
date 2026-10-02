@@ -1,0 +1,141 @@
+{
+ "id": "ch28",
+ "num": 28,
+ "stage": 8,
+ "title": {
+  "zh": "集合预报：原理",
+  "en": "Ensemble forecasting: the idea",
+  "ms": "Ramalan ensemble: ideanya"
+ },
+ "sources": [
+  "ESS",
+  "FUN",
+  "ECMWF-MEDIUM"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "差一点点，后来差很远",
+    "en": "A tiny difference grows",
+    "ms": "Perbezaan kecil membesar"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "1963 年 Edward Lorenz 发现，描述大气的方程有{{t:chaos}}的性质：起点只要差一点点，误差就会不断放大，几天后可以完全不一样。即使模型和观测都很好，还有许多比格子还小、量不到的小扰动，也会这样慢慢变大。人们常把这叫{{t:butterfly-effect}}。",
+      "en": "In 1963 Edward Lorenz found that the equations of the atmosphere are {{t:chaos|chaotic}}: a tiny difference at the start keeps growing until, days later, the outcome can be completely different. Even with good models and observations there are countless eddies smaller than the grid that go unmeasured, and they grow in the same way. This is often called the {{t:butterfly-effect}}.",
+      "ms": "Pada 1963 Edward Lorenz mendapati persamaan atmosfera bersifat {{t:chaos}}: perbezaan kecil di permulaan terus membesar sehingga, beberapa hari kemudian, hasilnya boleh berbeza sama sekali. Walaupun dengan model dan cerapan yang baik, terdapat banyak pusaran lebih kecil daripada grid yang tidak diukur, dan ia membesar dengan cara yang sama. Ini sering dipanggil {{t:butterfly-effect}}."
+     },
+     "defines": [
+      "chaos",
+      "butterfly-effect"
+     ],
+     "src": [
+      "FUN:128",
+      "ESS:256"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W21"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "51 个成员，不是 51 个模型",
+    "en": "51 members, not 51 models",
+    "ms": "51 ahli, bukan 51 model"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "既然起点总有误差，就不要只跑一次。{{t:ensemble-forecast}}用同一个模型跑很多次，每次的起点稍微改一下，代表观测的不确定。ECMWF 的 ENS 有 51 个{{t:ensemble-member}}：1 个{{t:control-member}}用最好的起点、不加扰动；另外 50 个{{t:perturbed-member}}的起点和模型物理都稍微改动过。",
+      "en": "Since the start is never perfect, do not run just once. An {{t:ensemble-forecast}} runs the same model many times, each time with the starting point nudged slightly to represent the uncertainty in the observations. ECMWF's ENS has 51 {{t:ensemble-member}}s: one {{t:control-member}} from the best starting point with no nudges, and 50 {{t:perturbed-member}}s whose starting conditions and model physics are slightly altered.",
+      "ms": "Oleh sebab titik mula tidak pernah sempurna, jangan jalankan sekali sahaja. {{t:ensemble-forecast}} menjalankan model yang sama berkali-kali, setiap kali dengan titik mula diubah sedikit untuk mewakili ketidakpastian cerapan. ENS ECMWF mempunyai 51 {{t:ensemble-member}}: satu {{t:control-member}} dari titik mula terbaik tanpa gangguan, dan 50 {{t:perturbed-member}} yang keadaan awal dan fizik modelnya diubah sedikit."
+     },
+     "defines": [
+      "ensemble-forecast",
+      "ensemble-member",
+      "control-member",
+      "perturbed-member"
+     ],
+     "src": [
+      "ESS:256-257",
+      "ECMWF-MEDIUM"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "myth",
+     "text": {
+      "zh": "误解：“51 个成员 = 51 个不同的模型。”其实是同一个模型（ECMWF 的 IFS）跑 51 次。把几个不同机构的模型放在一起比较，叫多模型集合（第 33 章）。",
+      "en": "Myth: ‘51 members means 51 different models.’ It is one model — ECMWF's IFS — run 51 times. Putting several centres' models side by side is a multi-model ensemble (Chapter 33).",
+      "ms": "Mitos: ‘51 ahli bermaksud 51 model berbeza.’ Ia satu model — IFS ECMWF — dijalankan 51 kali. Meletakkan model beberapa pusat bersebelahan ialah ensemble pelbagai model (Bab 33)."
+     },
+     "src": [
+      "ECMWF-MEDIUM",
+      "FUN:129"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "平均、离散度和信心",
+    "en": "Mean, spread and confidence",
+    "ms": "Purata, serakan dan keyakinan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "把所有成员平均起来叫{{t:ensemble-mean}}，通常比单独一个成员稳定。可是平均也会把极端值抹平：如果 5 个成员预报 100 毫米的大雨、其余小雨，平均只剩二三十毫米，看起来不吓人。所以要同时看有几成成员预报大雨。",
+      "en": "Averaging all the members gives the {{t:ensemble-mean}}, usually steadier than any single member. But averaging also smooths away extremes: if 5 members forecast 100 mm and the rest light rain, the mean may be only twenty or thirty millimetres and look harmless. So look too at how many members forecast heavy rain.",
+      "ms": "Purata semua ahli memberi {{t:ensemble-mean}}, biasanya lebih stabil daripada mana-mana satu ahli. Tetapi purata juga melicinkan nilai ekstrem: jika 5 ahli meramal 100 mm dan selebihnya hujan renyai, purata mungkin hanya dua puluh atau tiga puluh milimeter dan kelihatan tidak berbahaya. Jadi lihat juga berapa ahli meramal hujan lebat."
+     },
+     "defines": [
+      "ensemble-mean"
+     ],
+     "src": [
+      "ECMWF-MEDIUM"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "成员之间差得越远，{{t:spread}}越大，表示越不确定。成员都很接近时，预报员比较有信心；很分散时，就不要太相信任何一个单独的预报。不过离散度和实际误差的关系并不总是很强，有时成员都很集中、真实天气却跑到范围外面，特别是十天左右的预报。",
+      "en": "The further apart the members, the bigger the {{t:spread}} and the greater the uncertainty. When members agree, forecasters are more confident; when they scatter, trust no single run too much. Still, spread is not always a strong guide to the actual error: sometimes the members cluster and the real weather falls outside them, especially around ten days ahead.",
+      "ms": "Semakin jauh ahli berbeza, semakin besar {{t:spread}} dan semakin tinggi ketidakpastian. Apabila ahli bersetuju, peramal lebih yakin; apabila berselerak, jangan terlalu percaya mana-mana satu larian. Namun serakan tidak selalu panduan kuat kepada ralat sebenar: kadangkala ahli berkelompok dan cuaca sebenar jatuh di luar mereka, terutamanya kira-kira sepuluh hari ke depan."
+     },
+     "defines": [
+      "spread"
+     ],
+     "src": [
+      "ECMWF-MEDIUM",
+      "FUN:129",
+      "ESS:257"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "chaos",
+  "butterfly-effect",
+  "ensemble-forecast",
+  "ensemble-member",
+  "control-member",
+  "perturbed-member",
+  "ensemble-mean",
+  "spread"
+ ]
+}

@@ -1,0 +1,267 @@
+{
+ "id": "ch12",
+ "num": 12,
+ "stage": 4,
+ "title": {
+  "zh": "气团、锋面与风暴",
+  "en": "Air masses, fronts and storms",
+  "ms": "Jisim udara, front dan ribut"
+ },
+ "sources": [
+  "ESS",
+  "PAM",
+  "TERM",
+  "CHANG2003",
+  "METMY-SWM2024"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "气团和锋面",
+    "en": "Air masses and fronts",
+    "ms": "Jisim udara dan front"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "一大块温度和湿度都差不多的空气，范围可以有上千公里、厚几公里，叫{{t:air-mass}}。它的性质来自它形成的地方：在热带海洋上形成的又暖又湿，在大陆内部形成的比较干。",
+      "en": "A huge body of air with nearly the same temperature and humidity throughout — a thousand kilometres or more across and several kilometres deep — is an {{t:air-mass}}. It takes its character from where it formed: over tropical seas it is warm and moist; deep inside a continent it is drier.",
+      "ms": "Kumpulan udara yang sangat besar dengan suhu dan kelembapan hampir sama di seluruhnya — seribu kilometer atau lebih lebar dan beberapa kilometer dalam — ialah {{t:air-mass}}. Ia mendapat cirinya daripada tempat ia terbentuk: di atas laut tropika ia panas dan lembap; jauh di dalam benua ia lebih kering."
+     },
+     "defines": [
+      "air-mass"
+     ],
+     "src": [
+      "TERM:13"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "两个性质不同的气团交界的地方叫{{t:front}}。冷锋是冷空气推进、把暖空气抬起，常带来短时间的雷阵雨；暖锋是暖空气慢慢爬到冷空气上面，带来范围大、时间长的毛毛雨。锋面是中纬度天气的主角；在马来西亚这样的赤道地区，冷暖气团的差别小，典型的锋面很少见。",
+      "en": "The boundary between two different air masses is a {{t:front}}. At a cold front the cold air pushes forward and lifts the warm air, often bringing short, thundery showers; at a warm front the warm air slides slowly up over the cold, bringing widespread, long-lasting drizzle. Fronts dominate middle-latitude weather; near the equator, as in Malaysia, air masses differ too little for classic fronts to be common.",
+      "ms": "Sempadan antara dua jisim udara yang berbeza ialah {{t:front}}. Di front sejuk, udara sejuk menolak ke hadapan dan mengangkat udara panas, sering membawa hujan ribut yang singkat; di front panas, udara panas menggelongsor perlahan ke atas udara sejuk, membawa gerimis yang meluas dan berpanjangan. Front menguasai cuaca latitud sederhana; berhampiran khatulistiwa, seperti di Malaysia, jisim udara terlalu sedikit bezanya untuk front klasik menjadi biasa."
+     },
+     "defines": [
+      "front"
+     ],
+     "src": [
+      "PAM:87",
+      "ESS:229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "雷暴的一生",
+    "en": "The life of a thunderstorm",
+    "ms": "Kitaran hidup ribut petir"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:thunderstorm}}就是有雷有电的积雨云。一个普通的雷暴从出生到消散通常不到一小时，分三个阶段：",
+      "en": "A {{t:thunderstorm}} is a cumulonimbus cloud with thunder and lightning. An ordinary one goes from birth to decay in less than an hour, in three stages:",
+      "ms": "{{t:thunderstorm}} ialah awan kumulonimbus dengan guruh dan kilat. Ribut biasa melalui kelahiran hingga reput dalam kurang sejam, dalam tiga peringkat:"
+     },
+     "defines": [
+      "thunderstorm"
+     ],
+     "src": [
+      "ESS:275"
+     ]
+    },
+    {
+     "type": "keyval",
+     "src": [
+      "ESS:275-277"
+     ],
+     "rows": [
+      {
+       "k": {
+        "zh": "积云阶段",
+        "en": "Cumulus stage",
+        "ms": "Peringkat kumulus"
+       },
+       "v": {
+        "zh": "上升气流把暖湿空气送上去，积云几分钟内就长成浓积云；还没下雨。",
+        "en": "Updraughts carry warm, moist air up and the cumulus grows into a towering cumulus within minutes; no rain yet.",
+        "ms": "Arus naik membawa udara panas lembap ke atas dan kumulus tumbuh menjadi kumulus menjulang dalam beberapa minit; belum hujan."
+       }
+      },
+      {
+       "k": {
+        "zh": "成熟阶段",
+        "en": "Mature stage",
+        "ms": "Peringkat matang"
+       },
+       "v": {
+        "zh": "雨开始落下，把空气拖下来成为下沉气流；雷电、暴雨、强阵风都在这时；云顶在稳定层摊开成铁砧状。",
+        "en": "Rain begins to fall and drags air down as a downdraught; lightning, downpours and strong gusts all come now; the top spreads into an anvil at a stable layer.",
+        "ms": "Hujan mula turun dan menyeret udara ke bawah sebagai arus turun; kilat, hujan lebat dan tiupan kencang berlaku sekarang; puncak merebak menjadi andas di lapisan stabil."
+       }
+      },
+      {
+       "k": {
+        "zh": "消散阶段",
+        "en": "Dissipating stage",
+        "ms": "Peringkat lerai"
+       },
+       "v": {
+        "zh": "进入成熟阶段约 15 到 30 分钟后，下沉气流占满了云，切断暖湿空气的来源，雨渐渐停。",
+        "en": "About 15 to 30 minutes after maturity, downdraughts fill the cloud, cut off its supply of warm, moist air, and the rain dies away.",
+        "ms": "Kira-kira 15 hingga 30 minit selepas matang, arus turun memenuhi awan, memutuskan bekalan udara panas lembap, dan hujan beransur berhenti."
+       }
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "🌦️ 午后阵雨的第五块拼图：这就是为什么马来西亚的午后雷雨常常“来得猛、去得快”——一个雷暴单体通常一小时左右就结束了。",
+      "en": "🌦️ Afternoon storms, piece five: this is why Malaysia's afternoon storms so often arrive hard and leave fast — a single thunderstorm cell is usually over within about an hour.",
+      "ms": "🌦️ Ribut petang, kepingan kelima: inilah sebabnya ribut petang di Malaysia sering datang dengan kuat dan pergi dengan cepat — satu sel ribut petir biasanya berakhir dalam kira-kira sejam."
+     },
+     "src": [
+      "ESS:275",
+      "ESS:286"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "如果高空风比较强，新的雷暴单体会在旧单体旁边不断长出来，形成可以维持好几个小时的多单体雷暴，有时排成一长条，叫飑线。第 17 章的苏门答腊飑线就是这一类。",
+      "en": "When the winds aloft are stronger, new cells keep forming beside the old ones and a multicell storm can last for hours; sometimes the cells line up in a long squall line. The Sumatra squalls of Chapter 17 are of this kind.",
+      "ms": "Apabila angin di udara atas lebih kuat, sel baharu terus terbentuk di sebelah sel lama dan ribut berbilang sel boleh bertahan berjam-jam; kadangkala sel-sel tersusun dalam garisan badai yang panjang. Badai Sumatera dalam Bab 17 adalah jenis ini."
+     },
+     "src": [
+      "ESS:278",
+      "ESS:281"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "闪电和安全",
+    "en": "Lightning and staying safe",
+    "ms": "Kilat dan keselamatan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "积雨云里冰粒和水滴互相碰撞，使云的上部带正电、下部带负电，地面上则感应出正电，而且集中在树、杆子、建筑物和人这些突出的东西上。电位差大到空气挡不住时，就放电成为{{t:lightning}}。一次闪电的电流可以高达 10 万安培。",
+      "en": "Inside a cumulonimbus, colliding ice and water particles leave the top of the cloud positively charged and the lower part negative, while positive charge gathers on the ground below — concentrated on tall objects such as trees, poles, buildings and people. When the difference grows too large for the air to hold back, it discharges as {{t:lightning}}. A single stroke can carry a current of 100,000 amperes.",
+      "ms": "Di dalam kumulonimbus, zarah ais dan air yang berlanggar menjadikan bahagian atas awan bercas positif dan bahagian bawah negatif, manakala cas positif berkumpul di tanah di bawah — tertumpu pada objek tinggi seperti pokok, tiang, bangunan dan manusia. Apabila perbezaan terlalu besar untuk ditahan udara, ia dilepaskan sebagai {{t:lightning}}. Satu sambaran boleh membawa arus 100,000 ampere."
+     },
+     "defines": [
+      "lightning"
+     ],
+     "src": [
+      "ESS:291-292",
+      "ESS:296"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "在园里或户外遇到雷暴：最好马上进入建筑物，或坐进有金属车身的汽车、卡车（高尔夫球车不算）；不要躲在孤立的树下，也要远离高处。找不到遮蔽时，尽量蹲低、只用脚尖或脚跟着地，但不要趴下。头发竖起、皮肤发麻、听到嗒嗒声，就是闪电快要打下来的警告。在室内也不要用接电线的电器、有线电话，不要洗澡。",
+      "en": "Caught by a thunderstorm in the field or outdoors: get into a building, or into a car or truck with a metal body (a golf cart does not count). Do not shelter under an isolated tree and keep off high ground. With no shelter, crouch as low as you can touching the ground only with your toes or heels — but do not lie down. Hair standing on end, tingling skin and clicking sounds warn that a strike is imminent. Indoors, avoid electrical appliances, corded phones and showers.",
+      "ms": "Ditimpa ribut petir di ladang atau di luar: masuk ke bangunan, atau ke dalam kereta atau lori berbadan logam (kereta golf tidak dikira). Jangan berteduh di bawah pokok yang terpencil dan jauhi tempat tinggi. Jika tiada tempat berlindung, bertinggung serendah mungkin dengan hanya hujung jari kaki atau tumit menyentuh tanah — tetapi jangan berbaring. Rambut tegak, kulit kesemutan dan bunyi berdetik memberi amaran sambaran akan berlaku. Di dalam rumah, elakkan perkakas elektrik, telefon berwayar dan mandi."
+     },
+     "src": [
+      "ESS:296"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "myth",
+     "text": {
+      "zh": "“闪电不会打同一个地方两次”——错。闪电偏爱又高又突出的东西，同一个高处会被打很多次，这正是避雷针的原理。",
+      "en": "‘Lightning never strikes the same place twice’ — wrong. Lightning favours tall, prominent objects, and the same high point can be struck again and again; that is exactly how a lightning rod works.",
+      "ms": "‘Kilat tidak menyambar tempat yang sama dua kali’ — salah. Kilat memilih objek yang tinggi dan menonjol, dan titik tinggi yang sama boleh disambar berulang kali; begitulah cara penangkal kilat berfungsi."
+     },
+     "src": [
+      "ESS:291-294"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "热带气旋",
+    "en": "Tropical cyclones",
+    "ms": "Siklon tropika"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:tropical-cyclone}}是在暖洋面上形成、绕着低压中心旋转的巨大风暴群。在西北太平洋叫台风，在大西洋叫飓风，在印度洋叫气旋。它按风力分级：一群有组织的雷雨刚开始绕圈、风速约 20 到 34 节时，叫{{t:tropical-depression}}；35 到 64 节叫热带风暴（这时会取名字）；超过 64 节才叫台风或飓风。",
+      "en": "A {{t:tropical-cyclone}} is a vast, spinning system of storms formed over warm ocean around a centre of low pressure. In the western North Pacific it is called a typhoon, in the Atlantic a hurricane, in the Indian Ocean a cyclone. It is graded by wind: when an organised cluster of thunderstorms begins to circulate with winds of about 20–34 knots it is a {{t:tropical-depression}}; at 35–64 knots a tropical storm, which gets a name; above 64 knots a typhoon or hurricane.",
+      "ms": "{{t:tropical-cyclone}} ialah sistem ribut berputar yang sangat besar, terbentuk di atas lautan panas di sekeliling pusat tekanan rendah. Di Pasifik Barat Laut ia dipanggil taufan, di Atlantik hurikan, di Lautan Hindi siklon. Ia dikelaskan mengikut angin: apabila kelompok ribut petir yang teratur mula berpusar dengan angin kira-kira 20–34 knot ia ialah {{t:tropical-depression}}; pada 35–64 knot ribut tropika, yang diberi nama; melebihi 64 knot taufan atau hurikan."
+     },
+     "defines": [
+      "tropical-cyclone",
+      "tropical-depression"
+     ],
+     "src": [
+      "ESS:314",
+      "ESS:320"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "它需要几个条件：大范围的暖海水（通常 26.5 °C 以上）、很深的潮湿空气、微弱的高空风，以及足够的科里奥利力让辐合的空气开始旋转。所以热带气旋多半在纬度 5° 到 20° 之间形成，赤道上几乎不会有。",
+      "en": "It needs several ingredients: a large area of warm sea, usually 26.5 °C or more; moist air through a deep layer; light winds aloft; and enough Coriolis effect to set converging air spinning. That is why tropical cyclones mostly form between about 5° and 20° latitude and almost never on the equator.",
+      "ms": "Ia memerlukan beberapa bahan: kawasan laut panas yang luas, biasanya 26.5 °C atau lebih; udara lembap dalam lapisan yang dalam; angin lemah di udara atas; dan kesan Coriolis yang cukup untuk memusarkan udara yang menumpu. Itulah sebabnya siklon tropika kebanyakannya terbentuk antara kira-kira latitud 5° dan 20° dan hampir tidak pernah di khatulistiwa."
+     },
+     "src": [
+      "ESS:317"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M3"
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "马来西亚大部分地方在赤道附近这条“几乎没有台风”的带子里，台风很少直接登陆，但附近海域的台风可以间接影响这里的天气，例如牵动季风的气流。罕见的例外是 2001 年 12 月 27 日在新加坡附近北纬 1.5° 形成的台风画眉（Vamei），它是有记录以来离赤道最近形成的热带气旋。",
+      "en": "Most of Malaysia lies in the near-equatorial belt where typhoons almost never form, so direct landfalls are rare — though typhoons in nearby seas can affect the weather here indirectly, for example by steering the monsoon flow. A rare exception was Typhoon Vamei, which formed at 1.5°N near Singapore on 27 December 2001: the closest to the equator a tropical cyclone has been recorded forming.",
+      "ms": "Kebanyakan Malaysia terletak dalam jalur hampir khatulistiwa tempat taufan hampir tidak pernah terbentuk, jadi pendaratan terus jarang berlaku — walaupun taufan di laut berhampiran boleh menjejaskan cuaca di sini secara tidak langsung, contohnya dengan memandu aliran monsun. Pengecualian yang jarang ialah Taufan Vamei, yang terbentuk pada 1.5°U berhampiran Singapura pada 27 Disember 2001: siklon tropika paling dekat dengan khatulistiwa yang pernah direkodkan terbentuk."
+     },
+     "src": [
+      "CHANG2003",
+      "ESS:317",
+      "METMY-SWM2024"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "air-mass",
+  "front",
+  "thunderstorm",
+  "lightning",
+  "tropical-cyclone",
+  "tropical-depression"
+ ]
+}

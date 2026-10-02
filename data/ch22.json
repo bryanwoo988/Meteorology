@@ -1,0 +1,145 @@
+{
+ "id": "ch22",
+ "num": 22,
+ "stage": 7,
+ "title": {
+  "zh": "高空与海洋观测",
+  "en": "Observing the upper air and the ocean",
+  "ms": "Mencerap udara atas dan lautan"
+ },
+ "sources": [
+  "ESS",
+  "FUN",
+  "TERM",
+  "WMO-ABO",
+  "ARGO",
+  "PMEL-TAO",
+  "NDBC-STATIONS",
+  "UWYO-SND",
+  "NEWS-MM-2025"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "探空气球",
+    "en": "Weather balloons",
+    "ms": "Belon cuaca"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:radiosonde}}是挂在气球下的一小盒仪器，一边上升一边用无线电传回气温、湿度和气压，最高常到 30 公里左右。地面追踪气球的位置，还能算出各高度的风。这样得到的一条垂直资料叫{{t:sounding}}。气球最后会破，仪器挂着降落伞落回地面。",
+      "en": "A {{t:radiosonde}} is a small instrument package hung below a balloon; as it rises it radios back temperature, humidity and pressure, often to about 30 km. Tracking the balloon from the ground also gives the wind at each height. The vertical record it makes is a {{t:sounding}}. Eventually the balloon bursts and the instrument drifts back down on a parachute.",
+      "ms": "{{t:radiosonde}} ialah pakej alat kecil yang digantung di bawah belon; semasa naik ia menghantar balik suhu, kelembapan dan tekanan melalui radio, sering hingga kira-kira 30 km. Menjejak belon dari darat turut memberi angin pada setiap ketinggian. Rekod menegak yang dihasilkan ialah {{t:sounding}}. Akhirnya belon pecah dan alat turun semula dengan payung terjun."
+     },
+     "defines": [
+      "radiosonde",
+      "sounding"
+     ],
+     "src": [
+      "ESS:12",
+      "ESS:171",
+      "TERM:273"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "大部分探空站一天放两次，时间是格林尼治的午夜和中午，也就是协调世界时 00 和 12 时。马来西亚比它快 8 小时，所以是早上 8 点和晚上 8 点。早上 8 点那一次，正好用来判断当天下午会不会有雷雨（第 25 章）。大马气象局有 8 个高空站。",
+      "en": "Most stations launch twice a day, at the times of midnight and noon in Greenwich — 00 and 12 UTC. Malaysia is 8 hours ahead, so that is 8 am and 8 pm here. The 8 am launch is just right for judging whether storms will build that afternoon (Chapter 25). MetMalaysia has 8 upper-air stations.",
+      "ms": "Kebanyakan stesen melepaskan belon dua kali sehari, pada masa tengah malam dan tengah hari di Greenwich — 00 dan 12 UTC. Malaysia 8 jam lebih awal, jadi itu jam 8 pagi dan 8 malam di sini. Pelepasan jam 8 pagi sangat sesuai untuk menilai sama ada ribut akan terbina petang itu (Bab 25). MetMalaysia mempunyai 8 stesen udara atas."
+     },
+     "src": [
+      "ESS:12",
+      "NEWS-MM-2025"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "uwyo-soundings"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "民航飞机顺便量的资料",
+    "en": "Weather from airliners",
+    "ms": "Cuaca daripada pesawat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "飞机在起降和巡航时，机上仪器会自动量气温和风，连同位置一起传回地面。这种资料以前是机师用无线电报告，后来变成自动的；其中一种重要的来源叫{{t:amdar}}。WMO 把飞机资料收集起来，供全球的数值预报模型使用。",
+      "en": "As aircraft climb, cruise and descend, their instruments automatically measure air temperature and wind and send them down with the position. These reports began as pilots' radio messages and became automatic; one important source is {{t:amdar}}. WMO gathers aircraft data for the world's computer forecast models.",
+      "ms": "Semasa pesawat naik, terbang dan turun, peralatannya secara automatik mengukur suhu udara dan angin serta menghantarnya ke bumi bersama kedudukan. Laporan ini bermula sebagai mesej radio juruterbang dan menjadi automatik; satu sumber penting ialah {{t:amdar}}. WMO mengumpul data pesawat untuk model ramalan komputer dunia."
+     },
+     "defines": [
+      "amdar"
+     ],
+     "src": [
+      "WMO-ABO",
+      "FUN:133"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "海上的浮标",
+    "en": "Buoys at sea",
+    "ms": "Boya di laut"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "全世界有一万多个陆地站，加上几百艘船和{{t:buoy}}，每天四次报告地面天气。海洋占地球七成以上，海上的资料特别珍贵。赤道太平洋的 TAO 浮标阵列在 1985 到 1994 年间建成，目的就是了解和预报 ENSO（第 14 章）；印度洋和大西洋也有类似的阵列 RAMA 和 PIRATA。",
+      "en": "Over 10,000 land stations, with hundreds of ships and {{t:buoy}}s, report the surface weather four times a day. With oceans covering over 70 % of the Earth, data from the sea are precious. The TAO array of buoys along the equatorial Pacific was built from 1985 to 1994 to understand and predict ENSO (Chapter 14); the Indian and Atlantic Oceans have similar arrays, RAMA and PIRATA.",
+      "ms": "Lebih 10,000 stesen darat, bersama ratusan kapal dan {{t:buoy}}, melaporkan cuaca permukaan empat kali sehari. Dengan lautan meliputi lebih 70 % bumi, data dari laut amat berharga. Tatasusunan boya TAO di sepanjang Pasifik khatulistiwa dibina dari 1985 hingga 1994 untuk memahami dan meramal ENSO (Bab 14); Lautan Hindi dan Atlantik mempunyai tatasusunan serupa, RAMA dan PIRATA."
+     },
+     "defines": [
+      "buoy"
+     ],
+     "src": [
+      "ESS:246",
+      "ESS:250",
+      "PMEL-TAO"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M13"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:argo}}浮标则在水里上下移动：平常停在约 1 公里深，每 10 天先沉到 2 公里，再一路量温度和盐度浮上水面，把资料传给卫星，然后再沉下去。这个计划从 2000 年开始。",
+      "en": "{{t:argo}} floats move up and down in the water: they normally drift at about 1 km deep, and every 10 days sink to 2 km and then rise to the surface measuring temperature and salinity, send the data to a satellite, and sink again. The programme began in 2000.",
+      "ms": "Pelampung {{t:argo}} bergerak naik turun dalam air: biasanya hanyut pada kira-kira 1 km dalam, dan setiap 10 hari tenggelam ke 2 km kemudian naik ke permukaan sambil mengukur suhu dan kemasinan, menghantar data ke satelit, lalu tenggelam semula. Program ini bermula pada 2000."
+     },
+     "defines": [
+      "argo"
+     ],
+     "src": [
+      "ARGO"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "radiosonde",
+  "sounding",
+  "amdar",
+  "buoy",
+  "argo"
+ ]
+}

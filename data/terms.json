@@ -1,0 +1,3397 @@
+[
+ {
+  "id": "agrometeorology",
+  "name": {
+   "zh": "农业气象学",
+   "en": "Agricultural meteorology",
+   "ms": "Meteorologi pertanian"
+  },
+  "short": {
+   "zh": "研究天气、气候与农业生产关系的学科。",
+   "en": "The study of how weather and climate relate to farming.",
+   "ms": "Kajian tentang hubungan cuaca dan iklim dengan pertanian."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "climate",
+  "name": {
+   "zh": "气候",
+   "en": "Climate",
+   "ms": "Iklim"
+  },
+  "short": {
+   "zh": "一个地方长期（通常 30 年）的平均天气和极端情况。",
+   "en": "The long-term (usually 30-year) average and extremes of a place's weather.",
+   "ms": "Purata dan nilai ekstrem cuaca sesuatu tempat dalam jangka panjang (biasanya 30 tahun)."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "meteorology",
+  "name": {
+   "zh": "气象学",
+   "en": "Meteorology",
+   "ms": "Meteorologi"
+  },
+  "short": {
+   "zh": "研究地球大气及其产生天气的各种过程的科学。",
+   "en": "The science of the Earth's atmosphere and the processes in it that make weather.",
+   "ms": "Sains tentang atmosfera Bumi dan proses di dalamnya yang menghasilkan cuaca."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "weather",
+  "name": {
+   "zh": "天气",
+   "en": "Weather",
+   "ms": "Cuaca"
+  },
+  "short": {
+   "zh": "某地某时的大气状况，随时在变。",
+   "en": "The state of the atmosphere at a given place and time; always changing.",
+   "ms": "Keadaan atmosfera di sesuatu tempat dan masa; sentiasa berubah."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "weather-elements",
+  "name": {
+   "zh": "气象要素",
+   "en": "Weather elements",
+   "ms": "Unsur cuaca"
+  },
+  "short": {
+   "zh": "描述天气的可测量项目：气温、气压、湿度、云、降水、能见度、风。",
+   "en": "The measurable quantities that describe weather: temperature, pressure, humidity, cloud, precipitation, visibility and wind.",
+   "ms": "Kuantiti boleh diukur yang menerangkan cuaca: suhu, tekanan, kelembapan, awan, kerpasan, keterlihatan dan angin."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "wmo",
+  "name": {
+   "zh": "世界气象组织",
+   "en": "World Meteorological Organization",
+   "ms": "Pertubuhan Meteorologi Sedunia"
+  },
+  "short": {
+   "zh": "联合国负责天气、气候和水的专门机构，制定全球气象标准。",
+   "en": "The UN specialised agency for weather, climate and water; it sets global standards.",
+   "ms": "Agensi khusus PBB bagi cuaca, iklim dan air; ia menetapkan piawaian global."
+  },
+  "chapter": 1,
+  "abbr": "WMO"
+ },
+ {
+  "id": "air-pressure",
+  "name": {
+   "zh": "气压",
+   "en": "Air pressure",
+   "ms": "Tekanan udara"
+  },
+  "short": {
+   "zh": "上方空气的重量压下来的力，单位 hPa；海平面标准值 1013.25 hPa。",
+   "en": "The force of the air above pressing down, in hPa; 1013.25 hPa at standard sea level.",
+   "ms": "Daya udara di atas yang menekan ke bawah, dalam hPa; 1013.25 hPa pada paras laut piawai."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "atmosphere",
+  "name": {
+   "zh": "大气",
+   "en": "Atmosphere",
+   "ms": "Atmosfera"
+  },
+  "short": {
+   "zh": "包围地球的一层气体；约 99 % 在离地 30 公里以内。",
+   "en": "The layer of gas around the Earth; about 99 % of it lies within 30 km of the ground.",
+   "ms": "Lapisan gas yang menyelubungi Bumi; kira-kira 99 % berada dalam 30 km dari permukaan."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "mesosphere",
+  "name": {
+   "zh": "中间层",
+   "en": "Mesosphere",
+   "ms": "Mesosfera"
+  },
+  "short": {
+   "zh": "约 50–85 公里，越高越冷；顶端是大气最冷处。",
+   "en": "About 50–85 km, colder with height; its top is the coldest part of the atmosphere.",
+   "ms": "Kira-kira 50–85 km, semakin sejuk dengan ketinggian; bahagian atasnya paling sejuk dalam atmosfera."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "ozone-layer",
+  "name": {
+   "zh": "臭氧层",
+   "en": "Ozone layer",
+   "ms": "Lapisan ozon"
+  },
+  "short": {
+   "zh": "平流层中臭氧集中的部分，吸收太阳有害的紫外线。",
+   "en": "The ozone-rich part of the stratosphere that absorbs the Sun's harmful ultraviolet light.",
+   "ms": "Bahagian stratosfera yang kaya ozon dan menyerap cahaya ultraungu Matahari yang berbahaya."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "stratosphere",
+  "name": {
+   "zh": "平流层",
+   "en": "Stratosphere",
+   "ms": "Stratosfera"
+  },
+  "short": {
+   "zh": "对流层之上到约 50 公里；臭氧吸收紫外线使它越高越暖。",
+   "en": "From the tropopause to about 50 km; ozone absorbing UV makes it warmer with height.",
+   "ms": "Dari tropopaus hingga kira-kira 50 km; ozon yang menyerap UV menjadikannya lebih panas dengan ketinggian."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "thermosphere",
+  "name": {
+   "zh": "热层",
+   "en": "Thermosphere",
+   "ms": "Termosfera"
+  },
+  "short": {
+   "zh": "约 85 公里以上；空气极稀薄，温度却可超过 500 °C。",
+   "en": "Above about 85 km; extremely thin air that can exceed 500 °C.",
+   "ms": "Di atas kira-kira 85 km; udara sangat nipis yang boleh melebihi 500 °C."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "tropopause",
+  "name": {
+   "zh": "对流层顶",
+   "en": "Tropopause",
+   "ms": "Tropopaus"
+  },
+  "short": {
+   "zh": "对流层和平流层的分界；热带约 16 公里高。",
+   "en": "The boundary between troposphere and stratosphere; about 16 km high in the tropics.",
+   "ms": "Sempadan antara troposfera dan stratosfera; kira-kira 16 km di kawasan tropika."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "troposphere",
+  "name": {
+   "zh": "对流层",
+   "en": "Troposphere",
+   "ms": "Troposfera"
+  },
+  "short": {
+   "zh": "最底下的一层，天气都发生在这里；越高越冷。",
+   "en": "The lowest layer, where weather happens; colder with height.",
+   "ms": "Lapisan paling bawah, tempat cuaca berlaku; semakin sejuk dengan ketinggian."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "uv-index",
+  "name": {
+   "zh": "紫外线指数",
+   "en": "UV index",
+   "ms": "Indeks UV"
+  },
+  "short": {
+   "zh": "表示当天紫外线强度的数字；3 以上要防晒，8 以上中午避免外出。",
+   "en": "A number for the day's ultraviolet strength; protect yourself from 3, avoid the midday sun from 8.",
+   "ms": "Nombor bagi kekuatan ultraungu hari itu; lindungi diri dari 3, elakkan matahari tengah hari dari 8."
+  },
+  "chapter": 2,
+  "abbr": "UV"
+ },
+ {
+  "id": "albedo",
+  "name": {
+   "zh": "反照率",
+   "en": "Albedo",
+   "ms": "Albedo"
+  },
+  "short": {
+   "zh": "表面反射掉的阳光比例；雪很高，森林很低。",
+   "en": "The share of sunlight a surface reflects; high for snow, low for forest.",
+   "ms": "Bahagian cahaya matahari yang dipantulkan permukaan; tinggi bagi salji, rendah bagi hutan."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "diffuse-radiation",
+  "name": {
+   "zh": "散射辐射",
+   "en": "Diffuse radiation",
+   "ms": "Sinaran terserak"
+  },
+  "short": {
+   "zh": "被空气、尘埃和云散射后，从四面八方来的阳光。",
+   "en": "Sunlight scattered by air, dust and cloud, arriving from all directions.",
+   "ms": "Cahaya matahari yang diserakkan oleh udara, debu dan awan, tiba dari semua arah."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "direct-radiation",
+  "name": {
+   "zh": "直接辐射",
+   "en": "Direct radiation",
+   "ms": "Sinaran terus"
+  },
+  "short": {
+   "zh": "笔直从太阳照到地面的阳光。",
+   "en": "Sunlight reaching the ground in a straight line from the Sun.",
+   "ms": "Cahaya matahari yang sampai ke tanah dalam garis lurus dari Matahari."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "energy-balance",
+  "name": {
+   "zh": "能量平衡",
+   "en": "Energy balance",
+   "ms": "Imbangan tenaga"
+  },
+  "short": {
+   "zh": "一年平均下来，地球收到和送走的能量相等。",
+   "en": "Over a year, the Earth sends away as much energy as it receives.",
+   "ms": "Sepanjang tahun, Bumi menghantar keluar tenaga sebanyak yang diterimanya."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "greenhouse-effect",
+  "name": {
+   "zh": "温室效应",
+   "en": "Greenhouse effect",
+   "ms": "Kesan rumah hijau"
+  },
+  "short": {
+   "zh": "水汽、二氧化碳等吸收地面红外线再送回地面，使地球保持温暖。",
+   "en": "Water vapour, CO₂ and other gases absorb the ground's infrared and send part back, keeping the Earth warm.",
+   "ms": "Wap air, CO₂ dan gas lain menyerap inframerah tanah dan menghantar sebahagiannya kembali, memastikan Bumi kekal panas."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "latent-heat",
+  "name": {
+   "zh": "潜热",
+   "en": "Latent heat",
+   "ms": "Haba pendam"
+  },
+  "short": {
+   "zh": "蒸发水时“藏”进水汽的热，水汽凝结时再放出。",
+   "en": "Heat stored in water vapour by evaporation and released when it condenses.",
+   "ms": "Haba yang tersimpan dalam wap air melalui penyejatan dan dilepaskan apabila ia terkondensasi."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "longwave",
+  "name": {
+   "zh": "长波辐射",
+   "en": "Longwave radiation",
+   "ms": "Sinaran gelombang panjang"
+  },
+  "short": {
+   "zh": "地面、空气和云发出的红外线。",
+   "en": "Infrared given off by the ground, the air and clouds.",
+   "ms": "Inframerah yang dipancarkan oleh tanah, udara dan awan."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "radiation",
+  "name": {
+   "zh": "辐射",
+   "en": "Radiation",
+   "ms": "Sinaran"
+  },
+  "short": {
+   "zh": "以电磁波传递能量，不需要任何物质，例如阳光。",
+   "en": "Energy carried by electromagnetic waves, needing no material — sunlight, for example.",
+   "ms": "Tenaga yang dibawa gelombang elektromagnet tanpa memerlukan bahan — contohnya cahaya matahari."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "sensible-heat",
+  "name": {
+   "zh": "感热",
+   "en": "Sensible heat",
+   "ms": "Haba deria"
+  },
+  "short": {
+   "zh": "直接使空气升温、温度计量得到的热。",
+   "en": "Heat that directly warms the air and shows on a thermometer.",
+   "ms": "Haba yang memanaskan udara secara terus dan kelihatan pada termometer."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "shortwave",
+  "name": {
+   "zh": "短波辐射",
+   "en": "Shortwave radiation",
+   "ms": "Sinaran gelombang pendek"
+  },
+  "short": {
+   "zh": "太阳发出的辐射，集中在可见光附近。",
+   "en": "Radiation from the Sun, concentrated around visible light.",
+   "ms": "Sinaran dari Matahari, tertumpu sekitar cahaya nampak."
+  },
+  "chapter": 3
+ },
+ {
+  "id": "annual-range",
+  "name": {
+   "zh": "气温年较差",
+   "en": "Annual temperature range",
+   "ms": "Julat suhu tahunan"
+  },
+  "short": {
+   "zh": "最热月与最冷月平均气温之差；赤道附近很小。",
+   "en": "The warmest month's average minus the coolest month's; very small near the equator.",
+   "ms": "Purata bulan paling panas tolak bulan paling sejuk; sangat kecil berhampiran khatulistiwa."
+  },
+  "chapter": 4
+ },
+ {
+  "id": "diurnal-range",
+  "name": {
+   "zh": "气温日较差",
+   "en": "Daily temperature range",
+   "ms": "Julat suhu harian"
+  },
+  "short": {
+   "zh": "一天中最高温与最低温之差；晴天大，阴天小。",
+   "en": "A day's highest minus lowest temperature; large on clear days, small on cloudy ones.",
+   "ms": "Suhu tertinggi tolak terendah dalam sehari; besar pada hari cerah, kecil pada hari berawan."
+  },
+  "chapter": 4
+ },
+ {
+  "id": "two-metre-temperature",
+  "name": {
+   "zh": "2 米气温",
+   "en": "2-metre temperature",
+   "ms": "Suhu 2 meter"
+  },
+  "short": {
+   "zh": "离地约 2 米、在阴凉通风处量的气温；预报说的“气温”就是它。",
+   "en": "Air temperature about 2 m above the ground, in shade and moving air; what forecasts mean by ‘temperature’.",
+   "ms": "Suhu udara kira-kira 2 m dari tanah, di tempat teduh dan berangin; maksud ‘suhu’ dalam ramalan."
+  },
+  "chapter": 4
+ },
+ {
+  "id": "dew-point",
+  "name": {
+   "zh": "露点",
+   "en": "Dew point",
+   "ms": "Takat embun"
+  },
+  "short": {
+   "zh": "空气在水汽和气压不变下冷却到饱和时的温度；最能代表空气里有多少水汽。",
+   "en": "The temperature at which air becomes saturated if cooled without changing its vapour or pressure; the best guide to how much vapour it holds.",
+   "ms": "Suhu apabila udara menjadi tepu jika disejukkan tanpa mengubah wap atau tekanannya; panduan terbaik bagi jumlah wap."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "evaporation",
+  "name": {
+   "zh": "蒸发",
+   "en": "Evaporation",
+   "ms": "Penyejatan"
+  },
+  "short": {
+   "zh": "液态水变成水汽、进入空气的过程。",
+   "en": "Liquid water turning into vapour and entering the air.",
+   "ms": "Air cecair bertukar menjadi wap dan memasuki udara."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "heat-stress",
+  "name": {
+   "zh": "热压力",
+   "en": "Heat stress",
+   "ms": "Tekanan haba"
+  },
+  "short": {
+   "zh": "又热又湿时汗水难以蒸发，身体难以散热的状态。",
+   "en": "When heat and humidity stop sweat evaporating, so the body struggles to shed heat.",
+   "ms": "Apabila panas dan lembap menghalang peluh menyejat, lalu tubuh sukar membuang haba."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "mixing-ratio",
+  "name": {
+   "zh": "混合比",
+   "en": "Mixing ratio",
+   "ms": "Nisbah campuran"
+  },
+  "short": {
+   "zh": "水汽质量与干空气质量之比（g/kg）；空气升降时只要不凝结就不变。",
+   "en": "Mass of vapour per mass of dry air (g/kg); unchanged as air rises or sinks unless it condenses.",
+   "ms": "Jisim wap bagi setiap jisim udara kering (g/kg); tidak berubah apabila udara naik atau turun kecuali berlaku kondensasi."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "relative-humidity",
+  "name": {
+   "zh": "相对湿度",
+   "en": "Relative humidity",
+   "ms": "Kelembapan relatif"
+  },
+  "short": {
+   "zh": "实际水汽压占饱和水汽压的百分比，表示离饱和还有多远。",
+   "en": "Actual vapour pressure as a percentage of the saturation value: how close the air is to saturation.",
+   "ms": "Tekanan wap sebenar sebagai peratus nilai tepu: sejauh mana udara hampir tepu."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "saturation",
+  "name": {
+   "zh": "饱和",
+   "en": "Saturation",
+   "ms": "Ketepuan"
+  },
+  "short": {
+   "zh": "蒸发和凝结互相抵消，空气不再有净蒸发的状态。",
+   "en": "The state where evaporation and condensation balance, so there is no further net evaporation.",
+   "ms": "Keadaan apabila penyejatan dan kondensasi seimbang, jadi tiada lagi penyejatan bersih."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "vapour-pressure",
+  "name": {
+   "zh": "水汽压",
+   "en": "Vapour pressure",
+   "ms": "Tekanan wap"
+  },
+  "short": {
+   "zh": "水汽在空气总气压中所占的部分，单位 hPa；饱和时的值只取决于温度。",
+   "en": "The share of air pressure exerted by water vapour, in hPa; its saturation value depends on temperature.",
+   "ms": "Bahagian tekanan udara yang dikenakan oleh wap air, dalam hPa; nilai tepunya bergantung pada suhu."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "water-vapour",
+  "name": {
+   "zh": "水汽",
+   "en": "Water vapour",
+   "ms": "Wap air"
+  },
+  "short": {
+   "zh": "以气体形式存在于空气中的水，看不见。",
+   "en": "Water in the form of a gas, mixed invisibly into the air.",
+   "ms": "Air dalam bentuk gas yang bercampur dalam udara tanpa kelihatan."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "wet-bulb",
+  "name": {
+   "zh": "湿球温度",
+   "en": "Wet-bulb temperature",
+   "ms": "Suhu bebuli basah"
+  },
+  "short": {
+   "zh": "靠蒸发冷却所能达到的最低温度。",
+   "en": "The lowest temperature that evaporation can cool something to.",
+   "ms": "Suhu terendah yang boleh dicapai melalui penyejukan penyejatan."
+  },
+  "chapter": 5
+ },
+ {
+  "id": "cloud",
+  "name": {
+   "zh": "云",
+   "en": "Cloud",
+   "ms": "Awan"
+  },
+  "short": {
+   "zh": "悬浮在空中的大群小水滴或冰晶。",
+   "en": "A visible mass of tiny droplets or ice crystals floating in the air.",
+   "ms": "Kumpulan titisan halus atau hablur ais yang terapung di udara."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cloud-base",
+  "name": {
+   "zh": "云底",
+   "en": "Cloud base",
+   "ms": "Dasar awan"
+  },
+  "short": {
+   "zh": "云的底部离地面的高度。",
+   "en": "The height of a cloud's bottom above the ground.",
+   "ms": "Ketinggian bahagian bawah awan dari tanah."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cloud-top",
+  "name": {
+   "zh": "云顶",
+   "en": "Cloud top",
+   "ms": "Puncak awan"
+  },
+  "short": {
+   "zh": "云的顶部所在的高度。",
+   "en": "The height of a cloud's top.",
+   "ms": "Ketinggian bahagian atas awan."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "condensation",
+  "name": {
+   "zh": "凝结",
+   "en": "Condensation",
+   "ms": "Kondensasi"
+  },
+  "short": {
+   "zh": "水汽变回液态水，同时放出潜热。",
+   "en": "Water vapour turning back into liquid water, releasing latent heat.",
+   "ms": "Wap air bertukar kembali menjadi air cecair, membebaskan haba pendam."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "condensation-nuclei",
+  "name": {
+   "zh": "凝结核",
+   "en": "Condensation nuclei",
+   "ms": "Nukleus kondensasi"
+  },
+  "short": {
+   "zh": "海盐、尘埃、烟等微粒，水汽先凝结在它们上面。",
+   "en": "Specks of salt, dust or smoke on which vapour condenses first.",
+   "ms": "Zarah garam, debu atau asap tempat wap terkondensasi dahulu."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "dew",
+  "name": {
+   "zh": "露",
+   "en": "Dew",
+   "ms": "Embun"
+  },
+  "short": {
+   "zh": "晴朗无风的晚上，水汽在冷却的表面上凝结成的水珠。",
+   "en": "Water condensed on surfaces that have cooled on clear, calm nights.",
+   "ms": "Air yang terkondensasi pada permukaan yang menyejuk pada malam cerah dan tenang."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "fog",
+  "name": {
+   "zh": "雾",
+   "en": "Fog",
+   "ms": "Kabus"
+  },
+  "short": {
+   "zh": "贴地的云，能见度低于 1 公里。",
+   "en": "A cloud at ground level, with visibility under 1 km.",
+   "ms": "Awan di paras tanah, dengan keterlihatan kurang daripada 1 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "haze",
+  "name": {
+   "zh": "霾",
+   "en": "Haze",
+   "ms": "Jerebu"
+  },
+  "short": {
+   "zh": "微小颗粒（尘、烟、盐，或带水的凝结核）使空气发白、能见度降低。",
+   "en": "Tiny particles (dust, smoke, salt or damp nuclei) making the air milky and cutting visibility.",
+   "ms": "Zarah halus (debu, asap, garam atau nukleus lembap) yang menjadikan udara seperti susu dan mengurangkan keterlihatan."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "high-cloud",
+  "name": {
+   "zh": "高云",
+   "en": "High cloud",
+   "ms": "Awan tinggi"
+  },
+  "short": {
+   "zh": "卷云、卷层云、卷积云；热带云底约 6–18 公里，几乎全是冰晶。",
+   "en": "Cirrus, cirrostratus, cirrocumulus; in the tropics based about 6–18 km up, nearly all ice.",
+   "ms": "Sirus, sirostratus, sirokumulus; di kawasan tropika berdasar kira-kira 6–18 km, hampir semuanya ais."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "low-cloud",
+  "name": {
+   "zh": "低云",
+   "en": "Low cloud",
+   "ms": "Awan rendah"
+  },
+  "short": {
+   "zh": "层云、层积云、雨层云；云底在约 2 公里以下。",
+   "en": "Stratus, stratocumulus, nimbostratus; based below about 2 km.",
+   "ms": "Stratus, stratokumulus, nimbostratus; berdasar di bawah kira-kira 2 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "middle-cloud",
+  "name": {
+   "zh": "中云",
+   "en": "Middle cloud",
+   "ms": "Awan sederhana"
+  },
+  "short": {
+   "zh": "高层云、高积云；热带云底约 2–8 公里。",
+   "en": "Altostratus and altocumulus; in the tropics based about 2–8 km up.",
+   "ms": "Altostratus dan altokumulus; di kawasan tropika berdasar kira-kira 2–8 km."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "okta",
+  "name": {
+   "zh": "八分量（okta）",
+   "en": "Okta",
+   "ms": "Okta"
+  },
+  "short": {
+   "zh": "云量单位：天空分 8 份，0 无云，8 满天云。",
+   "en": "Unit of cloud cover: the sky in eighths, 0 clear to 8 overcast.",
+   "ms": "Unit litupan awan: langit dalam perlapanan, 0 cerah hingga 8 mendung."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "visibility",
+  "name": {
+   "zh": "能见度",
+   "en": "Visibility",
+   "ms": "Keterlihatan"
+  },
+  "short": {
+   "zh": "在地面上能看多远。",
+   "en": "How far you can see at ground level.",
+   "ms": "Sejauh mana anda boleh melihat di paras tanah."
+  },
+  "chapter": 6
+ },
+ {
+  "id": "cape",
+  "name": {
+   "zh": "对流有效位能",
+   "en": "Convective available potential energy",
+   "ms": "Tenaga keupayaan perolakan tersedia"
+  },
+  "short": {
+   "zh": "气块比周围暖的那段所累积的浮力能量（J/kg）；越大雷雨越强。",
+   "en": "The buoyant energy a parcel gains where it is warmer than its surroundings (J/kg); bigger means stronger storms.",
+   "ms": "Tenaga keapungan yang diperoleh bungkusan apabila lebih panas daripada sekeliling (J/kg); lebih besar bermaksud ribut lebih kuat."
+  },
+  "chapter": 7,
+  "abbr": "CAPE"
+ },
+ {
+  "id": "cin",
+  "name": {
+   "zh": "对流抑制能量",
+   "en": "Convective inhibition",
+   "ms": "Perencatan perolakan"
+  },
+  "short": {
+   "zh": "气块自己上升前需要被推过冷层的能量（J/kg）。",
+   "en": "The energy needed to push a parcel through a cooler layer before it rises by itself (J/kg).",
+   "ms": "Tenaga yang diperlukan untuk menolak bungkusan melalui lapisan lebih sejuk sebelum ia naik sendiri (J/kg)."
+  },
+  "chapter": 7,
+  "abbr": "CIN"
+ },
+ {
+  "id": "collision-coalescence",
+  "name": {
+   "zh": "碰并过程",
+   "en": "Collision–coalescence",
+   "ms": "Perlanggaran–percantuman"
+  },
+  "short": {
+   "zh": "大云滴下落时撞上并吞并小云滴而长成雨滴。",
+   "en": "Larger droplets falling and merging with smaller ones until they become raindrops.",
+   "ms": "Titisan lebih besar jatuh dan bercantum dengan yang kecil sehingga menjadi titisan hujan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "conditional-instability",
+  "name": {
+   "zh": "条件性不稳定",
+   "en": "Conditional instability",
+   "ms": "Ketidakstabilan bersyarat"
+  },
+  "short": {
+   "zh": "未饱和时稳定，一旦被推到云底以上就变得不稳定。",
+   "en": "Stable while unsaturated, unstable once pushed above the cloud base.",
+   "ms": "Stabil semasa tidak tepu, tidak stabil sebaik ditolak melepasi dasar awan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "convection",
+  "name": {
+   "zh": "对流",
+   "en": "Convection",
+   "ms": "Perolakan"
+  },
+  "short": {
+   "zh": "受热的空气上升、较冷空气下沉的翻腾运动。",
+   "en": "Overturning in which heated air rises and cooler air sinks.",
+   "ms": "Pembalikan apabila udara yang dipanaskan naik dan udara lebih sejuk turun."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "dry-adiabatic-rate",
+  "name": {
+   "zh": "干绝热直减率",
+   "en": "Dry adiabatic rate",
+   "ms": "Kadar adiabatik kering"
+  },
+  "short": {
+   "zh": "未饱和气块上升时的冷却率，约 9.8 °C/km。",
+   "en": "The cooling rate of a rising unsaturated parcel, about 9.8 °C/km.",
+   "ms": "Kadar penyejukan bungkusan tidak tepu yang naik, kira-kira 9.8 °C/km."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "freezing-level",
+  "name": {
+   "zh": "冻结高度",
+   "en": "Freezing level",
+   "ms": "Aras beku"
+  },
+  "short": {
+   "zh": "气温为 0 °C 的高度；吉隆坡上空约 5 公里。",
+   "en": "The height where the temperature is 0 °C; about 5 km over Kuala Lumpur.",
+   "ms": "Ketinggian suhu 0 °C; kira-kira 5 km di atas Kuala Lumpur."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "lapse-rate",
+  "name": {
+   "zh": "直减率",
+   "en": "Lapse rate",
+   "ms": "Kadar susut"
+  },
+  "short": {
+   "zh": "温度随高度下降的快慢；对流层平均约 6.5 °C/km。",
+   "en": "How fast temperature falls with height; about 6.5 °C/km on average in the troposphere.",
+   "ms": "Kadar suhu jatuh dengan ketinggian; purata kira-kira 6.5 °C/km dalam troposfera."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "lcl",
+  "name": {
+   "zh": "抬升凝结高度",
+   "en": "Lifting condensation level",
+   "ms": "Aras kondensasi angkatan"
+  },
+  "short": {
+   "zh": "上升气块开始饱和、成云的高度；约等于 125 米 ×（气温 − 露点）。",
+   "en": "The height where a rising parcel saturates and cloud forms; about 125 m × (temperature − dew point).",
+   "ms": "Ketinggian bungkusan yang naik menjadi tepu dan awan terbentuk; kira-kira 125 m × (suhu − takat embun)."
+  },
+  "chapter": 7,
+  "abbr": "LCL"
+ },
+ {
+  "id": "moist-adiabatic-rate",
+  "name": {
+   "zh": "湿绝热直减率",
+   "en": "Moist adiabatic rate",
+   "ms": "Kadar adiabatik lembap"
+  },
+  "short": {
+   "zh": "饱和气块上升时的冷却率，约 4–6 °C/km，因凝结放热而较慢。",
+   "en": "The cooling rate of a rising saturated parcel, about 4–6 °C/km, slower because condensation releases heat.",
+   "ms": "Kadar penyejukan bungkusan tepu yang naik, kira-kira 4–6 °C/km, lebih perlahan kerana kondensasi membebaskan haba."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "parcel",
+  "name": {
+   "zh": "气块",
+   "en": "Air parcel",
+   "ms": "Bungkusan udara"
+  },
+  "short": {
+   "zh": "想象中被包起来、一起移动的一团空气。",
+   "en": "An imagined blob of air that moves as a unit.",
+   "ms": "Seketul udara khayalan yang bergerak sebagai satu unit."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "precipitation",
+  "name": {
+   "zh": "降水",
+   "en": "Precipitation",
+   "ms": "Kerpasan"
+  },
+  "short": {
+   "zh": "从云落到地面的水或冰：雨、毛毛雨、冰雹等。",
+   "en": "Water or ice falling from cloud to the ground: rain, drizzle, hail and so on.",
+   "ms": "Air atau ais yang jatuh dari awan ke tanah: hujan, gerimis, hujan batu dan sebagainya."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "stable-air",
+  "name": {
+   "zh": "稳定大气",
+   "en": "Stable air",
+   "ms": "Udara stabil"
+  },
+  "short": {
+   "zh": "被抬起的气块比周围冷，会沉回原处。",
+   "en": "A lifted parcel is colder than its surroundings and sinks back.",
+   "ms": "Bungkusan yang diangkat lebih sejuk daripada sekeliling dan tenggelam semula."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "thermal",
+  "name": {
+   "zh": "热泡",
+   "en": "Thermal",
+   "ms": "Termal"
+  },
+  "short": {
+   "zh": "被地面加热后上升的一团暖空气。",
+   "en": "A rising bubble of air warmed by the ground.",
+   "ms": "Gelembung udara yang dipanaskan tanah dan naik."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "trace",
+  "name": {
+   "zh": "微量降水",
+   "en": "Trace",
+   "ms": "Surih"
+  },
+  "short": {
+   "zh": "少到雨量筒量不出来的降水。",
+   "en": "Precipitation too small for the rain gauge to measure.",
+   "ms": "Kerpasan yang terlalu sedikit untuk diukur oleh tolok hujan."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "unstable-air",
+  "name": {
+   "zh": "不稳定大气",
+   "en": "Unstable air",
+   "ms": "Udara tidak stabil"
+  },
+  "short": {
+   "zh": "被抬起的气块比周围暖，会自己继续上升。",
+   "en": "A lifted parcel is warmer than its surroundings and keeps rising.",
+   "ms": "Bungkusan yang diangkat lebih panas daripada sekeliling dan terus naik."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "virga",
+  "name": {
+   "zh": "雨幡",
+   "en": "Virga",
+   "ms": "Virga"
+  },
+  "short": {
+   "zh": "从云底落下、却在半空蒸发掉的雨。",
+   "en": "Rain that falls from a cloud but evaporates before reaching the ground.",
+   "ms": "Hujan yang jatuh dari awan tetapi menyejat sebelum sampai ke tanah."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "water-cycle",
+  "name": {
+   "zh": "水循环",
+   "en": "Water cycle",
+   "ms": "Kitaran air"
+  },
+  "short": {
+   "zh": "水在海洋、空气、陆地之间不停蒸发、凝结、降水、流动的循环。",
+   "en": "The endless loop of evaporation, condensation, precipitation and flow between sea, air and land.",
+   "ms": "Kitaran tanpa henti penyejatan, kondensasi, kerpasan dan aliran antara laut, udara dan darat."
+  },
+  "chapter": 7
+ },
+ {
+  "id": "halo",
+  "name": {
+   "zh": "晕",
+   "en": "Halo",
+   "ms": "Halo"
+  },
+  "short": {
+   "zh": "光穿过冰晶折射形成、绕着太阳或月亮的光圈，常见 22°。",
+   "en": "A ring round the Sun or Moon from light refracted by ice crystals, usually at 22°.",
+   "ms": "Cincin di sekeliling Matahari atau Bulan daripada cahaya yang dibiaskan hablur ais, biasanya pada 22°."
+  },
+  "chapter": 8
+ },
+ {
+  "id": "rainbow",
+  "name": {
+   "zh": "彩虹",
+   "en": "Rainbow",
+   "ms": "Pelangi"
+  },
+  "short": {
+   "zh": "背对太阳看雨时，阳光在雨滴里折射、反射形成的彩色弧，约离对日点 42°。",
+   "en": "A coloured arc from sunlight refracted and reflected in raindrops, seen with the Sun behind you, about 42° from the antisolar point.",
+   "ms": "Lengkung berwarna daripada cahaya matahari yang dibiaskan dan dipantulkan dalam titisan hujan, dilihat dengan Matahari di belakang, kira-kira 42° dari titik antisuria."
+  },
+  "chapter": 8
+ },
+ {
+  "id": "scattering",
+  "name": {
+   "zh": "散射",
+   "en": "Scattering",
+   "ms": "Penyerakan"
+  },
+  "short": {
+   "zh": "光被空气分子或颗粒弹向四面八方；蓝光被空气分子散射得最多。",
+   "en": "Light bounced in all directions by molecules or particles; air molecules scatter blue most.",
+   "ms": "Cahaya dipantulkan ke semua arah oleh molekul atau zarah; molekul udara paling banyak menyerakkan biru."
+  },
+  "chapter": 8
+ },
+ {
+  "id": "beaufort-scale",
+  "name": {
+   "zh": "蒲福风级",
+   "en": "Beaufort scale",
+   "ms": "Skala Beaufort"
+  },
+  "short": {
+   "zh": "按风对周围事物的影响把风速分成 0–12 级。",
+   "en": "Wind speed graded 0–12 by its effects on things around you.",
+   "ms": "Kelajuan angin dikelaskan 0–12 mengikut kesannya pada benda di sekeliling."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "coriolis-effect",
+  "name": {
+   "zh": "科里奥利力",
+   "en": "Coriolis effect",
+   "ms": "Kesan Coriolis"
+  },
+  "short": {
+   "zh": "地球自转使移动的空气看起来被偏转：北半球向右；赤道上为零。",
+   "en": "The apparent deflection of moving air by the Earth's spin: to the right in the north; zero at the equator.",
+   "ms": "Pesongan ketara udara bergerak akibat putaran Bumi: ke kanan di utara; sifar di khatulistiwa."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "gust",
+  "name": {
+   "zh": "阵风",
+   "en": "Gust",
+   "ms": "Tiupan kencang"
+  },
+  "short": {
+   "zh": "比 10 分钟平均风速突然高出、又很快减弱的一阵风。",
+   "en": "A sudden, short burst above the 10-minute average wind speed.",
+   "ms": "Lonjakan singkat dan tiba-tiba melebihi kelajuan angin purata 10 minit."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "high-pressure",
+  "name": {
+   "zh": "高压",
+   "en": "High pressure",
+   "ms": "Tekanan tinggi"
+  },
+  "short": {
+   "zh": "气压比周围高的区域；空气下沉，天气多晴好。",
+   "en": "An area of higher pressure than its surroundings; air sinks and the weather is usually fair.",
+   "ms": "Kawasan bertekanan lebih tinggi daripada sekeliling; udara turun dan cuaca biasanya baik."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "isobar",
+  "name": {
+   "zh": "等压线",
+   "en": "Isobar",
+   "ms": "Isobar"
+  },
+  "short": {
+   "zh": "地图上连接海平面气压相同地点的线。",
+   "en": "A line on a map joining places of equal sea-level pressure.",
+   "ms": "Garisan pada peta yang menghubungkan tempat bertekanan paras laut sama."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "land-breeze",
+  "name": {
+   "zh": "陆风",
+   "en": "Land breeze",
+   "ms": "Bayu darat"
+  },
+  "short": {
+   "zh": "晚上陆地比海冷，空气从陆地吹向海面。",
+   "en": "At night the land is cooler than the sea, and air blows from land to sea.",
+   "ms": "Pada waktu malam darat lebih sejuk daripada laut, dan udara bertiup dari darat ke laut."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "low-pressure",
+  "name": {
+   "zh": "低压",
+   "en": "Low pressure",
+   "ms": "Tekanan rendah"
+  },
+  "short": {
+   "zh": "气压比周围低的区域；空气辐合上升，多云多雨。",
+   "en": "An area of lower pressure than its surroundings; air converges and rises, bringing cloud and rain.",
+   "ms": "Kawasan bertekanan lebih rendah daripada sekeliling; udara menumpu dan naik, membawa awan dan hujan."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "pressure-gradient-force",
+  "name": {
+   "zh": "气压梯度力",
+   "en": "Pressure-gradient force",
+   "ms": "Daya kecerunan tekanan"
+  },
+  "short": {
+   "zh": "由气压差产生、从高压推向低压的力；等压线越密越强。",
+   "en": "The push from high to low pressure caused by a pressure difference; stronger where isobars are close.",
+   "ms": "Tolakan dari tekanan tinggi ke rendah akibat perbezaan tekanan; lebih kuat apabila isobar rapat."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "sea-breeze",
+  "name": {
+   "zh": "海风",
+   "en": "Sea breeze",
+   "ms": "Bayu laut"
+  },
+  "short": {
+   "zh": "白天陆地比海热，空气从海面吹向陆地。",
+   "en": "By day the land is warmer than the sea, and air blows from sea to land.",
+   "ms": "Pada siang hari darat lebih panas daripada laut, dan udara bertiup dari laut ke darat."
+  },
+  "chapter": 9
+ },
+ {
+  "id": "clear-air-turbulence",
+  "name": {
+   "zh": "晴空湍流",
+   "en": "Clear-air turbulence",
+   "ms": "Gelora udara jernih"
+  },
+  "short": {
+   "zh": "没有云的高空中突然的颠簸，常在急流附近。",
+   "en": "Sudden bumpiness in cloudless air aloft, often near a jet stream.",
+   "ms": "Gegaran tiba-tiba dalam udara tanpa awan di tempat tinggi, sering berhampiran aliran jet."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "geopotential-height",
+  "name": {
+   "zh": "位势高度",
+   "en": "Geopotential height",
+   "ms": "Ketinggian geoupaya"
+  },
+  "short": {
+   "zh": "某个气压层离海平面的高度；热带比较高。",
+   "en": "The height of a pressure level above sea level; higher over the tropics.",
+   "ms": "Ketinggian sesuatu aras tekanan dari paras laut; lebih tinggi di atas tropika."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "jet-stream",
+  "name": {
+   "zh": "急流",
+   "en": "Jet stream",
+   "ms": "Aliran jet"
+  },
+  "short": {
+   "zh": "高空又窄又快、大致由西向东吹的风带。",
+   "en": "A narrow, fast band of wind high up, blowing broadly west to east.",
+   "ms": "Jalur angin sempit dan laju di udara tinggi, bertiup secara umum dari barat ke timur."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "pressure-level",
+  "name": {
+   "zh": "气压层",
+   "en": "Pressure level",
+   "ms": "Aras tekanan"
+  },
+  "short": {
+   "zh": "气压处处相同的一个面，例如 500 hPa；高空天气图就画在这样的面上。",
+   "en": "A surface of equal pressure, such as 500 hPa; upper-air charts are drawn on these.",
+   "ms": "Permukaan bertekanan sama, seperti 500 hPa; carta udara atas dilukis padanya."
+  },
+  "chapter": 10
+ },
+ {
+  "id": "ferrel-cell",
+  "name": {
+   "zh": "费雷尔环流圈",
+   "en": "Ferrel cell",
+   "ms": "Sel Ferrel"
+  },
+  "short": {
+   "zh": "中纬度（约 30°–60°）的环流圈。",
+   "en": "The middle-latitude cell, between about 30° and 60°.",
+   "ms": "Sel latitud sederhana, antara kira-kira 30° dan 60°."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "hadley-cell",
+  "name": {
+   "zh": "哈德来环流圈",
+   "en": "Hadley cell",
+   "ms": "Sel Hadley"
+  },
+  "short": {
+   "zh": "赤道空气上升、在约 30° 下沉、再沿地面流回赤道的环流。",
+   "en": "The loop in which equatorial air rises, sinks near 30° and flows back along the surface.",
+   "ms": "Gelung udara khatulistiwa yang naik, turun berhampiran 30° dan mengalir kembali sepanjang permukaan."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "itcz",
+  "name": {
+   "zh": "热带辐合带",
+   "en": "Intertropical convergence zone",
+   "ms": "Zon penumpuan antara tropika"
+  },
+  "short": {
+   "zh": "两边信风在赤道附近相遇、空气上升、多雷雨的地带；随季节南北移动。",
+   "en": "Where the trade winds meet near the equator; rising air and thunderstorms; moves north and south with the seasons.",
+   "ms": "Tempat angin pasat bertemu berhampiran khatulistiwa; udara naik dan ribut petir; bergerak ke utara dan selatan mengikut musim."
+  },
+  "chapter": 11,
+  "abbr": "ITCZ"
+ },
+ {
+  "id": "polar-cell",
+  "name": {
+   "zh": "极地环流圈",
+   "en": "Polar cell",
+   "ms": "Sel kutub"
+  },
+  "short": {
+   "zh": "60° 以外的环流圈；冷空气从极地吹出成为极地东风。",
+   "en": "The cell beyond 60°; cold air flowing out of the poles as the polar easterlies.",
+   "ms": "Sel melepasi 60°; udara sejuk mengalir keluar dari kutub sebagai angin timur kutub."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "subtropical-high",
+  "name": {
+   "zh": "副热带高压",
+   "en": "Subtropical high",
+   "ms": "Tekanan tinggi subtropika"
+  },
+  "short": {
+   "zh": "约南北纬 30° 空气下沉形成的高压带，晴朗干燥。",
+   "en": "The belt of high pressure near 30° where air sinks; clear and dry.",
+   "ms": "Jalur tekanan tinggi berhampiran 30° tempat udara turun; cerah dan kering."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "trade-winds",
+  "name": {
+   "zh": "信风",
+   "en": "Trade winds",
+   "ms": "Angin pasat"
+  },
+  "short": {
+   "zh": "从副热带高压吹向赤道的地面风：北半球东北风，南半球东南风。",
+   "en": "Surface winds from the subtropical highs to the equator: north-easterly in the north, south-easterly in the south.",
+   "ms": "Angin permukaan dari tekanan tinggi subtropika ke khatulistiwa: timur laut di utara, tenggara di selatan."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "walker-circulation",
+  "name": {
+   "zh": "沃克环流",
+   "en": "Walker circulation",
+   "ms": "Peredaran Walker"
+  },
+  "short": {
+   "zh": "沿赤道太平洋的东西向环流：西边上升多雨，东边下沉干燥。",
+   "en": "The east–west loop along the equatorial Pacific: rising and wet in the west, sinking and dry in the east.",
+   "ms": "Gelung timur–barat di sepanjang Pasifik khatulistiwa: naik dan basah di barat, turun dan kering di timur."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "westerlies",
+  "name": {
+   "zh": "西风带",
+   "en": "Westerlies",
+   "ms": "Angin barat"
+  },
+  "short": {
+   "zh": "约 30°–60° 之间由西向东吹的地面风。",
+   "en": "Surface winds blowing west to east between about 30° and 60°.",
+   "ms": "Angin permukaan bertiup dari barat ke timur antara kira-kira 30° dan 60°."
+  },
+  "chapter": 11
+ },
+ {
+  "id": "air-mass",
+  "name": {
+   "zh": "气团",
+   "en": "Air mass",
+   "ms": "Jisim udara"
+  },
+  "short": {
+   "zh": "温度、湿度都很均匀的一大块空气，可达上千公里。",
+   "en": "A huge body of air with nearly uniform temperature and humidity, a thousand kilometres or more across.",
+   "ms": "Kumpulan udara yang sangat besar dengan suhu dan kelembapan hampir seragam, seribu kilometer atau lebih."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "front",
+  "name": {
+   "zh": "锋面",
+   "en": "Front",
+   "ms": "Front"
+  },
+  "short": {
+   "zh": "两个性质不同的气团之间的交界。",
+   "en": "The boundary between two different air masses.",
+   "ms": "Sempadan antara dua jisim udara yang berbeza."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "lightning",
+  "name": {
+   "zh": "闪电",
+   "en": "Lightning",
+   "ms": "Kilat"
+  },
+  "short": {
+   "zh": "雷雨云里或云和地面之间的巨大放电。",
+   "en": "A giant electrical discharge within a storm cloud or between cloud and ground.",
+   "ms": "Nyahcas elektrik yang besar dalam awan ribut atau antara awan dan tanah."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "thunderstorm",
+  "name": {
+   "zh": "雷暴",
+   "en": "Thunderstorm",
+   "ms": "Ribut petir"
+  },
+  "short": {
+   "zh": "有雷有电的积雨云；普通雷暴一小时内走完一生。",
+   "en": "A cumulonimbus with thunder and lightning; an ordinary one lives less than an hour.",
+   "ms": "Kumulonimbus dengan guruh dan kilat; yang biasa hidup kurang sejam."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "tropical-cyclone",
+  "name": {
+   "zh": "热带气旋",
+   "en": "Tropical cyclone",
+   "ms": "Siklon tropika"
+  },
+  "short": {
+   "zh": "在暖海上形成、绕低压中心旋转的大风暴；台风、飓风、气旋都是它。",
+   "en": "A great spinning storm over warm sea around a low-pressure centre; typhoons, hurricanes and cyclones are all tropical cyclones.",
+   "ms": "Ribut besar berputar di atas laut panas di sekeliling pusat tekanan rendah; taufan, hurikan dan siklon semuanya siklon tropika."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "tropical-depression",
+  "name": {
+   "zh": "热带低压",
+   "en": "Tropical depression",
+   "ms": "Lekukan tropika"
+  },
+  "short": {
+   "zh": "刚开始旋转、风速约 20–34 节的热带气旋初期阶段。",
+   "en": "The early stage of a tropical cyclone, circulating with winds of about 20–34 knots.",
+   "ms": "Peringkat awal siklon tropika, berpusar dengan angin kira-kira 20–34 knot."
+  },
+  "chapter": 12
+ },
+ {
+  "id": "neap-tide",
+  "name": {
+   "zh": "小潮",
+   "en": "Neap tide",
+   "ms": "Pasang perbani"
+  },
+  "short": {
+   "zh": "上弦和下弦月时的潮汐，涨落幅度较小。",
+   "en": "The tides around first and last quarter, with a smaller range.",
+   "ms": "Pasang surut sekitar suku pertama dan akhir, dengan julat lebih kecil."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "ocean-current",
+  "name": {
+   "zh": "洋流",
+   "en": "Ocean current",
+   "ms": "Arus lautan"
+  },
+  "short": {
+   "zh": "被长期的风带动、大范围流动的表层海水。",
+   "en": "Large-scale flow of surface water set going by the prevailing winds.",
+   "ms": "Aliran air permukaan berskala besar yang digerakkan oleh angin lazim."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "significant-wave-height",
+  "name": {
+   "zh": "有效波高",
+   "en": "Significant wave height",
+   "ms": "Ketinggian ombak bererti"
+  },
+  "short": {
+   "zh": "约等于最高三分之一海浪的平均高度；预报里的“浪高”。",
+   "en": "Roughly the mean height of the highest third of the waves; the ‘wave height’ in forecasts.",
+   "ms": "Lebih kurang purata ketinggian sepertiga ombak tertinggi; ‘ketinggian ombak’ dalam ramalan."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "spring-tide",
+  "name": {
+   "zh": "大潮",
+   "en": "Spring tide",
+   "ms": "Pasang besar"
+  },
+  "short": {
+   "zh": "新月和满月时的潮汐，涨落幅度最大。",
+   "en": "The tides around new and full moon, with the greatest range.",
+   "ms": "Pasang surut sekitar bulan baharu dan purnama, dengan julat terbesar."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "sst",
+  "name": {
+   "zh": "海表温度",
+   "en": "Sea-surface temperature",
+   "ms": "Suhu permukaan laut"
+  },
+  "short": {
+   "zh": "海洋表层水的温度；影响上方空气的冷暖和湿度。",
+   "en": "The temperature of the ocean's surface water; it shapes the warmth and moisture of the air above.",
+   "ms": "Suhu air permukaan lautan; ia membentuk kehangatan dan kelembapan udara di atasnya."
+  },
+  "chapter": 13,
+  "abbr": "SST"
+ },
+ {
+  "id": "storm-surge",
+  "name": {
+   "zh": "风暴潮",
+   "en": "Storm surge",
+   "ms": "Ribut air pasang"
+  },
+  "short": {
+   "zh": "风暴的风把海水推向岸边造成的额外水位上升。",
+   "en": "The extra rise in sea level caused by a storm's winds pushing water onshore.",
+   "ms": "Kenaikan tambahan paras laut akibat angin ribut menolak air ke pantai."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "swell",
+  "name": {
+   "zh": "涌浪",
+   "en": "Swell",
+   "ms": "Alun"
+  },
+  "short": {
+   "zh": "远方风暴形成、长距离传来的浪，整齐、周期长。",
+   "en": "Waves from a distant storm that have travelled far; regular, long-period.",
+   "ms": "Ombak dari ribut jauh yang bergerak jauh; teratur, berkala panjang."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "tide",
+  "name": {
+   "zh": "潮汐",
+   "en": "Tide",
+   "ms": "Pasang surut"
+  },
+  "short": {
+   "zh": "月亮和太阳引力造成的海面规律涨落。",
+   "en": "The regular rise and fall of the sea caused by the pull of the Moon and Sun.",
+   "ms": "Naik turun laut yang teratur akibat tarikan Bulan dan Matahari."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "upwelling",
+  "name": {
+   "zh": "上升流",
+   "en": "Upwelling",
+   "ms": "Julangan air"
+  },
+  "short": {
+   "zh": "表层海水被风推走后，底下冰冷富养分的海水涌上来补充。",
+   "en": "Cold, nutrient-rich water rising to replace surface water pushed away by the wind.",
+   "ms": "Air sejuk kaya nutrien yang naik menggantikan air permukaan yang ditolak angin."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "wind-waves",
+  "name": {
+   "zh": "风浪",
+   "en": "Wind waves",
+   "ms": "Ombak angin"
+  },
+  "short": {
+   "zh": "由当地正在吹的风直接吹起的浪，较乱较陡。",
+   "en": "Waves raised by the local wind; choppy and steep.",
+   "ms": "Ombak yang dinaikkan angin setempat; berkocak dan curam."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "el-nino",
+  "name": {
+   "zh": "厄尔尼诺",
+   "en": "El Niño",
+   "ms": "El Niño"
+  },
+  "short": {
+   "zh": "东太平洋赤道一带海水比平常暖很多的现象；东南亚常偏干。",
+   "en": "Unusual warming of the eastern equatorial Pacific; South-East Asia is often drier.",
+   "ms": "Pemanasan luar biasa Pasifik khatulistiwa timur; Asia Tenggara sering lebih kering."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "enso",
+  "name": {
+   "zh": "ENSO",
+   "en": "ENSO",
+   "ms": "ENSO"
+  },
+  "short": {
+   "zh": "厄尔尼诺和南方涛动的合称；包括厄尔尼诺、正常和拉尼娜。",
+   "en": "El Niño and the Southern Oscillation together, covering El Niño, neutral and La Niña.",
+   "ms": "El Niño dan Ayunan Selatan bersama, merangkumi El Niño, neutral dan La Niña."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "iod",
+  "name": {
+   "zh": "印度洋偶极子（IOD）",
+   "en": "Indian Ocean Dipole (IOD)",
+   "ms": "Dipol Lautan Hindi (IOD)"
+  },
+  "short": {
+   "zh": "印度洋东西两边海温的跷跷板；正相位时印尼一带偏干。",
+   "en": "A seesaw of sea temperature between the east and west Indian Ocean; positive phases dry Indonesia.",
+   "ms": "Jongkang-jongkit suhu laut antara Lautan Hindi timur dan barat; fasa positif mengeringkan Indonesia."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "la-nina",
+  "name": {
+   "zh": "拉尼娜",
+   "en": "La Niña",
+   "ms": "La Niña"
+  },
+  "short": {
+   "zh": "中、东太平洋海水比平常冷，信风特别强；马来西亚常偏湿。",
+   "en": "Colder than normal central and eastern Pacific with strong trades; Malaysia is often wetter.",
+   "ms": "Pasifik tengah dan timur lebih sejuk dengan angin pasat kuat; Malaysia sering lebih basah."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "mjo",
+  "name": {
+   "zh": "MJO（马登–朱利安振荡）",
+   "en": "MJO (Madden–Julian Oscillation)",
+   "ms": "MJO (Ayunan Madden–Julian)"
+  },
+  "short": {
+   "zh": "向东移动的热带云雨带，约 30–60 天绕地球一圈；分 8 个相位。",
+   "en": "An eastward-moving tropical band of cloud and rain that circles the globe in about 30–60 days; described in 8 phases.",
+   "ms": "Jalur awan dan hujan tropika yang bergerak ke timur, mengelilingi bumi dalam kira-kira 30–60 hari; diterangkan dalam 8 fasa."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "roni",
+  "name": {
+   "zh": "RONI 指数",
+   "en": "RONI",
+   "ms": "RONI"
+  },
+  "short": {
+   "zh": "NOAA 判断 ENSO 的指数：Niño 3.4 区海温距平减去热带平均；±0.5 °C 为门槛。",
+   "en": "NOAA's ENSO index: the Niño 3.4 sea-temperature departure minus the tropical average; ±0.5 °C is the threshold.",
+   "ms": "Indeks ENSO NOAA: sisihan suhu laut Niño 3.4 tolak purata tropika; ambangnya ±0.5 °C."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "southern-oscillation",
+  "name": {
+   "zh": "南方涛动",
+   "en": "Southern Oscillation",
+   "ms": "Ayunan Selatan"
+  },
+  "short": {
+   "zh": "太平洋东西两端气压像跷跷板一样互换。",
+   "en": "The seesaw of surface pressure between the two ends of the Pacific.",
+   "ms": "Jongkang-jongkit tekanan permukaan antara dua hujung Pasifik."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "teleconnection",
+  "name": {
+   "zh": "遥相关",
+   "en": "Teleconnection",
+   "ms": "Telesambungan"
+  },
+  "short": {
+   "zh": "一片海洋的冷暖改变很远地方天气的联系。",
+   "en": "A link by which a warm or cool ocean changes the weather far away.",
+   "ms": "Hubungan apabila lautan panas atau sejuk mengubah cuaca di tempat jauh."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "anomaly",
+  "name": {
+   "zh": "距平",
+   "en": "Anomaly",
+   "ms": "Anomali"
+  },
+  "short": {
+   "zh": "实际值减去平均值；正数比平常高，负数比平常低。",
+   "en": "The actual value minus the normal; positive is above normal, negative below.",
+   "ms": "Nilai sebenar tolak normal; positif di atas normal, negatif di bawah."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "climate-normal",
+  "name": {
+   "zh": "气候平均值",
+   "en": "Climate normal",
+   "ms": "Normal iklim"
+  },
+  "short": {
+   "zh": "30 年的平均值，例如 1991–2020 年；用来说“平常”。",
+   "en": "A 30-year average such as 1991–2020; what ‘normal’ means.",
+   "ms": "Purata 30 tahun seperti 1991–2020; maksud ‘normal’."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "global-warming",
+  "name": {
+   "zh": "全球变暖",
+   "en": "Global warming",
+   "ms": "Pemanasan global"
+  },
+  "short": {
+   "zh": "温室气体增加，使全球平均气温长期升高。",
+   "en": "The long-term rise in global average temperature as greenhouse gases build up.",
+   "ms": "Kenaikan jangka panjang suhu purata global apabila gas rumah hijau bertambah."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "koppen",
+  "name": {
+   "zh": "Köppen 气候分类",
+   "en": "Köppen classification",
+   "ms": "Pengelasan Köppen"
+  },
+  "short": {
+   "zh": "按各月平均气温和雨量把气候分成 A、B、C、D、E 五大类；马来西亚多为 Af。",
+   "en": "Sorts climates by monthly temperature and rainfall into five types, A–E; most of Malaysia is Af.",
+   "ms": "Menyusun iklim mengikut suhu dan hujan bulanan kepada lima jenis, A–E; kebanyakan Malaysia ialah Af."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "rain-day",
+  "name": {
+   "zh": "雨日",
+   "en": "Rain day",
+   "ms": "Hari hujan"
+  },
+  "short": {
+   "zh": "一天雨量达到某个门槛（0.2、1 或 2.5 毫米，看机构）就算一个雨日。",
+   "en": "A day whose rainfall reaches a threshold — 0.2, 1 or 2.5 mm depending on who is counting.",
+   "ms": "Hari yang hujannya mencapai ambang — 0.2, 1 atau 2.5 mm bergantung pada siapa yang mengira."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "inter-monsoon",
+  "name": {
+   "zh": "季风转换期",
+   "en": "Inter-monsoon",
+   "ms": "Peralihan monsun"
+  },
+  "short": {
+   "zh": "两个季风之间，约 4–5 月和 10 月；风弱，下午多雷雨。",
+   "en": "Between the two monsoons, about April–May and October; light winds and afternoon thunderstorms.",
+   "ms": "Antara dua monsun, kira-kira April–Mei dan Oktober; angin lemah dan ribut petir petang."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "monsoon",
+  "name": {
+   "zh": "季风",
+   "en": "Monsoon",
+   "ms": "Monsun"
+  },
+  "short": {
+   "zh": "随季节换方向、而且持续吹一整季的大范围风。",
+   "en": "A large-scale wind that blows from one direction for a season and then reverses.",
+   "ms": "Angin berskala besar yang bertiup dari satu arah sepanjang musim dan kemudian berbalik."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "monsoon-surge",
+  "name": {
+   "zh": "季风潮（寒潮）",
+   "en": "Monsoon surge",
+   "ms": "Luruan monsun"
+  },
+  "short": {
+   "zh": "东北季风期间从西伯利亚冲出的一阵强冷空气，带来强风、大浪和大雨。",
+   "en": "A strong blast of cold air from Siberia during the north-east monsoon, bringing strong winds, rough seas and heavy rain.",
+   "ms": "Ledakan udara sejuk yang kuat dari Siberia semasa monsun timur laut, membawa angin kencang, laut bergelora dan hujan lebat."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "ne-monsoon",
+  "name": {
+   "zh": "东北季风",
+   "en": "North-east monsoon",
+   "ms": "Monsun timur laut"
+  },
+  "short": {
+   "zh": "11 月到 3 月；主要雨季，东海岸、砂拉越西部和沙巴东部雨最多。",
+   "en": "November to March; the main rainy season, wettest on the east coast, western Sarawak and eastern Sabah.",
+   "ms": "November hingga Mac; musim hujan utama, paling basah di pantai timur, barat Sarawak dan timur Sabah."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "sw-monsoon",
+  "name": {
+   "zh": "西南季风",
+   "en": "South-west monsoon",
+   "ms": "Monsun barat daya"
+  },
+  "short": {
+   "zh": "5 月底到 9 月；马来西亚大部分地方比较干，沙巴例外。",
+   "en": "Late May to September; relatively dry over most of Malaysia except Sabah.",
+   "ms": "Akhir Mei hingga September; agak kering di kebanyakan Malaysia kecuali Sabah."
+  },
+  "chapter": 16
+ },
+ {
+  "id": "diurnal-convection",
+  "name": {
+   "zh": "对流日变化",
+   "en": "Diurnal convection",
+   "ms": "Perolakan harian"
+  },
+  "short": {
+   "zh": "跟着太阳每天重复的对流：早上晴，下午雷雨，晚上转晴。",
+   "en": "Convection that repeats with the sun each day: clear morning, afternoon storm, clear evening.",
+   "ms": "Perolakan yang berulang mengikut matahari setiap hari: pagi cerah, ribut petang, malam cerah."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "squall-line",
+  "name": {
+   "zh": "飑线",
+   "en": "Squall line",
+   "ms": "Garis badai"
+  },
+  "short": {
+   "zh": "一整排雷雨连成的线，可长几百公里、维持几小时。",
+   "en": "A line of thunderstorms, possibly hundreds of kilometres long, lasting hours.",
+   "ms": "Barisan ribut petir, mungkin ratusan kilometer panjang, bertahan berjam-jam."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "sumatras",
+  "name": {
+   "zh": "苏门答腊飑线（Sumatras）",
+   "en": "Sumatras",
+   "ms": "Sumatras"
+  },
+  "short": {
+   "zh": "西南季风期间在马六甲海峡形成、凌晨到清晨打到半岛西海岸的飑线。",
+   "en": "A squall line that forms over the Strait of Malacca in the south-west monsoon and hits the west coast before dawn or early morning.",
+   "ms": "Garis badai yang terbentuk di Selat Melaka semasa monsun barat daya dan melanda pantai barat menjelang subuh atau awal pagi."
+  },
+  "chapter": 17
+ },
+ {
+  "id": "bahaya",
+  "name": {
+   "zh": "Bahaya（危险）",
+   "en": "Bahaya (danger)",
+   "ms": "Bahaya"
+  },
+  "short": {
+   "zh": "连续降雨预警的最高级：24 小时雨量预计超过 250 毫米。",
+   "en": "Highest level: over 250 mm expected in 24 hours.",
+   "ms": "Peringkat tertinggi: melebihi 250 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "buruk",
+  "name": {
+   "zh": "Buruk（恶劣）",
+   "en": "Buruk (bad)",
+   "ms": "Buruk"
+  },
+  "short": {
+   "zh": "连续降雨预警的第二级：24 小时雨量预计超过 150 毫米。",
+   "en": "Second level: over 150 mm expected in 24 hours.",
+   "ms": "Peringkat kedua: melebihi 150 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "cap",
+  "name": {
+   "zh": "CAP（通用预警协议）",
+   "en": "CAP (Common Alerting Protocol)",
+   "ms": "CAP (Protokol Amaran Bersama)"
+  },
+  "short": {
+   "zh": "国际统一的预警格式（XML），一条预警可以同时送到所有管道。",
+   "en": "The international standard format (XML) for warnings, so one alert can feed every channel.",
+   "ms": "Format piawai antarabangsa (XML) untuk amaran, supaya satu amaran sampai ke semua saluran."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "heat-wave",
+  "name": {
+   "zh": "热浪",
+   "en": "Heat wave",
+   "ms": "Gelombang haba"
+  },
+  "short": {
+   "zh": "在马来西亚：连续三天最高气温超过 37 °C。",
+   "en": "In Malaysia: a daily maximum above 37 °C for three days in a row.",
+   "ms": "Di Malaysia: suhu maksimum harian melebihi 37 °C selama tiga hari berturut-turut."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "waspada",
+  "name": {
+   "zh": "Waspada（警惕）",
+   "en": "Waspada (alert)",
+   "ms": "Waspada"
+  },
+  "short": {
+   "zh": "连续降雨预警的第一级：24 小时雨量预计少于 150 毫米。",
+   "en": "First level of continuous-rain warning: under 150 mm expected in 24 hours.",
+   "ms": "Peringkat pertama amaran hujan berterusan: kurang daripada 150 mm dijangka dalam 24 jam."
+  },
+  "chapter": 18
+ },
+ {
+  "id": "agricultural-drought",
+  "name": {
+   "zh": "农业干旱",
+   "en": "Agricultural drought",
+   "ms": "Kemarau pertanian"
+  },
+  "short": {
+   "zh": "作物在生长季里土壤水分不足。",
+   "en": "Too little soil moisture for a crop during its season.",
+   "ms": "Lembapan tanah tidak mencukupi untuk tanaman sepanjang musimnya."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "flash-flood",
+  "name": {
+   "zh": "闪电水灾",
+   "en": "Flash flood",
+   "ms": "Banjir kilat"
+  },
+  "short": {
+   "zh": "突然的大雨造成、涨得快退得快、几乎没有预警的水灾。",
+   "en": "A flood that rises and falls fast with little warning, after a sudden downpour.",
+   "ms": "Banjir yang naik dan surut cepat dengan sedikit amaran, selepas hujan lebat mendadak."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "hydrological-drought",
+  "name": {
+   "zh": "水文干旱",
+   "en": "Hydrological drought",
+   "ms": "Kemarau hidrologi"
+  },
+  "short": {
+   "zh": "气象干旱拖久了，河流、水库和湖泊缺水。",
+   "en": "A long meteorological drought that drains rivers, reservoirs and lakes.",
+   "ms": "Kemarau meteorologi yang lama sehingga sungai, takungan dan tasik kekurangan air."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "meteorological-drought",
+  "name": {
+   "zh": "气象干旱",
+   "en": "Meteorological drought",
+   "ms": "Kemarau meteorologi"
+  },
+  "short": {
+   "zh": "大范围的雨量明显低于平常。",
+   "en": "Rainfall well below normal over a wide area.",
+   "ms": "Hujan jauh di bawah normal di kawasan luas."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "monsoon-flood",
+  "name": {
+   "zh": "季风水灾",
+   "en": "Monsoon flood",
+   "ms": "Banjir monsun"
+  },
+  "short": {
+   "zh": "东北季风的大雨造成的大范围水灾。",
+   "en": "Widespread flooding from the heavy rain of the north-east monsoon.",
+   "ms": "Banjir meluas akibat hujan lebat monsun timur laut."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "spi",
+  "name": {
+   "zh": "标准化降水指数（SPI）",
+   "en": "Standardized Precipitation Index (SPI)",
+   "ms": "Indeks Kerpasan Piawai (SPI)"
+  },
+  "short": {
+   "zh": "干旱监测用的指数；负数表示雨量比正常少，−1.5 以下“很干”。",
+   "en": "A drought-monitoring index; negative means less rain than normal, below −1.5 ‘very dry’.",
+   "ms": "Indeks pemantauan kemarau; negatif bermaksud hujan kurang daripada normal, di bawah −1.5 ‘sangat kering’."
+  },
+  "chapter": 19
+ },
+ {
+  "id": "api",
+  "name": {
+   "zh": "空气污染指数（API）",
+   "en": "Air Pollutant Index (API)",
+   "ms": "Indeks Pencemar Udara (IPU)"
+  },
+  "short": {
+   "zh": "六种污染物分指数里最高的一个；0–50 良好，101–200 不健康，300 以上危险。",
+   "en": "The highest of six pollutant sub-indices; 0–50 good, 101–200 unhealthy, above 300 hazardous.",
+   "ms": "Sub-indeks tertinggi daripada enam pencemar; 0–50 baik, 101–200 tidak sihat, melebihi 300 berbahaya."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "hotspot",
+  "name": {
+   "zh": "火点",
+   "en": "Hotspot",
+   "ms": "Titik panas"
+  },
+  "short": {
+   "zh": "卫星判定可能在着火的像元。",
+   "en": "A satellite pixel flagged as a possible fire.",
+   "ms": "Piksel satelit yang ditandakan sebagai kemungkinan kebakaran."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "peat",
+  "name": {
+   "zh": "泥炭（泥炭地）",
+   "en": "Peat",
+   "ms": "Gambut"
+  },
+  "short": {
+   "zh": "大部分没分解的植物残体在积水处堆成的土壤；干了很容易着火、冒烟。",
+   "en": "Soil of barely decomposed plant remains built up in waterlogged ground.",
+   "ms": "Tanah daripada sisa tumbuhan yang hampir tidak reput, terkumpul di tanah bertakung air."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "pm25",
+  "name": {
+   "zh": "PM2.5",
+   "en": "PM2.5",
+   "ms": "PM2.5"
+  },
+  "short": {
+   "zh": "直径小于 2.5 微米的细微粒，霾的主要成分之一。",
+   "en": "Fine particles smaller than 2.5 micrometres across.",
+   "ms": "Zarah halus bersaiz kurang daripada 2.5 mikrometer."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "transboundary-haze",
+  "name": {
+   "zh": "跨境烟霾",
+   "en": "Transboundary haze",
+   "ms": "Jerebu rentas sempadan"
+  },
+  "short": {
+   "zh": "森林和泥炭地火灾的烟被风从一个国家吹到另一个国家。",
+   "en": "Smoke from forest and peatland fires carried by the wind from one country into another.",
+   "ms": "Asap kebakaran hutan dan tanah gambut dibawa angin dari satu negara ke negara lain."
+  },
+  "chapter": 20
+ },
+ {
+  "id": "anemometer",
+  "name": {
+   "zh": "风杯风速计",
+   "en": "Cup anemometer",
+   "ms": "Anemometer cawan"
+  },
+  "short": {
+   "zh": "风吹杯子转动，用转数量风速。",
+   "en": "Measures wind speed from how fast the wind spins a set of cups.",
+   "ms": "Mengukur kelajuan angin daripada kelajuan angin memutar set cawan."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "aws",
+  "name": {
+   "zh": "自动气象站",
+   "en": "Automatic weather station",
+   "ms": "Stesen cuaca automatik"
+  },
+  "short": {
+   "zh": "按设定时间自动记录天气的气象站。",
+   "en": "A station that records the weather by itself at set intervals.",
+   "ms": "Stesen yang merekod cuaca sendiri pada selang yang ditetapkan."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "barometer",
+  "name": {
+   "zh": "气压计",
+   "en": "Barometer",
+   "ms": "Barometer"
+  },
+  "short": {
+   "zh": "量气压的仪器，有水银式和空盒式。",
+   "en": "An instrument for air pressure, mercury or aneroid.",
+   "ms": "Alat untuk tekanan udara, merkuri atau aneroid."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "pan-evaporimeter",
+  "name": {
+   "zh": "蒸发皿",
+   "en": "Pan evaporimeter",
+   "ms": "Panci penyejatan"
+  },
+  "short": {
+   "zh": "装水的大圆盘，量每天蒸发掉多少毫米水。",
+   "en": "A large water pan that measures how many millimetres evaporate each day.",
+   "ms": "Dulang air besar yang mengukur berapa milimeter tersejat setiap hari."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "psychrometer",
+  "name": {
+   "zh": "干湿球温度计",
+   "en": "Psychrometer",
+   "ms": "Psikrometer"
+  },
+  "short": {
+   "zh": "一对干球和湿球温度计，用来求相对湿度和露点。",
+   "en": "A dry-bulb and wet-bulb pair used to find humidity and dew point.",
+   "ms": "Pasangan bebuli kering dan basah untuk mencari kelembapan dan takat embun."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "rain-gauge",
+  "name": {
+   "zh": "雨量筒",
+   "en": "Rain gauge",
+   "ms": "Tolok hujan"
+  },
+  "short": {
+   "zh": "收集雨水来量雨量的仪器；口径 127 毫米。",
+   "en": "An instrument that collects rain to measure it; the funnel is 127 mm across.",
+   "ms": "Alat yang mengumpul hujan untuk mengukurnya; corongnya 127 mm lebar."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "stevenson-screen",
+  "name": {
+   "zh": "百叶箱",
+   "en": "Stevenson screen",
+   "ms": "Skrin Stevenson"
+  },
+  "short": {
+   "zh": "放温度计的双层百叶木箱，通风又挡太阳和雨。",
+   "en": "A louvred wooden box that shelters thermometers from sun and rain while letting air through.",
+   "ms": "Kotak kayu berlouver yang melindungi termometer daripada matahari dan hujan sambil membiarkan udara masuk."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "sunshine-recorder",
+  "name": {
+   "zh": "日照计",
+   "en": "Sunshine recorder",
+   "ms": "Perakam cahaya matahari"
+  },
+  "short": {
+   "zh": "玻璃球聚光在卡片上烧出痕迹，量日照时数。",
+   "en": "A glass sphere that burns a trace on a card to measure hours of sunshine.",
+   "ms": "Sfera kaca yang membakar kesan pada kad untuk mengukur jam cahaya matahari."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "wind-vane",
+  "name": {
+   "zh": "风向标",
+   "en": "Wind vane",
+   "ms": "Bilah angin"
+  },
+  "short": {
+   "zh": "指向风吹来方向的仪器。",
+   "en": "Points to the direction the wind comes from.",
+   "ms": "Menunjuk ke arah angin datang."
+  },
+  "chapter": 21
+ },
+ {
+  "id": "amdar",
+  "name": {
+   "zh": "AMDAR（飞机气象资料）",
+   "en": "AMDAR",
+   "ms": "AMDAR"
+  },
+  "short": {
+   "zh": "民航飞机自动量、自动传回的气温和风资料。",
+   "en": "Temperature and wind measured and sent automatically by airliners.",
+   "ms": "Suhu dan angin yang diukur dan dihantar secara automatik oleh pesawat."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "argo",
+  "name": {
+   "zh": "Argo 浮标",
+   "en": "Argo float",
+   "ms": "Pelampung Argo"
+  },
+  "short": {
+   "zh": "每 10 天沉到 2 公里再浮上来、量温度和盐度的海洋浮标。",
+   "en": "An ocean float that sinks to 2 km and rises every 10 days, measuring temperature and salinity.",
+   "ms": "Pelampung lautan yang tenggelam ke 2 km dan naik setiap 10 hari, mengukur suhu dan kemasinan."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "buoy",
+  "name": {
+   "zh": "浮标",
+   "en": "Buoy",
+   "ms": "Boya"
+  },
+  "short": {
+   "zh": "漂在海上或锚定的观测站，量海面天气和海温。",
+   "en": "A floating or moored station measuring weather and sea temperature at sea.",
+   "ms": "Stesen terapung atau tertambat yang mengukur cuaca dan suhu laut."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "radiosonde",
+  "name": {
+   "zh": "探空仪（探空气球）",
+   "en": "Radiosonde",
+   "ms": "Radiosonde"
+  },
+  "short": {
+   "zh": "挂在气球下、边升边传回气温、湿度和气压的仪器。",
+   "en": "A balloon-borne instrument that radios back temperature, humidity and pressure as it rises.",
+   "ms": "Alat dibawa belon yang menghantar suhu, kelembapan dan tekanan semasa naik."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "sounding",
+  "name": {
+   "zh": "探空曲线",
+   "en": "Sounding",
+   "ms": "Profil sonde"
+  },
+  "short": {
+   "zh": "从地面到高空的一条垂直资料，例如一次探空的结果。",
+   "en": "A vertical profile of the air, such as one radiosonde flight.",
+   "ms": "Profil menegak udara, seperti satu penerbangan radiosonde."
+  },
+  "chapter": 22
+ },
+ {
+  "id": "geostationary-satellite",
+  "name": {
+   "zh": "同步卫星",
+   "en": "Geostationary satellite",
+   "ms": "Satelit geopegun"
+  },
+  "short": {
+   "zh": "在赤道上空约 36,000 公里、一直停在同一点上方的卫星。",
+   "en": "A satellite about 36,000 km above the equator that stays over one spot.",
+   "ms": "Satelit kira-kira 36,000 km di atas khatulistiwa yang kekal di atas satu tempat."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "infrared-image",
+  "name": {
+   "zh": "红外线图像",
+   "en": "Infrared image",
+   "ms": "Imej inframerah"
+  },
+  "short": {
+   "zh": "按温度显示的卫星图；高而冷的云顶最白。",
+   "en": "A satellite image of temperature; high, cold tops whitest.",
+   "ms": "Imej satelit suhu; puncak tinggi dan sejuk paling putih."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "polar-satellite",
+  "name": {
+   "zh": "极轨卫星",
+   "en": "Polar-orbiting satellite",
+   "ms": "Satelit orbit kutub"
+  },
+  "short": {
+   "zh": "低轨道、每圈经过两极附近、逐渐扫遍全球的卫星。",
+   "en": "A low satellite passing near both poles each orbit, covering the globe in strips.",
+   "ms": "Satelit rendah yang melalui berhampiran kedua-dua kutub setiap orbit, meliputi dunia secara berjalur."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "spectral-band",
+  "name": {
+   "zh": "波段",
+   "en": "Spectral band",
+   "ms": "Jalur spektrum"
+  },
+  "short": {
+   "zh": "卫星仪器看的一段特定波长的光。",
+   "en": "The particular range of wavelengths an instrument channel sees.",
+   "ms": "Julat panjang gelombang tertentu yang dilihat oleh satu saluran alat."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "visible-image",
+  "name": {
+   "zh": "可见光图像",
+   "en": "Visible image",
+   "ms": "Imej cahaya nampak"
+  },
+  "short": {
+   "zh": "拍反射阳光的卫星图；厚云亮，晚上不能用。",
+   "en": "A satellite image of reflected sunlight; thick cloud bright; no use at night.",
+   "ms": "Imej satelit cahaya matahari dipantul; awan tebal terang; tidak berguna pada waktu malam."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "water-vapour-image",
+  "name": {
+   "zh": "水汽图像",
+   "en": "Water-vapour image",
+   "ms": "Imej wap air"
+  },
+  "short": {
+   "zh": "显示中高层水汽的卫星图；湿亮干暗。",
+   "en": "A satellite image of middle- and upper-level moisture; moist bright, dry dark.",
+   "ms": "Imej satelit lembapan aras tengah dan atas; lembap terang, kering gelap."
+  },
+  "chapter": 23
+ },
+ {
+  "id": "dbz",
+  "name": {
+   "zh": "dBZ",
+   "en": "dBZ",
+   "ms": "dBZ"
+  },
+  "short": {
+   "zh": "雷达回波强度的对数单位；每多 10 dBZ 强 10 倍。",
+   "en": "The logarithmic unit of radar echo strength; +10 dBZ is ten times stronger.",
+   "ms": "Unit logaritma kekuatan gema radar; +10 dBZ sepuluh kali lebih kuat."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "doppler-radar",
+  "name": {
+   "zh": "多普勒雷达",
+   "en": "Doppler radar",
+   "ms": "Radar Doppler"
+  },
+  "short": {
+   "zh": "能量出雨滴朝向或离开雷达速度的雷达，可看到风。",
+   "en": "A radar that measures how fast drops move towards or away from it, revealing the wind.",
+   "ms": "Radar yang mengukur kelajuan titisan ke arah atau menjauhinya, mendedahkan angin."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "dual-pol-radar",
+  "name": {
+   "zh": "双偏振雷达",
+   "en": "Dual-polarisation radar",
+   "ms": "Radar dwi-pengutuban"
+  },
+  "short": {
+   "zh": "同时发水平和垂直脉冲，更容易分辨雨和雪。",
+   "en": "Sends horizontal and vertical pulses, making rain and snow easier to tell apart.",
+   "ms": "Menghantar denyut mendatar dan menegak, memudahkan membezakan hujan dan salji."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "lightning-network",
+  "name": {
+   "zh": "闪电定位网",
+   "en": "Lightning detection network",
+   "ms": "Rangkaian pengesanan kilat"
+  },
+  "short": {
+   "zh": "多个接收站按电波到达时间差算出闪电位置的网络。",
+   "en": "Receivers that locate flashes from differences in radio-wave arrival times.",
+   "ms": "Penerima yang mengesan kilat daripada beza masa ketibaan gelombang radio."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "radar",
+  "name": {
+   "zh": "雷达",
+   "en": "Radar",
+   "ms": "Radar"
+  },
+  "short": {
+   "zh": "发出微波、接收雨滴散射回来的回波，看雨在哪里、有多大。",
+   "en": "Sends out microwaves and receives the echo from raindrops, showing where and how hard it rains.",
+   "ms": "Menghantar gelombang mikro dan menerima gema dari titisan hujan, menunjukkan di mana dan betapa lebat hujan."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "sar",
+  "name": {
+   "zh": "合成孔径雷达（SAR）",
+   "en": "Synthetic-aperture radar (SAR)",
+   "ms": "Radar apertur sintetik (SAR)"
+  },
+  "short": {
+   "zh": "卫星上给地面拍雷达照片的仪器，不怕云也不怕黑夜。",
+   "en": "A satellite radar that images the ground through cloud and darkness.",
+   "ms": "Radar satelit yang mengimej permukaan menembusi awan dan kegelapan."
+  },
+  "chapter": 24
+ },
+ {
+  "id": "inversion",
+  "name": {
+   "zh": "逆温层",
+   "en": "Inversion",
+   "ms": "Songsangan suhu"
+  },
+  "short": {
+   "zh": "气温随高度上升的一层，像盖子一样压住对流。",
+   "en": "A layer where temperature rises with height, acting as a lid on convection.",
+   "ms": "Lapisan di mana suhu meningkat dengan ketinggian, bertindak sebagai penutup perolakan."
+  },
+  "chapter": 25
+ },
+ {
+  "id": "skew-t",
+  "name": {
+   "zh": "Skew-T 图",
+   "en": "Skew-T diagram",
+   "ms": "Gambar rajah Skew-T"
+  },
+  "short": {
+   "zh": "等温线斜 45° 的探空图，用来看大气稳定度、云底和 CAPE。",
+   "en": "A sounding chart with temperature lines tilted 45°, used to read stability, cloud base and CAPE.",
+   "ms": "Carta sonde dengan garisan suhu condong 45°, untuk membaca kestabilan, dasar awan dan CAPE."
+  },
+  "chapter": 25
+ },
+ {
+  "id": "height-contour",
+  "name": {
+   "zh": "等高线",
+   "en": "Height contour",
+   "ms": "Kontur ketinggian"
+  },
+  "short": {
+   "zh": "高空图上连接某气压层同一高度的线。",
+   "en": "On an upper-air chart, a line joining equal heights of a pressure level.",
+   "ms": "Pada carta udara atas, garisan yang menyambung ketinggian sama sesuatu aras tekanan."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "station-model",
+  "name": {
+   "zh": "站点模型",
+   "en": "Station model",
+   "ms": "Model stesen"
+  },
+  "short": {
+   "zh": "用固定位置的数字和符号在一个小圆圈四周写出一个站的观测。",
+   "en": "A station's observations written in fixed places around a small circle.",
+   "ms": "Cerapan stesen yang ditulis di tempat tetap di sekeliling bulatan kecil."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "streamline",
+  "name": {
+   "zh": "流线",
+   "en": "Streamline",
+   "ms": "Garis arus"
+  },
+  "short": {
+   "zh": "顺着风的流向画的线；热带天气图常用。",
+   "en": "A line drawn along the wind's flow; common on tropical charts.",
+   "ms": "Garisan mengikut aliran angin; biasa pada carta tropika."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "synoptic-chart",
+  "name": {
+   "zh": "天气图",
+   "en": "Synoptic chart",
+   "ms": "Carta sinoptik"
+  },
+  "short": {
+   "zh": "同一时刻、把大范围各站观测画在一起的地图。",
+   "en": "A map of many stations' observations over a large area at one moment.",
+   "ms": "Peta cerapan banyak stesen di kawasan luas pada satu masa."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "data-assimilation",
+  "name": {
+   "zh": "数据同化",
+   "en": "Data assimilation",
+   "ms": "Asimilasi data"
+  },
+  "short": {
+   "zh": "把上一次预报和新观测结合，得到最佳起点。",
+   "en": "Combining the last forecast with new observations to get the best starting point.",
+   "ms": "Menggabungkan ramalan terakhir dengan cerapan baharu untuk titik mula terbaik."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "global-model",
+  "name": {
+   "zh": "全球模型",
+   "en": "Global model",
+   "ms": "Model global"
+  },
+  "short": {
+   "zh": "计算整个地球的模型。",
+   "en": "A model covering the whole Earth.",
+   "ms": "Model yang meliputi seluruh bumi."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "grid-point",
+  "name": {
+   "zh": "格点",
+   "en": "Grid point",
+   "ms": "Titik grid"
+  },
+  "short": {
+   "zh": "模型计算的每一个点。",
+   "en": "Each point at which a model calculates.",
+   "ms": "Setiap titik di mana model mengira."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "initial-conditions",
+  "name": {
+   "zh": "初始场",
+   "en": "Initial conditions",
+   "ms": "Keadaan awal"
+  },
+  "short": {
+   "zh": "预报出发时的大气状态。",
+   "en": "The state of the atmosphere a forecast starts from.",
+   "ms": "Keadaan atmosfera tempat ramalan bermula."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "nwp",
+  "name": {
+   "zh": "数值天气预报（NWP）",
+   "en": "Numerical weather prediction (NWP)",
+   "ms": "Ramalan cuaca berangka (NWP)"
+  },
+  "short": {
+   "zh": "用电脑解大气方程来预报天气。",
+   "en": "Forecasting by solving the atmosphere's equations on a computer.",
+   "ms": "Meramal dengan menyelesaikan persamaan atmosfera pada komputer."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "parameterisation",
+  "name": {
+   "zh": "参数化",
+   "en": "Parameterisation",
+   "ms": "Parameterisasi"
+  },
+  "short": {
+   "zh": "用简化公式估计格子里放不下的过程（例如雷雨）。",
+   "en": "Estimating processes too small for the grid, such as storms, with simplified formulas.",
+   "ms": "Menganggar proses terlalu kecil untuk grid, seperti ribut, dengan formula ringkas."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "regional-model",
+  "name": {
+   "zh": "区域模型",
+   "en": "Regional model",
+   "ms": "Model serantau"
+  },
+  "short": {
+   "zh": "只计算一个地区、格子较细，边界由全球模型提供。",
+   "en": "A finer-grid model of one region, with boundaries from a global model.",
+   "ms": "Model grid halus bagi satu rantau, dengan sempadan daripada model global."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "resolution",
+  "name": {
+   "zh": "分辨率",
+   "en": "Resolution",
+   "ms": "Resolusi"
+  },
+  "short": {
+   "zh": "格点之间的距离；越小越细。",
+   "en": "The spacing between grid points; smaller is finer.",
+   "ms": "Jarak antara titik grid; lebih kecil lebih halus."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "time-step",
+  "name": {
+   "zh": "时间步长",
+   "en": "Time step",
+   "ms": "Langkah masa"
+  },
+  "short": {
+   "zh": "模型每次往前算的一小段时间。",
+   "en": "The short interval a model steps ahead each time.",
+   "ms": "Selang pendek yang dilangkah model setiap kali."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "butterfly-effect",
+  "name": {
+   "zh": "蝴蝶效应",
+   "en": "Butterfly effect",
+   "ms": "Kesan rama-rama"
+  },
+  "short": {
+   "zh": "混沌的通俗说法：一点点差别，后来可能造成巨大不同。",
+   "en": "The popular name for chaos: a tiny change can later make a huge difference.",
+   "ms": "Nama popular bagi kekacauan: perubahan kecil boleh kemudian membuat perbezaan besar."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "chaos",
+  "name": {
+   "zh": "混沌",
+   "en": "Chaos",
+   "ms": "Kekacauan"
+  },
+  "short": {
+   "zh": "起点的微小差异会不断放大、使长期结果无法预料的性质。",
+   "en": "The property that tiny differences at the start grow until the outcome cannot be predicted.",
+   "ms": "Sifat di mana perbezaan kecil di permulaan membesar sehingga hasilnya tidak dapat diramal."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "control-member",
+  "name": {
+   "zh": "control 成员",
+   "en": "Control member",
+   "ms": "Ahli kawalan"
+  },
+  "short": {
+   "zh": "用最好的起点、没有扰动的那一个成员。",
+   "en": "The member started from the best analysis, unperturbed.",
+   "ms": "Ahli yang bermula dari analisis terbaik, tanpa gangguan."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-forecast",
+  "name": {
+   "zh": "集合预报",
+   "en": "Ensemble forecast",
+   "ms": "Ramalan ensemble"
+  },
+  "short": {
+   "zh": "用稍微不同的起点把同一个模型跑很多次。",
+   "en": "The same model run many times from slightly different starts.",
+   "ms": "Model yang sama dijalankan berkali-kali dari titik mula yang sedikit berbeza."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-mean",
+  "name": {
+   "zh": "集合平均",
+   "en": "Ensemble mean",
+   "ms": "Purata ensemble"
+  },
+  "short": {
+   "zh": "所有成员的平均；比较稳定，但会抹平极端值。",
+   "en": "The average of all members; steadier but smooths extremes.",
+   "ms": "Purata semua ahli; lebih stabil tetapi melicinkan ekstrem."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-member",
+  "name": {
+   "zh": "集合成员",
+   "en": "Ensemble member",
+   "ms": "Ahli ensemble"
+  },
+  "short": {
+   "zh": "集合预报里的其中一次预报。",
+   "en": "One run within an ensemble.",
+   "ms": "Satu larian dalam ensemble."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "perturbed-member",
+  "name": {
+   "zh": "扰动成员",
+   "en": "Perturbed member",
+   "ms": "Ahli terganggu"
+  },
+  "short": {
+   "zh": "起点或模型物理稍微改动过的成员。",
+   "en": "A member with slightly altered start or physics.",
+   "ms": "Ahli dengan titik mula atau fizik yang diubah sedikit."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "spread",
+  "name": {
+   "zh": "离散度",
+   "en": "Spread",
+   "ms": "Serakan"
+  },
+  "short": {
+   "zh": "成员之间差得多远；越大越不确定。",
+   "en": "How far the members differ; larger means more uncertain.",
+   "ms": "Sejauh mana ahli berbeza; lebih besar bermaksud lebih tidak pasti."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "cams",
+  "name": {
+   "zh": "CAMS（哥白尼大气监测服务）",
+   "en": "CAMS",
+   "ms": "CAMS"
+  },
+  "short": {
+   "zh": "由 ECMWF 运作，提供空气污染、气溶胶和温室气体资料与预报。",
+   "en": "Run by ECMWF: air pollution, aerosol and greenhouse-gas data and forecasts.",
+   "ms": "Dikendalikan ECMWF: data dan ramalan pencemaran udara, aerosol dan gas rumah hijau."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ecmwf",
+  "name": {
+   "zh": "ECMWF（欧洲中期天气预报中心）",
+   "en": "ECMWF",
+   "ms": "ECMWF"
+  },
+  "short": {
+   "zh": "1975 年成立的欧洲政府间预报中心，以中期和集合预报闻名。",
+   "en": "The European intergovernmental forecast centre founded in 1975, known for medium-range and ensemble forecasts.",
+   "ms": "Pusat ramalan antara kerajaan Eropah yang ditubuhkan 1975, terkenal dengan ramalan jarak sederhana dan ensemble."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ens",
+  "name": {
+   "zh": "ENS（ECMWF 集合预报）",
+   "en": "ENS (ECMWF ensemble)",
+   "ms": "ENS (ensemble ECMWF)"
+  },
+  "short": {
+   "zh": "ECMWF 的 51 成员、约 9 公里、15 天集合预报。",
+   "en": "ECMWF's 51-member, ~9 km, 15-day ensemble.",
+   "ms": "Ensemble ECMWF 51 ahli, ~9 km, 15 hari."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "glofas",
+  "name": {
+   "zh": "GloFAS（全球洪水预警系统）",
+   "en": "GloFAS",
+   "ms": "GloFAS"
+  },
+  "short": {
+   "zh": "用 ECMWF 集合预报推算河流流量，预报到 30 天。",
+   "en": "River-flow forecasts to 30 days driven by ECMWF ensembles.",
+   "ms": "Ramalan aliran sungai hingga 30 hari dipacu ensemble ECMWF."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ifs",
+  "name": {
+   "zh": "IFS（综合预报系统）",
+   "en": "IFS (Integrated Forecasting System)",
+   "ms": "IFS (Sistem Ramalan Bersepadu)"
+  },
+  "short": {
+   "zh": "ECMWF 的物理数值预报模型。",
+   "en": "ECMWF's physics-based forecast model.",
+   "ms": "Model ramalan berasaskan fizik ECMWF."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "seas5",
+  "name": {
+   "zh": "SEAS5 季节预报",
+   "en": "SEAS5",
+   "ms": "SEAS5"
+  },
+  "short": {
+   "zh": "ECMWF 的季节预报系统，每月一次、到 7 个月。",
+   "en": "ECMWF's seasonal forecast system: monthly, to 7 months.",
+   "ms": "Sistem ramalan bermusim ECMWF: bulanan, hingga 7 bulan."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "efi",
+  "name": {
+   "zh": "EFI（极端预报指数）",
+   "en": "EFI (Extreme Forecast Index)",
+   "ms": "EFI (Indeks Ramalan Ekstrem)"
+  },
+  "short": {
+   "zh": "把集合预报和模型气候比较的指数，−1 到 1。",
+   "en": "Compares an ensemble with the model climate, from −1 to 1.",
+   "ms": "Membandingkan ensemble dengan iklim model, dari −1 hingga 1."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "epsgram",
+  "name": {
+   "zh": "EPSgram（集合预报图）",
+   "en": "EPSgram",
+   "ms": "EPSgram"
+  },
+  "short": {
+   "zh": "一个地点的集合预报，每天画成一个盒子。",
+   "en": "An ensemble forecast for one place drawn as one box per day.",
+   "ms": "Ramalan ensemble untuk satu tempat dilukis sebagai satu kotak setiap hari."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "percentile",
+  "name": {
+   "zh": "百分位数",
+   "en": "Percentile",
+   "ms": "Persentil"
+  },
+  "short": {
+   "zh": "把数值排好后，有多少比例比它小；中位数是第 50 百分位。",
+   "en": "The share of sorted values below it; the median is the 50th.",
+   "ms": "Bahagian nilai tersusun di bawahnya; median ialah ke-50."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "plume-chart",
+  "name": {
+   "zh": "羽状图",
+   "en": "Plume chart",
+   "ms": "Carta bulu"
+  },
+  "short": {
+   "zh": "把每个成员画成一条线的图。",
+   "en": "A chart with every member drawn as its own line.",
+   "ms": "Carta dengan setiap ahli dilukis sebagai garisan sendiri."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "probability-map",
+  "name": {
+   "zh": "概率图",
+   "en": "Probability map",
+   "ms": "Peta kebarangkalian"
+  },
+  "short": {
+   "zh": "显示有几成成员超过某个门槛的地图。",
+   "en": "A map of the share of members above a threshold.",
+   "ms": "Peta bahagian ahli melebihi ambang."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "enso-outlook",
+  "name": {
+   "zh": "ENSO 展望",
+   "en": "ENSO outlook",
+   "ms": "Tinjauan ENSO"
+  },
+  "short": {
+   "zh": "NOAA 等机构每月发布的厄尔尼诺/拉尼娜现况和概率预报。",
+   "en": "The monthly status and probability forecast of El Niño/La Niña from NOAA and others.",
+   "ms": "Status dan ramalan kebarangkalian El Niño/La Niña bulanan daripada NOAA dan lain-lain."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "reanalysis",
+  "name": {
+   "zh": "再分析",
+   "en": "Reanalysis",
+   "ms": "Analisis semula"
+  },
+  "short": {
+   "zh": "用同一个模型和数据同化，把过去几十年的天气重新算一遍。",
+   "en": "Recomputing decades of past weather with one model and data assimilation.",
+   "ms": "Mengira semula cuaca berdekad-dekad dengan satu model dan asimilasi data."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "seasonal-forecast",
+  "name": {
+   "zh": "季节预报",
+   "en": "Seasonal forecast",
+   "ms": "Ramalan bermusim"
+  },
+  "short": {
+   "zh": "预报未来几个月平均偏高、正常或偏低的概率。",
+   "en": "Chances that the coming months average above, near or below normal.",
+   "ms": "Peluang bulan-bulan akan datang berpurata di atas, hampir atau di bawah normal."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "aifs",
+  "name": {
+   "zh": "AIFS（ECMWF 人工智能预报系统）",
+   "en": "AIFS",
+   "ms": "AIFS"
+  },
+  "short": {
+   "zh": "ECMWF 的 AI 模型，有单一和集合两种，2025 年起运作。",
+   "en": "ECMWF's AI model, single and ensemble, operational since 2025.",
+   "ms": "Model AI ECMWF, tunggal dan ensemble, beroperasi sejak 2025."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "graphcast",
+  "name": {
+   "zh": "GraphCast",
+   "en": "GraphCast",
+   "ms": "GraphCast"
+  },
+  "short": {
+   "zh": "Google DeepMind 的 AI 天气模型，2023 年发表。",
+   "en": "Google DeepMind's AI weather model, published 2023.",
+   "ms": "Model cuaca AI Google DeepMind, diterbitkan 2023."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "ml-weather-model",
+  "name": {
+   "zh": "机器学习天气模型",
+   "en": "Machine-learning weather model",
+   "ms": "Model cuaca pembelajaran mesin"
+  },
+  "short": {
+   "zh": "从历史资料学会天气怎样变化、再往前推的模型。",
+   "en": "A model that learns from past data how weather evolves, then steps forward.",
+   "ms": "Model yang belajar daripada data lalu bagaimana cuaca berkembang, kemudian melangkah ke depan."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "training-data",
+  "name": {
+   "zh": "训练数据",
+   "en": "Training data",
+   "ms": "Data latihan"
+  },
+  "short": {
+   "zh": "AI 模型用来学习的历史资料，例如 ERA5。",
+   "en": "The historical data an AI model learns from, such as ERA5.",
+   "ms": "Data sejarah tempat model AI belajar, seperti ERA5."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "gefs",
+  "name": {
+   "zh": "GEFS",
+   "en": "GEFS",
+   "ms": "GEFS"
+  },
+  "short": {
+   "zh": "GFS 的集合预报，31 个成员。",
+   "en": "The GFS ensemble, 31 members.",
+   "ms": "Ensemble GFS, 31 ahli."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "gfs",
+  "name": {
+   "zh": "GFS",
+   "en": "GFS",
+   "ms": "GFS"
+  },
+  "short": {
+   "zh": "美国 NOAA 的全球预报模型。",
+   "en": "NOAA's Global Forecast System.",
+   "ms": "Sistem Ramalan Global NOAA."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "icon",
+  "name": {
+   "zh": "ICON",
+   "en": "ICON",
+   "ms": "ICON"
+  },
+  "short": {
+   "zh": "德国气象局（DWD）的模型。",
+   "en": "The German Weather Service's model.",
+   "ms": "Model Perkhidmatan Cuaca Jerman."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "multi-model-ensemble",
+  "name": {
+   "zh": "多模型集合",
+   "en": "Multi-model ensemble",
+   "ms": "Ensemble pelbagai model"
+  },
+  "short": {
+   "zh": "把几个不同机构的模型放在一起比较或结合。",
+   "en": "Comparing or combining models from several centres.",
+   "ms": "Membanding atau menggabungkan model dari beberapa pusat."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "bias",
+  "name": {
+   "zh": "偏差",
+   "en": "Bias",
+   "ms": "Bias"
+  },
+  "short": {
+   "zh": "预报总是偏高或偏低的固定误差。",
+   "en": "A steady tendency to forecast too high or too low.",
+   "ms": "Kecenderungan tetap meramal terlalu tinggi atau rendah."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "forecast-skill",
+  "name": {
+   "zh": "预报技巧",
+   "en": "Forecast skill",
+   "ms": "Kemahiran ramalan"
+  },
+  "short": {
+   "zh": "预报比简单参考（如气候平均）好多少。",
+   "en": "How much better a forecast does than a simple reference such as climatology.",
+   "ms": "Sejauh mana ramalan lebih baik daripada rujukan mudah seperti klimatologi."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "verification",
+  "name": {
+   "zh": "预报校验",
+   "en": "Verification",
+   "ms": "Pengesahan ramalan"
+  },
+  "short": {
+   "zh": "把预报和实际天气比较。",
+   "en": "Comparing forecasts with what happened.",
+   "ms": "Membandingkan ramalan dengan apa yang berlaku."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "meteogram",
+  "name": {
+   "zh": "Meteogram（气象时间图）",
+   "en": "Meteogram",
+   "ms": "Meteogram"
+  },
+  "short": {
+   "zh": "把一个地点的气象要素随时间画在一起的图。",
+   "en": "A chart of one place's weather elements against time.",
+   "ms": "Carta unsur cuaca satu tempat melawan masa."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "myt",
+  "name": {
+   "zh": "马来西亚时间（MYT）",
+   "en": "Malaysian time (MYT)",
+   "ms": "Waktu Malaysia (MYT)"
+  },
+  "short": {
+   "zh": "比 UTC 快 8 小时。",
+   "en": "UTC plus 8 hours.",
+   "ms": "UTC tambah 8 jam."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "pop",
+  "name": {
+   "zh": "降雨概率",
+   "en": "Probability of precipitation",
+   "ms": "Kebarangkalian hujan"
+  },
+  "short": {
+   "zh": "预报区里任一点下到可量雨量的机会；阵雨时指面积。",
+   "en": "The chance of measurable rain at any spot in the area; for showers, the area covered.",
+   "ms": "Peluang hujan boleh diukur di mana-mana tempat; bagi hujan lebat setempat, kawasan diliputi."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "utc",
+  "name": {
+   "zh": "UTC（协调世界时）",
+   "en": "UTC",
+   "ms": "UTC"
+  },
+  "short": {
+   "zh": "全世界气象通用的时间。",
+   "en": "The world time used across meteorology.",
+   "ms": "Waktu dunia yang digunakan dalam meteorologi."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "agromet-advisory",
+  "name": {
+   "zh": "农业气象服务（农业气象建议）",
+   "en": "Agrometeorological advisory",
+   "ms": "Nasihat agrometeorologi"
+  },
+  "short": {
+   "zh": "把天气预报转成对农民的具体建议。",
+   "en": "Turning forecasts into specific advice for farmers.",
+   "ms": "Menukar ramalan kepada nasihat khusus untuk petani."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "cardinal-temperature",
+  "name": {
+   "zh": "基点温度",
+   "en": "Cardinal temperature",
+   "ms": "Suhu kardinal"
+  },
+  "short": {
+   "zh": "作物生长的最低、最适和最高温度。",
+   "en": "The minimum, optimum and maximum temperatures for a crop's growth.",
+   "ms": "Suhu minimum, optimum dan maksimum bagi pertumbuhan tanaman."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "phenology",
+  "name": {
+   "zh": "作物物候",
+   "en": "Crop phenology",
+   "ms": "Fenologi tanaman"
+  },
+  "short": {
+   "zh": "作物各生长阶段（发芽、开花、成熟）出现的时间。",
+   "en": "The timing of a crop's stages: germination, flowering, maturity.",
+   "ms": "Masa peringkat tanaman: percambahan, pembungaan, kematangan."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "ffb",
+  "name": {
+   "zh": "鲜果串（FFB）",
+   "en": "Fresh fruit bunches (FFB)",
+   "ms": "Buah tandan segar (BTS)"
+  },
+  "short": {
+   "zh": "油棕收成的果串，用来算产量。",
+   "en": "The harvested bunches of oil palm, used to measure yield.",
+   "ms": "Tandan kelapa sawit yang dituai, digunakan untuk mengukur hasil."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "lag-effect",
+  "name": {
+   "zh": "滞后效应",
+   "en": "Lag effect",
+   "ms": "Kesan tertunda"
+  },
+  "short": {
+   "zh": "天气的影响要过一段时间才在产量上显现。",
+   "en": "A weather effect that shows in yield only after a delay.",
+   "ms": "Kesan cuaca yang hanya kelihatan pada hasil selepas tempoh tertentu."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "vpd",
+  "name": {
+   "zh": "饱和水汽压差（VPD）",
+   "en": "Vapour pressure deficit (VPD)",
+   "ms": "Defisit tekanan wap (VPD)"
+  },
+  "short": {
+   "zh": "空气还能再吸多少水汽；越大，植物越容易失水。",
+   "en": "How much more vapour the air could hold; the larger, the faster plants lose water.",
+   "ms": "Berapa banyak lagi wap boleh ditampung udara; semakin besar, semakin cepat tumbuhan kehilangan air."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "water-stress",
+  "name": {
+   "zh": "水分胁迫",
+   "en": "Water stress",
+   "ms": "Tekanan air"
+  },
+  "short": {
+   "zh": "植物得到的水不够需要，生理功能受损。",
+   "en": "When a plant gets less water than it needs and its functions suffer.",
+   "ms": "Apabila tumbuhan mendapat kurang air daripada keperluan dan fungsinya terjejas."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "crop-coefficient",
+  "name": {
+   "zh": "作物系数（Kc）",
+   "en": "Crop coefficient (Kc)",
+   "ms": "Pekali tanaman (Kc)"
+  },
+  "short": {
+   "zh": "把 ET₀ 换算成某种作物用水的乘数：ETc = Kc × ET₀。",
+   "en": "The multiplier turning ET₀ into a crop's use: ETc = Kc × ET₀.",
+   "ms": "Pengganda yang menukar ET₀ kepada penggunaan tanaman: ETc = Kc × ET₀."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "et0",
+  "name": {
+   "zh": "ET₀（参考蒸散量）",
+   "en": "ET₀ (reference evapotranspiration)",
+   "ms": "ET₀ (sejatpeluhan rujukan)"
+  },
+  "short": {
+   "zh": "标准草地的蒸散，只由天气决定，单位毫米/天。",
+   "en": "Evapotranspiration of a standard grass surface, set by weather alone, in mm per day.",
+   "ms": "Sejatpeluhan permukaan rumput piawai, ditentukan cuaca sahaja, dalam mm sehari."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "evapotranspiration",
+  "name": {
+   "zh": "蒸散",
+   "en": "Evapotranspiration",
+   "ms": "Sejatpeluhan"
+  },
+  "short": {
+   "zh": "蒸发加蒸腾。",
+   "en": "Evaporation plus transpiration.",
+   "ms": "Penyejatan ditambah transpirasi."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "soil-moisture",
+  "name": {
+   "zh": "土壤湿度",
+   "en": "Soil moisture",
+   "ms": "Lembapan tanah"
+  },
+  "short": {
+   "zh": "土壤里作物可用的水；0 % 凋萎，100 % 田间持水量。",
+   "en": "Water in the soil available to plants; 0 % wilting point, 100 % field capacity.",
+   "ms": "Air dalam tanah tersedia untuk tumbuhan; 0 % takat layu, 100 % kapasiti ladang."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "transpiration",
+  "name": {
+   "zh": "蒸腾",
+   "en": "Transpiration",
+   "ms": "Transpirasi"
+  },
+  "short": {
+   "zh": "水从植物叶片的气孔散到空气中。",
+   "en": "Water lost to the air through a plant's stomata.",
+   "ms": "Air yang hilang ke udara melalui stomata tumbuhan."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "microclimate",
+  "name": {
+   "zh": "小气候",
+   "en": "Microclimate",
+   "ms": "Mikroiklim"
+  },
+  "short": {
+   "zh": "贴近地面、植物和动物生活的那一层的气候。",
+   "en": "The climate of the layer near the ground where plants and animals live.",
+   "ms": "Iklim lapisan dekat tanah tempat tumbuhan dan haiwan hidup."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "micrometeorology",
+  "name": {
+   "zh": "微气象学",
+   "en": "Micrometeorology",
+   "ms": "Mikrometeorologi"
+  },
+  "short": {
+   "zh": "研究离地几米以内、小范围天气的学问。",
+   "en": "The study of small-scale weather within a few metres of the ground.",
+   "ms": "Kajian cuaca berskala kecil dalam beberapa meter dari tanah."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "shelterbelt",
+  "name": {
+   "zh": "防风林",
+   "en": "Shelterbelt",
+   "ms": "Tali pelindung"
+  },
+  "short": {
+   "zh": "一长排挡风的植物，保护后面的作物。",
+   "en": "A long line of planting that breaks the wind for the crops behind it.",
+   "ms": "Barisan tanaman panjang yang menghalang angin untuk tanaman di belakangnya."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "crop-model",
+  "name": {
+   "zh": "作物模型",
+   "en": "Crop model",
+   "ms": "Model tanaman"
+  },
+  "short": {
+   "zh": "模拟作物生长和产量的数学方程。",
+   "en": "Mathematical equations that simulate a crop's growth and yield.",
+   "ms": "Persamaan matematik yang menyimulasikan pertumbuhan dan hasil tanaman."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "ndvi",
+  "name": {
+   "zh": "NDVI（归一化植被指数）",
+   "en": "NDVI (Normalised Difference Vegetation Index)",
+   "ms": "NDVI (Indeks Tumbuhan Perbezaan Ternormal)"
+  },
+  "short": {
+   "zh": "（近红外 − 可见光）÷（近红外 + 可见光）；绿叶越多越接近 1。",
+   "en": "(NIR − VIS) ÷ (NIR + VIS); the more green leaves, the nearer 1.",
+   "ms": "(NIR − VIS) ÷ (NIR + VIS); semakin banyak daun hijau, semakin hampir 1."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "remote-sensing",
+  "name": {
+   "zh": "遥感",
+   "en": "Remote sensing",
+   "ms": "Penderiaan jauh"
+  },
+  "short": {
+   "zh": "不接触对象、用电磁辐射收集资料的技术。",
+   "en": "Gathering information without touching the object, using electromagnetic radiation.",
+   "ms": "Mengumpul maklumat tanpa menyentuh objek, menggunakan sinaran elektromagnet."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "vegetation-index",
+  "name": {
+   "zh": "植被指数",
+   "en": "Vegetation index",
+   "ms": "Indeks tumbuhan"
+  },
+  "short": {
+   "zh": "用可见光和近红外线的反射比较植物多寡的数值。",
+   "en": "A number comparing visible and near-infrared reflection to measure vegetation.",
+   "ms": "Nombor yang membandingkan pantulan cahaya nampak dan inframerah dekat untuk mengukur tumbuhan."
+  },
+  "chapter": 42
+ }
+]

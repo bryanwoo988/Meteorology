@@ -1,0 +1,216 @@
+{
+ "id": "ch24",
+ "num": 24,
+ "stage": 7,
+ "title": {
+  "zh": "雷达与闪电定位",
+  "en": "Radar and lightning detection",
+  "ms": "Radar dan pengesanan kilat"
+ },
+ "sources": [
+  "ESS",
+  "AMS-MP",
+  "NWS-ZR",
+  "NASA-GPM-DPR",
+  "ESA-S1",
+  "BLITZORTUNG",
+  "NEWS-MM-2025",
+  "MET-RADAR"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "雷达怎样“看见”雨",
+    "en": "How radar sees rain",
+    "ms": "Bagaimana radar melihat hujan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:radar}}的发射器送出很短、很强的微波脉冲，碰到雨滴时有一小部分能量被散射回来，由接收器收到。从发出到收回的时间，告诉我们雨在多远；回波越强，雨下得越大。所以雷达图不但显示哪里在下雨，还显示雨有多大。",
+      "en": "A {{t:radar}} transmitter sends out short, powerful microwave pulses; when they hit raindrops a small part of the energy is scattered back to a receiver. The time between sending and receiving tells how far away the rain is, and the stronger the echo, the heavier the rain. So a radar picture shows not only where it is raining but how hard.",
+      "ms": "Pemancar {{t:radar}} menghantar denyut gelombang mikro yang pendek dan kuat; apabila ia mengenai titisan hujan, sebahagian kecil tenaga diserak kembali ke penerima. Masa antara menghantar dan menerima memberitahu jarak hujan, dan semakin kuat gema, semakin lebat hujan. Jadi gambar radar menunjukkan bukan sahaja di mana hujan turun tetapi betapa lebatnya."
+     },
+     "defines": [
+      "radar"
+     ],
+     "src": [
+      "ESS:144"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "回波的强弱用{{t:dbz}}表示，是一种对数刻度：每多 10 dBZ，回波强 10 倍。把 dBZ 换成雨量要用经验公式，最有名的是 Marshall–Palmer 关系 Z = 200 R^1.6。",
+      "en": "Echo strength is given in {{t:dbz}}, a logarithmic scale: every 10 dBZ more means an echo ten times stronger. Turning dBZ into rainfall needs an empirical formula, the best known being the Marshall–Palmer relation, Z = 200 R^1.6.",
+      "ms": "Kekuatan gema diberi dalam {{t:dbz}}, skala logaritma: setiap 10 dBZ lebih bermakna gema sepuluh kali lebih kuat. Menukar dBZ kepada hujan memerlukan formula empirik, yang paling terkenal ialah hubungan Marshall–Palmer, Z = 200 R^1.6."
+     },
+     "defines": [
+      "dbz"
+     ],
+     "src": [
+      "AMS-MP",
+      "ESS:145"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W17"
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "雷达显示在下雨，外面却没有雨，可能是雨滴在半空就蒸发了：雷达波走直线，离雷达越远看到的位置越高，看到的是云里的雨。",
+      "en": "If radar shows rain but none is falling where you are, the drops may be evaporating on the way down: the beam travels in a straight line while the Earth curves away, so far from the radar it sees rain high in the cloud.",
+      "ms": "Jika radar menunjukkan hujan tetapi tiada hujan di tempat anda, titisan mungkin tersejat dalam perjalanan turun: alur radar bergerak lurus sementara bumi melengkung, jadi jauh dari radar ia melihat hujan tinggi di dalam awan."
+     },
+     "src": [
+      "ESS:144-145"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "多普勒雷达和双偏振雷达",
+    "en": "Doppler and dual-polarisation radar",
+    "ms": "Radar Doppler dan dwi-pengutuban"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:doppler-radar}}利用多普勒效应（就像火车靠近和离开时汽笛声调不同），量出雨滴朝着或离开雷达移动的速度。雨滴跟着风走，所以它能看到雷雨云里的风。",
+      "en": "A {{t:doppler-radar}} uses the Doppler shift — like the change in a train whistle's pitch as it passes — to measure how fast raindrops move towards or away from the antenna. Rain moves with the wind, so it can see the winds inside a storm.",
+      "ms": "{{t:doppler-radar}} menggunakan anjakan Doppler — seperti perubahan nada wisel kereta api apabila ia lalu — untuk mengukur kelajuan titisan hujan bergerak ke arah atau menjauhi antena. Hujan bergerak bersama angin, jadi ia dapat melihat angin di dalam ribut."
+     },
+     "defines": [
+      "doppler-radar"
+     ],
+     "src": [
+      "ESS:144"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:dual-pol-radar}}同时发出水平和垂直的脉冲，比较两者的回波，更容易分辨落下来的是雨还是雪。",
+      "en": "A {{t:dual-pol-radar}} sends both horizontal and vertical pulses; comparing their echoes makes it easier to tell whether what is falling is rain or snow.",
+      "ms": "{{t:dual-pol-radar}} menghantar denyut mendatar dan menegak; membandingkan gemanya memudahkan untuk membezakan sama ada yang jatuh ialah hujan atau salji."
+     },
+     "defines": [
+      "dual-pol-radar"
+     ],
+     "src": [
+      "ESS:145"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "太空中的雷达",
+    "en": "Radar in space",
+    "ms": "Radar di angkasa"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "GPM 核心卫星带着双频降雨雷达（Ku 和 Ka 两个波段），从上往下看雨，得到雨的立体结构和雨量；它的前身是 TRMM 上的降雨雷达。欧洲的 Sentinel-1 则用{{t:sar}}给地面拍照，不管白天黑夜、有没有云都能拍。",
+      "en": "The GPM Core Observatory carries a Dual-frequency Precipitation Radar (Ku and Ka bands) that looks down into rain, giving its three-dimensional structure and rate; its forerunner flew on TRMM. Europe's Sentinel-1 images the ground with {{t:sar}}, day or night, cloud or no cloud.",
+      "ms": "Balai Cerap Teras GPM membawa Radar Kerpasan Dwi-frekuensi (jalur Ku dan Ka) yang melihat ke bawah ke dalam hujan, memberi struktur tiga dimensi dan kadarnya; pendahulunya terbang pada TRMM. Sentinel-1 Eropah mengimej permukaan bumi dengan {{t:sar}}, siang atau malam, berawan atau tidak."
+     },
+     "defines": [
+      "sar"
+     ],
+     "src": [
+      "NASA-GPM-DPR",
+      "ESA-S1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "闪电定位",
+    "en": "Finding lightning",
+    "ms": "Mengesan kilat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "每一次闪电都会发出无线电波。几个相距很远的接收站记下电波到达的时间差，就能算出闪电的位置，这样的网络叫{{t:lightning-network}}。Blitzortung.org 是一个义工社区网络，用 500 多个甚低频（VLF）接收器，按到达时间差定位闪电，网上可以看即时地图。",
+      "en": "Every lightning flash sends out radio waves. Several distant receivers note the differences in arrival time, and from those the flash can be located; such a system is a {{t:lightning-network}}. Blitzortung.org is a volunteer community network of more than 500 very-low-frequency (VLF) receivers that locates flashes by time of arrival and shows them on a live map.",
+      "ms": "Setiap kilat memancarkan gelombang radio. Beberapa penerima yang berjauhan mencatat beza masa ketibaan, dan daripadanya kedudukan kilat dapat dikira; sistem sebegini ialah {{t:lightning-network}}. Blitzortung.org ialah rangkaian komuniti sukarelawan dengan lebih 500 penerima frekuensi sangat rendah (VLF) yang mengesan kilat mengikut masa ketibaan dan memaparkannya pada peta langsung."
+     },
+     "defines": [
+      "lightning-network"
+     ],
+     "src": [
+      "BLITZORTUNG"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "马来西亚的雷达",
+    "en": "Malaysia's radars",
+    "ms": "Radar Malaysia"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "大马气象局有 18 个天气雷达站，雷达回波图放在气象局网站和 myCuaca 手机应用上，可以看全国和半岛、沙巴砂拉越的即时雨区。",
+      "en": "MetMalaysia operates 18 weather-radar stations; the radar echo images are on its website and in the myCuaca app, for the whole country and separately for the Peninsula and for Sabah and Sarawak.",
+      "ms": "MetMalaysia mengendalikan 18 stesen radar cuaca; imej gema radar terdapat di laman webnya dan dalam aplikasi myCuaca, untuk seluruh negara serta berasingan untuk Semenanjung dan untuk Sabah dan Sarawak."
+     },
+     "src": [
+      "NEWS-MM-2025",
+      "MET-RADAR"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "午后阵雨在雷达上：中午以后，雷达图上常会突然冒出一块块黄色、红色的回波（40 dBZ 以上），一两个小时后又消失。用动画看几张，就知道雨区往哪里移动。",
+      "en": "Afternoon showers on radar: after noon, blobs of yellow and red echo (40 dBZ and up) often pop up on the radar picture and fade an hour or two later. Run a few frames as an animation to see which way the rain is moving.",
+      "ms": "Hujan petang pada radar: selepas tengah hari, tompok gema kuning dan merah (40 dBZ ke atas) sering muncul pada gambar radar dan hilang sejam dua kemudian. Mainkan beberapa bingkai sebagai animasi untuk melihat ke mana hujan bergerak."
+     },
+     "src": [
+      "ESS:145",
+      "ESS:352"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "metmy-radar"
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "radar",
+  "dbz",
+  "doppler-radar",
+  "dual-pol-radar",
+  "sar",
+  "lightning-network"
+ ]
+}

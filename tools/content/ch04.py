@@ -1,0 +1,119 @@
+"""Chapter 4 — Air temperature."""
+import sys
+sys.path.insert(0, 'tools/content')
+from build import T, P, L, N, write_chapter
+
+chapter = {"id": "ch04", "num": 4, "stage": 2,
+ "title": T("气温", "Air temperature", "Suhu udara"),
+ "sources": ["PAM", "ESS", "ERA5-OM"],
+ "sections": [
+ {"id": "s1", "heading": T("温度量的是什么", "What temperature measures", "Apa yang diukur oleh suhu"), "level": "basic", "blocks": [
+  P("温度表示物体里的分子平均动得有多快：分子动得越快，温度越高。热量总是从温度高的地方流向温度低的地方。",
+    "Temperature tells you how fast, on average, the molecules in something are moving: the faster they move, the higher the temperature. Heat always flows from higher temperature to lower.",
+    "Suhu memberitahu betapa laju, secara purata, molekul dalam sesuatu bergerak: semakin laju, semakin tinggi suhu. Haba sentiasa mengalir dari suhu lebih tinggi ke lebih rendah.",
+    src=["PAM:56"]),
+  {"type": "table", "src": ["PAM:56-57"],
+   "caption": T("三种温标", "Three temperature scales", "Tiga skala suhu"),
+   "headers": [T("温标", "Scale", "Skala"), T("水结冰", "Water freezes", "Air membeku"), T("水沸腾", "Water boils", "Air mendidih"), T("换算", "Conversion", "Penukaran")],
+   "rows": [[T("摄氏 °C", "Celsius °C", "Celsius °C"), T("0", "0", "0"), T("100", "100", "100"), T("—", "—", "—")],
+            [T("华氏 °F", "Fahrenheit °F", "Fahrenheit °F"), T("32", "32", "32"), T("212", "212", "212"), T("°F = °C × 9/5 + 32", "°F = °C × 9/5 + 32", "°F = °C × 9/5 + 32")],
+            [T("开尔文 K", "Kelvin K", "Kelvin K"), T("273", "273", "273"), T("373", "373", "373"), T("K = °C + 273", "K = °C + 273", "K = °C + 273")]]},
+  N("tip", "工具页里有 °C ⇄ °F 换算器。科学计算多用开尔文，因为它从绝对零度算起，不会出现负数。",
+    "There is a °C ⇄ °F converter among the tools. Science uses kelvin because it starts at absolute zero and never goes negative.",
+    "Terdapat penukar °C ⇄ °F dalam alatan. Sains menggunakan kelvin kerana ia bermula dari sifar mutlak dan tidak pernah negatif.",
+    src=["PAM:56-57"]),
+ ]},
+ {"id": "s2", "heading": T("什么决定一个地方的气温", "What sets a place's temperature", "Apa yang menentukan suhu sesuatu tempat"), "level": "basic", "blocks": [
+  L(("纬度：一般赤道最热，越往两极越冷", "Latitude: warmest near the equator, colder towards the poles", "Latitud: paling panas berhampiran khatulistiwa, semakin sejuk ke arah kutub"),
+    ("高度：在对流层里越高越冷", "Height: colder the higher you go in the troposphere", "Ketinggian: semakin tinggi dalam troposfera, semakin sejuk"),
+    ("海陆分布：水的比热大，升温降温都慢，所以海边的气温比内陆稳定", "Land and sea: water warms and cools slowly, so coasts swing less than inland areas", "Darat dan laut: air memanas dan menyejuk perlahan, jadi kawasan pantai berubah kurang daripada pedalaman"),
+    ("洋流和风：从暖海或冷海吹来的风，把那里的温度带过来", "Ocean currents and winds: air arriving from a warm or cold sea brings that temperature with it", "Arus lautan dan angin: udara dari laut panas atau sejuk membawa suhunya bersama"),
+    ("云和雨：云挡阳光，雨让空气变凉", "Cloud and rain: clouds block sunshine and rain cools the air", "Awan dan hujan: awan menghalang cahaya matahari dan hujan menyejukkan udara"),
+    ("地面：深色土壤吸收更多阳光；有植物覆盖的地方，蒸散让气温比较温和", "The ground: dark soil absorbs more sunlight; vegetation keeps temperatures milder by giving off water", "Permukaan: tanah gelap menyerap lebih banyak cahaya matahari; tumbuhan menjadikan suhu lebih sederhana dengan membebaskan air"),
+    src=["PAM:57-58"]),
+ ]},
+ {"id": "s3", "heading": T("一天里的冷热", "Warm and cool through the day", "Panas dan sejuk sepanjang hari"), "level": "basic", "blocks": [
+  P("一天中最高温和最低温的差，叫{{t:diurnal-range}}。太阳在中午过后最高，但地面和空气要过一阵子才热到最高点：只要收到的能量还多过失去的，气温就继续升。所以晴天的最高温出现在午后，而不是正午；最低温通常在日出前后。",
+    "The difference between a day's highest and lowest temperature is the {{t:diurnal-range}}. The Sun is highest around midday, but the ground and air keep warming for a while afterwards — as long as they gain more energy than they lose. So on a sunny day the warmest time is in the afternoon, not at noon, and the coolest is usually around sunrise.",
+    "Perbezaan antara suhu tertinggi dan terendah dalam sehari ialah {{t:diurnal-range}}. Matahari paling tinggi sekitar tengah hari, tetapi tanah dan udara terus memanas untuk seketika — selagi tenaga yang diterima melebihi yang hilang. Jadi pada hari cerah, waktu paling panas ialah pada waktu petang, bukan tengah hari, dan paling sejuk biasanya sekitar matahari terbit.",
+    defines=["diurnal-range"], src=["ESS:59", "ESS:62"]),
+  {"type": "chart", "src": ["ERA5-OM"], "chart": {"kind": "line", "series_file": "kl-sunny-cloudy-2025",
+    "title": T("吉隆坡：晴天（2025 年 3 月 18 日）和阴雨天（2025 年 1 月 28 日）的逐时气温", "Kuala Lumpur: hourly temperature on a sunny day (18 March 2025) and an overcast, rainy day (28 January 2025)", "Kuala Lumpur: suhu setiap jam pada hari cerah (18 Mac 2025) dan hari mendung serta hujan (28 Januari 2025)"),
+    "x": {"col": "hour", "label": T("时间", "Time", "Masa"), "format": "hour"},
+    "y": {"label": T("气温", "Temperature", "Suhu"), "unit": "°C"},
+    "series": [
+      {"col": "t_sunny", "name": T("晴天", "Sunny day", "Hari cerah"), "color": "mercury"},
+      {"col": "t_cloudy", "name": T("阴雨天", "Overcast day", "Hari mendung"), "color": "sky"}]}},
+  P("拿吉隆坡两天的真实资料来比：3 月 18 日晴朗，气温从早上 7 点的 23.5 °C 升到下午 2 点的 34.6 °C，日较差约 11 °C；1 月 28 日整天阴雨，气温只在 24.0 到 26.3 °C 之间，日较差约 2 °C。云白天挡住阳光，晚上又像被子一样保暖，所以阴天的日较差小。",
+    "Two real days in Kuala Lumpur show it. On 18 March the sky was clear and the temperature climbed from 23.5 °C at 7 am to 34.6 °C at 2 pm, a range of about 11 °C. On 28 January it was overcast and rainy all day, and the temperature stayed between 24.0 and 26.3 °C, a range of about 2 °C. Cloud blocks the sun by day and keeps heat in by night, so cloudy days have a small range.",
+    "Dua hari sebenar di Kuala Lumpur menunjukkannya. Pada 18 Mac langit cerah dan suhu naik daripada 23.5 °C pada jam 7 pagi kepada 34.6 °C pada jam 2 petang, julat kira-kira 11 °C. Pada 28 Januari cuaca mendung dan hujan sepanjang hari, dan suhu kekal antara 24.0 dan 26.3 °C, julat kira-kira 2 °C. Awan menghalang matahari pada siang hari dan menyimpan haba pada waktu malam, jadi hari berawan mempunyai julat kecil.",
+    src=["ERA5-OM", "ESS:65"]),
+  N("key", "🌦️ 午后阵雨的第一块拼图：晴天里，地面从早上一直被晒到下午 2 点左右，贴地的空气越来越热。热空气会怎样？第 7 章揭晓。",
+    "🌦️ Afternoon storms, piece one: on a sunny day the ground is heated from morning until about 2 pm, and the air touching it keeps getting hotter. What does hot air do? Chapter 7 tells.",
+    "🌦️ Ribut petang, kepingan pertama: pada hari cerah, tanah dipanaskan dari pagi hingga kira-kira jam 2 petang, dan udara yang menyentuhnya terus menjadi lebih panas. Apa yang dilakukan udara panas? Bab 7 menjawabnya.",
+    src=["ERA5-OM", "ESS:59"]),
+  P("晴朗无风的晚上，地面不停以红外线失热，贴地的空气变得比上面的空气还冷。这时越往上反而越暖，和平常相反，这种情况叫辐射逆温，在清晨最明显。",
+    "On clear, calm nights the ground keeps losing heat as infrared, and the air touching it becomes colder than the air above. For a while temperature then rises with height — the reverse of normal. This is a radiation inversion, strongest around dawn.",
+    "Pada malam cerah dan tenang, tanah terus kehilangan haba sebagai inframerah, dan udara yang menyentuhnya menjadi lebih sejuk daripada udara di atas. Untuk seketika suhu meningkat dengan ketinggian — terbalik daripada biasa. Inilah songsangan sinaran, paling kuat sekitar subuh.",
+    src=["ESS:60"]),
+ ]},
+ {"id": "s4", "heading": T("一年里的冷热", "Warm and cool through the year", "Panas dan sejuk sepanjang tahun"), "level": "basic", "blocks": [
+  P("一年中最热月和最冷月的平均气温差，叫{{t:annual-range}}。在中纬度，这个差可以有二三十度，而且最热的时候比日照最强的时候晚几个星期，就像一天里的最高温晚于正午。",
+    "The difference between the average temperatures of the warmest and coolest months is the {{t:annual-range}}. In middle latitudes it can be twenty or thirty degrees, and the warmest weather comes weeks after the strongest sunshine — just as the warmest hour comes after noon.",
+    "Perbezaan antara suhu purata bulan paling panas dan paling sejuk ialah {{t:annual-range}}. Di latitud sederhana ia boleh mencapai dua puluh atau tiga puluh darjah, dan cuaca paling panas tiba beberapa minggu selepas cahaya matahari paling kuat — sama seperti jam paling panas tiba selepas tengah hari.",
+    defines=["annual-range"], src=["ESS:52"]),
+  {"type": "chart", "src": ["ERA5-OM"], "chart": {"kind": "line", "series_file": "kl-monthly-2025",
+    "title": T("吉隆坡 2025 年：各月平均气温", "Kuala Lumpur, 2025: average temperature by month", "Kuala Lumpur, 2025: purata suhu mengikut bulan"),
+    "x": {"col": "month", "label": T("月份", "Month", "Bulan"), "format": "month"},
+    "y": {"label": T("气温", "Temperature", "Suhu"), "unit": "°C"},
+    "series": [{"col": "temperature_2m", "name": T("月平均气温", "Monthly mean", "Purata bulanan"), "color": "mercury"}]}},
+  P("吉隆坡 2025 年各月的平均气温只在 26.1 到 29.7 °C 之间，年较差不到 4 °C——比一个晴天的日较差还小。这就是赤道气候：天天差不多热，一天里的变化比一年里的变化还大。",
+    "In Kuala Lumpur in 2025 the monthly averages ranged only from 26.1 to 29.7 °C, an annual range under 4 °C — smaller than the range within a single sunny day. That is the equatorial climate: every day is about as warm as the next, and a day changes more than a year does.",
+    "Di Kuala Lumpur pada 2025 purata bulanan hanya antara 26.1 hingga 29.7 °C, julat tahunan kurang daripada 4 °C — lebih kecil daripada julat dalam satu hari cerah. Itulah iklim khatulistiwa: setiap hari lebih kurang sama panas, dan sehari berubah lebih banyak daripada setahun.",
+    src=["ERA5-OM"]),
+ ]},
+ {"id": "s5", "heading": T("天气预报里的“2 米气温”", "The ‘2-metre temperature’ in forecasts", "‘Suhu 2 meter’ dalam ramalan"), "level": "basic", "blocks": [
+  P("贴着地面的气温变化很大，所以气温要在固定高度、在阴凉处量。气象站把温度计放在通风的白色百叶箱里，离地约 1.2 到 2 米。天气预报和模型说的气温，指的就是离地约 2 米的{{t:two-metre-temperature}}。",
+    "Temperature right at the ground varies wildly, so air temperature is measured at a fixed height in the shade. Weather stations keep their thermometers in a ventilated white shelter about 1.2 to 2 m above the ground. When a forecast or a model gives the temperature, it means this {{t:two-metre-temperature}}.",
+    "Suhu betul-betul di permukaan tanah berubah dengan sangat ketara, jadi suhu udara diukur pada ketinggian tetap di tempat teduh. Stesen cuaca meletakkan termometer dalam pelindung putih berongga kira-kira 1.2 hingga 2 m dari tanah. Apabila ramalan atau model memberi suhu, ia bermaksud {{t:two-metre-temperature}} ini.",
+    defines=["two-metre-temperature"], src=["ESS:77", "PAM:137-138"]),
+  N("myth", "“今天太阳底下 40 度”——太阳底下量到的不是气温，是温度计本身被晒热的温度。气温一定要在阴凉、通风的地方量。",
+    "‘It was 40 degrees in the sun today’ — what a thermometer reads in sunshine is how hot the thermometer itself has become, not the air. Air temperature must be measured in shade with air flowing past.",
+    "‘Hari ini 40 darjah di bawah matahari’ — bacaan termometer di bawah cahaya matahari ialah betapa panas termometer itu sendiri, bukan udara. Suhu udara mesti diukur di tempat teduh dengan udara mengalir.",
+    src=["ESS:77"]),
+ ]},
+ {"id": "s6", "heading": T("平均气温怎么算", "How average temperatures are worked out", "Cara purata suhu dikira"), "level": "advanced", "blocks": [
+  {"type": "keyval", "src": ["PAM:57"], "rows": [
+   {"k": T("日平均气温", "Daily mean", "Purata harian"), "v": T("（最高温 + 最低温）÷ 2", "(maximum + minimum) ÷ 2", "(maksimum + minimum) ÷ 2")},
+   {"k": T("月平均气温", "Monthly mean", "Purata bulanan"), "v": T("当月每日平均气温的平均", "Average of the month's daily means", "Purata bagi purata harian dalam bulan itu")},
+   {"k": T("年平均气温", "Annual mean", "Purata tahunan"), "v": T("12 个月平均气温的平均", "Average of the twelve monthly means", "Purata bagi dua belas purata bulanan")},
+   {"k": T("日较差", "Daily range", "Julat harian"), "v": T("最高温 − 最低温", "maximum − minimum", "maksimum − minimum")}]},
+  P("本章的吉隆坡图表来自 ERA5 再分析资料，用的是每个小时的值，所以和气象站用最高、最低温算出的日平均会有一点差别。ERA5 是一个约 25 公里（0.25°）网格的平均，不是某一个气象站的读数；第 31 章会解释它是怎样做出来的。",
+    "The Kuala Lumpur charts in this chapter use ERA5 reanalysis and its hourly values, so their averages differ slightly from a station's (max + min) ÷ 2. ERA5 is an average over a grid box about 25 km (0.25°) across, not one station's reading; Chapter 31 explains how it is made.",
+    "Carta Kuala Lumpur dalam bab ini menggunakan analisis semula ERA5 dan nilai setiap jamnya, jadi puratanya berbeza sedikit daripada (maks + min) ÷ 2 sesebuah stesen. ERA5 ialah purata bagi kotak grid kira-kira 25 km (0.25°) lebar, bukan bacaan satu stesen; Bab 31 menerangkan cara ia dihasilkan.",
+    src=["ERA5-OM"]),
+ ]},
+ ]}
+
+terms = [
+ ("diurnal-range", T("气温日较差", "Daily temperature range", "Julat suhu harian"), T("一天中最高温与最低温之差；晴天大，阴天小。", "A day's highest minus lowest temperature; large on clear days, small on cloudy ones.", "Suhu tertinggi tolak terendah dalam sehari; besar pada hari cerah, kecil pada hari berawan.")),
+ ("annual-range", T("气温年较差", "Annual temperature range", "Julat suhu tahunan"), T("最热月与最冷月平均气温之差；赤道附近很小。", "The warmest month's average minus the coolest month's; very small near the equator.", "Purata bulan paling panas tolak bulan paling sejuk; sangat kecil berhampiran khatulistiwa.")),
+ ("two-metre-temperature", T("2 米气温", "2-metre temperature", "Suhu 2 meter"), T("离地约 2 米、在阴凉通风处量的气温；预报说的“气温”就是它。", "Air temperature about 2 m above the ground, in shade and moving air; what forecasts mean by ‘temperature’.", "Suhu udara kira-kira 2 m dari tanah, di tempat teduh dan berangin; maksud ‘suhu’ dalam ramalan.")),
+]
+
+quiz = [
+ {"stage": 2, "chapter": "ch04", "q": T("晴天里，吉隆坡的最高气温通常出现在什么时候？", "On a sunny day in Kuala Lumpur, when is it usually warmest?", "Pada hari cerah di Kuala Lumpur, bilakah biasanya paling panas?"),
+  "options": [T("日出时", "At sunrise", "Ketika matahari terbit"), T("正午 12 点", "At 12 noon", "Pada jam 12 tengah hari"), T("下午约 2 点", "Around 2 pm", "Sekitar jam 2 petang"), T("半夜", "At midnight", "Pada tengah malam")],
+  "answer": 2, "why": T("只要收到的能量多过失去的，气温就继续升，所以最高温落后于太阳最高的时刻。", "Temperature keeps rising while energy gained exceeds energy lost, so the warmest hour lags the highest Sun.", "Suhu terus naik selagi tenaga diterima melebihi yang hilang, jadi jam paling panas lewat daripada Matahari tertinggi.")},
+ {"stage": 2, "chapter": "ch04", "q": T("哪一种天气的日较差最小？", "Which weather gives the smallest daily range?", "Cuaca manakah memberikan julat harian paling kecil?"),
+  "options": [T("晴朗无风", "Clear and calm", "Cerah dan tenang"), T("整天阴雨", "Overcast and rainy all day", "Mendung dan hujan sepanjang hari"), T("晴天有风", "Sunny and windy", "Cerah dan berangin"), T("沙漠的晴天", "A clear desert day", "Hari cerah di gurun")],
+  "answer": 1, "why": T("云白天挡阳光、晚上保暖，例子里的阴雨天日较差只有约 2 °C。", "Cloud blocks sun by day and keeps heat in by night; the overcast example had a range of only about 2 °C.", "Awan menghalang matahari pada siang dan menyimpan haba pada malam; contoh hari mendung mempunyai julat hanya kira-kira 2 °C.")},
+ {"stage": 2, "chapter": "ch04", "q": T("为什么气温要在阴凉通风的百叶箱里量？", "Why is air temperature measured in a shaded, ventilated shelter?", "Mengapa suhu udara diukur dalam pelindung teduh dan berongga?"),
+  "options": [T("保护温度计不被偷", "To stop theft", "Untuk mengelakkan kecurian"), T("太阳会把温度计本身晒热，量到的不是空气的温度", "Sunshine heats the thermometer itself, so it would not read the air", "Cahaya matahari memanaskan termometer itu sendiri, jadi ia tidak membaca suhu udara"), T("让读数比较高", "To make readings higher", "Supaya bacaan lebih tinggi"), T("为了挡雨", "Only to keep rain off", "Hanya untuk menghalang hujan")],
+  "answer": 1, "why": T("温度计要和空气同温，所以要遮阳又要通风。", "The thermometer must match the air, so it needs shade and air flow.", "Termometer mesti sama suhu dengan udara, jadi ia perlukan teduh dan aliran udara.")},
+ {"stage": 2, "chapter": "ch04", "q": T("吉隆坡 2025 年的年较差大约是多少？", "Roughly what was Kuala Lumpur's annual range in 2025?", "Kira-kira berapakah julat tahunan Kuala Lumpur pada 2025?"),
+  "options": [T("不到 4 °C", "Under 4 °C", "Kurang daripada 4 °C"), T("约 10 °C", "About 10 °C", "Kira-kira 10 °C"), T("约 20 °C", "About 20 °C", "Kira-kira 20 °C"), T("约 30 °C", "About 30 °C", "Kira-kira 30 °C")],
+  "answer": 0, "why": T("各月平均只在 26.1 到 29.7 °C 之间——赤道气候的特点。", "The monthly means spanned only 26.1 to 29.7 °C — typical of the equatorial climate.", "Purata bulanan hanya antara 26.1 hingga 29.7 °C — ciri iklim khatulistiwa.")},
+]
+
+write_chapter(chapter, terms, [], quiz)

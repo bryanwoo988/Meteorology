@@ -1,0 +1,471 @@
+{
+ "id": "ch37",
+ "num": 37,
+ "stage": 8,
+ "title": {
+  "zh": "Windy 图层导读",
+  "en": "A guide to Windy's layers",
+  "ms": "Panduan lapisan Windy"
+ },
+ "sources": [
+  "WINDY-OVERLAYS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "每个图层在第几章学过",
+    "en": "Where each layer was covered",
+    "ms": "Di mana setiap lapisan dipelajari"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "Windy 有几十个图层。下面这张表把常用的图层和这本书的章节对起来：点章节就回到那一章复习。",
+      "en": "Windy has dozens of layers. This table matches the common ones to the chapters of this book: tap a chapter to go back and revise it.",
+      "ms": "Windy mempunyai berpuluh-puluh lapisan. Jadual ini memadankan lapisan biasa dengan bab buku ini: ketik bab untuk kembali dan mengulang kaji."
+     },
+     "src": [
+      "WINDY-OVERLAYS"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "WINDY-OVERLAYS"
+     ],
+     "caption": {
+      "zh": "Windy 图层对照表",
+      "en": "Windy layers at a glance",
+      "ms": "Lapisan Windy sepintas lalu"
+     },
+     "headers": [
+      {
+       "zh": "图层",
+       "en": "Layer",
+       "ms": "Lapisan"
+      },
+      {
+       "zh": "是什么",
+       "en": "What it shows",
+       "ms": "Apa yang ditunjukkan"
+      },
+      {
+       "zh": "复习",
+       "en": "Revise",
+       "ms": "Ulang kaji"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "风",
+        "en": "Wind",
+        "ms": "Angin"
+       },
+       {
+        "zh": "地面 10 米的平均风（或选的气压层）",
+        "en": "Mean wind 10 m above the surface (or at a chosen pressure level)",
+        "ms": "Purata angin 10 m dari permukaan (atau pada aras tekanan dipilih)"
+       },
+       {
+        "zh": "{{ch:ch09|第 9 章}}",
+        "en": "{{ch:ch09|Chapter 9}}",
+        "ms": "{{ch:ch09|Bab 9}}"
+       }
+      ],
+      [
+       {
+        "zh": "阵风",
+        "en": "Wind gusts",
+        "ms": "Tiupan angin"
+       },
+       {
+        "zh": "过去 3 小时 10 米的阵风；ECMWF 的算法给的值比较高",
+        "en": "10 m gusts over the last 3 hours; ECMWF's method gives higher values",
+        "ms": "Tiupan 10 m dalam 3 jam lalu; kaedah ECMWF memberi nilai lebih tinggi"
+       },
+       {
+        "zh": "{{ch:ch09|第 9 章}}",
+        "en": "{{ch:ch09|Chapter 9}}",
+        "ms": "{{ch:ch09|Bab 9}}"
+       }
+      ],
+      [
+       {
+        "zh": "雷达、闪电",
+        "en": "Radar, lightning",
+        "ms": "Radar, kilat"
+       },
+       {
+        "zh": "雷达回波加上 Blitzortung 的即时闪电",
+        "en": "Radar echoes plus live lightning from Blitzortung",
+        "ms": "Gema radar ditambah kilat langsung dari Blitzortung"
+       },
+       {
+        "zh": "{{ch:ch24|第 24 章}}",
+        "en": "{{ch:ch24|Chapter 24}}",
+        "ms": "{{ch:ch24|Bab 24}}"
+       }
+      ],
+      [
+       {
+        "zh": "雨、雷",
+        "en": "Rain, thunder",
+        "ms": "Hujan, guruh"
+       },
+       {
+        "zh": "过去 3 小时的雨量加闪电密度预报",
+        "en": "Rain over the last 3 hours with forecast lightning density",
+        "ms": "Hujan 3 jam lalu dengan ramalan ketumpatan kilat"
+       },
+       {
+        "zh": "{{ch:ch12|第 12 章}}",
+        "en": "{{ch:ch12|Chapter 12}}",
+        "ms": "{{ch:ch12|Bab 12}}"
+       }
+      ],
+      [
+       {
+        "zh": "累积雨量",
+        "en": "Rain accumulation",
+        "ms": "Hujan terkumpul"
+       },
+       {
+        "zh": "未来几小时或几天的总雨量",
+        "en": "Total rain over the coming hours or days",
+        "ms": "Jumlah hujan beberapa jam atau hari akan datang"
+       },
+       {
+        "zh": "{{ch:ch07|第 7 章}}",
+        "en": "{{ch:ch07|Chapter 7}}",
+        "ms": "{{ch:ch07|Bab 7}}"
+       }
+      ],
+      [
+       {
+        "zh": "气温",
+        "en": "Temperature",
+        "ms": "Suhu"
+       },
+       {
+        "zh": "离地 2 米的气温（或选的气压层）",
+        "en": "Temperature 2 m above the surface (or at a chosen level)",
+        "ms": "Suhu 2 m dari permukaan (atau pada aras dipilih)"
+       },
+       {
+        "zh": "{{ch:ch04|第 4 章}}",
+        "en": "{{ch:ch04|Chapter 4}}",
+        "ms": "{{ch:ch04|Bab 4}}"
+       }
+      ],
+      [
+       {
+        "zh": "露点",
+        "en": "Dew point",
+        "ms": "Takat embun"
+       },
+       {
+        "zh": "空气要冷到几度才会结露",
+        "en": "The temperature at which dew would form",
+        "ms": "Suhu di mana embun akan terbentuk"
+       },
+       {
+        "zh": "{{ch:ch05|第 5 章}}",
+        "en": "{{ch:ch05|Chapter 5}}",
+        "ms": "{{ch:ch05|Bab 5}}"
+       }
+      ],
+      [
+       {
+        "zh": "湿度",
+        "en": "Humidity",
+        "ms": "Kelembapan"
+       },
+       {
+        "zh": "2 米的相对湿度",
+        "en": "Relative humidity at 2 m",
+        "ms": "Kelembapan relatif pada 2 m"
+       },
+       {
+        "zh": "{{ch:ch05|第 5 章}}",
+        "en": "{{ch:ch05|Chapter 5}}",
+        "ms": "{{ch:ch05|Bab 5}}"
+       }
+      ],
+      [
+       {
+        "zh": "湿球温度",
+        "en": "Wet-bulb temperature",
+        "ms": "Suhu bebuli basah"
+       },
+       {
+        "zh": "靠蒸发能冷到的最低温度；持续超过 35 °C 会危及生命",
+        "en": "The lowest temperature evaporation can reach; above 35 °C for long it is life-threatening",
+        "ms": "Suhu terendah yang boleh dicapai penyejatan; melebihi 35 °C lama mengancam nyawa"
+       },
+       {
+        "zh": "{{ch:ch05|第 5 章}}",
+        "en": "{{ch:ch05|Chapter 5}}",
+        "ms": "{{ch:ch05|Bab 5}}"
+       }
+      ],
+      [
+       {
+        "zh": "冻结高度",
+        "en": "Freezing altitude",
+        "ms": "Aras beku"
+       },
+       {
+        "zh": "0 °C 的高度",
+        "en": "The height of the 0 °C level",
+        "ms": "Ketinggian aras 0 °C"
+       },
+       {
+        "zh": "{{ch:ch07|第 7 章}}",
+        "en": "{{ch:ch07|Chapter 7}}",
+        "ms": "{{ch:ch07|Bab 7}}"
+       }
+      ],
+      [
+       {
+        "zh": "CAPE 指数",
+        "en": "CAPE index",
+        "ms": "Indeks CAPE"
+       },
+       {
+        "zh": "对流能量；1,000–2,000 可能有中等雷雨，2,000 以上可能很强",
+        "en": "Convective energy; 1,000–2,000 may mean moderate storms, over 2,000 severe ones",
+        "ms": "Tenaga perolakan; 1,000–2,000 mungkin ribut sederhana, melebihi 2,000 ribut teruk"
+       },
+       {
+        "zh": "{{ch:ch07|第 7 章}}",
+        "en": "{{ch:ch07|Chapter 7}}",
+        "ms": "{{ch:ch07|Bab 7}}"
+       }
+      ],
+      [
+       {
+        "zh": "云、低云、中云、高云",
+        "en": "Clouds (low, medium, high)",
+        "ms": "Awan (rendah, sederhana, tinggi)"
+       },
+       {
+        "zh": "低云在地面到约 2,000 米，中云约 2,000–6,500 米，高云约 6,500 米以上",
+        "en": "Low cloud up to about 2,000 m, medium about 2,000–6,500 m, high above about 6,500 m",
+        "ms": "Awan rendah hingga kira-kira 2,000 m, sederhana kira-kira 2,000–6,500 m, tinggi melebihi kira-kira 6,500 m"
+       },
+       {
+        "zh": "{{ch:ch06|第 6 章}}",
+        "en": "{{ch:ch06|Chapter 6}}",
+        "ms": "{{ch:ch06|Bab 6}}"
+       }
+      ],
+      [
+       {
+        "zh": "云顶、云底",
+        "en": "Cloud tops, cloud base",
+        "ms": "Puncak awan, dasar awan"
+       },
+       {
+        "zh": "云最高和最低的高度",
+        "en": "The heights of the highest and lowest parts of the cloud",
+        "ms": "Ketinggian bahagian tertinggi dan terendah awan"
+       },
+       {
+        "zh": "{{ch:ch06|第 6 章}}",
+        "en": "{{ch:ch06|Chapter 6}}",
+        "ms": "{{ch:ch06|Bab 6}}"
+       }
+      ],
+      [
+       {
+        "zh": "能见度",
+        "en": "Visibility",
+        "ms": "Ketampakan"
+       },
+       {
+        "zh": "看得多远；空气有多透明",
+        "en": "How far you can see; how clear the air is",
+        "ms": "Sejauh mana boleh dilihat; betapa jernih udara"
+       },
+       {
+        "zh": "{{ch:ch06|第 6 章}}",
+        "en": "{{ch:ch06|Chapter 6}}",
+        "ms": "{{ch:ch06|Bab 6}}"
+       }
+      ],
+      [
+       {
+        "zh": "太阳能、紫外线",
+        "en": "Solar power, UV index",
+        "ms": "Kuasa suria, indeks UV"
+       },
+       {
+        "zh": "到达地面的太阳辐射；晒伤的紫外线强度",
+        "en": "Sunlight reaching the ground; the strength of sunburning UV",
+        "ms": "Cahaya matahari sampai ke tanah; kekuatan UV yang membakar kulit"
+       },
+       {
+        "zh": "{{ch:ch02|第 2 章}}",
+        "en": "{{ch:ch02|Chapter 2}}",
+        "ms": "{{ch:ch02|Bab 2}}"
+       }
+      ],
+      [
+       {
+        "zh": "海浪、涌浪",
+        "en": "Waves, swell",
+        "ms": "Ombak, alun"
+       },
+       {
+        "zh": "有效波高和周期；涌浪来自远方的风",
+        "en": "Significant wave height and period; swell comes from distant winds",
+        "ms": "Ketinggian ombak bererti dan tempoh; alun datang dari angin jauh"
+       },
+       {
+        "zh": "{{ch:ch13|第 13 章}}",
+        "en": "{{ch:ch13|Chapter 13}}",
+        "ms": "{{ch:ch13|Bab 13}}"
+       }
+      ],
+      [
+       {
+        "zh": "海温、洋流、潮流",
+        "en": "Sea temperature, currents, tidal currents",
+        "ms": "Suhu laut, arus, arus pasang surut"
+       },
+       {
+        "zh": "海面温度和海流",
+        "en": "Sea-surface temperature and currents",
+        "ms": "Suhu permukaan laut dan arus"
+       },
+       {
+        "zh": "{{ch:ch13|第 13 章}}",
+        "en": "{{ch:ch13|Chapter 13}}",
+        "ms": "{{ch:ch13|Bab 13}}"
+       }
+      ],
+      [
+       {
+        "zh": "CO、粉尘、SO₂",
+        "en": "CO, dust, SO₂",
+        "ms": "CO, debu, SO₂"
+       },
+       {
+        "zh": "大气成分（霾里有什么）",
+        "en": "Atmospheric composition — what is in haze",
+        "ms": "Komposisi atmosfera — apa ada dalam jerebu"
+       },
+       {
+        "zh": "{{ch:ch20|第 20 章}}",
+        "en": "{{ch:ch20|Chapter 20}}",
+        "ms": "{{ch:ch20|Bab 20}}"
+       }
+      ],
+      [
+       {
+        "zh": "土壤湿度、干旱强度",
+        "en": "Soil moisture, drought intensity",
+        "ms": "Lembapan tanah, keamatan kemarau"
+       },
+       {
+        "zh": "作物可用的土壤水和缺水程度",
+        "en": "Soil water available to crops, and how short it is",
+        "ms": "Air tanah tersedia untuk tanaman, dan kekurangannya"
+       },
+       {
+        "zh": "{{ch:ch19|第 19 章}}",
+        "en": "{{ch:ch19|Chapter 19}}",
+        "ms": "{{ch:ch19|Bab 19}}"
+       }
+      ],
+      [
+       {
+        "zh": "气压",
+        "en": "Pressure",
+        "ms": "Tekanan"
+       },
+       {
+        "zh": "海平面气压",
+        "en": "Mean sea-level pressure",
+        "ms": "Tekanan purata paras laut"
+       },
+       {
+        "zh": "{{ch:ch09|第 9 章}}",
+        "en": "{{ch:ch09|Chapter 9}}",
+        "ms": "{{ch:ch09|Bab 9}}"
+       }
+      ],
+      [
+       {
+        "zh": "天气预警",
+        "en": "Weather warnings",
+        "ms": "Amaran cuaca"
+       },
+       {
+        "zh": "各国气象局用 CAP 格式发的预警",
+        "en": "National warnings sent in the CAP format",
+        "ms": "Amaran negara yang dihantar dalam format CAP"
+       },
+       {
+        "zh": "{{ch:ch18|第 18 章}}",
+        "en": "{{ch:ch18|Chapter 18}}",
+        "ms": "{{ch:ch18|Bab 18}}"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "模型、高度和单点预报",
+    "en": "Models, heights and point forecasts",
+    "ms": "Model, ketinggian dan ramalan titik"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "模型：可以在 ECMWF、GFS 等模型之间切换；几个模型说法一致时比较可信（第 33 章）",
+       "en": "Model: switch between ECMWF, GFS and others; when they agree, trust rises (Chapter 33)",
+       "ms": "Model: tukar antara ECMWF, GFS dan lain-lain; apabila bersetuju, keyakinan meningkat (Bab 33)"
+      },
+      {
+       "zh": "高度：风、气温、湿度等可以选地面或某个气压层，例如 850 hPa 看季风（第 10 章）",
+       "en": "Height: wind, temperature, humidity and more can be shown at the surface or at a pressure level, such as 850 hPa for the monsoon (Chapter 10)",
+       "ms": "Ketinggian: angin, suhu, kelembapan dan lain-lain boleh ditunjukkan di permukaan atau pada aras tekanan, seperti 850 hPa untuk monsun (Bab 10)"
+      },
+      {
+       "zh": "单点预报：点地图上的一个地方，看那里的逐时预报，就是一张 meteogram（第 35 章）",
+       "en": "Point forecast: tap a place on the map for its hour-by-hour forecast — a meteogram (Chapter 35)",
+       "ms": "Ramalan titik: ketik satu tempat pada peta untuk ramalan jam demi jamnya — sebuah meteogram (Bab 35)"
+      }
+     ],
+     "src": [
+      "WINDY-OVERLAYS"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "warn",
+     "text": {
+      "zh": "Windy 自己也提醒：地面的实际风和气温会受山、城市、对流云影响；模型的格子平均不等于某一点的观测（第 27 章）。",
+      "en": "Windy itself warns that the actual wind and temperature at the ground are affected by mountains, cities and convective clouds; a model's grid average is not an observation at one spot (Chapter 27).",
+      "ms": "Windy sendiri mengingatkan bahawa angin dan suhu sebenar di tanah dipengaruhi gunung, bandar dan awan perolakan; purata grid model bukan cerapan di satu tempat (Bab 27)."
+     },
+     "src": [
+      "WINDY-OVERLAYS"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": []
+}

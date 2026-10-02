@@ -1,0 +1,608 @@
+{
+ "app": {
+  "zh": "气象学",
+  "en": "Meteorology",
+  "ms": "Meteorology"
+ },
+ "stages": [
+  {
+   "n": 1,
+   "title": {
+    "zh": "认识大气",
+    "en": "Meeting the atmosphere",
+    "ms": "Mengenali atmosfera"
+   },
+   "blurb": {
+    "zh": "天气与气候的分别，以及包围地球的那层空气",
+    "en": "What weather and climate are, and the thin layer of air around the Earth",
+    "ms": "Apakah cuaca dan iklim, dan lapisan udara nipis yang menyelubungi Bumi"
+   },
+   "chapters": [
+    "ch01",
+    "ch02"
+   ]
+  },
+  {
+   "n": 2,
+   "title": {
+    "zh": "能量与温度",
+    "en": "Energy and temperature",
+    "ms": "Tenaga dan suhu"
+   },
+   "blurb": {
+    "zh": "太阳的能量怎样加热地球，气温为什么会变化",
+    "en": "How the Sun's energy heats the Earth, and why temperature changes",
+    "ms": "Bagaimana tenaga Matahari memanaskan Bumi, dan mengapa suhu berubah"
+   },
+   "chapters": [
+    "ch03",
+    "ch04"
+   ]
+  },
+  {
+   "n": 3,
+   "title": {
+    "zh": "水在大气中",
+    "en": "Water in the air",
+    "ms": "Air di udara"
+   },
+   "blurb": {
+    "zh": "湿度、云和雨：看不见的水汽怎样变成雨",
+    "en": "Humidity, clouds and rain: how invisible vapour becomes rain",
+    "ms": "Kelembapan, awan dan hujan: bagaimana wap yang tidak kelihatan menjadi hujan"
+   },
+   "chapters": [
+    "ch05",
+    "ch06",
+    "ch07",
+    "ch08"
+   ]
+  },
+  {
+   "n": 4,
+   "title": {
+    "zh": "空气怎样流动",
+    "en": "How air moves",
+    "ms": "Bagaimana udara bergerak"
+   },
+   "blurb": {
+    "zh": "气压、风、高空大气和全球环流，以及风暴",
+    "en": "Pressure, wind, the upper air, the global circulation, and storms",
+    "ms": "Tekanan, angin, atmosfera atas, peredaran global, dan ribut"
+   },
+   "chapters": [
+    "ch09",
+    "ch10",
+    "ch11",
+    "ch12"
+   ]
+  },
+  {
+   "n": 5,
+   "title": {
+    "zh": "海洋与气候",
+    "en": "Ocean and climate",
+    "ms": "Lautan dan iklim"
+   },
+   "blurb": {
+    "zh": "海洋怎样影响天气：ENSO、MJO、IOD 与气候变化",
+    "en": "How the ocean shapes weather: ENSO, MJO, IOD and climate change",
+    "ms": "Bagaimana lautan membentuk cuaca: ENSO, MJO, IOD dan perubahan iklim"
+   },
+   "chapters": [
+    "ch13",
+    "ch14",
+    "ch15"
+   ]
+  },
+  {
+   "n": 6,
+   "title": {
+    "zh": "马来西亚的天气",
+    "en": "Malaysia's weather",
+    "ms": "Cuaca Malaysia"
+   },
+   "blurb": {
+    "zh": "季风、午后阵雨、预警、水灾与霾",
+    "en": "Monsoons, afternoon storms, warnings, floods and haze",
+    "ms": "Monsun, ribut petang, amaran, banjir dan jerebu"
+   },
+   "chapters": [
+    "ch16",
+    "ch17",
+    "ch18",
+    "ch19",
+    "ch20"
+   ]
+  },
+  {
+   "n": 7,
+   "title": {
+    "zh": "观测",
+    "en": "Observing the weather",
+    "ms": "Mencerap cuaca"
+   },
+   "blurb": {
+    "zh": "观测站、探空、卫星、雷达与 Skew-T 图",
+    "en": "Stations, soundings, satellites, radar and the Skew-T",
+    "ms": "Stesen, pencerapan udara atas, satelit, radar dan Skew-T"
+   },
+   "chapters": [
+    "ch21",
+    "ch22",
+    "ch23",
+    "ch24",
+    "ch25"
+   ]
+  },
+  {
+   "n": 8,
+   "title": {
+    "zh": "预报与模型",
+    "en": "Forecasts and models",
+    "ms": "Ramalan dan model"
+   },
+   "blurb": {
+    "zh": "数值预报、集合预报、ECMWF、AI 模型，以及怎样读懂预报",
+    "en": "Numerical prediction, ensembles, ECMWF, AI models, and reading a forecast",
+    "ms": "Ramalan berangka, ensembel, ECMWF, model AI, dan cara membaca ramalan"
+   },
+   "chapters": [
+    "ch26",
+    "ch27",
+    "ch28",
+    "ch29",
+    "ch30",
+    "ch31",
+    "ch32",
+    "ch33",
+    "ch34",
+    "ch35",
+    "ch36",
+    "ch37"
+   ]
+  },
+  {
+   "n": 9,
+   "title": {
+    "zh": "用在农业上",
+    "en": "Weather and farming",
+    "ms": "Cuaca dan pertanian"
+   },
+   "blurb": {
+    "zh": "天气与作物、油棕、蒸散、小气候与遥感",
+    "en": "Weather and crops, oil palm, evapotranspiration, microclimate and remote sensing",
+    "ms": "Cuaca dan tanaman, sawit, sejatpeluhan, mikroiklim dan penderiaan jauh"
+   },
+   "chapters": [
+    "ch38",
+    "ch39",
+    "ch40",
+    "ch41",
+    "ch42"
+   ]
+  }
+ ],
+ "chapters": [
+  {
+   "id": "ch01",
+   "num": 1,
+   "stage": 1,
+   "title": {
+    "zh": "气象学是什么",
+    "en": "What is meteorology?",
+    "ms": "Apakah meteorologi?"
+   }
+  },
+  {
+   "id": "ch02",
+   "num": 2,
+   "stage": 1,
+   "title": {
+    "zh": "大气层",
+    "en": "The atmosphere",
+    "ms": "Atmosfera"
+   }
+  },
+  {
+   "id": "ch03",
+   "num": 3,
+   "stage": 2,
+   "title": {
+    "zh": "太阳辐射与能量平衡",
+    "en": "Solar radiation and the energy balance",
+    "ms": "Sinaran suria dan imbangan tenaga"
+   }
+  },
+  {
+   "id": "ch04",
+   "num": 4,
+   "stage": 2,
+   "title": {
+    "zh": "气温",
+    "en": "Air temperature",
+    "ms": "Suhu udara"
+   }
+  },
+  {
+   "id": "ch05",
+   "num": 5,
+   "stage": 3,
+   "title": {
+    "zh": "湿度",
+    "en": "Humidity",
+    "ms": "Kelembapan"
+   }
+  },
+  {
+   "id": "ch06",
+   "num": 6,
+   "stage": 3,
+   "title": {
+    "zh": "凝结、雾与云",
+    "en": "Condensation, fog and clouds",
+    "ms": "Kondensasi, kabus dan awan"
+   }
+  },
+  {
+   "id": "ch07",
+   "num": 7,
+   "stage": 3,
+   "title": {
+    "zh": "大气稳定度与降水",
+    "en": "Stability and precipitation",
+    "ms": "Kestabilan dan kerpasan"
+   }
+  },
+  {
+   "id": "ch08",
+   "num": 8,
+   "stage": 3,
+   "title": {
+    "zh": "天空的颜色",
+    "en": "The colours of the sky",
+    "ms": "Warna langit"
+   }
+  },
+  {
+   "id": "ch09",
+   "num": 9,
+   "stage": 4,
+   "title": {
+    "zh": "气压与风",
+    "en": "Pressure and wind",
+    "ms": "Tekanan dan angin"
+   }
+  },
+  {
+   "id": "ch10",
+   "num": 10,
+   "stage": 4,
+   "title": {
+    "zh": "高空大气",
+    "en": "The upper air",
+    "ms": "Atmosfera atas"
+   }
+  },
+  {
+   "id": "ch11",
+   "num": 11,
+   "stage": 4,
+   "title": {
+    "zh": "全球环流",
+    "en": "The global circulation",
+    "ms": "Peredaran global"
+   }
+  },
+  {
+   "id": "ch12",
+   "num": 12,
+   "stage": 4,
+   "title": {
+    "zh": "气团、锋面与风暴",
+    "en": "Air masses, fronts and storms",
+    "ms": "Jisim udara, front dan ribut"
+   }
+  },
+  {
+   "id": "ch13",
+   "num": 13,
+   "stage": 5,
+   "title": {
+    "zh": "海洋与天气",
+    "en": "The ocean and weather",
+    "ms": "Lautan dan cuaca"
+   }
+  },
+  {
+   "id": "ch14",
+   "num": 14,
+   "stage": 5,
+   "title": {
+    "zh": "厄尔尼诺、MJO 与印度洋偶极子",
+    "en": "El Niño, the MJO and the Indian Ocean Dipole",
+    "ms": "El Niño, MJO dan Dipol Lautan Hindi"
+   }
+  },
+  {
+   "id": "ch15",
+   "num": 15,
+   "stage": 5,
+   "title": {
+    "zh": "气候与气候变化",
+    "en": "Climate and climate change",
+    "ms": "Iklim dan perubahan iklim"
+   }
+  },
+  {
+   "id": "ch16",
+   "num": 16,
+   "stage": 6,
+   "title": {
+    "zh": "马来西亚的季风",
+    "en": "Malaysia's monsoons",
+    "ms": "Monsun di Malaysia"
+   }
+  },
+  {
+   "id": "ch17",
+   "num": 17,
+   "stage": 6,
+   "title": {
+    "zh": "每天的天气规律",
+    "en": "The daily rhythm of weather",
+    "ms": "Irama cuaca harian"
+   }
+  },
+  {
+   "id": "ch18",
+   "num": 18,
+   "stage": 6,
+   "title": {
+    "zh": "天气预警",
+    "en": "Weather warnings",
+    "ms": "Amaran cuaca"
+   }
+  },
+  {
+   "id": "ch19",
+   "num": 19,
+   "stage": 6,
+   "title": {
+    "zh": "洪水与干旱",
+    "en": "Floods and drought",
+    "ms": "Banjir dan kemarau"
+   }
+  },
+  {
+   "id": "ch20",
+   "num": 20,
+   "stage": 6,
+   "title": {
+    "zh": "烟霾与空气质量",
+    "en": "Haze and air quality",
+    "ms": "Jerebu dan kualiti udara"
+   }
+  },
+  {
+   "id": "ch21",
+   "num": 21,
+   "stage": 7,
+   "title": {
+    "zh": "地面观测站与仪器",
+    "en": "Weather stations and instruments",
+    "ms": "Stesen cuaca dan peralatan"
+   }
+  },
+  {
+   "id": "ch22",
+   "num": 22,
+   "stage": 7,
+   "title": {
+    "zh": "高空与海洋观测",
+    "en": "Observing the upper air and the ocean",
+    "ms": "Mencerap udara atas dan lautan"
+   }
+  },
+  {
+   "id": "ch23",
+   "num": 23,
+   "stage": 7,
+   "title": {
+    "zh": "气象卫星",
+    "en": "Weather satellites",
+    "ms": "Satelit cuaca"
+   }
+  },
+  {
+   "id": "ch24",
+   "num": 24,
+   "stage": 7,
+   "title": {
+    "zh": "雷达与闪电定位",
+    "en": "Radar and lightning detection",
+    "ms": "Radar dan pengesanan kilat"
+   }
+  },
+  {
+   "id": "ch25",
+   "num": 25,
+   "stage": 7,
+   "title": {
+    "zh": "Skew-T 探空图",
+    "en": "Reading a Skew-T",
+    "ms": "Membaca Skew-T"
+   }
+  },
+  {
+   "id": "ch26",
+   "num": 26,
+   "stage": 8,
+   "title": {
+    "zh": "天气图",
+    "en": "Weather maps",
+    "ms": "Peta cuaca"
+   }
+  },
+  {
+   "id": "ch27",
+   "num": 27,
+   "stage": 8,
+   "title": {
+    "zh": "数值天气预报怎样运作",
+    "en": "How numerical weather prediction works",
+    "ms": "Bagaimana ramalan cuaca berangka berfungsi"
+   }
+  },
+  {
+   "id": "ch28",
+   "num": 28,
+   "stage": 8,
+   "title": {
+    "zh": "集合预报：原理",
+    "en": "Ensemble forecasting: the idea",
+    "ms": "Ramalan ensemble: ideanya"
+   }
+  },
+  {
+   "id": "ch29",
+   "num": 29,
+   "stage": 8,
+   "title": {
+    "zh": "认识 ECMWF",
+    "en": "Getting to know ECMWF",
+    "ms": "Mengenali ECMWF"
+   }
+  },
+  {
+   "id": "ch30",
+   "num": 30,
+   "stage": 8,
+   "title": {
+    "zh": "读懂 ECMWF 的集合预报图",
+    "en": "Reading ECMWF ensemble charts",
+    "ms": "Membaca carta ensemble ECMWF"
+   }
+  },
+  {
+   "id": "ch31",
+   "num": 31,
+   "stage": 8,
+   "title": {
+    "zh": "再分析与季节预报",
+    "en": "Reanalysis and seasonal forecasts",
+    "ms": "Analisis semula dan ramalan bermusim"
+   }
+  },
+  {
+   "id": "ch32",
+   "num": 32,
+   "stage": 8,
+   "title": {
+    "zh": "AI 天气模型",
+    "en": "AI weather models",
+    "ms": "Model cuaca AI"
+   }
+  },
+  {
+   "id": "ch33",
+   "num": 33,
+   "stage": 8,
+   "title": {
+    "zh": "其他主要模型与多模型集合",
+    "en": "Other major models and multi-model ensembles",
+    "ms": "Model utama lain dan ensemble pelbagai model"
+   }
+  },
+  {
+   "id": "ch34",
+   "num": 34,
+   "stage": 8,
+   "title": {
+    "zh": "预报准不准",
+    "en": "How good are forecasts?",
+    "ms": "Sejauh mana ramalan tepat?"
+   }
+  },
+  {
+   "id": "ch35",
+   "num": 35,
+   "stage": 8,
+   "title": {
+    "zh": "看懂天气 App",
+    "en": "Reading weather apps",
+    "ms": "Membaca aplikasi cuaca"
+   }
+  },
+  {
+   "id": "ch36",
+   "num": 36,
+   "stage": 8,
+   "title": {
+    "zh": "真实事件复盘：2021 年 12 月大雨",
+    "en": "A real event, step by step: December 2021",
+    "ms": "Peristiwa sebenar, langkah demi langkah: Disember 2021"
+   }
+  },
+  {
+   "id": "ch37",
+   "num": 37,
+   "stage": 8,
+   "title": {
+    "zh": "Windy 图层导读",
+    "en": "A guide to Windy's layers",
+    "ms": "Panduan lapisan Windy"
+   }
+  },
+  {
+   "id": "ch38",
+   "num": 38,
+   "stage": 9,
+   "title": {
+    "zh": "天气与作物",
+    "en": "Weather and crops",
+    "ms": "Cuaca dan tanaman"
+   }
+  },
+  {
+   "id": "ch39",
+   "num": 39,
+   "stage": 9,
+   "title": {
+    "zh": "天气与油棕",
+    "en": "Weather and oil palm",
+    "ms": "Cuaca dan kelapa sawit"
+   }
+  },
+  {
+   "id": "ch40",
+   "num": 40,
+   "stage": 9,
+   "title": {
+    "zh": "蒸散与作物需水",
+    "en": "Evapotranspiration and crop water",
+    "ms": "Sejatpeluhan dan air tanaman"
+   }
+  },
+  {
+   "id": "ch41",
+   "num": 41,
+   "stage": 9,
+   "title": {
+    "zh": "微气象与小气候",
+    "en": "Micrometeorology and microclimate",
+    "ms": "Mikrometeorologi dan mikroiklim"
+   }
+  },
+  {
+   "id": "ch42",
+   "num": 42,
+   "stage": 9,
+   "title": {
+    "zh": "遥感与作物模型",
+    "en": "Remote sensing and crop models",
+    "ms": "Penderiaan jauh dan model tanaman"
+   }
+  }
+ ]
+}

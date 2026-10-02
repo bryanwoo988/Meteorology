@@ -1,0 +1,4183 @@
+[
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "下面哪一句说的是“气候”而不是“天气”？",
+   "en": "Which of these is about climate rather than weather?",
+   "ms": "Yang manakah tentang iklim, bukan cuaca?"
+  },
+  "options": [
+   {
+    "zh": "吉隆坡今天下午有雷雨",
+    "en": "Kuala Lumpur has a thunderstorm this afternoon",
+    "ms": "Kuala Lumpur ada ribut petir petang ini"
+   },
+   {
+    "zh": "现在风很大",
+    "en": "It is very windy right now",
+    "ms": "Angin sangat kuat sekarang"
+   },
+   {
+    "zh": "东海岸一年中 11 月到 3 月雨最多",
+    "en": "On the east coast, November to March is the wettest part of the year",
+    "ms": "Di pantai timur, November hingga Mac ialah waktu paling basah dalam setahun"
+   },
+   {
+    "zh": "明天早上会有雾",
+    "en": "There will be fog tomorrow morning",
+    "ms": "Akan ada kabus esok pagi"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "气候讲的是长期的规律；其他三句都是某个时间的天气。",
+   "en": "Climate is the long-term pattern; the other three describe the weather at one time.",
+   "ms": "Iklim ialah corak jangka panjang; tiga yang lain menerangkan cuaca pada satu masa."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "meteorology 这个词的原意是什么？",
+   "en": "What did the word ‘meteorology’ originally mean?",
+   "ms": "Apakah maksud asal perkataan ‘meteorologi’?"
+  },
+  "options": [
+   {
+    "zh": "研究流星",
+    "en": "The study of meteors",
+    "ms": "Kajian tentang meteor"
+   },
+   {
+    "zh": "研究天上的东西",
+    "en": "The study of things up above",
+    "ms": "Kajian tentang benda di atas"
+   },
+   {
+    "zh": "研究海洋",
+    "en": "The study of the sea",
+    "ms": "Kajian tentang laut"
+   },
+   {
+    "zh": "研究星星",
+    "en": "The study of stars",
+    "ms": "Kajian tentang bintang"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "来自希腊文 meteorologia：研究天上的一切现象。",
+   "en": "From the Greek meteorologia: the study of everything seen in the sky.",
+   "ms": "Daripada bahasa Yunani meteorologia: kajian tentang segala yang dilihat di langit."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "下面哪一项不是气象要素？",
+   "en": "Which of these is not a weather element?",
+   "ms": "Yang manakah bukan unsur cuaca?"
+  },
+  "options": [
+   {
+    "zh": "湿度",
+    "en": "Humidity",
+    "ms": "Kelembapan"
+   },
+   {
+    "zh": "能见度",
+    "en": "Visibility",
+    "ms": "Keterlihatan"
+   },
+   {
+    "zh": "土壤颜色",
+    "en": "Soil colour",
+    "ms": "Warna tanah"
+   },
+   {
+    "zh": "风",
+    "en": "Wind",
+    "ms": "Angin"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "气象要素是描述大气状况的量：气温、气压、湿度、云、降水、能见度和风。",
+   "en": "Weather elements describe the air: temperature, pressure, humidity, cloud, precipitation, visibility and wind.",
+   "ms": "Unsur cuaca menerangkan udara: suhu, tekanan, kelembapan, awan, kerpasan, keterlihatan dan angin."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "马来西亚看的卫星云图主要来自哪个机构的卫星？",
+   "en": "Whose satellites supply most of the satellite pictures used in Malaysia?",
+   "ms": "Satelit siapakah membekalkan kebanyakan imej satelit yang digunakan di Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "ECMWF",
+    "en": "ECMWF",
+    "ms": "ECMWF"
+   },
+   {
+    "zh": "日本气象厅（JMA）",
+    "en": "Japan Meteorological Agency (JMA)",
+    "ms": "Agensi Meteorologi Jepun (JMA)"
+   },
+   {
+    "zh": "WMO",
+    "en": "WMO",
+    "ms": "WMO"
+   },
+   {
+    "zh": "ASMC",
+    "en": "ASMC",
+    "ms": "ASMC"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "向日葵（Himawari）卫星由日本气象厅运行。ECMWF 做数值预报，不发射卫星。",
+   "en": "The Himawari satellites are run by JMA. ECMWF makes numerical forecasts; it does not operate satellites.",
+   "ms": "Satelit Himawari dikendalikan oleh JMA. ECMWF membuat ramalan berangka; ia tidak mengendalikan satelit."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "为什么平流层是越高越暖？",
+   "en": "Why does the stratosphere get warmer with height?",
+   "ms": "Mengapa stratosfera semakin panas dengan ketinggian?"
+  },
+  "options": [
+   {
+    "zh": "它离太阳比较近",
+    "en": "It is closer to the Sun",
+    "ms": "Ia lebih dekat dengan Matahari"
+   },
+   {
+    "zh": "臭氧吸收紫外线而发热",
+    "en": "Ozone absorbs ultraviolet light and heats the air",
+    "ms": "Ozon menyerap cahaya ultraungu dan memanaskan udara"
+   },
+   {
+    "zh": "地面的热传上去",
+    "en": "Heat rises from the ground",
+    "ms": "Haba naik dari permukaan"
+   },
+   {
+    "zh": "那里的空气比较密",
+    "en": "The air there is denser",
+    "ms": "Udara di sana lebih tumpat"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "平流层里的臭氧吸收了紫外线的能量，把空气加热。",
+   "en": "Ozone in the stratosphere absorbs ultraviolet energy and warms the air.",
+   "ms": "Ozon di stratosfera menyerap tenaga ultraungu dan memanaskan udara."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "在大约多高的地方，一半的空气已经在你下面？",
+   "en": "Roughly how high must you be for half the air to be below you?",
+   "ms": "Pada ketinggian kira-kira berapa separuh udara berada di bawah anda?"
+  },
+  "options": [
+   {
+    "zh": "1 公里",
+    "en": "1 km",
+    "ms": "1 km"
+   },
+   {
+    "zh": "5.5 公里",
+    "en": "5.5 km",
+    "ms": "5.5 km"
+   },
+   {
+    "zh": "30 公里",
+    "en": "30 km",
+    "ms": "30 km"
+   },
+   {
+    "zh": "100 公里",
+    "en": "100 km",
+    "ms": "100 km"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "约 5.5 公里处气压约 500 hPa，只有海平面的一半。",
+   "en": "At about 5.5 km the pressure is near 500 hPa, half its sea-level value.",
+   "ms": "Pada kira-kira 5.5 km tekanan hampir 500 hPa, separuh nilai paras laut."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "几乎所有的云和雨都发生在哪一层？",
+   "en": "In which layer do nearly all clouds and rain occur?",
+   "ms": "Dalam lapisan manakah hampir semua awan dan hujan berlaku?"
+  },
+  "options": [
+   {
+    "zh": "对流层",
+    "en": "Troposphere",
+    "ms": "Troposfera"
+   },
+   {
+    "zh": "平流层",
+    "en": "Stratosphere",
+    "ms": "Stratosfera"
+   },
+   {
+    "zh": "中间层",
+    "en": "Mesosphere",
+    "ms": "Mesosfera"
+   },
+   {
+    "zh": "热层",
+    "en": "Thermosphere",
+    "ms": "Termosfera"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "对流层集中了几乎所有的水汽，是天气发生的地方。",
+   "en": "The troposphere holds almost all the water vapour; it is where weather happens.",
+   "ms": "Troposfera mengandungi hampir semua wap air; di situlah cuaca berlaku."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "紫外线指数是 9，世界卫生组织建议怎么做？",
+   "en": "The UV index is 9. What does the WHO advise?",
+   "ms": "Indeks UV ialah 9. Apakah nasihat WHO?"
+  },
+  "options": [
+   {
+    "zh": "可以放心在户外",
+    "en": "It is safe to be outside",
+    "ms": "Selamat berada di luar"
+   },
+   {
+    "zh": "只需要戴太阳眼镜",
+    "en": "Sunglasses are enough",
+    "ms": "Cermin mata hitam sudah memadai"
+   },
+   {
+    "zh": "中午前后避免外出，上衣、防晒和帽子都必须",
+    "en": "Avoid the midday sun; shirt, sunscreen and hat are a must",
+    "ms": "Elakkan matahari tengah hari; baju, pelindung matahari dan topi wajib"
+   },
+   {
+    "zh": "晚上才需要防晒",
+    "en": "Protection is only needed at night",
+    "ms": "Perlindungan hanya perlu pada waktu malam"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "8 以上属于最高的一级：中午前后应避免待在户外。",
+   "en": "8 and above is the top band: avoid being outside around midday.",
+   "ms": "8 ke atas ialah jalur tertinggi: elakkan berada di luar sekitar tengah hari."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "为什么北半球 1 月是冬天，虽然那时地球离太阳最近？",
+   "en": "Why is January winter in the Northern Hemisphere, though the Earth is then closest to the Sun?",
+   "ms": "Mengapa Januari musim sejuk di Hemisfera Utara walaupun Bumi paling dekat dengan Matahari ketika itu?"
+  },
+  "options": [
+   {
+    "zh": "那时北半球偏离太阳，太阳低、白天短",
+    "en": "The north is tilted away: low Sun, short days",
+    "ms": "Utara condong menjauhi Matahari: Matahari rendah, siang pendek"
+   },
+   {
+    "zh": "太阳那时比较暗",
+    "en": "The Sun is dimmer then",
+    "ms": "Matahari lebih malap ketika itu"
+   },
+   {
+    "zh": "云特别多",
+    "en": "There is more cloud",
+    "ms": "Lebih banyak awan"
+   },
+   {
+    "zh": "海洋变冷",
+    "en": "The oceans cool",
+    "ms": "Lautan menjadi sejuk"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季节来自地轴倾斜：太阳高度和白天长度的变化，比距离的变化重要得多。",
+   "en": "Seasons come from the tilted axis: changes in Sun height and day length matter far more than distance.",
+   "ms": "Musim berpunca daripada paksi condong: perubahan ketinggian Matahari dan panjang siang jauh lebih penting daripada jarak."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "下面哪种表面的反照率最低？",
+   "en": "Which surface has the lowest albedo?",
+   "ms": "Permukaan manakah mempunyai albedo paling rendah?"
+  },
+  "options": [
+   {
+    "zh": "新雪",
+    "en": "Fresh snow",
+    "ms": "Salji baharu"
+   },
+   {
+    "zh": "厚云",
+    "en": "Thick cloud",
+    "ms": "Awan tebal"
+   },
+   {
+    "zh": "森林",
+    "en": "Forest",
+    "ms": "Hutan"
+   },
+   {
+    "zh": "沙地",
+    "en": "Sand",
+    "ms": "Pasir"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "森林颜色深、表面粗糙，只反射 3–10 % 的阳光。",
+   "en": "Forest is dark and rough and reflects only 3–10 % of sunlight.",
+   "ms": "Hutan gelap dan kasar serta hanya memantulkan 3–10 % cahaya matahari."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "为什么有云的晚上比晴朗的晚上暖？",
+   "en": "Why are cloudy nights warmer than clear ones?",
+   "ms": "Mengapa malam berawan lebih panas daripada malam cerah?"
+  },
+  "options": [
+   {
+    "zh": "云会发光",
+    "en": "Clouds give off light",
+    "ms": "Awan memancarkan cahaya"
+   },
+   {
+    "zh": "云吸收地面的红外线，又发回地面",
+    "en": "Clouds absorb the ground's infrared and send it back",
+    "ms": "Awan menyerap inframerah tanah dan menghantarnya kembali"
+   },
+   {
+    "zh": "云里有热空气",
+    "en": "Clouds contain hot air",
+    "ms": "Awan mengandungi udara panas"
+   },
+   {
+    "zh": "云挡住了风",
+    "en": "Clouds stop the wind",
+    "ms": "Awan menghalang angin"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "云是很好的长波吸收体和发射体，像被子一样减少地面失热。",
+   "en": "Clouds absorb and emit longwave well, acting like a blanket on the ground's heat loss.",
+   "ms": "Awan menyerap dan memancarkan gelombang panjang dengan baik, bertindak seperti selimut terhadap kehilangan haba tanah."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch03",
+  "q": {
+   "zh": "地面吸收的阳光，最大的一份拿去做什么？",
+   "en": "What takes the biggest share of the sunlight the surface absorbs?",
+   "ms": "Apakah yang mengambil bahagian terbesar cahaya matahari yang diserap permukaan?"
+  },
+  "options": [
+   {
+    "zh": "蒸发水（潜热）",
+    "en": "Evaporating water (latent heat)",
+    "ms": "Menyejatkan air (haba pendam)"
+   },
+   {
+    "zh": "加热空气（感热）",
+    "en": "Heating the air (sensible heat)",
+    "ms": "Memanaskan udara (haba deria)"
+   },
+   {
+    "zh": "融化冰",
+    "en": "Melting ice",
+    "ms": "Mencairkan ais"
+   },
+   {
+    "zh": "被土壤储存",
+    "en": "Stored in the soil",
+    "ms": "Disimpan dalam tanah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "51 份里有 23 份用来蒸发水。",
+   "en": "23 of the 51 units go into evaporating water.",
+   "ms": "23 daripada 51 unit digunakan untuk menyejatkan air."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "晴天里，吉隆坡的最高气温通常出现在什么时候？",
+   "en": "On a sunny day in Kuala Lumpur, when is it usually warmest?",
+   "ms": "Pada hari cerah di Kuala Lumpur, bilakah biasanya paling panas?"
+  },
+  "options": [
+   {
+    "zh": "日出时",
+    "en": "At sunrise",
+    "ms": "Ketika matahari terbit"
+   },
+   {
+    "zh": "正午 12 点",
+    "en": "At 12 noon",
+    "ms": "Pada jam 12 tengah hari"
+   },
+   {
+    "zh": "下午约 2 点",
+    "en": "Around 2 pm",
+    "ms": "Sekitar jam 2 petang"
+   },
+   {
+    "zh": "半夜",
+    "en": "At midnight",
+    "ms": "Pada tengah malam"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "只要收到的能量多过失去的，气温就继续升，所以最高温落后于太阳最高的时刻。",
+   "en": "Temperature keeps rising while energy gained exceeds energy lost, so the warmest hour lags the highest Sun.",
+   "ms": "Suhu terus naik selagi tenaga diterima melebihi yang hilang, jadi jam paling panas lewat daripada Matahari tertinggi."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "哪一种天气的日较差最小？",
+   "en": "Which weather gives the smallest daily range?",
+   "ms": "Cuaca manakah memberikan julat harian paling kecil?"
+  },
+  "options": [
+   {
+    "zh": "晴朗无风",
+    "en": "Clear and calm",
+    "ms": "Cerah dan tenang"
+   },
+   {
+    "zh": "整天阴雨",
+    "en": "Overcast and rainy all day",
+    "ms": "Mendung dan hujan sepanjang hari"
+   },
+   {
+    "zh": "晴天有风",
+    "en": "Sunny and windy",
+    "ms": "Cerah dan berangin"
+   },
+   {
+    "zh": "沙漠的晴天",
+    "en": "A clear desert day",
+    "ms": "Hari cerah di gurun"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "云白天挡阳光、晚上保暖，例子里的阴雨天日较差只有约 2 °C。",
+   "en": "Cloud blocks sun by day and keeps heat in by night; the overcast example had a range of only about 2 °C.",
+   "ms": "Awan menghalang matahari pada siang dan menyimpan haba pada malam; contoh hari mendung mempunyai julat hanya kira-kira 2 °C."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "为什么气温要在阴凉通风的百叶箱里量？",
+   "en": "Why is air temperature measured in a shaded, ventilated shelter?",
+   "ms": "Mengapa suhu udara diukur dalam pelindung teduh dan berongga?"
+  },
+  "options": [
+   {
+    "zh": "保护温度计不被偷",
+    "en": "To stop theft",
+    "ms": "Untuk mengelakkan kecurian"
+   },
+   {
+    "zh": "太阳会把温度计本身晒热，量到的不是空气的温度",
+    "en": "Sunshine heats the thermometer itself, so it would not read the air",
+    "ms": "Cahaya matahari memanaskan termometer itu sendiri, jadi ia tidak membaca suhu udara"
+   },
+   {
+    "zh": "让读数比较高",
+    "en": "To make readings higher",
+    "ms": "Supaya bacaan lebih tinggi"
+   },
+   {
+    "zh": "为了挡雨",
+    "en": "Only to keep rain off",
+    "ms": "Hanya untuk menghalang hujan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "温度计要和空气同温，所以要遮阳又要通风。",
+   "en": "The thermometer must match the air, so it needs shade and air flow.",
+   "ms": "Termometer mesti sama suhu dengan udara, jadi ia perlukan teduh dan aliran udara."
+  }
+ },
+ {
+  "stage": 2,
+  "chapter": "ch04",
+  "q": {
+   "zh": "吉隆坡 2025 年的年较差大约是多少？",
+   "en": "Roughly what was Kuala Lumpur's annual range in 2025?",
+   "ms": "Kira-kira berapakah julat tahunan Kuala Lumpur pada 2025?"
+  },
+  "options": [
+   {
+    "zh": "不到 4 °C",
+    "en": "Under 4 °C",
+    "ms": "Kurang daripada 4 °C"
+   },
+   {
+    "zh": "约 10 °C",
+    "en": "About 10 °C",
+    "ms": "Kira-kira 10 °C"
+   },
+   {
+    "zh": "约 20 °C",
+    "en": "About 20 °C",
+    "ms": "Kira-kira 20 °C"
+   },
+   {
+    "zh": "约 30 °C",
+    "en": "About 30 °C",
+    "ms": "Kira-kira 30 °C"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "各月平均只在 26.1 到 29.7 °C 之间——赤道气候的特点。",
+   "en": "The monthly means spanned only 26.1 to 29.7 °C — typical of the equatorial climate.",
+   "ms": "Purata bulanan hanya antara 26.1 hingga 29.7 °C — ciri iklim khatulistiwa."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "为什么看得见云，却看不见水汽？",
+   "en": "Why can you see a cloud but not water vapour?",
+   "ms": "Mengapa anda boleh melihat awan tetapi tidak wap air?"
+  },
+  "options": [
+   {
+    "zh": "云是水汽加了颜色",
+    "en": "A cloud is coloured vapour",
+    "ms": "Awan ialah wap berwarna"
+   },
+   {
+    "zh": "云里的水汽已经凝结成小水滴或冰晶",
+    "en": "In a cloud the vapour has condensed into droplets or ice",
+    "ms": "Dalam awan, wap sudah terkondensasi menjadi titisan atau ais"
+   },
+   {
+    "zh": "云离我们比较近",
+    "en": "Clouds are closer to us",
+    "ms": "Awan lebih dekat dengan kita"
+   },
+   {
+    "zh": "云是烟",
+    "en": "Clouds are smoke",
+    "ms": "Awan ialah asap"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "水汽是透明的气体；云是凝结出来的水滴和冰晶。",
+   "en": "Vapour is a transparent gas; clouds are the droplets and ice it condenses into.",
+   "ms": "Wap ialah gas lutsinar; awan ialah titisan dan ais hasil kondensasinya."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "哪一种云最可能带来雷电和暴雨？",
+   "en": "Which cloud is most likely to bring lightning and a downpour?",
+   "ms": "Awan manakah paling mungkin membawa kilat dan hujan lebat?"
+  },
+  "options": [
+   {
+    "zh": "卷云",
+    "en": "Cirrus",
+    "ms": "Sirus"
+   },
+   {
+    "zh": "层云",
+    "en": "Stratus",
+    "ms": "Stratus"
+   },
+   {
+    "zh": "积雨云",
+    "en": "Cumulonimbus",
+    "ms": "Kumulonimbus"
+   },
+   {
+    "zh": "高积云",
+    "en": "Altocumulus",
+    "ms": "Altokumulus"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "积雨云可以长到对流层顶，有强烈的上下气流，带来雷电、暴雨和强风。",
+   "en": "Cumulonimbus grows to the tropopause with violent up- and downdraughts: lightning, downpours and gusts.",
+   "ms": "Kumulonimbus tumbuh hingga tropopaus dengan arus naik dan turun yang kuat: kilat, hujan lebat dan angin kencang."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch06",
+  "q": {
+   "zh": "云量报“8 okta”是什么意思？",
+   "en": "What does a cloud cover of ‘8 oktas’ mean?",
+   "ms": "Apakah maksud litupan awan ‘8 okta’?"
+  },
+  "options": [
+   {
+    "zh": "万里无云",
+    "en": "Cloudless",
+    "ms": "Tiada awan"
+   },
+   {
+    "zh": "一半天空有云",
+    "en": "Half the sky covered",
+    "ms": "Separuh langit berawan"
+   },
+   {
+    "zh": "满天都是云",
+    "en": "Completely overcast",
+    "ms": "Mendung sepenuhnya"
+   },
+   {
+    "zh": "云底 8 公里",
+    "en": "Cloud base at 8 km",
+    "ms": "Dasar awan pada 8 km"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "天空分成 8 份，8 份都有云就是满天云。",
+   "en": "The sky is split into eighths; all eight covered means overcast.",
+   "ms": "Langit dibahagi lapan; kesemua lapan dilitupi bermaksud mendung."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "地面气温 32 °C、露点 24 °C，云底大约多高？",
+   "en": "Surface temperature 32 °C, dew point 24 °C: roughly how high is the cloud base?",
+   "ms": "Suhu permukaan 32 °C, takat embun 24 °C: kira-kira berapa tinggi dasar awan?"
+  },
+  "options": [
+   {
+    "zh": "约 100 米",
+    "en": "About 100 m",
+    "ms": "Kira-kira 100 m"
+   },
+   {
+    "zh": "约 1,000 米",
+    "en": "About 1,000 m",
+    "ms": "Kira-kira 1,000 m"
+   },
+   {
+    "zh": "约 5,000 米",
+    "en": "About 5,000 m",
+    "ms": "Kira-kira 5,000 m"
+   },
+   {
+    "zh": "约 10,000 米",
+    "en": "About 10,000 m",
+    "ms": "Kira-kira 10,000 m"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "差 8 °C × 125 米 = 1,000 米。",
+   "en": "8 °C difference × 125 m = 1,000 m.",
+   "ms": "Perbezaan 8 °C × 125 m = 1,000 m."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "为什么饱和空气上升时冷却得比较慢？",
+   "en": "Why does saturated air cool more slowly as it rises?",
+   "ms": "Mengapa udara tepu menyejuk lebih perlahan apabila naik?"
+  },
+  "options": [
+   {
+    "zh": "凝结放出的潜热抵销了一部分冷却",
+    "en": "Latent heat released by condensation offsets some of the cooling",
+    "ms": "Haba pendam daripada kondensasi mengimbangi sebahagian penyejukan"
+   },
+   {
+    "zh": "饱和空气比较重",
+    "en": "Saturated air is heavier",
+    "ms": "Udara tepu lebih berat"
+   },
+   {
+    "zh": "云挡住了阳光",
+    "en": "The cloud blocks sunlight",
+    "ms": "Awan menghalang cahaya matahari"
+   },
+   {
+    "zh": "高空的风比较大",
+    "en": "Winds are stronger aloft",
+    "ms": "Angin lebih kuat di atas"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "每凝结一克水就放出一份潜热，使冷却率降到约 4–6 °C/km。",
+   "en": "Each gram condensed releases latent heat, lowering the cooling to about 4–6 °C/km.",
+   "ms": "Setiap gram yang terkondensasi membebaskan haba pendam, menurunkan penyejukan kepada kira-kira 4–6 °C/km."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "大气通常什么时候最不稳定？",
+   "en": "When is the atmosphere usually most unstable?",
+   "ms": "Bilakah atmosfera biasanya paling tidak stabil?"
+  },
+  "options": [
+   {
+    "zh": "日出前后",
+    "en": "Around sunrise",
+    "ms": "Sekitar matahari terbit"
+   },
+   {
+    "zh": "下午",
+    "en": "In the afternoon",
+    "ms": "Pada waktu petang"
+   },
+   {
+    "zh": "半夜",
+    "en": "At midnight",
+    "ms": "Pada tengah malam"
+   },
+   {
+    "zh": "没有规律",
+    "en": "There is no pattern",
+    "ms": "Tiada corak"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "下午地面最热，近地空气最暖，最容易形成上升的热泡。",
+   "en": "In the afternoon the ground and low-level air are warmest, so thermals form most easily.",
+   "ms": "Pada waktu petang tanah dan udara rendah paling panas, jadi termal paling mudah terbentuk."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch07",
+  "q": {
+   "zh": "“雨幡”指的是什么？",
+   "en": "What is virga?",
+   "ms": "Apakah virga?"
+  },
+  "options": [
+   {
+    "zh": "彩虹的一部分",
+    "en": "Part of a rainbow",
+    "ms": "Sebahagian pelangi"
+   },
+   {
+    "zh": "在半空蒸发、没落到地面的雨",
+    "en": "Rain that evaporates before reaching the ground",
+    "ms": "Hujan yang menyejat sebelum sampai ke tanah"
+   },
+   {
+    "zh": "冰雹的另一个名字",
+    "en": "Another name for hail",
+    "ms": "Nama lain bagi hujan batu"
+   },
+   {
+    "zh": "云顶的冰晶",
+    "en": "Ice crystals at a cloud top",
+    "ms": "Hablur ais di puncak awan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "雨从云底落下，但在干空气里蒸发掉了。",
+   "en": "The rain leaves the cloud but evaporates in drier air below.",
+   "ms": "Hujan meninggalkan awan tetapi menyejat dalam udara lebih kering di bawah."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "吉隆坡下午的相对湿度比清晨低很多，主要原因是什么？",
+   "en": "Why is Kuala Lumpur's relative humidity much lower in the afternoon than at dawn?",
+   "ms": "Mengapa kelembapan relatif Kuala Lumpur jauh lebih rendah pada waktu petang berbanding subuh?"
+  },
+  "options": [
+   {
+    "zh": "下午气温高了，水汽量却差不多",
+    "en": "The air is warmer, while the amount of vapour is about the same",
+    "ms": "Udara lebih panas, sedangkan jumlah wap lebih kurang sama"
+   },
+   {
+    "zh": "下午空气里的水汽少了一半",
+    "en": "Half the vapour has left the air",
+    "ms": "Separuh wap telah meninggalkan udara"
+   },
+   {
+    "zh": "下午气压比较高",
+    "en": "The air pressure is higher",
+    "ms": "Tekanan udara lebih tinggi"
+   },
+   {
+    "zh": "下午露点升高了",
+    "en": "The dew point has risen",
+    "ms": "Takat embun telah naik"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "露点全天几乎不变，代表水汽量没变；气温升高使饱和水汽压变大，相对湿度就下降。",
+   "en": "The dew point hardly changes all day, so the vapour is the same; warming raises the saturation vapour pressure, so relative humidity falls.",
+   "ms": "Takat embun hampir tidak berubah sepanjang hari, jadi wapnya sama; pemanasan menaikkan tekanan wap tepu, jadi kelembapan relatif jatuh."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "想比较两个地方的空气到底有多湿，看哪一个最好？",
+   "en": "To compare how much moisture the air in two places really holds, which is best?",
+   "ms": "Untuk membandingkan berapa banyak kelembapan sebenarnya dalam udara di dua tempat, yang mana terbaik?"
+  },
+  "options": [
+   {
+    "zh": "相对湿度",
+    "en": "Relative humidity",
+    "ms": "Kelembapan relatif"
+   },
+   {
+    "zh": "露点",
+    "en": "Dew point",
+    "ms": "Takat embun"
+   },
+   {
+    "zh": "气温",
+    "en": "Air temperature",
+    "ms": "Suhu udara"
+   },
+   {
+    "zh": "云量",
+    "en": "Cloud cover",
+    "ms": "Litupan awan"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "露点只取决于水汽量；相对湿度还会随温度改变。",
+   "en": "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.",
+   "ms": "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "湿球温度和露点有什么不同？",
+   "en": "How does the wet-bulb temperature differ from the dew point?",
+   "ms": "Apakah beza suhu bebuli basah dengan takat embun?"
+  },
+  "options": [
+   {
+    "zh": "两者完全一样",
+    "en": "They are the same thing",
+    "ms": "Kedua-duanya sama"
+   },
+   {
+    "zh": "湿球温度靠蒸发冷却，露点靠把空气冷却到饱和",
+    "en": "Wet-bulb comes from evaporative cooling; dew point from cooling the air to saturation",
+    "ms": "Bebuli basah daripada penyejukan penyejatan; takat embun daripada menyejukkan udara hingga tepu"
+   },
+   {
+    "zh": "露点总是比气温高",
+    "en": "The dew point is always above the air temperature",
+    "ms": "Takat embun sentiasa melebihi suhu udara"
+   },
+   {
+    "zh": "湿球温度只在晚上有",
+    "en": "Wet-bulb only exists at night",
+    "ms": "Bebuli basah hanya wujud pada waktu malam"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "湿球温度一般介于露点和气温之间。",
+   "en": "The wet-bulb usually lies between the dew point and the air temperature.",
+   "ms": "Suhu bebuli basah biasanya terletak antara takat embun dan suhu udara."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch05",
+  "q": {
+   "zh": "气温 10 °C 和 30 °C 时，饱和水汽压大约差多少倍？",
+   "en": "Roughly how many times larger is the saturation vapour pressure at 30 °C than at 10 °C?",
+   "ms": "Kira-kira berapa kali ganda tekanan wap tepu pada 30 °C berbanding 10 °C?"
+  },
+  "options": [
+   {
+    "zh": "差不多一样",
+    "en": "About the same",
+    "ms": "Lebih kurang sama"
+   },
+   {
+    "zh": "约 1.5 倍",
+    "en": "About 1.5 times",
+    "ms": "Kira-kira 1.5 kali"
+   },
+   {
+    "zh": "约 3.5 倍",
+    "en": "About 3.5 times",
+    "ms": "Kira-kira 3.5 kali"
+   },
+   {
+    "zh": "约 20 倍",
+    "en": "About 20 times",
+    "ms": "Kira-kira 20 kali"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "约 42 hPa 对约 12 hPa：温度越高，饱和所需的水汽增加得越快。",
+   "en": "About 42 hPa against about 12 hPa: saturation needs vapour ever faster as temperature rises.",
+   "ms": "Kira-kira 42 hPa berbanding kira-kira 12 hPa: ketepuan memerlukan wap semakin cepat apabila suhu naik."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch08",
+  "q": {
+   "zh": "想看到彩虹，太阳应该在哪里？",
+   "en": "Where must the Sun be for you to see a rainbow?",
+   "ms": "Di manakah Matahari mesti berada untuk anda melihat pelangi?"
+  },
+  "options": [
+   {
+    "zh": "在你前面、和雨同一边",
+    "en": "In front of you, beside the rain",
+    "ms": "Di hadapan anda, sebelah hujan"
+   },
+   {
+    "zh": "在你背后，而且不要太高",
+    "en": "Behind you, and not too high",
+    "ms": "Di belakang anda, dan tidak terlalu tinggi"
+   },
+   {
+    "zh": "正在头顶",
+    "en": "Directly overhead",
+    "ms": "Tegak di atas kepala"
+   },
+   {
+    "zh": "已经下山",
+    "en": "Already set",
+    "ms": "Sudah terbenam"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "彩虹在对日点周围约 42°，太阳要在背后而且低于 42°。",
+   "en": "The bow lies about 42° around the point opposite the Sun, so the Sun must be behind you and below 42°.",
+   "ms": "Pelangi terletak kira-kira 42° di sekeliling titik bertentangan Matahari, jadi Matahari mesti di belakang dan di bawah 42°."
+  }
+ },
+ {
+  "stage": 3,
+  "chapter": "ch08",
+  "q": {
+   "zh": "霾天的天空为什么偏白？",
+   "en": "Why does a hazy sky look whitish?",
+   "ms": "Mengapa langit berjerebu kelihatan keputihan?"
+  },
+  "options": [
+   {
+    "zh": "颗粒把各种颜色都散射出来",
+    "en": "Particles scatter all colours",
+    "ms": "Zarah menyerakkan semua warna"
+   },
+   {
+    "zh": "太阳变弱了",
+    "en": "The Sun is weaker",
+    "ms": "Matahari lebih lemah"
+   },
+   {
+    "zh": "空气变冷了",
+    "en": "The air is colder",
+    "ms": "Udara lebih sejuk"
+   },
+   {
+    "zh": "臭氧变多了",
+    "en": "There is more ozone",
+    "ms": "Ozon lebih banyak"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "尘、烟、盐粒比空气分子大，各种颜色都散射，混在一起就是白色。",
+   "en": "Dust, smoke and salt are larger than molecules and scatter every colour, which mixes to white.",
+   "ms": "Debu, asap dan garam lebih besar daripada molekul dan menyerakkan setiap warna, yang bercampur menjadi putih."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch10",
+  "q": {
+   "zh": "为什么吉隆坡上空的 500 hPa 比标准大气高？",
+   "en": "Why is 500 hPa higher over Kuala Lumpur than in the standard atmosphere?",
+   "ms": "Mengapa 500 hPa lebih tinggi di atas Kuala Lumpur berbanding atmosfera piawai?"
+  },
+  "options": [
+   {
+    "zh": "热带的空气比较暖，占的空间比较大",
+    "en": "Tropical air is warmer and takes up more room",
+    "ms": "Udara tropika lebih panas dan mengambil lebih banyak ruang"
+   },
+   {
+    "zh": "吉隆坡海拔很高",
+    "en": "Kuala Lumpur is very high above sea level",
+    "ms": "Kuala Lumpur sangat tinggi dari paras laut"
+   },
+   {
+    "zh": "那里的风比较大",
+    "en": "The wind is stronger there",
+    "ms": "Angin lebih kuat di sana"
+   },
+   {
+    "zh": "测量错误",
+    "en": "A measuring error",
+    "ms": "Kesilapan pengukuran"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "暖空气密度小，同样的空气量要更厚的一层，气压层就被抬高。",
+   "en": "Warm air is less dense, so the same mass of air needs a thicker layer and the pressure levels sit higher.",
+   "ms": "Udara panas kurang tumpat, jadi jisim udara yang sama memerlukan lapisan lebih tebal dan aras tekanan berada lebih tinggi."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch10",
+  "q": {
+   "zh": "想看季风低空的风往哪里吹，Windy 上选哪一层最适合？",
+   "en": "Which Windy level best shows where the low-level monsoon wind is going?",
+   "ms": "Aras Windy manakah paling baik menunjukkan arah angin monsun aras rendah?"
+  },
+  "options": [
+   {
+    "zh": "850 hPa",
+    "en": "850 hPa",
+    "ms": "850 hPa"
+   },
+   {
+    "zh": "250 hPa",
+    "en": "250 hPa",
+    "ms": "250 hPa"
+   },
+   {
+    "zh": "150 hPa",
+    "en": "150 hPa",
+    "ms": "150 hPa"
+   },
+   {
+    "zh": "哪一层都一样",
+    "en": "Any level is the same",
+    "ms": "Semua aras sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "850 hPa 约 1.5 公里高，避开了地面摩擦，又在季风气流里面。",
+   "en": "850 hPa is about 1.5 km up: above most surface friction but inside the monsoon flow.",
+   "ms": "850 hPa kira-kira 1.5 km: di atas kebanyakan geseran permukaan tetapi dalam aliran monsun."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "ITCZ 是什么地方？",
+   "en": "What is the ITCZ?",
+   "ms": "Apakah ITCZ?"
+  },
+  "options": [
+   {
+    "zh": "两边信风相遇、空气上升、多雷雨的地带",
+    "en": "Where the trade winds meet, air rises and thunderstorms are frequent",
+    "ms": "Tempat angin pasat bertemu, udara naik dan ribut petir kerap"
+   },
+   {
+    "zh": "副热带的沙漠",
+    "en": "The subtropical deserts",
+    "ms": "Gurun subtropika"
+   },
+   {
+    "zh": "急流的另一个名字",
+    "en": "Another name for the jet stream",
+    "ms": "Nama lain bagi aliran jet"
+   },
+   {
+    "zh": "北极的高压",
+    "en": "The polar high",
+    "ms": "Tekanan tinggi kutub"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "东北信风和东南信风在赤道附近辐合，空气被迫上升。",
+   "en": "The north-east and south-east trades converge near the equator and the air is forced up.",
+   "ms": "Angin pasat timur laut dan tenggara menumpu berhampiran khatulistiwa dan udara dipaksa naik."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "北半球的信风大致从哪个方向吹来？",
+   "en": "From which direction do the Northern Hemisphere trade winds blow?",
+   "ms": "Dari arah manakah angin pasat Hemisfera Utara bertiup?"
+  },
+  "options": [
+   {
+    "zh": "东北",
+    "en": "North-east",
+    "ms": "Timur laut"
+   },
+   {
+    "zh": "西南",
+    "en": "South-west",
+    "ms": "Barat daya"
+   },
+   {
+    "zh": "正北",
+    "en": "Due north",
+    "ms": "Utara"
+   },
+   {
+    "zh": "西",
+    "en": "West",
+    "ms": "Barat"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "流向赤道的空气在北半球被偏向右方，成为东北风。",
+   "en": "Air flowing towards the equator is deflected to the right in the north, becoming a north-easterly.",
+   "ms": "Udara yang mengalir ke khatulistiwa dipesongkan ke kanan di utara, menjadi angin timur laut."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch11",
+  "q": {
+   "zh": "Walker 环流里，西太平洋（东南亚这边）通常是怎样？",
+   "en": "In the Walker circulation, what is the western Pacific (South-East Asia's side) usually like?",
+   "ms": "Dalam peredaran Walker, bagaimanakah biasanya Pasifik barat (sebelah Asia Tenggara)?"
+  },
+  "options": [
+   {
+    "zh": "海水暖、空气上升、多雨",
+    "en": "Warm water, rising air, plenty of rain",
+    "ms": "Air panas, udara naik, banyak hujan"
+   },
+   {
+    "zh": "海水冷、空气下沉、干燥",
+    "en": "Cool water, sinking air, dry",
+    "ms": "Air sejuk, udara turun, kering"
+   },
+   {
+    "zh": "一直刮台风",
+    "en": "Constant typhoons",
+    "ms": "Taufan berterusan"
+   },
+   {
+    "zh": "没有风",
+    "en": "No wind at all",
+    "ms": "Tiada angin langsung"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "信风把暖水吹到西边，暖水上方空气上升、成云下雨。",
+   "en": "The trades pile warm water in the west; above it the air rises and rains out.",
+   "ms": "Angin pasat mengumpul air panas di barat; di atasnya udara naik dan menurunkan hujan."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "普通雷暴从出生到消散大约多久？",
+   "en": "How long does an ordinary thunderstorm usually last from birth to decay?",
+   "ms": "Berapa lama biasanya ribut petir biasa dari lahir hingga lerai?"
+  },
+  "options": [
+   {
+    "zh": "不到一小时",
+    "en": "Less than an hour",
+    "ms": "Kurang sejam"
+   },
+   {
+    "zh": "一整天",
+    "en": "A whole day",
+    "ms": "Sehari suntuk"
+   },
+   {
+    "zh": "一个星期",
+    "en": "A week",
+    "ms": "Seminggu"
+   },
+   {
+    "zh": "几分钟",
+    "en": "A few minutes",
+    "ms": "Beberapa minit"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "下沉气流很快占满整朵云，切断了暖湿空气的来源。",
+   "en": "Downdraughts soon fill the cloud and cut off its supply of warm, moist air.",
+   "ms": "Arus turun segera memenuhi awan dan memutuskan bekalan udara panas lembap."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "在空旷的园里遇到雷暴，哪个做法最危险？",
+   "en": "Caught in an open field in a thunderstorm, which is most dangerous?",
+   "ms": "Ditimpa ribut petir di ladang terbuka, yang manakah paling berbahaya?"
+  },
+  "options": [
+   {
+    "zh": "躲到一棵孤立的大树下",
+    "en": "Sheltering under a lone tall tree",
+    "ms": "Berteduh di bawah pokok tinggi yang terpencil"
+   },
+   {
+    "zh": "坐进金属车身的卡车",
+    "en": "Getting into a metal-bodied truck",
+    "ms": "Masuk ke dalam lori berbadan logam"
+   },
+   {
+    "zh": "进入建筑物",
+    "en": "Going into a building",
+    "ms": "Masuk ke dalam bangunan"
+   },
+   {
+    "zh": "离开高处",
+    "en": "Leaving high ground",
+    "ms": "Meninggalkan tempat tinggi"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "突出的物体最容易被闪电打中，许多闪电伤亡都发生在孤立的树附近。",
+   "en": "Tall, prominent objects are struck most; many lightning casualties happen near isolated trees.",
+   "ms": "Objek tinggi dan menonjol paling kerap disambar; banyak mangsa kilat berlaku berhampiran pokok terpencil."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch12",
+  "q": {
+   "zh": "热带气旋为什么几乎不在赤道上形成？",
+   "en": "Why do tropical cyclones almost never form on the equator?",
+   "ms": "Mengapa siklon tropika hampir tidak pernah terbentuk di khatulistiwa?"
+  },
+  "options": [
+   {
+    "zh": "那里海水不够暖",
+    "en": "The sea is not warm enough",
+    "ms": "Laut tidak cukup panas"
+   },
+   {
+    "zh": "科里奥利力几乎为零，辐合的空气转不起来",
+    "en": "The Coriolis effect is almost zero, so converging air does not spin",
+    "ms": "Kesan Coriolis hampir sifar, jadi udara yang menumpu tidak berputar"
+   },
+   {
+    "zh": "那里没有雷雨",
+    "en": "There are no thunderstorms there",
+    "ms": "Tiada ribut petir di sana"
+   },
+   {
+    "zh": "那里风太强",
+    "en": "The wind is too strong",
+    "ms": "Angin terlalu kuat"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "热带气旋要靠科里奥利力开始旋转，所以多在 5° 到 20° 之间形成。",
+   "en": "They need the Coriolis effect to start spinning, so most form between 5° and 20°.",
+   "ms": "Ia memerlukan kesan Coriolis untuk mula berputar, jadi kebanyakannya terbentuk antara 5° dan 20°."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "地图上等压线很密，表示什么？",
+   "en": "What do closely spaced isobars mean?",
+   "ms": "Apakah maksud isobar yang rapat?"
+  },
+  "options": [
+   {
+    "zh": "风很弱",
+    "en": "Light winds",
+    "ms": "Angin lemah"
+   },
+   {
+    "zh": "风很强",
+    "en": "Strong winds",
+    "ms": "Angin kuat"
+   },
+   {
+    "zh": "一定下雨",
+    "en": "It must rain",
+    "ms": "Pasti hujan"
+   },
+   {
+    "zh": "气温很高",
+    "en": "High temperature",
+    "ms": "Suhu tinggi"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "气压变化快，气压梯度力大，风就强。",
+   "en": "Pressure changes quickly, the pressure-gradient force is large, so the wind is strong.",
+   "ms": "Tekanan berubah cepat, daya kecerunan tekanan besar, jadi angin kuat."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "为什么赤道附近很少有大型旋转风暴？",
+   "en": "Why are large spinning storms rare right at the equator?",
+   "ms": "Mengapa ribut berputar besar jarang berlaku tepat di khatulistiwa?"
+  },
+  "options": [
+   {
+    "zh": "那里太热",
+    "en": "It is too hot",
+    "ms": "Terlalu panas"
+   },
+   {
+    "zh": "科里奥利力在赤道接近零",
+    "en": "The Coriolis effect is close to zero there",
+    "ms": "Kesan Coriolis hampir sifar di situ"
+   },
+   {
+    "zh": "那里没有海",
+    "en": "There is no sea there",
+    "ms": "Tiada laut di situ"
+   },
+   {
+    "zh": "那里气压太高",
+    "en": "Pressure is too high",
+    "ms": "Tekanan terlalu tinggi"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "没有科里奥利力，辐合的空气不会开始旋转。",
+   "en": "Without the Coriolis effect, converging air does not start to spin.",
+   "ms": "Tanpa kesan Coriolis, udara yang menumpu tidak mula berputar."
+  }
+ },
+ {
+  "stage": 4,
+  "chapter": "ch09",
+  "q": {
+   "zh": "海风在什么时候吹？",
+   "en": "When does the sea breeze blow?",
+   "ms": "Bilakah bayu laut bertiup?"
+  },
+  "options": [
+   {
+    "zh": "白天，从海吹向陆地",
+    "en": "By day, from sea to land",
+    "ms": "Pada siang, dari laut ke darat"
+   },
+   {
+    "zh": "晚上，从海吹向陆地",
+    "en": "At night, from sea to land",
+    "ms": "Pada malam, dari laut ke darat"
+   },
+   {
+    "zh": "白天，从陆地吹向海",
+    "en": "By day, from land to sea",
+    "ms": "Pada siang, dari darat ke laut"
+   },
+   {
+    "zh": "只在下雨时",
+    "en": "Only when it rains",
+    "ms": "Hanya ketika hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "白天陆地比海热，陆地气压较低，凉的海风吹进来。",
+   "en": "By day the land is hotter and its pressure lower, so cool sea air flows in.",
+   "ms": "Pada siang hari darat lebih panas dan tekanannya lebih rendah, jadi udara laut yang sejuk mengalir masuk."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "大陆东岸通常是哪一种洋流？",
+   "en": "What kind of current usually runs along the east coast of a continent?",
+   "ms": "Jenis arus apakah biasanya mengalir di pantai timur benua?"
+  },
+  "options": [
+   {
+    "zh": "从赤道流向两极的暖流",
+    "en": "A warm current flowing poleward",
+    "ms": "Arus panas mengalir ke kutub"
+   },
+   {
+    "zh": "从两极流向赤道的寒流",
+    "en": "A cold current flowing towards the equator",
+    "ms": "Arus sejuk mengalir ke khatulistiwa"
+   },
+   {
+    "zh": "没有洋流",
+    "en": "No current",
+    "ms": "Tiada arus"
+   },
+   {
+    "zh": "潮流",
+    "en": "A tidal current",
+    "ms": "Arus pasang surut"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如墨西哥湾流和黑潮；西岸通常是寒流。",
+   "en": "For example the Gulf Stream and Kuroshio; west coasts usually have cold currents.",
+   "ms": "Contohnya Arus Teluk dan Kuroshio; pantai barat biasanya mempunyai arus sejuk."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "大潮出现在什么时候？",
+   "en": "When do spring tides happen?",
+   "ms": "Bilakah pasang besar berlaku?"
+  },
+  "options": [
+   {
+    "zh": "新月和满月",
+    "en": "At new and full moon",
+    "ms": "Pada bulan baharu dan purnama"
+   },
+   {
+    "zh": "上弦和下弦月",
+    "en": "At first and last quarter",
+    "ms": "Pada suku pertama dan akhir"
+   },
+   {
+    "zh": "只在雨季",
+    "en": "Only in the rainy season",
+    "ms": "Hanya pada musim hujan"
+   },
+   {
+    "zh": "只在春天",
+    "en": "Only in spring",
+    "ms": "Hanya pada musim bunga"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "太阳、地球、月亮排成一线，引力叠加；名字里的“春”和季节无关。",
+   "en": "Sun, Earth and Moon line up and their pulls add; ‘spring’ has nothing to do with the season.",
+   "ms": "Matahari, Bumi dan Bulan sebaris dan tarikan bergabung; ‘spring’ tiada kaitan dengan musim."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "当地没有风，海上却有很大的浪，最可能是哪一种？",
+   "en": "No wind here, yet big waves at sea: which kind are they most likely to be?",
+   "ms": "Tiada angin di sini, tetapi ombak besar di laut: jenis manakah paling mungkin?"
+  },
+  "options": [
+   {
+    "zh": "涌浪",
+    "en": "Swell",
+    "ms": "Alun"
+   },
+   {
+    "zh": "风浪",
+    "en": "Wind waves",
+    "ms": "Ombak angin"
+   },
+   {
+    "zh": "潮汐",
+    "en": "Tide",
+    "ms": "Pasang surut"
+   },
+   {
+    "zh": "上升流",
+    "en": "Upwelling",
+    "ms": "Julangan air"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "涌浪在远方风暴里形成，可以传得很远。",
+   "en": "Swell is made by a distant storm and can travel far.",
+   "ms": "Alun dihasilkan ribut jauh dan boleh bergerak jauh."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "吉隆坡属于 Köppen 的哪一类？",
+   "en": "Which Köppen class is Kuala Lumpur?",
+   "ms": "Kelas Köppen manakah Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "Af 热带雨林",
+    "en": "Af tropical rain forest",
+    "ms": "Af hutan hujan tropika"
+   },
+   {
+    "zh": "Aw 热带干湿季",
+    "en": "Aw tropical wet-and-dry",
+    "ms": "Aw tropika basah-dan-kering"
+   },
+   {
+    "zh": "B 干燥",
+    "en": "B dry",
+    "ms": "B kering"
+   },
+   {
+    "zh": "C 温和",
+    "en": "C mild",
+    "ms": "C sederhana"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "每个月都暖、每个月雨量都多。",
+   "en": "Every month is warm and every month is wet.",
+   "ms": "Setiap bulan panas dan setiap bulan basah."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "同一年同一个地方，为什么“雨日”可以是 315 天，也可以是 215 天？",
+   "en": "Why can the same place in the same year have 315 or 215 ‘rain days’?",
+   "ms": "Mengapa tempat yang sama pada tahun yang sama boleh mempunyai 315 atau 215 ‘hari hujan’?"
+  },
+  "options": [
+   {
+    "zh": "用了不同的雨量门槛",
+    "en": "Different rainfall thresholds",
+    "ms": "Ambang hujan berbeza"
+   },
+   {
+    "zh": "雨量计坏了",
+    "en": "The gauge broke",
+    "ms": "Tolok rosak"
+   },
+   {
+    "zh": "一个用公历，一个用农历",
+    "en": "Different calendars",
+    "ms": "Kalendar berbeza"
+   },
+   {
+    "zh": "全球变暖",
+    "en": "Global warming",
+    "ms": "Pemanasan global"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "0.2 毫米门槛算进很多小雨的日子，2.5 毫米门槛就不算。",
+   "en": "A 0.2 mm threshold counts many light-rain days that a 2.5 mm threshold leaves out.",
+   "ms": "Ambang 0.2 mm mengira banyak hari hujan renyai yang ditinggalkan oleh ambang 2.5 mm."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "“气候平均值”一般是多少年的平均？",
+   "en": "A climate normal is usually an average over how many years?",
+   "ms": "Normal iklim biasanya purata berapa tahun?"
+  },
+  "options": [
+   {
+    "zh": "30 年",
+    "en": "30 years",
+    "ms": "30 tahun"
+   },
+   {
+    "zh": "1 年",
+    "en": "1 year",
+    "ms": "1 tahun"
+   },
+   {
+    "zh": "5 年",
+    "en": "5 years",
+    "ms": "5 tahun"
+   },
+   {
+    "zh": "100 年",
+    "en": "100 years",
+    "ms": "100 tahun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如 1991–2020 年。",
+   "en": "For example 1991–2020.",
+   "ms": "Contohnya 1991–2020."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "马来西亚主要的雨季是哪一个？",
+   "en": "Which is Malaysia's main rainy season?",
+   "ms": "Yang manakah musim hujan utama Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "东北季风（11 月到 3 月）",
+    "en": "The north-east monsoon (November to March)",
+    "ms": "Monsun timur laut (November hingga Mac)"
+   },
+   {
+    "zh": "西南季风（5 月底到 9 月）",
+    "en": "The south-west monsoon (late May to September)",
+    "ms": "Monsun barat daya (akhir Mei hingga September)"
+   },
+   {
+    "zh": "没有雨季",
+    "en": "There is none",
+    "ms": "Tiada"
+   },
+   {
+    "zh": "只有 7 月",
+    "en": "July only",
+    "ms": "Julai sahaja"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "东北季风为东海岸、砂拉越西部和沙巴东部带来最多的雨。",
+   "en": "It brings the most rain to the east coast, western Sarawak and eastern Sabah.",
+   "ms": "Ia membawa paling banyak hujan ke pantai timur, barat Sarawak dan timur Sabah."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "西南季风期间半岛比较干，主要原因是什么？",
+   "en": "Why is the Peninsula relatively dry in the south-west monsoon?",
+   "ms": "Mengapa Semenanjung agak kering semasa monsun barat daya?"
+  },
+  "options": [
+   {
+    "zh": "苏门答腊的山脉挡住了雨",
+    "en": "Sumatra's mountains shelter it from the rain",
+    "ms": "Banjaran Sumatera melindunginya daripada hujan"
+   },
+   {
+    "zh": "海水太冷",
+    "en": "The sea is too cold",
+    "ms": "Laut terlalu sejuk"
+   },
+   {
+    "zh": "太阳太弱",
+    "en": "The sun is too weak",
+    "ms": "Matahari terlalu lemah"
+   },
+   {
+    "zh": "西伯利亚高压",
+    "en": "The Siberian high",
+    "ms": "Tekanan tinggi Siberia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "这叫雨影效应。",
+   "en": "This is a rain shadow.",
+   "ms": "Ini ialah bayang hujan."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch16",
+  "q": {
+   "zh": "吉隆坡一年的雨量高峰在什么时候？",
+   "en": "When are Kuala Lumpur's rainfall peaks?",
+   "ms": "Bilakah puncak hujan Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "4 月和 11 月左右的季风转换期",
+    "en": "Around April and November, the inter-monsoons",
+    "ms": "Sekitar April dan November, peralihan monsun"
+   },
+   {
+    "zh": "只有 1 月",
+    "en": "January only",
+    "ms": "Januari sahaja"
+   },
+   {
+    "zh": "7 月",
+    "en": "July",
+    "ms": "Julai"
+   },
+   {
+    "zh": "全年都一样",
+    "en": "Same all year",
+    "ms": "Sama sepanjang tahun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "转换期风弱、早上晴，下午雷雨多。",
+   "en": "Light winds and clear mornings give many afternoon thunderstorms.",
+   "ms": "Angin lemah dan pagi cerah memberi banyak ribut petir petang."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "在陆地上，马来西亚的雷雨通常在什么时候？",
+   "en": "Over land, when do Malaysia's thunderstorms usually happen?",
+   "ms": "Di daratan, bilakah ribut petir di Malaysia lazimnya berlaku?"
+  },
+  "options": [
+   {
+    "zh": "下午和傍晚",
+    "en": "Afternoon and dusk",
+    "ms": "Petang dan senja"
+   },
+   {
+    "zh": "清晨",
+    "en": "Early morning",
+    "ms": "Awal pagi"
+   },
+   {
+    "zh": "中午 12 点整",
+    "en": "Exactly at noon",
+    "ms": "Tepat tengah hari"
+   },
+   {
+    "zh": "半夜",
+    "en": "Midnight",
+    "ms": "Tengah malam"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "海上的雷雨则常在夜间。",
+   "en": "Over the sea they are often at night.",
+   "ms": "Di laut ia sering pada waktu malam."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "苏门答腊飑线通常什么时候打到西海岸？",
+   "en": "When does a Sumatras usually hit the west coast?",
+   "ms": "Bilakah Sumatras biasanya melanda pantai barat?"
+  },
+  "options": [
+   {
+    "zh": "凌晨到清晨",
+    "en": "Before dawn to early morning",
+    "ms": "Menjelang subuh hingga awal pagi"
+   },
+   {
+    "zh": "下午三点",
+    "en": "3 pm",
+    "ms": "3 petang"
+   },
+   {
+    "zh": "中午",
+    "en": "Noon",
+    "ms": "Tengah hari"
+   },
+   {
+    "zh": "只在东北季风",
+    "en": "Only in the north-east monsoon",
+    "ms": "Hanya dalam monsun timur laut"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它在夜里于马六甲海峡形成，再被西南风推上岸。",
+   "en": "It forms over the strait at night and the south-west wind pushes it ashore.",
+   "ms": "Ia terbentuk di atas selat pada waktu malam dan angin barat daya menolaknya ke darat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch17",
+  "q": {
+   "zh": "午后雷雨为什么在傍晚后通常停下？",
+   "en": "Why do afternoon storms usually end after dusk?",
+   "ms": "Mengapa ribut petang biasanya berhenti selepas senja?"
+  },
+  "options": [
+   {
+    "zh": "太阳下山，没有新的热泡补充",
+    "en": "After sunset no new thermals feed them",
+    "ms": "Selepas matahari terbenam tiada terma baharu"
+   },
+   {
+    "zh": "风变强了",
+    "en": "The wind gets stronger",
+    "ms": "Angin menjadi kuat"
+   },
+   {
+    "zh": "海水变冷",
+    "en": "The sea turns cold",
+    "ms": "Laut menjadi sejuk"
+   },
+   {
+    "zh": "气压升高到 1,100 hPa",
+    "en": "Pressure rises to 1,100 hPa",
+    "ms": "Tekanan naik ke 1,100 hPa"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "地面不再被晒热，上升气流就没了。",
+   "en": "With no more heating of the ground, the updraughts stop.",
+   "ms": "Tanpa pemanasan tanah lagi, arus naik berhenti."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "预计 24 小时会下 200 毫米雨，是哪一级预警？",
+   "en": "200 mm expected in 24 hours: which warning level?",
+   "ms": "200 mm dijangka dalam 24 jam: peringkat amaran mana?"
+  },
+  "options": [
+   {
+    "zh": "Buruk",
+    "en": "Buruk",
+    "ms": "Buruk"
+   },
+   {
+    "zh": "Waspada",
+    "en": "Waspada",
+    "ms": "Waspada"
+   },
+   {
+    "zh": "Bahaya",
+    "en": "Bahaya",
+    "ms": "Bahaya"
+   },
+   {
+    "zh": "不用预警",
+    "en": "No warning",
+    "ms": "Tiada amaran"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "超过 150 毫米但不超过 250 毫米。",
+   "en": "Over 150 mm but not over 250 mm.",
+   "ms": "Melebihi 150 mm tetapi tidak melebihi 250 mm."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "雷暴预警每次最长有效多久？",
+   "en": "How long is one thunderstorm warning valid at most?",
+   "ms": "Berapa lama satu amaran ribut petir sah paling lama?"
+  },
+  "options": [
+   {
+    "zh": "6 小时",
+    "en": "6 hours",
+    "ms": "6 jam"
+   },
+   {
+    "zh": "24 小时",
+    "en": "24 hours",
+    "ms": "24 jam"
+   },
+   {
+    "zh": "3 天",
+    "en": "3 days",
+    "ms": "3 hari"
+   },
+   {
+    "zh": "1 星期",
+    "en": "1 week",
+    "ms": "1 minggu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "更久的话就升级为连续降雨预警。",
+   "en": "Longer than that, it becomes a continuous-rain warning.",
+   "ms": "Lebih lama daripada itu, ia menjadi amaran hujan berterusan."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch18",
+  "q": {
+   "zh": "雷雨时在野外，哪里最不应该躲？",
+   "en": "Caught outdoors in a thunderstorm, where should you not shelter?",
+   "ms": "Terperangkap di luar semasa ribut petir, di mana anda tidak patut berlindung?"
+  },
+  "options": [
+   {
+    "zh": "孤立的大树下",
+    "en": "Under an isolated tree",
+    "ms": "Di bawah pokok yang terpencil"
+   },
+   {
+    "zh": "坚固的建筑物里",
+    "en": "In a solid building",
+    "ms": "Di dalam bangunan kukuh"
+   },
+   {
+    "zh": "车里",
+    "en": "In a car",
+    "ms": "Di dalam kereta"
+   },
+   {
+    "zh": "远离电线杆的低处",
+    "en": "Low ground away from poles",
+    "ms": "Tempat rendah jauh dari tiang"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "孤立的树容易被雷打中。",
+   "en": "An isolated tree is easily struck by lightning.",
+   "ms": "Pokok terpencil mudah dipanah petir."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "闪电水灾和季风水灾最大的不同是什么？",
+   "en": "What most separates a flash flood from a monsoon flood?",
+   "ms": "Apakah perbezaan utama banjir kilat dan banjir monsun?"
+  },
+  "options": [
+   {
+    "zh": "闪电水灾来得快、退得快，一场大雨就够",
+    "en": "A flash flood comes and goes fast; one downpour is enough",
+    "ms": "Banjir kilat datang dan surut cepat; satu hujan lebat sudah cukup"
+   },
+   {
+    "zh": "闪电水灾只在东海岸",
+    "en": "Flash floods happen only on the east coast",
+    "ms": "Banjir kilat hanya di pantai timur"
+   },
+   {
+    "zh": "季风水灾没有雨",
+    "en": "Monsoon floods need no rain",
+    "ms": "Banjir monsun tidak memerlukan hujan"
+   },
+   {
+    "zh": "两者完全一样",
+    "en": "They are the same",
+    "ms": "Kedua-duanya sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季风水灾来自东北季风连续的大雨。",
+   "en": "Monsoon floods come from the north-east monsoon's continuous heavy rain.",
+   "ms": "Banjir monsun datang daripada hujan lebat berterusan monsun timur laut."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "河流和水库干涸，是哪一种干旱？",
+   "en": "Rivers and reservoirs running dry: which drought?",
+   "ms": "Sungai dan takungan kering: kemarau jenis apa?"
+  },
+  "options": [
+   {
+    "zh": "水文干旱",
+    "en": "Hydrological",
+    "ms": "Hidrologi"
+   },
+   {
+    "zh": "气象干旱",
+    "en": "Meteorological",
+    "ms": "Meteorologi"
+   },
+   {
+    "zh": "农业干旱",
+    "en": "Agricultural",
+    "ms": "Pertanian"
+   },
+   {
+    "zh": "都不是",
+    "en": "None",
+    "ms": "Tiada"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "气象干旱拖久了，就变成水文干旱。",
+   "en": "A long meteorological drought becomes a hydrological one.",
+   "ms": "Kemarau meteorologi yang lama menjadi kemarau hidrologi."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch19",
+  "q": {
+   "zh": "某站 SPI 是 −1.65，属于哪个等级？",
+   "en": "A station's SPI is −1.65. Which category?",
+   "ms": "SPI sebuah stesen ialah −1.65. Kategori mana?"
+  },
+  "options": [
+   {
+    "zh": "很干",
+    "en": "Very dry",
+    "ms": "Sangat kering"
+   },
+   {
+    "zh": "正常",
+    "en": "Normal",
+    "ms": "Normal"
+   },
+   {
+    "zh": "极湿",
+    "en": "Extremely wet",
+    "ms": "Terlalu lembap"
+   },
+   {
+    "zh": "中等湿",
+    "en": "Moderately wet",
+    "ms": "Sederhana lembap"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "−1.5 到 −1.99 是“很干”。",
+   "en": "−1.5 to −1.99 is ‘very dry’.",
+   "ms": "−1.5 hingga −1.99 ialah ‘sangat kering’."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "厄尔尼诺时，太平洋的信风通常怎样？",
+   "en": "During El Niño, what usually happens to the Pacific trade winds?",
+   "ms": "Semasa El Niño, apakah biasanya berlaku kepada angin pasat Pasifik?"
+  },
+  "options": [
+   {
+    "zh": "变弱，甚至改吹西风",
+    "en": "They weaken, or even turn westerly",
+    "ms": "Melemah, malah bertukar menjadi angin barat"
+   },
+   {
+    "zh": "变得特别强",
+    "en": "They become extra strong",
+    "ms": "Menjadi sangat kuat"
+   },
+   {
+    "zh": "完全不变",
+    "en": "No change",
+    "ms": "Tiada perubahan"
+   },
+   {
+    "zh": "改为南北方向",
+    "en": "They turn north–south",
+    "ms": "Bertukar arah utara–selatan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "信风变弱，暖水就往东流到南美洲那边。",
+   "en": "With weaker trades the warm water flows east towards South America.",
+   "ms": "Dengan angin pasat lemah, air panas mengalir ke timur ke arah Amerika Selatan."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "RONI 是 +1.36 °C，代表什么？",
+   "en": "The RONI reads +1.36 °C. What does that indicate?",
+   "ms": "RONI ialah +1.36 °C. Apakah maksudnya?"
+  },
+  "options": [
+   {
+    "zh": "厄尔尼诺的状态",
+    "en": "El Niño conditions",
+    "ms": "Keadaan El Niño"
+   },
+   {
+    "zh": "拉尼娜的状态",
+    "en": "La Niña conditions",
+    "ms": "Keadaan La Niña"
+   },
+   {
+    "zh": "中性",
+    "en": "Neutral",
+    "ms": "Neutral"
+   },
+   {
+    "zh": "马来西亚的气温",
+    "en": "Malaysia's temperature",
+    "ms": "Suhu Malaysia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "超过 +0.5 °C 就是厄尔尼诺的状态；要连续 5 季才算一次厄尔尼诺。",
+   "en": "Above +0.5 °C means El Niño conditions; 5 seasons in a row make an episode.",
+   "ms": "Melebihi +0.5 °C bermakna keadaan El Niño; 5 musim berturut-turut menjadikannya satu episod."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "MJO 在哪两个相位时，雨带在马来西亚、印尼上空？",
+   "en": "In which two MJO phases is the wet band over Malaysia and Indonesia?",
+   "ms": "Dalam dua fasa MJO manakah jalur basah berada di atas Malaysia dan Indonesia?"
+  },
+  "options": [
+   {
+    "zh": "第 4、5 相位",
+    "en": "Phases 4 and 5",
+    "ms": "Fasa 4 dan 5"
+   },
+   {
+    "zh": "第 1、2 相位",
+    "en": "Phases 1 and 2",
+    "ms": "Fasa 1 dan 2"
+   },
+   {
+    "zh": "第 7、8 相位",
+    "en": "Phases 7 and 8",
+    "ms": "Fasa 7 dan 8"
+   },
+   {
+    "zh": "每一个相位都一样",
+    "en": "Every phase alike",
+    "ms": "Semua fasa sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "第 2、3 在印度洋，4、5 在海洋性大陆，6、7 在西太平洋。",
+   "en": "2–3 are over the Indian Ocean, 4–5 the Maritime Continent, 6–7 the western Pacific.",
+   "ms": "2–3 di atas Lautan Hindi, 4–5 Benua Maritim, 6–7 Pasifik barat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "API 是怎样决定的？",
+   "en": "How is the API value decided?",
+   "ms": "Bagaimana nilai IPU ditentukan?"
+  },
+  "options": [
+   {
+    "zh": "取六个污染物分指数中最高的一个",
+    "en": "The highest of six pollutant sub-indices",
+    "ms": "Sub-indeks tertinggi daripada enam pencemar"
+   },
+   {
+    "zh": "六个分指数的平均",
+    "en": "The average of the six",
+    "ms": "Purata enam"
+   },
+   {
+    "zh": "只看 PM10",
+    "en": "PM10 only",
+    "ms": "PM10 sahaja"
+   },
+   {
+    "zh": "看能见度",
+    "en": "Visibility",
+    "ms": "Ketampakan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "有霾时通常是微粒的分指数最高。",
+   "en": "In haze it is usually the particulate sub-index.",
+   "ms": "Semasa jerebu biasanya sub-indeks habuk halus."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "API 150 属于哪一级？",
+   "en": "API 150 is in which band?",
+   "ms": "IPU 150 dalam tahap mana?"
+  },
+  "options": [
+   {
+    "zh": "不健康",
+    "en": "Unhealthy",
+    "ms": "Tidak sihat"
+   },
+   {
+    "zh": "良好",
+    "en": "Good",
+    "ms": "Baik"
+   },
+   {
+    "zh": "中等",
+    "en": "Moderate",
+    "ms": "Sederhana"
+   },
+   {
+    "zh": "危险",
+    "en": "Hazardous",
+    "ms": "Merbahaya"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "101–200 是不健康。",
+   "en": "101–200 is unhealthy.",
+   "ms": "101–200 ialah tidak sihat."
+  }
+ },
+ {
+  "stage": 6,
+  "chapter": "ch20",
+  "q": {
+   "zh": "多云的日子火点很少，可以说明火很少吗？",
+   "en": "Few hotspots on a cloudy day: does that mean few fires?",
+   "ms": "Sedikit titik panas pada hari berawan: adakah itu bermakna sedikit kebakaran?"
+  },
+  "options": [
+   {
+    "zh": "不一定，云会挡住卫星",
+    "en": "Not necessarily: cloud hides fires from the satellite",
+    "ms": "Tidak semestinya: awan melindungi kebakaran daripada satelit"
+   },
+   {
+    "zh": "一定是",
+    "en": "Yes, always",
+    "ms": "Ya, sentiasa"
+   },
+   {
+    "zh": "火点和火无关",
+    "en": "Hotspots have nothing to do with fire",
+    "ms": "Titik panas tiada kaitan dengan kebakaran"
+   },
+   {
+    "zh": "卫星晚上看不到",
+    "en": "Satellites cannot see at night",
+    "ms": "Satelit tidak dapat melihat pada waktu malam"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "云、树冠和小火都可能让卫星漏掉火点。",
+   "en": "Cloud, canopy and small fires can all be missed.",
+   "ms": "Awan, kanopi dan kebakaran kecil semuanya boleh terlepas."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "干湿球温度计相差越大，表示什么？",
+   "en": "The bigger the gap between dry and wet bulb, the…",
+   "ms": "Semakin besar beza bebuli kering dan basah, semakin…"
+  },
+  "options": [
+   {
+    "zh": "空气越干",
+    "en": "drier the air",
+    "ms": "kering udara"
+   },
+   {
+    "zh": "空气越湿",
+    "en": "more humid the air",
+    "ms": "lembap udara"
+   },
+   {
+    "zh": "风越弱",
+    "en": "lighter the wind",
+    "ms": "lemah angin"
+   },
+   {
+    "zh": "气压越高",
+    "en": "higher the pressure",
+    "ms": "tinggi tekanan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "空气干，湿球蒸发快、冷得多。",
+   "en": "Dry air evaporates more from the wet bulb, cooling it more.",
+   "ms": "Udara kering menyejat lebih banyak dari bebuli basah, menyejukkannya lebih."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "用普通量杯量雨，多少毫升等于 10 毫米雨？",
+   "en": "With an ordinary jug, how many ml equal 10 mm of rain?",
+   "ms": "Dengan bikar biasa, berapa ml bersamaan 10 mm hujan?"
+  },
+  "options": [
+   {
+    "zh": "126.7 毫升",
+    "en": "126.7 ml",
+    "ms": "126.7 ml"
+   },
+   {
+    "zh": "10 毫升",
+    "en": "10 ml",
+    "ms": "10 ml"
+   },
+   {
+    "zh": "1,000 毫升",
+    "en": "1,000 ml",
+    "ms": "1,000 ml"
+   },
+   {
+    "zh": "50 毫升",
+    "en": "50 ml",
+    "ms": "50 ml"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "127 毫米的漏斗面积约 126.7 平方厘米，乘 1 厘米就是 126.7 毫升。",
+   "en": "A 127 mm funnel has about 126.7 cm² of area; times 1 cm is 126.7 ml.",
+   "ms": "Corong 127 mm mempunyai luas kira-kira 126.7 cm²; darab 1 cm ialah 126.7 ml."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch21",
+  "q": {
+   "zh": "风向标的箭头指向哪里？",
+   "en": "Where does a wind vane's arrow point?",
+   "ms": "Ke manakah anak panah bilah angin menunjuk?"
+  },
+  "options": [
+   {
+    "zh": "风吹来的方向",
+    "en": "Where the wind comes from",
+    "ms": "Arah angin datang"
+   },
+   {
+    "zh": "风吹去的方向",
+    "en": "Where the wind goes",
+    "ms": "Arah angin pergi"
+   },
+   {
+    "zh": "永远指北",
+    "en": "Always north",
+    "ms": "Sentiasa utara"
+   },
+   {
+    "zh": "太阳的方向",
+    "en": "At the sun",
+    "ms": "Ke arah matahari"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以“西南风”是从西南吹来的风。",
+   "en": "So a ‘south-west wind’ comes from the south-west.",
+   "ms": "Jadi ‘angin barat daya’ datang dari barat daya."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch22",
+  "q": {
+   "zh": "马来西亚的探空气球通常什么时候放？",
+   "en": "When are Malaysia's weather balloons usually launched?",
+   "ms": "Bilakah belon cuaca Malaysia biasanya dilepaskan?"
+  },
+  "options": [
+   {
+    "zh": "早上 8 点和晚上 8 点",
+    "en": "8 am and 8 pm",
+    "ms": "8 pagi dan 8 malam"
+   },
+   {
+    "zh": "中午 12 点和半夜",
+    "en": "Noon and midnight",
+    "ms": "Tengah hari dan tengah malam"
+   },
+   {
+    "zh": "每小时",
+    "en": "Every hour",
+    "ms": "Setiap jam"
+   },
+   {
+    "zh": "只在下雨时",
+    "en": "Only when it rains",
+    "ms": "Hanya ketika hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "00 和 12 UTC，加 8 小时。",
+   "en": "00 and 12 UTC, plus 8 hours.",
+   "ms": "00 dan 12 UTC, tambah 8 jam."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch22",
+  "q": {
+   "zh": "TAO 浮标阵列主要是为了什么而建？",
+   "en": "What was the TAO buoy array built for?",
+   "ms": "Untuk apakah tatasusunan boya TAO dibina?"
+  },
+  "options": [
+   {
+    "zh": "了解和预报 ENSO",
+    "en": "To understand and predict ENSO",
+    "ms": "Memahami dan meramal ENSO"
+   },
+   {
+    "zh": "量地震",
+    "en": "Earthquakes",
+    "ms": "Gempa bumi"
+   },
+   {
+    "zh": "导航",
+    "en": "Navigation",
+    "ms": "Navigasi"
+   },
+   {
+    "zh": "捕鱼",
+    "en": "Fishing",
+    "ms": "Menangkap ikan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它沿着赤道太平洋，正好是厄尔尼诺发生的地方。",
+   "en": "It lines the equatorial Pacific, where El Niño happens.",
+   "ms": "Ia di sepanjang Pasifik khatulistiwa, tempat El Niño berlaku."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "晚上要看云，应该用哪一种图像？",
+   "en": "To see cloud at night, which image?",
+   "ms": "Untuk melihat awan pada waktu malam, imej mana?"
+  },
+  "options": [
+   {
+    "zh": "红外线",
+    "en": "Infrared",
+    "ms": "Inframerah"
+   },
+   {
+    "zh": "可见光",
+    "en": "Visible",
+    "ms": "Cahaya nampak"
+   },
+   {
+    "zh": "真彩色",
+    "en": "True colour",
+    "ms": "Warna sebenar"
+   },
+   {
+    "zh": "都不行",
+    "en": "None",
+    "ms": "Tiada"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "红外线看温度，不需要阳光。",
+   "en": "Infrared sees temperature and needs no sunlight.",
+   "ms": "Inframerah melihat suhu dan tidak memerlukan cahaya matahari."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "在红外线图上，哪一种云最白？",
+   "en": "Which cloud is whitest on an infrared image?",
+   "ms": "Awan manakah paling putih pada imej inframerah?"
+  },
+  "options": [
+   {
+    "zh": "又高又冷的雷雨云顶",
+    "en": "A high, cold thunderstorm top",
+    "ms": "Puncak ribut petir yang tinggi dan sejuk"
+   },
+   {
+    "zh": "低积云",
+    "en": "Low cumulus",
+    "ms": "Kumulus rendah"
+   },
+   {
+    "zh": "雾",
+    "en": "Fog",
+    "ms": "Kabus"
+   },
+   {
+    "zh": "没有云的海面",
+    "en": "Clear sea",
+    "ms": "Laut tanpa awan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "越冷显示越白。",
+   "en": "The colder, the whiter.",
+   "ms": "Semakin sejuk, semakin putih."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch23",
+  "q": {
+   "zh": "Himawari-9 多久拍一次全圆盘？",
+   "en": "How often does Himawari-9 scan the full disc?",
+   "ms": "Berapa kerap Himawari-9 mengimbas cakera penuh?"
+  },
+  "options": [
+   {
+    "zh": "每 10 分钟",
+    "en": "Every 10 minutes",
+    "ms": "Setiap 10 minit"
+   },
+   {
+    "zh": "每天一次",
+    "en": "Once a day",
+    "ms": "Sekali sehari"
+   },
+   {
+    "zh": "每小时",
+    "en": "Every hour",
+    "ms": "Setiap jam"
+   },
+   {
+    "zh": "每星期",
+    "en": "Every week",
+    "ms": "Setiap minggu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以可以做成动画看云的变化。",
+   "en": "Which is why it can be animated.",
+   "ms": "Itulah sebabnya ia boleh dianimasikan."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch24",
+  "q": {
+   "zh": "从 30 dBZ 到 40 dBZ，雷达回波强了多少？",
+   "en": "From 30 to 40 dBZ, how much stronger is the echo?",
+   "ms": "Dari 30 ke 40 dBZ, berapa kali lebih kuat gema?"
+  },
+  "options": [
+   {
+    "zh": "10 倍",
+    "en": "10 times",
+    "ms": "10 kali"
+   },
+   {
+    "zh": "10 %",
+    "en": "10 %",
+    "ms": "10 %"
+   },
+   {
+    "zh": "2 倍",
+    "en": "2 times",
+    "ms": "2 kali"
+   },
+   {
+    "zh": "一样",
+    "en": "The same",
+    "ms": "Sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "dBZ 是对数刻度。",
+   "en": "dBZ is logarithmic.",
+   "ms": "dBZ ialah logaritma."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch24",
+  "q": {
+   "zh": "多普勒雷达比普通雷达多了什么本领？",
+   "en": "What extra can a Doppler radar do?",
+   "ms": "Apakah kebolehan tambahan radar Doppler?"
+  },
+  "options": [
+   {
+    "zh": "量雨滴朝向或离开雷达的速度，看到风",
+    "en": "Measure drops' speed towards or away from it, seeing the wind",
+    "ms": "Mengukur kelajuan titisan ke arah atau menjauhinya, melihat angin"
+   },
+   {
+    "zh": "看穿地面",
+    "en": "See underground",
+    "ms": "Melihat bawah tanah"
+   },
+   {
+    "zh": "量气温",
+    "en": "Measure temperature",
+    "ms": "Mengukur suhu"
+   },
+   {
+    "zh": "拍彩色照片",
+    "en": "Take colour photos",
+    "ms": "Mengambil gambar berwarna"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "靠多普勒效应。",
+   "en": "By the Doppler shift.",
+   "ms": "Melalui anjakan Doppler."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "Skew-T 上，气温线和露点线很靠近表示什么？",
+   "en": "On a Skew-T, temperature and dew-point lines close together mean…",
+   "ms": "Pada Skew-T, garisan suhu dan takat embun yang rapat bermaksud…"
+  },
+  "options": [
+   {
+    "zh": "那一层很湿，接近饱和",
+    "en": "That layer is moist, near saturation",
+    "ms": "Lapisan itu lembap, hampir tepu"
+   },
+   {
+    "zh": "那一层很干",
+    "en": "That layer is dry",
+    "ms": "Lapisan itu kering"
+   },
+   {
+    "zh": "风很大",
+    "en": "Strong wind",
+    "ms": "Angin kuat"
+   },
+   {
+    "zh": "有逆温",
+    "en": "An inversion",
+    "ms": "Songsangan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "气温接近露点，就接近饱和。",
+   "en": "Temperature near dew point means near saturation.",
+   "ms": "Suhu hampir takat embun bermaksud hampir tepu."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "逆温层对午后雷雨有什么影响？",
+   "en": "What does an inversion do to afternoon storms?",
+   "ms": "Apakah kesan songsangan terhadap ribut petang?"
+  },
+  "options": [
+   {
+    "zh": "像盖子一样压住上升空气，要先被冲破",
+    "en": "It caps rising air and must be broken first",
+    "ms": "Ia menutup udara yang naik dan mesti dipecahkan dahulu"
+   },
+   {
+    "zh": "让雷雨更容易形成",
+    "en": "Makes storms easier",
+    "ms": "Memudahkan ribut"
+   },
+   {
+    "zh": "没有影响",
+    "en": "No effect",
+    "ms": "Tiada kesan"
+   },
+   {
+    "zh": "让气温下降",
+    "en": "Cools the ground",
+    "ms": "Menyejukkan tanah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "逆温非常稳定。",
+   "en": "An inversion is very stable.",
+   "ms": "Songsangan sangat stabil."
+  }
+ },
+ {
+  "stage": 7,
+  "chapter": "ch25",
+  "q": {
+   "zh": "同一张早上的探空，下午哪种情况 CAPE 最大？",
+   "en": "Same morning sounding: which afternoon gives the most CAPE?",
+   "ms": "Sonde pagi yang sama: petang mana memberi CAPE paling banyak?"
+  },
+  "options": [
+   {
+    "zh": "地面 31 °C、露点 23 °C",
+    "en": "Surface 31 °C, dew point 23 °C",
+    "ms": "Permukaan 31 °C, takat embun 23 °C"
+   },
+   {
+    "zh": "地面 31 °C、露点 20.8 °C",
+    "en": "Surface 31 °C, dew point 20.8 °C",
+    "ms": "Permukaan 31 °C, takat embun 20.8 °C"
+   },
+   {
+    "zh": "地面 24.8 °C、露点 20.8 °C",
+    "en": "Surface 24.8 °C, dew point 20.8 °C",
+    "ms": "Permukaan 24.8 °C, takat embun 20.8 °C"
+   },
+   {
+    "zh": "都一样",
+    "en": "All the same",
+    "ms": "Semua sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "又热又湿的地面空气，上升后比周围暖得最多。",
+   "en": "Hot, moist surface air ends up warmest relative to its surroundings.",
+   "ms": "Udara permukaan panas dan lembap menjadi paling panas berbanding sekeliling."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch26",
+  "q": {
+   "zh": "站点模型右上角写 “086”，气压是多少？",
+   "en": "‘086’ at the upper right of a station model: what is the pressure?",
+   "ms": "‘086’ di kanan atas model stesen: berapakah tekanannya?"
+  },
+  "options": [
+   {
+    "zh": "1008.6 hPa",
+    "en": "1008.6 hPa",
+    "ms": "1008.6 hPa"
+   },
+   {
+    "zh": "86 hPa",
+    "en": "86 hPa",
+    "ms": "86 hPa"
+   },
+   {
+    "zh": "908.6 hPa",
+    "en": "908.6 hPa",
+    "ms": "908.6 hPa"
+   },
+   {
+    "zh": "1086 hPa",
+    "en": "1086 hPa",
+    "ms": "1086 hPa"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "只写最后三位、单位 0.1 hPa；接近 1000 的值前面补 10。",
+   "en": "Last three digits in tenths; values near 1000 take a leading 10.",
+   "ms": "Tiga digit terakhir dalam persepuluh; nilai hampir 1000 ditambah 10 di depan."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch26",
+  "q": {
+   "zh": "500 hPa 图上的 “588” 是什么意思？",
+   "en": "‘588’ on a 500 hPa chart means…",
+   "ms": "‘588’ pada carta 500 hPa bermaksud…"
+  },
+  "options": [
+   {
+    "zh": "这一层的高度是 5,880 米",
+    "en": "The level is 5,880 m high",
+    "ms": "Aras itu setinggi 5,880 m"
+   },
+   {
+    "zh": "气压 588 hPa",
+    "en": "Pressure 588 hPa",
+    "ms": "Tekanan 588 hPa"
+   },
+   {
+    "zh": "温度 58.8 °C",
+    "en": "58.8 °C",
+    "ms": "58.8 °C"
+   },
+   {
+    "zh": "风速 588 km/h",
+    "en": "Wind 588 km/h",
+    "ms": "Angin 588 km/j"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "高空图画的是气压层的高度。",
+   "en": "Upper-air charts show the height of a pressure level.",
+   "ms": "Carta udara atas menunjukkan ketinggian aras tekanan."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch27",
+  "q": {
+   "zh": "把模型格距减半，计算量大约变成几倍？",
+   "en": "Halve a model's grid spacing: how many times the calculations?",
+   "ms": "Kurangkan jarak grid separuh: berapa kali pengiraan?"
+  },
+  "options": [
+   {
+    "zh": "约 8 倍",
+    "en": "About 8 times",
+    "ms": "Kira-kira 8 kali"
+   },
+   {
+    "zh": "2 倍",
+    "en": "2 times",
+    "ms": "2 kali"
+   },
+   {
+    "zh": "一样",
+    "en": "The same",
+    "ms": "Sama"
+   },
+   {
+    "zh": "一半",
+    "en": "Half",
+    "ms": "Separuh"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "两个水平方向加上时间步长都要加倍；跑的时间约 16 倍。",
+   "en": "Both horizontal directions and the time step double; run time rises about 16-fold.",
+   "ms": "Kedua-dua arah mendatar dan langkah masa berganda; masa larian naik kira-kira 16 kali."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch27",
+  "q": {
+   "zh": "为什么格距 25 公里的模型常漏掉午后阵雨？",
+   "en": "Why does a 25 km model often miss afternoon showers?",
+   "ms": "Mengapa model 25 km sering terlepas hujan petang?"
+  },
+  "options": [
+   {
+    "zh": "雷雨比格子小，只能用参数化估计",
+    "en": "Storms are smaller than a box and can only be parameterised",
+    "ms": "Ribut lebih kecil daripada kotak dan hanya boleh diparameterkan"
+   },
+   {
+    "zh": "模型不算下午",
+    "en": "Models skip afternoons",
+    "ms": "Model melangkau petang"
+   },
+   {
+    "zh": "没有卫星资料",
+    "en": "No satellite data",
+    "ms": "Tiada data satelit"
+   },
+   {
+    "zh": "马来西亚太小",
+    "en": "Malaysia is too small",
+    "ms": "Malaysia terlalu kecil"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以区域模型要用 3 公里这种细格子。",
+   "en": "Hence regional models use grids as fine as 3 km.",
+   "ms": "Sebab itu model serantau menggunakan grid sehalus 3 km."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch27",
+  "q": {
+   "zh": "大马气象局的 WRF 模型，边界资料来自哪里？",
+   "en": "Where does MetMalaysia's WRF take its boundary data from?",
+   "ms": "Dari manakah WRF MetMalaysia mengambil data sempadannya?"
+  },
+  "options": [
+   {
+    "zh": "美国 NOAA 的 GFS",
+    "en": "NOAA's GFS",
+    "ms": "GFS NOAA"
+   },
+   {
+    "zh": "ECMWF 的 ERA5",
+    "en": "ECMWF's ERA5",
+    "ms": "ERA5 ECMWF"
+   },
+   {
+    "zh": "雷达",
+    "en": "Radar",
+    "ms": "Radar"
+   },
+   {
+    "zh": "不需要",
+    "en": "None needed",
+    "ms": "Tidak perlu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "区域模型需要全球模型提供边界。",
+   "en": "A regional model needs a global model at its edges.",
+   "ms": "Model serantau memerlukan model global di tepinya."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch28",
+  "q": {
+   "zh": "ECMWF ENS 的 51 个成员是什么？",
+   "en": "What are the 51 members of ECMWF's ENS?",
+   "ms": "Apakah 51 ahli ENS ECMWF?"
+  },
+  "options": [
+   {
+    "zh": "同一个模型，起点和物理稍微不同的 51 次预报",
+    "en": "One model run 51 times with slightly different starts and physics",
+    "ms": "Satu model dijalankan 51 kali dengan titik mula dan fizik sedikit berbeza"
+   },
+   {
+    "zh": "51 个国家的模型",
+    "en": "Models from 51 countries",
+    "ms": "Model dari 51 negara"
+   },
+   {
+    "zh": "51 个气象站",
+    "en": "51 stations",
+    "ms": "51 stesen"
+   },
+   {
+    "zh": "51 天的预报",
+    "en": "51 days of forecast",
+    "ms": "Ramalan 51 hari"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "1 个 control 加 50 个扰动成员。",
+   "en": "One control plus 50 perturbed members.",
+   "ms": "Satu kawalan ditambah 50 ahli terganggu."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch28",
+  "q": {
+   "zh": "为什么只看集合平均可能低估大雨？",
+   "en": "Why can the ensemble mean underplay heavy rain?",
+   "ms": "Mengapa purata ensemble boleh meremehkan hujan lebat?"
+  },
+  "options": [
+   {
+    "zh": "平均会把少数成员的极端值抹平",
+    "en": "Averaging smooths the extremes of a few members",
+    "ms": "Purata melicinkan ekstrem beberapa ahli"
+   },
+   {
+    "zh": "平均总是比较大",
+    "en": "The mean is always larger",
+    "ms": "Purata sentiasa lebih besar"
+   },
+   {
+    "zh": "平均不包括 control",
+    "en": "The mean leaves out the control",
+    "ms": "Purata tidak termasuk kawalan"
+   },
+   {
+    "zh": "平均只看气温",
+    "en": "The mean is only for temperature",
+    "ms": "Purata hanya untuk suhu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "要同时看有几成成员预报大雨。",
+   "en": "Also check how many members show heavy rain.",
+   "ms": "Semak juga berapa ahli menunjukkan hujan lebat."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch29",
+  "q": {
+   "zh": "ECMWF 12 UTC 的预报，起点是马来西亚几点？",
+   "en": "ECMWF's 12 UTC run starts at what time in Malaysia?",
+   "ms": "Larian 12 UTC ECMWF bermula pada pukul berapa di Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "晚上 8 点",
+    "en": "8 pm",
+    "ms": "8 malam"
+   },
+   {
+    "zh": "中午 12 点",
+    "en": "Noon",
+    "ms": "Tengah hari"
+   },
+   {
+    "zh": "早上 4 点",
+    "en": "4 am",
+    "ms": "4 pagi"
+   },
+   {
+    "zh": "下午 2 点",
+    "en": "2 pm",
+    "ms": "2 petang"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "马来西亚比 UTC 快 8 小时。",
+   "en": "Malaysia is UTC+8.",
+   "ms": "Malaysia ialah UTC+8."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch29",
+  "q": {
+   "zh": "想知道未来 3 个月会不会比平常干，看哪个产品？",
+   "en": "To see whether the next 3 months will be drier than normal, which product?",
+   "ms": "Untuk melihat sama ada 3 bulan akan datang lebih kering daripada biasa, produk mana?"
+  },
+  "options": [
+   {
+    "zh": "SEAS5 季节预报",
+    "en": "SEAS5 seasonal forecast",
+    "ms": "Ramalan bermusim SEAS5"
+   },
+   {
+    "zh": "雷达",
+    "en": "Radar",
+    "ms": "Radar"
+   },
+   {
+    "zh": "ENS 第 1 天",
+    "en": "ENS day 1",
+    "ms": "ENS hari 1"
+   },
+   {
+    "zh": "ERA5",
+    "en": "ERA5",
+    "ms": "ERA5"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季节预报给的是偏高、正常、偏低的概率。",
+   "en": "Seasonal forecasts give chances of above, near or below normal.",
+   "ms": "Ramalan bermusim memberi peluang di atas, hampir atau di bawah normal."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch29",
+  "q": {
+   "zh": "为什么 Windy 可以免费显示 ECMWF 的预报？",
+   "en": "Why can Windy show ECMWF forecasts free?",
+   "ms": "Mengapa Windy boleh memaparkan ramalan ECMWF secara percuma?"
+  },
+  "options": [
+   {
+    "zh": "ECMWF 用 CC BY 4.0 开放了一部分资料",
+    "en": "ECMWF opened a subset under CC BY 4.0",
+    "ms": "ECMWF membuka subset di bawah CC BY 4.0"
+   },
+   {
+    "zh": "Windy 自己跑 ECMWF 模型",
+    "en": "Windy runs the ECMWF model itself",
+    "ms": "Windy menjalankan model ECMWF sendiri"
+   },
+   {
+    "zh": "资料是偷来的",
+    "en": "It is pirated",
+    "ms": "Ia cetak rompak"
+   },
+   {
+    "zh": "ECMWF 属于 Windy",
+    "en": "ECMWF belongs to Windy",
+    "ms": "ECMWF milik Windy"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "开放资料可以转载和商业使用，只要注明出处。",
+   "en": "Open data may be reused, even commercially, with credit.",
+   "ms": "Data terbuka boleh digunakan semula, termasuk komersial, dengan kredit."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch30",
+  "q": {
+   "zh": "51 个成员里有 12 个预报超过 10 毫米，概率大约多少？",
+   "en": "12 of 51 members forecast over 10 mm: roughly what probability?",
+   "ms": "12 daripada 51 ahli meramal lebih 10 mm: kira-kira berapa kebarangkalian?"
+  },
+  "options": [
+   {
+    "zh": "约 24 %",
+    "en": "About 24 %",
+    "ms": "Kira-kira 24 %"
+   },
+   {
+    "zh": "12 %",
+    "en": "12 %",
+    "ms": "12 %"
+   },
+   {
+    "zh": "51 %",
+    "en": "51 %",
+    "ms": "51 %"
+   },
+   {
+    "zh": "100 %",
+    "en": "100 %",
+    "ms": "100 %"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "12 ÷ 51 ≈ 0.24。",
+   "en": "12 ÷ 51 ≈ 0.24.",
+   "ms": "12 ÷ 51 ≈ 0.24."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch30",
+  "q": {
+   "zh": "EFI 接近 1 表示什么？",
+   "en": "An EFI near 1 means…",
+   "ms": "EFI hampir 1 bermaksud…"
+  },
+  "options": [
+   {
+    "zh": "很多成员预报出当地少见的高值",
+    "en": "Many members forecast values rare there on the high side",
+    "ms": "Banyak ahli meramal nilai yang jarang di sebelah tinggi"
+   },
+   {
+    "zh": "一定会下 100 毫米",
+    "en": "Exactly 100 mm will fall",
+    "ms": "Tepat 100 mm akan turun"
+   },
+   {
+    "zh": "预报很准",
+    "en": "The forecast is accurate",
+    "ms": "Ramalan tepat"
+   },
+   {
+    "zh": "天气很平常",
+    "en": "Ordinary weather",
+    "ms": "Cuaca biasa"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "EFI 比的是模型气候，不是绝对值。",
+   "en": "EFI compares with the model climate, not a fixed amount.",
+   "ms": "EFI membandingkan dengan iklim model, bukan jumlah tetap."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch31",
+  "q": {
+   "zh": "再分析和天气预报最大的不同是什么？",
+   "en": "What most separates a reanalysis from a forecast?",
+   "ms": "Apakah perbezaan utama analisis semula dan ramalan?"
+  },
+  "options": [
+   {
+    "zh": "再分析重算过去，没有发布的期限",
+    "en": "A reanalysis recomputes the past with no deadline",
+    "ms": "Analisis semula mengira semula masa lalu tanpa tarikh akhir"
+   },
+   {
+    "zh": "再分析预报未来 46 天",
+    "en": "It forecasts 46 days ahead",
+    "ms": "Ia meramal 46 hari"
+   },
+   {
+    "zh": "再分析不用模型",
+    "en": "It uses no model",
+    "ms": "Ia tidak menggunakan model"
+   },
+   {
+    "zh": "再分析只用雷达",
+    "en": "It uses only radar",
+    "ms": "Ia hanya menggunakan radar"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它用同样的同化方法，但有更多时间收集观测。",
+   "en": "Same assimilation, more time to gather observations.",
+   "ms": "Asimilasi sama, lebih masa untuk mengumpul cerapan."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch31",
+  "q": {
+   "zh": "季节预报会告诉你什么？",
+   "en": "What does a seasonal forecast tell you?",
+   "ms": "Apakah yang diberitahu oleh ramalan bermusim?"
+  },
+  "options": [
+   {
+    "zh": "未来几个月偏干或偏湿的概率",
+    "en": "The chances of the coming months being drier or wetter",
+    "ms": "Peluang bulan-bulan akan datang lebih kering atau basah"
+   },
+   {
+    "zh": "下个星期三会不会下雨",
+    "en": "Whether next Wednesday is wet",
+    "ms": "Sama ada Rabu depan hujan"
+   },
+   {
+    "zh": "明天几点下雨",
+    "en": "What time it rains tomorrow",
+    "ms": "Pukul berapa hujan esok"
+   },
+   {
+    "zh": "今天的风速",
+    "en": "Today's wind speed",
+    "ms": "Kelajuan angin hari ini"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它说的是几个月平均的倾向，不是哪一天。",
+   "en": "It speaks of months on average, not days.",
+   "ms": "Ia tentang purata bulanan, bukan hari."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch32",
+  "q": {
+   "zh": "AI 天气模型主要从哪里学？",
+   "en": "What do AI weather models mostly learn from?",
+   "ms": "Daripada apa model cuaca AI kebanyakannya belajar?"
+  },
+  "options": [
+   {
+    "zh": "几十年的再分析资料，例如 ERA5",
+    "en": "Decades of reanalysis such as ERA5",
+    "ms": "Analisis semula berdekad-dekad seperti ERA5"
+   },
+   {
+    "zh": "新闻报道",
+    "en": "News reports",
+    "ms": "Laporan berita"
+   },
+   {
+    "zh": "只有今天的雷达",
+    "en": "Only today's radar",
+    "ms": "Hanya radar hari ini"
+   },
+   {
+    "zh": "气象员的直觉",
+    "en": "Forecasters' hunches",
+    "ms": "Firasat peramal"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以物理模型做的再分析仍然很重要。",
+   "en": "So the physics-made reanalysis still matters.",
+   "ms": "Jadi analisis semula buatan fizik masih penting."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch32",
+  "q": {
+   "zh": "ECMWF 的 AIFS ENS 从什么时候正式运作？",
+   "en": "Since when has ECMWF's AIFS ENS run operationally?",
+   "ms": "Sejak bila AIFS ENS ECMWF beroperasi?"
+  },
+  "options": [
+   {
+    "zh": "2025 年 7 月 1 日",
+    "en": "1 July 2025",
+    "ms": "1 Julai 2025"
+   },
+   {
+    "zh": "1975 年",
+    "en": "1975",
+    "ms": "1975"
+   },
+   {
+    "zh": "2010 年",
+    "en": "2010",
+    "ms": "2010"
+   },
+   {
+    "zh": "还没有",
+    "en": "Not yet",
+    "ms": "Belum lagi"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "AIFS Single 更早，2025 年 2 月 25 日。",
+   "en": "AIFS Single came earlier, 25 Feb 2025.",
+   "ms": "AIFS Single lebih awal, 25 Feb 2025."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch33",
+  "q": {
+   "zh": "GEFS 有几个成员？",
+   "en": "How many members does GEFS have?",
+   "ms": "Berapa ahli GEFS?"
+  },
+  "options": [
+   {
+    "zh": "31",
+    "en": "31",
+    "ms": "31"
+   },
+   {
+    "zh": "51",
+    "en": "51",
+    "ms": "51"
+   },
+   {
+    "zh": "1",
+    "en": "1",
+    "ms": "1"
+   },
+   {
+    "zh": "101",
+    "en": "101",
+    "ms": "101"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "ECMWF 的 ENS 是 51 个。",
+   "en": "ECMWF's ENS has 51.",
+   "ms": "ENS ECMWF ada 51."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch33",
+  "q": {
+   "zh": "几个模型各说各话时，最好怎么做？",
+   "en": "When the models disagree, what is best?",
+   "ms": "Apabila model tidak bersetuju, apa yang terbaik?"
+  },
+  "options": [
+   {
+    "zh": "看集合和概率，不只挑一个",
+    "en": "Look at ensembles and probabilities, not one favourite",
+    "ms": "Lihat ensemble dan kebarangkalian, bukan satu kegemaran"
+   },
+   {
+    "zh": "挑最好听的",
+    "en": "Pick the nicest",
+    "ms": "Pilih yang paling sedap didengar"
+   },
+   {
+    "zh": "永远只看 GFS",
+    "en": "Always use GFS",
+    "ms": "Sentiasa guna GFS"
+   },
+   {
+    "zh": "不理预报",
+    "en": "Ignore forecasts",
+    "ms": "Abaikan ramalan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "意见不一表示不确定性大。",
+   "en": "Disagreement means high uncertainty.",
+   "ms": "Tidak sependapat bermaksud ketidakpastian tinggi."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch34",
+  "q": {
+   "zh": "预报能力大约以什么速度进步？",
+   "en": "Roughly how fast has forecast skill improved?",
+   "ms": "Kira-kira seberapa pantas kemahiran ramalan bertambah baik?"
+  },
+  "options": [
+   {
+    "zh": "每十年多看约一天",
+    "en": "About a day further each decade",
+    "ms": "Kira-kira sehari lebih jauh setiap dekad"
+   },
+   {
+    "zh": "每年多看十天",
+    "en": "Ten days a year",
+    "ms": "Sepuluh hari setahun"
+   },
+   {
+    "zh": "没有进步",
+    "en": "Not at all",
+    "ms": "Tiada langsung"
+   },
+   {
+    "zh": "每百年一天",
+    "en": "A day a century",
+    "ms": "Sehari setiap abad"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "今天的第 6 天预报约等于十年前的第 5 天。",
+   "en": "Today's day 6 is about as good as day 5 a decade ago.",
+   "ms": "Hari ke-6 hari ini lebih kurang sebaik hari ke-5 sedekad lalu."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch34",
+  "q": {
+   "zh": "为什么马来西亚的雨特别难预报？",
+   "en": "Why is Malaysian rain especially hard to forecast?",
+   "ms": "Mengapa hujan Malaysia sangat sukar diramal?"
+  },
+  "options": [
+   {
+    "zh": "大多是比模型格子还小的对流",
+    "en": "Most is convection smaller than the grid",
+    "ms": "Kebanyakannya perolakan lebih kecil daripada grid"
+   },
+   {
+    "zh": "这里没有气象站",
+    "en": "There are no stations",
+    "ms": "Tiada stesen"
+   },
+   {
+    "zh": "模型不算热带",
+    "en": "Models skip the tropics",
+    "ms": "Model melangkau tropika"
+   },
+   {
+    "zh": "雨都在晚上",
+    "en": "It only rains at night",
+    "ms": "Hujan hanya pada waktu malam"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "所以常常只能给概率。",
+   "en": "So it is often given as a probability.",
+   "ms": "Jadi ia sering diberi sebagai kebarangkalian."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch35",
+  "q": {
+   "zh": "“降雨概率 60 %”（持续性的雨）是什么意思？",
+   "en": "‘60 % chance of rain’ (steady rain) means…",
+   "ms": "‘60 % peluang hujan’ (hujan berterusan) bermaksud…"
+  },
+  "options": [
+   {
+    "zh": "你家下到可量雨量的机会是 60 %",
+    "en": "A 60 % chance your spot gets measurable rain",
+    "ms": "Peluang 60 % tempat anda menerima hujan boleh diukur"
+   },
+   {
+    "zh": "六成地方会下雨",
+    "en": "Rain over 60 % of the area",
+    "ms": "Hujan di 60 % kawasan"
+   },
+   {
+    "zh": "会下 60 % 的时间",
+    "en": "Rain 60 % of the time",
+    "ms": "Hujan 60 % masa"
+   },
+   {
+    "zh": "雨量 60 毫米",
+    "en": "60 mm of rain",
+    "ms": "60 mm hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "阵雨时百分比才指面积。",
+   "en": "Only for showers does it refer to area.",
+   "ms": "Hanya bagi hujan lebat setempat ia merujuk kawasan."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch35",
+  "q": {
+   "zh": "06 UTC 是马来西亚几点？",
+   "en": "06 UTC is what time in Malaysia?",
+   "ms": "06 UTC pukul berapa di Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "下午 2 点",
+    "en": "2 pm",
+    "ms": "2 petang"
+   },
+   {
+    "zh": "早上 6 点",
+    "en": "6 am",
+    "ms": "6 pagi"
+   },
+   {
+    "zh": "晚上 10 点",
+    "en": "10 pm",
+    "ms": "10 malam"
+   },
+   {
+    "zh": "中午",
+    "en": "Noon",
+    "ms": "Tengah hari"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "加 8 小时。",
+   "en": "Add 8 hours.",
+   "ms": "Tambah 8 jam."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch36",
+  "q": {
+   "zh": "2021 年 12 月 18 日马六甲海峡一带大雨，报告怎样解释？",
+   "en": "How does the review explain the heavy rain around the Strait of Malacca on 18 Dec 2021?",
+   "ms": "Bagaimana kajian semula menerangkan hujan lebat di Selat Melaka pada 18 Dis 2021?"
+  },
+  "options": [
+   {
+    "zh": "东北风深入半岛，和西南风汇合",
+    "en": "North-east winds met south-west winds over the Peninsula",
+    "ms": "Angin timur laut bertemu angin barat daya di Semenanjung"
+   },
+   {
+    "zh": "一条苏门答腊飑线",
+    "en": "A single Sumatras",
+    "ms": "Satu Sumatras"
+   },
+   {
+    "zh": "热浪",
+    "en": "A heat wave",
+    "ms": "Gelombang haba"
+   },
+   {
+    "zh": "烟霾",
+    "en": "Haze",
+    "ms": "Jerebu"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "季风潮加上台风雷伊，让风在海峡一带汇合。",
+   "en": "The surge and Typhoon Rai brought converging winds over the strait.",
+   "ms": "Luruan dan Taufan Rai membawa angin menumpu di atas selat."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch36",
+  "q": {
+   "zh": "为什么 ERA5 的格子雨量比气象站小很多？",
+   "en": "Why is ERA5's box rain so much less than the station's?",
+   "ms": "Mengapa hujan kotak ERA5 jauh kurang daripada stesen?"
+  },
+  "options": [
+   {
+    "zh": "25 公里格子的平均把局部极端值抹平",
+    "en": "A 25 km box average smooths local extremes",
+    "ms": "Purata kotak 25 km melicinkan ekstrem setempat"
+   },
+   {
+    "zh": "气象站坏了",
+    "en": "The station broke",
+    "ms": "Stesen rosak"
+   },
+   {
+    "zh": "ERA5 不算雨",
+    "en": "ERA5 has no rain",
+    "ms": "ERA5 tiada hujan"
+   },
+   {
+    "zh": "那天没下雨",
+    "en": "It did not rain",
+    "ms": "Tidak hujan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "格子平均不是雨量计。",
+   "en": "A box average is not a gauge.",
+   "ms": "Purata kotak bukan tolok."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch37",
+  "q": {
+   "zh": "Windy 的 CAPE 图层显示 2,500，代表什么？",
+   "en": "Windy's CAPE layer shows 2,500. What might that mean?",
+   "ms": "Lapisan CAPE Windy menunjukkan 2,500. Apakah maksudnya?"
+  },
+  "options": [
+   {
+    "zh": "可能有很强的雷雨",
+    "en": "Severe storms are possible",
+    "ms": "Ribut teruk mungkin"
+   },
+   {
+    "zh": "天气很稳定",
+    "en": "Very stable weather",
+    "ms": "Cuaca sangat stabil"
+   },
+   {
+    "zh": "有雾",
+    "en": "Fog",
+    "ms": "Kabus"
+   },
+   {
+    "zh": "海浪 2.5 米",
+    "en": "2.5 m waves",
+    "ms": "Ombak 2.5 m"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "2,000 以上可能是强雷雨。",
+   "en": "Over 2,000 may mean severe storms.",
+   "ms": "Melebihi 2,000 mungkin ribut teruk."
+  }
+ },
+ {
+  "stage": 8,
+  "chapter": "ch37",
+  "q": {
+   "zh": "在 Windy 点一个地方看逐时预报，看到的是什么图？",
+   "en": "Tapping a place in Windy for its hourly forecast shows a…",
+   "ms": "Mengetik satu tempat dalam Windy untuk ramalan setiap jam menunjukkan…"
+  },
+  "options": [
+   {
+    "zh": "Meteogram",
+    "en": "Meteogram",
+    "ms": "Meteogram"
+   },
+   {
+    "zh": "Skew-T",
+    "en": "Skew-T",
+    "ms": "Skew-T"
+   },
+   {
+    "zh": "卫星图",
+    "en": "Satellite image",
+    "ms": "Imej satelit"
+   },
+   {
+    "zh": "雷达图",
+    "en": "Radar image",
+    "ms": "Imej radar"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "一个地点的要素随时间变化。",
+   "en": "One place's elements against time.",
+   "ms": "Unsur satu tempat melawan masa."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch38",
+  "q": {
+   "zh": "为什么中期预报对农业特别有用？",
+   "en": "Why are medium-range forecasts especially useful in farming?",
+   "ms": "Mengapa ramalan jarak sederhana sangat berguna dalam pertanian?"
+  },
+  "options": [
+   {
+    "zh": "可以提前安排人工、机械和灌溉",
+    "en": "Labour, machines and irrigation can be planned ahead",
+    "ms": "Tenaga kerja, jentera dan pengairan boleh dirancang awal"
+   },
+   {
+    "zh": "它预报下个月",
+    "en": "It forecasts next month",
+    "ms": "Ia meramal bulan depan"
+   },
+   {
+    "zh": "它只报气温",
+    "en": "It gives only temperature",
+    "ms": "Ia hanya memberi suhu"
+   },
+   {
+    "zh": "它不会错",
+    "en": "It is never wrong",
+    "ms": "Ia tidak pernah salah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "几天到一星期正好是农场安排工作的时间。",
+   "en": "A few days to a week is the span farms plan work in.",
+   "ms": "Beberapa hari hingga seminggu ialah tempoh ladang merancang kerja."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch38",
+  "q": {
+   "zh": "同样的干旱，为什么对作物的伤害可以不同？",
+   "en": "Why can the same dry spell do different harm?",
+   "ms": "Mengapa kemarau yang sama boleh membawa kerosakan berbeza?"
+  },
+  "options": [
+   {
+    "zh": "要看碰到哪个生长阶段（物候）",
+    "en": "It depends on the crop stage it hits",
+    "ms": "Bergantung pada peringkat tanaman yang terkena"
+   },
+   {
+    "zh": "干旱都一样",
+    "en": "Droughts are all the same",
+    "ms": "Semua kemarau sama"
+   },
+   {
+    "zh": "只看风向",
+    "en": "Only the wind direction matters",
+    "ms": "Hanya arah angin penting"
+   },
+   {
+    "zh": "看月亮",
+    "en": "The Moon decides",
+    "ms": "Bulan menentukan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "开花期等敏感阶段最怕缺水。",
+   "en": "Sensitive stages such as flowering suffer most.",
+   "ms": "Peringkat sensitif seperti pembungaan paling terjejas."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch39",
+  "q": {
+   "zh": "研究发现，厄尔尼诺年马来西亚的油棕产量通常怎样？",
+   "en": "In El Niño years, what happens to Malaysian oil palm yields, according to the study?",
+   "ms": "Pada tahun El Niño, apakah berlaku kepada hasil kelapa sawit Malaysia, menurut kajian?"
+  },
+  "options": [
+   {
+    "zh": "因为缺水而比平常低",
+    "en": "Lower than normal, from water stress",
+    "ms": "Lebih rendah daripada biasa, akibat tekanan air"
+   },
+   {
+    "zh": "比平常高很多",
+    "en": "Much higher",
+    "ms": "Jauh lebih tinggi"
+   },
+   {
+    "zh": "完全没有影响",
+    "en": "No effect at all",
+    "ms": "Tiada kesan langsung"
+   },
+   {
+    "zh": "只有果实变大",
+    "en": "Only the fruit grows bigger",
+    "ms": "Hanya buah menjadi besar"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "雨少、气温高，水分胁迫大。",
+   "en": "Less rain and higher temperatures mean more water stress.",
+   "ms": "Kurang hujan dan suhu lebih tinggi bermaksud lebih tekanan air."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch39",
+  "q": {
+   "zh": "为什么今年的干旱可能到明年才影响产量？",
+   "en": "Why might this year's drought show in next year's yield?",
+   "ms": "Mengapa kemarau tahun ini mungkin kelihatan pada hasil tahun depan?"
+  },
+  "options": [
+   {
+    "zh": "油棕的花芽和果串要很多个月才发育成熟",
+    "en": "Palm flowers and bunches take many months to develop",
+    "ms": "Bunga dan tandan sawit mengambil masa berbulan-bulan untuk berkembang"
+   },
+   {
+    "zh": "雨要一年才落到地上",
+    "en": "Rain takes a year to fall",
+    "ms": "Hujan mengambil masa setahun untuk turun"
+   },
+   {
+    "zh": "卫星资料延迟",
+    "en": "Satellite data is late",
+    "ms": "Data satelit lewat"
+   },
+   {
+    "zh": "不会这样",
+    "en": "It cannot",
+    "ms": "Tidak mungkin"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如性别决定在收成年之前约 31 到 20 个月。",
+   "en": "Sex determination, for example, is about 31–20 months before the harvest year.",
+   "ms": "Penentuan jantina, contohnya, kira-kira 31–20 bulan sebelum tahun tuaian."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch40",
+  "q": {
+   "zh": "ET₀ 是什么的蒸散？",
+   "en": "ET₀ is the evapotranspiration of…",
+   "ms": "ET₀ ialah sejatpeluhan…"
+  },
+  "options": [
+   {
+    "zh": "一片标准的、水分充足的草地",
+    "en": "A standard, well-watered grass surface",
+    "ms": "Permukaan rumput piawai yang cukup air"
+   },
+   {
+    "zh": "你种的作物",
+    "en": "Your own crop",
+    "ms": "Tanaman anda"
+   },
+   {
+    "zh": "一个水池",
+    "en": "A pond",
+    "ms": "Sebuah kolam"
+   },
+   {
+    "zh": "沙漠",
+    "en": "A desert",
+    "ms": "Gurun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "再乘上作物系数 Kc，才是某种作物的用水。",
+   "en": "Multiply by the crop coefficient for a given crop.",
+   "ms": "Darab dengan pekali tanaman bagi tanaman tertentu."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch40",
+  "q": {
+   "zh": "吉隆坡 2025 年哪个月最缺水？",
+   "en": "Which month of 2025 was most water-short in Kuala Lumpur?",
+   "ms": "Bulan mana pada 2025 paling kekurangan air di Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "7 月",
+    "en": "July",
+    "ms": "Julai"
+   },
+   {
+    "zh": "4 月",
+    "en": "April",
+    "ms": "April"
+   },
+   {
+    "zh": "11 月",
+    "en": "November",
+    "ms": "November"
+   },
+   {
+    "zh": "12 月",
+    "en": "December",
+    "ms": "Disember"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "ET₀ 约 146 毫米，雨只有约 55 毫米。",
+   "en": "ET₀ about 146 mm against only about 55 mm of rain.",
+   "ms": "ET₀ kira-kira 146 mm berbanding hanya kira-kira 55 mm hujan."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch41",
+  "q": {
+   "zh": "在热带，改善小气候的重点是什么？",
+   "en": "In the tropics, what is the main aim in modifying the microclimate?",
+   "ms": "Di tropika, apakah tujuan utama mengubah mikroiklim?"
+  },
+  "options": [
+   {
+    "zh": "避热：遮荫、覆盖",
+    "en": "Shedding heat: shade, mulch",
+    "ms": "Membuang haba: teduhan, sungkupan"
+   },
+   {
+    "zh": "收集更多热量",
+    "en": "Trapping more heat",
+    "ms": "Memerangkap lebih haba"
+   },
+   {
+    "zh": "让风更大",
+    "en": "More wind",
+    "ms": "Lebih angin"
+   },
+   {
+    "zh": "减少光照到零",
+    "en": "No light at all",
+    "ms": "Tiada cahaya langsung"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "热带的热量已经超过作物能忍受的程度。",
+   "en": "Tropical heat already exceeds what crops tolerate.",
+   "ms": "Haba tropika sudah melebihi apa yang boleh ditahan tanaman."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch41",
+  "q": {
+   "zh": "为什么百叶箱的气温不一定等于叶片的温度？",
+   "en": "Why may the screen temperature differ from a leaf's?",
+   "ms": "Mengapa suhu skrin mungkin berbeza daripada suhu daun?"
+  },
+  "options": [
+   {
+    "zh": "贴近地面那一层的条件变化很大",
+    "en": "Conditions change sharply in the layer near the ground",
+    "ms": "Keadaan berubah dengan ketara dalam lapisan dekat tanah"
+   },
+   {
+    "zh": "温度计坏了",
+    "en": "The thermometer is broken",
+    "ms": "Termometer rosak"
+   },
+   {
+    "zh": "叶子不会热",
+    "en": "Leaves never warm",
+    "ms": "Daun tidak pernah panas"
+   },
+   {
+    "zh": "百叶箱在室内",
+    "en": "The screen is indoors",
+    "ms": "Skrin di dalam rumah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "这就是小气候和大气候的分别。",
+   "en": "That is the difference between micro- and macroclimate.",
+   "ms": "Itulah perbezaan mikro dan makroiklim."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch42",
+  "q": {
+   "zh": "为什么健康的叶子 NDVI 高？",
+   "en": "Why does a healthy leaf have a high NDVI?",
+   "ms": "Mengapa daun sihat mempunyai NDVI tinggi?"
+  },
+  "options": [
+   {
+    "zh": "吸收很多可见光、反射很多近红外线",
+    "en": "It absorbs much visible light and reflects much near-infrared",
+    "ms": "Ia menyerap banyak cahaya nampak dan memantulkan banyak inframerah dekat"
+   },
+   {
+    "zh": "叶子会发光",
+    "en": "Leaves glow",
+    "ms": "Daun bercahaya"
+   },
+   {
+    "zh": "叶子反射所有颜色",
+    "en": "Leaves reflect every colour",
+    "ms": "Daun memantulkan semua warna"
+   },
+   {
+    "zh": "叶子很冷",
+    "en": "Leaves are cold",
+    "ms": "Daun sejuk"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "近红外减可见光越大，NDVI 越高。",
+   "en": "The bigger NIR minus VIS, the higher the NDVI.",
+   "ms": "Semakin besar NIR tolak VIS, semakin tinggi NDVI."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch42",
+  "q": {
+   "zh": "雷达属于哪一种遥感？",
+   "en": "Radar is which kind of remote sensing?",
+   "ms": "Radar ialah jenis penderiaan jauh yang mana?"
+  },
+  "options": [
+   {
+    "zh": "主动式",
+    "en": "Active",
+    "ms": "Aktif"
+   },
+   {
+    "zh": "被动式",
+    "en": "Passive",
+    "ms": "Pasif"
+   },
+   {
+    "zh": "都不是",
+    "en": "Neither",
+    "ms": "Bukan kedua-duanya"
+   },
+   {
+    "zh": "化学式",
+    "en": "Chemical",
+    "ms": "Kimia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它自己发出能量再接收回波。",
+   "en": "It sends its own energy and receives the echo.",
+   "ms": "Ia menghantar tenaganya sendiri dan menerima gema."
+  }
+ }
+]

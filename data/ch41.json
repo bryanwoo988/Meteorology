@@ -1,0 +1,113 @@
+{
+ "id": "ch41",
+ "num": 41,
+ "stage": 9,
+ "title": {
+  "zh": "微气象与小气候",
+  "en": "Micrometeorology and microclimate",
+  "ms": "Mikrometeorologi dan mikroiklim"
+ },
+ "sources": [
+  "PAM",
+  "TERM"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "作物身边的天气",
+    "en": "The weather right around a crop",
+    "ms": "Cuaca di sekeliling tanaman"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:micrometeorology}}研究几平方公里范围、离地几米以内的天气：辐射、温度、风、水汽和二氧化碳在作物冠层上下的小变化。这一层的天气叫{{t:microclimate}}，就是植物和动物真正生活的气候，和几米以上的大气候可以很不一样。",
+      "en": "{{t:micrometeorology}} studies the weather over a few square kilometres and within a few metres of the ground: small changes in radiation, temperature, wind, vapour and carbon dioxide above and inside the crop canopy. The weather of this layer is the {{t:microclimate}} — the climate plants and animals actually live in, which can be quite different from the climate a few metres higher.",
+      "ms": "{{t:micrometeorology}} mengkaji cuaca di kawasan beberapa kilometer persegi dan dalam beberapa meter dari tanah: perubahan kecil sinaran, suhu, angin, wap dan karbon dioksida di atas dan di dalam kanopi tanaman. Cuaca lapisan ini ialah {{t:microclimate}} — iklim yang sebenarnya didiami tumbuhan dan haiwan, yang boleh sangat berbeza daripada iklim beberapa meter lebih tinggi."
+     },
+     "defines": [
+      "micrometeorology",
+      "microclimate"
+     ],
+     "src": [
+      "PAM:103",
+      "TERM:221"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "越接近地面，风越小，因为动量被地面吸走；日夜的温差也在贴近地面的这一层最大。所以 1.2 米高百叶箱里的气温（第 21 章），不一定等于叶片或地面的温度。",
+      "en": "Close to the ground the wind slows, its momentum taken by the surface, and the day–night swing of temperature is biggest in this layer. So the air temperature in a Stevenson screen 1.2 m up (Chapter 21) is not necessarily the temperature of a leaf or of the soil.",
+      "ms": "Dekat tanah angin menjadi perlahan, momentumnya diambil oleh permukaan, dan perbezaan suhu siang–malam paling besar dalam lapisan ini. Jadi suhu udara dalam skrin Stevenson setinggi 1.2 m (Bab 21) tidak semestinya suhu daun atau tanah."
+     },
+     "src": [
+      "PAM:103-105",
+      "PAM:138"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "人工改善小气候",
+    "en": "Modifying the microclimate",
+    "ms": "Mengubah mikroiklim"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "改善小气候的方法可以分成三类：控制热量、控制水分平衡、控制风速。在热带，热太多，所以重点是“避热”。",
+      "en": "Ways of modifying the microclimate fall into three groups: controlling the heat load, controlling the water balance and controlling the wind. In the tropics the heat load is too high, so the aim is to shed heat.",
+      "ms": "Cara mengubah mikroiklim terbahagi kepada tiga kumpulan: mengawal beban haba, mengawal imbangan air dan mengawal angin. Di kawasan tropika beban haba terlalu tinggi, jadi tujuannya ialah membuang haba."
+     },
+     "src": [
+      "PAM:107"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "遮荫：减少作物的蒸散",
+       "en": "Shade: cuts the crop's evapotranspiration",
+       "ms": "Teduhan: mengurangkan sejatpeluhan tanaman"
+      },
+      {
+       "zh": "覆盖（mulching）：减少土壤的热量交换；覆盖秸秆和作物残体还能增加入渗",
+       "en": "Mulching: reduces heat exchange at the soil; straw and crop residues also raise infiltration",
+       "ms": "Sungkupan: mengurangkan pertukaran haba di tanah; jerami dan sisa tanaman juga meningkatkan resapan"
+      },
+      {
+       "zh": "增加储水：用带状种植、等高耕作、梯田、田埂减少径流",
+       "en": "Store more water: strip cropping, contour ploughing, terracing and bunds reduce run-off",
+       "ms": "Simpan lebih banyak air: penanaman jalur, pembajakan kontur, teres dan batas mengurangkan air larian"
+      },
+      {
+       "zh": "{{t:shelterbelt}}和防风障：改变风速、辐射和能量平衡，减少蒸散",
+       "en": "{{t:shelterbelt}}s and windbreaks: alter wind, radiation and the energy balance, and cut evapotranspiration",
+       "ms": "{{t:shelterbelt}} dan penghadang angin: mengubah angin, sinaran dan imbangan tenaga, serta mengurangkan sejatpeluhan"
+      }
+     ],
+     "defines": [
+      "shelterbelt"
+     ],
+     "src": [
+      "PAM:107-109"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "micrometeorology",
+  "microclimate",
+  "shelterbelt"
+ ]
+}

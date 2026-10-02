@@ -1,0 +1,39 @@
+{
+ "id": "kl-levels-2026",
+ "columns": [
+  "level_hPa",
+  "height_m",
+  "temperature_C"
+ ],
+ "units": [
+  "hPa",
+  "m",
+  "\u00b0C"
+ ],
+ "rows": [
+  [
+   850,
+   1521,
+   19.0
+  ],
+  [
+   700,
+   3165,
+   10.0
+  ],
+  [
+   500,
+   5891,
+   -4.6
+  ],
+  [
+   250,
+   11007,
+   -39.6
+  ]
+ ],
+ "source": "Open-Meteo Forecast API (best-match models), hourly values 3 Aug \u2013 2 Oct 2026, averaged; grid point nearest 3.14\u00b0N 101.69\u00b0E",
+ "url": "https://api.open-meteo.com/v1/forecast?latitude=3.139&longitude=101.6869&hourly=geopotential_height_850hPa,geopotential_height_700hPa,geopotential_height_500hPa,geopotential_height_250hPa,temperature_850hPa,temperature_700hPa,temperature_500hPa,temperature_250hPa&past_days=60&forecast_days=1&timezone=Asia%2FKuala_Lumpur",
+ "licence": "CC BY 4.0 (Open-Meteo)",
+ "fetched": "2026-10-02"
+}

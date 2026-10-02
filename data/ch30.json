@@ -1,0 +1,134 @@
+{
+ "id": "ch30",
+ "num": 30,
+ "stage": 8,
+ "title": {
+  "zh": "读懂 ECMWF 的集合预报图",
+  "en": "Reading ECMWF ensemble charts",
+  "ms": "Membaca carta ensemble ECMWF"
+ },
+ "sources": [
+  "ECMWF-MEDIUM",
+  "ECMWF-OPEN",
+  "OM-ENS",
+  "ECMWF-EFI",
+  "FUN",
+  "ESS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "EPSgram：一个地点的集合预报",
+    "en": "The EPSgram: an ensemble for one place",
+    "ms": "EPSgram: ensemble untuk satu tempat"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:epsgram}}把一个地点所有成员的预报，按日子画成一排盒子。成员按大小排好，{{t:percentile}}说的是“有多少成员比这个值小”：中位数（第 50 百分位）一半成员比它小；第 10 和第 90 百分位之间，包含了中间八成的成员。这本书的图：盒子是 25%–75%，线是 10%–90%，盒子里的横线是中位数。ECMWF 自己的图也是类似的盒子，看图时先看图例。",
+      "en": "An {{t:epsgram}} draws all the members' forecasts for one place as a row of boxes, one per day. Sort the members by size: a {{t:percentile}} tells how many fall below a value — half the members lie below the median (50th percentile), and the middle eight in ten lie between the 10th and 90th. In this book's chart the box spans 25–75 %, the whiskers 10–90 %, and the line in the box is the median. ECMWF's own charts use similar boxes; always check the legend.",
+      "ms": "{{t:epsgram}} melukis ramalan semua ahli bagi satu tempat sebagai barisan kotak, satu setiap hari. Susun ahli mengikut saiz: {{t:percentile}} memberitahu berapa yang jatuh di bawah sesuatu nilai — separuh ahli di bawah median (persentil ke-50), dan lapan daripada sepuluh di tengah antara persentil ke-10 dan ke-90. Dalam carta buku ini kotak meliputi 25–75 %, misai 10–90 %, dan garisan dalam kotak ialah median. Carta ECMWF sendiri menggunakan kotak serupa; sentiasa semak petunjuk."
+     },
+     "defines": [
+      "epsgram",
+      "percentile"
+     ],
+     "src": [
+      "FUN:129",
+      "ECMWF-MEDIUM"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W26"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "这是 2026 年 10 月 3 日拿到的一次真实预报。头几天，51 个成员的最高气温都在约 27–33 °C 之间，每天都有几毫米雨；到第二个星期，盒子变高、离散度变大：10 月 13 日有 27 个成员（过半）预报超过 10 毫米，正符合 10 月进入季风转换期、午后雷雨增多的季节（第 16 章）。",
+      "en": "This is a real forecast fetched on 3 October 2026. For the first few days all 51 members keep the maximum between about 27 and 33 °C with a few millimetres of rain each day; in the second week the boxes grow taller and the spread widens: on 13 October 27 members — more than half — forecast over 10 mm, just as October brings the inter-monsoon and more afternoon storms (Chapter 16).",
+      "ms": "Ini ramalan sebenar yang diambil pada 3 Oktober 2026. Untuk beberapa hari pertama semua 51 ahli mengekalkan suhu maksimum antara kira-kira 27 dan 33 °C dengan beberapa milimeter hujan setiap hari; pada minggu kedua kotak menjadi lebih tinggi dan serakan melebar: pada 13 Oktober 27 ahli — lebih separuh — meramal lebih 10 mm, tepat ketika Oktober membawa peralihan monsun dan lebih banyak ribut petang (Bab 16)."
+     },
+     "src": [
+      "OM-ENS",
+      "MET-PHEN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "什么时候看 control，什么时候看全部",
+    "en": "When to look at the control, when at them all",
+    "ms": "Bila melihat kawalan, bila melihat semua"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "切换到“只看 control”：10 月 15 日 control 只下 1.5 毫米，好像是干的一天；可是 51 个成员里有 12 个预报超过 10 毫米。只看一条预报，就看不到这种风险。头一两天成员还很集中时，control 和集合差不多；越往后，越要看全部成员和概率。",
+      "en": "Switch to ‘control only’: on 15 October the control gives just 1.5 mm and looks like a dry day — yet 12 of the 51 members forecast over 10 mm. A single run cannot show that risk. In the first day or two, while the members still cluster, the control and the ensemble agree; the further ahead, the more you should look at all the members and their probabilities.",
+      "ms": "Tukar kepada ‘kawalan sahaja’: pada 15 Oktober kawalan memberi hanya 1.5 mm dan kelihatan seperti hari kering — namun 12 daripada 51 ahli meramal lebih 10 mm. Satu larian tidak dapat menunjukkan risiko itu. Dalam satu dua hari pertama, semasa ahli masih berkelompok, kawalan dan ensemble bersetuju; semakin jauh, semakin anda patut melihat semua ahli dan kebarangkaliannya."
+     },
+     "src": [
+      "OM-ENS",
+      "ESS:257"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "把所有成员都画成线的图叫{{t:plume-chart}}；把“有几成成员超过某个门槛”画成地图，就是{{t:probability-map}}，例如“24 小时雨量超过 50 毫米的概率”。12 个成员超过 10 毫米，就是约 24 % 的概率。",
+      "en": "A chart drawing every member as its own line is a {{t:plume-chart}}; mapping the share of members above a threshold gives a {{t:probability-map}}, such as ‘chance of more than 50 mm in 24 hours’. Twelve members above 10 mm is a probability of about 24 %.",
+      "ms": "Carta yang melukis setiap ahli sebagai garisan sendiri ialah {{t:plume-chart}}; memetakan bahagian ahli melebihi ambang memberi {{t:probability-map}}, seperti ‘peluang melebihi 50 mm dalam 24 jam’. Dua belas ahli melebihi 10 mm ialah kebarangkalian kira-kira 24 %."
+     },
+     "defines": [
+      "plume-chart",
+      "probability-map"
+     ],
+     "src": [
+      "FUN:129",
+      "ECMWF-MEDIUM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "EFI：跟当地的平常比",
+    "en": "The EFI: compared with local normal",
+    "ms": "EFI: berbanding normal tempatan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "同样 50 毫米的雨，在吉隆坡和在沙漠意义完全不同。{{t:efi}}把这一次的集合预报，和模型用过去多年重新预报得到的“模型气候”比较，看这次有多不寻常。EFI 在 −1 到 1 之间：越接近 1，表示越多成员预报出当地少见的高值；越接近 −1，表示少见的低值。它像一个“警钟”，不必为每个地方另定门槛。",
+      "en": "Fifty millimetres means one thing in Kuala Lumpur and another in a desert. The {{t:efi}} compares this ensemble with the ‘model climate’ — re-forecasts of many past years by the same model — to show how unusual it is. It runs from −1 to 1: the nearer 1, the more members forecast values that are rare there on the high side; the nearer −1, rare on the low side. It works as an alarm bell without setting separate thresholds for every place.",
+      "ms": "Lima puluh milimeter bermakna satu perkara di Kuala Lumpur dan lain pula di gurun. {{t:efi}} membandingkan ensemble ini dengan ‘iklim model’ — ramalan semula banyak tahun lalu oleh model yang sama — untuk menunjukkan betapa luar biasanya. Ia dari −1 hingga 1: semakin hampir 1, semakin banyak ahli meramal nilai yang jarang di sebelah tinggi; semakin hampir −1, jarang di sebelah rendah. Ia berfungsi sebagai loceng amaran tanpa menetapkan ambang berasingan untuk setiap tempat."
+     },
+     "defines": [
+      "efi"
+     ],
+     "src": [
+      "ECMWF-EFI"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "epsgram",
+  "percentile",
+  "plume-chart",
+  "probability-map",
+  "efi"
+ ]
+}
