@@ -56,7 +56,7 @@ export function renderDataset(d, { lang }) {
       el('tbody', {}, d.params.map(p => el('tr', {},
         el('td', {}, el('code', {}, p.raw)),
         el('td', {}, pick(p.meaning, lang)),
-        el('td', {}, p.unit),
+        el('td', {}, pick(p.unit, lang)),
         el('td', {}, p.chapter ? el('a', { href: `#/ch/ch${String(p.chapter).padStart(2, '0')}` }, t('chapterN', { n: p.chapter }, lang)) : '—')))))) : null,
     d.sample ? el('figure', { class: 'ds-sample' },
       el('figcaption', {}, L('sample')),

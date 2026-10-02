@@ -199,6 +199,14 @@ await test('dataset card shows parameters, a data sample and graded outside link
   assert([...links].map(a => a.dataset.level).join() === 'view,try,pro', 'links not in order of difficulty');
 });
 
+await test('a dataset unit can be translated', async () => {
+  const { renderDataset } = await import('../js/datasets.js');
+  const card = renderDataset({ id: 'u', name: 'U', provider: 'P', what: { zh: 'w', en: 'w', ms: 'w' }, format: 'JSON',
+    params: [{ raw: 'n', meaning: { zh: '数', en: 'count', ms: 'kira' }, unit: { zh: '个', en: 'count', ms: 'bilangan' }, chapter: 20 }], links: [] }, { lang: 'ms' });
+  assert(!card.textContent.includes('[object Object]'), 'unit printed as [object Object]');
+  assert(card.textContent.includes('bilangan'), 'unit not shown in the chosen language');
+});
+
 const type = (a, input, text) => { input.value = text; input.dispatchEvent(new a.w.Event('input', { bubbles: true })); };
 
 await test('search finds a chapter from a query in another language', async () => {
