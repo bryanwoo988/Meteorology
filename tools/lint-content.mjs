@@ -88,7 +88,8 @@ export function lint(root) {
       if (b.type === 'table') (b.rows ?? []).forEach((r, i) => {
         if (r.length !== b.headers.length) errors.push(`${ch.id} table row ${i + 1} has ${r.length} cells, header has ${b.headers.length} (${at})`);
       });
-      if (b.type === 'chart') for (const s of b.chart?.series ?? []) if (s.values.length !== (b.chart.x?.categories ?? []).length) errors.push(`${at}: chart series length mismatch`);
+      if (b.type === 'chart' && b.chart?.series_file && !existsSync(join(root, 'data', 'series', `${b.chart.series_file}.json`))) errors.push(`${at}: chart series_file ${b.chart.series_file} not found`);
+      if (b.type === 'chart') for (const s of b.chart?.series ?? []) if (s.values && s.values.length !== (b.chart.x?.categories ?? []).length) errors.push(`${at}: chart series length mismatch`);
       if (b.type === 'figure' && !existsSync(join(root, b.src))) errors.push(`${at}: figure ${b.src} not found`);
       if ((b.type === 'widget' || b.type === 'map') && !existsSync(join(root, 'js', 'widgets', `${String(b.id).toLowerCase()}.js`))) errors.push(`${at}: ${b.type} ${b.id} has no module`);
       if (b.type === 'dataset' && !datasetIds.has(b.id)) errors.push(`${at}: unknown dataset "${b.id}"`);

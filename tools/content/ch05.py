@@ -4,8 +4,6 @@ import json, sys
 sys.path.insert(0, 'tools/content')
 from build import T, P, L, N, write_chapter
 
-kl = json.load(open('data/series/kl-humidity-2025.json'))['rows']
-rows = [[f"{r[0]:02d}:00", f"{r[1]}", f"{r[2]}", f"{r[3]}"] for r in kl if r[0] % 3 == 0]
 
 chapter = {"id": "ch05", "num": 5, "stage": 3,
  "title": T("湿度", "Humidity", "Kelembapan"),
@@ -61,10 +59,15 @@ chapter = {"id": "ch05", "num": 5, "stage": 3,
     "The further apart temperature and dew point are, the lower the relative humidity; when they are equal, the air is saturated. Say the air is saturated at 10 °C in the morning. If it warms to 30 °C by midday with the same vapour, the dew point stays at 10 °C, but the relative humidity falls to about 29 %.",
     "Semakin jauh beza suhu dan takat embun, semakin rendah kelembapan relatif; apabila kedua-duanya sama, udara tepu. Katakan udara tepu pada 10 °C pada waktu pagi. Jika ia memanas ke 30 °C menjelang tengah hari dengan wap yang sama, takat embun kekal 10 °C, tetapi kelembapan relatif jatuh ke kira-kira 29 %.",
     src=["ESS:89-90"]),
-  {"type": "table", "src": ["ERA5-OM"],
-   "caption": T("吉隆坡 2025 年：每个时段的全年平均（ERA5 再分析资料）", "Kuala Lumpur, 2025: whole-year averages by time of day (ERA5 reanalysis)", "Kuala Lumpur, 2025: purata setahun mengikut waktu (analisis semula ERA5)"),
-   "headers": [T("时间", "Time", "Masa"), T("气温 °C", "Temperature °C", "Suhu °C"), T("露点 °C", "Dew point °C", "Takat embun °C"), T("相对湿度 %", "Relative humidity %", "Kelembapan relatif %")],
-   "rows": rows},
+  {"type": "chart", "src": ["ERA5-OM"], "chart": {"kind": "line", "series_file": "kl-humidity-2025",
+    "title": T("吉隆坡 2025 年：一天里的气温、露点与相对湿度（全年平均）", "Kuala Lumpur, 2025: temperature, dew point and relative humidity through the day (year average)", "Kuala Lumpur, 2025: suhu, takat embun dan kelembapan relatif sepanjang hari (purata setahun)"),
+    "x": {"col": "hour", "label": T("时间", "Time", "Masa"), "format": "hour"},
+    "y": {"label": T("温度", "Temperature", "Suhu"), "unit": "°C"},
+    "y2": {"label": T("相对湿度", "Relative humidity", "Kelembapan relatif"), "unit": "%"},
+    "series": [
+      {"col": "temperature_2m", "name": T("气温", "Temperature", "Suhu"), "color": "mercury"},
+      {"col": "dew_point_2m", "name": T("露点", "Dew point", "Takat embun"), "color": "rain"},
+      {"col": "relative_humidity_2m", "name": T("相对湿度（右轴）", "Relative humidity (right axis)", "Kelembapan relatif (paksi kanan)"), "color": "sky", "axis": "y2"}]}},
   P("看看吉隆坡的真实数据：一整天的露点都在 22 到 24 °C 之间，几乎不动；相对湿度却从清晨约 93 % 跌到下午约 59 %。下午空气并没有变干，只是变热了。",
     "Look at real data for Kuala Lumpur: the dew point stays between 22 and 24 °C all day, barely moving, while relative humidity drops from about 93 % at dawn to about 59 % in mid-afternoon. The afternoon air has not dried out — it has only warmed up.",
     "Lihat data sebenar bagi Kuala Lumpur: takat embun kekal antara 22 dan 24 °C sepanjang hari, hampir tidak bergerak, manakala kelembapan relatif jatuh daripada kira-kira 93 % pada waktu subuh kepada kira-kira 59 % pada tengah petang. Udara petang tidak menjadi kering — ia cuma menjadi lebih panas.",
@@ -73,7 +76,7 @@ chapter = {"id": "ch05", "num": 5, "stage": 3,
     "🌦️ Afternoon storms, piece two: Kuala Lumpur's dew point averages about 23 °C over the year — the air is full of vapour. That vapour is the fuel for afternoon thunderstorms. In Chapter 7 you will see how it is lifted and turned into cloud.",
     "🌦️ Ribut petang, kepingan kedua: takat embun Kuala Lumpur purata kira-kira 23 °C sepanjang tahun — udara penuh dengan wap. Wap itulah bahan api ribut petir petang. Dalam Bab 7 anda akan melihat bagaimana ia diangkat dan menjadi awan.",
     src=["ERA5-OM"]),
-  # W5 added in Task 9
+  {"type": "widget", "id": "W5"},
  ]},
  {"id": "s5", "heading": T("湿球温度与人体", "Wet-bulb temperature and the body", "Suhu bebuli basah dan tubuh"), "level": "basic", "blocks": [
   P("用一块湿布包住温度计，让水分蒸发，温度计会降到某个最低值，这就是{{t:wet-bulb}}：靠蒸发冷却所能达到的最低温度。空气越干，蒸发越快，湿球温度比气温低得越多；空气饱和时，两者相等。",

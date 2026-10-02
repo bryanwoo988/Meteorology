@@ -117,5 +117,48 @@ await test('share page shows a QR code, a share button and copy link', async () 
   a.close();
 });
 
+await test('humidity widget never shows NaN at its extremes', async () => {
+  const a = await openApp({ hash: '#/ch/ch05/s4', prefs: { lang: 'en' } });
+  const fig = await until(() => a.d.querySelector('[data-widget="W5"] .w-frame'));
+  const inputs = fig.querySelectorAll('input[type=range]');
+  assert(inputs.length === 2, `expected 2 sliders, got ${inputs.length}`);
+  for (const [t, rh] of [[0, 1], [45, 100], [45, 1], [0, 100], [33, 50]]) {
+    inputs[0].value = t; inputs[0].dispatchEvent(new Event('input'));
+    inputs[1].value = rh; inputs[1].dispatchEvent(new Event('input'));
+    const text = fig.querySelector('.w-readout').textContent;
+    assert(!/NaN|undefined|Infinity/.test(text), `T=${t} RH=${rh}: ${text}`);
+  }
+  inputs[0].value = 30; inputs[0].dispatchEvent(new Event('input'));
+  inputs[1].value = 29; inputs[1].dispatchEvent(new Event('input'));
+  assert(/10\.\d/.test(fig.querySelector('[data-k="td"]').textContent), 'dew point for 30 °C / 29 % should be about 10 °C');
+  a.close();
+});
+
+await test('dragging past the plot edge clamps instead of breaking', async () => {
+  const a = await openApp({ hash: '#/ch/ch05/s4', prefs: { lang: 'en' } });
+  const svg = await until(() => a.d.querySelector('[data-widget="W5"] svg'));
+  const r = svg.getBoundingClientRect();
+  const fire = (type, x, y) => svg.dispatchEvent(new a.w.PointerEvent(type, { bubbles: true, clientX: x, clientY: y, pointerId: 1, pointerType: 'touch' }));
+  fire('pointerdown', r.left + r.width / 2, r.top + r.height / 2);
+  fire('pointermove', r.right + 400, r.top - 400);
+  fire('pointerup', r.right + 400, r.top - 400);
+  const text = svg.closest('.w-frame').querySelector('.w-readout').textContent;
+  assert(!/NaN|undefined|Infinity/.test(text), text);
+  a.close();
+});
+
+await test('line chart scrubs with the keyboard and updates its readout', async () => {
+  const a = await openApp({ hash: '#/ch/ch05/s4', prefs: { lang: 'en' } });
+  const svg = await until(() => a.d.querySelector('.chart svg'));
+  const out = svg.closest('.chart').querySelector('.chart-readout');
+  svg.focus();
+  svg.dispatchEvent(new a.w.KeyboardEvent('keydown', { key: 'End', bubbles: true }));
+  const last = out.textContent;
+  svg.dispatchEvent(new a.w.KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true }));
+  assert(out.textContent && out.textContent !== last, `readout did not change: "${last}" → "${out.textContent}"`);
+  assert(svg.closest('.chart').querySelector('table'), 'no data table for screen readers');
+  a.close();
+});
+
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';

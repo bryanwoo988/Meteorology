@@ -14,6 +14,8 @@ import { newerRevision, updateAction, mayAutoReload } from './updatelogic.js';
 import { notesSince } from './releases.js';
 import { APP_URL, AUTHOR } from './config.js';
 import { renderShare } from './share.js';
+import { render as renderChart } from './charts.js';
+import { mountWidget } from './widgets/index.js';
 
 const $ = sel => document.querySelector(sel);
 const main = $('#main');
@@ -87,6 +89,8 @@ const ctxFor = () => ({
   lang: lang(),
   terms,
   onTerm: id => openTermSheet(id, { lang: lang(), openSheet, currentChapter: current.chapterNum }),
+  renderChart: (spec, c) => renderChart(spec, c),
+  mountWidget: (host, id, c) => mountWidget(host, id, c),
   sourceLabel: s => {
     const [id, pages] = s.split(':');
     const src = sources.find(x => x.id === id);

@@ -208,87 +208,74 @@
      ]
     },
     {
-     "type": "table",
+     "type": "chart",
      "src": [
       "ERA5-OM"
      ],
-     "caption": {
-      "zh": "吉隆坡 2025 年：每个时段的全年平均（ERA5 再分析资料）",
-      "en": "Kuala Lumpur, 2025: whole-year averages by time of day (ERA5 reanalysis)",
-      "ms": "Kuala Lumpur, 2025: purata setahun mengikut waktu (analisis semula ERA5)"
-     },
-     "headers": [
-      {
-       "zh": "时间",
-       "en": "Time",
-       "ms": "Masa"
+     "chart": {
+      "kind": "line",
+      "series_file": "kl-humidity-2025",
+      "title": {
+       "zh": "吉隆坡 2025 年：一天里的气温、露点与相对湿度（全年平均）",
+       "en": "Kuala Lumpur, 2025: temperature, dew point and relative humidity through the day (year average)",
+       "ms": "Kuala Lumpur, 2025: suhu, takat embun dan kelembapan relatif sepanjang hari (purata setahun)"
       },
-      {
-       "zh": "气温 °C",
-       "en": "Temperature °C",
-       "ms": "Suhu °C"
+      "x": {
+       "col": "hour",
+       "label": {
+        "zh": "时间",
+        "en": "Time",
+        "ms": "Masa"
+       },
+       "format": "hour"
       },
-      {
-       "zh": "露点 °C",
-       "en": "Dew point °C",
-       "ms": "Takat embun °C"
+      "y": {
+       "label": {
+        "zh": "温度",
+        "en": "Temperature",
+        "ms": "Suhu"
+       },
+       "unit": "°C"
       },
-      {
-       "zh": "相对湿度 %",
-       "en": "Relative humidity %",
-       "ms": "Kelembapan relatif %"
-      }
-     ],
-     "rows": [
-      [
-       "00:00",
-       "26.0",
-       "23.7",
-       "88"
-      ],
-      [
-       "03:00",
-       "25.0",
-       "23.3",
-       "91"
-      ],
-      [
-       "06:00",
-       "24.2",
-       "22.9",
-       "93"
-      ],
-      [
-       "09:00",
-       "26.6",
-       "23.4",
-       "83"
-      ],
-      [
-       "12:00",
-       "30.7",
-       "22.6",
-       "63"
-      ],
-      [
-       "15:00",
-       "31.6",
-       "22.2",
-       "59"
-      ],
-      [
-       "18:00",
-       "29.6",
-       "22.6",
-       "68"
-      ],
-      [
-       "21:00",
-       "27.3",
-       "23.8",
-       "82"
+      "y2": {
+       "label": {
+        "zh": "相对湿度",
+        "en": "Relative humidity",
+        "ms": "Kelembapan relatif"
+       },
+       "unit": "%"
+      },
+      "series": [
+       {
+        "col": "temperature_2m",
+        "name": {
+         "zh": "气温",
+         "en": "Temperature",
+         "ms": "Suhu"
+        },
+        "color": "mercury"
+       },
+       {
+        "col": "dew_point_2m",
+        "name": {
+         "zh": "露点",
+         "en": "Dew point",
+         "ms": "Takat embun"
+        },
+        "color": "rain"
+       },
+       {
+        "col": "relative_humidity_2m",
+        "name": {
+         "zh": "相对湿度（右轴）",
+         "en": "Relative humidity (right axis)",
+         "ms": "Kelembapan relatif (paksi kanan)"
+        },
+        "color": "sky",
+        "axis": "y2"
+       }
       ]
-     ]
+     }
     },
     {
      "type": "p",
@@ -312,6 +299,10 @@
      "src": [
       "ERA5-OM"
      ]
+    },
+    {
+     "type": "widget",
+     "id": "W5"
     }
    ]
   },

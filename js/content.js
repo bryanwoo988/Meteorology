@@ -101,7 +101,7 @@ export function renderSections(chapter, ctx) {
   for (const sec of chapter.sections) {
     const body = sec.blocks.map(b => {
       const node = block(b, ctx);
-      const src = sourceTag(b, ctx);
+      const src = ['chart', 'widget', 'map'].includes(b.type) ? null : sourceTag(b, ctx);
       return src && node ? [node, src] : node;
     }).flat().filter(Boolean);
     if (sec.level === 'advanced') {

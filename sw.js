@@ -9,7 +9,7 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-7143a2d917';
+const CACHE = 'meteo-34385db9b3';
 const ASSETS = [
   './',
   'css/app.css',
@@ -54,6 +54,7 @@ const ASSETS = [
   'icons/splash/828x1792-light.png',
   'index.html',
   'js/app.js',
+  'js/charts.js',
   'js/config.js',
   'js/content.js',
   'js/i18n.js',
@@ -66,6 +67,9 @@ const ASSETS = [
   'js/swpolicy.js',
   'js/terms.js',
   'js/updatelogic.js',
+  'js/widgets/index.js',
+  'js/widgets/kit.js',
+  'js/widgets/w5.js',
   'manifest.webmanifest',
 ];
 /* --- generated:end --- */
