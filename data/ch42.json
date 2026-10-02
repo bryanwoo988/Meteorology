@@ -1,0 +1,177 @@
+{
+ "id": "ch42",
+ "num": 42,
+ "stage": 9,
+ "title": {
+  "zh": "遥感与作物模型",
+  "en": "Remote sensing and crop models",
+  "ms": "Penderiaan jauh dan model tanaman"
+ },
+ "sources": [
+  "PAM",
+  "TERM",
+  "NASA-NDVI",
+  "NDVI-APP"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "不碰到也能量",
+    "en": "Measuring without touching",
+    "ms": "Mengukur tanpa menyentuh"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:remote-sensing}}是用不接触对象的仪器收集资料、再分析得到资讯，现在主要指分析物体发出或反射的电磁辐射。被动式感应器接收自然的辐射（例如卫星相机）；主动式自己发出能量再收回来（例如雷达，第 24 章）。",
+      "en": "{{t:remote-sensing}} gathers information with instruments that never touch the object, today mainly by analysing the electromagnetic radiation it emits or reflects. Passive sensors receive natural radiation, like a satellite camera; active sensors send out their own energy and catch the return, like radar (Chapter 24).",
+      "ms": "{{t:remote-sensing}} mengumpul maklumat dengan alat yang tidak menyentuh objek, kini terutamanya dengan menganalisis sinaran elektromagnet yang dipancarkan atau dipantulkannya. Penderia pasif menerima sinaran semula jadi, seperti kamera satelit; penderia aktif menghantar tenaganya sendiri dan menangkap pantulannya, seperti radar (Bab 24)."
+     },
+     "defines": [
+      "remote-sensing"
+     ],
+     "src": [
+      "PAM:110-111",
+      "TERM:293"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "遥感可以一次看大片地区、资料可以长期保存、可以定期重拍以追踪变化；还能“看到”眼睛看不到的紫外线、红外线和微波，所以作物受病虫害时，往往在肉眼看出来之前就能发现。",
+      "en": "Remote sensing gives a synoptic view of large areas, a permanent record and regular repeat passes to follow change; and it ‘sees’ ultraviolet, infrared and microwaves invisible to the eye, so crops hit by disease or pests can often be spotted before the damage shows to us.",
+      "ms": "Penderiaan jauh memberi pandangan sinoptik kawasan luas, rekod kekal dan laluan berulang yang tetap untuk mengikuti perubahan; dan ia ‘melihat’ ultraungu, inframerah dan gelombang mikro yang tidak kelihatan oleh mata, jadi tanaman yang diserang penyakit atau perosak sering dapat dikesan sebelum kerosakan kelihatan."
+     },
+     "src": [
+      "PAM:113"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "植被指数和 NDVI",
+    "en": "Vegetation indices and NDVI",
+    "ms": "Indeks tumbuhan dan NDVI"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "叶子里的叶绿素强烈吸收可见光（0.4–0.7 微米）来做光合作用，叶片的细胞结构却强烈反射近红外线（0.7–1.1 微米）。比较这两种光，就得到{{t:vegetation-index}}，最常用的是 {{t:ndvi}}：NDVI =（近红外 − 可见光）÷（近红外 + 可见光）。",
+      "en": "Chlorophyll in leaves strongly absorbs visible light (0.4–0.7 µm) for photosynthesis, while the leaf's cell structure strongly reflects near-infrared (0.7–1.1 µm). Comparing the two gives a {{t:vegetation-index}}, the commonest being the {{t:ndvi}}: NDVI = (NIR − VIS) ÷ (NIR + VIS).",
+      "ms": "Klorofil dalam daun menyerap kuat cahaya nampak (0.4–0.7 µm) untuk fotosintesis, manakala struktur sel daun memantulkan kuat inframerah dekat (0.7–1.1 µm). Membandingkan kedua-duanya memberi {{t:vegetation-index}}, yang paling biasa ialah {{t:ndvi}}: NDVI = (NIR − VIS) ÷ (NIR + VIS)."
+     },
+     "defines": [
+      "vegetation-index",
+      "ndvi"
+     ],
+     "src": [
+      "NASA-NDVI"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "NDVI 在 −1 和 +1 之间；没有绿叶的地方接近 0",
+       "en": "NDVI runs from −1 to +1; places with no green leaves come out near 0",
+       "ms": "NDVI dari −1 hingga +1; tempat tanpa daun hijau hampir 0"
+      },
+      {
+       "zh": "0.1 以下：岩石、沙或雪",
+       "en": "Below 0.1: rock, sand or snow",
+       "ms": "Di bawah 0.1: batu, pasir atau salji"
+      },
+      {
+       "zh": "0.2–0.3：灌木和草地",
+       "en": "0.2–0.3: shrub and grassland",
+       "ms": "0.2–0.3: semak dan padang rumput"
+      },
+      {
+       "zh": "0.6–0.8：温带和热带雨林",
+       "en": "0.6–0.8: temperate and tropical rain forest",
+       "ms": "0.6–0.8: hutan hujan sederhana dan tropika"
+      }
+     ],
+     "src": [
+      "NASA-NDVI"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "想看自己园地的 NDVI 变化，可以用 NDVI App。干旱时（第 19 章），NDVI 下降常常是作物受胁迫的早期信号。",
+      "en": "To follow the NDVI of your own field, use the NDVI app. In a drought (Chapter 19) a falling NDVI is often an early sign of stress.",
+      "ms": "Untuk mengikuti NDVI ladang anda, gunakan aplikasi NDVI. Semasa kemarau (Bab 19) NDVI yang menurun sering menjadi tanda awal tekanan."
+     },
+     "src": [
+      "NDVI-APP",
+      "NASA-NDVI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "作物模型",
+    "en": "Crop models",
+    "ms": "Model tanaman"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:crop-model}}是一组描述“土壤–植物–大气”系统的数学方程，模拟作物的叶、根、茎和谷粒怎样生长，不只预测最后的产量，也说明中间的生长过程。它可以帮助决定最佳播种期和品种、评估灌溉投资、预测整个地区的产量，以及评估气候变化对产量的影响。",
+      "en": "A {{t:crop-model}} is a set of mathematical equations for the soil–plant–atmosphere system that simulates how a crop's leaves, roots, stems and grain grow — predicting not just the final yield but the processes along the way. It helps choose sowing dates and varieties, weigh irrigation investments, forecast yields over whole regions and assess how climate change will affect them.",
+      "ms": "{{t:crop-model}} ialah set persamaan matematik bagi sistem tanah–tumbuhan–atmosfera yang menyimulasikan bagaimana daun, akar, batang dan bijirin tanaman tumbuh — meramal bukan sahaja hasil akhir tetapi proses di sepanjang jalan. Ia membantu memilih tarikh menyemai dan varieti, menilai pelaburan pengairan, meramal hasil seluruh rantau dan menilai kesan perubahan iklim."
+     },
+     "defines": [
+      "crop-model"
+     ],
+     "src": [
+      "PAM:117-121"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "模型有很多种：统计模型只找出产量和天气的关系，不解释原因（第 39 章油棕的研究也用了这种方法）；动态模型则跟着时间计算蒸散、光合作用和呼吸作用这些速率，比较复杂。",
+      "en": "Models come in several kinds: a statistical model finds the link between yield and weather without explaining the mechanism (the oil palm study of Chapter 39 built one); a dynamic model works through time with rates such as evapotranspiration, photosynthesis and respiration, and is more complex.",
+      "ms": "Model terdiri daripada beberapa jenis: model statistik mencari hubungan antara hasil dan cuaca tanpa menerangkan mekanismenya (kajian kelapa sawit Bab 39 membina satu); model dinamik bekerja mengikut masa dengan kadar seperti sejatpeluhan, fotosintesis dan respirasi, dan lebih kompleks."
+     },
+     "src": [
+      "PAM:122-123",
+      "OETTLI2018"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "这本书到这里结束：从太阳和空气（第 1–3 章），一路到季风、预报、集合和模型，最后回到农田。下一次看天气 App 或 Windy，试着把每个数字背后的道理说出来。",
+      "en": "This is where the book ends: from the Sun and the air (Chapters 1–3), through the monsoons, forecasts, ensembles and models, and back to the field. Next time you open a weather app or Windy, try to explain the reason behind each number.",
+      "ms": "Di sinilah buku ini berakhir: dari matahari dan udara (Bab 1–3), melalui monsun, ramalan, ensemble dan model, dan kembali ke ladang. Lain kali anda membuka aplikasi cuaca atau Windy, cuba terangkan sebab di sebalik setiap nombor."
+     },
+     "src": [
+      "PAM:32-33"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "remote-sensing",
+  "vegetation-index",
+  "ndvi",
+  "crop-model"
+ ]
+}

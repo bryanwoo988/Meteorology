@@ -3809,5 +3809,375 @@
    "en": "One place's elements against time.",
    "ms": "Unsur satu tempat melawan masa."
   }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch38",
+  "q": {
+   "zh": "为什么中期预报对农业特别有用？",
+   "en": "Why are medium-range forecasts especially useful in farming?",
+   "ms": "Mengapa ramalan jarak sederhana sangat berguna dalam pertanian?"
+  },
+  "options": [
+   {
+    "zh": "可以提前安排人工、机械和灌溉",
+    "en": "Labour, machines and irrigation can be planned ahead",
+    "ms": "Tenaga kerja, jentera dan pengairan boleh dirancang awal"
+   },
+   {
+    "zh": "它预报下个月",
+    "en": "It forecasts next month",
+    "ms": "Ia meramal bulan depan"
+   },
+   {
+    "zh": "它只报气温",
+    "en": "It gives only temperature",
+    "ms": "Ia hanya memberi suhu"
+   },
+   {
+    "zh": "它不会错",
+    "en": "It is never wrong",
+    "ms": "Ia tidak pernah salah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "几天到一星期正好是农场安排工作的时间。",
+   "en": "A few days to a week is the span farms plan work in.",
+   "ms": "Beberapa hari hingga seminggu ialah tempoh ladang merancang kerja."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch38",
+  "q": {
+   "zh": "同样的干旱，为什么对作物的伤害可以不同？",
+   "en": "Why can the same dry spell do different harm?",
+   "ms": "Mengapa kemarau yang sama boleh membawa kerosakan berbeza?"
+  },
+  "options": [
+   {
+    "zh": "要看碰到哪个生长阶段（物候）",
+    "en": "It depends on the crop stage it hits",
+    "ms": "Bergantung pada peringkat tanaman yang terkena"
+   },
+   {
+    "zh": "干旱都一样",
+    "en": "Droughts are all the same",
+    "ms": "Semua kemarau sama"
+   },
+   {
+    "zh": "只看风向",
+    "en": "Only the wind direction matters",
+    "ms": "Hanya arah angin penting"
+   },
+   {
+    "zh": "看月亮",
+    "en": "The Moon decides",
+    "ms": "Bulan menentukan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "开花期等敏感阶段最怕缺水。",
+   "en": "Sensitive stages such as flowering suffer most.",
+   "ms": "Peringkat sensitif seperti pembungaan paling terjejas."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch39",
+  "q": {
+   "zh": "研究发现，厄尔尼诺年马来西亚的油棕产量通常怎样？",
+   "en": "In El Niño years, what happens to Malaysian oil palm yields, according to the study?",
+   "ms": "Pada tahun El Niño, apakah berlaku kepada hasil kelapa sawit Malaysia, menurut kajian?"
+  },
+  "options": [
+   {
+    "zh": "因为缺水而比平常低",
+    "en": "Lower than normal, from water stress",
+    "ms": "Lebih rendah daripada biasa, akibat tekanan air"
+   },
+   {
+    "zh": "比平常高很多",
+    "en": "Much higher",
+    "ms": "Jauh lebih tinggi"
+   },
+   {
+    "zh": "完全没有影响",
+    "en": "No effect at all",
+    "ms": "Tiada kesan langsung"
+   },
+   {
+    "zh": "只有果实变大",
+    "en": "Only the fruit grows bigger",
+    "ms": "Hanya buah menjadi besar"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "雨少、气温高，水分胁迫大。",
+   "en": "Less rain and higher temperatures mean more water stress.",
+   "ms": "Kurang hujan dan suhu lebih tinggi bermaksud lebih tekanan air."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch39",
+  "q": {
+   "zh": "为什么今年的干旱可能到明年才影响产量？",
+   "en": "Why might this year's drought show in next year's yield?",
+   "ms": "Mengapa kemarau tahun ini mungkin kelihatan pada hasil tahun depan?"
+  },
+  "options": [
+   {
+    "zh": "油棕的花芽和果串要很多个月才发育成熟",
+    "en": "Palm flowers and bunches take many months to develop",
+    "ms": "Bunga dan tandan sawit mengambil masa berbulan-bulan untuk berkembang"
+   },
+   {
+    "zh": "雨要一年才落到地上",
+    "en": "Rain takes a year to fall",
+    "ms": "Hujan mengambil masa setahun untuk turun"
+   },
+   {
+    "zh": "卫星资料延迟",
+    "en": "Satellite data is late",
+    "ms": "Data satelit lewat"
+   },
+   {
+    "zh": "不会这样",
+    "en": "It cannot",
+    "ms": "Tidak mungkin"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如性别决定在收成年之前约 31 到 20 个月。",
+   "en": "Sex determination, for example, is about 31–20 months before the harvest year.",
+   "ms": "Penentuan jantina, contohnya, kira-kira 31–20 bulan sebelum tahun tuaian."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch40",
+  "q": {
+   "zh": "ET₀ 是什么的蒸散？",
+   "en": "ET₀ is the evapotranspiration of…",
+   "ms": "ET₀ ialah sejatpeluhan…"
+  },
+  "options": [
+   {
+    "zh": "一片标准的、水分充足的草地",
+    "en": "A standard, well-watered grass surface",
+    "ms": "Permukaan rumput piawai yang cukup air"
+   },
+   {
+    "zh": "你种的作物",
+    "en": "Your own crop",
+    "ms": "Tanaman anda"
+   },
+   {
+    "zh": "一个水池",
+    "en": "A pond",
+    "ms": "Sebuah kolam"
+   },
+   {
+    "zh": "沙漠",
+    "en": "A desert",
+    "ms": "Gurun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "再乘上作物系数 Kc，才是某种作物的用水。",
+   "en": "Multiply by the crop coefficient for a given crop.",
+   "ms": "Darab dengan pekali tanaman bagi tanaman tertentu."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch40",
+  "q": {
+   "zh": "吉隆坡 2025 年哪个月最缺水？",
+   "en": "Which month of 2025 was most water-short in Kuala Lumpur?",
+   "ms": "Bulan mana pada 2025 paling kekurangan air di Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "7 月",
+    "en": "July",
+    "ms": "Julai"
+   },
+   {
+    "zh": "4 月",
+    "en": "April",
+    "ms": "April"
+   },
+   {
+    "zh": "11 月",
+    "en": "November",
+    "ms": "November"
+   },
+   {
+    "zh": "12 月",
+    "en": "December",
+    "ms": "Disember"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "ET₀ 约 146 毫米，雨只有约 55 毫米。",
+   "en": "ET₀ about 146 mm against only about 55 mm of rain.",
+   "ms": "ET₀ kira-kira 146 mm berbanding hanya kira-kira 55 mm hujan."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch41",
+  "q": {
+   "zh": "在热带，改善小气候的重点是什么？",
+   "en": "In the tropics, what is the main aim in modifying the microclimate?",
+   "ms": "Di tropika, apakah tujuan utama mengubah mikroiklim?"
+  },
+  "options": [
+   {
+    "zh": "避热：遮荫、覆盖",
+    "en": "Shedding heat: shade, mulch",
+    "ms": "Membuang haba: teduhan, sungkupan"
+   },
+   {
+    "zh": "收集更多热量",
+    "en": "Trapping more heat",
+    "ms": "Memerangkap lebih haba"
+   },
+   {
+    "zh": "让风更大",
+    "en": "More wind",
+    "ms": "Lebih angin"
+   },
+   {
+    "zh": "减少光照到零",
+    "en": "No light at all",
+    "ms": "Tiada cahaya langsung"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "热带的热量已经超过作物能忍受的程度。",
+   "en": "Tropical heat already exceeds what crops tolerate.",
+   "ms": "Haba tropika sudah melebihi apa yang boleh ditahan tanaman."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch41",
+  "q": {
+   "zh": "为什么百叶箱的气温不一定等于叶片的温度？",
+   "en": "Why may the screen temperature differ from a leaf's?",
+   "ms": "Mengapa suhu skrin mungkin berbeza daripada suhu daun?"
+  },
+  "options": [
+   {
+    "zh": "贴近地面那一层的条件变化很大",
+    "en": "Conditions change sharply in the layer near the ground",
+    "ms": "Keadaan berubah dengan ketara dalam lapisan dekat tanah"
+   },
+   {
+    "zh": "温度计坏了",
+    "en": "The thermometer is broken",
+    "ms": "Termometer rosak"
+   },
+   {
+    "zh": "叶子不会热",
+    "en": "Leaves never warm",
+    "ms": "Daun tidak pernah panas"
+   },
+   {
+    "zh": "百叶箱在室内",
+    "en": "The screen is indoors",
+    "ms": "Skrin di dalam rumah"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "这就是小气候和大气候的分别。",
+   "en": "That is the difference between micro- and macroclimate.",
+   "ms": "Itulah perbezaan mikro dan makroiklim."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch42",
+  "q": {
+   "zh": "为什么健康的叶子 NDVI 高？",
+   "en": "Why does a healthy leaf have a high NDVI?",
+   "ms": "Mengapa daun sihat mempunyai NDVI tinggi?"
+  },
+  "options": [
+   {
+    "zh": "吸收很多可见光、反射很多近红外线",
+    "en": "It absorbs much visible light and reflects much near-infrared",
+    "ms": "Ia menyerap banyak cahaya nampak dan memantulkan banyak inframerah dekat"
+   },
+   {
+    "zh": "叶子会发光",
+    "en": "Leaves glow",
+    "ms": "Daun bercahaya"
+   },
+   {
+    "zh": "叶子反射所有颜色",
+    "en": "Leaves reflect every colour",
+    "ms": "Daun memantulkan semua warna"
+   },
+   {
+    "zh": "叶子很冷",
+    "en": "Leaves are cold",
+    "ms": "Daun sejuk"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "近红外减可见光越大，NDVI 越高。",
+   "en": "The bigger NIR minus VIS, the higher the NDVI.",
+   "ms": "Semakin besar NIR tolak VIS, semakin tinggi NDVI."
+  }
+ },
+ {
+  "stage": 9,
+  "chapter": "ch42",
+  "q": {
+   "zh": "雷达属于哪一种遥感？",
+   "en": "Radar is which kind of remote sensing?",
+   "ms": "Radar ialah jenis penderiaan jauh yang mana?"
+  },
+  "options": [
+   {
+    "zh": "主动式",
+    "en": "Active",
+    "ms": "Aktif"
+   },
+   {
+    "zh": "被动式",
+    "en": "Passive",
+    "ms": "Pasif"
+   },
+   {
+    "zh": "都不是",
+    "en": "Neither",
+    "ms": "Bukan kedua-duanya"
+   },
+   {
+    "zh": "化学式",
+    "en": "Chemical",
+    "ms": "Kimia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "它自己发出能量再接收回波。",
+   "en": "It sends its own energy and receives the echo.",
+   "ms": "Ia menghantar tenaganya sendiri dan menerima gema."
+  }
  }
 ]

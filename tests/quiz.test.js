@@ -14,7 +14,9 @@ test('score counts right answers; unanswered is wrong', () => {
 test('questions for a stage come from that stage only', () => {
   const qs = questionsFor(quiz, 3);
   assert.ok(qs.length >= 2 && qs.every(q => q.stage === 3));
-  assert.deepEqual(questionsFor(quiz, 9), []);
+  assert.deepEqual(questionsFor(quiz, 10), []);
+  assert.ok(questionsFor(quiz, 9).length >= 8);
+
 });
 test('every question has four options and a valid answer', () => {
   for (const q of quiz) { assert.equal(q.options.length, 4); assert.ok(q.answer >= 0 && q.answer <= 3); }

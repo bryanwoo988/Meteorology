@@ -562,8 +562,7 @@
     "zh": "天气与作物",
     "en": "Weather and crops",
     "ms": "Cuaca dan tanaman"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch39",
@@ -572,9 +571,8 @@
    "title": {
     "zh": "天气与油棕",
     "en": "Weather and oil palm",
-    "ms": "Cuaca dan sawit"
-   },
-   "ready": false
+    "ms": "Cuaca dan kelapa sawit"
+   }
   },
   {
    "id": "ch40",
@@ -583,9 +581,8 @@
    "title": {
     "zh": "蒸散与作物需水",
     "en": "Evapotranspiration and crop water",
-    "ms": "Sejatpeluhan dan keperluan air tanaman"
-   },
-   "ready": false
+    "ms": "Sejatpeluhan dan air tanaman"
+   }
   },
   {
    "id": "ch41",
@@ -595,8 +592,7 @@
     "zh": "微气象与小气候",
     "en": "Micrometeorology and microclimate",
     "ms": "Mikrometeorologi dan mikroiklim"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch42",
@@ -606,8 +602,7 @@
     "zh": "遥感与作物模型",
     "en": "Remote sensing and crop models",
     "ms": "Penderiaan jauh dan model tanaman"
-   },
-   "ready": false
+   }
   }
  ]
 }

@@ -232,6 +232,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "FAO56",
+  "short": "FAO-56",
+  "title": "Crop evapotranspiration — Guidelines for computing crop water requirements (FAO Irrigation and Drainage Paper 56)",
+  "publisher": "R. G. Allen, L. S. Pereira, D. Raes and M. Smith, FAO, 1998",
+  "url": "https://www.fao.org/4/x0490e/x0490e00.htm",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "FUN",
   "short": "Fundamentals of Meteorology",
   "title": "Fundamentals of Meteorology",
@@ -253,6 +261,14 @@
   "title": "Learning skillful medium-range global weather forecasting (Science 382, 6677)",
   "publisher": "R. Lam, A. Sanchez-Gonzalez, M. Willson et al. (Google DeepMind), 2023",
   "url": "https://doi.org/10.1126/science.adi2336",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "IDRIS2024",
+  "short": "JOPR 2024",
+  "title": "Climate variability and water stress effects on oil palm (Elaeis guineensis Jacq.) productivity in Malaysia (Journal of Oil Palm Research, MPOB)",
+  "publisher": "Malaysian Palm Oil Board, Journal of Oil Palm Research, 2024",
+  "url": "https://doi.org/10.21894/jopr.2024.0054",
   "accessed": "2026-10-03"
  },
  {
@@ -392,12 +408,28 @@
   "accessed": "2026-10-03"
  },
  {
+  "id": "NAITO2026",
+  "short": "Naito & Takeuchi 2026",
+  "title": "Regional water stress dynamics in oil palm under ENSO in Malaysia and Indonesia using 22-year multiple climate data (Scientific Reports)",
+  "publisher": "C. Naito and W. Takeuchi, 2026",
+  "url": "https://doi.org/10.1038/s41598-026-63806-3",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "NASA-GPM-DPR",
   "short": "NASA GPM",
   "title": "GPM Dual-frequency Precipitation Radar (DPR)",
   "publisher": "NASA Global Precipitation Measurement",
   "url": "https://gpm.nasa.gov/missions/GPM/DPR",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "NASA-NDVI",
+  "short": "NASA Earth Observatory",
+  "title": "Measuring Vegetation (NDVI & EVI)",
+  "publisher": "NASA Earth Observatory",
+  "url": "https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php",
+  "accessed": "2026-10-03"
  },
  {
   "id": "NASA-WORLDVIEW",
@@ -414,6 +446,14 @@
   "publisher": "NOAA National Data Buoy Center",
   "url": "https://www.ndbc.noaa.gov/",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "NDVI-APP",
+  "short": "NDVI",
+  "title": "NDVI app",
+  "publisher": "Bryan Woo",
+  "url": "https://bryanwoo988.github.io/NDVI/",
+  "accessed": "2026-10-03"
  },
  {
   "id": "NEWS-FMT-2026",
@@ -526,6 +566,22 @@
   "publisher": "US National Weather Service, Tallahassee",
   "url": "https://www.weather.gov/tae/research-zrpaper",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "OETTLI2018",
+  "short": "Oettli et al. 2018",
+  "title": "Climate based predictability of oil palm tree yield in Malaysia (Scientific Reports 8, CC BY 4.0)",
+  "publisher": "P. Oettli, S. K. Behera and T. Yamagata, 2018",
+  "url": "https://doi.org/10.1038/s41598-018-20298-0",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "OILPALMWIKI",
+  "short": "OilPalmWiki",
+  "title": "OilPalmWiki",
+  "publisher": "Bryan Woo",
+  "url": "https://bryanwoo988.github.io/OilPalmWiki/",
+  "accessed": "2026-10-03"
  },
  {
   "id": "OM-DOCS",

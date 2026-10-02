@@ -112,3 +112,14 @@ against its source before it is written. One row per claim.
 | 36 | MetMalaysia NEM 2021/22 检讨：12 月 16–18 日季风潮 + 台风雷伊；表 4 站点雨量（KLIA 188、关丹 261/339、梳邦 253、八打灵再也 201 mm） | https://www.met.gov.my/data/research/researchpapers/2024/RP01_2024.pdf | 2026-10-03 |
 | 36 | ERA5 格子日雨量 2021-12-10 至 25（梳邦 18 日 68.6 mm、关丹 19 日 141.1 mm） | https://archive-api.open-meteo.com/v1/archive（见 data/series/dec2021-era5.json） | 2026-10-03 |
 | 37 | Windy 图层说明（风、阵风 ECMWF 偏高、雷达+Blitzortung、CAPE 1,000–2,000/2,000+、云层高度、湿球 35 °C、CAP 预警等） | https://community.windy.com/topic/3361/description-of-weather-overlays | 2026-10-03 |
+| 38 | 作物与天气要素；基点温度（热季作物最低 15–18、最适 31–37、最高 44–50 °C）；中期预报对农业最有用；AAS 公报三部分 | PAM pp. 32–40, 100–102；TERM p. 49, p. 258 | — |
+| 39 | JOPR（MPOB）2024 回顾：雨量不足、干旱期、高温造成水分胁迫，影响气孔导度、叶水势、脯氨酸、性别分化、水分利用效率 | https://doi.org/10.21894/jopr.2024.0054 | 2026-10-03 |
+| 39 | Oettli et al. 2018（Sci Rep，CC BY）：前一冬太平洋海温影响马来西亚气候；厄尔尼诺雨少温高→水分胁迫→FFB 减产；拉尼娜有利；敏感期 31–20、12–8、4–2 个月 | https://doi.org/10.1038/s41598-018-20298-0 | 2026-10-03 |
+| 39 | Naito & Takeuchi 2026（Sci Rep）：22 年资料；厄尔尼诺时半岛受 VPD 升高影响；GRACE 显示缺水为主要压力 | https://doi.org/10.1038/s41598-026-63806-3 （Crossref 摘要） | 2026-10-03 |
+| 39 | 未找到可靠来源说明烟霾对油棕产量的影响，故不写 | — | 2026-10-03 |
+| 40 | FAO-56：参考面为假想草地，高 0.12 m、表面阻力 70 s/m、反照率 0.23；ETc = Kc × ET₀；Penman–Monteith 为唯一标准方法 | https://www.fao.org/4/x0490e/x0490e05.htm ；https://www.fao.org/4/x0490e/x0490e04.htm | 2026-10-03 |
+| 40 | 吉隆坡 2025 ERA5：年雨 2,801 mm、ET₀ 1,437 mm；7 月 ET₀ 146 mm、雨 55 mm | https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-01-01&end_date=2025-12-31&daily=et0_fao_evapotranspiration,precipitation_sum | 2026-10-03 |
+| 40 | Windy 土壤湿度图层：0 % 凋萎点、100 % 田间持水量；<50 % 受限、<30 % 明显胁迫；水分距平对 1961–2010 | https://community.windy.com/topic/3361/description-of-weather-overlays | 2026-10-03 |
+| 41 | 微气象与小气候定义、层次；改善小气候三类；热带“避热”：遮荫、覆盖；防风林与防风障 | PAM pp. 103–109；TERM p. 221 | — |
+| 42 | 遥感定义、主动/被动、优点；作物模型用途与类型 | PAM pp. 110–123；TERM p. 293 | — |
+| 42 | NDVI = (NIR − VIS)/(NIR + VIS)；−1 到 +1；<0.1 岩沙雪、0.2–0.3 灌草、0.6–0.8 雨林；叶绿素吸收 0.4–0.7 µm、细胞结构反射 0.7–1.1 µm | https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php | 2026-10-03 |

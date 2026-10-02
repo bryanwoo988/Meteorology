@@ -9,7 +9,7 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-ca317b16bc';
+const CACHE = 'meteo-73cb4352ea';
 const ASSETS = [
   './',
   'css/app.css',
@@ -50,6 +50,11 @@ const ASSETS = [
   'data/ch35.json',
   'data/ch36.json',
   'data/ch37.json',
+  'data/ch38.json',
+  'data/ch39.json',
+  'data/ch40.json',
+  'data/ch41.json',
+  'data/ch42.json',
   'data/datasets.json',
   'data/index.json',
   'data/maps/buoys.json',
@@ -65,6 +70,7 @@ const ASSETS = [
   'data/series/dec2021-era5.json',
   'data/series/kl-2025-06-16.json',
   'data/series/kl-ens-2026-10-03.json',
+  'data/series/kl-et0-2025.json',
   'data/series/kl-humidity-2025.json',
   'data/series/kl-levels-2026.json',
   'data/series/kl-monthly-2025.json',
@@ -154,6 +160,7 @@ const ASSETS = [
   'js/widgets/w2.js',
   'js/widgets/w20.js',
   'js/widgets/w21.js',
+  'js/widgets/w23.js',
   'js/widgets/w24.js',
   'js/widgets/w25.js',
   'js/widgets/w26.js',

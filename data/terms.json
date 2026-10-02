@@ -3127,5 +3127,271 @@
    "ms": "Waktu dunia yang digunakan dalam meteorologi."
   },
   "chapter": 35
+ },
+ {
+  "id": "agromet-advisory",
+  "name": {
+   "zh": "农业气象服务（农业气象建议）",
+   "en": "Agrometeorological advisory",
+   "ms": "Nasihat agrometeorologi"
+  },
+  "short": {
+   "zh": "把天气预报转成对农民的具体建议。",
+   "en": "Turning forecasts into specific advice for farmers.",
+   "ms": "Menukar ramalan kepada nasihat khusus untuk petani."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "cardinal-temperature",
+  "name": {
+   "zh": "基点温度",
+   "en": "Cardinal temperature",
+   "ms": "Suhu kardinal"
+  },
+  "short": {
+   "zh": "作物生长的最低、最适和最高温度。",
+   "en": "The minimum, optimum and maximum temperatures for a crop's growth.",
+   "ms": "Suhu minimum, optimum dan maksimum bagi pertumbuhan tanaman."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "phenology",
+  "name": {
+   "zh": "作物物候",
+   "en": "Crop phenology",
+   "ms": "Fenologi tanaman"
+  },
+  "short": {
+   "zh": "作物各生长阶段（发芽、开花、成熟）出现的时间。",
+   "en": "The timing of a crop's stages: germination, flowering, maturity.",
+   "ms": "Masa peringkat tanaman: percambahan, pembungaan, kematangan."
+  },
+  "chapter": 38
+ },
+ {
+  "id": "ffb",
+  "name": {
+   "zh": "鲜果串（FFB）",
+   "en": "Fresh fruit bunches (FFB)",
+   "ms": "Buah tandan segar (BTS)"
+  },
+  "short": {
+   "zh": "油棕收成的果串，用来算产量。",
+   "en": "The harvested bunches of oil palm, used to measure yield.",
+   "ms": "Tandan kelapa sawit yang dituai, digunakan untuk mengukur hasil."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "lag-effect",
+  "name": {
+   "zh": "滞后效应",
+   "en": "Lag effect",
+   "ms": "Kesan tertunda"
+  },
+  "short": {
+   "zh": "天气的影响要过一段时间才在产量上显现。",
+   "en": "A weather effect that shows in yield only after a delay.",
+   "ms": "Kesan cuaca yang hanya kelihatan pada hasil selepas tempoh tertentu."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "vpd",
+  "name": {
+   "zh": "饱和水汽压差（VPD）",
+   "en": "Vapour pressure deficit (VPD)",
+   "ms": "Defisit tekanan wap (VPD)"
+  },
+  "short": {
+   "zh": "空气还能再吸多少水汽；越大，植物越容易失水。",
+   "en": "How much more vapour the air could hold; the larger, the faster plants lose water.",
+   "ms": "Berapa banyak lagi wap boleh ditampung udara; semakin besar, semakin cepat tumbuhan kehilangan air."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "water-stress",
+  "name": {
+   "zh": "水分胁迫",
+   "en": "Water stress",
+   "ms": "Tekanan air"
+  },
+  "short": {
+   "zh": "植物得到的水不够需要，生理功能受损。",
+   "en": "When a plant gets less water than it needs and its functions suffer.",
+   "ms": "Apabila tumbuhan mendapat kurang air daripada keperluan dan fungsinya terjejas."
+  },
+  "chapter": 39
+ },
+ {
+  "id": "crop-coefficient",
+  "name": {
+   "zh": "作物系数（Kc）",
+   "en": "Crop coefficient (Kc)",
+   "ms": "Pekali tanaman (Kc)"
+  },
+  "short": {
+   "zh": "把 ET₀ 换算成某种作物用水的乘数：ETc = Kc × ET₀。",
+   "en": "The multiplier turning ET₀ into a crop's use: ETc = Kc × ET₀.",
+   "ms": "Pengganda yang menukar ET₀ kepada penggunaan tanaman: ETc = Kc × ET₀."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "et0",
+  "name": {
+   "zh": "ET₀（参考蒸散量）",
+   "en": "ET₀ (reference evapotranspiration)",
+   "ms": "ET₀ (sejatpeluhan rujukan)"
+  },
+  "short": {
+   "zh": "标准草地的蒸散，只由天气决定，单位毫米/天。",
+   "en": "Evapotranspiration of a standard grass surface, set by weather alone, in mm per day.",
+   "ms": "Sejatpeluhan permukaan rumput piawai, ditentukan cuaca sahaja, dalam mm sehari."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "evapotranspiration",
+  "name": {
+   "zh": "蒸散",
+   "en": "Evapotranspiration",
+   "ms": "Sejatpeluhan"
+  },
+  "short": {
+   "zh": "蒸发加蒸腾。",
+   "en": "Evaporation plus transpiration.",
+   "ms": "Penyejatan ditambah transpirasi."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "soil-moisture",
+  "name": {
+   "zh": "土壤湿度",
+   "en": "Soil moisture",
+   "ms": "Lembapan tanah"
+  },
+  "short": {
+   "zh": "土壤里作物可用的水；0 % 凋萎，100 % 田间持水量。",
+   "en": "Water in the soil available to plants; 0 % wilting point, 100 % field capacity.",
+   "ms": "Air dalam tanah tersedia untuk tumbuhan; 0 % takat layu, 100 % kapasiti ladang."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "transpiration",
+  "name": {
+   "zh": "蒸腾",
+   "en": "Transpiration",
+   "ms": "Transpirasi"
+  },
+  "short": {
+   "zh": "水从植物叶片的气孔散到空气中。",
+   "en": "Water lost to the air through a plant's stomata.",
+   "ms": "Air yang hilang ke udara melalui stomata tumbuhan."
+  },
+  "chapter": 40
+ },
+ {
+  "id": "microclimate",
+  "name": {
+   "zh": "小气候",
+   "en": "Microclimate",
+   "ms": "Mikroiklim"
+  },
+  "short": {
+   "zh": "贴近地面、植物和动物生活的那一层的气候。",
+   "en": "The climate of the layer near the ground where plants and animals live.",
+   "ms": "Iklim lapisan dekat tanah tempat tumbuhan dan haiwan hidup."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "micrometeorology",
+  "name": {
+   "zh": "微气象学",
+   "en": "Micrometeorology",
+   "ms": "Mikrometeorologi"
+  },
+  "short": {
+   "zh": "研究离地几米以内、小范围天气的学问。",
+   "en": "The study of small-scale weather within a few metres of the ground.",
+   "ms": "Kajian cuaca berskala kecil dalam beberapa meter dari tanah."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "shelterbelt",
+  "name": {
+   "zh": "防风林",
+   "en": "Shelterbelt",
+   "ms": "Tali pelindung"
+  },
+  "short": {
+   "zh": "一长排挡风的植物，保护后面的作物。",
+   "en": "A long line of planting that breaks the wind for the crops behind it.",
+   "ms": "Barisan tanaman panjang yang menghalang angin untuk tanaman di belakangnya."
+  },
+  "chapter": 41
+ },
+ {
+  "id": "crop-model",
+  "name": {
+   "zh": "作物模型",
+   "en": "Crop model",
+   "ms": "Model tanaman"
+  },
+  "short": {
+   "zh": "模拟作物生长和产量的数学方程。",
+   "en": "Mathematical equations that simulate a crop's growth and yield.",
+   "ms": "Persamaan matematik yang menyimulasikan pertumbuhan dan hasil tanaman."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "ndvi",
+  "name": {
+   "zh": "NDVI（归一化植被指数）",
+   "en": "NDVI (Normalised Difference Vegetation Index)",
+   "ms": "NDVI (Indeks Tumbuhan Perbezaan Ternormal)"
+  },
+  "short": {
+   "zh": "（近红外 − 可见光）÷（近红外 + 可见光）；绿叶越多越接近 1。",
+   "en": "(NIR − VIS) ÷ (NIR + VIS); the more green leaves, the nearer 1.",
+   "ms": "(NIR − VIS) ÷ (NIR + VIS); semakin banyak daun hijau, semakin hampir 1."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "remote-sensing",
+  "name": {
+   "zh": "遥感",
+   "en": "Remote sensing",
+   "ms": "Penderiaan jauh"
+  },
+  "short": {
+   "zh": "不接触对象、用电磁辐射收集资料的技术。",
+   "en": "Gathering information without touching the object, using electromagnetic radiation.",
+   "ms": "Mengumpul maklumat tanpa menyentuh objek, menggunakan sinaran elektromagnet."
+  },
+  "chapter": 42
+ },
+ {
+  "id": "vegetation-index",
+  "name": {
+   "zh": "植被指数",
+   "en": "Vegetation index",
+   "ms": "Indeks tumbuhan"
+  },
+  "short": {
+   "zh": "用可见光和近红外线的反射比较植物多寡的数值。",
+   "en": "A number comparing visible and near-infrared reflection to measure vegetation.",
+   "ms": "Nombor yang membandingkan pantulan cahaya nampak dan inframerah dekat untuk mengukur tumbuhan."
+  },
+  "chapter": 42
  }
 ]
