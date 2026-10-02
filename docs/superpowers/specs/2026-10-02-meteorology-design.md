@@ -159,6 +159,7 @@ Meteorology/
 │   ├── content.js             读取章节 JSON、渲染 block
 │   ├── terms.js               名词表、弹窗、"本章新名词"
 │   ├── charts.js              声明式数据图表（可滑动读值）
+│   ├── maps.js                地图底图（世界 / 东南亚 / 可转地球）＋数据图层
 │   ├── widgets/               每个互动图表一个模块（W1–W27）
 │   ├── physics.js             纯函数：饱和水汽压、露点、湿球、LCL、绝热线、CAPE、日长、ET₀、dBZ↔雨量、单位换算
 │   ├── search.js              三语搜索
@@ -174,7 +175,8 @@ Meteorology/
 │   ├── quiz.json              自测题与闪卡
 │   ├── sources.json           来源登记
 │   ├── releases.json          三语更新说明
-│   └── series/*.json          互动图表用的真实数据（附来源）
+│   ├── series/*.json          互动图表用的真实数据（附来源）
+│   └── maps/*.json            简化后的海岸线、国界，以及海温等网格数据（附来源）
 ├── icons/                     icon、maskable、iOS 启动图、og-image
 ├── tools/                     见 §11
 ├── tests/
@@ -229,7 +231,9 @@ Meteorology/
 - **数据图表**（`charts.js`）：柱状、折线、表格式图。手指在图上滑动，读数栏显示该点的值。
 - **互动模拟**（`widgets/`）：拖动参数，图即时重算。计算全部来自 `physics.js` 的公式，公式来源写在图下方。
 
-27 个互动图表的清单和数据来源见大纲最后的"互动图表总表"。
+27 个互动图表的清单和数据来源见大纲最后的"互动图表总表"；13 个地图图示见大纲的"地图图示"。
+
+**地图：** `maps.js` 提供三种底图——世界（Equal Earth 投影）、东南亚、可以拖动旋转的地球（正射投影）。海岸线和国界来自 Natural Earth（公有领域），由 `tools/build-maps.py` 简化成 SVG 路径，随 App 预缓存，离线可用。数据图层（海温、距平、气候分区）事先缩成小网格存成 JSON，每个文件都有 `source` 和日期；示意图层标示"示意图"。底图和图层颜色都用 CSS token。
 
 所有图表：
 
@@ -282,6 +286,7 @@ Meteorology/
 | `node tools/lint-content.mjs` | §6.3 全部检查 |
 | `node tools/build-sw.mjs` | 生成预缓存清单与 cache 名 |
 | `node --test tests/*.test.js` | `physics.js`、`updatelogic.js`、`swpolicy.js`、`i18n.js` 单元测试，以及 sw 行为测试 |
+| `venv/bin/python tools/build-maps.py` | 从 Natural Earth 生成简化底图；把海温等数据缩成小网格写进 `data/maps/` |
 | `node tools/fetch-series.mjs` | 从 Open-Meteo Archive、NOAA CPC 抓图表用的真实数据，写进 `data/series/`，含来源与抓取日期 |
 | `venv/bin/python tools/verify-qr.py` | 用 zxing-cpp 解码 App 生成的二维码，确认等于 `APP_URL` |
 | `tests/index.html` | 浏览器测试页：语言选择、路由、名词弹窗、图表挂载、搜索、自测 |
