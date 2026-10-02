@@ -149,6 +149,80 @@
  },
  {
   "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "下面哪一项不是气象要素？",
+   "en": "Which of these is not a weather element?",
+   "ms": "Yang manakah bukan unsur cuaca?"
+  },
+  "options": [
+   {
+    "zh": "湿度",
+    "en": "Humidity",
+    "ms": "Kelembapan"
+   },
+   {
+    "zh": "能见度",
+    "en": "Visibility",
+    "ms": "Keterlihatan"
+   },
+   {
+    "zh": "土壤颜色",
+    "en": "Soil colour",
+    "ms": "Warna tanah"
+   },
+   {
+    "zh": "风",
+    "en": "Wind",
+    "ms": "Angin"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "气象要素是描述大气状况的量：气温、气压、湿度、云、降水、能见度和风。",
+   "en": "Weather elements describe the air: temperature, pressure, humidity, cloud, precipitation, visibility and wind.",
+   "ms": "Unsur cuaca menerangkan udara: suhu, tekanan, kelembapan, awan, kerpasan, keterlihatan dan angin."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "马来西亚看的卫星云图主要来自哪个机构的卫星？",
+   "en": "Whose satellites supply most of the satellite pictures used in Malaysia?",
+   "ms": "Satelit siapakah membekalkan kebanyakan imej satelit yang digunakan di Malaysia?"
+  },
+  "options": [
+   {
+    "zh": "ECMWF",
+    "en": "ECMWF",
+    "ms": "ECMWF"
+   },
+   {
+    "zh": "日本气象厅（JMA）",
+    "en": "Japan Meteorological Agency (JMA)",
+    "ms": "Agensi Meteorologi Jepun (JMA)"
+   },
+   {
+    "zh": "WMO",
+    "en": "WMO",
+    "ms": "WMO"
+   },
+   {
+    "zh": "ASMC",
+    "en": "ASMC",
+    "ms": "ASMC"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "向日葵（Himawari）卫星由日本气象厅运行。ECMWF 做数值预报，不发射卫星。",
+   "en": "The Himawari satellites are run by JMA. ECMWF makes numerical forecasts; it does not operate satellites.",
+   "ms": "Satelit Himawari dikendalikan oleh JMA. ECMWF membuat ramalan berangka; ia tidak mengendalikan satelit."
+  }
+ },
+ {
+  "stage": 1,
   "chapter": "ch02",
   "q": {
    "zh": "为什么平流层是越高越暖？",
@@ -219,6 +293,80 @@
    "zh": "约 5.5 公里处气压约 500 hPa，只有海平面的一半。",
    "en": "At about 5.5 km the pressure is near 500 hPa, half its sea-level value.",
    "ms": "Pada kira-kira 5.5 km tekanan hampir 500 hPa, separuh nilai paras laut."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "几乎所有的云和雨都发生在哪一层？",
+   "en": "In which layer do nearly all clouds and rain occur?",
+   "ms": "Dalam lapisan manakah hampir semua awan dan hujan berlaku?"
+  },
+  "options": [
+   {
+    "zh": "对流层",
+    "en": "Troposphere",
+    "ms": "Troposfera"
+   },
+   {
+    "zh": "平流层",
+    "en": "Stratosphere",
+    "ms": "Stratosfera"
+   },
+   {
+    "zh": "中间层",
+    "en": "Mesosphere",
+    "ms": "Mesosfera"
+   },
+   {
+    "zh": "热层",
+    "en": "Thermosphere",
+    "ms": "Termosfera"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "对流层集中了几乎所有的水汽，是天气发生的地方。",
+   "en": "The troposphere holds almost all the water vapour; it is where weather happens.",
+   "ms": "Troposfera mengandungi hampir semua wap air; di situlah cuaca berlaku."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "紫外线指数是 9，世界卫生组织建议怎么做？",
+   "en": "The UV index is 9. What does the WHO advise?",
+   "ms": "Indeks UV ialah 9. Apakah nasihat WHO?"
+  },
+  "options": [
+   {
+    "zh": "可以放心在户外",
+    "en": "It is safe to be outside",
+    "ms": "Selamat berada di luar"
+   },
+   {
+    "zh": "只需要戴太阳眼镜",
+    "en": "Sunglasses are enough",
+    "ms": "Cermin mata hitam sudah memadai"
+   },
+   {
+    "zh": "中午前后避免外出，上衣、防晒和帽子都必须",
+    "en": "Avoid the midday sun; shirt, sunscreen and hat are a must",
+    "ms": "Elakkan matahari tengah hari; baju, pelindung matahari dan topi wajib"
+   },
+   {
+    "zh": "晚上才需要防晒",
+    "en": "Protection is only needed at night",
+    "ms": "Perlindungan hanya perlu pada waktu malam"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "8 以上属于最高的一级：中午前后应避免待在户外。",
+   "en": "8 and above is the top band: avoid being outside around midday.",
+   "ms": "8 ke atas ialah jalur tertinggi: elakkan berada di luar sekitar tengah hari."
   }
  }
 ]

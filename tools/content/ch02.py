@@ -132,6 +132,16 @@ quiz = [
   "q": T("在大约多高的地方，一半的空气已经在你下面？", "Roughly how high must you be for half the air to be below you?", "Pada ketinggian kira-kira berapa separuh udara berada di bawah anda?"),
   "options": [T("1 公里", "1 km", "1 km"), T("5.5 公里", "5.5 km", "5.5 km"), T("30 公里", "30 km", "30 km"), T("100 公里", "100 km", "100 km")],
   "answer": 1, "why": T("约 5.5 公里处气压约 500 hPa，只有海平面的一半。", "At about 5.5 km the pressure is near 500 hPa, half its sea-level value.", "Pada kira-kira 5.5 km tekanan hampir 500 hPa, separuh nilai paras laut.")},
+
+ {"stage": 1, "chapter": "ch02",
+  "q": T("几乎所有的云和雨都发生在哪一层？", "In which layer do nearly all clouds and rain occur?", "Dalam lapisan manakah hampir semua awan dan hujan berlaku?"),
+  "options": [T("对流层", "Troposphere", "Troposfera"), T("平流层", "Stratosphere", "Stratosfera"), T("中间层", "Mesosphere", "Mesosfera"), T("热层", "Thermosphere", "Termosfera")],
+  "answer": 0, "why": T("对流层集中了几乎所有的水汽，是天气发生的地方。", "The troposphere holds almost all the water vapour; it is where weather happens.", "Troposfera mengandungi hampir semua wap air; di situlah cuaca berlaku.")},
+ {"stage": 1, "chapter": "ch02",
+  "q": T("紫外线指数是 9，世界卫生组织建议怎么做？", "The UV index is 9. What does the WHO advise?", "Indeks UV ialah 9. Apakah nasihat WHO?"),
+  "options": [T("可以放心在户外", "It is safe to be outside", "Selamat berada di luar"), T("只需要戴太阳眼镜", "Sunglasses are enough", "Cermin mata hitam sudah memadai"),
+              T("中午前后避免外出，上衣、防晒和帽子都必须", "Avoid the midday sun; shirt, sunscreen and hat are a must", "Elakkan matahari tengah hari; baju, pelindung matahari dan topi wajib"), T("晚上才需要防晒", "Protection is only needed at night", "Perlindungan hanya perlu pada waktu malam")],
+  "answer": 2, "why": T("8 以上属于最高的一级：中午前后应避免待在户外。", "8 and above is the top band: avoid being outside around midday.", "8 ke atas ialah jalur tertinggi: elakkan berada di luar sekitar tengah hari.")},
 ]
 
 write_chapter(chapter, terms, sources, quiz)

@@ -136,6 +136,15 @@ quiz = [
   "options": [T("研究流星", "The study of meteors", "Kajian tentang meteor"), T("研究天上的东西", "The study of things up above", "Kajian tentang benda di atas"),
               T("研究海洋", "The study of the sea", "Kajian tentang laut"), T("研究星星", "The study of stars", "Kajian tentang bintang")],
   "answer": 1, "why": T("来自希腊文 meteorologia：研究天上的一切现象。", "From the Greek meteorologia: the study of everything seen in the sky.", "Daripada bahasa Yunani meteorologia: kajian tentang segala yang dilihat di langit.")},
+
+ {"stage": 1, "chapter": "ch01",
+  "q": T("下面哪一项不是气象要素？", "Which of these is not a weather element?", "Yang manakah bukan unsur cuaca?"),
+  "options": [T("湿度", "Humidity", "Kelembapan"), T("能见度", "Visibility", "Keterlihatan"), T("土壤颜色", "Soil colour", "Warna tanah"), T("风", "Wind", "Angin")],
+  "answer": 2, "why": T("气象要素是描述大气状况的量：气温、气压、湿度、云、降水、能见度和风。", "Weather elements describe the air: temperature, pressure, humidity, cloud, precipitation, visibility and wind.", "Unsur cuaca menerangkan udara: suhu, tekanan, kelembapan, awan, kerpasan, keterlihatan dan angin.")},
+ {"stage": 1, "chapter": "ch01",
+  "q": T("马来西亚看的卫星云图主要来自哪个机构的卫星？", "Whose satellites supply most of the satellite pictures used in Malaysia?", "Satelit siapakah membekalkan kebanyakan imej satelit yang digunakan di Malaysia?"),
+  "options": [T("ECMWF", "ECMWF", "ECMWF"), T("日本气象厅（JMA）", "Japan Meteorological Agency (JMA)", "Agensi Meteorologi Jepun (JMA)"), T("WMO", "WMO", "WMO"), T("ASMC", "ASMC", "ASMC")],
+  "answer": 1, "why": T("向日葵（Himawari）卫星由日本气象厅运行。ECMWF 做数值预报，不发射卫星。", "The Himawari satellites are run by JMA. ECMWF makes numerical forecasts; it does not operate satellites.", "Satelit Himawari dikendalikan oleh JMA. ECMWF membuat ramalan berangka; ia tidak mengendalikan satelit.")},
 ]
 
 write_chapter(chapter, terms, sources, quiz)
