@@ -1,0 +1,57 @@
+/* ===== Tokens =====
+   Brand colours are sampled from icon.png (tools/make-icons.py):
+   sky #3762cc outline · page #a4c9ff · cloud #e0ebfc · sun #ffea92 · mercury #f9a7a7.
+   The interface uses them sparingly: sky for actions and links, the rest only
+   inside charts and maps, so the reading surface stays quiet. */
+:root {
+  --sky: #3762cc;
+  --sky-strong: #2a4fa8;
+  --page: #a4c9ff;
+  --cloud: #e0ebfc;
+  --sun: #f2c94c;
+  --mercury: #e07a7a;
+  --rain: #2f80ed;
+  --leaf: #2e9e6a;
+
+  --bg: #f8fafd;
+  --surface: #ffffff;
+  --surface-2: #f1f5fb;
+  --ink: #111827;
+  --ink-2: #374151;
+  --muted: #6b7280;
+  --line: #e3e8f0;
+  --accent: var(--sky);
+  --accent-ink: #ffffff;
+  --focus: #3762cc66;
+  --warn: #b45309;
+  --warn-bg: #fff7e6;
+  --myth-bg: #fdeeee;
+  --key-bg: #eaf1fd;
+  --tip-bg: #eaf7f0;
+}
+:root[data-theme="dark"] {
+  --sky: #7fa2f0;
+  --sky-strong: #a7c0f6;
+  --page: #3a5a92;
+  --cloud: #22324d;
+  --sun: #e8c55a;
+  --mercury: #e98f8f;
+  --rain: #66a6ff;
+  --leaf: #4cc38a;
+
+  --bg: #0e141e;
+  --surface: #151d2a;
+  --surface-2: #1b2534;
+  --ink: #e6ebf2;
+  --ink-2: #c3ccd8;
+  --muted: #8b97a8;
+  --line: #263245;
+  --accent: var(--sky);
+  --accent-ink: #0e141e;
+  --focus: #7fa2f066;
+  --warn: #f0b35a;
+  --warn-bg: #2a2214;
+  --myth-bg: #2c1c1f;
+  --key-bg: #1a2640;
+  --tip-bg: #15291f;
+}
