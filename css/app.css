@@ -476,3 +476,17 @@ rect.cl-ice, circle.cl-ice { fill: var(--cloud); stroke: var(--sky); stroke-widt
 .level-label { font-size: 12px; font-weight: 700; fill: var(--sky); }
 .level-sub { font-size: 11px; fill: var(--muted); }
 .map-regions path.is-on { fill-opacity: .6 !important; stroke-width: 2; }
+.ref-line { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; }
+.ref-label { font-size: 10.5px; fill: var(--muted); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.tide-water { fill: var(--rain); fill-opacity: .25; stroke: var(--rain); }
+.tide-earth { fill: var(--map-land); stroke: var(--leaf); stroke-width: 1.5; }
+.tide-moon { fill: var(--surface-2); stroke: var(--ink-2); }
+.walker-sea { fill: var(--rain); fill-opacity: .18; }
+.walker-warm { fill: var(--mercury); fill-opacity: .35; }
+.walker-land { fill: var(--map-land); stroke: var(--map-coast); }
+.walker-loop { fill: none; stroke: var(--ink-2); stroke-width: 2; stroke-dasharray: 6 5; }
+.map-grid path { stroke: none; }
+.map-legend { display: flex; align-items: center; gap: 8px; font-size: .78rem; color: var(--muted); margin: 6px 0; }
+.map-legend-bar { flex: 1; height: 8px; border-radius: 4px; }
+.map-lines path.current { stroke-width: 3.5; }
+.map-lines path.current.is-on { stroke-width: 6; }

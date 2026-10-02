@@ -9,7 +9,7 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-07a32138f4';
+const CACHE = 'meteo-a790946f87';
 const ASSETS = [
   './',
   'css/app.css',
@@ -25,9 +25,15 @@ const ASSETS = [
   'data/ch10.json',
   'data/ch11.json',
   'data/ch12.json',
+  'data/ch13.json',
+  'data/ch14.json',
+  'data/ch15.json',
   'data/datasets.json',
   'data/index.json',
+  'data/maps/koppen.json',
   'data/maps/seasia.json',
+  'data/maps/sst-clim.json',
+  'data/maps/sst-events.json',
   'data/maps/world.json',
   'data/quiz.json',
   'data/releases.json',
@@ -35,6 +41,7 @@ const ASSETS = [
   'data/series/kl-levels-2026.json',
   'data/series/kl-monthly-2025.json',
   'data/series/kl-sunny-cloudy-2025.json',
+  'data/series/roni.json',
   'data/sources.json',
   'data/terms.json',
   'favicon.ico',
@@ -94,7 +101,16 @@ const ASSETS = [
   'js/widgets/m1.js',
   'js/widgets/m2.js',
   'js/widgets/m3.js',
+  'js/widgets/m4.js',
+  'js/widgets/m5.js',
+  'js/widgets/m6.js',
+  'js/widgets/m7.js',
+  'js/widgets/m8.js',
+  'js/widgets/m9.js',
+  'js/widgets/sstcolour.js',
   'js/widgets/w1.js',
+  'js/widgets/w11.js',
+  'js/widgets/w12.js',
   'js/widgets/w2.js',
   'js/widgets/w3.js',
   'js/widgets/w5.js',

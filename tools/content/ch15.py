@@ -1,0 +1,145 @@
+"""Chapter 15 — Climate and climate change."""
+import sys
+sys.path.insert(0, 'tools/content')
+from build import T, P, L, N, write_chapter
+
+chapter = {"id": "ch15", "num": 15, "stage": 5,
+ "title": T("气候与气候变化", "Climate and climate change", "Iklim dan perubahan iklim"),
+ "sources": ["ESS", "PAM", "TERM", "KOPPEN-BECK", "WMO-NORMALS", "WMO-NORMALS-PARAMS", "ETCCDI", "IMD-GLOSS", "ERA5-OM", "WMO-2025", "NOAA-GML-CO2", "NOAA-CPC-RONI"],
+ "sections": [
+ {"id": "s1", "heading": T("Köppen 气候分类", "The Köppen climate classes", "Kelas iklim Köppen"), "level": "basic", "blocks": [
+  P("世界上没有两个地方的气候完全一样，但相近的地方可以归成一类。最常用的分法是德国科学家 Köppen 在 1918 年发表的{{t:koppen}}，按各月平均气温和雨量分成五大类，各用一个大写字母表示：",
+    "No two places have exactly the same climate, but similar ones can be grouped. The most widely used grouping is the {{t:koppen}}, first published by the German scientist Köppen in 1918. It sorts climates by their monthly average temperature and rainfall into five main types, each given a capital letter:",
+    "Tiada dua tempat yang mempunyai iklim yang betul-betul sama, tetapi yang serupa boleh dikumpulkan. Kumpulan yang paling banyak digunakan ialah {{t:koppen}}, pertama kali diterbitkan oleh saintis Jerman Köppen pada 1918. Ia menyusun iklim mengikut purata suhu dan hujan bulanan kepada lima jenis utama, masing-masing diberi huruf besar:",
+    defines=["koppen"], src=["ESS:348-349"]),
+  L(("A 热带湿润：每个月平均气温都在 18 °C 以上，没有真正的冬天", "A tropical moist: every month averages above 18 °C, so there is no real winter", "A tropika lembap: setiap bulan berpurata melebihi 18 °C, jadi tiada musim sejuk sebenar"),
+    ("B 干燥：大部分时间雨量不足，蒸发比降水多", "B dry: too little rain most of the year; evaporation exceeds precipitation", "B kering: hujan terlalu sedikit hampir sepanjang tahun; penyejatan melebihi kerpasan"),
+    ("C 冬天温和的中纬度气候", "C mid-latitude climates with mild winters", "C iklim latitud sederhana dengan musim sejuk sederhana"),
+    ("D 冬天严寒的中纬度气候", "D mid-latitude climates with severe winters", "D iklim latitud sederhana dengan musim sejuk yang teruk"),
+    ("E 极地：最暖的月份也低于 10 °C", "E polar: even the warmest month averages below 10 °C", "E kutub: bulan paling panas pun berpurata di bawah 10 °C"),
+    src=["ESS:349"]),
+  P("A 类再细分。每个月平均雨量都超过 6 厘米的是热带雨林气候 Af；只有一两个月低于 6 厘米的是热带季风气候 Am；干季超过两个月的是热带干湿季气候 Aw。几乎每天下午都有积云长高、下阵雨，到傍晚雨停、天空转晴，这正是 Af 气候的特点。",
+    "Type A is split further. Where every month averages more than 6 cm of rain it is a tropical wet (rain-forest) climate, Af; where only one or two months drop below 6 cm it is tropical monsoon, Am; where the dry season lasts more than two months it is tropical wet-and-dry, Aw. Towering cumulus building almost every afternoon into showers that end by evening, when the sky clears, is typical of the Af climate.",
+    "Jenis A dibahagi lagi. Jika setiap bulan berpurata lebih daripada 6 cm hujan, ia iklim tropika basah (hutan hujan), Af; jika hanya satu atau dua bulan di bawah 6 cm, ia tropika monsun, Am; jika musim kering melebihi dua bulan, ia tropika basah-dan-kering, Aw. Kumulus menjulang hampir setiap petang menjadi hujan lebat yang berhenti menjelang senja, apabila langit cerah, adalah ciri iklim Af.",
+    src=["ESS:352-354"]),
+  {"type": "map", "id": "M9"},
+  P("这张地图用的是 1991–2020 年的 Köppen 分区数据。点一下吉隆坡，会看到 Af；马来西亚大部分地方也是 Af。",
+    "This map uses Köppen zones for 1991–2020. Tap Kuala Lumpur and you will see Af, as for most of Malaysia.",
+    "Peta ini menggunakan zon Köppen bagi 1991–2020. Ketik Kuala Lumpur dan anda akan melihat Af, seperti kebanyakan Malaysia.",
+    src=["KOPPEN-BECK"]),
+  {"type": "dataset", "id": "koppen-beck"},
+ ]},
+ {"id": "s2", "heading": T("平均值和距平", "Normals and anomalies", "Normal dan anomali"), "level": "basic", "blocks": [
+  P("说“今年比平常热”，那个“平常”指的是{{t:climate-normal}}：某个量在 30 年里的平均值。WMO 现在的标准是最近一个以 0 结尾的 30 年，例如 1991–2020 年。",
+    "When we say ‘warmer than normal’, ‘normal’ means the {{t:climate-normal}}: the average of something over 30 years. WMO's standard is now the most recent 30-year period ending in a year with 0, such as 1991–2020.",
+    "Apabila kita berkata ‘lebih panas daripada normal’, ‘normal’ bermaksud {{t:climate-normal}}: purata sesuatu dalam 30 tahun. Piawaian WMO kini ialah tempoh 30 tahun terkini yang berakhir pada tahun berakhiran 0, seperti 1991–2020.",
+    defines=["climate-normal"], src=["ESS:67", "WMO-NORMALS"]),
+  P("实际数值减去平均值，叫{{t:anomaly}}。第 13 章的海温距平地图、第 14 章的 RONI，都是距平：正数表示比平常高，负数表示比平常低。",
+    "The actual value minus the normal is the {{t:anomaly}}. The sea-temperature map of Chapter 13 and the RONI of Chapter 14 are both anomalies: positive means above normal, negative below.",
+    "Nilai sebenar tolak normal ialah {{t:anomaly}}. Peta suhu laut Bab 13 dan RONI Bab 14 kedua-duanya anomali: positif bermaksud di atas normal, negatif di bawah.",
+    defines=["anomaly"], src=["NOAA-CPC-RONI"]),
+ ]},
+ {"id": "s3", "heading": T("怎样才算“下雨天”", "What counts as a rainy day", "Apakah yang dikira hari hujan"), "level": "basic", "blocks": [
+  P("“一年有几天下雨”听起来简单，其实要先定一个门槛：一天下了多少毫米才算。不同机构用不同的门槛，所以同一个地方会得出不同的{{t:rain-day}}数目。",
+    "‘How many days a year does it rain?’ sounds simple, but first you need a threshold: how many millimetres in a day count. Different bodies use different thresholds, so one place can give different counts of {{t:rain-day}}s.",
+    "‘Berapa hari setahun hujan turun?’ kedengaran mudah, tetapi mula-mula anda perlukan ambang: berapa milimeter sehari dikira. Badan berlainan menggunakan ambang berlainan, jadi satu tempat boleh memberi kiraan {{t:rain-day}} yang berbeza.",
+    defines=["rain-day"], src=["TERM:285"]),
+  {"type": "table", "src": ["TERM:285", "WMO-NORMALS-PARAMS", "ETCCDI", "IMD-GLOSS", "ERA5-OM"],
+   "caption": T("三种门槛，同一个地方：吉隆坡 2025 年（ERA5）", "Three thresholds, one place: Kuala Lumpur in 2025 (ERA5)", "Tiga ambang, satu tempat: Kuala Lumpur pada 2025 (ERA5)"),
+   "headers": [T("门槛", "Threshold", "Ambang"), T("谁用", "Who uses it", "Siapa menggunakannya"), T("2025 年天数", "Days in 2025", "Hari pada 2025")],
+   "rows": [[T("0.2 毫米或以上", "0.2 mm or more", "0.2 mm atau lebih"), T("国际惯例的“雨日”（Terminology 所载）", "The international ‘rain day’ (as given in the Terminology)", "‘Hari hujan’ antarabangsa (seperti dalam Terminology)"), T("315 天", "315 days", "315 hari")],
+            [T("1 毫米或以上", "1 mm or more", "1 mm atau lebih"), T("WMO 气候平均值；ETCCDI 的“湿日”", "WMO climate normals; the ETCCDI ‘wet day’", "Normal iklim WMO; ‘hari basah’ ETCCDI"), T("267 天", "267 days", "267 hari")],
+            [T("2.5 毫米或以上", "2.5 mm or more", "2.5 mm atau lebih"), T("印度气象局（IMD）的 rainy day", "The India Meteorological Department's ‘rainy day’", "‘Hari hujan’ Jabatan Meteorologi India"), T("215 天", "215 days", "215 hari")]]},
+  P("同一年、同一个地方，只因门槛不同，就从 315 天变成 215 天，相差 100 天。所以看到“一年下雨几天”的数字，一定要先问用的是哪个门槛。",
+    "The same year in the same place goes from 315 days to 215 days — 100 days apart — just by changing the threshold. So whenever you see a ‘rainy days a year’ figure, first ask which threshold it uses.",
+    "Tahun yang sama di tempat yang sama berubah daripada 315 hari kepada 215 hari — beza 100 hari — hanya dengan menukar ambang. Jadi setiap kali anda melihat angka ‘hari hujan setahun’, tanya dahulu ambang mana yang digunakan.",
+    src=["ERA5-OM"]),
+  N("warn", "表里的天数来自 ERA5，是约 25 公里格子的平均雨量，不是一个雨量计的读数。真正的雨量站数出来的天数可能不同；这里只是用来比较三种门槛。",
+    "The day counts come from ERA5, the average rain over a grid box about 25 km across, not one rain gauge. A real station may count differently; here they only compare the three thresholds.",
+    "Kiraan hari datang daripada ERA5, purata hujan bagi kotak grid kira-kira 25 km, bukan satu tolok hujan. Stesen sebenar mungkin mengira secara berbeza; di sini ia hanya membandingkan tiga ambang.",
+    src=["ERA5-OM"]),
+  {"type": "dataset", "id": "era5-daily-rain"},
+ ]},
+ {"id": "s4", "heading": T("全球变暖", "Global warming", "Pemanasan global"), "level": "basic", "blocks": [
+  P("第 3 章讲过温室效应。人类燃烧煤、石油和天然气，让空气里的二氧化碳越来越多：2026 年 6 月全球平均已经是 427.62 ppm。温室气体增加，把更多热留在地球上，全球气温就慢慢升高，这叫{{t:global-warming}}。",
+    "Chapter 3 explained the greenhouse effect. Burning coal, oil and gas keeps adding carbon dioxide to the air: the global average reached 427.62 ppm in June 2026. More greenhouse gas keeps more heat in, and the world slowly warms: {{t:global-warming}}.",
+    "Bab 3 menerangkan kesan rumah hijau. Pembakaran arang batu, minyak dan gas terus menambah karbon dioksida ke udara: purata global mencapai 427.62 ppm pada Jun 2026. Lebih banyak gas rumah hijau menyimpan lebih banyak haba, dan dunia perlahan-lahan menjadi panas: {{t:global-warming}}.",
+    defines=["global-warming"], src=["PAM:129", "NOAA-GML-CO2"]),
+  P("WMO 综合八套数据：2025 年全球平均地面气温比 1850–1900 年高约 1.44 °C（误差 ±0.13 °C）；2015 到 2025 这 11 年，是有记录以来最热的 11 年。2025 年开头和结尾都有拉尼娜，本来会让气温低一点，仍然是最热的年份之一。",
+    "Combining eight datasets, WMO found the global average surface temperature in 2025 was about 1.44 °C (± 0.13 °C) above 1850–1900, and that 2015–2025 were the 11 warmest years on record. 2025 began and ended with La Niña, which cools things a little, and was still one of the warmest years.",
+    "Menggabungkan lapan set data, WMO mendapati purata suhu permukaan global pada 2025 kira-kira 1.44 °C (± 0.13 °C) di atas 1850–1900, dan 2015–2025 ialah 11 tahun paling panas dalam rekod. 2025 bermula dan berakhir dengan La Niña, yang menyejukkan sedikit, namun masih antara tahun paling panas.",
+    src=["WMO-2025"]),
+  N("key", "单独一年的冷暖会被 ENSO 推高或拉低，所以看气候变化要看几十年的走势，不要只看一年。",
+    "ENSO can push any single year up or down, so climate change is judged on the trend over decades, not one year.",
+    "ENSO boleh menolak mana-mana satu tahun naik atau turun, jadi perubahan iklim dinilai pada aliran berdekad-dekad, bukan satu tahun.",
+    src=["ESS:393", "WMO-2025"]),
+ ]},
+ {"id": "s5", "heading": T("对农业的影响", "What it means for farming", "Maksudnya bagi pertanian"), "level": "basic", "blocks": [
+  L(("气温升高：一般会降低许多作物的产量和品质；作物长得快、成熟早，生长期缩短，产量可能下降", "Higher temperatures: generally lower yield and quality in many crops; crops develop faster and mature sooner, and the shorter season can cut yields", "Suhu lebih tinggi: biasanya menurunkan hasil dan kualiti banyak tanaman; tanaman berkembang lebih cepat dan matang lebih awal, dan musim lebih pendek boleh mengurangkan hasil"),
+    ("雨量改变：缺水的地方可能受益，水多的地方问题更大；更暖时灌溉用水需求上升", "Changing rainfall: may help dry areas and worsen wet ones; a warmer climate raises the demand for irrigation water", "Hujan berubah: mungkin membantu kawasan kering dan memburukkan kawasan basah; iklim lebih panas meningkatkan keperluan air pengairan"),
+    ("二氧化碳增加：光合作用加快，叶片气孔关小、失水减少", "More CO₂: faster photosynthesis, and leaves partly close their stomata and lose less water", "Lebih banyak CO₂: fotosintesis lebih cepat, dan daun separa menutup stomata serta kurang kehilangan air"),
+    ("更多对流性大雨：土壤冲刷加重", "More heavy convective downpours: more soil erosion", "Lebih banyak hujan lebat perolakan: lebih banyak hakisan tanah"),
+    ("更暖的气候：害虫一年繁殖更多代", "A warmer climate: pests fit in more generations a year", "Iklim lebih panas: perosak dapat membiak lebih banyak generasi setahun"),
+    ("海平面上升：低洼的海边农地可能被淹或变咸", "Rising sea level: low coastal farmland may flood or turn salty", "Paras laut naik: tanah ladang pantai yang rendah mungkin banjir atau menjadi masin"),
+    src=["PAM:125-128"]),
+  N("tip", "在热带，变暖多半会降低作物产量；在寒冷的地方，变暖反而可能让作物长得更好。所以气候变化对各地农业的影响不一样。",
+    "In the tropics warming will likely lower crop yields; in cold climates it may actually raise them. So climate change does not hit every region's farming the same way.",
+    "Di kawasan tropika pemanasan berkemungkinan menurunkan hasil tanaman; di iklim sejuk ia mungkin sebenarnya meningkatkannya. Jadi perubahan iklim tidak memberi kesan yang sama kepada pertanian setiap rantau.",
+    src=["ESS:399"]),
+ ]},
+ ]}
+
+terms = [
+ ("koppen", T("Köppen 气候分类", "Köppen classification", "Pengelasan Köppen"), T("按各月平均气温和雨量把气候分成 A、B、C、D、E 五大类；马来西亚多为 Af。", "Sorts climates by monthly temperature and rainfall into five types, A–E; most of Malaysia is Af.", "Menyusun iklim mengikut suhu dan hujan bulanan kepada lima jenis, A–E; kebanyakan Malaysia ialah Af.")),
+ ("climate-normal", T("气候平均值", "Climate normal", "Normal iklim"), T("30 年的平均值，例如 1991–2020 年；用来说“平常”。", "A 30-year average such as 1991–2020; what ‘normal’ means.", "Purata 30 tahun seperti 1991–2020; maksud ‘normal’.")),
+ ("anomaly", T("距平", "Anomaly", "Anomali"), T("实际值减去平均值；正数比平常高，负数比平常低。", "The actual value minus the normal; positive is above normal, negative below.", "Nilai sebenar tolak normal; positif di atas normal, negatif di bawah.")),
+ ("rain-day", T("雨日", "Rain day", "Hari hujan"), T("一天雨量达到某个门槛（0.2、1 或 2.5 毫米，看机构）就算一个雨日。", "A day whose rainfall reaches a threshold — 0.2, 1 or 2.5 mm depending on who is counting.", "Hari yang hujannya mencapai ambang — 0.2, 1 atau 2.5 mm bergantung pada siapa yang mengira.")),
+ ("global-warming", T("全球变暖", "Global warming", "Pemanasan global"), T("温室气体增加，使全球平均气温长期升高。", "The long-term rise in global average temperature as greenhouse gases build up.", "Kenaikan jangka panjang suhu purata global apabila gas rumah hijau bertambah.")),
+]
+
+sources = [
+ {"id": "KOPPEN-BECK", "short": "Beck et al. 2023", "title": "High-resolution (1 km) Köppen-Geiger maps for 1901–2099 based on constrained CMIP6 projections (Scientific Data 10, 724); data on figshare (CC0)", "publisher": "H. E. Beck, T. R. McVicar, N. Vergopolan, A. Berg et al., 2023", "url": "https://doi.org/10.6084/m9.figshare.21789074", "accessed": "2026-10-02"},
+ {"id": "WMO-NORMALS", "short": "WMO", "title": "WMO Climatological Normals", "publisher": "World Meteorological Organization", "url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/climate-services/wmo-climatological-normals", "accessed": "2026-10-02"},
+ {"id": "WMO-NORMALS-PARAMS", "short": "WMO / NCEI", "title": "WMO Normals 1991–2020: Format and Descriptors (Table 1, principal climatological surface parameters)", "publisher": "NOAA NCEI archive of WMO Climatological Standard Normals", "url": "https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/6.6/data/0-data/documents/WMO_Normals_9120_Format_and_Parameters.pdf", "accessed": "2026-10-02"},
+ {"id": "ETCCDI", "short": "ETCCDI", "title": "Definitions of the 27 core climate-extremes indices (wet day: RR ≥ 1 mm)", "publisher": "Expert Team on Climate Change Detection and Indices", "url": "https://etccdi.pacificclimate.org/list_27_indices.shtml", "accessed": "2026-10-02"},
+ {"id": "IMD-GLOSS", "short": "IMD", "title": "Glossary (Rainy day: rainfall in a day of 2.5 mm or more)", "publisher": "India Meteorological Department, Pune", "url": "https://www.imdpune.gov.in/Reports/glossary.pdf", "accessed": "2026-10-02"},
+ {"id": "WMO-2025", "short": "WMO", "title": "WMO confirms 2025 was one of warmest years on record (press release, 14 January 2026)", "publisher": "World Meteorological Organization", "url": "https://wmo.int/news/media-centre/wmo-confirms-2025-was-one-of-warmest-years-record", "accessed": "2026-10-02"},
+]
+
+datasets = [
+ {"id": "koppen-beck", "name": "Köppen–Geiger maps (Beck et al.)", "provider": "Beck et al. 2023, via figshare",
+  "what": T("全球 Köppen 气候分区，1901 到 2099 年分几个时段；本章地图用 1991–2020 年。", "Global Köppen climate zones for several periods from 1901 to 2099; this chapter's map uses 1991–2020.", "Zon iklim Köppen global bagi beberapa tempoh dari 1901 hingga 2099; peta bab ini menggunakan 1991–2020."),
+  "resolution": "1 km – 1°", "update": T("固定版本", "Fixed release", "Keluaran tetap"), "format": "GeoTIFF",
+  "licence": {"text": "CC0", "url": "https://doi.org/10.6084/m9.figshare.21789074"},
+  "params": [{"raw": "1–30", "meaning": T("每个格子一个整数代号，例如 1 = Af、2 = Am、3 = Aw", "One integer code per cell, e.g. 1 = Af, 2 = Am, 3 = Aw", "Satu kod integer bagi setiap sel, contohnya 1 = Af, 2 = Am, 3 = Aw"), "unit": "—", "chapter": 15}],
+  "sample": {"columns": ["lat", "lon", "code", "class"], "rows": [["3.1°N", "101.7°E", "1", "Af"]], "source": "koppen_geiger_1991_2020 (0.5° file), cell containing Kuala Lumpur", "fetched": "2026-10-02"},
+  "links": [
+   {"level": "view", "label": T("论文（Scientific Data）", "Paper (Scientific Data)", "Kertas (Scientific Data)"), "url": "https://doi.org/10.1038/s41597-023-02549-6"},
+   {"level": "pro", "label": T("figshare 下载页", "figshare download page", "Halaman muat turun figshare"), "url": "https://doi.org/10.6084/m9.figshare.21789074",
+    "note": T("GeoTIFF 要用 QGIS 或 Python（rasterio）打开。", "Open the GeoTIFFs with QGIS or Python (rasterio).", "Buka GeoTIFF dengan QGIS atau Python (rasterio).")}]},
+ {"id": "era5-daily-rain", "name": "ERA5 daily precipitation (Open-Meteo)", "provider": "ECMWF / Copernicus, served by Open-Meteo",
+  "what": T("任何地点 1940 年至今的每日雨量；本章雨日表就是用吉隆坡 2025 年的数据数出来的。", "Daily rainfall for any place from 1940 on; this chapter's rain-day table counts Kuala Lumpur's 2025 values.", "Hujan harian bagi mana-mana tempat dari 1940; jadual hari hujan bab ini mengira nilai Kuala Lumpur 2025."),
+  "resolution": "0.25° (≈ 25 km)", "update": T("每天（约晚 5 天）", "Daily (about 5 days behind)", "Harian (kira-kira 5 hari lewat)"), "format": "JSON / CSV",
+  "licence": {"text": "CC BY 4.0", "url": "https://open-meteo.com/en/licence"},
+  "params": [{"raw": "precipitation_sum", "meaning": T("一天的总降水（雨加雪）", "Total precipitation in the day (rain plus snow)", "Jumlah kerpasan sehari (hujan dan salji)"), "unit": "mm", "chapter": 15}],
+  "sample": {"columns": ["time", "precipitation_sum"], "rows": [["2025-06-12", "0.0"], ["2025-06-14", "0.2"], ["2025-06-15", "1.1"], ["2025-06-16", "38.1"]], "source": "archive-api.open-meteo.com, 3.139°N 101.687°E", "fetched": "2026-10-02"},
+  "links": [
+   {"level": "view", "label": T("Open-Meteo 历史天气说明", "Open-Meteo historical weather docs", "Dokumentasi cuaca sejarah Open-Meteo"), "url": "https://open-meteo.com/en/docs/historical-weather-api"},
+   {"level": "try", "label": T("直接取吉隆坡 2025 年每日雨量（JSON）", "Fetch Kuala Lumpur's 2025 daily rain (JSON)", "Ambil hujan harian Kuala Lumpur 2025 (JSON)"), "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_sum&timezone=Asia%2FKuala_Lumpur"},
+   {"level": "pro", "label": T("Copernicus 气候数据库的 ERA5 原始数据", "Raw ERA5 on the Copernicus Climate Data Store", "ERA5 mentah di Copernicus Climate Data Store"), "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "note": T("要注册帐号；文件是 GRIB 或 NetCDF。", "Needs a free account; files are GRIB or NetCDF.", "Memerlukan akaun percuma; fail dalam GRIB atau NetCDF.")}]},
+]
+
+quiz = [
+ {"stage": 5, "chapter": "ch15", "q": T("吉隆坡属于 Köppen 的哪一类？", "Which Köppen class is Kuala Lumpur?", "Kelas Köppen manakah Kuala Lumpur?"),
+  "options": [T("Af 热带雨林", "Af tropical rain forest", "Af hutan hujan tropika"), T("Aw 热带干湿季", "Aw tropical wet-and-dry", "Aw tropika basah-dan-kering"), T("B 干燥", "B dry", "B kering"), T("C 温和", "C mild", "C sederhana")],
+  "answer": 0, "why": T("每个月都暖、每个月雨量都多。", "Every month is warm and every month is wet.", "Setiap bulan panas dan setiap bulan basah.")},
+ {"stage": 5, "chapter": "ch15", "q": T("同一年同一个地方，为什么“雨日”可以是 315 天，也可以是 215 天？", "Why can the same place in the same year have 315 or 215 ‘rain days’?", "Mengapa tempat yang sama pada tahun yang sama boleh mempunyai 315 atau 215 ‘hari hujan’?"),
+  "options": [T("用了不同的雨量门槛", "Different rainfall thresholds", "Ambang hujan berbeza"), T("雨量计坏了", "The gauge broke", "Tolok rosak"), T("一个用公历，一个用农历", "Different calendars", "Kalendar berbeza"), T("全球变暖", "Global warming", "Pemanasan global")],
+  "answer": 0, "why": T("0.2 毫米门槛算进很多小雨的日子，2.5 毫米门槛就不算。", "A 0.2 mm threshold counts many light-rain days that a 2.5 mm threshold leaves out.", "Ambang 0.2 mm mengira banyak hari hujan renyai yang ditinggalkan oleh ambang 2.5 mm.")},
+ {"stage": 5, "chapter": "ch15", "q": T("“气候平均值”一般是多少年的平均？", "A climate normal is usually an average over how many years?", "Normal iklim biasanya purata berapa tahun?"),
+  "options": [T("30 年", "30 years", "30 tahun"), T("1 年", "1 year", "1 tahun"), T("5 年", "5 years", "5 tahun"), T("100 年", "100 years", "100 tahun")],
+  "answer": 0, "why": T("例如 1991–2020 年。", "For example 1991–2020.", "Contohnya 1991–2020.")},
+]
+
+write_chapter(chapter, terms, sources, quiz, datasets)

@@ -32,7 +32,7 @@ const MONTHS = {
   ms: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Ogo', 'Sep', 'Okt', 'Nov', 'Dis'],
 };
 let LANG = 'en';
-const xLabel = (v, format) => (format === 'hour' ? `${String(v).padStart(2, '0')}:00` : format === 'month' ? MONTHS[LANG][v - 1] : String(v));
+const xLabel = (v, format) => (format === 'hour' ? `${String(v).padStart(2, '0')}:00` : format === 'month' ? MONTHS[LANG][v - 1] : format === 'year' ? String(v).slice(0, 4) : String(v));
 
 function domain(values) {
   const lo = Math.min(...values), hi = Math.max(...values);
@@ -80,6 +80,12 @@ function draw(host, spec, data, lang) {
   if (axes.y2) g.append(s('text', { x: W - M.r + 8, y: M.t - 14, class: 'unit' }, axes.y2.unit));
   const every = Math.ceil(n / (W < 480 ? 4 : 8));
   xs.forEach((v, i) => { if (i % every === 0) g.append(s('text', { x: x(i), y: H - M.b + 18, 'text-anchor': 'middle' }, xLabel(v, spec.x.format))); });
+  // Reference lines, e.g. the ±0.5 °C El Niño / La Niña thresholds.
+  for (const r of spec.y.refs ?? []) {
+    const yy = axes.y.y(r.v);
+    g.append(s('line', { x1: M.l, x2: W - M.r, y1: yy, y2: yy, class: 'ref-line' }));
+    if (r.label) g.append(s('text', { x: W - M.r - 4, y: yy - 4, 'text-anchor': 'end', class: 'ref-label' }, pick(r.label, lang)));
+  }
   svg.append(g);
 
   // Series.
@@ -109,7 +115,7 @@ function draw(host, spec, data, lang) {
       dots[k].setAttribute('cx', xx);
       dots[k].setAttribute('cy', axes[sr.axis ?? 'y'].y(data.rows[at][col(sr.col)]));
     });
-    out.textContent = `${xLabel(xs[at], spec.x.format)} · ` + spec.series.map(sr =>
+    out.textContent = `${spec.x.format === 'year' ? xs[at] : xLabel(xs[at], spec.x.format)} · ` + spec.series.map(sr =>
       `${pick(sr.name, lang)} ${data.rows[at][col(sr.col)]}${spec[sr.axis ?? 'y'].unit === '%' ? ' %' : ` ${spec[sr.axis ?? 'y'].unit}`}`).join(' · ');
   };
   track(svg, p => show(Math.round(x.invert(p.x))));

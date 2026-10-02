@@ -1376,5 +1376,328 @@
    "ms": "Peringkat awal siklon tropika, berpusar dengan angin kira-kira 20–34 knot."
   },
   "chapter": 12
+ },
+ {
+  "id": "neap-tide",
+  "name": {
+   "zh": "小潮",
+   "en": "Neap tide",
+   "ms": "Pasang perbani"
+  },
+  "short": {
+   "zh": "上弦和下弦月时的潮汐，涨落幅度较小。",
+   "en": "The tides around first and last quarter, with a smaller range.",
+   "ms": "Pasang surut sekitar suku pertama dan akhir, dengan julat lebih kecil."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "ocean-current",
+  "name": {
+   "zh": "洋流",
+   "en": "Ocean current",
+   "ms": "Arus lautan"
+  },
+  "short": {
+   "zh": "被长期的风带动、大范围流动的表层海水。",
+   "en": "Large-scale flow of surface water set going by the prevailing winds.",
+   "ms": "Aliran air permukaan berskala besar yang digerakkan oleh angin lazim."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "significant-wave-height",
+  "name": {
+   "zh": "有效波高",
+   "en": "Significant wave height",
+   "ms": "Ketinggian ombak bererti"
+  },
+  "short": {
+   "zh": "约等于最高三分之一海浪的平均高度；预报里的“浪高”。",
+   "en": "Roughly the mean height of the highest third of the waves; the ‘wave height’ in forecasts.",
+   "ms": "Lebih kurang purata ketinggian sepertiga ombak tertinggi; ‘ketinggian ombak’ dalam ramalan."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "spring-tide",
+  "name": {
+   "zh": "大潮",
+   "en": "Spring tide",
+   "ms": "Pasang besar"
+  },
+  "short": {
+   "zh": "新月和满月时的潮汐，涨落幅度最大。",
+   "en": "The tides around new and full moon, with the greatest range.",
+   "ms": "Pasang surut sekitar bulan baharu dan purnama, dengan julat terbesar."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "sst",
+  "name": {
+   "zh": "海表温度",
+   "en": "Sea-surface temperature",
+   "ms": "Suhu permukaan laut"
+  },
+  "short": {
+   "zh": "海洋表层水的温度；影响上方空气的冷暖和湿度。",
+   "en": "The temperature of the ocean's surface water; it shapes the warmth and moisture of the air above.",
+   "ms": "Suhu air permukaan lautan; ia membentuk kehangatan dan kelembapan udara di atasnya."
+  },
+  "chapter": 13,
+  "abbr": "SST"
+ },
+ {
+  "id": "storm-surge",
+  "name": {
+   "zh": "风暴潮",
+   "en": "Storm surge",
+   "ms": "Ribut air pasang"
+  },
+  "short": {
+   "zh": "风暴的风把海水推向岸边造成的额外水位上升。",
+   "en": "The extra rise in sea level caused by a storm's winds pushing water onshore.",
+   "ms": "Kenaikan tambahan paras laut akibat angin ribut menolak air ke pantai."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "swell",
+  "name": {
+   "zh": "涌浪",
+   "en": "Swell",
+   "ms": "Alun"
+  },
+  "short": {
+   "zh": "远方风暴形成、长距离传来的浪，整齐、周期长。",
+   "en": "Waves from a distant storm that have travelled far; regular, long-period.",
+   "ms": "Ombak dari ribut jauh yang bergerak jauh; teratur, berkala panjang."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "tide",
+  "name": {
+   "zh": "潮汐",
+   "en": "Tide",
+   "ms": "Pasang surut"
+  },
+  "short": {
+   "zh": "月亮和太阳引力造成的海面规律涨落。",
+   "en": "The regular rise and fall of the sea caused by the pull of the Moon and Sun.",
+   "ms": "Naik turun laut yang teratur akibat tarikan Bulan dan Matahari."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "upwelling",
+  "name": {
+   "zh": "上升流",
+   "en": "Upwelling",
+   "ms": "Julangan air"
+  },
+  "short": {
+   "zh": "表层海水被风推走后，底下冰冷富养分的海水涌上来补充。",
+   "en": "Cold, nutrient-rich water rising to replace surface water pushed away by the wind.",
+   "ms": "Air sejuk kaya nutrien yang naik menggantikan air permukaan yang ditolak angin."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "wind-waves",
+  "name": {
+   "zh": "风浪",
+   "en": "Wind waves",
+   "ms": "Ombak angin"
+  },
+  "short": {
+   "zh": "由当地正在吹的风直接吹起的浪，较乱较陡。",
+   "en": "Waves raised by the local wind; choppy and steep.",
+   "ms": "Ombak yang dinaikkan angin setempat; berkocak dan curam."
+  },
+  "chapter": 13
+ },
+ {
+  "id": "el-nino",
+  "name": {
+   "zh": "厄尔尼诺",
+   "en": "El Niño",
+   "ms": "El Niño"
+  },
+  "short": {
+   "zh": "东太平洋赤道一带海水比平常暖很多的现象；东南亚常偏干。",
+   "en": "Unusual warming of the eastern equatorial Pacific; South-East Asia is often drier.",
+   "ms": "Pemanasan luar biasa Pasifik khatulistiwa timur; Asia Tenggara sering lebih kering."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "enso",
+  "name": {
+   "zh": "ENSO",
+   "en": "ENSO",
+   "ms": "ENSO"
+  },
+  "short": {
+   "zh": "厄尔尼诺和南方涛动的合称；包括厄尔尼诺、正常和拉尼娜。",
+   "en": "El Niño and the Southern Oscillation together, covering El Niño, neutral and La Niña.",
+   "ms": "El Niño dan Ayunan Selatan bersama, merangkumi El Niño, neutral dan La Niña."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "iod",
+  "name": {
+   "zh": "印度洋偶极子（IOD）",
+   "en": "Indian Ocean Dipole (IOD)",
+   "ms": "Dipol Lautan Hindi (IOD)"
+  },
+  "short": {
+   "zh": "印度洋东西两边海温的跷跷板；正相位时印尼一带偏干。",
+   "en": "A seesaw of sea temperature between the east and west Indian Ocean; positive phases dry Indonesia.",
+   "ms": "Jongkang-jongkit suhu laut antara Lautan Hindi timur dan barat; fasa positif mengeringkan Indonesia."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "la-nina",
+  "name": {
+   "zh": "拉尼娜",
+   "en": "La Niña",
+   "ms": "La Niña"
+  },
+  "short": {
+   "zh": "中、东太平洋海水比平常冷，信风特别强；马来西亚常偏湿。",
+   "en": "Colder than normal central and eastern Pacific with strong trades; Malaysia is often wetter.",
+   "ms": "Pasifik tengah dan timur lebih sejuk dengan angin pasat kuat; Malaysia sering lebih basah."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "mjo",
+  "name": {
+   "zh": "MJO（马登–朱利安振荡）",
+   "en": "MJO (Madden–Julian Oscillation)",
+   "ms": "MJO (Ayunan Madden–Julian)"
+  },
+  "short": {
+   "zh": "向东移动的热带云雨带，约 30–60 天绕地球一圈；分 8 个相位。",
+   "en": "An eastward-moving tropical band of cloud and rain that circles the globe in about 30–60 days; described in 8 phases.",
+   "ms": "Jalur awan dan hujan tropika yang bergerak ke timur, mengelilingi bumi dalam kira-kira 30–60 hari; diterangkan dalam 8 fasa."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "roni",
+  "name": {
+   "zh": "RONI 指数",
+   "en": "RONI",
+   "ms": "RONI"
+  },
+  "short": {
+   "zh": "NOAA 判断 ENSO 的指数：Niño 3.4 区海温距平减去热带平均；±0.5 °C 为门槛。",
+   "en": "NOAA's ENSO index: the Niño 3.4 sea-temperature departure minus the tropical average; ±0.5 °C is the threshold.",
+   "ms": "Indeks ENSO NOAA: sisihan suhu laut Niño 3.4 tolak purata tropika; ambangnya ±0.5 °C."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "southern-oscillation",
+  "name": {
+   "zh": "南方涛动",
+   "en": "Southern Oscillation",
+   "ms": "Ayunan Selatan"
+  },
+  "short": {
+   "zh": "太平洋东西两端气压像跷跷板一样互换。",
+   "en": "The seesaw of surface pressure between the two ends of the Pacific.",
+   "ms": "Jongkang-jongkit tekanan permukaan antara dua hujung Pasifik."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "teleconnection",
+  "name": {
+   "zh": "遥相关",
+   "en": "Teleconnection",
+   "ms": "Telesambungan"
+  },
+  "short": {
+   "zh": "一片海洋的冷暖改变很远地方天气的联系。",
+   "en": "A link by which a warm or cool ocean changes the weather far away.",
+   "ms": "Hubungan apabila lautan panas atau sejuk mengubah cuaca di tempat jauh."
+  },
+  "chapter": 14
+ },
+ {
+  "id": "anomaly",
+  "name": {
+   "zh": "距平",
+   "en": "Anomaly",
+   "ms": "Anomali"
+  },
+  "short": {
+   "zh": "实际值减去平均值；正数比平常高，负数比平常低。",
+   "en": "The actual value minus the normal; positive is above normal, negative below.",
+   "ms": "Nilai sebenar tolak normal; positif di atas normal, negatif di bawah."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "climate-normal",
+  "name": {
+   "zh": "气候平均值",
+   "en": "Climate normal",
+   "ms": "Normal iklim"
+  },
+  "short": {
+   "zh": "30 年的平均值，例如 1991–2020 年；用来说“平常”。",
+   "en": "A 30-year average such as 1991–2020; what ‘normal’ means.",
+   "ms": "Purata 30 tahun seperti 1991–2020; maksud ‘normal’."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "global-warming",
+  "name": {
+   "zh": "全球变暖",
+   "en": "Global warming",
+   "ms": "Pemanasan global"
+  },
+  "short": {
+   "zh": "温室气体增加，使全球平均气温长期升高。",
+   "en": "The long-term rise in global average temperature as greenhouse gases build up.",
+   "ms": "Kenaikan jangka panjang suhu purata global apabila gas rumah hijau bertambah."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "koppen",
+  "name": {
+   "zh": "Köppen 气候分类",
+   "en": "Köppen classification",
+   "ms": "Pengelasan Köppen"
+  },
+  "short": {
+   "zh": "按各月平均气温和雨量把气候分成 A、B、C、D、E 五大类；马来西亚多为 Af。",
+   "en": "Sorts climates by monthly temperature and rainfall into five types, A–E; most of Malaysia is Af.",
+   "ms": "Menyusun iklim mengikut suhu dan hujan bulanan kepada lima jenis, A–E; kebanyakan Malaysia ialah Af."
+  },
+  "chapter": 15
+ },
+ {
+  "id": "rain-day",
+  "name": {
+   "zh": "雨日",
+   "en": "Rain day",
+   "ms": "Hari hujan"
+  },
+  "short": {
+   "zh": "一天雨量达到某个门槛（0.2、1 或 2.5 毫米，看机构）就算一个雨日。",
+   "en": "A day whose rainfall reaches a threshold — 0.2, 1 or 2.5 mm depending on who is counting.",
+   "ms": "Hari yang hujannya mencapai ambang — 0.2, 1 atau 2.5 mm bergantung pada siapa yang mengira."
+  },
+  "chapter": 15
  }
 ]

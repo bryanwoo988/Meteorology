@@ -312,19 +312,17 @@
     "zh": "海洋与天气",
     "en": "The ocean and weather",
     "ms": "Lautan dan cuaca"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch14",
    "num": 14,
    "stage": 5,
    "title": {
-    "zh": "MJO、ENSO 与 IOD",
-    "en": "MJO, ENSO and IOD",
-    "ms": "MJO, ENSO dan IOD"
-   },
-   "ready": false
+    "zh": "厄尔尼诺、MJO 与印度洋偶极子",
+    "en": "El Niño, the MJO and the Indian Ocean Dipole",
+    "ms": "El Niño, MJO dan Dipol Lautan Hindi"
+   }
   },
   {
    "id": "ch15",
@@ -334,8 +332,7 @@
     "zh": "气候与气候变化",
     "en": "Climate and climate change",
     "ms": "Iklim dan perubahan iklim"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch16",

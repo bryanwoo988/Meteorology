@@ -24,6 +24,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "CLIMGOV-IOD",
+  "short": "Climate.gov",
+  "title": "Meet ENSO's neighbor, the Indian Ocean Dipole",
+  "publisher": "NOAA Climate.gov",
+  "url": "https://www.climate.gov/news-features/blogs/enso/meet-enso%E2%80%99s-neighbor-indian-ocean-dipole",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "CLIMGOV-MJO",
+  "short": "Climate.gov",
+  "title": "What is the MJO, and why do we care?",
+  "publisher": "NOAA Climate.gov",
+  "url": "https://www.climate.gov/news-features/blogs/enso/what-mjo-and-why-do-we-care",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "ECMWF-WHO",
   "short": "ECMWF",
   "title": "Who we are",
@@ -48,11 +64,43 @@
   "accessed": ""
  },
  {
+  "id": "ETCCDI",
+  "short": "ETCCDI",
+  "title": "Definitions of the 27 core climate-extremes indices (wet day: RR ≥ 1 mm)",
+  "publisher": "Expert Team on Climate Change Detection and Indices",
+  "url": "https://etccdi.pacificclimate.org/list_27_indices.shtml",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "FUN",
+  "short": "Fundamentals of Meteorology",
+  "title": "Fundamentals of Meteorology",
+  "publisher": "dokumen.pub edition",
+  "url": "",
+  "accessed": ""
+ },
+ {
+  "id": "IMD-GLOSS",
+  "short": "IMD",
+  "title": "Glossary (Rainy day: rainfall in a day of 2.5 mm or more)",
+  "publisher": "India Meteorological Department, Pune",
+  "url": "https://www.imdpune.gov.in/Reports/glossary.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "JMA-MSC",
   "short": "JMA",
   "title": "Himawari-8/9 — Meteorological Satellite Center",
   "publisher": "Japan Meteorological Agency",
   "url": "https://www.data.jma.go.jp/mscweb/en/himawari89/himawari_cast/himawari_cast.php",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "KOPPEN-BECK",
+  "short": "Beck et al. 2023",
+  "title": "High-resolution (1 km) Köppen-Geiger maps for 1901–2099 based on constrained CMIP6 projections (Scientific Data 10, 724); data on figshare (CC0)",
+  "publisher": "H. E. Beck, T. R. McVicar, N. Vergopolan, A. Berg et al., 2023",
+  "url": "https://doi.org/10.6084/m9.figshare.21789074",
   "accessed": "2026-10-02"
  },
  {
@@ -64,11 +112,27 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "MET-PHEN",
+  "short": "MetMalaysia",
+  "title": "Weather phenomena (monsoons, El Niño, thunderstorms, squall lines)",
+  "publisher": "Malaysian Meteorological Department",
+  "url": "https://www.met.gov.my/en/pendidikan/fenomena-cuaca/",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "METMY-SWM2024",
   "short": "MetMalaysia 2025",
   "title": "Review of the Southwest Monsoon 2024 in Malaysia (Research Publication No. 2/2025)",
   "publisher": "N. Mohd Rashid, W. F. Mustafah, Z. A. Mokhtar & M. F. A. Abdullah, Malaysian Meteorological Department, December 2025",
   "url": "https://www.met.gov.my/data/research/researchpapers/2025/RP04_2025.pdf",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-CPC-RONI",
+  "short": "NOAA CPC",
+  "title": "Relative Oceanic Niño Index (RONI) — announcement and data",
+  "publisher": "NOAA Climate Prediction Center",
+  "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/",
   "accessed": "2026-10-02"
  },
  {
@@ -93,6 +157,30 @@
   "title": "Trends in Atmospheric Carbon Dioxide — Global",
   "publisher": "NOAA Global Monitoring Laboratory",
   "url": "https://gml.noaa.gov/ccgg/trends/global.html",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-OISST",
+  "short": "NOAA OISST",
+  "title": "NOAA OI SST V2 (monthly, 1°) and 1991–2020 climatology",
+  "publisher": "NOAA Physical Sciences Laboratory",
+  "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-SURGE",
+  "short": "NOAA",
+  "title": "What is the difference between storm surge and storm tide?",
+  "publisher": "NOAA Ocean Service",
+  "url": "https://oceanservice.noaa.gov/facts/stormsurge-stormtide.html",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-TIDES",
+  "short": "NOAA",
+  "title": "What is a spring tide? / neap tide",
+  "publisher": "NOAA Ocean Service",
+  "url": "https://oceanservice.noaa.gov/facts/springtide.html",
   "accessed": "2026-10-02"
  },
  {
@@ -160,11 +248,43 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "WINDY-OVERLAYS",
+  "short": "Windy",
+  "title": "Description of weather overlays",
+  "publisher": "Windy.com community",
+  "url": "https://community.windy.com/topic/3361/description-of-weather-overlays",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-2025",
+  "short": "WMO",
+  "title": "WMO confirms 2025 was one of warmest years on record (press release, 14 January 2026)",
+  "publisher": "World Meteorological Organization",
+  "url": "https://wmo.int/news/media-centre/wmo-confirms-2025-was-one-of-warmest-years-record",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "WMO-75",
   "short": "WMO",
   "title": "2025 – Celebrating 75 Years of WMO Science for Action",
   "publisher": "World Meteorological Organization",
   "url": "https://wmo.int/resources/wmo-bulletin/wmo-bulletin-vol-73-2-2024/2025-celebrating-75-years-of-wmo-science-action",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-NORMALS",
+  "short": "WMO",
+  "title": "WMO Climatological Normals",
+  "publisher": "World Meteorological Organization",
+  "url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/climate-services/wmo-climatological-normals",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-NORMALS-PARAMS",
+  "short": "WMO / NCEI",
+  "title": "WMO Normals 1991–2020: Format and Descriptors (Table 1, principal climatological surface parameters)",
+  "publisher": "NOAA NCEI archive of WMO Climatological Standard Normals",
+  "url": "https://www.ncei.noaa.gov/data/oceans/archive/arc0216/0253808/6.6/data/0-data/documents/WMO_Normals_9120_Format_and_Parameters.pdf",
   "accessed": "2026-10-02"
  }
 ]

@@ -1478,5 +1478,338 @@
    "en": "By day the land is hotter and its pressure lower, so cool sea air flows in.",
    "ms": "Pada siang hari darat lebih panas dan tekanannya lebih rendah, jadi udara laut yang sejuk mengalir masuk."
   }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "大陆东岸通常是哪一种洋流？",
+   "en": "What kind of current usually runs along the east coast of a continent?",
+   "ms": "Jenis arus apakah biasanya mengalir di pantai timur benua?"
+  },
+  "options": [
+   {
+    "zh": "从赤道流向两极的暖流",
+    "en": "A warm current flowing poleward",
+    "ms": "Arus panas mengalir ke kutub"
+   },
+   {
+    "zh": "从两极流向赤道的寒流",
+    "en": "A cold current flowing towards the equator",
+    "ms": "Arus sejuk mengalir ke khatulistiwa"
+   },
+   {
+    "zh": "没有洋流",
+    "en": "No current",
+    "ms": "Tiada arus"
+   },
+   {
+    "zh": "潮流",
+    "en": "A tidal current",
+    "ms": "Arus pasang surut"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如墨西哥湾流和黑潮；西岸通常是寒流。",
+   "en": "For example the Gulf Stream and Kuroshio; west coasts usually have cold currents.",
+   "ms": "Contohnya Arus Teluk dan Kuroshio; pantai barat biasanya mempunyai arus sejuk."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "大潮出现在什么时候？",
+   "en": "When do spring tides happen?",
+   "ms": "Bilakah pasang besar berlaku?"
+  },
+  "options": [
+   {
+    "zh": "新月和满月",
+    "en": "At new and full moon",
+    "ms": "Pada bulan baharu dan purnama"
+   },
+   {
+    "zh": "上弦和下弦月",
+    "en": "At first and last quarter",
+    "ms": "Pada suku pertama dan akhir"
+   },
+   {
+    "zh": "只在雨季",
+    "en": "Only in the rainy season",
+    "ms": "Hanya pada musim hujan"
+   },
+   {
+    "zh": "只在春天",
+    "en": "Only in spring",
+    "ms": "Hanya pada musim bunga"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "太阳、地球、月亮排成一线，引力叠加；名字里的“春”和季节无关。",
+   "en": "Sun, Earth and Moon line up and their pulls add; ‘spring’ has nothing to do with the season.",
+   "ms": "Matahari, Bumi dan Bulan sebaris dan tarikan bergabung; ‘spring’ tiada kaitan dengan musim."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch13",
+  "q": {
+   "zh": "当地没有风，海上却有很大的浪，最可能是哪一种？",
+   "en": "No wind here, yet big waves at sea: which kind are they most likely to be?",
+   "ms": "Tiada angin di sini, tetapi ombak besar di laut: jenis manakah paling mungkin?"
+  },
+  "options": [
+   {
+    "zh": "涌浪",
+    "en": "Swell",
+    "ms": "Alun"
+   },
+   {
+    "zh": "风浪",
+    "en": "Wind waves",
+    "ms": "Ombak angin"
+   },
+   {
+    "zh": "潮汐",
+    "en": "Tide",
+    "ms": "Pasang surut"
+   },
+   {
+    "zh": "上升流",
+    "en": "Upwelling",
+    "ms": "Julangan air"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "涌浪在远方风暴里形成，可以传得很远。",
+   "en": "Swell is made by a distant storm and can travel far.",
+   "ms": "Alun dihasilkan ribut jauh dan boleh bergerak jauh."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "吉隆坡属于 Köppen 的哪一类？",
+   "en": "Which Köppen class is Kuala Lumpur?",
+   "ms": "Kelas Köppen manakah Kuala Lumpur?"
+  },
+  "options": [
+   {
+    "zh": "Af 热带雨林",
+    "en": "Af tropical rain forest",
+    "ms": "Af hutan hujan tropika"
+   },
+   {
+    "zh": "Aw 热带干湿季",
+    "en": "Aw tropical wet-and-dry",
+    "ms": "Aw tropika basah-dan-kering"
+   },
+   {
+    "zh": "B 干燥",
+    "en": "B dry",
+    "ms": "B kering"
+   },
+   {
+    "zh": "C 温和",
+    "en": "C mild",
+    "ms": "C sederhana"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "每个月都暖、每个月雨量都多。",
+   "en": "Every month is warm and every month is wet.",
+   "ms": "Setiap bulan panas dan setiap bulan basah."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "同一年同一个地方，为什么“雨日”可以是 315 天，也可以是 215 天？",
+   "en": "Why can the same place in the same year have 315 or 215 ‘rain days’?",
+   "ms": "Mengapa tempat yang sama pada tahun yang sama boleh mempunyai 315 atau 215 ‘hari hujan’?"
+  },
+  "options": [
+   {
+    "zh": "用了不同的雨量门槛",
+    "en": "Different rainfall thresholds",
+    "ms": "Ambang hujan berbeza"
+   },
+   {
+    "zh": "雨量计坏了",
+    "en": "The gauge broke",
+    "ms": "Tolok rosak"
+   },
+   {
+    "zh": "一个用公历，一个用农历",
+    "en": "Different calendars",
+    "ms": "Kalendar berbeza"
+   },
+   {
+    "zh": "全球变暖",
+    "en": "Global warming",
+    "ms": "Pemanasan global"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "0.2 毫米门槛算进很多小雨的日子，2.5 毫米门槛就不算。",
+   "en": "A 0.2 mm threshold counts many light-rain days that a 2.5 mm threshold leaves out.",
+   "ms": "Ambang 0.2 mm mengira banyak hari hujan renyai yang ditinggalkan oleh ambang 2.5 mm."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch15",
+  "q": {
+   "zh": "“气候平均值”一般是多少年的平均？",
+   "en": "A climate normal is usually an average over how many years?",
+   "ms": "Normal iklim biasanya purata berapa tahun?"
+  },
+  "options": [
+   {
+    "zh": "30 年",
+    "en": "30 years",
+    "ms": "30 tahun"
+   },
+   {
+    "zh": "1 年",
+    "en": "1 year",
+    "ms": "1 tahun"
+   },
+   {
+    "zh": "5 年",
+    "en": "5 years",
+    "ms": "5 tahun"
+   },
+   {
+    "zh": "100 年",
+    "en": "100 years",
+    "ms": "100 tahun"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "例如 1991–2020 年。",
+   "en": "For example 1991–2020.",
+   "ms": "Contohnya 1991–2020."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "厄尔尼诺时，太平洋的信风通常怎样？",
+   "en": "During El Niño, what usually happens to the Pacific trade winds?",
+   "ms": "Semasa El Niño, apakah biasanya berlaku kepada angin pasat Pasifik?"
+  },
+  "options": [
+   {
+    "zh": "变弱，甚至改吹西风",
+    "en": "They weaken, or even turn westerly",
+    "ms": "Melemah, malah bertukar menjadi angin barat"
+   },
+   {
+    "zh": "变得特别强",
+    "en": "They become extra strong",
+    "ms": "Menjadi sangat kuat"
+   },
+   {
+    "zh": "完全不变",
+    "en": "No change",
+    "ms": "Tiada perubahan"
+   },
+   {
+    "zh": "改为南北方向",
+    "en": "They turn north–south",
+    "ms": "Bertukar arah utara–selatan"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "信风变弱，暖水就往东流到南美洲那边。",
+   "en": "With weaker trades the warm water flows east towards South America.",
+   "ms": "Dengan angin pasat lemah, air panas mengalir ke timur ke arah Amerika Selatan."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "RONI 是 +1.36 °C，代表什么？",
+   "en": "The RONI reads +1.36 °C. What does that indicate?",
+   "ms": "RONI ialah +1.36 °C. Apakah maksudnya?"
+  },
+  "options": [
+   {
+    "zh": "厄尔尼诺的状态",
+    "en": "El Niño conditions",
+    "ms": "Keadaan El Niño"
+   },
+   {
+    "zh": "拉尼娜的状态",
+    "en": "La Niña conditions",
+    "ms": "Keadaan La Niña"
+   },
+   {
+    "zh": "中性",
+    "en": "Neutral",
+    "ms": "Neutral"
+   },
+   {
+    "zh": "马来西亚的气温",
+    "en": "Malaysia's temperature",
+    "ms": "Suhu Malaysia"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "超过 +0.5 °C 就是厄尔尼诺的状态；要连续 5 季才算一次厄尔尼诺。",
+   "en": "Above +0.5 °C means El Niño conditions; 5 seasons in a row make an episode.",
+   "ms": "Melebihi +0.5 °C bermakna keadaan El Niño; 5 musim berturut-turut menjadikannya satu episod."
+  }
+ },
+ {
+  "stage": 5,
+  "chapter": "ch14",
+  "q": {
+   "zh": "MJO 在哪两个相位时，雨带在马来西亚、印尼上空？",
+   "en": "In which two MJO phases is the wet band over Malaysia and Indonesia?",
+   "ms": "Dalam dua fasa MJO manakah jalur basah berada di atas Malaysia dan Indonesia?"
+  },
+  "options": [
+   {
+    "zh": "第 4、5 相位",
+    "en": "Phases 4 and 5",
+    "ms": "Fasa 4 dan 5"
+   },
+   {
+    "zh": "第 1、2 相位",
+    "en": "Phases 1 and 2",
+    "ms": "Fasa 1 dan 2"
+   },
+   {
+    "zh": "第 7、8 相位",
+    "en": "Phases 7 and 8",
+    "ms": "Fasa 7 dan 8"
+   },
+   {
+    "zh": "每一个相位都一样",
+    "en": "Every phase alike",
+    "ms": "Semua fasa sama"
+   }
+  ],
+  "answer": 0,
+  "why": {
+   "zh": "第 2、3 在印度洋，4、5 在海洋性大陆，6、7 在西太平洋。",
+   "en": "2–3 are over the Indian Ocean, 4–5 the Maritime Continent, 6–7 the western Pacific.",
+   "ms": "2–3 di atas Lautan Hindi, 4–5 Benua Maritim, 6–7 Pasifik barat."
+  }
  }
 ]

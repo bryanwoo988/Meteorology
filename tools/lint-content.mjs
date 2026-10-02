@@ -28,6 +28,11 @@ function checkTri(v, where, errors, path = '') {
   else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) checkTri(x, where, errors, path ? `${path}.${k}` : k);
 }
 
+// Colour tokens the charts may use: every custom property in the app's stylesheets.
+const CSS_DIR = fileURLToPath(new URL('../css/', import.meta.url));
+const COLOUR_TOKENS = new Set(readdirSync(CSS_DIR).filter(f => f.endsWith('.css'))
+  .flatMap(f => [...readFileSync(join(CSS_DIR, f), 'utf8').matchAll(/--([a-z0-9-]+)\s*:/g)].map(m => m[1])));
+
 export function lint(root) {
   const errors = [];
   const read = f => JSON.parse(readFileSync(join(root, 'data', f), 'utf8'));
@@ -89,6 +94,7 @@ export function lint(root) {
         if (r.length !== b.headers.length) errors.push(`${ch.id} table row ${i + 1} has ${r.length} cells, header has ${b.headers.length} (${at})`);
       });
       if (b.type === 'chart' && b.chart?.series_file && !existsSync(join(root, 'data', 'series', `${b.chart.series_file}.json`))) errors.push(`${at}: chart series_file ${b.chart.series_file} not found`);
+      if (b.type === 'chart') for (const s of b.chart?.series ?? []) if (s.color && !COLOUR_TOKENS.has(s.color)) errors.push(`${at}: chart colour "${s.color}" is not a CSS token`);
       if (b.type === 'chart') for (const s of b.chart?.series ?? []) if (s.values && s.values.length !== (b.chart.x?.categories ?? []).length) errors.push(`${at}: chart series length mismatch`);
       if (b.type === 'figure' && !existsSync(join(root, b.src))) errors.push(`${at}: figure ${b.src} not found`);
       if ((b.type === 'widget' || b.type === 'map') && !existsSync(join(root, 'js', 'widgets', `${String(b.id).toLowerCase()}.js`))) errors.push(`${at}: ${b.type} ${b.id} has no module`);

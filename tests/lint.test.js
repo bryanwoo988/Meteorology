@@ -88,3 +88,7 @@ test('a chapter not yet written (ready:false) is listed but not required', () =>
     c.index.chapters.push({ id: 'ch03', num: 3, stage: 6, title: T('Three'), blurb: T('b'), ready: false });
   }), []);
 });
+
+test('a chart series colour must be a colour token in the stylesheet', () => has(errorsOf(c => {
+  c.ch01.sections[0].blocks.push({ type: 'chart', src: ['S1'], chart: { kind: 'line', series_file: 'x', series: [{ col: 'v', color: 'sea' }] } });
+}), /chart colour "sea" is not a CSS token/));

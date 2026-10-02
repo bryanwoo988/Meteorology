@@ -1,0 +1,427 @@
+{
+ "id": "ch14",
+ "num": 14,
+ "stage": 5,
+ "title": {
+  "zh": "厄尔尼诺、MJO 与印度洋偶极子",
+  "en": "El Niño, the MJO and the Indian Ocean Dipole",
+  "ms": "El Niño, MJO dan Dipol Lautan Hindi"
+ },
+ "sources": [
+  "ESS",
+  "FUN",
+  "NOAA-CPC-RONI",
+  "MET-PHEN",
+  "METMY-SWM2024",
+  "CLIMGOV-MJO",
+  "CLIMGOV-IOD"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "厄尔尼诺和拉尼娜",
+    "en": "El Niño and La Niña",
+    "ms": "El Niño dan La Niña"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "第 11 章讲过 Walker 环流：平常信风把暖水推到西太平洋，东南亚这边空气上升、多雨。每隔几年，信风会变弱，甚至改吹西风，暖水就往东流到南美洲那边，东太平洋赤道一带的海水比平常暖很多。这叫{{t:el-nino}}。",
+      "en": "Chapter 11 described the Walker circulation: normally the trade winds push warm water to the western Pacific, and air rises with plenty of rain on South-East Asia's side. Every few years the trades weaken, or even turn westerly, and the warm water flows east towards South America, leaving the eastern equatorial Pacific much warmer than usual. This is {{t:el-nino}}.",
+      "ms": "Bab 11 menerangkan peredaran Walker: biasanya angin pasat menolak air panas ke Pasifik barat, dan udara naik dengan banyak hujan di sebelah Asia Tenggara. Setiap beberapa tahun angin pasat melemah, malah bertukar menjadi angin barat, dan air panas mengalir ke timur ke arah Amerika Selatan, menjadikan Pasifik khatulistiwa timur jauh lebih panas daripada biasa. Inilah {{t:el-nino}}."
+     },
+     "defines": [
+      "el-nino"
+     ],
+     "src": [
+      "ESS:205-206"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "同时，太平洋两端的气压也像跷跷板一样互换：西边气压升高，东边气压降低。这个跷跷板叫{{t:southern-oscillation}}。海水变暖和气压互换差不多同时发生，所以两者合称{{t:enso}}。",
+      "en": "At the same time the pressure at the two ends of the Pacific swaps like a seesaw: it rises in the west and falls in the east. The seesaw is the {{t:southern-oscillation}}. Because the ocean warming and the pressure swap happen together, the two are called by one name: {{t:enso}}.",
+      "ms": "Pada masa yang sama tekanan di kedua-dua hujung Pasifik bertukar seperti jongkang-jongkit: naik di barat dan turun di timur. Jongkang-jongkit ini ialah {{t:southern-oscillation}}. Oleh sebab pemanasan laut dan pertukaran tekanan berlaku bersama, kedua-duanya dipanggil dengan satu nama: {{t:enso}}."
+     },
+     "defines": [
+      "southern-oscillation",
+      "enso"
+     ],
+     "src": [
+      "ESS:206"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "相反的情况叫{{t:la-nina}}：信风特别强，东太平洋和中太平洋的海水比平常冷，暖水和多雨的天气更集中在西太平洋。",
+      "en": "The opposite is {{t:la-nina}}: the trades are unusually strong, the central and eastern Pacific are colder than normal, and the warm water and rainy weather are crowded into the western Pacific.",
+      "ms": "Keadaan bertentangan ialah {{t:la-nina}}: angin pasat luar biasa kuat, Pasifik tengah dan timur lebih sejuk daripada biasa, dan air panas serta cuaca hujan tertumpu di Pasifik barat."
+     },
+     "defines": [
+      "la-nina"
+     ],
+     "src": [
+      "ESS:207"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W12"
+    },
+    {
+     "type": "map",
+     "id": "M6"
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "每一次 ENSO 都不完全一样，强弱和过程各有不同。所以“今年是厄尔尼诺”只是告诉你偏向哪一边，不等于每一天都会干。",
+      "en": "Each ENSO event is different in strength and behaviour. So ‘this is an El Niño year’ tells you which way the odds lean; it does not mean every day will be dry.",
+      "ms": "Setiap peristiwa ENSO berbeza dari segi kekuatan dan perjalanannya. Jadi ‘tahun ini El Niño’ memberitahu ke arah mana kebarangkalian condong; ia tidak bermakna setiap hari akan kering."
+     },
+     "src": [
+      "ESS:206"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "怎样知道现在是不是厄尔尼诺",
+    "en": "How to tell whether El Niño is under way",
+    "ms": "Cara mengetahui sama ada El Niño sedang berlaku"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "美国 NOAA 气候预测中心（CPC）用一个数字来判断，自 2026 年 2 月起改用{{t:roni}}。做法是：取赤道太平洋 Niño 3.4 区（5°N–5°S、120°–170°W）三个月的平均海温距平，再减去整个热带（20°N–20°S）的平均距平。减掉热带平均，是为了不把全球变暖造成的整体升温误当成厄尔尼诺。",
+      "en": "The US NOAA Climate Prediction Center (CPC) decides with a single number, and since February 2026 that number is the {{t:roni}}. It takes the three-month average sea-temperature departure in the Niño 3.4 box of the equatorial Pacific (5°N–5°S, 120°–170°W) and subtracts the average departure across the whole tropics (20°N–20°S). Subtracting the tropical average stops the overall warming of the oceans being mistaken for El Niño.",
+      "ms": "Pusat Ramalan Iklim NOAA AS (CPC) membuat keputusan dengan satu nombor, dan sejak Februari 2026 nombor itu ialah {{t:roni}}. Ia mengambil purata tiga bulan sisihan suhu laut di kotak Niño 3.4 Pasifik khatulistiwa (5°U–5°S, 120°–170°B) dan menolak purata sisihan seluruh kawasan tropika (20°U–20°S). Penolakan purata tropika mengelakkan pemanasan keseluruhan lautan disangka El Niño."
+     },
+     "defines": [
+      "roni"
+     ],
+     "src": [
+      "NOAA-CPC-RONI"
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      {
+       "zh": "+0.5 °C 或以上：厄尔尼诺的状态",
+       "en": "+0.5 °C or more: El Niño conditions",
+       "ms": "+0.5 °C atau lebih: keadaan El Niño"
+      },
+      {
+       "zh": "−0.5 °C 或以下：拉尼娜的状态",
+       "en": "−0.5 °C or less: La Niña conditions",
+       "ms": "−0.5 °C atau kurang: keadaan La Niña"
+      },
+      {
+       "zh": "要连续至少 5 个重叠的三个月都超过门槛，才算一次厄尔尼诺或拉尼娜",
+       "en": "It counts as an El Niño or La Niña episode only when at least 5 overlapping three-month seasons in a row pass the threshold",
+       "ms": "Ia dikira sebagai episod El Niño atau La Niña hanya apabila sekurang-kurangnya 5 musim tiga bulan bertindih berturut-turut melepasi ambang"
+      }
+     ],
+     "src": [
+      "NOAA-CPC-RONI"
+     ]
+    },
+    {
+     "type": "chart",
+     "src": [
+      "NOAA-CPC-RONI"
+     ],
+     "chart": {
+      "kind": "line",
+      "series_file": "roni",
+      "title": {
+       "zh": "RONI 指数，1980–2026",
+       "en": "The RONI, 1980–2026",
+       "ms": "Indeks RONI, 1980–2026"
+      },
+      "x": {
+       "col": "season",
+       "label": {
+        "zh": "年份",
+        "en": "Year",
+        "ms": "Tahun"
+       },
+       "format": "year"
+      },
+      "y": {
+       "label": {
+        "zh": "距平",
+        "en": "Departure",
+        "ms": "Sisihan"
+       },
+       "unit": "°C",
+       "refs": [
+        {
+         "v": 0.5,
+         "label": {
+          "zh": "厄尔尼诺门槛",
+          "en": "El Niño threshold",
+          "ms": "Ambang El Niño"
+         }
+        },
+        {
+         "v": -0.5,
+         "label": {
+          "zh": "拉尼娜门槛",
+          "en": "La Niña threshold",
+          "ms": "Ambang La Niña"
+         }
+        }
+       ]
+      },
+      "series": [
+       {
+        "col": "anomaly",
+        "name": {
+         "zh": "RONI",
+         "en": "RONI",
+         "ms": "RONI"
+        },
+        "color": "sky"
+       }
+      ]
+     }
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "图上最高的两座峰是 1997–98 年和 2015–16 年的强厄尔尼诺（RONI 超过 +2 °C），最深的谷之一是 2010–11 年的拉尼娜（约 −1.6 °C）。拖动图表就能读出每一季的数值。最新一季 2026 年 6–8 月是 +1.36 °C，已经连续两季超过 +0.5 °C。",
+      "en": "The two highest peaks are the strong El Niños of 1997–98 and 2015–16 (RONI above +2 °C); one of the deepest troughs is the La Niña of 2010–11 (about −1.6 °C). Drag across the chart to read each season. The latest season, June–August 2026, is +1.36 °C, the second season in a row above +0.5 °C.",
+      "ms": "Dua puncak tertinggi ialah El Niño kuat 1997–98 dan 2015–16 (RONI melebihi +2 °C); salah satu lembah terdalam ialah La Niña 2010–11 (kira-kira −1.6 °C). Seret merentasi carta untuk membaca setiap musim. Musim terkini, Jun–Ogos 2026, ialah +1.36 °C, musim kedua berturut-turut melebihi +0.5 °C."
+     },
+     "src": [
+      "NOAA-CPC-RONI"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "noaa-roni"
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "很多旧文章和网站还在用 ONI，就是不减热带平均的旧版本。两个数字可以差不少：2026 年 6–8 月，ONI 是 +1.80 °C，RONI 是 +1.36 °C。看到两个数字不同，先看它用的是哪一个指数。",
+      "en": "Many older articles and websites still quote the ONI, the older version that does not subtract the tropical average. The two can differ a good deal: for June–August 2026 the ONI was +1.80 °C and the RONI +1.36 °C. When two numbers disagree, check which index each one uses.",
+      "ms": "Banyak artikel dan laman web lama masih memetik ONI, versi lama yang tidak menolak purata tropika. Kedua-duanya boleh berbeza agak banyak: bagi Jun–Ogos 2026 ONI ialah +1.80 °C dan RONI +1.36 °C. Apabila dua nombor tidak sama, semak indeks mana yang digunakan."
+     },
+     "src": [
+      "NOAA-CPC-RONI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "远方的海洋怎样影响马来西亚",
+    "en": "How a distant ocean reaches Malaysia",
+    "ms": "Bagaimana lautan jauh mempengaruhi Malaysia"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "一片海洋变暖或变冷，可以改变很远地方的天气，这叫{{t:teleconnection}}。强厄尔尼诺时，印尼、澳洲和非洲南部常常干旱，秘鲁和厄瓜多尔却常有大雨和水灾。",
+      "en": "When one part of the ocean turns warmer or colder it can change the weather far away: a {{t:teleconnection}}. During strong El Niños, drought is common in Indonesia, Australia and southern Africa, while Peru and Ecuador often get heavy rain and floods.",
+      "ms": "Apabila sebahagian lautan menjadi lebih panas atau sejuk, ia boleh mengubah cuaca di tempat yang jauh: {{t:teleconnection}}. Semasa El Niño kuat, kemarau biasa berlaku di Indonesia, Australia dan selatan Afrika, manakala Peru dan Ecuador sering menerima hujan lebat dan banjir."
+     },
+     "defines": [
+      "teleconnection"
+     ],
+     "src": [
+      "ESS:206-207"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "MET-PHEN",
+      "FUN:175"
+     ],
+     "caption": {
+      "zh": "ENSO 对马来西亚雨量的影响",
+      "en": "What ENSO does to Malaysia's rainfall",
+      "ms": "Kesan ENSO terhadap hujan Malaysia"
+     },
+     "headers": [
+      {
+       "zh": "情况",
+       "en": "State",
+       "ms": "Keadaan"
+      },
+      {
+       "zh": "影响",
+       "en": "Effect",
+       "ms": "Kesan"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "中等或强的厄尔尼诺",
+        "en": "Moderate or strong El Niño",
+        "ms": "El Niño sederhana atau kuat"
+       },
+       {
+        "zh": "沙巴、砂拉越在西南季风（6–8 月）和东北季风（11–2 月）雨量远低于平均；半岛只在西南季风（6–8 月）偏少",
+        "en": "Sabah and Sarawak get far below-average rain in both the south-west monsoon (June–August) and the north-east monsoon (November–February); the Peninsula is drier only in the south-west monsoon (June–August)",
+        "ms": "Sabah dan Sarawak menerima hujan jauh di bawah purata dalam monsun barat daya (Jun–Ogos) dan monsun timur laut (November–Februari); Semenanjung lebih kering hanya dalam monsun barat daya (Jun–Ogos)"
+       }
+      ],
+      [
+       {
+        "zh": "弱的厄尔尼诺",
+        "en": "Weak El Niño",
+        "ms": "El Niño lemah"
+       },
+       {
+        "zh": "影响很小",
+        "en": "Little effect",
+        "ms": "Kesan kecil"
+       }
+      ],
+      [
+       {
+        "zh": "拉尼娜",
+        "en": "La Niña",
+        "ms": "La Niña"
+       },
+       {
+        "zh": "西太平洋赤道一带气压降低，云多、雨大；马来西亚、菲律宾和印尼常有大雨",
+        "en": "Pressure falls over the western equatorial Pacific, with more cloud and rain; Malaysia, the Philippines and Indonesia often get heavy rain",
+        "ms": "Tekanan turun di Pasifik khatulistiwa barat, dengan lebih banyak awan dan hujan; Malaysia, Filipina dan Indonesia sering menerima hujan lebat"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "马来西亚 2024 年的西南季风期间，ENSO 是中性的。大马气象局的检讨报告说，这时远方的影响很小，天气比较接近长期平均。",
+      "en": "During Malaysia's 2024 south-west monsoon ENSO was neutral. MetMalaysia's review says that with no distant push, the weather stayed closer to the long-term average.",
+      "ms": "Semasa monsun barat daya 2024 di Malaysia, ENSO berada dalam keadaan neutral. Kajian semula MetMalaysia menyatakan bahawa tanpa pengaruh jauh, cuaca kekal lebih hampir kepada purata jangka panjang."
+     },
+     "src": [
+      "METMY-SWM2024"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "MJO：往东走的雨带",
+    "en": "The MJO: a band of rain that travels east",
+    "ms": "MJO: jalur hujan yang bergerak ke timur"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "ENSO 一次要一两年，但热带还有一个快得多的变化：{{t:mjo}}。它是一大片云多雨多的区域，从印度洋出发，以每秒约 4 到 8 米的速度向东移动，经过东南亚，再到太平洋。大约 30 到 60 天绕地球一圈。雨带后面跟着一段云少雨少的日子。",
+      "en": "ENSO takes a year or two, but the tropics also have a much faster swing: the {{t:mjo}}. It is a huge area of extra cloud and rain that sets off from the Indian Ocean and moves east at about 4 to 8 metres a second, across South-East Asia and on into the Pacific, circling the globe in roughly 30 to 60 days. Behind the wet band come drier days with fewer storms.",
+      "ms": "ENSO mengambil masa setahun dua, tetapi kawasan tropika juga mempunyai ayunan yang jauh lebih cepat: {{t:mjo}}. Ia ialah kawasan besar yang lebih berawan dan berhujan, bermula dari Lautan Hindi dan bergerak ke timur kira-kira 4 hingga 8 meter sesaat, merentasi Asia Tenggara dan terus ke Pasifik, mengelilingi bumi dalam kira-kira 30 hingga 60 hari. Di belakang jalur basah datang hari-hari lebih kering dengan kurang ribut."
+     },
+     "defines": [
+      "mjo"
+     ],
+     "src": [
+      "FUN:175",
+      "CLIMGOV-MJO"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M7"
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "预报员把 MJO 分成 8 个相位，第 4、5 相位时雨带在海洋性大陆（马来西亚、印尼一带）上空。大马气象局的报告指出：2024 年 5 月 MJO 在第 5 相位活跃，9 月上中旬在第 4、5 相位活跃，都可能加强了这一带的对流和大雨；6 到 8 月 MJO 很弱，对雨量的影响很小。",
+      "en": "Forecasters divide the MJO into 8 phases; in phases 4 and 5 the wet band sits over the Maritime Continent — Malaysia and Indonesia. MetMalaysia's review notes that an active MJO in phase 5 in May 2024, and in phases 4 and 5 in early to mid-September 2024, likely enhanced convection and heavy rain over the region, while from June to August the MJO was weak and did little to the rainfall.",
+      "ms": "Peramal membahagikan MJO kepada 8 fasa; dalam fasa 4 dan 5 jalur basah berada di atas Benua Maritim — Malaysia dan Indonesia. Kajian semula MetMalaysia mencatat bahawa MJO aktif dalam fasa 5 pada Mei 2024, dan dalam fasa 4 dan 5 pada awal hingga pertengahan September 2024, berkemungkinan menguatkan perolakan dan hujan lebat di rantau ini, manakala dari Jun hingga Ogos MJO lemah dan tidak banyak mempengaruhi hujan."
+     },
+     "src": [
+      "METMY-SWM2024"
+     ]
+    },
+    {
+     "type": "dataset",
+     "id": "bom-rmm"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "heading": {
+    "zh": "印度洋偶极子",
+    "en": "The Indian Ocean Dipole",
+    "ms": "Dipol Lautan Hindi"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "印度洋也有类似的跷跷板，叫{{t:iod}}。正相位时，东印度洋（苏门答腊、爪哇附近）海水偏冷，西印度洋偏暖，印尼和澳洲比较干，东非比较湿；负相位刚好相反。它通常在 9 到 11 月最明显。",
+      "en": "The Indian Ocean has a seesaw of its own: the {{t:iod}}. In its positive phase the eastern Indian Ocean, near Sumatra and Java, is cooler than usual and the western side warmer; Indonesia and Australia tend to be drier and East Africa wetter. The negative phase is the reverse. It is usually strongest from September to November.",
+      "ms": "Lautan Hindi mempunyai jongkang-jongkitnya sendiri: {{t:iod}}. Dalam fasa positif, Lautan Hindi timur berhampiran Sumatera dan Jawa lebih sejuk daripada biasa dan bahagian barat lebih panas; Indonesia dan Australia cenderung lebih kering dan Afrika Timur lebih basah. Fasa negatif adalah sebaliknya. Ia biasanya paling kuat dari September hingga November."
+     },
+     "defines": [
+      "iod"
+     ],
+     "src": [
+      "CLIMGOV-IOD"
+     ]
+    },
+    {
+     "type": "map",
+     "id": "M8"
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "看季节预报时，可以同时留意三件事：ENSO（太平洋）、IOD（印度洋）、MJO（未来几个星期）。前两个影响几个月，MJO 影响几个星期。",
+      "en": "When you read a seasonal outlook, keep an eye on three things: ENSO (the Pacific), the IOD (the Indian Ocean) and the MJO (the next few weeks). The first two act over months; the MJO over weeks.",
+      "ms": "Apabila membaca tinjauan bermusim, perhatikan tiga perkara: ENSO (Pasifik), IOD (Lautan Hindi) dan MJO (beberapa minggu akan datang). Dua yang pertama bertindak dalam beberapa bulan; MJO dalam beberapa minggu."
+     },
+     "src": [
+      "CLIMGOV-IOD",
+      "FUN:175"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "el-nino",
+  "southern-oscillation",
+  "enso",
+  "la-nina",
+  "roni",
+  "teleconnection",
+  "mjo",
+  "iod"
+ ]
+}

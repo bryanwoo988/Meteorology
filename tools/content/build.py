@@ -50,7 +50,7 @@ def tidy(v):
     return v
 
 
-def write_chapter(chapter, terms, sources, quiz):
+def write_chapter(chapter, terms, sources, quiz, datasets=()):
     chapter, terms, quiz = tidy(chapter), tidy(terms), tidy(quiz)
     num, cid = chapter["num"], chapter["id"]
     chapter = {**chapter, "newTerms": [t[0] for t in terms]}
@@ -70,6 +70,12 @@ def write_chapter(chapter, terms, sources, quiz):
     _dump("sources", sorted(by_id.values(), key=lambda s: s["id"]))
 
     _dump("quiz", [q for q in _load("quiz", []) if q["chapter"] != cid] + quiz)
+
+    if datasets:
+        by = {d["id"]: d for d in _load("datasets", [])}
+        for d in datasets:
+            by[d["id"]] = tidy(d)
+        _dump("datasets", list(by.values()))
 
     index = _load("index", None)
     for c in index["chapters"]:

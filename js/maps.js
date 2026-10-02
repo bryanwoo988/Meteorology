@@ -58,8 +58,13 @@ function visibleRuns(pts, fwd) {
   return runs.filter(r => r.length > 1);
 }
 
+const SEASIA_EXTENT = [85, -15, 135, 28];
+const inside = (b, e) => b[0] >= e[0] && b[1] >= e[1] && b[2] <= e[2] && b[3] <= e[3];
+
 export async function baseMap(kind, { width, bbox, centre = [105, 5], onPick, label } = {}) {
-  const geo = await loadData(`maps/${kind === 'seasia' ? 'seasia' : 'world'}`);
+  // A regional view reaching beyond the detailed South-East Asia coastlines uses the world ones.
+  const detailed = kind === 'seasia' && (!bbox || inside(bbox, SEASIA_EXTENT));
+  const geo = await loadData(`maps/${detailed ? 'seasia' : 'world'}`);
   const state = { bbox: bbox ?? geo.bbox ?? [85, -15, 135, 28], centre: [...centre] };
   const layers = [];
   const W = Math.round(width ?? 640);
@@ -135,14 +140,20 @@ export async function baseMap(kind, { width, bbox, centre = [105, 5], onPick, la
       }
     }
     if (layer.type === 'grid') {
+      // One path per colour: tens of thousands of separate cells would make a phone crawl.
+      const byColour = new Map();
       for (let j = 0; j < layer.ny; j++) for (let i = 0; i < layer.nx; i++) {
         const v = layer.values[j * layer.nx + i];
         if (v == null) continue;
         const lo = layer.lon0 + i * layer.dlon, la = layer.lat0 + j * layer.dlat;
-        const ring = [[lo, la], [lo + layer.dlon, la], [lo + layer.dlon, la + layer.dlat], [lo, la + layer.dlat]];
-        const pts = P.ring(ring);
-        if (pts) g.append(s('path', { d: path(pts, true), style: `fill: ${layer.colour(v)}` }));
+        // A hair of overlap hides the seams between neighbouring cells.
+        const e = 0.02;
+        const pts = P.ring([[lo - e, la - e], [lo + layer.dlon + e, la - e], [lo + layer.dlon + e, la + layer.dlat + e], [lo - e, la + layer.dlat + e]]);
+        if (!pts) continue;
+        const c = layer.colour(v);
+        byColour.set(c, (byColour.get(c) ?? '') + path(pts, true));
       }
+      for (const [c, d] of byColour) g.append(s('path', { d, style: `fill: ${c}` }));
     }
     if (layer.type === 'labels') for (const it of layer.items) {
       const p = P.fwd(it.at); if (p) g.append(s('text', { x: p[0], y: p[1], 'text-anchor': it.anchor ?? 'middle', class: it.cls ?? null }, it.text));

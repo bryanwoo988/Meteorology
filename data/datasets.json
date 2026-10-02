@@ -1,1 +1,502 @@
-[]
+[
+ {
+  "id": "noaa-oisst",
+  "name": "NOAA OI SST V2",
+  "provider": "NOAA Physical Sciences Laboratory",
+  "what": {
+   "zh": "全球每月海表温度，1981 年 12 月起，1° 网格；另有 1991–2020 各月平均。本章的两张海温地图就是用它画的。",
+   "en": "Monthly global sea-surface temperature from December 1981 on a 1° grid, plus 1991–2020 monthly averages. This chapter's sea-temperature maps are drawn from it.",
+   "ms": "Suhu permukaan laut global bulanan sejak Disember 1981 pada grid 1°, serta purata bulanan 1991–2020. Peta suhu laut bab ini dilukis daripadanya."
+  },
+  "resolution": "1° (≈ 110 km)",
+  "update": {
+   "zh": "每月",
+   "en": "Monthly",
+   "ms": "Bulanan"
+  },
+  "format": "NetCDF (OPeNDAP)",
+  "licence": {
+   "text": "US Government work",
+   "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html"
+  },
+  "params": [
+   {
+    "raw": "sst",
+    "meaning": {
+     "zh": "月平均海表温度（存成整数，×0.01 得 °C）",
+     "en": "Monthly mean SST (stored as integers; × 0.01 gives °C)",
+     "ms": "Purata SST bulanan (disimpan sebagai integer; × 0.01 memberi °C)"
+    },
+    "unit": "°C × 100",
+    "chapter": 13
+   }
+  ],
+  "sample": {
+   "columns": [
+    "time",
+    "lat",
+    "lon 100.5",
+    "101.5",
+    "102.5",
+    "103.5",
+    "104.5"
+   ],
+   "rows": [
+    [
+     "2015-12",
+     "0.5°N",
+     "2956",
+     "2958",
+     "2956",
+     "2955",
+     "2949"
+    ]
+   ],
+   "source": "sst.mnmean.nc via OPeNDAP — 29.56 °C means 2956 × 0.01",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "数据集说明页",
+     "en": "Dataset page",
+     "ms": "Halaman set data"
+    },
+    "url": "https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "在浏览器里取一小块数据（OPeNDAP 文本）",
+     "en": "Fetch a small piece in the browser (OPeNDAP text)",
+     "ms": "Ambil sebahagian kecil dalam pelayar (teks OPeNDAP)"
+    },
+    "url": "https://psl.noaa.gov/thredds/dodsC/Datasets/noaa.oisst.v2/sst.mnmean.nc.ascii?sst%5B408:1:408%5D%5B89:1:89%5D%5B100:1:104%5D"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "每日 0.25° 高分辨率版本",
+     "en": "Daily 0.25° high-resolution version",
+     "ms": "Versi resolusi tinggi harian 0.25°"
+    },
+    "url": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+    "note": {
+     "zh": "NetCDF 文件，要用 Python（xarray）、Panoply 等软件打开。",
+     "en": "NetCDF files: open them with Python (xarray), Panoply or similar.",
+     "ms": "Fail NetCDF: buka dengan Python (xarray), Panoply atau seumpamanya."
+    }
+   }
+  ]
+ },
+ {
+  "id": "noaa-roni",
+  "name": "RONI (Relative Oceanic Niño Index)",
+  "provider": "NOAA Climate Prediction Center",
+  "what": {
+   "zh": "每个重叠三个月季节一个数值，从 1950 年开始；本章的 RONI 图就是用它画的。",
+   "en": "One value for each overlapping three-month season since 1950. This chapter's RONI chart is drawn from it.",
+   "ms": "Satu nilai bagi setiap musim tiga bulan bertindih sejak 1950. Carta RONI bab ini dilukis daripadanya."
+  },
+  "resolution": {
+   "zh": "一个区域平均值",
+   "en": "One area average",
+   "ms": "Satu purata kawasan"
+  },
+  "update": {
+   "zh": "每月",
+   "en": "Monthly",
+   "ms": "Bulanan"
+  },
+  "format": "Text (ASCII)",
+  "licence": {
+   "text": "US Government work",
+   "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/"
+  },
+  "params": [
+   {
+    "raw": "SEAS",
+    "meaning": {
+     "zh": "三个月季节，例如 JJA = 6、7、8 月",
+     "en": "Three-month season, e.g. JJA = June, July, August",
+     "ms": "Musim tiga bulan, contohnya JJA = Jun, Julai, Ogos"
+    },
+    "unit": "—",
+    "chapter": 14
+   },
+   {
+    "raw": "YR",
+    "meaning": {
+     "zh": "年份",
+     "en": "Year",
+     "ms": "Tahun"
+    },
+    "unit": "—",
+    "chapter": 14
+   },
+   {
+    "raw": "ANOM",
+    "meaning": {
+     "zh": "相对距平：Niño 3.4 区减去热带平均",
+     "en": "Relative departure: Niño 3.4 minus the tropical average",
+     "ms": "Sisihan relatif: Niño 3.4 tolak purata tropika"
+    },
+    "unit": "°C",
+    "chapter": 14
+   }
+  ],
+  "sample": {
+   "columns": [
+    "SEAS",
+    "YR",
+    "ANOM"
+   ],
+   "rows": [
+    [
+     "AMJ",
+     "2026",
+     "0.49"
+    ],
+    [
+     "MJJ",
+     "2026",
+     "0.97"
+    ],
+    [
+     "JJA",
+     "2026",
+     "1.36"
+    ]
+   ],
+   "source": "RONI.ascii.txt",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "RONI 说明页",
+     "en": "RONI page",
+     "ms": "Halaman RONI"
+    },
+    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "直接打开数据（纯文本）",
+     "en": "Open the data (plain text)",
+     "ms": "Buka data (teks biasa)"
+    },
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "CPC 每月 ENSO 诊断讨论",
+     "en": "CPC monthly ENSO diagnostic discussion",
+     "ms": "Perbincangan diagnostik ENSO bulanan CPC"
+    },
+    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"
+   }
+  ]
+ },
+ {
+  "id": "bom-rmm",
+  "name": "RMM MJO index",
+  "provider": "Australian Bureau of Meteorology",
+  "what": {
+   "zh": "每天一行：两个 RMM 数值、MJO 相位（1–8）和强度。强度小于 1 表示 MJO 很弱。",
+   "en": "One row a day: the two RMM values, the MJO phase (1–8) and its amplitude. An amplitude below 1 means the MJO is weak.",
+   "ms": "Satu baris sehari: dua nilai RMM, fasa MJO (1–8) dan amplitudnya. Amplitud di bawah 1 bermakna MJO lemah."
+  },
+  "resolution": {
+   "zh": "全球一个指数",
+   "en": "One global index",
+   "ms": "Satu indeks global"
+  },
+  "update": {
+   "zh": "这个文件的最后一行是 2024 年 2 月 24 日",
+   "en": "This file's last row is 24 February 2024",
+   "ms": "Baris terakhir fail ini ialah 24 Februari 2024"
+  },
+  "format": "Text (ASCII)",
+  "licence": {
+   "text": "© Commonwealth of Australia (Bureau of Meteorology)",
+   "url": "https://www.bom.gov.au/climate/mjo/"
+  },
+  "params": [
+   {
+    "raw": "RMM1, RMM2",
+    "meaning": {
+     "zh": "MJO 图上的横轴和纵轴",
+     "en": "The two axes of the MJO diagram",
+     "ms": "Dua paksi gambar rajah MJO"
+    },
+    "unit": "—",
+    "chapter": 14
+   },
+   {
+    "raw": "phase",
+    "meaning": {
+     "zh": "相位 1–8；4、5 在海洋性大陆",
+     "en": "Phase 1–8; 4 and 5 are over the Maritime Continent",
+     "ms": "Fasa 1–8; 4 dan 5 di atas Benua Maritim"
+    },
+    "unit": "—",
+    "chapter": 14
+   },
+   {
+    "raw": "amplitude",
+    "meaning": {
+     "zh": "强度；1 以上为活跃",
+     "en": "Strength; above 1 is active",
+     "ms": "Kekuatan; melebihi 1 adalah aktif"
+    },
+    "unit": "—",
+    "chapter": 14
+   }
+  ],
+  "sample": {
+   "columns": [
+    "year",
+    "month",
+    "day",
+    "RMM1",
+    "RMM2",
+    "phase",
+    "amplitude"
+   ],
+   "rows": [
+    [
+     "2024",
+     "2",
+     "22",
+     "0.236",
+     "0.249",
+     "6",
+     "0.343"
+    ],
+    [
+     "2024",
+     "2",
+     "23",
+     "0.202",
+     "0.325",
+     "6",
+     "0.383"
+    ],
+    [
+     "2024",
+     "2",
+     "24",
+     "-0.003",
+     "0.128",
+     "7",
+     "0.128"
+    ]
+   ],
+   "source": "rmm.74toRealtime.txt (rounded to 3 decimals)",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "NOAA CPC 的 MJO 页面（最新相位图）",
+     "en": "NOAA CPC MJO page (latest phase diagrams)",
+     "ms": "Halaman MJO NOAA CPC (gambar rajah fasa terkini)"
+    },
+    "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/mjo.shtml"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "BoM 的 RMM 文本文件",
+     "en": "BoM RMM text file",
+     "ms": "Fail teks RMM BoM"
+    },
+    "url": "http://www.bom.gov.au/climate/mjo/graphics/rmm.74toRealtime.txt"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "BoM MJO 监测页",
+     "en": "BoM MJO monitoring page",
+     "ms": "Halaman pemantauan MJO BoM"
+    },
+    "url": "https://www.bom.gov.au/climate/mjo/"
+   }
+  ]
+ },
+ {
+  "id": "koppen-beck",
+  "name": "Köppen–Geiger maps (Beck et al.)",
+  "provider": "Beck et al. 2023, via figshare",
+  "what": {
+   "zh": "全球 Köppen 气候分区，1901 到 2099 年分几个时段；本章地图用 1991–2020 年。",
+   "en": "Global Köppen climate zones for several periods from 1901 to 2099; this chapter's map uses 1991–2020.",
+   "ms": "Zon iklim Köppen global bagi beberapa tempoh dari 1901 hingga 2099; peta bab ini menggunakan 1991–2020."
+  },
+  "resolution": "1 km – 1°",
+  "update": {
+   "zh": "固定版本",
+   "en": "Fixed release",
+   "ms": "Keluaran tetap"
+  },
+  "format": "GeoTIFF",
+  "licence": {
+   "text": "CC0",
+   "url": "https://doi.org/10.6084/m9.figshare.21789074"
+  },
+  "params": [
+   {
+    "raw": "1–30",
+    "meaning": {
+     "zh": "每个格子一个整数代号，例如 1 = Af、2 = Am、3 = Aw",
+     "en": "One integer code per cell, e.g. 1 = Af, 2 = Am, 3 = Aw",
+     "ms": "Satu kod integer bagi setiap sel, contohnya 1 = Af, 2 = Am, 3 = Aw"
+    },
+    "unit": "—",
+    "chapter": 15
+   }
+  ],
+  "sample": {
+   "columns": [
+    "lat",
+    "lon",
+    "code",
+    "class"
+   ],
+   "rows": [
+    [
+     "3.1°N",
+     "101.7°E",
+     "1",
+     "Af"
+    ]
+   ],
+   "source": "koppen_geiger_1991_2020 (0.5° file), cell containing Kuala Lumpur",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "论文（Scientific Data）",
+     "en": "Paper (Scientific Data)",
+     "ms": "Kertas (Scientific Data)"
+    },
+    "url": "https://doi.org/10.1038/s41597-023-02549-6"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "figshare 下载页",
+     "en": "figshare download page",
+     "ms": "Halaman muat turun figshare"
+    },
+    "url": "https://doi.org/10.6084/m9.figshare.21789074",
+    "note": {
+     "zh": "GeoTIFF 要用 QGIS 或 Python（rasterio）打开。",
+     "en": "Open the GeoTIFFs with QGIS or Python (rasterio).",
+     "ms": "Buka GeoTIFF dengan QGIS atau Python (rasterio)."
+    }
+   }
+  ]
+ },
+ {
+  "id": "era5-daily-rain",
+  "name": "ERA5 daily precipitation (Open-Meteo)",
+  "provider": "ECMWF / Copernicus, served by Open-Meteo",
+  "what": {
+   "zh": "任何地点 1940 年至今的每日雨量；本章雨日表就是用吉隆坡 2025 年的数据数出来的。",
+   "en": "Daily rainfall for any place from 1940 on; this chapter's rain-day table counts Kuala Lumpur's 2025 values.",
+   "ms": "Hujan harian bagi mana-mana tempat dari 1940; jadual hari hujan bab ini mengira nilai Kuala Lumpur 2025."
+  },
+  "resolution": "0.25° (≈ 25 km)",
+  "update": {
+   "zh": "每天（约晚 5 天）",
+   "en": "Daily (about 5 days behind)",
+   "ms": "Harian (kira-kira 5 hari lewat)"
+  },
+  "format": "JSON / CSV",
+  "licence": {
+   "text": "CC BY 4.0",
+   "url": "https://open-meteo.com/en/licence"
+  },
+  "params": [
+   {
+    "raw": "precipitation_sum",
+    "meaning": {
+     "zh": "一天的总降水（雨加雪）",
+     "en": "Total precipitation in the day (rain plus snow)",
+     "ms": "Jumlah kerpasan sehari (hujan dan salji)"
+    },
+    "unit": "mm",
+    "chapter": 15
+   }
+  ],
+  "sample": {
+   "columns": [
+    "time",
+    "precipitation_sum"
+   ],
+   "rows": [
+    [
+     "2025-06-12",
+     "0.0"
+    ],
+    [
+     "2025-06-14",
+     "0.2"
+    ],
+    [
+     "2025-06-15",
+     "1.1"
+    ],
+    [
+     "2025-06-16",
+     "38.1"
+    ]
+   ],
+   "source": "archive-api.open-meteo.com, 3.139°N 101.687°E",
+   "fetched": "2026-10-02"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "Open-Meteo 历史天气说明",
+     "en": "Open-Meteo historical weather docs",
+     "ms": "Dokumentasi cuaca sejarah Open-Meteo"
+    },
+    "url": "https://open-meteo.com/en/docs/historical-weather-api"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "直接取吉隆坡 2025 年每日雨量（JSON）",
+     "en": "Fetch Kuala Lumpur's 2025 daily rain (JSON)",
+     "ms": "Ambil hujan harian Kuala Lumpur 2025 (JSON)"
+    },
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_sum&timezone=Asia%2FKuala_Lumpur"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "Copernicus 气候数据库的 ERA5 原始数据",
+     "en": "Raw ERA5 on the Copernicus Climate Data Store",
+     "ms": "ERA5 mentah di Copernicus Climate Data Store"
+    },
+    "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "note": {
+     "zh": "要注册帐号；文件是 GRIB 或 NetCDF。",
+     "en": "Needs a free account; files are GRIB or NetCDF.",
+     "ms": "Memerlukan akaun percuma; fail dalam GRIB atau NetCDF."
+    }
+   }
+  ]
+ }
+]
