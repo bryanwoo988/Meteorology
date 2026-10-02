@@ -1,0 +1,11 @@
+[
+  {
+    "v": "1.0.0",
+    "date": "2026-10-02",
+    "notes": [
+      { "zh": "第一版：9 个阶段、42 章的三语气象课，可以离线使用",
+        "en": "First release: a 42-chapter, 9-stage meteorology course in three languages, usable offline",
+        "ms": "Keluaran pertama: kursus meteorologi 42 bab dalam 9 peringkat, tiga bahasa, boleh digunakan luar talian" }
+    ]
+  }
+]
