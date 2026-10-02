@@ -17,6 +17,8 @@ import { renderShare } from './share.js';
 import { render as renderChart } from './charts.js';
 import { mountWidget } from './widgets/index.js';
 import { renderDatasetById } from './datasets.js';
+import { buildIndex, search } from './search.js';
+import * as tools from './tools.js';
 
 const $ = sel => document.querySelector(sel);
 const main = $('#main');
@@ -175,7 +177,10 @@ const VIEWS = {
         const mark = li.querySelector('.ch-read');
         if (mark) mark.innerHTML = ICON.check;
         return li;
-      })));
+      })),
+      el('div', { class: 'stage-tools' },
+        el('a', { class: 'button', href: `#/tools/quiz/${n}` }, tr('quiz')),
+        el('a', { class: 'button button-quiet', href: `#/tools/cards/${n}` }, tr('flashcards'))));
   },
 
   async chapter({ id }) {
@@ -253,11 +258,36 @@ const VIEWS = {
   },
 
   async search() {
-    return el('div', { class: 'page' }, el('h1', {}, tr('search')), el('p', { class: 'muted' }, tr('searchHint')));
+    const input = el('input', { id: 'search-input', type: 'search', class: 'field field-search', placeholder: tr('searchHint'), 'aria-label': tr('search'), autocomplete: 'off' });
+    const results = el('ul', { class: 'search-results' });
+    const idx = await searchIndex();
+    const run = () => {
+      const q = input.value;
+      try { sessionStorage.setItem('meteo.q', q); } catch { /* ignore */ }
+      const hits = search(idx, q, lang());
+      results.replaceChildren(...(q.trim() && !hits.length ? [el('li', { class: 'muted' }, tr('noResults'))] : hits.map(h =>
+        el('li', {}, el('a', { href: h.route }, el('span', { class: 'hit-title' }, h.title), el('span', { class: 'hit-snippet' }, h.snippet))))));
+    };
+    input.addEventListener('input', run);
+    try { input.value = sessionStorage.getItem('meteo.q') || ''; } catch { /* ignore */ }
+    run();
+    setTimeout(() => input.focus(), 0);
+    return el('div', { class: 'page' }, el('h1', {}, tr('search')), input, results);
   },
 
-  async tools() {
-    return el('div', { class: 'page' }, el('h1', {}, tr('tools')));
+  async tools({ name, arg }) {
+    const l = lang();
+    switch (name) {
+      case 'glossary': return tools.glossary(l);
+      case 'abbr': return tools.glossary(l, { abbrOnly: true });
+      case 'map': return tools.conceptMap(l, { openSheet });
+      case 'cards': return tools.flashcards(l, { stage: Number(arg) || 0 });
+      case 'quiz': return tools.quizPage(l, { stage: Number(arg) || 0 });
+      case 'convert': return tools.converter(l);
+      case 'beaufort': return tools.beaufort(l);
+      case 'data': return tools.catalogue(l);
+      default: return tools.toolsIndex(l);
+    }
   },
 };
 
@@ -275,6 +305,12 @@ function stageCard(s, p) {
       el('span', { class: 'progress', role: 'progressbar', 'aria-valuenow': pct, 'aria-valuemin': 0, 'aria-valuemax': 100 }, el('span', { style: `width:${pct}%` }))),
   ];
   return el('li', { class: 'stage-card' }, el('a', { href: `#/stage/${s.n}` }, body));
+}
+
+let searchIdx = null;
+async function searchIndex() {
+  if (!searchIdx) searchIdx = buildIndex(await Promise.all(readyChapters().map(c => loadChapter(c.id))), terms ? [...terms.values()] : []);
+  return searchIdx;
 }
 
 /* ---------- More menu ---------- */

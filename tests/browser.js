@@ -97,7 +97,7 @@ await test('text size 1.3 switches the chapter to a single column', async () => 
 
 for (const lang of ['ms', 'zh', 'en']) {
   await test(`no horizontal overflow at 375px × scale 1.5 in ${lang}`, async () => {
-    for (const hash of ['#/', '#/ch/ch05', '#/stage/3', '#/info', '#/share']) {
+    for (const hash of ['#/', '#/ch/ch05', '#/stage/3', '#/info', '#/share', '#/search', '#/tools', '#/tools/glossary', '#/tools/beaufort', '#/tools/quiz/3', '#/tools/cards', '#/tools/map', '#/tools/convert', '#/tools/data']) {
       const a = await openApp({ hash, prefs: { lang, scale: 1.5 } });
       await sleep(250);
       const sw = a.d.scrollingElement.scrollWidth;
@@ -197,6 +197,47 @@ await test('dataset card shows parameters, a data sample and graded outside link
   const links = card.querySelectorAll('.ds-links a');
   assert(links.length === 3 && [...links].every(a => a.target === '_blank' && a.rel.includes('noopener')), 'outside links not safe');
   assert([...links].map(a => a.dataset.level).join() === 'view,try,pro', 'links not in order of difficulty');
+});
+
+const type = (a, input, text) => { input.value = text; input.dispatchEvent(new a.w.Event('input', { bubbles: true })); };
+
+await test('search finds a chapter from a query in another language', async () => {
+  const a = await openApp({ hash: '#/search', prefs: { lang: 'ms' } });
+  const input = await until(() => a.d.querySelector('#search-input'));
+  type(a, input, '露点');
+  const first = await until(() => a.d.querySelector('.search-results a'));
+  assert(first.getAttribute('href').startsWith('#/ch/ch05'), first.getAttribute('href'));
+  assert(!/[\u4e00-\u9fff]/.test(first.querySelector('.hit-title').textContent), 'title not in Malay');
+  a.close();
+});
+
+await test('°C ⇄ °F converter works both ways', async () => {
+  const a = await openApp({ hash: '#/tools/convert', prefs: { lang: 'en' } });
+  const c = await until(() => a.d.querySelector('#conv-c')), f = a.d.querySelector('#conv-f');
+  type(a, c, '100'); assert(f.value === '212', `100 °C → ${f.value}`);
+  type(a, f, '-40'); assert(c.value === '-40', `-40 °F → ${c.value}`);
+  type(a, c, 'abc'); assert(f.value === '', 'garbage should clear the other box');
+  a.close();
+});
+
+await test('a stage quiz scores answers and remembers the best', async () => {
+  const a = await openApp({ hash: '#/tools/quiz/3', prefs: { lang: 'en' } });
+  await until(() => a.d.querySelector('.quiz-q'));
+  const qs = a.d.querySelectorAll('.quiz-q');
+  for (const q of qs) q.querySelectorAll('.quiz-opt')[Number(q.dataset.answer)].click();
+  const score = await until(() => a.d.querySelector('.quiz-score'));
+  assert(score.textContent.includes(`${qs.length}/${qs.length}`), score.textContent);
+  const saved = JSON.parse(a.w.localStorage.getItem('meteo.prefs.v1'));
+  assert(saved.quiz[3] === qs.length, `best not saved: ${JSON.stringify(saved.quiz)}`);
+  a.close();
+});
+
+await test('glossary, abbreviations, Beaufort, flashcards and concept map open', async () => {
+  for (const [hash, sel, min] of [['#/tools/glossary', '.gloss-item', 9], ['#/tools/beaufort', '.beaufort tbody tr', 13], ['#/tools/cards', '.flashcard', 1], ['#/tools/map', '.cmap svg', 1], ['#/tools', '.tool-list a', 8]]) {
+    const a = await openApp({ hash, prefs: { lang: 'zh' } });
+    await until(() => a.d.querySelectorAll(sel).length >= min);
+    a.close();
+  }
 });
 
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
