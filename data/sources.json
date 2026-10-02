@@ -8,6 +8,22 @@
   "accessed": ""
  },
  {
+  "id": "ASMC",
+  "short": "ASMC",
+  "title": "About ASMC",
+  "publisher": "ASEAN Specialised Meteorological Centre",
+  "url": "https://asmc.asean.org/asmc-about/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "ECMWF-WHO",
+  "short": "ECMWF",
+  "title": "Who we are",
+  "publisher": "ECMWF",
+  "url": "https://www.ecmwf.int/en/about/who-we-are",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "ERA5-OM",
   "short": "ERA5 / Open-Meteo",
   "title": "ERA5 hourly reanalysis via the Open-Meteo Historical Weather API",
@@ -24,6 +40,38 @@
   "accessed": ""
  },
  {
+  "id": "JMA-MSC",
+  "short": "JMA",
+  "title": "Himawari-8/9 — Meteorological Satellite Center",
+  "publisher": "Japan Meteorological Agency",
+  "url": "https://www.data.jma.go.jp/mscweb/en/himawari89/himawari_cast/himawari_cast.php",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "MET-HOME",
+  "short": "MetMalaysia",
+  "title": "Official website of the Malaysian Meteorological Department",
+  "publisher": "MetMalaysia",
+  "url": "https://www.met.gov.my/en/",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-EMC-GEFS",
+  "short": "NOAA EMC",
+  "title": "Global Ensemble Forecast System (GEFS)",
+  "publisher": "NOAA Environmental Modeling Center",
+  "url": "https://emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-GML-CO2",
+  "short": "NOAA GML",
+  "title": "Trends in Atmospheric Carbon Dioxide — Global",
+  "publisher": "NOAA Global Monitoring Laboratory",
+  "url": "https://gml.noaa.gov/ccgg/trends/global.html",
+  "accessed": "2026-10-02"
+ },
+ {
   "id": "PAM",
   "short": "Mote & Sahu",
   "title": "Principles of Agricultural Meteorology",
@@ -38,5 +86,29 @@
   "publisher": "R. Stull, J. Appl. Meteor. Climatol. 50, 2267–2269 (2011)",
   "url": "https://doi.org/10.1175/JAMC-D-11-0143.1",
   "accessed": ""
+ },
+ {
+  "id": "US76",
+  "short": "US Std Atm 1976",
+  "title": "U.S. Standard Atmosphere, 1976",
+  "publisher": "NOAA, NASA and US Air Force, 1976",
+  "url": "",
+  "accessed": ""
+ },
+ {
+  "id": "WHO-UV",
+  "short": "WHO",
+  "title": "Radiation: The ultraviolet (UV) index",
+  "publisher": "World Health Organization",
+  "url": "https://www.who.int/news-room/questions-and-answers/item/radiation-the-ultraviolet-(uv)-index",
+  "accessed": "2026-10-02"
+ },
+ {
+  "id": "WMO-75",
+  "short": "WMO",
+  "title": "2025 – Celebrating 75 Years of WMO Science for Action",
+  "publisher": "World Meteorological Organization",
+  "url": "https://wmo.int/resources/wmo-bulletin/wmo-bulletin-vol-73-2-2024/2025-celebrating-75-years-of-wmo-science-action",
+  "accessed": "2026-10-02"
  }
 ]

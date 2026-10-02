@@ -1,5 +1,217 @@
 [
  {
+  "id": "agrometeorology",
+  "name": {
+   "zh": "农业气象学",
+   "en": "Agricultural meteorology",
+   "ms": "Meteorologi pertanian"
+  },
+  "short": {
+   "zh": "研究天气、气候与农业生产关系的学科。",
+   "en": "The study of how weather and climate relate to farming.",
+   "ms": "Kajian tentang hubungan cuaca dan iklim dengan pertanian."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "climate",
+  "name": {
+   "zh": "气候",
+   "en": "Climate",
+   "ms": "Iklim"
+  },
+  "short": {
+   "zh": "一个地方长期（通常 30 年）的平均天气和极端情况。",
+   "en": "The long-term (usually 30-year) average and extremes of a place's weather.",
+   "ms": "Purata dan nilai ekstrem cuaca sesuatu tempat dalam jangka panjang (biasanya 30 tahun)."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "meteorology",
+  "name": {
+   "zh": "气象学",
+   "en": "Meteorology",
+   "ms": "Meteorologi"
+  },
+  "short": {
+   "zh": "研究地球大气及其产生天气的各种过程的科学。",
+   "en": "The science of the Earth's atmosphere and the processes in it that make weather.",
+   "ms": "Sains tentang atmosfera Bumi dan proses di dalamnya yang menghasilkan cuaca."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "weather",
+  "name": {
+   "zh": "天气",
+   "en": "Weather",
+   "ms": "Cuaca"
+  },
+  "short": {
+   "zh": "某地某时的大气状况，随时在变。",
+   "en": "The state of the atmosphere at a given place and time; always changing.",
+   "ms": "Keadaan atmosfera di sesuatu tempat dan masa; sentiasa berubah."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "weather-elements",
+  "name": {
+   "zh": "气象要素",
+   "en": "Weather elements",
+   "ms": "Unsur cuaca"
+  },
+  "short": {
+   "zh": "描述天气的可测量项目：气温、气压、湿度、云、降水、能见度、风。",
+   "en": "The measurable quantities that describe weather: temperature, pressure, humidity, cloud, precipitation, visibility and wind.",
+   "ms": "Kuantiti boleh diukur yang menerangkan cuaca: suhu, tekanan, kelembapan, awan, kerpasan, keterlihatan dan angin."
+  },
+  "chapter": 1
+ },
+ {
+  "id": "wmo",
+  "name": {
+   "zh": "世界气象组织",
+   "en": "World Meteorological Organization",
+   "ms": "Pertubuhan Meteorologi Sedunia"
+  },
+  "short": {
+   "zh": "联合国负责天气、气候和水的专门机构，制定全球气象标准。",
+   "en": "The UN specialised agency for weather, climate and water; it sets global standards.",
+   "ms": "Agensi khusus PBB bagi cuaca, iklim dan air; ia menetapkan piawaian global."
+  },
+  "chapter": 1,
+  "abbr": "WMO"
+ },
+ {
+  "id": "air-pressure",
+  "name": {
+   "zh": "气压",
+   "en": "Air pressure",
+   "ms": "Tekanan udara"
+  },
+  "short": {
+   "zh": "上方空气的重量压下来的力，单位 hPa；海平面标准值 1013.25 hPa。",
+   "en": "The force of the air above pressing down, in hPa; 1013.25 hPa at standard sea level.",
+   "ms": "Daya udara di atas yang menekan ke bawah, dalam hPa; 1013.25 hPa pada paras laut piawai."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "atmosphere",
+  "name": {
+   "zh": "大气",
+   "en": "Atmosphere",
+   "ms": "Atmosfera"
+  },
+  "short": {
+   "zh": "包围地球的一层气体；约 99 % 在离地 30 公里以内。",
+   "en": "The layer of gas around the Earth; about 99 % of it lies within 30 km of the ground.",
+   "ms": "Lapisan gas yang menyelubungi Bumi; kira-kira 99 % berada dalam 30 km dari permukaan."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "mesosphere",
+  "name": {
+   "zh": "中间层",
+   "en": "Mesosphere",
+   "ms": "Mesosfera"
+  },
+  "short": {
+   "zh": "约 50–85 公里，越高越冷；顶端是大气最冷处。",
+   "en": "About 50–85 km, colder with height; its top is the coldest part of the atmosphere.",
+   "ms": "Kira-kira 50–85 km, semakin sejuk dengan ketinggian; bahagian atasnya paling sejuk dalam atmosfera."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "ozone-layer",
+  "name": {
+   "zh": "臭氧层",
+   "en": "Ozone layer",
+   "ms": "Lapisan ozon"
+  },
+  "short": {
+   "zh": "平流层中臭氧集中的部分，吸收太阳有害的紫外线。",
+   "en": "The ozone-rich part of the stratosphere that absorbs the Sun's harmful ultraviolet light.",
+   "ms": "Bahagian stratosfera yang kaya ozon dan menyerap cahaya ultraungu Matahari yang berbahaya."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "stratosphere",
+  "name": {
+   "zh": "平流层",
+   "en": "Stratosphere",
+   "ms": "Stratosfera"
+  },
+  "short": {
+   "zh": "对流层之上到约 50 公里；臭氧吸收紫外线使它越高越暖。",
+   "en": "From the tropopause to about 50 km; ozone absorbing UV makes it warmer with height.",
+   "ms": "Dari tropopaus hingga kira-kira 50 km; ozon yang menyerap UV menjadikannya lebih panas dengan ketinggian."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "thermosphere",
+  "name": {
+   "zh": "热层",
+   "en": "Thermosphere",
+   "ms": "Termosfera"
+  },
+  "short": {
+   "zh": "约 85 公里以上；空气极稀薄，温度却可超过 500 °C。",
+   "en": "Above about 85 km; extremely thin air that can exceed 500 °C.",
+   "ms": "Di atas kira-kira 85 km; udara sangat nipis yang boleh melebihi 500 °C."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "tropopause",
+  "name": {
+   "zh": "对流层顶",
+   "en": "Tropopause",
+   "ms": "Tropopaus"
+  },
+  "short": {
+   "zh": "对流层和平流层的分界；热带约 16 公里高。",
+   "en": "The boundary between troposphere and stratosphere; about 16 km high in the tropics.",
+   "ms": "Sempadan antara troposfera dan stratosfera; kira-kira 16 km di kawasan tropika."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "troposphere",
+  "name": {
+   "zh": "对流层",
+   "en": "Troposphere",
+   "ms": "Troposfera"
+  },
+  "short": {
+   "zh": "最底下的一层，天气都发生在这里；越高越冷。",
+   "en": "The lowest layer, where weather happens; colder with height.",
+   "ms": "Lapisan paling bawah, tempat cuaca berlaku; semakin sejuk dengan ketinggian."
+  },
+  "chapter": 2
+ },
+ {
+  "id": "uv-index",
+  "name": {
+   "zh": "紫外线指数",
+   "en": "UV index",
+   "ms": "Indeks UV"
+  },
+  "short": {
+   "zh": "表示当天紫外线强度的数字；3 以上要防晒，8 以上中午避免外出。",
+   "en": "A number for the day's ultraviolet strength; protect yourself from 3, avoid the midday sun from 8.",
+   "ms": "Nombor bagi kekuatan ultraungu hari itu; lindungi diri dari 3, elakkan matahari tengah hari dari 8."
+  },
+  "chapter": 2,
+  "abbr": "UV"
+ },
+ {
   "id": "dew-point",
   "name": {
    "zh": "露点",

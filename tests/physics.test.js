@@ -50,3 +50,25 @@ test('Lorenz ensemble is deterministic and diverges', () => {
   const spread = k => Math.max(...a.map(m => m[k])) - Math.min(...a.map(m => m[k]));
   assert.ok(spread(10) < 0.1 && spread(1499) > 5);
 });
+
+import { atmosphereAt } from '../js/physics.js';
+
+test('standard atmosphere to 85 km: surface, tropopause, stratopause, mesopause', () => {
+  const at = km => atmosphereAt(km * 1000);
+  eq(at(0).tC, 15, 1e-6); eq(at(0).pHpa, 1013.25, 1e-6);
+  eq(at(11).tC, -56.4, 0.1);
+  // US Standard Atmosphere 1976 (lapse rates in geopotential height), read at geometric heights:
+  eq(at(47).tC, -3.4, 0.3);          // near the stratopause, warmed by ozone
+  eq(at(71).tC, -56.3, 0.4);
+  eq(at(84).tC, -82.3, 0.5);
+  eq(at(86).tC, -86.2, 0.3);         // mesopause: the coldest air in the atmosphere
+  eq(at(5.5).pHpa, 505, 6);          // about half the air is below 5.5 km
+  eq(at(50).pHpa, 0.8, 0.05);
+});
+test('the layer is named from the temperature profile', () => {
+  const at = km => atmosphereAt(km * 1000).layer;
+  assert.deepEqual([at(5), at(30), at(60), at(86)], ['troposphere', 'stratosphere', 'mesosphere', 'thermosphere']);
+});
+test('outside 0–90 km returns null', () => {
+  assert.equal(atmosphereAt(-1), null); assert.equal(atmosphereAt(95000), null);
+});

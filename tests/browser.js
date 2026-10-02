@@ -240,5 +240,27 @@ await test('glossary, abbreviations, Beaufort, flashcards and concept map open',
   }
 });
 
+await test('every widget in every chapter survives its slider extremes', async () => {
+  const index = await (await fetch('../data/index.json', { cache: 'no-store' })).json();
+  for (const c of index.chapters.filter(x => x.ready !== false)) {
+    const ch = await (await fetch(`../data/${c.id}.json`, { cache: 'no-store' })).json();
+    const ids = ch.sections.flatMap(sct => sct.blocks).filter(b => b.type === 'widget' || b.type === 'map').map(b => b.id);
+    if (!ids.length) continue;
+    const a = await openApp({ hash: `#/ch/${c.id}`, prefs: { lang: 'ms', scale: 1.5 } });
+    for (const id of ids) {
+      const fig = await until(() => a.d.querySelector(`[data-widget="${id}"] .w-frame, [data-widget="${id}"] .map-wrap`), 6000);
+      for (const input of fig.closest('[data-widget]').querySelectorAll('input[type=range]')) {
+        for (const v of [input.min, input.max, input.min]) {
+          input.value = v; input.dispatchEvent(new a.w.Event('input', { bubbles: true }));
+          const text = fig.closest('[data-widget]').textContent;
+          assert(!/NaN|undefined|Infinity/.test(text), `${c.id} ${id} at ${v}: ${text.slice(0, 200)}`);
+        }
+      }
+    }
+    assert(a.d.scrollingElement.scrollWidth <= 375, `${c.id}: overflow ${a.d.scrollingElement.scrollWidth}`);
+    a.close();
+  }
+});
+
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';

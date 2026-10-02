@@ -432,3 +432,7 @@ a.chip { color: var(--ink-2); text-decoration: none; }
 .conv-eq { color: var(--muted); }
 .beaufort td:first-child { font-weight: 700; color: var(--accent); }
 .stage-tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.band-0 { fill: var(--surface-2); }
+.band-1 { fill: var(--surface); }
+.band-label { fill: var(--muted); font-size: 11.5px; font-weight: 650; }
+.w-level { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 3; }

@@ -224,3 +224,27 @@ export function lorenzEnsemble(n, steps, eps, seed) {
   }
   return out;
 }
+
+/* --- Standard atmosphere to 90 km (US Standard Atmosphere 1976) ---
+   Lapse rates are defined in geopotential height H = r0·z / (r0 + z).
+   Mid-latitude average: the tropical tropopause is higher (about 16 km). */
+const US76 = [   // base H (m), base T (K), lapse (K/m)
+  [0, 288.15, -0.0065], [11000, 216.65, 0], [20000, 216.65, 0.001], [32000, 228.65, 0.0028],
+  [47000, 270.65, 0], [51000, 270.65, -0.0028], [71000, 214.65, -0.002], [84852, 186.946, 0],
+];
+const R0 = 6356766;
+const LAYER_TOPS = [[11000, 'troposphere'], [50000, 'stratosphere'], [85000, 'mesosphere'], [Infinity, 'thermosphere']];
+
+export function atmosphereAt(zM) {
+  if (!finite(zM) || zM < 0 || zM > 90000) return null;
+  const H = R0 * zM / (R0 + zM);
+  let p = P0 * 100, i = 0;
+  for (; i < US76.length - 1 && H > US76[i + 1][0]; i++) {
+    const [hb, tb, l] = US76[i], ht = US76[i + 1][0];
+    p = l === 0 ? p * Math.exp(-G * (ht - hb) / (RD * tb)) : p * ((tb + l * (ht - hb)) / tb) ** (-G / (RD * l));
+  }
+  const [hb, tb, l] = US76[i];
+  const tK = tb + l * (H - hb);
+  p = l === 0 ? p * Math.exp(-G * (H - hb) / (RD * tb)) : p * (tK / tb) ** (-G / (RD * l));
+  return { tC: tK - K0, pHpa: p / 100, layer: LAYER_TOPS.find(([top]) => zM < top)[1] };
+}

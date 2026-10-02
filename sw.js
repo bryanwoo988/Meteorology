@@ -9,10 +9,12 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-6b02c6d9e6';
+const CACHE = 'meteo-2e00321915';
 const ASSETS = [
   './',
   'css/app.css',
+  'data/ch01.json',
+  'data/ch02.json',
   'data/ch05.json',
   'data/datasets.json',
   'data/index.json',
@@ -77,6 +79,7 @@ const ASSETS = [
   'js/updatelogic.js',
   'js/widgets/index.js',
   'js/widgets/kit.js',
+  'js/widgets/w1.js',
   'js/widgets/w5.js',
   'manifest.webmanifest',
 ];

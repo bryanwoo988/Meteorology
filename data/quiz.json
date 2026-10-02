@@ -72,5 +72,153 @@
    "en": "The dew point depends only on the amount of vapour; relative humidity also changes with temperature.",
    "ms": "Takat embun hanya bergantung pada jumlah wap; kelembapan relatif juga berubah dengan suhu."
   }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "下面哪一句说的是“气候”而不是“天气”？",
+   "en": "Which of these is about climate rather than weather?",
+   "ms": "Yang manakah tentang iklim, bukan cuaca?"
+  },
+  "options": [
+   {
+    "zh": "吉隆坡今天下午有雷雨",
+    "en": "Kuala Lumpur has a thunderstorm this afternoon",
+    "ms": "Kuala Lumpur ada ribut petir petang ini"
+   },
+   {
+    "zh": "现在风很大",
+    "en": "It is very windy right now",
+    "ms": "Angin sangat kuat sekarang"
+   },
+   {
+    "zh": "东海岸一年中 11 月到 3 月雨最多",
+    "en": "On the east coast, November to March is the wettest part of the year",
+    "ms": "Di pantai timur, November hingga Mac ialah waktu paling basah dalam setahun"
+   },
+   {
+    "zh": "明天早上会有雾",
+    "en": "There will be fog tomorrow morning",
+    "ms": "Akan ada kabus esok pagi"
+   }
+  ],
+  "answer": 2,
+  "why": {
+   "zh": "气候讲的是长期的规律；其他三句都是某个时间的天气。",
+   "en": "Climate is the long-term pattern; the other three describe the weather at one time.",
+   "ms": "Iklim ialah corak jangka panjang; tiga yang lain menerangkan cuaca pada satu masa."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch01",
+  "q": {
+   "zh": "meteorology 这个词的原意是什么？",
+   "en": "What did the word ‘meteorology’ originally mean?",
+   "ms": "Apakah maksud asal perkataan ‘meteorologi’?"
+  },
+  "options": [
+   {
+    "zh": "研究流星",
+    "en": "The study of meteors",
+    "ms": "Kajian tentang meteor"
+   },
+   {
+    "zh": "研究天上的东西",
+    "en": "The study of things up above",
+    "ms": "Kajian tentang benda di atas"
+   },
+   {
+    "zh": "研究海洋",
+    "en": "The study of the sea",
+    "ms": "Kajian tentang laut"
+   },
+   {
+    "zh": "研究星星",
+    "en": "The study of stars",
+    "ms": "Kajian tentang bintang"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "来自希腊文 meteorologia：研究天上的一切现象。",
+   "en": "From the Greek meteorologia: the study of everything seen in the sky.",
+   "ms": "Daripada bahasa Yunani meteorologia: kajian tentang segala yang dilihat di langit."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "为什么平流层是越高越暖？",
+   "en": "Why does the stratosphere get warmer with height?",
+   "ms": "Mengapa stratosfera semakin panas dengan ketinggian?"
+  },
+  "options": [
+   {
+    "zh": "它离太阳比较近",
+    "en": "It is closer to the Sun",
+    "ms": "Ia lebih dekat dengan Matahari"
+   },
+   {
+    "zh": "臭氧吸收紫外线而发热",
+    "en": "Ozone absorbs ultraviolet light and heats the air",
+    "ms": "Ozon menyerap cahaya ultraungu dan memanaskan udara"
+   },
+   {
+    "zh": "地面的热传上去",
+    "en": "Heat rises from the ground",
+    "ms": "Haba naik dari permukaan"
+   },
+   {
+    "zh": "那里的空气比较密",
+    "en": "The air there is denser",
+    "ms": "Udara di sana lebih tumpat"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "平流层里的臭氧吸收了紫外线的能量，把空气加热。",
+   "en": "Ozone in the stratosphere absorbs ultraviolet energy and warms the air.",
+   "ms": "Ozon di stratosfera menyerap tenaga ultraungu dan memanaskan udara."
+  }
+ },
+ {
+  "stage": 1,
+  "chapter": "ch02",
+  "q": {
+   "zh": "在大约多高的地方，一半的空气已经在你下面？",
+   "en": "Roughly how high must you be for half the air to be below you?",
+   "ms": "Pada ketinggian kira-kira berapa separuh udara berada di bawah anda?"
+  },
+  "options": [
+   {
+    "zh": "1 公里",
+    "en": "1 km",
+    "ms": "1 km"
+   },
+   {
+    "zh": "5.5 公里",
+    "en": "5.5 km",
+    "ms": "5.5 km"
+   },
+   {
+    "zh": "30 公里",
+    "en": "30 km",
+    "ms": "30 km"
+   },
+   {
+    "zh": "100 公里",
+    "en": "100 km",
+    "ms": "100 km"
+   }
+  ],
+  "answer": 1,
+  "why": {
+   "zh": "约 5.5 公里处气压约 500 hPa，只有海平面的一半。",
+   "en": "At about 5.5 km the pressure is near 500 hPa, half its sea-level value.",
+   "ms": "Pada kira-kira 5.5 km tekanan hampir 500 hPa, separuh nilai paras laut."
+  }
  }
 ]
