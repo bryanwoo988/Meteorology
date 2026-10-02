@@ -43,6 +43,7 @@ export function inline(value, ctx) {
   const frag = document.createDocumentFragment();
   for (const piece of parseInline(pick(value, ctx.lang))) {
     if (piece.text !== undefined) { frag.append(piece.text); continue; }
+    if (piece.chapter) { frag.append(el('a', { class: 'ch-link', href: `#/ch/${piece.chapter}` }, piece.label)); continue; }
     const term = ctx.terms?.get(piece.term);
     const label = piece.label ?? (term ? pick(term.name, ctx.lang) : piece.term);
     frag.append(el('button', { class: 'term', type: 'button', 'data-term': piece.term, onclick: () => ctx.onTerm?.(piece.term) }, label));

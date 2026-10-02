@@ -1180,5 +1180,122 @@
     "url": "https://www.blitzortung.org/en/live_lightning_maps.php"
    }
   ]
+ },
+ {
+  "id": "ecmwf-open",
+  "name": "ECMWF open data (IFS and AIFS)",
+  "provider": "ECMWF",
+  "what": {
+   "zh": "ECMWF 免费公开的一部分即时预报：IFS 中期预报（control 和集合）、AIFS 的单一和集合预报，0.25° 网格，GRIB2 档案。",
+   "en": "The free subset of ECMWF's real-time forecasts — IFS medium-range control and ensemble, AIFS single and ensemble — on a 0.25° grid as GRIB2 files.",
+   "ms": "Subset percuma ramalan masa nyata ECMWF — kawalan dan ensemble jarak sederhana IFS, AIFS tunggal dan ensemble — pada grid 0.25° sebagai fail GRIB2."
+  },
+  "resolution": "0.25°",
+  "update": {
+   "zh": "每天 4 次（00、06、12、18 UTC）",
+   "en": "Four times a day (00, 06, 12, 18 UTC)",
+   "ms": "Empat kali sehari (00, 06, 12, 18 UTC)"
+  },
+  "format": "GRIB2",
+  "licence": {
+   "text": "CC BY 4.0 + ECMWF Terms of Use",
+   "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+  },
+  "params": [
+   {
+    "raw": "2t",
+    "meaning": {
+     "zh": "2 米气温",
+     "en": "2 m temperature",
+     "ms": "Suhu 2 m"
+    },
+    "unit": "K",
+    "chapter": 4
+   },
+   {
+    "raw": "tp",
+    "meaning": {
+     "zh": "累积总降水",
+     "en": "Total precipitation (accumulated)",
+     "ms": "Jumlah kerpasan (terkumpul)"
+    },
+    "unit": "m",
+    "chapter": 30
+   },
+   {
+    "raw": "10u / 10v",
+    "meaning": {
+     "zh": "10 米风的东西、南北分量",
+     "en": "10 m wind components (east, north)",
+     "ms": "Komponen angin 10 m (timur, utara)"
+    },
+    "unit": "m/s",
+    "chapter": 9
+   }
+  ],
+  "sample": {
+   "columns": [
+    "date",
+    "member",
+    "tmax (°C)",
+    "rain (mm)"
+   ],
+   "rows": [
+    [
+     "2026-10-03",
+     "control",
+     "32.0",
+     "8.1"
+    ],
+    [
+     "2026-10-03",
+     "member 1",
+     "31.5",
+     "2.7"
+    ],
+    [
+     "2026-10-03",
+     "member 2",
+     "31.2",
+     "5.4"
+    ]
+   ],
+   "source": "ENS for Kuala Lumpur via Open-Meteo, daily values computed from hourly data",
+   "fetched": "2026-10-03"
+  },
+  "links": [
+   {
+    "level": "view",
+    "label": {
+     "zh": "ECMWF 预报图（opencharts）",
+     "en": "ECMWF forecast charts (opencharts)",
+     "ms": "Carta ramalan ECMWF (opencharts)"
+    },
+    "url": "https://charts.ecmwf.int/"
+   },
+   {
+    "level": "try",
+    "label": {
+     "zh": "用 Open-Meteo 取吉隆坡的 51 个成员（JSON）",
+     "en": "Fetch Kuala Lumpur's 51 members via Open-Meteo (JSON)",
+     "ms": "Ambil 51 ahli Kuala Lumpur melalui Open-Meteo (JSON)"
+    },
+    "url": "https://ensemble-api.open-meteo.com/v1/ensemble?latitude=3.139&longitude=101.6869&hourly=temperature_2m,precipitation&models=ecmwf_ifs025&forecast_days=15&timezone=Asia%2FKuala_Lumpur"
+   },
+   {
+    "level": "pro",
+    "label": {
+     "zh": "ECMWF 开放数据说明",
+     "en": "ECMWF open-data page",
+     "ms": "Halaman data terbuka ECMWF"
+    },
+    "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+    "note": {
+     "zh": "用 Python 的 ecmwf-opendata 套件下载 GRIB2。",
+     "en": "Download GRIB2 with the Python package ecmwf-opendata.",
+     "ms": "Muat turun GRIB2 dengan pakej Python ecmwf-opendata."
+    }
+   }
+  ]
  }
 ]

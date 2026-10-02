@@ -1,0 +1,131 @@
+{
+ "id": "ch26",
+ "num": 26,
+ "stage": 8,
+ "title": {
+  "zh": "天气图",
+  "en": "Weather maps",
+  "ms": "Peta cuaca"
+ },
+ "sources": [
+  "PAM",
+  "ESS",
+  "FUN"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "天气图是什么",
+    "en": "What a weather map is",
+    "ms": "Apakah peta cuaca"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:synoptic-chart}}是在同一时刻、把一大片地区各个气象站的观测画在一张地图上，让人一眼看到当时的天气全貌。地面天气图通常每 6 小时更新一次。画好站点资料后，预报员把气压相同的点连起来成为等压线，再标出高压、低压、锋面和槽脊。",
+      "en": "A {{t:synoptic-chart}} plots the observations from many stations over a large area at one moment, so the whole weather picture can be seen at a glance. Surface charts are usually redrawn at least every 6 hours. Once the station reports are plotted, the forecaster joins equal pressures into isobars and marks the highs, lows, fronts, troughs and ridges.",
+      "ms": "{{t:synoptic-chart}} memplot cerapan dari banyak stesen di kawasan luas pada satu masa, supaya gambaran cuaca keseluruhan dapat dilihat sekali imbas. Carta permukaan biasanya dilukis semula sekurang-kurangnya setiap 6 jam. Selepas laporan stesen diplot, peramal menyambung tekanan yang sama menjadi isobar dan menandakan tekanan tinggi, rendah, front, palung dan rabung."
+     },
+     "defines": [
+      "synoptic-chart"
+     ],
+     "src": [
+      "PAM:171-172"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "站点模型",
+    "en": "The station model",
+    "ms": "Model stesen"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "每个气象站在图上是一个小圆圈，四周用固定位置的数字和符号写出它的观测，这叫{{t:station-model}}：左上是气温，左下是露点，右上是海平面气压（只写最后三位），右边下面是过去 3 小时的气压变化；圆圈涂黑多少表示云量，左边的符号是现在的天气，风杆指向风吹来的方向，羽毛表示风速。",
+      "en": "Each station is a small circle with its observations written in fixed places around it: the {{t:station-model}}. Upper left is the temperature, lower left the dew point, upper right the sea-level pressure (last three digits only), and below it the pressure change over the past 3 hours; how much of the circle is filled shows the cloud cover, the symbol on the left is the present weather, and the wind shaft points to where the wind comes from, with barbs for its speed.",
+      "ms": "Setiap stesen ialah bulatan kecil dengan cerapannya ditulis di tempat tetap di sekelilingnya: {{t:station-model}}. Kiri atas ialah suhu, kiri bawah takat embun, kanan atas tekanan paras laut (tiga digit terakhir sahaja), dan di bawahnya perubahan tekanan 3 jam lalu; berapa banyak bulatan diisi menunjukkan litupan awan, simbol di kiri ialah cuaca semasa, dan batang angin menunjuk ke arah angin datang, dengan bulu untuk kelajuannya."
+     },
+     "defines": [
+      "station-model"
+     ],
+     "src": [
+      "ESS:461-462",
+      "PAM:172-173"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W19"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "等压线、等高线和流线",
+    "en": "Isobars, contours and streamlines",
+    "ms": "Isobar, kontur dan garis arus"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "地面图画等压线（第 9 章）。高空图因为画的是同一个气压层（第 10 章），所以画的是这一层的高度，叫{{t:height-contour}}：例如 500 hPa 图上的 “588” 表示 5,880 米。等高线越密，高空风越大，风大致沿着等高线吹。",
+      "en": "Surface charts carry isobars (Chapter 9). Upper-air charts show one pressure level (Chapter 10), so they draw that level's height instead: {{t:height-contour}}s. On a 500 hPa chart, ‘588’ means 5,880 m. The closer the contours, the stronger the wind aloft, which blows roughly along them.",
+      "ms": "Carta permukaan memaparkan isobar (Bab 9). Carta udara atas menunjukkan satu aras tekanan (Bab 10), jadi ia melukis ketinggian aras itu: {{t:height-contour}}. Pada carta 500 hPa, ‘588’ bermaksud 5,880 m. Semakin rapat kontur, semakin kuat angin di atas, yang bertiup lebih kurang di sepanjangnya."
+     },
+     "defines": [
+      "height-contour"
+     ],
+     "src": [
+      "ESS:461",
+      "ESS:254-255"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "在赤道附近，气压差别很小，等压线不好用；这时更常用{{t:streamline}}，直接画出风往哪里流，看哪里汇合（容易下雨）、哪里分散。",
+      "en": "Near the equator pressure differences are tiny and isobars say little; there {{t:streamline}}s are more useful — lines that simply trace where the wind flows, showing where air converges (rain is likely) and where it spreads out.",
+      "ms": "Berhampiran khatulistiwa perbezaan tekanan sangat kecil dan isobar kurang berguna; di situ {{t:streamline}} lebih berguna — garisan yang menjejak ke mana angin mengalir, menunjukkan di mana udara menumpu (hujan berkemungkinan) dan di mana ia menyebar."
+     },
+     "defines": [
+      "streamline"
+     ],
+     "src": [
+      "ESS:314",
+      "FUN:97"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "Windy 的“风”图层在地图上画的流动线条，就是流线的一种画法；选 850 hPa 看季风的汇合最清楚（第 10 章）。",
+      "en": "The moving lines of Windy's wind layer are one way of drawing streamlines; at 850 hPa they show the monsoon's convergence most clearly (Chapter 10).",
+      "ms": "Garisan bergerak lapisan angin Windy ialah satu cara melukis garis arus; pada 850 hPa ia menunjukkan penumpuan monsun dengan paling jelas (Bab 10)."
+     },
+     "src": [
+      "WINDY-OVERLAYS"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "synoptic-chart",
+  "station-model",
+  "height-contour",
+  "streamline"
+ ]
+}

@@ -8,7 +8,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { termIds } from '../js/markup.js';
+import { termIds, chapterIds } from '../js/markup.js';
 
 const LANGS = ['zh', 'en', 'ms'];
 const isTri = v => v && typeof v === 'object' && !Array.isArray(v) && LANGS.some(l => l in v);
@@ -55,6 +55,7 @@ export function lint(root) {
 
   const defined = new Map();      // term → number of defining blocks
   const chapters = [];
+  const chapterSet = new Set(index.chapters.map(m => m.id));   // links may point at chapters not yet written
   for (const meta of index.chapters.filter(m => m.ready !== false)) {
     const file = join(root, 'data', `${meta.id}.json`);
     if (!existsSync(file)) { errors.push(`${meta.id}: listed in index.json but ${meta.id}.json is missing`); continue; }
@@ -80,6 +81,7 @@ export function lint(root) {
       }
       const uses = new Set();
       walkStrings(b, s => termIds(s).forEach(id => uses.add(id)));
+      walkStrings(b, s => chapterIds(s).forEach(id => { if (!chapterSet.has(id)) errors.push(`${at}: unknown chapter "${id}"`); }));
       for (const id of uses) {
         if (!termChapter.has(id)) { errors.push(`${at}: unknown term "${id}"`); continue; }
         const tc = termChapter.get(id);

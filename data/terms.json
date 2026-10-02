@@ -2427,5 +2427,705 @@
    "ms": "Carta sonde dengan garisan suhu condong 45°, untuk membaca kestabilan, dasar awan dan CAPE."
   },
   "chapter": 25
+ },
+ {
+  "id": "height-contour",
+  "name": {
+   "zh": "等高线",
+   "en": "Height contour",
+   "ms": "Kontur ketinggian"
+  },
+  "short": {
+   "zh": "高空图上连接某气压层同一高度的线。",
+   "en": "On an upper-air chart, a line joining equal heights of a pressure level.",
+   "ms": "Pada carta udara atas, garisan yang menyambung ketinggian sama sesuatu aras tekanan."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "station-model",
+  "name": {
+   "zh": "站点模型",
+   "en": "Station model",
+   "ms": "Model stesen"
+  },
+  "short": {
+   "zh": "用固定位置的数字和符号在一个小圆圈四周写出一个站的观测。",
+   "en": "A station's observations written in fixed places around a small circle.",
+   "ms": "Cerapan stesen yang ditulis di tempat tetap di sekeliling bulatan kecil."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "streamline",
+  "name": {
+   "zh": "流线",
+   "en": "Streamline",
+   "ms": "Garis arus"
+  },
+  "short": {
+   "zh": "顺着风的流向画的线；热带天气图常用。",
+   "en": "A line drawn along the wind's flow; common on tropical charts.",
+   "ms": "Garisan mengikut aliran angin; biasa pada carta tropika."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "synoptic-chart",
+  "name": {
+   "zh": "天气图",
+   "en": "Synoptic chart",
+   "ms": "Carta sinoptik"
+  },
+  "short": {
+   "zh": "同一时刻、把大范围各站观测画在一起的地图。",
+   "en": "A map of many stations' observations over a large area at one moment.",
+   "ms": "Peta cerapan banyak stesen di kawasan luas pada satu masa."
+  },
+  "chapter": 26
+ },
+ {
+  "id": "data-assimilation",
+  "name": {
+   "zh": "数据同化",
+   "en": "Data assimilation",
+   "ms": "Asimilasi data"
+  },
+  "short": {
+   "zh": "把上一次预报和新观测结合，得到最佳起点。",
+   "en": "Combining the last forecast with new observations to get the best starting point.",
+   "ms": "Menggabungkan ramalan terakhir dengan cerapan baharu untuk titik mula terbaik."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "global-model",
+  "name": {
+   "zh": "全球模型",
+   "en": "Global model",
+   "ms": "Model global"
+  },
+  "short": {
+   "zh": "计算整个地球的模型。",
+   "en": "A model covering the whole Earth.",
+   "ms": "Model yang meliputi seluruh bumi."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "grid-point",
+  "name": {
+   "zh": "格点",
+   "en": "Grid point",
+   "ms": "Titik grid"
+  },
+  "short": {
+   "zh": "模型计算的每一个点。",
+   "en": "Each point at which a model calculates.",
+   "ms": "Setiap titik di mana model mengira."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "initial-conditions",
+  "name": {
+   "zh": "初始场",
+   "en": "Initial conditions",
+   "ms": "Keadaan awal"
+  },
+  "short": {
+   "zh": "预报出发时的大气状态。",
+   "en": "The state of the atmosphere a forecast starts from.",
+   "ms": "Keadaan atmosfera tempat ramalan bermula."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "nwp",
+  "name": {
+   "zh": "数值天气预报（NWP）",
+   "en": "Numerical weather prediction (NWP)",
+   "ms": "Ramalan cuaca berangka (NWP)"
+  },
+  "short": {
+   "zh": "用电脑解大气方程来预报天气。",
+   "en": "Forecasting by solving the atmosphere's equations on a computer.",
+   "ms": "Meramal dengan menyelesaikan persamaan atmosfera pada komputer."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "parameterisation",
+  "name": {
+   "zh": "参数化",
+   "en": "Parameterisation",
+   "ms": "Parameterisasi"
+  },
+  "short": {
+   "zh": "用简化公式估计格子里放不下的过程（例如雷雨）。",
+   "en": "Estimating processes too small for the grid, such as storms, with simplified formulas.",
+   "ms": "Menganggar proses terlalu kecil untuk grid, seperti ribut, dengan formula ringkas."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "regional-model",
+  "name": {
+   "zh": "区域模型",
+   "en": "Regional model",
+   "ms": "Model serantau"
+  },
+  "short": {
+   "zh": "只计算一个地区、格子较细，边界由全球模型提供。",
+   "en": "A finer-grid model of one region, with boundaries from a global model.",
+   "ms": "Model grid halus bagi satu rantau, dengan sempadan daripada model global."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "resolution",
+  "name": {
+   "zh": "分辨率",
+   "en": "Resolution",
+   "ms": "Resolusi"
+  },
+  "short": {
+   "zh": "格点之间的距离；越小越细。",
+   "en": "The spacing between grid points; smaller is finer.",
+   "ms": "Jarak antara titik grid; lebih kecil lebih halus."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "time-step",
+  "name": {
+   "zh": "时间步长",
+   "en": "Time step",
+   "ms": "Langkah masa"
+  },
+  "short": {
+   "zh": "模型每次往前算的一小段时间。",
+   "en": "The short interval a model steps ahead each time.",
+   "ms": "Selang pendek yang dilangkah model setiap kali."
+  },
+  "chapter": 27
+ },
+ {
+  "id": "butterfly-effect",
+  "name": {
+   "zh": "蝴蝶效应",
+   "en": "Butterfly effect",
+   "ms": "Kesan rama-rama"
+  },
+  "short": {
+   "zh": "混沌的通俗说法：一点点差别，后来可能造成巨大不同。",
+   "en": "The popular name for chaos: a tiny change can later make a huge difference.",
+   "ms": "Nama popular bagi kekacauan: perubahan kecil boleh kemudian membuat perbezaan besar."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "chaos",
+  "name": {
+   "zh": "混沌",
+   "en": "Chaos",
+   "ms": "Kekacauan"
+  },
+  "short": {
+   "zh": "起点的微小差异会不断放大、使长期结果无法预料的性质。",
+   "en": "The property that tiny differences at the start grow until the outcome cannot be predicted.",
+   "ms": "Sifat di mana perbezaan kecil di permulaan membesar sehingga hasilnya tidak dapat diramal."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "control-member",
+  "name": {
+   "zh": "control 成员",
+   "en": "Control member",
+   "ms": "Ahli kawalan"
+  },
+  "short": {
+   "zh": "用最好的起点、没有扰动的那一个成员。",
+   "en": "The member started from the best analysis, unperturbed.",
+   "ms": "Ahli yang bermula dari analisis terbaik, tanpa gangguan."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-forecast",
+  "name": {
+   "zh": "集合预报",
+   "en": "Ensemble forecast",
+   "ms": "Ramalan ensemble"
+  },
+  "short": {
+   "zh": "用稍微不同的起点把同一个模型跑很多次。",
+   "en": "The same model run many times from slightly different starts.",
+   "ms": "Model yang sama dijalankan berkali-kali dari titik mula yang sedikit berbeza."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-mean",
+  "name": {
+   "zh": "集合平均",
+   "en": "Ensemble mean",
+   "ms": "Purata ensemble"
+  },
+  "short": {
+   "zh": "所有成员的平均；比较稳定，但会抹平极端值。",
+   "en": "The average of all members; steadier but smooths extremes.",
+   "ms": "Purata semua ahli; lebih stabil tetapi melicinkan ekstrem."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "ensemble-member",
+  "name": {
+   "zh": "集合成员",
+   "en": "Ensemble member",
+   "ms": "Ahli ensemble"
+  },
+  "short": {
+   "zh": "集合预报里的其中一次预报。",
+   "en": "One run within an ensemble.",
+   "ms": "Satu larian dalam ensemble."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "perturbed-member",
+  "name": {
+   "zh": "扰动成员",
+   "en": "Perturbed member",
+   "ms": "Ahli terganggu"
+  },
+  "short": {
+   "zh": "起点或模型物理稍微改动过的成员。",
+   "en": "A member with slightly altered start or physics.",
+   "ms": "Ahli dengan titik mula atau fizik yang diubah sedikit."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "spread",
+  "name": {
+   "zh": "离散度",
+   "en": "Spread",
+   "ms": "Serakan"
+  },
+  "short": {
+   "zh": "成员之间差得多远；越大越不确定。",
+   "en": "How far the members differ; larger means more uncertain.",
+   "ms": "Sejauh mana ahli berbeza; lebih besar bermaksud lebih tidak pasti."
+  },
+  "chapter": 28
+ },
+ {
+  "id": "cams",
+  "name": {
+   "zh": "CAMS（哥白尼大气监测服务）",
+   "en": "CAMS",
+   "ms": "CAMS"
+  },
+  "short": {
+   "zh": "由 ECMWF 运作，提供空气污染、气溶胶和温室气体资料与预报。",
+   "en": "Run by ECMWF: air pollution, aerosol and greenhouse-gas data and forecasts.",
+   "ms": "Dikendalikan ECMWF: data dan ramalan pencemaran udara, aerosol dan gas rumah hijau."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ecmwf",
+  "name": {
+   "zh": "ECMWF（欧洲中期天气预报中心）",
+   "en": "ECMWF",
+   "ms": "ECMWF"
+  },
+  "short": {
+   "zh": "1975 年成立的欧洲政府间预报中心，以中期和集合预报闻名。",
+   "en": "The European intergovernmental forecast centre founded in 1975, known for medium-range and ensemble forecasts.",
+   "ms": "Pusat ramalan antara kerajaan Eropah yang ditubuhkan 1975, terkenal dengan ramalan jarak sederhana dan ensemble."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ens",
+  "name": {
+   "zh": "ENS（ECMWF 集合预报）",
+   "en": "ENS (ECMWF ensemble)",
+   "ms": "ENS (ensemble ECMWF)"
+  },
+  "short": {
+   "zh": "ECMWF 的 51 成员、约 9 公里、15 天集合预报。",
+   "en": "ECMWF's 51-member, ~9 km, 15-day ensemble.",
+   "ms": "Ensemble ECMWF 51 ahli, ~9 km, 15 hari."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "glofas",
+  "name": {
+   "zh": "GloFAS（全球洪水预警系统）",
+   "en": "GloFAS",
+   "ms": "GloFAS"
+  },
+  "short": {
+   "zh": "用 ECMWF 集合预报推算河流流量，预报到 30 天。",
+   "en": "River-flow forecasts to 30 days driven by ECMWF ensembles.",
+   "ms": "Ramalan aliran sungai hingga 30 hari dipacu ensemble ECMWF."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "ifs",
+  "name": {
+   "zh": "IFS（综合预报系统）",
+   "en": "IFS (Integrated Forecasting System)",
+   "ms": "IFS (Sistem Ramalan Bersepadu)"
+  },
+  "short": {
+   "zh": "ECMWF 的物理数值预报模型。",
+   "en": "ECMWF's physics-based forecast model.",
+   "ms": "Model ramalan berasaskan fizik ECMWF."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "seas5",
+  "name": {
+   "zh": "SEAS5 季节预报",
+   "en": "SEAS5",
+   "ms": "SEAS5"
+  },
+  "short": {
+   "zh": "ECMWF 的季节预报系统，每月一次、到 7 个月。",
+   "en": "ECMWF's seasonal forecast system: monthly, to 7 months.",
+   "ms": "Sistem ramalan bermusim ECMWF: bulanan, hingga 7 bulan."
+  },
+  "chapter": 29
+ },
+ {
+  "id": "efi",
+  "name": {
+   "zh": "EFI（极端预报指数）",
+   "en": "EFI (Extreme Forecast Index)",
+   "ms": "EFI (Indeks Ramalan Ekstrem)"
+  },
+  "short": {
+   "zh": "把集合预报和模型气候比较的指数，−1 到 1。",
+   "en": "Compares an ensemble with the model climate, from −1 to 1.",
+   "ms": "Membandingkan ensemble dengan iklim model, dari −1 hingga 1."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "epsgram",
+  "name": {
+   "zh": "EPSgram（集合预报图）",
+   "en": "EPSgram",
+   "ms": "EPSgram"
+  },
+  "short": {
+   "zh": "一个地点的集合预报，每天画成一个盒子。",
+   "en": "An ensemble forecast for one place drawn as one box per day.",
+   "ms": "Ramalan ensemble untuk satu tempat dilukis sebagai satu kotak setiap hari."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "percentile",
+  "name": {
+   "zh": "百分位数",
+   "en": "Percentile",
+   "ms": "Persentil"
+  },
+  "short": {
+   "zh": "把数值排好后，有多少比例比它小；中位数是第 50 百分位。",
+   "en": "The share of sorted values below it; the median is the 50th.",
+   "ms": "Bahagian nilai tersusun di bawahnya; median ialah ke-50."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "plume-chart",
+  "name": {
+   "zh": "羽状图",
+   "en": "Plume chart",
+   "ms": "Carta bulu"
+  },
+  "short": {
+   "zh": "把每个成员画成一条线的图。",
+   "en": "A chart with every member drawn as its own line.",
+   "ms": "Carta dengan setiap ahli dilukis sebagai garisan sendiri."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "probability-map",
+  "name": {
+   "zh": "概率图",
+   "en": "Probability map",
+   "ms": "Peta kebarangkalian"
+  },
+  "short": {
+   "zh": "显示有几成成员超过某个门槛的地图。",
+   "en": "A map of the share of members above a threshold.",
+   "ms": "Peta bahagian ahli melebihi ambang."
+  },
+  "chapter": 30
+ },
+ {
+  "id": "enso-outlook",
+  "name": {
+   "zh": "ENSO 展望",
+   "en": "ENSO outlook",
+   "ms": "Tinjauan ENSO"
+  },
+  "short": {
+   "zh": "NOAA 等机构每月发布的厄尔尼诺/拉尼娜现况和概率预报。",
+   "en": "The monthly status and probability forecast of El Niño/La Niña from NOAA and others.",
+   "ms": "Status dan ramalan kebarangkalian El Niño/La Niña bulanan daripada NOAA dan lain-lain."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "reanalysis",
+  "name": {
+   "zh": "再分析",
+   "en": "Reanalysis",
+   "ms": "Analisis semula"
+  },
+  "short": {
+   "zh": "用同一个模型和数据同化，把过去几十年的天气重新算一遍。",
+   "en": "Recomputing decades of past weather with one model and data assimilation.",
+   "ms": "Mengira semula cuaca berdekad-dekad dengan satu model dan asimilasi data."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "seasonal-forecast",
+  "name": {
+   "zh": "季节预报",
+   "en": "Seasonal forecast",
+   "ms": "Ramalan bermusim"
+  },
+  "short": {
+   "zh": "预报未来几个月平均偏高、正常或偏低的概率。",
+   "en": "Chances that the coming months average above, near or below normal.",
+   "ms": "Peluang bulan-bulan akan datang berpurata di atas, hampir atau di bawah normal."
+  },
+  "chapter": 31
+ },
+ {
+  "id": "aifs",
+  "name": {
+   "zh": "AIFS（ECMWF 人工智能预报系统）",
+   "en": "AIFS",
+   "ms": "AIFS"
+  },
+  "short": {
+   "zh": "ECMWF 的 AI 模型，有单一和集合两种，2025 年起运作。",
+   "en": "ECMWF's AI model, single and ensemble, operational since 2025.",
+   "ms": "Model AI ECMWF, tunggal dan ensemble, beroperasi sejak 2025."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "graphcast",
+  "name": {
+   "zh": "GraphCast",
+   "en": "GraphCast",
+   "ms": "GraphCast"
+  },
+  "short": {
+   "zh": "Google DeepMind 的 AI 天气模型，2023 年发表。",
+   "en": "Google DeepMind's AI weather model, published 2023.",
+   "ms": "Model cuaca AI Google DeepMind, diterbitkan 2023."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "ml-weather-model",
+  "name": {
+   "zh": "机器学习天气模型",
+   "en": "Machine-learning weather model",
+   "ms": "Model cuaca pembelajaran mesin"
+  },
+  "short": {
+   "zh": "从历史资料学会天气怎样变化、再往前推的模型。",
+   "en": "A model that learns from past data how weather evolves, then steps forward.",
+   "ms": "Model yang belajar daripada data lalu bagaimana cuaca berkembang, kemudian melangkah ke depan."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "training-data",
+  "name": {
+   "zh": "训练数据",
+   "en": "Training data",
+   "ms": "Data latihan"
+  },
+  "short": {
+   "zh": "AI 模型用来学习的历史资料，例如 ERA5。",
+   "en": "The historical data an AI model learns from, such as ERA5.",
+   "ms": "Data sejarah tempat model AI belajar, seperti ERA5."
+  },
+  "chapter": 32
+ },
+ {
+  "id": "gefs",
+  "name": {
+   "zh": "GEFS",
+   "en": "GEFS",
+   "ms": "GEFS"
+  },
+  "short": {
+   "zh": "GFS 的集合预报，31 个成员。",
+   "en": "The GFS ensemble, 31 members.",
+   "ms": "Ensemble GFS, 31 ahli."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "gfs",
+  "name": {
+   "zh": "GFS",
+   "en": "GFS",
+   "ms": "GFS"
+  },
+  "short": {
+   "zh": "美国 NOAA 的全球预报模型。",
+   "en": "NOAA's Global Forecast System.",
+   "ms": "Sistem Ramalan Global NOAA."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "icon",
+  "name": {
+   "zh": "ICON",
+   "en": "ICON",
+   "ms": "ICON"
+  },
+  "short": {
+   "zh": "德国气象局（DWD）的模型。",
+   "en": "The German Weather Service's model.",
+   "ms": "Model Perkhidmatan Cuaca Jerman."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "multi-model-ensemble",
+  "name": {
+   "zh": "多模型集合",
+   "en": "Multi-model ensemble",
+   "ms": "Ensemble pelbagai model"
+  },
+  "short": {
+   "zh": "把几个不同机构的模型放在一起比较或结合。",
+   "en": "Comparing or combining models from several centres.",
+   "ms": "Membanding atau menggabungkan model dari beberapa pusat."
+  },
+  "chapter": 33
+ },
+ {
+  "id": "bias",
+  "name": {
+   "zh": "偏差",
+   "en": "Bias",
+   "ms": "Bias"
+  },
+  "short": {
+   "zh": "预报总是偏高或偏低的固定误差。",
+   "en": "A steady tendency to forecast too high or too low.",
+   "ms": "Kecenderungan tetap meramal terlalu tinggi atau rendah."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "forecast-skill",
+  "name": {
+   "zh": "预报技巧",
+   "en": "Forecast skill",
+   "ms": "Kemahiran ramalan"
+  },
+  "short": {
+   "zh": "预报比简单参考（如气候平均）好多少。",
+   "en": "How much better a forecast does than a simple reference such as climatology.",
+   "ms": "Sejauh mana ramalan lebih baik daripada rujukan mudah seperti klimatologi."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "verification",
+  "name": {
+   "zh": "预报校验",
+   "en": "Verification",
+   "ms": "Pengesahan ramalan"
+  },
+  "short": {
+   "zh": "把预报和实际天气比较。",
+   "en": "Comparing forecasts with what happened.",
+   "ms": "Membandingkan ramalan dengan apa yang berlaku."
+  },
+  "chapter": 34
+ },
+ {
+  "id": "meteogram",
+  "name": {
+   "zh": "Meteogram（气象时间图）",
+   "en": "Meteogram",
+   "ms": "Meteogram"
+  },
+  "short": {
+   "zh": "把一个地点的气象要素随时间画在一起的图。",
+   "en": "A chart of one place's weather elements against time.",
+   "ms": "Carta unsur cuaca satu tempat melawan masa."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "myt",
+  "name": {
+   "zh": "马来西亚时间（MYT）",
+   "en": "Malaysian time (MYT)",
+   "ms": "Waktu Malaysia (MYT)"
+  },
+  "short": {
+   "zh": "比 UTC 快 8 小时。",
+   "en": "UTC plus 8 hours.",
+   "ms": "UTC tambah 8 jam."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "pop",
+  "name": {
+   "zh": "降雨概率",
+   "en": "Probability of precipitation",
+   "ms": "Kebarangkalian hujan"
+  },
+  "short": {
+   "zh": "预报区里任一点下到可量雨量的机会；阵雨时指面积。",
+   "en": "The chance of measurable rain at any spot in the area; for showers, the area covered.",
+   "ms": "Peluang hujan boleh diukur di mana-mana tempat; bagi hujan lebat setempat, kawasan diliputi."
+  },
+  "chapter": 35
+ },
+ {
+  "id": "utc",
+  "name": {
+   "zh": "UTC（协调世界时）",
+   "en": "UTC",
+   "ms": "UTC"
+  },
+  "short": {
+   "zh": "全世界气象通用的时间。",
+   "en": "The world time used across meteorology.",
+   "ms": "Waktu dunia yang digunakan dalam meteorologi."
+  },
+  "chapter": 35
  }
 ]

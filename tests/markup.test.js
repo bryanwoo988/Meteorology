@@ -17,3 +17,14 @@ test('plain text is one piece; empty is none', () => {
 test('termIds lists ids in order', () => {
   assert.deepEqual(termIds('{{t:a}} x {{t:b|B}} {{t:a}}'), ['a', 'b', 'a']);
 });
+
+test('chapter links are split out, with their label', () => {
+  assert.deepEqual(parseInline('see {{ch:ch09|Chapter 9}} and {{t:lcl}}'), [
+    { text: 'see ' }, { chapter: 'ch09', label: 'Chapter 9' }, { text: ' and ' }, { term: 'lcl' },
+  ]);
+  assert.deepEqual(termIds('{{ch:ch09|x}} {{t:a}}'), ['a']);
+});
+test('chapterIds lists linked chapters', async () => {
+  const { chapterIds } = await import('../js/markup.js');
+  assert.deepEqual(chapterIds('{{ch:ch09|a}} {{ch:ch23|b}}'), ['ch09', 'ch23']);
+});

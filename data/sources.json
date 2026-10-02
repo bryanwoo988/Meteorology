@@ -64,6 +64,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "CAMS-ABOUT",
+  "short": "Copernicus CAMS",
+  "title": "About the Copernicus Atmosphere Monitoring Service",
+  "publisher": "Copernicus / ECMWF",
+  "url": "https://atmosphere.copernicus.eu/about-us",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "CDS-ERA5",
+  "short": "Copernicus CDS",
+  "title": "ERA5 hourly data on single levels from 1940 to present",
+  "publisher": "Copernicus Climate Change Service / ECMWF",
+  "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "CHANG2003",
   "short": "Chang et al. 2003",
   "title": "Typhoon Vamei: An equatorial tropical cyclone formation",
@@ -88,12 +104,92 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "COMPARECAST",
+  "short": "CompareCast",
+  "title": "CompareCast — compare weather models side by side",
+  "publisher": "Bryan Woo",
+  "url": "https://bryanwoo988.github.io/CompareCast/",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "DOE-API",
   "short": "DOE",
   "title": "Pengiraan Indeks Pencemar Udara (IPU) / Air Pollutant Index (API) calculation",
   "publisher": "Jabatan Alam Sekitar Malaysia",
   "url": "https://www.doe.gov.my/wp-content/uploads/2021/09/API_Calculation.pdf",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "ECMWF-50R1",
+  "short": "ECMWF",
+  "title": "Significant update to ECMWF’s key forecasting systems IFS and AIFS goes live (12 May 2026)",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-AIFS",
+  "short": "ECMWF",
+  "title": "AIFS Machine Learning data",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/dataset/aifs-machine-learning-data",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-EFI",
+  "short": "ECMWF",
+  "title": "Extreme Forecast Index (EFI) and Shift of Tails — training presentation (I. Tsonevsky)",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://confluence.ecmwf.int/download/attachments/95063314/Forecasting_Extremes_Jan2018.pdf?api=v2",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-MEDIUM",
+  "short": "ECMWF",
+  "title": "Medium-range forecasts",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/documentation-and-support/medium-range-forecasts",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-OPEN",
+  "short": "ECMWF",
+  "title": "Open data (IFS and AIFS real-time subset, CC BY 4.0)",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-PERF2017",
+  "short": "ECMWF Newsletter 154",
+  "title": "Forecast performance 2017",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/newsletter/154/news/forecast-performance-2017",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-QUALITY",
+  "short": "ECMWF",
+  "title": "Quality of our forecasts (headline scores)",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/quality-our-forecasts",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-SEASONAL",
+  "short": "ECMWF",
+  "title": "Seasonal forecasts",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/documentation-and-support/long-range",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "ECMWF-SUBSEAS",
+  "short": "ECMWF",
+  "title": "Sub-seasonal-range forecasts",
+  "publisher": "European Centre for Medium-Range Weather Forecasts",
+  "url": "https://www.ecmwf.int/en/forecasts/documentation-and-support/extended-range-forecasts",
+  "accessed": "2026-10-03"
  },
  {
   "id": "ECMWF-WHO",
@@ -142,6 +238,22 @@
   "publisher": "dokumen.pub edition",
   "url": "",
   "accessed": ""
+ },
+ {
+  "id": "GLOFAS",
+  "short": "Copernicus EWDS",
+  "title": "River discharge and related forecasted data by the Global Flood Awareness System",
+  "publisher": "Copernicus Emergency Management Service",
+  "url": "https://ewds.climate.copernicus.eu/datasets/cems-glofas-forecast",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "GRAPHCAST",
+  "short": "Lam et al. 2023",
+  "title": "Learning skillful medium-range global weather forecasting (Science 382, 6677)",
+  "publisher": "R. Lam, A. Sanchez-Gonzalez, M. Willson et al. (Google DeepMind), 2023",
+  "url": "https://doi.org/10.1126/science.adi2336",
+  "accessed": "2026-10-03"
  },
  {
   "id": "IMD-GLOSS",
@@ -256,12 +368,28 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "METMY-NEM2122",
+  "short": "MetMalaysia 2024",
+  "title": "Review of the Northeast Monsoon 2021/2022 in Malaysia (Research Publication No. 1/2024)",
+  "publisher": "W. F. Mustafah, J. Y. Diong, F. J. Fakaruddin et al., Malaysian Meteorological Department",
+  "url": "https://www.met.gov.my/data/research/researchpapers/2024/RP01_2024.pdf",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "METMY-SWM2024",
   "short": "MetMalaysia 2025",
   "title": "Review of the Southwest Monsoon 2024 in Malaysia (Research Publication No. 2/2025)",
   "publisher": "N. Mohd Rashid, W. F. Mustafah, Z. A. Mokhtar & M. F. A. Abdullah, Malaysian Meteorological Department, December 2025",
   "url": "https://www.met.gov.my/data/research/researchpapers/2025/RP04_2025.pdf",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "METMY-TN0122",
+  "short": "MetMalaysia 2022",
+  "title": "Peningkatan Model Ramalan Cuaca Numerikal dari 3-Hari dengan Resolusi 4km kepada 4-Hari dengan Resolusi 3km bagi Seluruh Malaysia (Technical Note No. 1/2022)",
+  "publisher": "M. S. Muhamad Yusof, Jabatan Meteorologi Malaysia",
+  "url": "https://www.met.gov.my/data/research/researchpapers/2022/RP04_2022.pdf",
+  "accessed": "2026-10-03"
  },
  {
   "id": "NASA-GPM-DPR",
@@ -310,6 +438,14 @@
   "publisher": "The Vibes",
   "url": "https://www.thevibes.com/index.php/articles/news/127819/el-nino-to-bring-drier-weather-higher-temperatures-and-greater-haze-risk-in-malaysia",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "NOAA-CPC-DISC",
+  "short": "NOAA CPC",
+  "title": "ENSO Diagnostic Discussion, 10 September 2026",
+  "publisher": "NOAA Climate Prediction Center",
+  "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+  "accessed": "2026-10-03"
  },
  {
   "id": "NOAA-CPC-RONI",
@@ -392,6 +528,22 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "OM-DOCS",
+  "short": "Open-Meteo",
+  "title": "Weather forecast API — data sources (national weather services, resolutions and forecast lengths)",
+  "publisher": "Open-Meteo",
+  "url": "https://open-meteo.com/en/docs",
+  "accessed": "2026-10-03"
+ },
+ {
+  "id": "OM-ENS",
+  "short": "Open-Meteo",
+  "title": "Ensemble API — ECMWF IFS 0.25° (51 members), fetched for Kuala Lumpur on 3 Oct 2026",
+  "publisher": "Open-Meteo (CC BY 4.0); data ECMWF open data",
+  "url": "https://open-meteo.com/en/docs/ensemble-api",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "OM-FCST-KL",
   "short": "Open-Meteo forecasts",
   "title": "Open-Meteo Forecast API — freezing level height over Kuala Lumpur, 3 Aug – 2 Oct 2026",
@@ -424,6 +576,14 @@
   "accessed": "2026-10-02"
  },
  {
+  "id": "SH2002",
+  "short": "Simmons & Hollingsworth 2002",
+  "title": "Some aspects of the improvement in skill of numerical weather prediction (QJRMS 128, 647–677)",
+  "publisher": "A. J. Simmons and A. Hollingsworth, 2002",
+  "url": "https://doi.org/10.1256/003590002321042135",
+  "accessed": "2026-10-03"
+ },
+ {
   "id": "STULL2011",
   "short": "Stull 2011",
   "title": "Wet-Bulb Temperature from Relative Humidity and Air Temperature",
@@ -454,6 +614,14 @@
   "publisher": "University of Wyoming, Department of Atmospheric Science",
   "url": "https://weather.uwyo.edu/upperair/sounding.shtml",
   "accessed": "2026-10-02"
+ },
+ {
+  "id": "VITART2013",
+  "short": "ECMWF TM 694",
+  "title": "Evolution of ECMWF sub-seasonal forecast skill scores over the past 10 years (Technical Memorandum 694)",
+  "publisher": "F. Vitart, ECMWF, 2013",
+  "url": "https://www.ecmwf.int/sites/default/files/elibrary/2013/12932-evolution-ecmwf-sub-seasonal-forecast-skill-scores-over-past-10-years.pdf",
+  "accessed": "2026-10-03"
  },
  {
   "id": "WHO-UV",

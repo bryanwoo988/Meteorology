@@ -442,8 +442,7 @@
     "zh": "天气图",
     "en": "Weather maps",
     "ms": "Peta cuaca"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch27",
@@ -453,8 +452,7 @@
     "zh": "数值天气预报怎样运作",
     "en": "How numerical weather prediction works",
     "ms": "Bagaimana ramalan cuaca berangka berfungsi"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch28",
@@ -463,9 +461,8 @@
    "title": {
     "zh": "集合预报：原理",
     "en": "Ensemble forecasting: the idea",
-    "ms": "Ramalan ensembel: idea asas"
-   },
-   "ready": false
+    "ms": "Ramalan ensemble: ideanya"
+   }
   },
   {
    "id": "ch29",
@@ -475,19 +472,17 @@
     "zh": "认识 ECMWF",
     "en": "Getting to know ECMWF",
     "ms": "Mengenali ECMWF"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch30",
    "num": 30,
    "stage": 8,
    "title": {
-    "zh": "读懂 ECMWF 的预报图",
-    "en": "Reading ECMWF forecast charts",
-    "ms": "Membaca carta ramalan ECMWF"
-   },
-   "ready": false
+    "zh": "读懂 ECMWF 的集合预报图",
+    "en": "Reading ECMWF ensemble charts",
+    "ms": "Membaca carta ensemble ECMWF"
+   }
   },
   {
    "id": "ch31",
@@ -497,8 +492,7 @@
     "zh": "再分析与季节预报",
     "en": "Reanalysis and seasonal forecasts",
     "ms": "Analisis semula dan ramalan bermusim"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch32",
@@ -508,8 +502,7 @@
     "zh": "AI 天气模型",
     "en": "AI weather models",
     "ms": "Model cuaca AI"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch33",
@@ -518,9 +511,8 @@
    "title": {
     "zh": "其他主要模型与多模型集合",
     "en": "Other major models and multi-model ensembles",
-    "ms": "Model utama lain dan ensembel pelbagai model"
-   },
-   "ready": false
+    "ms": "Model utama lain dan ensemble pelbagai model"
+   }
   },
   {
    "id": "ch34",
@@ -530,8 +522,7 @@
     "zh": "预报准不准",
     "en": "How good are forecasts?",
     "ms": "Sejauh mana ramalan tepat?"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch35",
@@ -539,21 +530,19 @@
    "stage": 8,
    "title": {
     "zh": "看懂天气 App",
-    "en": "Reading a weather app",
+    "en": "Reading weather apps",
     "ms": "Membaca aplikasi cuaca"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch36",
    "num": 36,
    "stage": 8,
    "title": {
-    "zh": "真实事件复盘",
-    "en": "A real event, step by step",
-    "ms": "Satu kejadian sebenar, langkah demi langkah"
-   },
-   "ready": false
+    "zh": "真实事件复盘：2021 年 12 月大雨",
+    "en": "A real event, step by step: December 2021",
+    "ms": "Peristiwa sebenar, langkah demi langkah: Disember 2021"
+   }
   },
   {
    "id": "ch37",
@@ -563,8 +552,7 @@
     "zh": "Windy 图层导读",
     "en": "A guide to Windy's layers",
     "ms": "Panduan lapisan Windy"
-   },
-   "ready": false
+   }
   },
   {
    "id": "ch38",

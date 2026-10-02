@@ -1,0 +1,136 @@
+{
+ "id": "ch34",
+ "num": 34,
+ "stage": 8,
+ "title": {
+  "zh": "预报准不准",
+  "en": "How good are forecasts?",
+  "ms": "Sejauh mana ramalan tepat?"
+ },
+ "sources": [
+  "ESS",
+  "FUN",
+  "ECMWF-QUALITY",
+  "SH2002",
+  "ECMWF-PERF2017",
+  "VITART2013"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "怎样给预报打分",
+    "en": "Scoring a forecast",
+    "ms": "Memberi markah kepada ramalan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "把预报和后来真正发生的天气比较，叫{{t:verification}}。如果预报总是偏高或偏低，这个固定的差叫{{t:bias}}。光说“准”还不够，还要和一个简单的参考比，例如“明天和今天一样”或“照气候平均”；比参考好多少，叫{{t:forecast-skill}}。",
+      "en": "Comparing forecasts with what actually happened is {{t:verification}}. If a forecast is always too high or too low, that steady error is its {{t:bias}}. ‘Accurate’ is not enough on its own: a forecast is compared with a simple reference, such as ‘tomorrow will be like today’ or ‘the climate average’, and how much better it does is its {{t:forecast-skill}}.",
+      "ms": "Membandingkan ramalan dengan apa yang sebenarnya berlaku ialah {{t:verification}}. Jika ramalan sentiasa terlalu tinggi atau rendah, ralat tetap itu ialah {{t:bias}}. ‘Tepat’ sahaja tidak cukup: ramalan dibandingkan dengan rujukan mudah, seperti ‘esok sama seperti hari ini’ atau ‘purata iklim’, dan sejauh mana ia lebih baik ialah {{t:forecast-skill}}."
+     },
+     "defines": [
+      "verification",
+      "bias",
+      "forecast-skill"
+     ],
+     "src": [
+      "ESS:258",
+      "FUN:128"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "ECMWF 最主要的成绩指标之一：北半球中纬度 500 hPa 高度的距平相关，降到 80 % 时是预报第几天。天数越大，表示好的预报能看得越远。",
+      "en": "One of ECMWF's two headline scores is the forecast day at which the anomaly correlation of 500 hPa height over the northern extratropics falls to 80 %. The more days, the further ahead a good forecast reaches.",
+      "ms": "Salah satu daripada dua skor utama ECMWF ialah hari ramalan di mana korelasi anomali ketinggian 500 hPa di ekstratropika utara jatuh ke 80 %. Semakin banyak hari, semakin jauh ramalan yang baik mencapai."
+     },
+     "src": [
+      "ECMWF-QUALITY"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W27"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "越远越不准，但每十年进步一天",
+    "en": "Worse with range, but a day better each decade",
+    "ms": "Lebih teruk dengan jarak, tetapi sehari lebih baik setiap dekad"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "混沌（第 28 章）让起点的小误差不断放大，大约每五天翻一倍；所以超过两星期，就很难预报某一天的天气了。教科书说，模型通常能把四到六天内的天气预报得相当好，而且气温和急流比雨更好预报。",
+      "en": "Chaos (Chapter 28) makes small starting errors keep growing — roughly doubling every five days — so beyond about two weeks the weather on a given day can hardly be forecast. The textbooks put good model forecasts at about four to six days, with temperature and jet streams forecast better than rain.",
+      "ms": "Kekacauan (Bab 28) membuat ralat permulaan yang kecil terus membesar — kira-kira berganda setiap lima hari — jadi melebihi kira-kira dua minggu cuaca pada hari tertentu hampir tidak dapat diramal. Buku teks meletakkan ramalan model yang baik pada kira-kira empat hingga enam hari, dengan suhu dan aliran jet diramal lebih baik daripada hujan."
+     },
+     "src": [
+      "FUN:128",
+      "ESS:255"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "但预报一直在进步。研究发现，过去几十年，北半球的预报每十年大约多看一天：今天的第 6 天预报，大约和十年前的第 5 天一样好。2017 年 ECMWF 也说，集合预报的主要成绩在过去十年进步了一天多。",
+      "en": "Forecasts keep improving, though. Studies found a gain of about one day of predictability per decade in the northern hemisphere: today's day-6 forecast is about as good as a day-5 forecast ten years earlier. In 2017 ECMWF reported its ensemble headline score up more than a day over the previous decade.",
+      "ms": "Namun ramalan terus bertambah baik. Kajian mendapati peningkatan kira-kira satu hari kebolehramalan setiap dekad di hemisfera utara: ramalan hari ke-6 hari ini lebih kurang sebaik ramalan hari ke-5 sepuluh tahun lalu. Pada 2017 ECMWF melaporkan skor utama ensemblenya naik lebih sehari berbanding dekad sebelumnya."
+     },
+     "src": [
+      "SH2002",
+      "ECMWF-PERF2017"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "热带和 MJO",
+    "en": "The tropics and the MJO",
+    "ms": "Tropika dan MJO"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "马来西亚的雨大多来自几公里大的对流，比模型格子小，只能靠参数化（第 27 章）；所以这里的雨量特别难预报，某一个钟头、某一个镇会不会下雨，往往只能说概率。",
+      "en": "Most of Malaysia's rain comes from convection a few kilometres across — smaller than the model grid and handled only by parameterisation (Chapter 27). That makes rain here especially hard to forecast; whether it rains in one town in one hour can often only be given as a probability.",
+      "ms": "Kebanyakan hujan Malaysia datang daripada perolakan selebar beberapa kilometer — lebih kecil daripada grid model dan hanya dikendalikan melalui parameterisasi (Bab 27). Ini menjadikan hujan di sini sangat sukar diramal; sama ada hujan di satu bandar dalam satu jam sering hanya boleh diberi sebagai kebarangkalian."
+     },
+     "src": [
+      "ESS:255-256"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "不过热带也有慢慢变化的“节拍器”：MJO（第 14 章）。ECMWF 的研究显示，从 2002 年起，它预报 MJO 的能力平均每年进步约一天；MJO 让几个星期后的预报仍有一些把握。",
+      "en": "The tropics have a slow metronome, though: the MJO (Chapter 14). ECMWF research shows that its skill at forecasting the MJO improved by about one day a year on average from 2002, and the MJO gives forecasts some skill weeks ahead.",
+      "ms": "Namun tropika mempunyai metronom perlahan: MJO (Bab 14). Penyelidikan ECMWF menunjukkan kemahirannya meramal MJO meningkat kira-kira satu hari setahun secara purata dari 2002, dan MJO memberi ramalan sedikit kemahiran beberapa minggu ke depan."
+     },
+     "src": [
+      "VITART2013"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "verification",
+  "bias",
+  "forecast-skill"
+ ]
+}

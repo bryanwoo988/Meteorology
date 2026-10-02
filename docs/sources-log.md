@@ -84,3 +84,31 @@ against its source before it is written. One row per claim.
 | 24 | Sentinel-1：全天候、昼夜雷达成像 | https://sentinels.copernicus.eu/copernicus/sentinel-1 | 2026-10-02 |
 | 24 | Blitzortung：义工网络，500 多个 VLF 接收器，TOA/TOGA 定位 | https://www.blitzortung.org/en/cover_your_area.php | 2026-10-02 |
 | 25 | NOAA JetStream：1947 年等温线改斜 45°；气压线 1050–100 hPa；干绝热 9.8 °C/km；混合比 g/kg | https://www.noaa.gov/jetstream/upperair/skew-t-log-p-diagrams | 2026-10-02 |
+| 26 | 站点模型：气温左上、露点左下、海平面气压右上（末三位，0.1 hPa）、3 小时变化、云量圈、现在天气、风杆（半羽 5 kt、整羽 10 kt、三角 50 kt） | ESS Appendix C pp. 461–462（书中原图） | — |
+| 26 | 天气图每 6 小时更新；站点画小圆圈 | PAM pp. 171–172 | — |
+| 26 | 热带用流线不用等压线（气压差小）；流线显示汇合与分散 | ESS p. 314；FUN p. 97 | — |
+| 27 | NWP：格点、5 分钟时间步、格距减半计算 8 倍、时间 16 倍；粗网格看不到雷雨 | ESS pp. 254–256 | — |
+| 27 | ERA5/数据同化：每 12 小时（ECMWF）结合上次预报和新观测；再分析 10 成员不确定性 | https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels | 2026-10-03 |
+| 27 | IFS Cycle 50r1（2026-05-12）：对流与云微物理改进，减少停滞降雨、更真实地由海到陆；AIFS v2 加入海浪 | https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live | 2026-10-03 |
+| 27 | MetMalaysia：2008 年起用 WRF；GFS 为输入；00/12 UTC（8 am/8 pm）；升级为 3 km、4 天、全马 | https://www.met.gov.my/data/research/researchpapers/2022/RP04_2022.pdf | 2026-10-03 |
+| 28 | ENS：51 成员（1 control + 50 扰动初始场和物理）、约 9 km、15 天；00/12 UTC，另有 06/18 UTC 较短补充预报；离散度大=不确定 | https://www.ecmwf.int/en/forecasts/documentation-and-support/medium-range-forecasts | 2026-10-03 |
+| 28 | Lorenz 1963 混沌；误差约每 5 天翻倍；1992 年起 ECMWF 和 NCEP 业务集合；离散度与技巧关系常弱；多模型集合较佳 | FUN pp. 128–129 | — |
+| 29 | 次季节：到 46 天、每天、约 36 km；季节 SEAS5：到 7 个月、每月、51 成员、约 36 km；年度 13 个月每三个月 | https://www.ecmwf.int/en/forecasts/documentation-and-support/extended-range-forecasts ；https://www.ecmwf.int/en/forecasts/documentation-and-support/long-range | 2026-10-03 |
+| 29 | CAMS 由 ECMWF 实施；ECMWF 35 国支持 | https://atmosphere.copernicus.eu/about-us | 2026-10-03 |
+| 29 | GloFAS：LISFLOOD + ECMWF 集合与次季节预报，到 30 天 | https://ewds.climate.copernicus.eu/datasets/cems-glofas-forecast | 2026-10-03 |
+| 29/32 | AIFS Single 2025-02-25 运作、AIFS ENS 2025-07-01；2026-05-12 升级 v2；CC BY 4.0 | https://www.ecmwf.int/en/forecasts/dataset/aifs-machine-learning-data | 2026-10-03 |
+| 29 | 开放数据：IFS 与 AIFS 子集，CC BY 4.0，可商用需注明；0.25° GRIB2；06z/18z 自 50r1 归入 oper | https://www.ecmwf.int/en/forecasts/datasets/open-data | 2026-10-03 |
+| 30 | 吉隆坡 ENS 预报（Open-Meteo ecmwf_ifs025，51 成员，2026-10-03 取得）：13 Oct 27/51 >10 mm；15 Oct control 1.5 mm、12/51 >10 mm | https://ensemble-api.open-meteo.com/v1/ensemble?latitude=3.139&longitude=101.6869&hourly=temperature_2m,precipitation&models=ecmwf_ifs025&forecast_days=15&timezone=Asia%2FKuala_Lumpur | 2026-10-03 |
+| 30 | EFI：集合与模型气候（再预报）比较，−1 到 1；SOT 补充 | https://confluence.ecmwf.int/download/attachments/95063314/Forecasting_Extremes_Jan2018.pdf?api=v2 | 2026-10-03 |
+| 31 | NOAA CPC 2026-09-10：El Niño Advisory；>90 % 机会出现非常强事件；8 月 Niño 3.4 +1.8 °C | https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml | 2026-10-03 |
+| 32 | GraphCast（Science 2023）：再分析训练，<1 分钟 10 天 0.25°，1,380 指标中 90 % 胜出 | https://doi.org/10.1126/science.adi2336 （Crossref 摘要） | 2026-10-03 |
+| 33 | Open-Meteo 集合表：ECMWF IFS 0.25° 51 成员 15 天；GFS Ens 0.25° 31 成员 10 天；ICON-EPS 26 km 40 成员 7.5 天；MOGREPS-G 20 km 18 成员 8 天；GEM 0.25° 21 成员 16 天 | https://open-meteo.com/en/docs/ensemble-api | 2026-10-03 |
+| 34 | ECMWF 头条分数：HRES 500 hPa 距平相关降到 80 % 的天数 | https://www.ecmwf.int/en/forecasts/quality-our-forecasts | 2026-10-03 |
+| 34 | 每十年约多 1 天可预报性（北半球） | https://doi.org/10.1256/003590002321042135 （Crossref 摘要） | 2026-10-03 |
+| 34 | ECMWF 2017：ENS 头条分数十年多一天以上 | https://www.ecmwf.int/en/newsletter/154/news/forecast-performance-2017 | 2026-10-03 |
+| 34 | Vitart 2013（TM 694）：MJO 预报技巧自 2002 年平均每年多约 1 天 | https://www.ecmwf.int/sites/default/files/elibrary/2013/12932-evolution-ecmwf-sub-seasonal-forecast-skill-scores-over-past-10-years.pdf | 2026-10-03 |
+| 35 | 降雨概率定义（任一点 ≥0.01 in）；表 9.1；阵雨时百分比指面积 | ESS p. 259 | — |
+| 35 | 吉隆坡 2025-06-16 逐时 ERA5：12:00 32.0 °C，13:00 起下雨 | https://archive-api.open-meteo.com/v1/archive?latitude=3.139&longitude=101.6869&start_date=2025-06-16&end_date=2025-06-16&hourly=temperature_2m,dew_point_2m,precipitation,wind_speed_10m | 2026-10-03 |
+| 36 | MetMalaysia NEM 2021/22 检讨：12 月 16–18 日季风潮 + 台风雷伊；表 4 站点雨量（KLIA 188、关丹 261/339、梳邦 253、八打灵再也 201 mm） | https://www.met.gov.my/data/research/researchpapers/2024/RP01_2024.pdf | 2026-10-03 |
+| 36 | ERA5 格子日雨量 2021-12-10 至 25（梳邦 18 日 68.6 mm、关丹 19 日 141.1 mm） | https://archive-api.open-meteo.com/v1/archive（见 data/series/dec2021-era5.json） | 2026-10-03 |
+| 37 | Windy 图层说明（风、阵风 ECMWF 偏高、雷达+Blitzortung、CAPE 1,000–2,000/2,000+、云层高度、湿球 35 °C、CAP 预警等） | https://community.windy.com/topic/3361/description-of-weather-overlays | 2026-10-03 |

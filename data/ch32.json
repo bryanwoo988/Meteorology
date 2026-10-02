@@ -1,0 +1,118 @@
+{
+ "id": "ch32",
+ "num": 32,
+ "stage": 8,
+ "title": {
+  "zh": "AI 天气模型",
+  "en": "AI weather models",
+  "ms": "Model cuaca AI"
+ },
+ "sources": [
+  "GRAPHCAST",
+  "ECMWF-AIFS",
+  "ECMWF-50R1",
+  "CDS-ERA5",
+  "OM-ENS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "从历史资料里“学”天气",
+    "en": "Learning weather from the record",
+    "ms": "Belajar cuaca daripada rekod"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "物理模型（第 27 章）一步一步解方程。{{t:ml-weather-model}}则不直接解方程，而是用几十年的{{t:training-data}}——通常是 ERA5 再分析——学会“现在是这样，6 小时后通常会变成怎样”，然后一步一步往前推。",
+      "en": "A physics model (Chapter 27) solves the equations step by step. A {{t:ml-weather-model}} does not solve them directly; it learns from decades of {{t:training-data}} — usually the ERA5 reanalysis — how the weather tends to change over the next few hours, and steps forward with that.",
+      "ms": "Model fizik (Bab 27) menyelesaikan persamaan langkah demi langkah. {{t:ml-weather-model}} tidak menyelesaikannya secara langsung; ia belajar daripada {{t:training-data}} berdekad-dekad — biasanya analisis semula ERA5 — bagaimana cuaca cenderung berubah dalam beberapa jam akan datang, dan melangkah ke depan dengannya."
+     },
+     "defines": [
+      "ml-weather-model",
+      "training-data"
+     ],
+     "src": [
+      "GRAPHCAST",
+      "CDS-ERA5"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "Google DeepMind 的 {{t:graphcast}}（2023 年发表在《Science》）直接从再分析资料训练，不到 1 分钟就能做出全球 0.25°、10 天的预报，在 1,380 个检验指标里有 90 % 胜过当时最准的确定性物理模型，对热带气旋路径也有帮助。",
+      "en": "Google DeepMind's {{t:graphcast}}, published in Science in 2023, is trained directly on reanalysis data; it produces a global 10-day forecast at 0.25° in under a minute and beat the most accurate operational deterministic systems on 90 % of 1,380 verification targets, including better tropical-cyclone tracks.",
+      "ms": "{{t:graphcast}} Google DeepMind, diterbitkan dalam Science pada 2023, dilatih terus pada data analisis semula; ia menghasilkan ramalan global 10 hari pada 0.25° dalam kurang seminit dan mengatasi sistem deterministik operasi paling tepat pada 90 % daripada 1,380 sasaran pengesahan, termasuk jejak siklon tropika yang lebih baik."
+     },
+     "defines": [
+      "graphcast"
+     ],
+     "src": [
+      "GRAPHCAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "ECMWF 的 AIFS",
+    "en": "ECMWF's AIFS",
+    "ms": "AIFS ECMWF"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "ECMWF 的 {{t:aifs}} 有两种：单一预报 AIFS Single 从 2025 年 2 月 25 日起正式运作，集合预报 AIFS ENS 从 2025 年 7 月 1 日起；两者在 2026 年 5 月 12 日升级到第 2 版，还第一次加入了用资料驱动的海浪预报。AIFS 的输出和 IFS 一样以 CC BY 4.0 开放。",
+      "en": "ECMWF's {{t:aifs}} comes in two forms: AIFS Single has run operationally since 25 February 2025 and AIFS ENS, an ensemble, since 1 July 2025; both were upgraded to version 2 on 12 May 2026, adding ECMWF's first data-driven wave forecasts. AIFS output is open under CC BY 4.0, like the IFS.",
+      "ms": "{{t:aifs}} ECMWF hadir dalam dua bentuk: AIFS Single beroperasi sejak 25 Februari 2025 dan AIFS ENS, satu ensemble, sejak 1 Julai 2025; kedua-duanya dinaik taraf ke versi 2 pada 12 Mei 2026, menambah ramalan ombak berasaskan data pertama ECMWF. Output AIFS terbuka di bawah CC BY 4.0, seperti IFS."
+     },
+     "defines": [
+      "aifs"
+     ],
+     "src": [
+      "ECMWF-AIFS",
+      "ECMWF-50R1"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "ECMWF 现在同时跑物理模型 IFS 和 AI 模型 AIFS，两者在同一天一起升级。AI 模型从历史学来，最依赖的正是物理模型和数据同化做出来的再分析；所以两者是互相配合，不是谁取代谁。",
+      "en": "ECMWF now runs both the physics-based IFS and the AI-based AIFS, upgraded on the same day. An AI model learns from the past, and the past it learns from is a reanalysis made by a physics model and data assimilation; the two work together rather than one replacing the other.",
+      "ms": "ECMWF kini menjalankan IFS berasaskan fizik dan AIFS berasaskan AI, dinaik taraf pada hari yang sama. Model AI belajar daripada masa lalu, dan masa lalu yang dipelajarinya ialah analisis semula yang dibuat oleh model fizik dan asimilasi data; kedua-duanya bekerjasama dan bukan saling menggantikan."
+     },
+     "src": [
+      "ECMWF-50R1",
+      "GRAPHCAST",
+      "CDS-ERA5"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "Open-Meteo 的集合预报 API 也提供 ECMWF AIFS 0.25° 的 51 个成员，可以和 IFS 的 51 个成员放在一起比较。",
+      "en": "Open-Meteo's ensemble API also offers the 51 members of ECMWF AIFS at 0.25°, so you can set them beside the IFS's 51 members.",
+      "ms": "API ensemble Open-Meteo juga menawarkan 51 ahli ECMWF AIFS pada 0.25°, jadi anda boleh membandingkannya dengan 51 ahli IFS."
+     },
+     "src": [
+      "OM-ENS"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "ml-weather-model",
+  "training-data",
+  "graphcast",
+  "aifs"
+ ]
+}

@@ -92,3 +92,7 @@ test('a chapter not yet written (ready:false) is listed but not required', () =>
 test('a chart series colour must be a colour token in the stylesheet', () => has(errorsOf(c => {
   c.ch01.sections[0].blocks.push({ type: 'chart', src: ['S1'], chart: { kind: 'line', series_file: 'x', series: [{ col: 'v', color: 'sea' }] } });
 }), /chart colour "sea" is not a CSS token/));
+
+test('a link to a chapter that does not exist', () => has(errorsOf(c => {
+  c.ch01.sections[0].blocks.push({ type: 'p', text: T('{{ch:ch99|nowhere}}') });
+}), /unknown chapter "ch99"/));

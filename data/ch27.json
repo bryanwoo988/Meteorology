@@ -1,0 +1,179 @@
+{
+ "id": "ch27",
+ "num": 27,
+ "stage": 8,
+ "title": {
+  "zh": "数值天气预报怎样运作",
+  "en": "How numerical weather prediction works",
+  "ms": "Bagaimana ramalan cuaca berangka berfungsi"
+ },
+ "sources": [
+  "ESS",
+  "FUN",
+  "CDS-ERA5",
+  "ECMWF-MEDIUM",
+  "ECMWF-50R1",
+  "METMY-TN0122"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "用方程算出明天",
+    "en": "Calculating tomorrow from equations",
+    "ms": "Mengira esok daripada persamaan"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:nwp}}用一组数学方程描述气温、气压、风和水汽怎样随时间改变。电脑把大气切成一格一格，在每个{{t:grid-point}}上解方程，先往前算一小步（例如 5 分钟），再拿结果当新的起点算下一步，一直算到几天以后。每一小步叫{{t:time-step}}。",
+      "en": "{{t:nwp}} uses a set of mathematical equations for how temperature, pressure, wind and moisture change with time. The computer divides the atmosphere into boxes and solves the equations at each {{t:grid-point}}, stepping a short time ahead — say five minutes — then using the result as the new start for the next step, again and again until it is days ahead. Each short step is a {{t:time-step}}.",
+      "ms": "{{t:nwp}} menggunakan set persamaan matematik tentang bagaimana suhu, tekanan, angin dan lembapan berubah mengikut masa. Komputer membahagikan atmosfera kepada kotak dan menyelesaikan persamaan pada setiap {{t:grid-point}}, melangkah sedikit masa ke depan — katakan lima minit — kemudian menggunakan hasilnya sebagai titik mula langkah seterusnya, berulang-ulang hingga beberapa hari ke depan. Setiap langkah pendek ialah {{t:time-step}}."
+     },
+     "defines": [
+      "nwp",
+      "grid-point",
+      "time-step"
+     ],
+     "src": [
+      "ESS:254",
+      "FUN:124-125"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "格点之间的距离叫{{t:resolution}}。格子越细，看得到的东西越小，但计算量增加得很快：把格距减半，计算量变成约 8 倍，跑的时间约 16 倍。",
+      "en": "The distance between grid points is the {{t:resolution}}. The finer the grid, the smaller the features it can see — but the cost climbs fast: halve the spacing and there are about 8 times as many calculations, taking about 16 times as long.",
+      "ms": "Jarak antara titik grid ialah {{t:resolution}}. Semakin halus grid, semakin kecil ciri yang dapat dilihat — tetapi kosnya naik dengan pantas: kurangkan jarak separuh dan pengiraan menjadi kira-kira 8 kali, mengambil masa kira-kira 16 kali."
+     },
+     "defines": [
+      "resolution"
+     ],
+     "src": [
+      "ESS:255-256"
+     ]
+    },
+    {
+     "type": "widget",
+     "id": "W20"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "起点：数据同化",
+    "en": "The starting point: data assimilation",
+    "ms": "Titik mula: asimilasi data"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "预报要有一个准确的起点，叫{{t:initial-conditions}}。可是观测站分布不均，海上和高空很少。{{t:data-assimilation}}的做法是：每隔一段时间（ECMWF 是 12 小时），把上一次的预报和新收到的卫星、探空、飞机、浮标等观测，用最合适的方式结合起来，得到当时大气状态的最佳估计（分析场），再从这里出发做新的预报。",
+      "en": "A forecast needs an accurate starting point: its {{t:initial-conditions}}. But stations are unevenly spread, and few observe the oceans or the upper air. {{t:data-assimilation}} does this: every so many hours (12 at ECMWF) the previous forecast is combined in the best way with newly arrived satellite, radiosonde, aircraft and buoy observations to give a best estimate of the atmosphere — the analysis — from which the new forecast starts.",
+      "ms": "Ramalan memerlukan titik mula yang tepat: {{t:initial-conditions}}. Tetapi stesen tidak tersebar sekata, dan sedikit yang mencerap lautan atau udara atas. {{t:data-assimilation}} berbuat begini: setiap beberapa jam (12 di ECMWF) ramalan sebelumnya digabungkan dengan cara terbaik bersama cerapan satelit, radiosonde, pesawat dan boya yang baru tiba untuk memberi anggaran terbaik atmosfera — analisis — dari mana ramalan baharu bermula."
+     },
+     "defines": [
+      "initial-conditions",
+      "data-assimilation"
+     ],
+     "src": [
+      "CDS-ERA5",
+      "ESS:256"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "heading": {
+    "zh": "雷雨太小：参数化",
+    "en": "Storms too small to see: parameterisation",
+    "ms": "Ribut terlalu kecil: parameterisasi"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "格距几十公里的模型，看不到一个只有几公里宽的雷雨云；所以大范围的模型比较会预报大片的雨，不太会预报局部的阵雨。格子里放不下的过程，就用简化的公式估计它对整格的影响，这叫{{t:parameterisation}}。热带的雨大多来自对流，所以对流参数化对马来西亚特别重要。",
+      "en": "A model with grid spacing of tens of kilometres cannot see a thunderstorm a few kilometres across, which is why such models predict widespread rain better than local showers. Processes too small for the grid are estimated with simplified formulas for their effect on the whole box: {{t:parameterisation}}. Most tropical rain is convective, so the convection scheme matters especially for Malaysia.",
+      "ms": "Model dengan jarak grid puluhan kilometer tidak dapat melihat ribut petir selebar beberapa kilometer, sebab itulah model sebegini meramal hujan meluas lebih baik daripada hujan setempat. Proses yang terlalu kecil untuk grid dianggar dengan formula ringkas bagi kesannya ke atas seluruh kotak: {{t:parameterisation}}. Kebanyakan hujan tropika ialah perolakan, jadi skema perolakan sangat penting bagi Malaysia."
+     },
+     "defines": [
+      "parameterisation"
+     ],
+     "src": [
+      "ESS:256"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "ECMWF 在 2026 年 5 月 12 日上线的 IFS 50r1 版本，修改了对流和云的计算方法，减少雨“停在原地下太多”的毛病，让雨更真实地从海上移到陆地上。",
+      "en": "ECMWF's IFS Cycle 50r1, live from 12 May 2026, revised its convection and cloud scheme to cut excessive stationary rain and show more realistically how rain moves from the ocean onto land.",
+      "ms": "Kitaran IFS 50r1 ECMWF, berkuat kuasa 12 Mei 2026, menyemak skema perolakan dan awannya untuk mengurangkan hujan pegun yang berlebihan dan menunjukkan dengan lebih realistik bagaimana hujan bergerak dari laut ke darat."
+     },
+     "src": [
+      "ECMWF-50R1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "heading": {
+    "zh": "全球模型和区域模型",
+    "en": "Global and regional models",
+    "ms": "Model global dan serantau"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "{{t:global-model}}算整个地球，例如 ECMWF 的 IFS（约 9 公里）和美国的 GFS。{{t:regional-model}}只算一个地区，格子可以细得多，但边界要靠全球模型提供，边界上的误差会慢慢渗进来。",
+      "en": "A {{t:global-model}} covers the whole Earth — ECMWF's IFS (about 9 km) and the US GFS, for example. A {{t:regional-model}} covers one region with a much finer grid, but it takes its boundaries from a global model, and errors at the edges can creep in.",
+      "ms": "{{t:global-model}} meliputi seluruh bumi — IFS ECMWF (kira-kira 9 km) dan GFS AS, contohnya. {{t:regional-model}} meliputi satu rantau dengan grid lebih halus, tetapi sempadannya diambil daripada model global, dan ralat di tepi boleh meresap masuk."
+     },
+     "defines": [
+      "global-model",
+      "regional-model"
+     ],
+     "src": [
+      "ESS:256",
+      "ECMWF-MEDIUM"
+     ]
+    },
+    {
+     "type": "p",
+     "text": {
+      "zh": "大马气象局从 2008 年起用 WRF 区域模型做预报，边界和起点资料来自美国 NOAA 的 GFS，每天 00 和 12 UTC（早上 8 点和晚上 8 点）跑两次。升级后，它覆盖全马来西亚，格距 3 公里，预报 4 天。",
+      "en": "MetMalaysia has run the WRF regional model since 2008, driven by NOAA's GFS for its boundaries and starting data, twice a day at 00 and 12 UTC (8 am and 8 pm). Since its upgrade it covers all of Malaysia at 3 km and forecasts 4 days ahead.",
+      "ms": "MetMalaysia telah menjalankan model serantau WRF sejak 2008, dipacu oleh GFS NOAA untuk sempadan dan data permulaannya, dua kali sehari pada 00 dan 12 UTC (8 pagi dan 8 malam). Sejak dinaik taraf, ia meliputi seluruh Malaysia pada 3 km dan meramal 4 hari ke depan."
+     },
+     "src": [
+      "METMY-TN0122"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "nwp",
+  "grid-point",
+  "time-step",
+  "resolution",
+  "initial-conditions",
+  "data-assimilation",
+  "parameterisation",
+  "global-model",
+  "regional-model"
+ ]
+}

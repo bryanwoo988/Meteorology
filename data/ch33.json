@@ -1,0 +1,281 @@
+{
+ "id": "ch33",
+ "num": 33,
+ "stage": 8,
+ "title": {
+  "zh": "其他主要模型与多模型集合",
+  "en": "Other major models and multi-model ensembles",
+  "ms": "Model utama lain dan ensemble pelbagai model"
+ },
+ "sources": [
+  "OM-ENS",
+  "OM-DOCS",
+  "NOAA-EMC-GEFS",
+  "METMY-TN0122",
+  "FUN",
+  "ESS"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "heading": {
+    "zh": "全世界的主要集合预报",
+    "en": "The world's main ensembles",
+    "ms": "Ensemble utama dunia"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "除了 ECMWF，很多国家的气象机构也跑自己的全球模型和集合预报。美国 NOAA 的全球模型叫 {{t:gfs}}，它的集合预报叫 {{t:gefs}}；德国气象局（DWD）的叫 {{t:icon}}；英国气象局有 UKMO 的全球模型和 MOGREPS-G 集合；加拿大的是 GEM。",
+      "en": "Besides ECMWF, many national weather services run their own global models and ensembles. NOAA's global model is the {{t:gfs}}, and its ensemble the {{t:gefs}}; Germany's DWD runs {{t:icon}}; the UK Met Office has its global UKMO model and the MOGREPS-G ensemble; Canada runs GEM.",
+      "ms": "Selain ECMWF, banyak perkhidmatan cuaca negara menjalankan model global dan ensemble sendiri. Model global NOAA ialah {{t:gfs}}, dan ensemblenya {{t:gefs}}; DWD Jerman menjalankan {{t:icon}}; Pejabat Met UK mempunyai model global UKMO dan ensemble MOGREPS-G; Kanada menjalankan GEM."
+     },
+     "defines": [
+      "gfs",
+      "gefs",
+      "icon"
+     ],
+     "src": [
+      "OM-ENS",
+      "OM-DOCS",
+      "NOAA-EMC-GEFS"
+     ]
+    },
+    {
+     "type": "table",
+     "src": [
+      "OM-ENS"
+     ],
+     "caption": {
+      "zh": "几个全球集合预报（Open-Meteo 资料表，2026 年 10 月）",
+      "en": "Some global ensembles (Open-Meteo data table, October 2026)",
+      "ms": "Beberapa ensemble global (jadual data Open-Meteo, Oktober 2026)"
+     },
+     "headers": [
+      {
+       "zh": "集合",
+       "en": "Ensemble",
+       "ms": "Ensemble"
+      },
+      {
+       "zh": "机构",
+       "en": "Centre",
+       "ms": "Pusat"
+      },
+      {
+       "zh": "格距",
+       "en": "Spacing",
+       "ms": "Jarak"
+      },
+      {
+       "zh": "成员",
+       "en": "Members",
+       "ms": "Ahli"
+      },
+      {
+       "zh": "预报长度",
+       "en": "Length",
+       "ms": "Tempoh"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "zh": "ECMWF IFS ENS（开放资料）",
+        "en": "ECMWF IFS ENS (open data)",
+        "ms": "ECMWF IFS ENS (data terbuka)"
+       },
+       {
+        "zh": "ECMWF",
+        "en": "ECMWF",
+        "ms": "ECMWF"
+       },
+       {
+        "zh": "0.25°（约 25 km）",
+        "en": "0.25° (~25 km)",
+        "ms": "0.25° (~25 km)"
+       },
+       {
+        "zh": "51",
+        "en": "51",
+        "ms": "51"
+       },
+       {
+        "zh": "15 天",
+        "en": "15 days",
+        "ms": "15 hari"
+       }
+      ],
+      [
+       {
+        "zh": "GFS Ensemble（GEFS）",
+        "en": "GFS Ensemble (GEFS)",
+        "ms": "GFS Ensemble (GEFS)"
+       },
+       {
+        "zh": "NOAA（美国）",
+        "en": "NOAA (US)",
+        "ms": "NOAA (AS)"
+       },
+       {
+        "zh": "0.25°（约 25 km）",
+        "en": "0.25° (~25 km)",
+        "ms": "0.25° (~25 km)"
+       },
+       {
+        "zh": "31",
+        "en": "31",
+        "ms": "31"
+       },
+       {
+        "zh": "10 天",
+        "en": "10 days",
+        "ms": "10 hari"
+       }
+      ],
+      [
+       {
+        "zh": "ICON-EPS",
+        "en": "ICON-EPS",
+        "ms": "ICON-EPS"
+       },
+       {
+        "zh": "DWD（德国）",
+        "en": "DWD (Germany)",
+        "ms": "DWD (Jerman)"
+       },
+       {
+        "zh": "26 km",
+        "en": "26 km",
+        "ms": "26 km"
+       },
+       {
+        "zh": "40",
+        "en": "40",
+        "ms": "40"
+       },
+       {
+        "zh": "7.5 天",
+        "en": "7.5 days",
+        "ms": "7.5 hari"
+       }
+      ],
+      [
+       {
+        "zh": "MOGREPS-G",
+        "en": "MOGREPS-G",
+        "ms": "MOGREPS-G"
+       },
+       {
+        "zh": "英国气象局",
+        "en": "UK Met Office",
+        "ms": "Pejabat Met UK"
+       },
+       {
+        "zh": "20 km",
+        "en": "20 km",
+        "ms": "20 km"
+       },
+       {
+        "zh": "18",
+        "en": "18",
+        "ms": "18"
+       },
+       {
+        "zh": "8 天",
+        "en": "8 days",
+        "ms": "8 hari"
+       }
+      ],
+      [
+       {
+        "zh": "GEM Global Ensemble",
+        "en": "GEM Global Ensemble",
+        "ms": "GEM Global Ensemble"
+       },
+       {
+        "zh": "加拿大气象局",
+        "en": "Canadian Weather Service",
+        "ms": "Perkhidmatan Cuaca Kanada"
+       },
+       {
+        "zh": "0.25°（约 25 km）",
+        "en": "0.25° (~25 km)",
+        "ms": "0.25° (~25 km)"
+       },
+       {
+        "zh": "21",
+        "en": "21",
+        "ms": "21"
+       },
+       {
+        "zh": "16 天",
+        "en": "16 days",
+        "ms": "16 hari"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "tip",
+     "text": {
+      "zh": "大马气象局自己的 WRF 区域模型，起点和边界用的就是 NOAA 的 GFS（第 27 章）。",
+      "en": "MetMalaysia's own WRF regional model takes its start and boundaries from NOAA's GFS (Chapter 27).",
+      "ms": "Model serantau WRF MetMalaysia sendiri mengambil titik mula dan sempadannya daripada GFS NOAA (Bab 27)."
+     },
+     "src": [
+      "METMY-TN0122"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "heading": {
+    "zh": "多模型集合",
+    "en": "Multi-model ensembles",
+    "ms": "Ensemble pelbagai model"
+   },
+   "level": "basic",
+   "blocks": [
+    {
+     "type": "p",
+     "text": {
+      "zh": "每个模型都有自己的强项和毛病，好的预报员熟悉每个模型的习性。把几个不同机构的模型放在一起比较，叫{{t:multi-model-ensemble}}。研究显示，这样通常比只看一个模型好；先修正各模型的偏差再结合，误差还会更小。",
+      "en": "Every model has its strengths and quirks, and a good forecaster knows each one's habits. Setting several centres' models side by side is a {{t:multi-model-ensemble}}; it has been shown to beat a single model, and correcting each model's biases before combining reduces the errors further.",
+      "ms": "Setiap model mempunyai kekuatan dan keanehan sendiri, dan peramal yang baik mengetahui tabiat setiap satu. Meletakkan model beberapa pusat bersebelahan ialah {{t:multi-model-ensemble}}; ia terbukti mengatasi satu model, dan membetulkan bias setiap model sebelum digabungkan mengurangkan ralat lagi."
+     },
+     "defines": [
+      "multi-model-ensemble"
+     ],
+     "src": [
+      "FUN:129",
+      "ESS:255"
+     ]
+    },
+    {
+     "type": "note",
+     "kind": "key",
+     "text": {
+      "zh": "练习：在 CompareCast 里选同一个地点，把 ECMWF、GFS、ICON 等模型的雨量放在一起看。它们都一样时比较可信；各说各话时，就要看集合和概率，不要只挑一个喜欢的答案。",
+      "en": "Practice: in CompareCast, pick one place and set the rain from ECMWF, GFS, ICON and others side by side. When they agree, trust rises; when each tells a different story, turn to the ensembles and probabilities rather than picking the answer you like.",
+      "ms": "Latihan: dalam CompareCast, pilih satu tempat dan letakkan hujan dari ECMWF, GFS, ICON dan lain-lain bersebelahan. Apabila bersetuju, keyakinan meningkat; apabila masing-masing berbeza, beralih kepada ensemble dan kebarangkalian dan bukannya memilih jawapan yang anda suka."
+     },
+     "src": [
+      "FUN:129",
+      "ESS:257"
+     ]
+    }
+   ]
+  }
+ ],
+ "newTerms": [
+  "gfs",
+  "gefs",
+  "icon",
+  "multi-model-ensemble"
+ ]
+}
