@@ -34,7 +34,7 @@ export function el(tag, attrs = {}, ...kids) {
     else if (k.startsWith('on')) n.addEventListener(k.slice(2), v);
     else n.setAttribute(k, v === true ? '' : v);
   }
-  for (const k of kids.flat()) if (k != null) n.append(k instanceof Node ? k : String(k));
+  for (const k of kids.flat(Infinity)) if (k != null) n.append(k instanceof Node ? k : String(k));
   return n;
 }
 

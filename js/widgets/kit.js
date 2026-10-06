@@ -40,7 +40,7 @@ const NS = 'http://www.w3.org/2000/svg';
 export function s(tag, attrs = {}, ...kids) {
   const n = document.createElementNS(NS, tag);
   for (const [k, v] of Object.entries(attrs)) if (v != null) n.setAttribute(k, v);
-  for (const k of kids.flat()) if (k != null) n.append(k instanceof Node ? k : document.createTextNode(String(k)));
+  for (const k of kids.flat(Infinity)) if (k != null) n.append(k instanceof Node ? k : document.createTextNode(String(k)));
   return n;
 }
 
@@ -50,7 +50,7 @@ export function h(tag, attrs = {}, ...kids) {
     if (v == null || v === false) continue;
     if (k === 'class') n.className = v; else n.setAttribute(k, v === true ? '' : v);
   }
-  for (const k of kids.flat()) if (k != null) n.append(k instanceof Node ? k : String(k));
+  for (const k of kids.flat(Infinity)) if (k != null) n.append(k instanceof Node ? k : String(k));
   return n;
 }
 

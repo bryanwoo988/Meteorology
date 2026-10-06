@@ -272,3 +272,23 @@ await test('every widget in every chapter survives its slider extremes', async (
 
 document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';
+
+await test('nested children render as elements, never as "[object HTMLElement]"', async () => {
+  const { el } = await import('../js/content.js');
+  const dl = el('dl', {}, [[el('dt', {}, 'k1'), el('dd', {}, 'v1')], [el('dt', {}, 'k2'), el('dd', {}, 'v2')]]);
+  assert(!dl.textContent.includes('[object'), 'pairs were turned into text');
+  assert(dl.querySelectorAll('dt').length === 2 && dl.querySelectorAll('dd').length === 2, 'dt/dd missing');
+});
+
+await test('no chapter shows "[object …]" text', async () => {
+  const idx = await (await fetch('../data/index.json')).json();
+  const { renderSections } = await import('../js/content.js');
+  const bad = [];
+  for (const meta of idx.chapters) {
+    const ch = await (await fetch(`../data/${meta.id}.json`)).json();
+    const host = document.createElement('div');
+    host.append(renderSections(ch, { lang: 'en', terms: new Map() }));
+    if (/\[object /.test(host.textContent)) bad.push(meta.id);
+  }
+  assert(!bad.length, 'broken text in ' + bad.join(', '));
+});
