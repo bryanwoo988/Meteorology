@@ -1,5 +1,26 @@
 [
   {
+    "v": "1.1.0",
+    "date": "2026-10-13",
+    "notes": [
+      {
+        "zh": "「关于」页显示版本号和这一版的更新日期、时间，也可以随时打开全部更新记录",
+        "en": "The About page shows the version with the date and time of this update, and opens the full list of updates",
+        "ms": "Halaman Perihal menunjukkan versi bersama tarikh dan masa kemas kini ini, dan membuka senarai penuh kemas kini"
+      },
+      {
+        "zh": "修好：「名称—说明」列表有时会显示成「[object HTMLElement]」",
+        "en": "Fixed: label–explanation lists sometimes showed “[object HTMLElement]”",
+        "ms": "Dibaiki: senarai label–penerangan kadangkala memaparkan “[object HTMLElement]”"
+      },
+      {
+        "zh": "「关于」页的「离线」和章节目录的标签现在也会跟着语言切换",
+        "en": "The Offline label on the About page and the chapter contents label now follow the chosen language",
+        "ms": "Label Luar talian di halaman Perihal dan label kandungan bab kini mengikut bahasa yang dipilih"
+      }
+    ]
+  },
+  {
     "v": "1.0.0",
     "date": "2026-10-03",
     "notes": [

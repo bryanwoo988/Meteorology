@@ -195,7 +195,7 @@ const VIEWS = {
     const stage = index.stages.find(s => s.n === ch.stage);
     const isRead = !!prefs.get().read[id];
 
-    const toc = el('nav', { class: 'toc', 'aria-label': 'Contents' },
+    const toc = el('nav', { class: 'toc', 'aria-label': tr('contents') },
       el('p', { class: 'toc-title' }, pick(stage.title, lang())),
       el('ol', {}, stage.chapters.map(cId => {
         const c = index.chapters.find(x => x.id === cId);
@@ -236,8 +236,9 @@ const VIEWS = {
       el('h1', {}, tr('info')),
       el('p', { class: 'lede' }, tr('tagline')),
       el('dl', { class: 'keyval' },
-        el('dt', {}, tr('version')), el('dd', {}, releases[0]?.v ?? ''),
-        el('dt', {}, 'Offline'), el('dd', {}, status)),
+        el('dt', {}, tr('version')), el('dd', {}, releases[0] ? `v${releases[0].v} · ${builtAt() || releases[0].date} · ` : '',
+          el('a', { href: '#', onclick: e => { e.preventDefault(); showAllReleases(); } }, tr('allUpdates'))),
+        el('dt', {}, tr('offline')), el('dd', {}, status)),
       el('p', { class: 'credit' }, tr('createdBy')),
       el('p', {}, el('a', { class: 'button button-quiet', href: '#/share' }, tr('share'))),
       el('h2', {}, tr('allSources')),
@@ -371,6 +372,28 @@ async function applyUpdate(live) {
   location.reload();
 }
 
+/* When this build went live: index.html's Last-Modified (GitHub Pages sets
+   it on every deploy), as local date and time. */
+function builtAt() {
+  const d = new Date(document.lastModified);
+  if (!isFinite(d)) return '';
+  const p = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+
+function releaseSheet(title, list) {
+  openSheet(el('div', { class: 'release-notes' },
+    el('h2', {}, title),
+    list.map(r => el('section', {}, el('p', { class: 'kicker' }, `v${r.v} · ${r.date}`),
+      el('ul', {}, r.notes.map(n => el('li', {}, pick(n, lang())))))),
+    el('button', { type: 'button', class: 'button', onclick: closeSheet }, tr('ok'))));
+}
+
+// Info → every release, any time.
+function showAllReleases() {
+  releaseSheet(tr('allUpdates'), releases);
+}
+
 function showReleaseNotes() {
   const latest = releases[0]?.v;
   if (!latest) return;
@@ -378,11 +401,7 @@ function showReleaseNotes() {
   prefs.setSeenVersion(latest);
   const list = notesSince(releases, seen).slice(0, 4);
   if (!list.length) return;
-  openSheet(el('div', { class: 'release-notes' },
-    el('h2', {}, tr('updatedTo', { v: latest })),
-    list.map(r => el('section', {}, el('p', { class: 'kicker' }, `v${r.v} · ${r.date}`),
-      el('ul', {}, r.notes.map(n => el('li', {}, pick(n, lang())))))),
-    el('button', { type: 'button', class: 'button', onclick: closeSheet }, tr('ok'))));
+  releaseSheet(tr('updatedTo', { v: latest }), list);
 }
 
 /* ---------- Boot ---------- */

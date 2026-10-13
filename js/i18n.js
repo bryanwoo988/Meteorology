@@ -104,6 +104,9 @@ export const UI = {
   updateReady: { zh: '有新版本', en: 'A new version is ready', ms: 'Versi baharu sedia' },
   updateNow: { zh: '立即更新', en: 'Update now', ms: 'Kemas kini sekarang' },
   updatedTo: { zh: '已更新到 v{v}', en: 'Updated to v{v}', ms: 'Dikemas kini ke v{v}' },
+  offline: { zh: '离线', en: 'Offline', ms: 'Luar talian' },
+  contents: { zh: '目录', en: 'Contents', ms: 'Kandungan' },
+  allUpdates: { zh: '更新记录', en: "What's new", ms: 'Apa yang baharu' },
   ok: { zh: '好的', en: 'OK', ms: 'OK' },
 
   langButton: { zh: '切换语言', en: 'Change language', ms: 'Tukar bahasa' },
