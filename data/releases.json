@@ -1,5 +1,26 @@
 [
   {
+    "v": "1.3.0",
+    "date": "2026-10-18",
+    "notes": [
+      {
+        "zh": "点一下段落，就能用五种颜色画荧光笔或下划线、写笔记、加书签、复制，或从这里开始朗读；长按选取几个字，只标记那几个字。",
+        "en": "Tap a paragraph to highlight or underline it in five colours, add a note, bookmark it, copy it or read aloud from there; long-press to mark just a few words.",
+        "ms": "Ketik perenggan untuk menyerlah atau menggaris bawah dalam lima warna, menambah nota, menanda, menyalin atau membaca kuat dari situ; tekan lama untuk menanda beberapa perkataan sahaja."
+      },
+      {
+        "zh": "新的底部菜单栏：目录、朗读、笔记、书签、设置，单手用拇指就按得到。朗读读完一章会自动接下一章。",
+        "en": "A new bottom bar: Contents, Read aloud, Notes, Bookmarks and Settings, all within thumb reach. Read aloud carries on into the next chapter.",
+        "ms": "Bar menu baharu di bawah: Kandungan, Baca kuat, Nota, Penanda dan Tetapan, semuanya dalam capaian ibu jari. Baca kuat terus ke bab seterusnya."
+      },
+      {
+        "zh": "语言、外观和字号从顶部移到「设置」；「设置」里还有朗读声音和语速、笔记备份，以及版本、更新记录和分享二维码。",
+        "en": "Language, appearance and text size move from the top bar to Settings, which also holds the read-aloud voice and speed, the notes backup, the version and update history, and the share QR code.",
+        "ms": "Bahasa, paparan dan saiz teks berpindah dari bar atas ke Tetapan, yang juga memuatkan suara dan kelajuan baca kuat, sandaran nota, versi dan sejarah kemas kini, serta kod QR untuk berkongsi."
+      }
+    ]
+  },
+  {
     "v": "1.2.0",
     "date": "2026-10-18",
     "notes": [

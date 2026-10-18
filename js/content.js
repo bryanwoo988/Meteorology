@@ -66,7 +66,9 @@ function block(b, ctx) {
       return el(tag, {}, b.items.map(i => el('li', {}, inline(i, ctx))));
     }
     case 'keyval':
-      return el('dl', { class: 'keyval' }, b.rows.map(r => [el('dt', {}, inline(r.k, ctx)), el('dd', {}, inline(r.v, ctx))]));
+      // Each pair in its own <div> (valid inside <dl>; display: contents in the
+      // stylesheet keeps the grid) so a pair can be marked as one block.
+      return el('dl', { class: 'keyval' }, b.rows.map(r => el('div', { class: 'keyval-row' }, el('dt', {}, inline(r.k, ctx)), el('dd', {}, inline(r.v, ctx)))));
     case 'table':
       return el('figure', { class: 'table-wrap' },
         b.caption ? el('figcaption', {}, inline(b.caption, ctx)) : null,
@@ -100,11 +102,18 @@ function block(b, ctx) {
   }
 }
 
+/* What a reader can mark, bookmark or have read aloud (reader.js), in
+   reading order within a section. */
+const MARKABLE = new Set(['p', 'list', 'keyval', 'table', 'note']);
+const UNITS = ':scope > p[data-blk], :scope > ul[data-blk] > li, :scope > ol[data-blk] > li, '
+  + ':scope > dl[data-blk] > .keyval-row, :scope > aside[data-blk], :scope > figure[data-blk] tbody tr';
+
 export function renderSections(chapter, ctx) {
   const frag = document.createDocumentFragment();
   for (const sec of chapter.sections) {
     const body = sec.blocks.map(b => {
       const node = block(b, ctx);
+      if (node && MARKABLE.has(b.type)) node.dataset.blk = '';
       const src = ['chart', 'widget', 'map', 'dataset'].includes(b.type) ? null : sourceTag(b, ctx);
       return src && node ? [node, src] : node;
     }).flat().filter(Boolean);
@@ -115,6 +124,11 @@ export function renderSections(chapter, ctx) {
     } else {
       frag.append(el('section', { class: 'section', id: sec.id }, el('h2', {}, inline(sec.heading, ctx)), ...body));
     }
+  }
+  // Each markable block gets a key that is the same in every language:
+  // chapter, section, place in the section.
+  for (const sec of frag.children) {
+    sec.querySelectorAll(UNITS).forEach((u, i) => { u.dataset.rk = `${chapter.id}/${sec.id}#${i}`; });
   }
   return frag;
 }

@@ -4,10 +4,14 @@
      #/                     home: the nine stages
      #/stage/N              one stage
      #/ch/chNN[/sID]        a chapter, optionally scrolled to a section
-     #/info  #/share  #/search  #/tools/<name>[/N] */
+     #/notes  #/bookmarks  #/settings (#/info)  #/share  #/search  #/tools/<name>[/N]
+
+   Highlights, notes on passages, bookmarks and read-aloud are reader.js
+   (window.Reader, shared with Plant Physiology, OPWiki and Oil Palm Basics);
+   the bottom bar below the page opens them. */
 
 import * as prefs from './prefs.js';
-import { t, pick, LANG_GLYPH } from './i18n.js';
+import { t, pick, LANG_NATIVE } from './i18n.js';
 import { loadIndex, loadChapter, loadData, renderSections, el } from './content.js';
 import { loadTerms, openTermSheet, renderNewTerms } from './terms.js';
 import { newerRevision, updateAction, mayAutoReload } from './updatelogic.js';
@@ -27,16 +31,10 @@ const main = $('#main');
 const svg = d => `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 const ICON = {
   search: svg('<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>'),
-  sun: svg('<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>'),
-  moon: svg('<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>'),
-  auto: svg('<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17A8.5 8.5 0 0 0 12 3.5Z" fill="currentColor"/>'),
   more: svg('<circle cx="5.5" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="18.5" cy="12" r="1.2" fill="currentColor"/>'),
   close: svg('<path d="M6 6l12 12M18 6 6 18"/>'),
   check: svg('<path d="m5 12.5 4.5 4.5L19 7.5"/>'),
-  arrowL: svg('<path d="M15 5l-7 7 7 7"/>'),
-  arrowR: svg('<path d="M9 5l7 7-7 7"/>'),
 };
-const SCALE_LABEL = { 1: 'A', 1.15: 'AA', 1.3: 'AAA', 1.5: 'AAA+' };
 
 /* ---------- State ---------- */
 let index = null, terms = null, sources = null, releases = [];
@@ -51,16 +49,23 @@ const readyChapters = () => index.chapters.filter(c => c.ready !== false);
 
 /* ---------- Header ---------- */
 function paintHeader() {
-  const p = prefs.get();
   const set = (sel, html, label) => { const b = $(sel); b.innerHTML = html; b.setAttribute('aria-label', label); b.title = label; };
   set('[data-action="search"]', ICON.search, tr('search'));
-  set('[data-action="lang"]', `<span class="glyph">${LANG_GLYPH[p.lang]}</span>`, tr('langButton'));
-  set('[data-action="theme"]', ICON[p.theme === 'auto' ? 'auto' : p.theme === 'dark' ? 'moon' : 'sun'], tr('themeButton'));
-  set('[data-action="scale"]', `<span class="glyph glyph-scale">${SCALE_LABEL[p.scale]}</span>`, tr('scaleButton'));
   set('[data-action="more"]', ICON.more, tr('more'));
+  $('#bottomnav').setAttribute('aria-label', tr('menu'));
   $('.sheet-close').innerHTML = ICON.close;
   $('.sheet-close').setAttribute('aria-label', tr('close'));
   for (const n of document.querySelectorAll('[data-ui]')) n.textContent = tr(n.dataset.ui);
+  markNav();
+}
+
+let toastTimer = 0;
+function toast(message) {
+  const n = $('#toast');
+  n.textContent = message;
+  n.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { n.hidden = true; }, 1900);
 }
 
 /* ---------- Sheet ---------- */
@@ -84,7 +89,8 @@ function parse(hash) {
   if (a === 'stage') return { view: 'stage', n: Number(b) };
   if (a === 'ch') return { view: 'chapter', id: b, section: c };
   if (a === 'tools') return { view: 'tools', name: b, arg: c };
-  if (['info', 'share', 'search'].includes(a)) return { view: a };
+  if (a === 'info' || a === 'settings') return { view: 'settings' };
+  if (['notes', 'bookmarks', 'share', 'search'].includes(a)) return { view: a };
   return { view: 'home' };
 }
 
@@ -102,23 +108,37 @@ const ctxFor = () => ({
   },
 });
 
+let renderSeq = 0;
 async function render({ keepAnchor = false } = {}) {
+  const seq = ++renderSeq;
   const r = parse(location.hash);
   current = { route: r, chapterNum: null };
   closeSheet();
   const anchor = keepAnchor ? readingAnchor() : null;
+  const y = window.scrollY;
   document.documentElement.dataset.view = r.view;
   try {
     const view = await VIEWS[r.view](r);
+    if (seq !== renderSeq) return;
+    // Reading aloud follows the chapter it started in. Going anywhere else
+    // stops it, unless the reading itself turned the page (readerNext).
+    if (!ttsTurningPage) window.Reader.stop();
     main.replaceChildren(view);
   } catch (e) {
+    if (seq !== renderSeq) return;
     console.error(e);
     main.replaceChildren(el('div', { class: 'page' }, el('p', { class: 'error' }, tr('loadError'))));
   }
+  window.Reader.refresh();
+  markNav();
+  const reveal = r.view === 'chapter' ? pendingReveal : null;
+  pendingReveal = null;
   if (anchor) restoreAnchor(anchor);
+  else if (reveal) requestAnimationFrame(() => window.Reader.reveal(reveal));
   else if (r.section) scrollToSection(r.section);
-  else window.scrollTo(0, 0);
+  else window.scrollTo(0, keepAnchor ? y : 0);
   if (r.view === 'chapter') prefs.setLastRoute(location.hash);
+  for (const fn of afterRender.splice(0)) fn();
 }
 
 function scrollToSection(id) {
@@ -145,21 +165,6 @@ function restoreAnchor({ id, offset }) {
 }
 
 /* ---------- Views ---------- */
-/* ---------- Appearance (About page) ----------
-   Mode follows the phone or is fixed; each side has its own look. The header
-   theme button cycles the same mode. */
-function appearance() {
-  const p = prefs.get();
-  const row = (title, control) => el('div', { class: 'setrow' }, el('h3', {}, title), control);
-  return el('section', { class: 'setgroup' },
-    el('h2', {}, tr('theme')),
-    row(tr('mode'), el('div', {},
-      segmented([['auto', tr('themeAuto')], ['light', tr('themeLight')], ['dark', tr('themeDark')]], p.theme, th => prefs.setTheme(th)),
-      el('p', { class: 'theme-note' }, tr('themeNote')))),
-    row(tr('lightLooks'), swatches(prefs.LIGHT_THEMES, p.lightTheme, n => prefs.setLightTheme(n))),
-    row(tr('darkLooks'), swatches(prefs.DARK_THEMES, p.darkTheme, n => prefs.setDarkTheme(n))));
-}
-
 /* Theme looks as small previews: page, card and accent colour of each look.
    Keep in step with the [data-palette] blocks in css/app.css. */
 const LOOK_COLOURS = {
@@ -178,9 +183,9 @@ function swatches(names, cur, onPick) {
   }));
 }
 
-/* A row of buttons, one of them on. */
+/* A row of buttons, one of them on: language, theme, text size, notes/highlights. */
 function segmented(options, cur, onPick) {
-  return el('div', { class: 'setseg' }, options.map(([value, label]) =>
+  return el('div', { class: 'rd-seg setseg' }, options.map(([value, label]) =>
     el('button', { type: 'button', class: value === cur ? 'on' : null, 'aria-pressed': String(value === cur), onclick: () => onPick(value) }, label)));
 }
 
@@ -248,9 +253,10 @@ const VIEWS = {
       isRead ? tr('isRead') : tr('markRead'));
     if (isRead) readBtn.insertAdjacentHTML('afterbegin', ICON.check);
 
-    const article = el('article', { class: 'chapter' },
+    const article = el('article', { class: 'chapter', 'data-num': ch.num },
       el('p', { class: 'kicker' }, el('a', { href: `#/stage/${ch.stage}` }, tr('stageN', { n: ch.stage })), ` · ${tr('chapterN', { n: ch.num })}`),
       el('h1', {}, pick(ch.title, lang())),
+      el('p', { class: 'muted study-hint' }, tr('markHint')),
       renderNewTerms(ch.newTerms, ctx),
       renderSections(ch, ctx),
       el('section', { class: 'chapter-sources' },
@@ -268,20 +274,62 @@ const VIEWS = {
     return el('div', { class: 'page page-chapter' }, toc, article);
   },
 
-  async info() {
+  // Notes and highlights share a screen; bookmarks have their own.
+  async notes() {
+    const list = el('div', { class: 'card lib-list' });
+    const view = el('div', { class: 'page page-lib' },
+      el('h1', {}, tr('notes')),
+      segmented([['notes', tr('notes')], ['marks', tr('highlights')]], notesKind, k => { notesKind = k; render({ keepAnchor: true }); }),
+      list);
+    window.Reader.renderList(list, notesKind);
+    return view;
+  },
+
+  async bookmarks() {
+    const list = el('div', { class: 'card lib-list' });
+    const view = el('div', { class: 'page page-lib' }, el('h1', {}, tr('bookmarks')), list);
+    window.Reader.renderList(list, 'bookmarks');
+    return view;
+  },
+
+  // Language, appearance, text size and read aloud (what used to be the
+  // buttons at the top of the screen), the notes backup, then the About part:
+  // QR code, share link, version and update history (APP-STANDARDS §3).
+  async settings() {
     const status = el('p', { class: 'status' }, '…');
     offlineStatus().then(ok => { status.textContent = tr(ok ? 'offlineReady' : 'offlineNotYet'); status.classList.add(ok ? 'is-ok' : 'is-pending'); });
+    const p = prefs.get();
+    const row = (title, control) => el('div', { class: 'setrow' }, el('h3', {}, title), control);
+    const reader = el('div');
+    window.Reader.renderSettings(reader);
+    const share = el('div', { id: 'share-host' });
+    renderShare(share, { url: APP_URL, lang: lang() });
     return el('div', { class: 'page page-info' },
-      el('h1', {}, tr('info')),
-      el('p', { class: 'lede' }, tr('tagline')),
-      el('dl', { class: 'keyval' },
-        el('dt', {}, tr('version')), el('dd', {}, releases[0] ? `v${releases[0].v} · ${builtAt() || releases[0].date} · ` : '',
-          el('a', { href: '#', onclick: e => { e.preventDefault(); showAllReleases(); } }, tr('allUpdates'))),
-        el('dt', {}, tr('offline')), el('dd', {}, status)),
-      appearance(),
-      el('p', { class: 'credit' }, tr('createdBy')),
-      el('p', {}, el('a', { class: 'button button-quiet', href: '#/share' }, tr('share'))),
-      el('h2', {}, tr('allSources')),
+      el('h1', {}, tr('settings')),
+      el('div', { class: 'card setgroup' },
+        row(tr('language'), segmented(prefs.LANGS.map(l => [l, LANG_NATIVE[l]]), p.lang, l => prefs.chooseLang(l))),
+        row(tr('theme'), el('div', {},
+          segmented([['auto', tr('themeAuto')], ['light', tr('themeLight')], ['dark', tr('themeDark')]], p.theme, th => prefs.setTheme(th)),
+          el('p', { class: 'theme-note' }, tr('themeNote')))),
+        row(tr('lightLooks'), swatches(prefs.LIGHT_THEMES, p.lightTheme, n => prefs.setLightTheme(n))),
+        row(tr('darkLooks'), swatches(prefs.DARK_THEMES, p.darkTheme, n => prefs.setDarkTheme(n))),
+        row(tr('textSize'), el('div', {},
+          segmented(prefs.SCALES.map(sc => [sc, `${Math.round(sc * 100)}%`]), p.scale, sc => prefs.setScale(sc)),
+          el('p', { class: 'text-sample' }, tr('textSample'))))),
+      el('div', { class: 'card setgroup' }, reader),
+      el('h2', { class: 'lib-h' }, tr('info')),
+      el('div', { class: 'card about' },
+        el('p', { class: 'lede' }, tr('tagline')),
+        el('dl', { class: 'keyval' },
+          el('dt', {}, tr('version')), el('dd', {}, releases[0] ? `v${releases[0].v} · ${builtAt() || releases[0].date} · ` : '',
+            el('a', { href: '#', onclick: e => { e.preventDefault(); showAllReleases(); } }, tr('allUpdates'))),
+          el('dt', {}, tr('offline')), el('dd', {}, status)),
+        el('h3', {}, tr('share')),
+        el('p', { class: 'muted' }, tr('shareHint')),
+        share,
+        el('p', { class: 'share-url' }, APP_URL),
+        el('p', { class: 'credit' }, tr('createdBy'))),
+      el('h2', { class: 'lib-h' }, tr('allSources')),
       el('ul', { class: 'source-list' }, sources.map(s => el('li', {},
         s.url ? el('a', { href: s.url, target: '_blank', rel: 'noopener' }, s.title, ' ↗') : el('strong', {}, s.title),
         el('span', { class: 'muted' }, ` — ${s.publisher}`)))));
@@ -359,10 +407,10 @@ function openMore() {
   const item = (href, key) => el('li', {}, el('a', { href, onclick: closeSheet }, tr(key)));
   openSheet(el('nav', { class: 'more-menu' },
     el('ul', {},
-      item('#/', 'home'), item('#/tools/glossary', 'glossary'), item('#/tools/abbr', 'abbr'),
+      item('#/tools/glossary', 'glossary'), item('#/tools/abbr', 'abbr'),
       item('#/tools/map', 'conceptMap'), item('#/tools/cards', 'flashcards'), item('#/tools/quiz', 'quiz'),
       item('#/tools/convert', 'converter'), item('#/tools/beaufort', 'beaufort'), item('#/tools/data', 'dataCatalogue'),
-      item('#/share', 'share'), item('#/info', 'info'))));
+      item('#/share', 'share'))));
 }
 
 /* ---------- Offline + updates ---------- */
@@ -386,7 +434,7 @@ async function checkForUpdate() {
   if (!newerRevision(document.lastModified, live)) return;
   const action = updateAction({
     hidden: document.hidden, asked,
-    busy: !$('#sheet').hidden || window.scrollY > 200,
+    busy: !$('#sheet').hidden || window.scrollY > 200 || window.Reader.isBusy() || window.Reader.isListening(),
     sinceVisibleMs: performance.now() - visibleSince,
   });
   if (action === 'defer') return;
@@ -450,9 +498,6 @@ function wire() {
     const a = e.target.closest('[data-action]');
     if (!a) return;
     switch (a.dataset.action) {
-      case 'lang': prefs.cycleLang(); break;
-      case 'theme': prefs.cycleTheme(); break;
-      case 'scale': prefs.cycleFontScale(); break;
       case 'more': openMore(); break;
       case 'search': location.hash = '#/search'; break;
       case 'close-sheet': closeSheet(); break;
@@ -465,13 +510,83 @@ function wire() {
   prefs.subscribe(what => {
     prefs.applyToDocument();
     paintHeader();
-    if (what === 'lang' || what === 'scale' || (what === 'theme' && current.route?.view === 'info')) render({ keepAnchor: true });
+    if (what === 'lang' || what === 'scale' || (what === 'theme' && current.route?.view === 'settings')) render({ keepAnchor: true });
   });
   matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => prefs.applyToDocument());
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) { visibleSince = performance.now(); checkForUpdate(); }
   });
   setInterval(checkForUpdate, 15 * 60e3);
+}
+
+/* ---------- Bottom bar and reader.js ---------- */
+let notesKind = 'notes';
+let pendingReveal = null;
+let ttsTurningPage = false;
+const afterRender = [];
+
+/* "Chapter 5 · Section heading" — where a saved block lives. */
+function whereOf(u) {
+  const num = u.closest('[data-num]')?.dataset.num;
+  const sec = u.closest('.section');
+  const head = sec?.querySelector(':scope > h2, :scope > summary');
+  const words = head ? [...head.childNodes].filter(n => !n.classList?.contains('adv-tag')).map(n => n.textContent).join('').trim() : '';
+  return [num ? tr('chapterN', { n: num }) : '', words].filter(Boolean).join(' · ');
+}
+
+/* Go to the chapter a saved block is in, then bring the block on screen. */
+function openSaved(key) {
+  const chId = key.split('/')[0];
+  const r = parse(location.hash);
+  if (r.view === 'chapter' && r.id === chId && window.Reader.reveal(key)) return;
+  pendingReveal = key;
+  location.hash = `#/ch/${chId}`;
+}
+
+/* Reading aloud reached the end of a chapter: turn to the next one. */
+async function readerNext() {
+  const r = parse(location.hash);
+  if (r.view !== 'chapter') return false;
+  const ready = readyChapters();
+  const next = ready[ready.findIndex(c => c.id === r.id) + 1];
+  if (!next) return false;
+  ttsTurningPage = true;
+  const done = new Promise(resolve => afterRender.push(resolve));
+  location.hash = `#/ch/${next.id}`;
+  await done;
+  ttsTurningPage = false;
+  return true;
+}
+
+function markNav() {
+  if (!window.Reader || !$('#bottomnav')) return;
+  const view = parse(location.hash).view;
+  const tab = { notes: 'notes', bookmarks: 'bookmarks', settings: 'settings', share: 'settings' }[view] || 'home';
+  const listening = window.Reader.isListening();
+  for (const b of document.querySelectorAll('#bottomnav [data-nav]')) {
+    const on = b.dataset.nav === 'listen' ? listening : b.dataset.nav === tab;
+    b.classList.toggle('on', on);
+    if (b.dataset.nav === 'listen') continue;
+    if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+  }
+  $('#nav-listen').textContent = tr(listening ? 'stopReading' : 'readAloud');
+}
+
+function wireBottomNav() {
+  $('#bottomnav').addEventListener('click', e => {
+    const b = e.target.closest('[data-nav]');
+    if (!b) return;
+    switch (b.dataset.nav) {
+      case 'home': location.hash = '#/'; break;
+      case 'listen':
+        if (!window.Reader.isListening() && parse(location.hash).view !== 'chapter') { toast(tr('openChapterFirst')); return; }
+        window.Reader.listen();
+        break;
+      case 'notes': location.hash = '#/notes'; break;
+      case 'bookmarks': location.hash = '#/bookmarks'; break;
+      case 'settings': location.hash = '#/settings'; break;
+    }
+  });
 }
 
 function showPicker() {
@@ -494,6 +609,21 @@ async function boot() {
   [index, terms, sources, releases] = await Promise.all([
     loadIndex(), loadTerms(), loadData('sources'), loadData('releases').catch(() => []),
   ]);
+  window.Reader.init({
+    app: 'meteo',
+    root: () => main,
+    units: '[data-rk]',
+    lang,
+    where: whereOf,
+    open: openSaved,
+    next: readerNext,
+    toast,
+    onState: markNav,
+    topOffset: () => $('.topbar').getBoundingClientRect().bottom,
+  });
+  // A note edited or deleted from a list: draw the list again.
+  window.Reader.onChange(() => { if (['notes', 'bookmarks'].includes(parse(location.hash).view)) render({ keepAnchor: true }); });
+  wireBottomNav();
   paintHeader();
   wire();
   $('#splash').classList.add('is-done');

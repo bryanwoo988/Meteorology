@@ -7,7 +7,7 @@ import { get as getPrefs } from './prefs.js';
 
 const FALLBACK = ['en', 'zh', 'ms'];
 
-// The header button shows the language currently in use.
+// Short name of each language (tests and compact labels).
 export const LANG_GLYPH = { zh: '中', en: 'EN', ms: 'BM' };
 
 // Each language named in itself: the first-run picker appears before any
@@ -47,7 +47,7 @@ export const UI = {
     ms: 'Daripada cara atmosfera berfungsi hingga ramalan ensembel ECMWF — kursus luar talian dalam tiga bahasa',
   },
   pickTitle: { zh: '选择语言', en: 'Choose your language', ms: 'Pilih bahasa anda' },
-  pickHint: { zh: '之后随时可以在右上角切换', en: 'You can change it any time from the top bar', ms: 'Anda boleh menukarnya bila-bila masa di bar atas' },
+  pickHint: { zh: '之后随时可以在底部的「设置」里切换', en: 'You can change it any time in Settings, at the bottom of the screen', ms: 'Anda boleh menukarnya bila-bila masa dalam Tetapan, di bawah skrin' },
 
   home: { zh: '首页', en: 'Home', ms: 'Utama' },
   stageN: { zh: '阶段 {n}', en: 'Stage {n}', ms: 'Peringkat {n}' },
@@ -109,10 +109,19 @@ export const UI = {
   allUpdates: { zh: '更新记录', en: "What's new", ms: 'Apa yang baharu' },
   ok: { zh: '好的', en: 'OK', ms: 'OK' },
 
-  langButton: { zh: '切换语言', en: 'Change language', ms: 'Tukar bahasa' },
-  themeButton: { zh: '切换深浅色', en: 'Change theme', ms: 'Tukar tema' },
   theme: { zh: '外观', en: 'Appearance', ms: 'Paparan' },
-  mode: { zh: '模式', en: 'Mode', ms: 'Mod' },
+  menu: { zh: '菜单', en: 'Menu', ms: 'Menu' },
+  readAloud: { zh: '朗读', en: 'Read aloud', ms: 'Baca kuat' },
+  stopReading: { zh: '停止', en: 'Stop', ms: 'Henti' },
+  settings: { zh: '设置', en: 'Settings', ms: 'Tetapan' },
+  language: { zh: '语言', en: 'Language', ms: 'Bahasa' },
+  textSize: { zh: '字号', en: 'Text size', ms: 'Saiz teks' },
+  textSample: { zh: '冷锋过境后，气温下降，风向转为西北。', en: 'After a cold front passes, the air turns cooler and the wind swings to the northwest.', ms: 'Selepas front sejuk melintas, udara menjadi lebih sejuk dan angin bertukar ke barat laut.' },
+  openChapterFirst: { zh: '先打开一章，再按「朗读」', en: 'Open a chapter first, then Read aloud', ms: 'Buka satu bab dahulu, kemudian Baca kuat' },
+  notes: { zh: '笔记', en: 'Notes', ms: 'Nota' },
+  highlights: { zh: '画线', en: 'Highlights', ms: 'Serlahan' },
+  bookmarks: { zh: '书签', en: 'Bookmarks', ms: 'Penanda' },
+  markHint: { zh: '点一下段落可以画线、写笔记、加书签或从这里朗读；长按选取几个字，只标记那几个字。', en: 'Tap a paragraph to highlight it, add a note, bookmark it or read aloud from there; long-press to mark just a few words.', ms: 'Ketik perenggan untuk menyerlah, menambah nota, menanda atau membaca kuat dari situ; tekan lama untuk menanda beberapa perkataan sahaja.' },
   themeAuto: { zh: '跟随系统', en: 'Match system', ms: 'Ikut sistem' },
   themeLight: { zh: '浅色', en: 'Light', ms: 'Cerah' },
   themeDark: { zh: '深色', en: 'Dark', ms: 'Gelap' },
@@ -127,7 +136,6 @@ export const UI = {
   look_oled: { zh: '纯黑 OLED', en: 'OLED Black', ms: 'Hitam OLED' },
   look_slate: { zh: '石板', en: 'Slate', ms: 'Batu Loh' },
   look_grape: { zh: '葡萄', en: 'Grape', ms: 'Anggur' },
-  scaleButton: { zh: '字体大小', en: 'Text size', ms: 'Saiz teks' },
   more: { zh: '更多', en: 'More', ms: 'Lagi' },
   loading: { zh: '载入中…', en: 'Loading…', ms: 'Memuatkan…' },
   loadError: { zh: '内容载入失败', en: 'Could not load this page', ms: 'Gagal memuatkan halaman ini' },

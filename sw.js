@@ -9,10 +9,11 @@
    any file — index.html included — makes installed copies update. */
 
 /* --- generated:begin --- */
-const CACHE = 'meteo-e8e45525d7';
+const CACHE = 'meteo-5513f7860d';
 const ASSETS = [
   './',
   'css/app.css',
+  'css/reader.css',
   'data/ch01.json',
   'data/ch02.json',
   'data/ch03.json',
@@ -124,6 +125,7 @@ const ASSETS = [
   'js/projections.js',
   'js/qrcode.js',
   'js/quiz.js',
+  'js/reader.js',
   'js/releases.js',
   'js/search.js',
   'js/share.js',

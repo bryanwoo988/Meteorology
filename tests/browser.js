@@ -59,15 +59,19 @@ await test('deep link survives the language picker', async () => {
   a.close();
 });
 
-await test('language button cycles and keeps the reading position', async () => {
-  const a = await openApp({ hash: '#/ch/ch05/s4', prefs: { lang: 'en' } });
-  await until(() => a.d.getElementById('s4'));
-  await sleep(200);
-  a.d.querySelector('[data-action="lang"]').click();
-  await until(() => a.d.documentElement.lang === 'ms');
-  await sleep(200);
-  const top = a.d.getElementById('s4').getBoundingClientRect().top;
-  assert(top > -5 && top < 160, `section s4 moved to ${top}px`);
+await test('Settings sets language, theme and text size', async () => {
+  const a = await openApp({ hash: '#/settings', prefs: { lang: 'en' } });
+  const segs = await until(() => a.d.querySelectorAll('.setseg').length >= 3 && a.d.querySelectorAll('.setseg'));
+  [...segs[0].querySelectorAll('button')].find(b => b.textContent === 'Bahasa Melayu').click();
+  await until(() => a.d.documentElement.lang === 'ms' && a.d.querySelector('[data-nav="settings"] span').textContent === 'Tetapan');
+  [...a.d.querySelectorAll('.setseg')[1].querySelectorAll('button')][2].click();
+  await until(() => a.d.documentElement.dataset.theme === 'dark');
+  assert(a.d.querySelectorAll('.setseg')[1].querySelectorAll('button')[2].classList.contains('on'), 'dark not shown as chosen');
+  [...a.d.querySelectorAll('.setseg')[2].querySelectorAll('button')].find(b => b.textContent === '130%').click();
+  await until(() => 'single' in a.d.documentElement.dataset);
+  const saved = JSON.parse(localStorage.getItem(KEY));
+  assert(saved.lang === 'ms' && saved.theme === 'dark' && saved.scale === 1.3, JSON.stringify(saved));
+  assert(!a.d.querySelector('[data-action="lang"]'), 'old language button still in the top bar');
   a.close();
 });
 
@@ -97,7 +101,7 @@ await test('text size 1.3 switches the chapter to a single column', async () => 
 
 for (const lang of ['ms', 'zh', 'en']) {
   await test(`no horizontal overflow at 375px × scale 1.5 in ${lang}`, async () => {
-    for (const hash of ['#/', '#/ch/ch05', '#/stage/3', '#/info', '#/share', '#/search', '#/tools', '#/tools/glossary', '#/tools/beaufort', '#/tools/quiz/3', '#/tools/cards', '#/tools/map', '#/tools/convert', '#/tools/data']) {
+    for (const hash of ['#/', '#/ch/ch05', '#/stage/3', '#/info', '#/settings', '#/notes', '#/bookmarks', '#/share', '#/search', '#/tools', '#/tools/glossary', '#/tools/beaufort', '#/tools/quiz/3', '#/tools/cards', '#/tools/map', '#/tools/convert', '#/tools/data']) {
       const a = await openApp({ hash, prefs: { lang, scale: 1.5 } });
       await sleep(250);
       const sw = a.d.scrollingElement.scrollWidth;
@@ -270,7 +274,6 @@ await test('every widget in every chapter survives its slider extremes', async (
   }
 });
 
-document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;
 document.documentElement.dataset.done = 'true';
 
 await test('nested children render as elements, never as "[object HTMLElement]"', async () => {
@@ -292,3 +295,99 @@ await test('no chapter shows "[object …]" text', async () => {
   }
   assert(!bad.length, 'broken text in ' + bad.join(', '));
 });
+
+const RKEY = 'meteo.reader';
+const reader = () => JSON.parse(localStorage.getItem(RKEY) || '{}');
+const bar = a => until(() => { const b = a.d.querySelector('.rd-bar'); return b && !b.hidden && b; });
+const firstP = a => until(() => a.d.querySelector('#s2 > p[data-rk]'));
+
+await test('tapping a paragraph and a colour marks it in every language, after a reload', async () => {
+  localStorage.removeItem(RKEY);
+  let a = await openApp({ hash: '#/ch/ch01', prefs: { lang: 'en' } });
+  const p = await firstP(a);
+  const key = p.dataset.rk;
+  p.click();
+  const b = await bar(a);
+  const w = b.getBoundingClientRect();
+  assert(w.left >= 0 && w.right <= a.w.innerWidth, `bar overflows: ${w.left}–${w.right}`);
+  b.querySelector('[data-c="pink"]').click();
+  await until(() => p.querySelector('.rd-ink[data-hl="pink"]'));
+  assert(reader().marks[key].hl === 'pink', JSON.stringify(reader().marks));
+  a.close();
+  a = await openApp({ hash: '#/ch/ch01', prefs: { lang: 'zh' } });
+  await until(() => a.d.querySelector(`[data-rk="${key}"] .rd-ink[data-hl="pink"]`));
+  a.close();
+  localStorage.removeItem(RKEY);
+});
+
+await test('long-press words: only those words are marked, in that language', async () => {
+  localStorage.removeItem(RKEY);
+  const a = await openApp({ hash: '#/ch/ch01', prefs: { lang: 'en' } });
+  const p = await firstP(a);
+  // The first run of plain text long enough to select 12 characters from.
+  const tw = a.d.createTreeWalker(p, 4);
+  let tn = tw.nextNode();
+  while (tn && tn.data.length < 12) tn = tw.nextNode();
+  const r = a.d.createRange(); r.setStart(tn, 0); r.setEnd(tn, 12);
+  a.w.getSelection().removeAllRanges(); a.w.getSelection().addRange(r);
+  a.d.dispatchEvent(new a.w.Event('selectionchange'));
+  (await bar(a)).querySelector('[data-c="green"]').click();
+  const mk = await until(() => p.querySelector('.rd-r[data-hl="green"]'));
+  assert(mk.textContent === tn.data.slice(0, 12), `marked "${mk.textContent}"`);
+  const [range] = Object.values(reader().ranges);
+  assert(range.lang === 'en' && range.e - range.s === 12, JSON.stringify(range));
+  // Tapping the marked words opens their menu.
+  a.w.getSelection().removeAllRanges();
+  mk.click();
+  await until(() => a.d.querySelector('.rd-sheet [data-do="remove"]'));
+  a.d.querySelector('.rd-sheet [data-do="remove"]').click();
+  await until(() => !p.querySelector('.rd-r') && !Object.keys(reader().ranges).length);
+  a.close();
+  localStorage.removeItem(RKEY);
+});
+
+await test('a note and a bookmark show in Notes and Bookmarks, and lead back', async () => {
+  localStorage.removeItem(RKEY);
+  const a = await openApp({ hash: '#/ch/ch01', prefs: { lang: 'en' } });
+  let p = await firstP(a);
+  const key = p.dataset.rk;
+  p.click();
+  (await bar(a)).querySelector('[data-act="bookmark"]').click();
+  await until(() => p.querySelector('.rd-bm'));
+  p.click();
+  (await bar(a)).querySelector('[data-act="note"]').click();
+  const ta = await until(() => a.d.querySelector('.rd-sheet textarea'));
+  ta.value = 'pressure first';
+  a.d.querySelector('.rd-sheet [data-do="save"]').click();
+  await until(() => p.querySelector('.rd-nb'));
+  a.d.querySelector('[data-nav="notes"]').click();
+  const note = await until(() => a.d.querySelector('.page-lib .rd-item-note'));
+  assert(note.textContent === 'pressure first', note.textContent);
+  assert(a.d.querySelector('[data-nav="notes"]').classList.contains('on'), 'Notes tab not lit');
+  a.d.querySelector('[data-nav="bookmarks"]').click();
+  const item = await until(() => a.d.querySelector('.page-lib .rd-item'));
+  assert(item.querySelector('.rd-item-where').textContent.startsWith('Chapter 1'), item.textContent);
+  item.click();
+  p = await until(() => a.d.querySelector(`[data-rk="${key}"]`));
+  assert(a.w.location.hash === '#/ch/ch01', a.w.location.hash);
+  a.close();
+  localStorage.removeItem(RKEY);
+});
+
+await test('Read aloud asks for a chapter first, then plays and stops', async () => {
+  const a = await openApp({ hash: '#/', prefs: { lang: 'en' } });
+  a.d.querySelector('[data-nav="listen"]').click();
+  await until(() => !a.d.getElementById('toast').hidden && a.d.getElementById('toast').textContent.includes('Open a chapter'));
+  if (a.w.speechSynthesis) {
+    a.w.location.hash = '#/ch/ch01';
+    await firstP(a);
+    a.d.querySelector('[data-nav="listen"]').click();
+    const pl = await until(() => { const x = a.d.querySelector('.rd-player'); return x && !x.hidden && x; });
+    assert(a.d.getElementById('nav-listen').textContent === 'Stop', 'nav label not Stop');
+    pl.querySelector('[data-pl="stop"]').click();
+    await until(() => pl.hidden);
+  }
+  a.close();
+});
+
+document.getElementById('summary').textContent = `${passed} passed, ${failed} failed`;

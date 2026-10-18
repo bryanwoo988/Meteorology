@@ -26,10 +26,17 @@ Live: <https://bryanwoo988.github.io/Meteorology/>
   "view it" to "use it in code".
 - **Tools**: glossary, abbreviations, concept map, flashcards, stage quizzes,
   °C ⇄ °F converter, Beaufort scale, search across all three languages.
-- **House conventions**: first-run language picker (default English), 中 → EN →
-  BM toggle that keeps your place, light / dark / auto theme, AAA reading
-  scale, offline after the first visit, auto-updating service worker with a
-  "what's new" sheet, QR-code / share / copy-link page, Info page.
+- **Highlights, notes, bookmarks and read-aloud** (`js/reader.js`, shared with
+  the sibling apps): tap a paragraph, list item, table row or note box to
+  highlight or underline it in five colours, add a note, bookmark it, copy it
+  or read aloud from there; long-press to mark just a few words. A bottom bar
+  opens Contents, Read aloud, Notes, Bookmarks and Settings.
+- **House conventions**: first-run language picker (default English); Settings
+  holds language (keeps your place), System / Light / Dark with four light and
+  four dark theme looks, text size, read-aloud voice and speed, the notes
+  backup, and About (version, update history, QR code, share and copy link).
+  Offline after the first visit, auto-updating service worker with a
+  "what's new" sheet.
 
 ## Sources
 
