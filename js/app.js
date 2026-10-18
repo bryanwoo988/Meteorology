@@ -145,6 +145,45 @@ function restoreAnchor({ id, offset }) {
 }
 
 /* ---------- Views ---------- */
+/* ---------- Appearance (About page) ----------
+   Mode follows the phone or is fixed; each side has its own look. The header
+   theme button cycles the same mode. */
+function appearance() {
+  const p = prefs.get();
+  const row = (title, control) => el('div', { class: 'setrow' }, el('h3', {}, title), control);
+  return el('section', { class: 'setgroup' },
+    el('h2', {}, tr('theme')),
+    row(tr('mode'), el('div', {},
+      segmented([['auto', tr('themeAuto')], ['light', tr('themeLight')], ['dark', tr('themeDark')]], p.theme, th => prefs.setTheme(th)),
+      el('p', { class: 'theme-note' }, tr('themeNote')))),
+    row(tr('lightLooks'), swatches(prefs.LIGHT_THEMES, p.lightTheme, n => prefs.setLightTheme(n))),
+    row(tr('darkLooks'), swatches(prefs.DARK_THEMES, p.darkTheme, n => prefs.setDarkTheme(n))));
+}
+
+/* Theme looks as small previews: page, card and accent colour of each look.
+   Keep in step with the [data-palette] blocks in css/app.css. */
+const LOOK_COLOURS = {
+  classic: ['#f8fafd', '#ffffff', '#3762cc'], paper: ['#f6f1e7', '#fffdf8', '#a8571a'],
+  mint: ['#eef7f3', '#ffffff', '#0b7f62'], lavender: ['#f5f3fc', '#ffffff', '#5b45c4'],
+  midnight: ['#0e141e', '#151d2a', '#7fa2f0'], oled: ['#000000', '#0d0d0d', '#7fa2f0'],
+  slate: ['#23272f', '#2c313b', '#8cbcea'], grape: ['#17121f', '#221a2e', '#b89dff'],
+};
+function swatches(names, cur, onPick) {
+  return el('div', { class: 'looks' }, names.map(n => {
+    const [bg, surface, accent] = LOOK_COLOURS[n];
+    return el('button', { type: 'button', class: n === cur ? 'look on' : 'look', 'aria-pressed': String(n === cur), onclick: () => onPick(n) },
+      el('span', { class: 'look-prev', style: `background:${bg}` },
+        el('span', { class: 'look-card', style: `background:${surface}` }, el('i', { style: `background:${accent}` }), el('b'))),
+      el('span', { class: 'look-name' }, tr(`look_${n}`)));
+  }));
+}
+
+/* A row of buttons, one of them on. */
+function segmented(options, cur, onPick) {
+  return el('div', { class: 'setseg' }, options.map(([value, label]) =>
+    el('button', { type: 'button', class: value === cur ? 'on' : null, 'aria-pressed': String(value === cur), onclick: () => onPick(value) }, label)));
+}
+
 const VIEWS = {
   async home() {
     const p = prefs.get();
@@ -239,6 +278,7 @@ const VIEWS = {
         el('dt', {}, tr('version')), el('dd', {}, releases[0] ? `v${releases[0].v} · ${builtAt() || releases[0].date} · ` : '',
           el('a', { href: '#', onclick: e => { e.preventDefault(); showAllReleases(); } }, tr('allUpdates'))),
         el('dt', {}, tr('offline')), el('dd', {}, status)),
+      appearance(),
       el('p', { class: 'credit' }, tr('createdBy')),
       el('p', {}, el('a', { class: 'button button-quiet', href: '#/share' }, tr('share'))),
       el('h2', {}, tr('allSources')),
@@ -425,7 +465,7 @@ function wire() {
   prefs.subscribe(what => {
     prefs.applyToDocument();
     paintHeader();
-    if (what === 'lang' || what === 'scale') render({ keepAnchor: true });
+    if (what === 'lang' || what === 'scale' || (what === 'theme' && current.route?.view === 'info')) render({ keepAnchor: true });
   });
   matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => prefs.applyToDocument());
   document.addEventListener('visibilitychange', () => {
